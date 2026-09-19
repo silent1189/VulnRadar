@@ -17,7 +17,7 @@ class NotificationProvider(ABC):
     - ``send_baseline``: First-run baseline establishment message.
 
     Attributes:
-        name: Short identifier for this provider (e.g., ``discord``).
+        name: Short identifier for this provider (e.g., ``feishu``).
         max_alerts: Maximum individual alerts to send per run.
         rate_limit_delay: Seconds to wait between requests.
     """

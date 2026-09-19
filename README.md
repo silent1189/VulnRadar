@@ -73,7 +73,7 @@ VulnRadar is a **lightweight, GitHub-native vulnerability intelligence tool** th
 - 🔥 Enriches with [CISA KEV](https://www.cisa.gov/known-exploited-vulnerabilities-catalog), [EPSS](https://www.first.org/epss/), [NVD](https://nvd.nist.gov/), and [PatchThis](https://patchthis.app/) intelligence
 - 📊 Generates a beautiful Markdown report viewable directly in GitHub
 - 🚨 Creates GitHub Issues for critical findings (with escalation comments!)
-- 🔔 Sends Discord/Slack/Teams notifications (optional)
+- 🔔 Sends Feishu (Lark) notifications (optional)
 - 📋 Integrates with GitHub Projects v2 for Kanban workflows (optional)
 - 🎭 Includes demo mode for conference presentations
 
@@ -143,9 +143,7 @@ flowchart LR
 
     subgraph Notify["notifications/"]
         NB[base.py\nAbstract provider]
-        ND[discord.py]
-        NS[slack.py]
-        NT[teams.py]
+        ND[feishu.py]
         NG[github_issues.py]
     end
 
@@ -153,7 +151,7 @@ flowchart LR
         G[radar_report.md]
         H[radar_data.json]
         I[GitHub Issues]
-        J[Discord/Slack/Teams]
+        J[Feishu]
     end
 
     Sources -->|sequential or --parallel| DL & ADL
@@ -241,17 +239,10 @@ VulnRadar automatically classifies findings:
 ### GitHub Issues (Default)
 Critical findings automatically create GitHub Issues with the `vulnradar` label.
 
-### Discord (Optional)
-Add `DISCORD_WEBHOOK_URL` to your repository secrets to receive Discord alerts.
-See [docs/discord.md](docs/discord.md) for setup instructions.
-
-### Slack (Optional)
-Add `SLACK_WEBHOOK_URL` to your repository secrets to receive Slack alerts.
-See [docs/slack.md](docs/slack.md) for setup instructions.
-
-### Microsoft Teams (Optional)
-Add `TEAMS_WEBHOOK_URL` to your repository secrets to receive Teams alerts (Adaptive Cards).
-See [docs/teams.md](docs/teams.md) for setup instructions.
+### Feishu (Optional)
+Add `FEISHU_WEBHOOK_URL` to your repository secrets to receive Feishu (Lark) alerts as interactive cards.
+If signature verification is enabled on your bot, also add `FEISHU_SECRET`.
+See [docs/feishu.md](docs/feishu.md) for setup instructions.
 
 ### Per-Severity Routing (Optional)
 Route different alert levels to different webhooks:
@@ -259,15 +250,12 @@ Route different alert levels to different webhooks:
 ```yaml
 # In watchlist.yaml
 notifications:
-  discord:
-    - url: $DISCORD_CRITICAL_WEBHOOK
+  feishu:
+    - url: $FEISHU_CRITICAL_WEBHOOK
       filter: critical        # Only critical findings
       max_alerts: 25
-    - url: $DISCORD_ALL_WEBHOOK
+    - url: $FEISHU_ALL_WEBHOOK
       filter: all             # Everything
-  slack:
-    - url: $SLACK_WEBHOOK_URL
-      filter: kev             # Only KEV entries
 ```
 
 Filters: `all` | `critical` | `kev` | `watchlist`. URLs starting with `$` are resolved from environment variables.
@@ -429,9 +417,7 @@ VulnRadar/
 │   ├── state.py           # StateManager for deduplication
 │   ├── notifications/     # Strategy-pattern providers
 │   │   ├── base.py        # Abstract NotificationProvider
-│   │   ├── discord.py     # Discord webhooks
-│   │   ├── slack.py       # Slack webhooks
-│   │   ├── teams.py       # Teams Adaptive Cards
+│   │   ├── feishu.py      # Feishu (Lark) webhooks
 │   │   └── github_issues.py # Issues + Projects v2
 │   └── templates/
 │       └── report.md.j2   # Customizable report template

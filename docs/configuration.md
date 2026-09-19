@@ -65,23 +65,17 @@ options:
 
 ### Notification Routing
 
-Route different alert severities to different webhook endpoints. Each provider (Discord, Slack, Teams) supports multiple routes.
+Route different alert severities to different webhook endpoints. The Feishu provider supports multiple routes.
 
 ```yaml
 notifications:
-  discord:
-    - url: $DISCORD_CRITICAL_WEBHOOK   # Resolved from env var
+  feishu:
+    - url: $FEISHU_CRITICAL_WEBHOOK    # Resolved from env var
       filter: critical                  # Only critical findings
       max_alerts: 25
-    - url: $DISCORD_ALL_WEBHOOK
+    - url: $FEISHU_ALL_WEBHOOK
       filter: all                       # All findings
       max_alerts: 10
-  slack:
-    - url: $SLACK_WEBHOOK_URL
-      filter: kev                       # Only KEV entries
-  teams:
-    - url: https://example.webhook.office.com/...
-      filter: watchlist                 # All watchlist matches
 ```
 
 | Field | Type | Default | Description |
@@ -127,7 +121,7 @@ Configuration is validated by Pydantic models in `vulnradar/config.py`:
 - **`WatchlistConfig`** — top-level model with `vendors`, `products`, `exclude_vendors`, `exclude_products`, `thresholds`, `options`, `notifications`
 - **`ThresholdsConfig`** — `min_cvss`, `min_epss`, `severity_threshold`, `epss_threshold`
 - **`OptionsConfig`** — `always_include_kev`, `always_include_patchthis`, `match_mode`
-- **`NotificationsConfig`** — `discord`, `slack`, `teams` (each a list of `NotificationRoute`)
+- **`NotificationsConfig`** — `feishu` (a list of `NotificationRoute`)
 - **`NotificationRoute`** — `url`, `filter`, `max_alerts`
 
 Invalid values produce clear Pydantic validation errors at startup.

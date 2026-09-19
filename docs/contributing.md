@@ -38,9 +38,7 @@ vulnradar/                 # Core package
 ├── state.py               # StateManager for alert deduplication
 ├── notifications/         # Strategy-pattern notification providers
 │   ├── base.py            # Abstract NotificationProvider
-│   ├── discord.py         # DiscordProvider
-│   ├── slack.py           # SlackProvider
-│   ├── teams.py           # TeamsProvider
+│   ├── feishu.py          # FeishuProvider
 │   └── github_issues.py   # GitHubIssueProvider (+ Projects v2)
 └── templates/
     └── report.md.j2       # Customizable Jinja2 report template

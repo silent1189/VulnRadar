@@ -7,9 +7,7 @@ import pytest
 
 from vulnradar.notifications import load_providers
 from vulnradar.notifications.base import NotificationProvider
-from vulnradar.notifications.discord import DiscordProvider
-from vulnradar.notifications.slack import SlackProvider
-from vulnradar.notifications.teams import TeamsProvider
+from vulnradar.notifications.feishu import FeishuProvider
 from vulnradar.state import Change
 
 # ── _format_epss ─────────────────────────────────────────────────────────────
@@ -146,41 +144,21 @@ class TestLoadProviders:
     def test_no_webhooks(self):
         assert load_providers() == []
 
-    def test_discord_only(self):
-        providers = load_providers(discord_webhook="https://discord.example.com/hook")
+    def test_feishu_only(self):
+        providers = load_providers(feishu_webhook="https://open.feishu.cn/hook")
         assert len(providers) == 1
-        assert isinstance(providers[0], DiscordProvider)
+        assert isinstance(providers[0], FeishuProvider)
 
-    def test_slack_only(self):
-        providers = load_providers(slack_webhook="https://hooks.slack.com/hook")
-        assert len(providers) == 1
-        assert isinstance(providers[0], SlackProvider)
-
-    def test_teams_only(self):
-        providers = load_providers(teams_webhook="https://teams.example.com/hook")
-        assert len(providers) == 1
-        assert isinstance(providers[0], TeamsProvider)
-
-    def test_all_providers(self):
-        providers = load_providers(
-            discord_webhook="https://discord.example.com/hook",
-            slack_webhook="https://hooks.slack.com/hook",
-            teams_webhook="https://teams.example.com/hook",
-        )
-        assert len(providers) == 3
-        names = {p.name for p in providers}
-        assert names == {"discord", "slack", "teams"}
+    def test_secret_passthrough(self):
+        providers = load_providers(feishu_webhook="https://open.feishu.cn/hook", feishu_secret="s3cret")
+        assert providers[0].secret == "s3cret"
 
     def test_custom_max_alerts(self):
-        providers = load_providers(discord_webhook="https://x.com", discord_max=5)
+        providers = load_providers(feishu_webhook="https://open.feishu.cn/hook", feishu_max=5)
         assert providers[0].max_alerts == 5
 
     def test_none_webhooks_skipped(self):
-        providers = load_providers(
-            discord_webhook=None,
-            slack_webhook=None,
-            teams_webhook=None,
-        )
+        providers = load_providers(feishu_webhook=None)
         assert providers == []
 
 
@@ -188,18 +166,10 @@ class TestLoadProviders:
 
 
 class TestProviderInstantiation:
-    def test_discord_provider_attrs(self):
-        p = DiscordProvider(webhook_url="https://discord.example.com/hook", max_alerts=15)
-        assert p.name == "discord"
+    def test_feishu_provider_attrs(self):
+        p = FeishuProvider(webhook_url="https://open.feishu.cn/hook", max_alerts=15)
+        assert p.name == "feishu"
         assert p.max_alerts == 15
-
-    def test_slack_provider_attrs(self):
-        p = SlackProvider(webhook_url="https://hooks.slack.com/hook")
-        assert p.name == "slack"
-
-    def test_teams_provider_attrs(self):
-        p = TeamsProvider(webhook_url="https://teams.example.com/hook")
-        assert p.name == "teams"
 
 
 # ── Provider send_alert ──────────────────────────────────────────────────────
@@ -229,139 +199,83 @@ def _sample_item(**overrides: Any) -> dict[str, Any]:
     return base
 
 
-class TestDiscordSendAlert:
-    @patch("vulnradar.notifications.discord.requests.post")
+class TestFeishuSendAlert:
+    @patch("vulnradar.notifications.feishu.requests.post")
     def test_fires_webhook(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = DiscordProvider(webhook_url="https://discord.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         p.send_alert(_sample_item())
         mock_post.assert_called_once()
         payload = mock_post.call_args[1]["json"]
-        assert "embeds" in payload
-        assert "CRITICAL" in payload["embeds"][0]["title"]
+        assert payload["msg_type"] == "interactive"
+        assert "CRITICAL" in payload["card"]["header"]["title"]["content"]
 
-    @patch("vulnradar.notifications.discord.requests.post")
+    @patch("vulnradar.notifications.feishu.requests.post")
     def test_with_changes(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = DiscordProvider(webhook_url="https://discord.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         changes = [Change(cve_id="CVE-2024-12345", change_type="NEW_CVE")]
         p.send_alert(_sample_item(), changes=changes)
         mock_post.assert_called_once()
 
-    @patch("vulnradar.notifications.discord.requests.post")
+    @patch("vulnradar.notifications.feishu.requests.post")
     def test_non_critical(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = DiscordProvider(webhook_url="https://discord.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         p.send_alert(_sample_item(is_critical=False, active_threat=False))
         payload = mock_post.call_args[1]["json"]
-        assert "ALERT" in payload["embeds"][0]["title"]
+        assert "ALERT" in payload["card"]["header"]["title"]["content"]
 
-
-class TestSlackSendAlert:
-    @patch("vulnradar.notifications.slack.requests.post")
-    def test_fires_webhook(self, mock_post: MagicMock):
+    @patch("vulnradar.notifications.feishu.requests.post")
+    def test_signature_added_with_secret(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = SlackProvider(webhook_url="https://hooks.slack.com/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook", secret="s3cret")
         p.send_alert(_sample_item())
-        mock_post.assert_called_once()
         payload = mock_post.call_args[1]["json"]
-        assert "attachments" in payload
+        assert "timestamp" in payload
+        assert "sign" in payload
 
-    @patch("vulnradar.notifications.slack.requests.post")
-    def test_non_critical(self, mock_post: MagicMock):
+    @patch("vulnradar.notifications.feishu.requests.post")
+    def test_no_signature_without_secret(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = SlackProvider(webhook_url="https://hooks.slack.com/hook")
-        p.send_alert(_sample_item(is_critical=False, active_threat=True))
-        mock_post.assert_called_once()
-
-
-class TestTeamsSendAlert:
-    @patch("vulnradar.notifications.teams.requests.post")
-    def test_fires_webhook(self, mock_post: MagicMock):
-        mock_post.return_value.raise_for_status = MagicMock()
-        p = TeamsProvider(webhook_url="https://teams.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         p.send_alert(_sample_item())
-        mock_post.assert_called_once()
         payload = mock_post.call_args[1]["json"]
-        assert "type" in payload
-
-    @patch("vulnradar.notifications.teams.requests.post")
-    def test_non_critical(self, mock_post: MagicMock):
-        mock_post.return_value.raise_for_status = MagicMock()
-        p = TeamsProvider(webhook_url="https://teams.test/hook")
-        p.send_alert(_sample_item(is_critical=False, active_threat=False))
-        mock_post.assert_called_once()
+        assert "timestamp" not in payload
+        assert "sign" not in payload
 
 
 # ── Provider send_summary ───────────────────────────────────────────────────
 
 
-class TestDiscordSendSummary:
-    @patch("vulnradar.notifications.discord.requests.post")
+class TestFeishuSendSummary:
+    @patch("vulnradar.notifications.feishu.requests.post")
     def test_summary(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = DiscordProvider(webhook_url="https://discord.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         items = [_sample_item(), _sample_item(cve_id="CVE-2024-99999", is_critical=False)]
         p.send_summary(items, "owner/repo")
         mock_post.assert_called_once()
 
-    @patch("vulnradar.notifications.discord.requests.post")
+    @patch("vulnradar.notifications.feishu.requests.post")
     def test_summary_with_changes(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = DiscordProvider(webhook_url="https://discord.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         changes = {"CVE-2024-12345": (_sample_item(), [Change(cve_id="CVE-2024-12345", change_type="NEW_CVE")])}
         p.send_summary([_sample_item()], "owner/repo", changes_by_cve=changes)
-        mock_post.assert_called_once()
-
-
-class TestSlackSendSummary:
-    @patch("vulnradar.notifications.slack.requests.post")
-    def test_summary(self, mock_post: MagicMock):
-        mock_post.return_value.raise_for_status = MagicMock()
-        p = SlackProvider(webhook_url="https://hooks.slack.com/hook")
-        p.send_summary([_sample_item()], "owner/repo")
-        mock_post.assert_called_once()
-
-
-class TestTeamsSendSummary:
-    @patch("vulnradar.notifications.teams.requests.post")
-    def test_summary(self, mock_post: MagicMock):
-        mock_post.return_value.raise_for_status = MagicMock()
-        p = TeamsProvider(webhook_url="https://teams.test/hook")
-        p.send_summary([_sample_item()], "owner/repo")
         mock_post.assert_called_once()
 
 
 # ── Provider send_baseline ──────────────────────────────────────────────────
 
 
-class TestDiscordSendBaseline:
-    @patch("vulnradar.notifications.discord.requests.post")
+class TestFeishuSendBaseline:
+    @patch("vulnradar.notifications.feishu.requests.post")
     def test_baseline(self, mock_post: MagicMock):
         mock_post.return_value.raise_for_status = MagicMock()
-        p = DiscordProvider(webhook_url="https://discord.test/hook")
+        p = FeishuProvider(webhook_url="https://feishu.test/hook")
         items = [_sample_item()]
         p.send_baseline(items, items, "owner/repo")
         mock_post.assert_called_once()
         payload = mock_post.call_args[1]["json"]
-        assert "Baseline" in payload["embeds"][0]["title"]
-
-
-class TestSlackSendBaseline:
-    @patch("vulnradar.notifications.slack.requests.post")
-    def test_baseline(self, mock_post: MagicMock):
-        mock_post.return_value.raise_for_status = MagicMock()
-        p = SlackProvider(webhook_url="https://hooks.slack.com/hook")
-        items = [_sample_item()]
-        p.send_baseline(items, items, "owner/repo")
-        mock_post.assert_called_once()
-
-
-class TestTeamsSendBaseline:
-    @patch("vulnradar.notifications.teams.requests.post")
-    def test_baseline(self, mock_post: MagicMock):
-        mock_post.return_value.raise_for_status = MagicMock()
-        p = TeamsProvider(webhook_url="https://teams.test/hook")
-        items = [_sample_item()]
-        p.send_baseline(items, items, "owner/repo")
-        mock_post.assert_called_once()
+        assert "Baseline" in payload["card"]["header"]["title"]["content"]

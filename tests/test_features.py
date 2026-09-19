@@ -20,9 +20,7 @@ from vulnradar.notifications import (
     filter_items_for_route,
     load_routed_providers,
 )
-from vulnradar.notifications.discord import DiscordProvider
-from vulnradar.notifications.slack import SlackProvider
-from vulnradar.notifications.teams import TeamsProvider
+from vulnradar.notifications.feishu import FeishuProvider
 
 # ── helpers ──────────────────────────────────────────────────────────────────
 
@@ -214,36 +212,30 @@ class TestNotificationRouteConfig:
 
     def test_notifications_config_empty(self):
         n = NotificationsConfig()
-        assert n.discord == []
-        assert n.slack == []
-        assert n.teams == []
+        assert n.feishu == []
 
     def test_notifications_from_dict(self):
         n = NotificationsConfig.model_validate(
             {
-                "discord": [
-                    {"url": "https://discord.com/hook1", "filter": "critical"},
-                    {"url": "https://discord.com/hook2", "filter": "all", "max_alerts": 5},
-                ],
-                "slack": [
-                    {"url": "$SLACK_WEBHOOK_URL", "filter": "kev"},
+                "feishu": [
+                    {"url": "https://open.feishu.cn/hook1", "filter": "critical"},
+                    {"url": "https://open.feishu.cn/hook2", "filter": "all", "max_alerts": 5},
                 ],
             }
         )
-        assert len(n.discord) == 2
-        assert n.discord[0].filter == "critical"
-        assert n.discord[1].max_alerts == 5
-        assert len(n.slack) == 1
+        assert len(n.feishu) == 2
+        assert n.feishu[0].filter == "critical"
+        assert n.feishu[1].max_alerts == 5
 
     def test_watchlist_config_with_notifications(self):
         wl = WatchlistConfig(
             vendors=["microsoft"],
             notifications={
-                "discord": [{"url": "https://discord.com/hook", "filter": "critical"}],
+                "feishu": [{"url": "https://open.feishu.cn/hook", "filter": "critical"}],
             },
         )
-        assert len(wl.notifications.discord) == 1
-        assert wl.notifications.discord[0].filter == "critical"
+        assert len(wl.notifications.feishu) == 1
+        assert wl.notifications.feishu[0].filter == "critical"
 
 
 # ── filter_items_for_route ───────────────────────────────────────────────────
@@ -304,44 +296,33 @@ class TestLoadRoutedProviders:
         config = NotificationsConfig()
         assert load_routed_providers(config) == []
 
-    def test_discord_routes(self):
+    def test_feishu_routes(self):
         config = NotificationsConfig(
-            discord=[
-                NotificationRoute(url="https://discord.com/hook1", filter="critical"),
-                NotificationRoute(url="https://discord.com/hook2", filter="all", max_alerts=5),
+            feishu=[
+                NotificationRoute(url="https://open.feishu.cn/hook1", filter="critical"),
+                NotificationRoute(url="https://open.feishu.cn/hook2", filter="all", max_alerts=5),
             ],
         )
         routed = load_routed_providers(config)
         assert len(routed) == 2
-        assert isinstance(routed[0][0], DiscordProvider)
+        assert isinstance(routed[0][0], FeishuProvider)
         assert routed[0][1] == "critical"
-        assert isinstance(routed[1][0], DiscordProvider)
+        assert isinstance(routed[1][0], FeishuProvider)
         assert routed[1][0].max_alerts == 5
 
-    def test_mixed_providers(self):
-        config = NotificationsConfig(
-            discord=[NotificationRoute(url="https://discord.com/hook")],
-            slack=[NotificationRoute(url="https://hooks.slack.com/hook")],
-            teams=[NotificationRoute(url="https://teams.com/hook")],
-        )
-        routed = load_routed_providers(config)
-        assert len(routed) == 3
-        types = {type(p) for p, _ in routed}
-        assert types == {DiscordProvider, SlackProvider, TeamsProvider}
-
-    @patch.dict(os.environ, {"SLACK_HOOK": "https://hooks.slack.com/actual"})
+    @patch.dict(os.environ, {"FEISHU_HOOK": "https://open.feishu.cn/actual"})
     def test_env_var_resolution(self):
         config = NotificationsConfig(
-            slack=[NotificationRoute(url="$SLACK_HOOK", filter="kev")],
+            feishu=[NotificationRoute(url="$FEISHU_HOOK", filter="kev")],
         )
         routed = load_routed_providers(config)
         assert len(routed) == 1
-        assert routed[0][0].webhook_url == "https://hooks.slack.com/actual"
+        assert routed[0][0].webhook_url == "https://open.feishu.cn/actual"
         assert routed[0][1] == "kev"
 
     def test_missing_env_var_skipped(self):
         config = NotificationsConfig(
-            discord=[NotificationRoute(url="$NONEXISTENT_WEBHOOK_VAR")],
+            feishu=[NotificationRoute(url="$NONEXISTENT_WEBHOOK_VAR")],
         )
         routed = load_routed_providers(config)
         assert len(routed) == 0

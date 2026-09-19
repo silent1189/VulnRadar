@@ -11,16 +11,12 @@ Adding a new provider (e.g., Matrix, PagerDuty) requires only:
 """
 
 from .base import NotificationProvider
-from .discord import DiscordProvider
+from .feishu import FeishuProvider
 from .github_issues import GitHubIssueProvider
-from .slack import SlackProvider
-from .teams import TeamsProvider
 
 __all__ = [
     "NotificationProvider",
-    "DiscordProvider",
-    "SlackProvider",
-    "TeamsProvider",
+    "FeishuProvider",
     "GitHubIssueProvider",
     "load_providers",
     "load_routed_providers",
@@ -30,33 +26,26 @@ __all__ = [
 
 def load_providers(
     *,
-    discord_webhook: str | None = None,
-    discord_max: int = 10,
-    slack_webhook: str | None = None,
-    slack_max: int = 10,
-    teams_webhook: str | None = None,
-    teams_max: int = 10,
+    feishu_webhook: str | None = None,
+    feishu_max: int = 10,
+    feishu_secret: str | None = None,
 ) -> list[NotificationProvider]:
     """Dynamically create notification providers based on configuration.
 
     Args:
-        discord_webhook: Discord webhook URL.
-        discord_max: Max individual Discord alerts per run.
-        slack_webhook: Slack webhook URL.
-        slack_max: Max individual Slack alerts per run.
-        teams_webhook: Teams webhook URL.
-        teams_max: Max individual Teams alerts per run.
+        feishu_webhook: Feishu bot webhook URL.
+        feishu_max: Max individual Feishu alerts per run.
+        feishu_secret: Optional Feishu bot signing secret.
+            Required if signature verification is enabled on the bot.
 
     Returns:
         List of active notification providers.
     """
     providers: list[NotificationProvider] = []
-    if discord_webhook:
-        providers.append(DiscordProvider(webhook_url=discord_webhook, max_alerts=discord_max))
-    if slack_webhook:
-        providers.append(SlackProvider(webhook_url=slack_webhook, max_alerts=slack_max))
-    if teams_webhook:
-        providers.append(TeamsProvider(webhook_url=teams_webhook, max_alerts=teams_max))
+    if feishu_webhook:
+        providers.append(
+            FeishuProvider(webhook_url=feishu_webhook, max_alerts=feishu_max, secret=feishu_secret)
+        )
     return providers
 
 
@@ -100,32 +89,12 @@ def load_routed_providers(
     """
     routed: list[tuple[NotificationProvider, str]] = []
 
-    for route in notifications_config.discord:
+    for route in notifications_config.feishu:
         url = _resolve_env(route.url)
         if url:
             routed.append(
                 (
-                    DiscordProvider(webhook_url=url, max_alerts=route.max_alerts),
-                    route.filter,
-                )
-            )
-
-    for route in notifications_config.slack:
-        url = _resolve_env(route.url)
-        if url:
-            routed.append(
-                (
-                    SlackProvider(webhook_url=url, max_alerts=route.max_alerts),
-                    route.filter,
-                )
-            )
-
-    for route in notifications_config.teams:
-        url = _resolve_env(route.url)
-        if url:
-            routed.append(
-                (
-                    TeamsProvider(webhook_url=url, max_alerts=route.max_alerts),
+                    FeishuProvider(webhook_url=url, max_alerts=route.max_alerts),
                     route.filter,
                 )
             )

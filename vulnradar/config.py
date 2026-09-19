@@ -62,10 +62,10 @@ class NotificationRoute(BaseModel):
     Example YAML::
 
         notifications:
-          discord:
-            - url: $DISCORD_CRITICAL_WEBHOOK
+          feishu:
+            - url: $FEISHU_CRITICAL_WEBHOOK
               filter: critical
-            - url: $DISCORD_ALL_WEBHOOK
+            - url: $FEISHU_ALL_WEBHOOK
               filter: all
     """
 
@@ -78,14 +78,10 @@ class NotificationsConfig(BaseModel):
     """Optional per-provider notification routing.
 
     Attributes:
-        discord: List of Discord webhook routes.
-        slack: List of Slack webhook routes.
-        teams: List of Microsoft Teams webhook routes.
+        feishu: List of Feishu webhook routes.
     """
 
-    discord: list[NotificationRoute] = Field(default_factory=list)
-    slack: list[NotificationRoute] = Field(default_factory=list)
-    teams: list[NotificationRoute] = Field(default_factory=list)
+    feishu: list[NotificationRoute] = Field(default_factory=list)
 
 
 class WatchlistConfig(BaseModel):

@@ -233,16 +233,10 @@ options:
 # URLs starting with $ are resolved from environment variables.
 #
 # notifications:
-#   discord:
-#     - url: $DISCORD_CRITICAL_WEBHOOK
+#   feishu:
+#     - url: $FEISHU_CRITICAL_WEBHOOK
 #       filter: critical
 #       max_alerts: 25
-#     - url: $DISCORD_ALL_WEBHOOK
+#     - url: $FEISHU_ALL_WEBHOOK
 #       filter: all
 #       max_alerts: 10
-#   slack:
-#     - url: $SLACK_WEBHOOK_URL
-#       filter: critical
-#   teams:
-#     - url: $TEAMS_WEBHOOK_URL
-#       filter: all

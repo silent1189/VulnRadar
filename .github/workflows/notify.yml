@@ -55,16 +55,15 @@ jobs:
           # Use PAT_TOKEN if available (for forks with restricted GITHUB_TOKEN)
           # Otherwise fall back to GITHUB_TOKEN
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
         run: |
           DEMO_FLAG=""
           if [ "${{ inputs.demo }}" == "true" ]; then
             DEMO_FLAG="--demo"
             echo "🎭 Demo mode enabled - injecting CVE-2099-DEMO"
           fi
-          python notify.py --in data/ --max 25 --discord-max 10 --slack-max 10 --teams-max 10 $DEMO_FLAG
+          python notify.py --in data/ --max 25 --feishu-max 10 $DEMO_FLAG
 
       - name: Commit state file
         run: |

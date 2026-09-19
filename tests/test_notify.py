@@ -160,100 +160,51 @@ class TestIssueBody:
         assert "Log4j" in body
 
 
-class TestDiscordPayload:
-    """Tests for Discord notification formatting."""
+class TestFeishuPayload:
+    """Tests for Feishu notification formatting."""
 
-    def test_discord_alert_structure(self, sample_radar_item: Dict[str, Any]):
-        """Test Discord embed structure (without actually sending)."""
-        # Import the function
-        from notify import send_discord_alert
+    def test_feishu_alert_structure(self, sample_radar_item: Dict[str, Any]):
+        """Test Feishu interactive card structure (without actually sending)."""
+        from notify import send_feishu_alert
 
-        # Mock requests.post in the discord provider module
-        with patch("vulnradar.notifications.discord.requests.post") as mock_post:
+        # Mock requests.post in the feishu provider module
+        with patch("vulnradar.notifications.feishu.requests.post") as mock_post:
             mock_response = MagicMock()
             mock_response.raise_for_status = MagicMock()
             mock_post.return_value = mock_response
 
-            send_discord_alert("https://fake.webhook.url", sample_radar_item)
+            send_feishu_alert("https://fake.webhook.url", sample_radar_item)
 
             # Verify it was called
             mock_post.assert_called_once()
             call_args = mock_post.call_args
             payload = call_args.kwargs.get("json") or call_args[1].get("json")
 
-            # Check embed structure
-            assert "embeds" in payload
-            embed = payload["embeds"][0]
-            assert "CVE-2024-12345" in embed["title"]
-            assert "CRITICAL" in embed["title"]
-            assert embed["color"] == 0xFF0000  # Red for critical
+            # Check card structure
+            assert payload["msg_type"] == "interactive"
+            card = payload["card"]
+            assert "CVE-2024-12345" in card["header"]["title"]["content"]
+            assert "CRITICAL" in card["header"]["title"]["content"]
+            assert card["header"]["template"] == "red"  # Red for critical
 
-    def test_discord_summary_structure(self, sample_radar_item: Dict[str, Any]):
-        """Test Discord summary embed structure."""
-        from notify import send_discord_summary
+    def test_feishu_summary_structure(self, sample_radar_item: Dict[str, Any]):
+        """Test Feishu summary card structure."""
+        from notify import send_feishu_summary
 
-        with patch("vulnradar.notifications.discord.requests.post") as mock_post:
+        with patch("vulnradar.notifications.feishu.requests.post") as mock_post:
             mock_response = MagicMock()
             mock_response.raise_for_status = MagicMock()
             mock_post.return_value = mock_response
 
             items = [sample_radar_item]
-            send_discord_summary("https://fake.webhook.url", items, "test/repo")
+            send_feishu_summary("https://fake.webhook.url", items, "test/repo")
 
             mock_post.assert_called_once()
             call_args = mock_post.call_args
             payload = call_args.kwargs.get("json") or call_args[1].get("json")
 
-            embed = payload["embeds"][0]
-            assert "Summary" in embed["title"]
-            assert any("Critical" in f["name"] for f in embed["fields"])
-
-
-class TestSlackPayload:
-    """Tests for Slack notification formatting."""
-
-    def test_slack_alert_structure(self, sample_radar_item: Dict[str, Any]):
-        """Test Slack message structure."""
-        from notify import send_slack_alert
-
-        with patch("vulnradar.notifications.slack.requests.post") as mock_post:
-            mock_response = MagicMock()
-            mock_response.raise_for_status = MagicMock()
-            mock_post.return_value = mock_response
-
-            send_slack_alert("https://hooks.slack.com/fake", sample_radar_item)
-
-            mock_post.assert_called_once()
-            call_args = mock_post.call_args
-            payload = call_args.kwargs.get("json") or call_args[1].get("json")
-
-            assert "attachments" in payload
-            assert payload["attachments"][0]["color"] == "danger"
-
-
-class TestTeamsPayload:
-    """Tests for Teams notification formatting."""
-
-    def test_teams_alert_structure(self, sample_radar_item: Dict[str, Any]):
-        """Test Teams Adaptive Card structure."""
-        from notify import send_teams_alert
-
-        with patch("vulnradar.notifications.teams.requests.post") as mock_post:
-            mock_response = MagicMock()
-            mock_response.raise_for_status = MagicMock()
-            mock_post.return_value = mock_response
-
-            send_teams_alert("https://teams.webhook.url", sample_radar_item)
-
-            mock_post.assert_called_once()
-            call_args = mock_post.call_args
-            payload = call_args.kwargs.get("json") or call_args[1].get("json")
-
-            assert payload["type"] == "message"
-            assert "attachments" in payload
-            card = payload["attachments"][0]["content"]
-            assert card["type"] == "AdaptiveCard"
-            assert card["version"] == "1.4"
+            card = payload["card"]
+            assert "Summary" in card["header"]["title"]["content"]
 
 
 class TestStateManager:
@@ -376,13 +327,12 @@ class TestStateManager:
 
         state = StateManager(tmp_path / "state.json")
         state.update_snapshot("CVE-2024-0001", {})
-        state.mark_alerted("CVE-2024-0001", ["discord", "slack"])
+        state.mark_alerted("CVE-2024-0001", ["feishu"])
 
         entry = state.data["seen_cves"]["CVE-2024-0001"]
-        assert "discord" in entry["alerted_channels"]
-        assert "slack" in entry["alerted_channels"]
-        assert state.data["statistics"]["total_alerts_sent"] == 2
-        assert state.data["statistics"]["alerts_by_channel"]["discord"] == 1
+        assert "feishu" in entry["alerted_channels"]
+        assert state.data["statistics"]["total_alerts_sent"] == 1
+        assert state.data["statistics"]["alerts_by_channel"]["feishu"] == 1
 
     def test_prune_old_entries(self, tmp_path: Path):
         """prune_old_entries removes CVEs not seen recently."""

@@ -80,29 +80,19 @@ def _create_weekly_summary_issue(
 # provider module.  For full backward compat we keep the wrapper signature
 # identical and document the new mock path in the test updates.
 
-from vulnradar.notifications.discord import DiscordProvider  # noqa: E402
-from vulnradar.notifications.slack import SlackProvider  # noqa: E402
-from vulnradar.notifications.teams import TeamsProvider  # noqa: E402
+from vulnradar.notifications.feishu import FeishuProvider  # noqa: E402
 
 
-def send_discord_alert(webhook_url: str, item: Dict[str, Any]) -> None:
-    DiscordProvider(webhook_url).send_alert(item)
+def send_feishu_alert(webhook_url: str, item: Dict[str, Any]) -> None:
+    FeishuProvider(webhook_url).send_alert(item)
 
 
-def send_discord_summary(
+def send_feishu_summary(
     webhook_url: str,
     items: List[Dict[str, Any]],
     repo: str,
 ) -> None:
-    DiscordProvider(webhook_url).send_summary(items, repo)
-
-
-def send_slack_alert(webhook_url: str, item: Dict[str, Any]) -> None:
-    SlackProvider(webhook_url).send_alert(item)
-
-
-def send_teams_alert(webhook_url: str, item: Dict[str, Any]) -> None:
-    TeamsProvider(webhook_url).send_alert(item)
+    FeishuProvider(webhook_url).send_summary(items, repo)
 
 
 def main() -> int:

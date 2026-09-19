@@ -212,7 +212,7 @@ class StateManager:
 
         Args:
             cve_id: The CVE identifier.
-            channels: List of channel names (e.g. ``["discord", "slack"]``).
+            channels: List of channel names (e.g. ``["feishu"]``).
         """
         if cve_id not in self.data["seen_cves"]:
             return

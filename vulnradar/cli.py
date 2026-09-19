@@ -374,19 +374,12 @@ def main_notify() -> int:
     p.add_argument("--state", dest="state_file", default="data/state.json")
     p.add_argument("--force", action="store_true")
     p.add_argument("--no-state", action="store_true")
-    # Discord
-    p.add_argument("--discord-webhook", dest="discord_webhook", default=os.environ.get("DISCORD_WEBHOOK_URL"))
+    # Feishu
+    p.add_argument("--feishu-webhook", dest="feishu_webhook", default=os.environ.get("FEISHU_WEBHOOK_URL"))
+    p.add_argument("--feishu-secret", dest="feishu_secret", default=os.environ.get("FEISHU_SECRET"))
     p.add_argument("--summary-every-run", action="store_true")
-    p.add_argument("--discord-summary-only", action="store_true")
-    p.add_argument("--discord-max", dest="discord_max", type=int, default=10)
-    # Slack
-    p.add_argument("--slack-webhook", dest="slack_webhook", default=os.environ.get("SLACK_WEBHOOK_URL"))
-    p.add_argument("--slack-summary-only", action="store_true")
-    p.add_argument("--slack-max", dest="slack_max", type=int, default=10)
-    # Teams
-    p.add_argument("--teams-webhook", dest="teams_webhook", default=os.environ.get("TEAMS_WEBHOOK_URL"))
-    p.add_argument("--teams-summary-only", action="store_true")
-    p.add_argument("--teams-max", dest="teams_max", type=int, default=10)
+    p.add_argument("--feishu-summary-only", action="store_true")
+    p.add_argument("--feishu-max", dest="feishu_max", type=int, default=10)
     # State commands
     p.add_argument("--reset-state", action="store_true")
     p.add_argument("--prune-state", type=int, metavar="DAYS")
@@ -536,12 +529,9 @@ def main_notify() -> int:
     alerted_channels: dict[str, list[str]] = {}
 
     providers = load_providers(
-        discord_webhook=args.discord_webhook,
-        slack_webhook=args.slack_webhook,
-        teams_webhook=args.teams_webhook,
-        discord_max=args.discord_max,
-        slack_max=args.slack_max,
-        teams_max=args.teams_max,
+        feishu_webhook=args.feishu_webhook,
+        feishu_max=args.feishu_max,
+        feishu_secret=args.feishu_secret,
     )
 
     for provider in providers:
@@ -567,8 +557,7 @@ def main_notify() -> int:
                         if args.dry_run:
                             print(f"DRY RUN: would send {name} alert for {cve_id}")
                         else:
-                            rate_limit = {"discord": 0.5, "slack": 1.0, "teams": 0.5}.get(name, 0.5)
-                            time.sleep(rate_limit)
+                            time.sleep(getattr(provider, "rate_limit_delay", 0.5))
                             provider.send_alert(it, item_changes)
                             print(f"Sent {name} alert for {cve_id}")
                             if cve_id not in alerted_channels:
