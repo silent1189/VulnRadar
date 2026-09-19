@@ -353,8 +353,17 @@ def _load_items(path: Path) -> list[dict[str, Any]]:
         index_file = path / "radar_index.json"
         if index_file.exists():
             return load_vendor_split(path)
+        data_file = path / "radar_data.json"
+        if data_file.exists():
+            path = data_file
+        else:
+            print(f"⚠️  No radar_data.json or radar_index.json found in {path}; continuing with no items")
+            return []
     if path.name == "radar_index.json" and path.exists():
         return load_vendor_split(path.parent)
+    if not path.exists():
+        print(f"⚠️  Input file {path} not found; continuing with no items")
+        return []
 
     with path.open("r", encoding="utf-8") as f:
         payload = json.load(f)

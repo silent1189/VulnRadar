@@ -99,3 +99,15 @@ class TestLoadItems:
         path.write_text(json.dumps({"foo": "bar"}))
         result = _load_items(path)
         assert result == []
+
+    def test_directory_with_radar_data(self, tmp_path: Path):
+        (tmp_path / "radar_data.json").write_text(json.dumps({"items": [{"cve_id": "CVE-2024-003"}]}))
+        result = _load_items(tmp_path)
+        assert len(result) == 1
+        assert result[0]["cve_id"] == "CVE-2024-003"
+
+    def test_directory_without_data_files(self, tmp_path: Path):
+        assert _load_items(tmp_path) == []
+
+    def test_missing_file_returns_empty(self, tmp_path: Path):
+        assert _load_items(tmp_path / "missing.json") == []
