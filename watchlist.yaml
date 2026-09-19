@@ -1,7 +1,6 @@
 # VulnRadar Watchlist Configuration
 # ==================================
-# Add vendors and products from YOUR tech stack.
-# Matching is case-insensitive and uses substring matching.
+# Matching is case-insensitive and uses substring matching by default.
 #
 # HOW TO FIND VALID NAMES:
 #   1. Run: python etl.py --list-vendors         (shows all vendors in CVE data)
@@ -10,36 +9,192 @@
 #   4. Run: python etl.py --validate-watchlist   (check for typos)
 #   5. Browse: https://cve.org and look at affected products
 #
-# For more examples, see: examples/watchlists/
+# For more examples, see: watchlist.example.yaml
 # ==================================
 
 # ============================================================================
 # VENDORS - Organizations that publish software
 # ============================================================================
 vendors:
-  # --- Uncomment and customize for your stack ---
-  - microsoft       # Windows, Office, Azure, Exchange, etc.
-  - apache          # httpd, Tomcat, Struts, Log4j, Kafka, etc.
-  - google          # Chrome, Android, GCP, etc.
-  - apple           # macOS, iOS, Safari, etc.
-  - linux           # Linux kernel
-  - cisco           # IOS, ASA, WebEx
-  - vmware          # ESXi, vCenter, Horizon
-  # - fortinet      # FortiGate, FortiOS
-  # - paloaltonetworks  # Firewalls, GlobalProtect
+  # 大型软件与科技巨头
+  - microsoft
+  - google
+  - apple
+  - adobe
+  - oracle
+  - sap
+  - ibm
+  - cisco
+  - vmware
+  - huawei
+
+  # 网络与安全基础设施
+  - fortinet
+  - citrix
+  - paloaltonetworks
+  - sonicwall
+  - ivanti
+  - f5
+  - checkpoint
+  - watchguard
+  - trendmicro
+  - sophos
+  - ubiquiti
+  - d-link
+  - tp-link
+  - netgear
+
+  # 开源项目与基金会
+  - apache
+  - wordpress
+  - linux
+  - gitlab
+  - github
+  - joomla
+  - django
+  - php
+  - redis
+  - mongodb
+  - postgresql
+  - elastic
+
+  # 企业应用与SaaS服务
+  - atlassian
+  - jetbrains
+  - servicenow
+  - salesforce
+  - splunk
+  - grafana
+  - teamviewer
+  - progress
+  - zoho
+  - metabase
+
+  # 工业与物联网 (IoT)
+  - siemens
+  - schneider-electric
+  - rockwellautomation
+  - hikvision
+  - dahua
+  - moxa
 
 # ============================================================================
 # PRODUCTS - Specific software/libraries (more precise than vendors)
 # ============================================================================
 products:
+  # 操作系统与核心服务
+  - windows
+  - windows_server
+  - exchange_server
+  - sharepoint_server
+  - active_directory
+  - linux_kernel
+  - macos
+  - ios
+  - android
+  - chrome
+  - edge
+  - firefox
+  - safari
+
+  # Web服务器与中间件
+  - apache_http_server
+  - nginx
+  - tomcat
+  - iis
+  - struts
   - log4j           # Log4Shell - CVE-2021-44228 and related
-  - chrome          # Google Chrome browser
-  # - firefox       # Mozilla Firefox
-  # - openssl       # Heartbleed and many others
-  # - exchange      # Microsoft Exchange (ProxyLogon, etc.)
-  # - jenkins       # CI/CD server
-  # - kubernetes    # K8s
-  # - docker        # Docker Engine
+  - spring_framework
+  - weblogic
+  - websphere
+  - jboss
+  - coldfusion
+
+  # 网络设备与安全产品
+  - fortios
+  - fortiproxy
+  - fortimanager
+  - netscaler_adc
+  - netscaler_gateway
+  - pan-os
+  - globalprotect
+  - firepower
+  - asa
+  - ios_xe
+  - ios_xr
+  - big-ip
+  - quantum_security_gateway
+  - endpoint_manager
+  - connect_secure
+  - sma100
+  - routeros
+
+  # 数据库与大数据
+  - mysql
+  - sql_server
+  - oracle_database
+  - postgresql
+  - mongodb
+  - redis
+  - elasticsearch
+  - hadoop
+  - spark
+  - cassandra
+
+  # 开发工具与框架
+  - kubernetes
+  - docker
+  - jenkins
+  - gitlab_ce
+  - gitlab_ee
+  - teamcity
+  - react
+  - angular
+  - vue
+  - django
+  - flask
+  - spring_boot
+  - nodejs
+  - typescript
+  - vscode
+
+  # 办公与协作工具
+  - office
+  - outlook
+  - teams
+  - sharepoint
+  - confluence
+  - jira
+  - bitbucket
+  - zoom
+  - slack
+
+  # 虚拟化与云基础设施
+  - vcenter_server
+  - esxi
+  - vsphere
+  - horizon
+  - workspace_one
+  - citrix_adc
+  - xenapp
+  - hyper-v
+  - openstack
+
+  # 通用组件与库
+  - openssl
+  - openssh
+  - glibc
+  - curl
+  - libxml2
+  - jackson
+  - fastjson
+  - spring
+  - commons
+  - urllib3
+  - jinja2
+  - aiohttp
+  - torch
+  - transformers
 
 # ============================================================================
 # EXCLUSIONS - Filter out noise (optional)
