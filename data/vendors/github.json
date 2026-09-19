@@ -1,0 +1,5391 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "github",
+  "count": 67,
+  "items": [
+    {
+      "cve_id": "CVE-2022-23732",
+      "description": "A path traversal vulnerability was identified in GitHub Enterprise Server management console that allowed the bypass of CSRF protections. This could potentially lead to privilege escalation. To exploit this vulnerability, an attacker would need to target a user that was actively logged into the management console. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.5 and was fixed in versions 3.1.19, 3.2.11, 3.3.6, 3.4.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "lessThan": "3.1.19",
+              "status": "affected",
+              "version": "3.1",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "3.2.11",
+              "status": "affected",
+              "version": "3.2",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "3.3.6",
+              "status": "affected",
+              "version": "3.3",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "3.4.1",
+              "status": "affected",
+              "version": "3.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01739,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 6.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-23",
+          "CWE-22"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23734",
+      "description": "A deserialization of untrusted data vulnerability was identified in GitHub Enterprise Server that could potentially lead to remote code execution on the SVNBridge. To exploit this vulnerability, an attacker would need to gain access via a server-side request forgery (SSRF) that would let an attacker control the data being deserialized. This vulnerability affected all versions of GitHub Enterprise Server prior to v3.6 and was fixed in versions 3.5.3, 3.4.6, 3.3.11, and 3.2.16. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "version": "3.2",
+              "status": "affected",
+              "lessThan": "3.2.16",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.3",
+              "status": "affected",
+              "lessThan": "3.3.11",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.4",
+              "status": "affected",
+              "lessThan": "3.4.6",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.5",
+              "status": "affected",
+              "lessThan": "3.5.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02044,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23739",
+      "description": "An incorrect authorization vulnerability was identified in GitHub Enterprise Server, allowing for escalation of privileges in GraphQL API requests from GitHub Apps. This vulnerability allowed an app installed on an organization to gain access to and modify most organization-level resources that are not tied to a repository regardless of granted permissions, such as users and organization-wide projects. Resources associated with repositories were not impacted, such as repository file content, repository-specific projects, issues, or pull requests. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.7.1 and was fixed in versions 3.3.16, 3.4.11, 3.5.8, 3.6.4, 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "version": "3.3",
+              "status": "affected",
+              "lessThan": "3.3.16",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.4",
+              "status": "affected",
+              "lessThan": "3.4.11",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.5",
+              "status": "affected",
+              "lessThan": "3.5.8",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.6",
+              "status": "affected",
+              "lessThan": "3.6.4",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.7",
+              "status": "affected",
+              "lessThan": "3.7.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01244,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23740",
+      "description": "CRITICAL: An improper neutralization of argument delimiters in a command vulnerability was identified in GitHub Enterprise Server that enabled remote code execution. To exploit this vulnerability, an attacker would need permission to create and build GitHub Pages using GitHub Actions. This vulnerability affected only version 3.7.0 of GitHub Enterprise Server and was fixed in version 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "version": "3.7",
+              "status": "affected",
+              "lessThan": "3.7.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01162,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-88"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23741",
+      "description": "An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed a scoped user-to-server token to escalate to full admin/owner privileges. An attacker would require an account with admin access to install a malicious GitHub App. This vulnerability was fixed in versions 3.3.17, 3.4.12, 3.5.9, and 3.6.5. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "version": "3.3",
+              "status": "affected",
+              "lessThan": "3.3.17",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.4",
+              "status": "affected",
+              "lessThan": "3.4.12",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.5",
+              "status": "affected",
+              "lessThan": "3.5.9",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.6",
+              "status": "affected",
+              "lessThan": "3.6.5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01097,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2022-24722",
+      "description": "VIewComponent is a framework for building view components in Ruby on Rails. Versions prior to 2.31.2 and 2.49.1 contain a cross-site scripting vulnerability that has the potential to impact anyone using translations with the view_component gem. Data received via user input and passed as an interpolation argument to the `translate` method is not properly sanitized before display. Versions 2.31.2 and 2.49.1 have been released and fully mitigate the vulnerability. As a workaround, avoid passing user input to the `translate` function, or sanitize the inputs before passing them.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "view_component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": ">= 2.31.0, < 2.31.2"
+            },
+            {
+              "status": "affected",
+              "version": ">= 2.32.0, < 2.49.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:view_component",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01092,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": 4.3,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2022-24724",
+      "description": "cmark-gfm is GitHub's extended version of the C reference implementation of CommonMark. Prior to versions 0.29.0.gfm.3 and 0.28.3.gfm.21, an integer overflow in cmark-gfm's table row parsing `table.c:row_from_string` may lead to heap memory corruption when parsing tables who's marker rows contain more than UINT16_MAX columns. The impact of this heap corruption ranges from Information Leak to Arbitrary Code Execution depending on how and where `cmark-gfm` is used. If `cmark-gfm` is used for rendering remote user controlled markdown, this vulnerability may lead to Remote Code Execution (RCE) in applications employing affected versions of the `cmark-gfm` library. This vulnerability has been patched in the following cmark-gfm versions 0.29.0.gfm.3 and 0.28.3.gfm.21. A workaround is available. The vulnerability exists in the table markdown extensions of cmark-gfm. Disabling the table extension will prevent this vulnerability from being triggered.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "cmark-gfm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "< 0.28.3.gfm.21"
+            },
+            {
+              "status": "affected",
+              "version": ">= 0.29.0.gfm.0, < 0.29.0.gfm.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cmark-gfm",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0451,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 7.5,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 5,
+        "reference_count": 16
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39209",
+      "description": "cmark-gfm is GitHub's fork of cmark, a CommonMark parsing and rendering library and program in C. In versions prior to 0.29.0.gfm.6 a polynomial time complexity issue in cmark-gfm's autolink extension may lead to unbounded resource exhaustion and subsequent denial of service. Users may verify the patch by running `python3 -c 'print(\"![l\"* 100000 + \"\\n\")' | ./cmark-gfm -e autolink`, which will resource exhaust on unpatched cmark-gfm but render correctly on patched cmark-gfm. This vulnerability has been patched in 0.29.0.gfm.6. Users are advised to upgrade. Users unable to upgrade should disable the use of the autolink extension.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "cmark-gfm",
+          "versions": [
+            {
+              "version": "< 0.29.0.gfm.6",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cmark-gfm",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02136,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-407"
+        ],
+        "cpe_count": 4,
+        "reference_count": 12
+      }
+    },
+    {
+      "cve_id": "CVE-2022-46255",
+      "description": "An improper limitation of a pathname to a restricted directory vulnerability was identified in GitHub Enterprise Server that enabled remote code execution. A check was added within Pages to ensure the working directory is clean before unpacking new content to prevent an arbitrary file overwrite bug. This vulnerability affected only version 3.7.0 of GitHub Enterprise Server and was fixed in version 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "version": "3.7",
+              "status": "affected",
+              "lessThan": "3.7.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01449,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-46256",
+      "description": "A path traversal vulnerability was identified in GitHub Enterprise Server that allowed remote code execution when building a GitHub Pages site. To exploit this vulnerability, an attacker would need permission to create and build a GitHub Pages site on the instance. This vulnerability was fixed in versions 3.3.17, 3.4.12, 3.5.9, 3.6.5 and 3.7.2. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "version": "3.3",
+              "status": "affected",
+              "lessThan": "3.3.17",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.4",
+              "status": "affected",
+              "lessThan": "3.4.12",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.5",
+              "status": "affected",
+              "lessThan": "3.5.9",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.6",
+              "status": "affected",
+              "lessThan": "3.6.5",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.7",
+              "status": "affected",
+              "lessThan": "3.7.2",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01938,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2023-23761",
+      "description": "An improper authentication vulnerability was identified in GitHub Enterprise Server that allowed an unauthorized actor to modify other users' secret gists by authenticating through an SSH certificate authority. To do so, a user had to know the secret gist's URL. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.9 and was fixed in versions 3.4.18, 3.5.15, 3.6.11, 3.7.8, and 3.8.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.4.18",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.4.17",
+              "status": "affected",
+              "version": "3.4.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.5.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.5.14",
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.6.11",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.6.10",
+              "status": "affected",
+              "version": "3.6.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.7.8",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.7.7",
+              "status": "affected",
+              "version": "3.7.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.8.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.1",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00462,
+      "nvd": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2023-46647",
+      "description": "Improper privilege management in all versions of GitHub Enterprise Server allows users with authorized access to the management console with an editor role to escalate their privileges by making requests to the endpoint used for bootstrapping the instance.\u00a0This vulnerability affected GitHub Enterprise Server version 3.8.0 and above and was fixed in version 3.8.12, 3.9.6, 3.10.3, and 3.11.0.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.8.11",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.6",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.5",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.3",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.3",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.11.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00638,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 3,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2023-46648",
+      "description": "An insufficient entropy vulnerability was identified in GitHub Enterprise Server (GHES) that allowed an attacker to brute force a user invitation to the GHES Management Console. To exploit this vulnerability, an attacker would need knowledge that a user invitation was pending. This vulnerability affected all versions of GitHub Enterprise Server since 3.8 and was fixed in version 3.8.12, 3.9.7, 3.10.4, and 3.11.1. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "lessThan": "3.8.12",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.9.7",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.10.4",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.11.1",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00744,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-331"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6746",
+      "description": "An insertion of sensitive information into log file vulnerability was identified in the log files for a GitHub Enterprise Server back-end service that could permit an `adversary in the middle attack` when combined with other phishing techniques. To exploit this, an attacker would need access to the log files for the GitHub Enterprise Server appliance, a backup archive created with GitHub Enterprise Server Backup Utilities, or a service which received streamed logs.\u00a0This vulnerability affected all versions of GitHub Enterprise Server since 3.7 and was fixed in version 3.7.19, 3.8.12, 3.9.7, 3.10.4, and 3.11.1.\u00a0",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.7.19",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.7.18",
+              "status": "affected",
+              "version": "3.7.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.8.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.8.11",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.6",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.4",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.3",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.0",
+              "status": "affected",
+              "version": "3.11",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0051,
+      "nvd": {
+        "cvss_v3_score": 5.7,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6802",
+      "description": "An insertion of sensitive information into the log file in the audit log in GitHub Enterprise Server was identified\u00a0that could allow an attacker to gain access to the management console. To exploit this, an attacker would need access to the log files for the GitHub Enterprise Server appliance, a backup archive created with GitHub Enterprise Server Backup Utilities, or a service which received streamed logs.\u00a0This vulnerability affected all versions of GitHub Enterprise Server since 3.8 and was fixed in version 3.8.12, 3.9.7, 3.10.4, and 3.11.1.\u00a0",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.8.11",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.6",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.4",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.3",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.0",
+              "status": "affected",
+              "version": "3.11",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00719,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6847",
+      "description": "An improper authentication vulnerability was identified in GitHub Enterprise Server that allowed a bypass of Private Mode by using a specially crafted API request. To exploit this vulnerability, an attacker would need network access to the Enterprise Server appliance configured in Private Mode. This vulnerability affected all versions of GitHub Enterprise Server since 3.9 and was fixed in version 3.9.7, 3.10.4, and 3.11.1. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "lessThan": "3.9.7",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.10.4",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.11.1",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00815,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 3,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2024-0200",
+      "description": "An unsafe reflection vulnerability was identified in GitHub Enterprise Server that could lead to reflection injection. This vulnerability\u00a0could lead to the execution of user-controlled methods and remote code execution. To\u00a0exploit this bug, an actor would need to be logged into an account on the GHES instance with the organization owner role.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.8.13, 3.9.8, 3.10.5, and 3.11.3. This vulnerability was reported via the GitHub Bug Bounty program.\n\n",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "lessThan": "3.8.13",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.9.8",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.10.5",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.11.3",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.71725,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-470"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-10001",
+      "description": "A Code Injection vulnerability was identified in GitHub Enterprise Server that allowed attackers to inject malicious code into the query selector via the identity property in the message handling function. This\u00a0enabled the exfiltration of sensitive data by manipulating the DOM, including authentication tokens.\u00a0To execute the attack, the victim must be logged into GitHub and interact with the attacker controlled malicious webpage containing the hidden iframe.\u00a0This vulnerability occurs due to an improper sequence of validation, where the origin check occurs after accepting the user-controlled\u00a0identity property.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to 3.11.16, 3.12.10, 3.13.5, 3.14.2, and 3.15.0. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:L/VA:N/SC:N/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.11.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.16",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.11",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.10",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.13.6",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.5",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.3",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.2",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.1",
+              "status": "affected",
+              "version": "3.15.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00385,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 4,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2024-10007",
+      "description": "A path collision and arbitrary code execution vulnerability was identified in GitHub Enterprise Server that allowed container escape to escalate to root via ghe-firejail path. Exploitation of this vulnerability requires Enterprise Administrator access to the GitHub Enterprise Server instance. This vulnerability affected all versions of GitHub Enterprise prior to 3.15 and was fixed in versions 3.14.3, 3.13.6, 3.12.11, and 3.11.17. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.11.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.16",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.11",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.10",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.13.6",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.5",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.3",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.2",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00844,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-59"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1354",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via the `syslog-ng`\u00a0configuration file. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.15",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.10",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.7",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.5",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0172,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1355",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via the actions-console\u00a0docker container while setting a service URL. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.15",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.10",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.7",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.5",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02363,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1359",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance when setting up an HTTP proxy. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the  GitHub Bug Bounty program https://bounty.github.com .\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.8.14",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.9",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.6",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.4",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02275,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1369",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance when setting the username and password for collectd\u00a0configurations. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the  GitHub Bug Bounty program https://bounty.github.com .\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.15",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.10",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.7",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.5",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02275,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1372",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance when configuring SAML settings. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the  GitHub Bug Bounty program https://bounty.github.com .\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.15",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.10",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.7",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.5",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02275,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1374",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via\u00a0nomad templates when configuring audit log forwarding. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the  GitHub Bug Bounty program https://bounty.github.com .\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.15",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.10",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.7",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.5",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02632,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1378",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance via\u00a0nomad templates when configuring SMTP options. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.11.5, 3.10.7, 3.9.10, and 3.8.15. This vulnerability was reported via the  GitHub Bug Bounty program https://bounty.github.com .\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.15",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.10",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.7",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.5",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02339,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-77"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1482",
+      "description": "An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed an attacker to create new branches in public repositories and run arbitrary GitHub Actions workflows with permissions from the GITHUB_TOKEN. To exploit this vulnerability, an attacker would need access to the Enterprise Server. This vulnerability affected all versions of GitHub Enterprise Server after 3.8 and prior to 3.12, and was fixed in versions 3.9.10, 3.10.7, 3.11.5. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.9.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.9",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.6",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.4",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00422,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 3,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2024-2443",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the appliance when configuring GeoJSON settings. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.13 and was fixed in versions 3.8.17, 3.9.12, 3.10.9, 3.11.7, and 3.12.1. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.8.17",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.9.12",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.9",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.10.9",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.11.7",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.12.1",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02086,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2024-2469",
+      "description": "An attacker with an Administrator role in GitHub Enterprise Server could gain SSH root access via remote code execution.\u00a0This vulnerability affected GitHub Enterprise Server version 3.8.0 and above and was fixed in version 3.8.17, 3.9.12, 3.10.9, 3.11.7 and 3.12.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.8.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.8.16",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.9.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.11",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.9",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.8",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.6",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.0",
+              "status": "affected",
+              "version": "3.12",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01616,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2024-3646",
+      "description": "A command injection vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin SSH access to the instance when configuring the chat integration. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.12.2, 3.11.8, 3.10.10, and 3.9.13. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "lessThan": "3.9.13",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.10.10",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.11.8",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.12.2",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01742,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-3684",
+      "description": "A server side request forgery vulnerability was identified in GitHub Enterprise Server that allowed an attacker with an editor role in the Management Console to gain admin access to the appliance when configuring the Artifacts & Logs and Migrations Storage. Exploitation of this vulnerability required access to the GitHub Enterprise Server instance and access to the Management Console with the editor role. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12 and was fixed in versions 3.12.2, 3.11.8, 3.10.10, and 3.9.13. This vulnerability was reported via the GitHub Bug Bounty program.\n",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "lessThan": "3.9.13",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.10.10",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.11.8",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.12.2",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01095,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-88"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4985",
+      "description": "An authentication bypass vulnerability was present in the GitHub Enterprise Server (GHES) when utilizing SAML single sign-on authentication with the optional encrypted assertions feature. This vulnerability allowed an attacker to forge a SAML response to provision and/or gain access to a user with site administrator privileges. Exploitation of this vulnerability would allow unauthorized access to the instance without requiring prior authentication. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.13.0 and was fixed in versions 3.9.15, 3.10.12, 3.11.10 and 3.12.4. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/R:U/V:C/RE:M/U:Red",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.9.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.14",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.11",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.9",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.4",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.3",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.13.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02573,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-303"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5746",
+      "description": "A Server-Side Request Forgery vulnerability was identified in GitHub Enterprise Server that allowed an attacker with the Site Administrator role to gain arbitrary code execution capability on the GitHub Enterprise Server instance. Exploitation required authenticated access to GitHub Enterprise Server as a user with the Site Administrator role.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to 3.13 and was fixed in versions 3.12.5, 3.11.11, 3.10.13, and 3.9.16. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "lessThanOrEqual": "3.9.15",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "3.10.12",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "3.11.10",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "3.12.4",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00861,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 4,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5795",
+      "description": "A Denial of Service vulnerability was identified in GitHub Enterprise Server that allowed an attacker to cause unbounded resource exhaustion by sending a large payload to the Git server. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.14 and was fixed in version 3.13.1, 3.12.6, 3.11.12, 3.10.14, and 3.9.17. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.9.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.9.16",
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.14",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.13",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.11",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.6",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.5",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.13.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.0",
+              "status": "affected",
+              "version": "3.13",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00557,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6800",
+      "description": "An XML signature wrapping vulnerability was present in GitHub Enterprise Server (GHES) when using SAML authentication with specific identity providers utilizing publicly exposed signed federation metadata XML. This vulnerability allowed an attacker with direct network access to GitHub Enterprise Server to forge a SAML response to provision and/or gain access to a user with site administrator privileges. Exploitation of this vulnerability would allow unauthorized access to the instance without requiring prior authentication. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.14 and was fixed in versions 3.13.3, 3.12.8, 3.11.14, and 3.10.16. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/R:U/V:C/RE:H/U:Red",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.13.3",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.2",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.8",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.7",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.14",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.13",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.10.16",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.15",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01527,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-8810",
+      "description": "A GitHub App installed in organizations could upgrade some permissions from read to write access without approval from an organization administrator. An attacker would require an account with administrator access to install a malicious GitHub App. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.14 and was fixed in versions 3.14.1, 3.13.4, 3.12.9, 3.11.15, and 3.10.17. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/S:P/AU:N/R:U/V:C/RE:L/U:Amber",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.10.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.10.16",
+              "status": "affected",
+              "version": "3.10.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.11.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.14",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.9",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.8",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.13.4",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.3",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.0",
+              "status": "affected",
+              "version": "3.14",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00439,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2024-9487",
+      "description": "An improper verification of cryptographic signature vulnerability was identified in GitHub Enterprise Server that allowed SAML SSO authentication to be bypassed resulting in unauthorized provisioning of users and access to the instance. Exploitation required the encrypted assertions feature to be enabled, and the attacker would require direct network access as well as a signed SAML response or metadata document. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.15 and was fixed in versions 3.11.16, 3.12.10, 3.13.5, and 3.14.2. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/R:U/V:C/RE:M/U:Red",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.11.16",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.11.15",
+              "status": "affected",
+              "version": "3.11.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.12.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.9",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.13.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.4",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.2",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.1",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.25607,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2025-11578",
+      "description": "A privilege escalation vulnerability was identified in GitHub Enterprise Server that allowed an authenticated Enterprise admin to gain root SSH access to the appliance by exploiting a symlink escape in pre-receive hook environments. By crafting a malicious repository and environment, an attacker could replace system binaries during hook cleanup and execute a payload that adds their own SSH key to the root user\u2019s authorized keys\u2014thereby granting themselves root SSH access to the server. To exploit this vulnerability, the attacker needed to have enterprise admin privileges. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.19, and was fixed in versions 3.14.20, 3.15.15, 3.16.11, 3.17.8, 3.18.2. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.14.20",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.19",
+              "status": "affected",
+              "version": "3.14",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.14",
+              "status": "affected",
+              "version": "3.15",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.11",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.10",
+              "status": "affected",
+              "version": "3.16",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.8",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.17.7",
+              "status": "affected",
+              "version": "3.17",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.18.2",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.18.1",
+              "status": "affected",
+              "version": "3.18",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00659,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-59"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-11892",
+      "description": "An improper neutralization of input vulnerability was identified in GitHub Enterprise Server that allows DOM-based cross-site scripting via Issues search label filter that could lead to privilege escalation and unauthorized workflow triggers. Successful exploitation requires an attacker to have access to the target GitHub Enterprise Server instance and to entice a user, while operating in sudo mode, to click on a crafted malicious link to perform actions that require elevated privileges.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to\u00a03.18.1, 3.17.7, 3.16.10, 3.15.14, 3.14.19.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.18.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "3.18.1",
+              "status": "affected",
+              "version": "3.18.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.17.6",
+              "status": "affected",
+              "version": "3.17.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.9",
+              "status": "affected",
+              "version": "3.16.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.14",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.13",
+              "status": "affected",
+              "version": "3.15.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.19",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.18",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00652,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-13744",
+      "description": "An Improper Neutralization of Input During Web Page Generation vulnerability was identified in GitHub Enterprise Server that allowed attacker controlled HTML to be rendered by the Filter component (search) across GitHub that could be used to exfiltrate sensitive information. An attacker would require permissions to create or modify the names of milestones, issues, pull requests, or similar entities that are rendered in the vulnerable filter/search components. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.20 and was fixed in versions 3.19.1, and 3.18.2, 3.17.8, 3.16.11, 3.15.15, and 3.14.20. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:L/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.14.20",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.19",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.15",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.14",
+              "status": "affected",
+              "version": "3.15.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.11",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.10",
+              "status": "affected",
+              "version": "3.16.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.8",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.17.7",
+              "status": "affected",
+              "version": "3.17.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.18.2",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.18.1",
+              "status": "affected",
+              "version": "3.18.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.19.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.19.0",
+              "status": "affected",
+              "version": "3.19",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00212,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 6,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2025-14046",
+      "description": "An improper neutralization of input vulnerability was identified in GitHub Enterprise Server that allowed user-supplied HTML to inject DOM elements with IDs that collided with server-initialized data islands. These collisions could overwrite or shadow critical application state objects used by certain Project views, leading to unintended server-side POST requests or other unauthorized backend interactions. Successful exploitation requires an attacker to have access to the target GitHub Enterprise Server instance and to entice a privileged user to view crafted malicious content that includes conflicting HTML elements. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.18.3, 3.17.9, 3.16.12, 3.15.16, and 3.14.21.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "3.19.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.18.3",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.18.2",
+              "status": "affected",
+              "version": "3.18.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.9",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.17.8",
+              "status": "affected",
+              "version": "3.17.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.11",
+              "status": "affected",
+              "version": "3.16.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.16",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.15",
+              "status": "affected",
+              "version": "3.15.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.21",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.20",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00386,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-23369",
+      "description": "An improper verification of cryptographic signature vulnerability was identified in GitHub Enterprise Server that allowed signature spoofing for unauthorized internal users.  Instances not utilizing SAML single sign-on or where the attacker is not already an existing user were not impacted. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.12.14, 3.13.10, 3.14.7, 3.15.2, and 3.16.0. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.12.14",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.12.13",
+              "status": "affected",
+              "version": "3.12.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.13.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.9",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.7",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.6",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.2",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.1",
+              "status": "affected",
+              "version": "3.15.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.16.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0161,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2025-24362",
+      "description": "In some circumstances, debug artifacts uploaded by the CodeQL Action after a failed code scanning workflow run may contain the environment variables from the workflow run, including any secrets that were exposed as environment variables to the workflow. Users with read access to the repository would be able to access this artifact, containing any secrets from the environment. This vulnerability is patched in CodeQL Action version 3.28.3 or later, or CodeQL CLI version 2.20.3 or later.\n\nFor some affected workflow runs, the exposed environment variables in the debug artifacts included a valid `GITHUB_TOKEN` for the workflow run, which has access to the repository in which the workflow ran, and all the permissions specified in the workflow or job. The `GITHUB_TOKEN` is valid until the job completes or 24 hours has elapsed, whichever comes first.\n\nEnvironment variables are exposed only from workflow runs that satisfy all of the following conditions:\n- Code scanning workflow configured to scan the Java/Kotlin languages.\n- Running in a repository containing Kotlin source code.\n- Running with debug artifacts enabled.\n- Using CodeQL Action versions <= 3.28.2, and CodeQL CLI versions >= 2.9.2 (May 2022) and <= 2.20.2.\n- The workflow run fails before the CodeQL database is finalized within the `github/codeql-action/analyze` step.\n- Running in any GitHub environment: GitHub.com, GitHub Enterprise Cloud, and GitHub Enterprise Server. Note: artifacts are only accessible to users within the same GitHub environment with access to the scanned repo.\n\nThe `GITHUB_TOKEN` exposed in this way would only have been valid for workflow runs that satisfy all of the following conditions, in addition to the conditions above:\n- Using CodeQL Action versions >= 3.26.11 (October 2024) and <= 3.28.2, or >= 2.26.11 and < 3.\n- Running in GitHub.com or GitHub Enterprise Cloud only (not valid on GitHub Enterprise Server).\n\nIn rare cases during advanced setup, logging of environment variables may also occur during database creation of Java, Swift, and C/C++. Please read the corresponding CodeQL CLI advisory GHSA-gqh3-9prg-j95m for more details.\n\nIn CodeQL CLI versions >= 2.9.2 and <= 2.20.2, the CodeQL Kotlin extractor logs all environment variables by default into an intermediate file during the process of creating a CodeQL database for Kotlin code. This is a part of the CodeQL CLI and is invoked by the CodeQL Action for analyzing Kotlin repositories. \n\nOn Actions, the environment variables logged include GITHUB_TOKEN, which grants permissions to the repository being scanned.\nThe intermediate file containing environment variables is deleted when finalizing the database, so it is not included in a successfully created database. It is, however, included in the debug artifact that is uploaded on a failed analysis run if the CodeQL Action was invoked in debug mode.\n\nTherefore, under these specific circumstances (incomplete database creation using the CodeQL Action in debug mode) an attacker with access to the debug artifact would gain unauthorized access to repository secrets from the environment, including both the `GITHUB_TOKEN` and any user-configured secrets made available via environment variables.\n\nThe impact of the `GITHUB_TOKEN` leaked in this environment is limited:\n- For workflows on GitHub.com and GitHub Enterprise Cloud using CodeQL Action versions >= 3.26.11 and <= 3.28.2, or >= 2.26.11 and < 3, which in turn use the `actions/artifacts v4` library, the debug artifact is uploaded before the workflow job completes. During this time the `GITHUB_TOKEN` is still valid, providing an opportunity for attackers to gain access to the repository.\n- For all other workflows, the debug artifact is uploaded after the workflow job completes, at which point the leaked `GITHUB_TOKEN` has been revoked and cannot be used to access the repository.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "codeql-action",
+          "versions": [
+            {
+              "version": ">= 3.26.11, <= 3.28.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.26.11, < 3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:codeql-action",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01245,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2025-3246",
+      "description": "An improper neutralization of input vulnerability was identified in GitHub Enterprise Server that allowed cross-site scripting in GitHub Markdown that used `$$..$$` math blocks.  Exploitation required access to the target GitHub Enterprise Server instance and privileged user interaction with the malicious elements. This vulnerability affected version 3.16.1 of GitHub Enterprise Server and was fixed in version 3.16.2. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:A/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.16.2",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.1",
+              "status": "affected",
+              "version": "3.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00297,
+      "nvd": {
+        "cvss_v3_score": 7.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-3509",
+      "description": "A Remote Code Execution (RCE) vulnerability was identified in GitHub Enterprise Server that allowed attackers to execute arbitrary code by exploiting the pre-receive hook functionality, potentially leading to privilege escalation and system compromise. The vulnerability involves using dynamically allocated ports that become temporarily available, such as during a hot patch upgrade. This means the vulnerability is only exploitable during specific operational conditions, which limits the attack window. Exploitation required either site administrator permissions to enable and configure pre-receive hooks or a user with permissions to modify repositories containing pre-receive hooks where this functionality was already enabled. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.18 and was fixed in versions 3.17.1, 3.16.4, 3.15.8, 3.14.13, 3.13.16. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:H/VA:L/SC:L/SI:H/SA:L/AU:N/R:U/V:C/RE:M/U:Amber",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.13.16",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.13.15",
+              "status": "affected",
+              "version": "3.13.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.14.13",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.12",
+              "status": "affected",
+              "version": "3.14.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.8",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.7",
+              "status": "affected",
+              "version": "3.15.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.4",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.3",
+              "status": "affected",
+              "version": "3.16.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "13.17.1",
+              "status": "affected",
+              "version": "13.17.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01292,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-8447",
+      "description": "An improper access control vulnerability was identified in GitHub Enterprise Server that allowed users with access to any repository to retrieve limited code content from another repository by creating a diff between the repositories. To exploit this vulnerability, an attacker needed to know the name of a private repository along with its branches, tags, or commit SHAs that they could use to trigger compare/diff functionality and retrieve limited code without proper authorization. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.18, and was fixed in versions 3.14.17, 3.15.12, 3.16.8 and 3.17.5. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.14.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.16",
+              "status": "affected",
+              "version": "3.14",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.12",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.11",
+              "status": "affected",
+              "version": "3.15",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.8",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.7",
+              "status": "affected",
+              "version": "3.16",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.5",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.17.4",
+              "status": "affected",
+              "version": "3.17",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0031,
+      "nvd": {
+        "cvss_v3_score": 3.1,
+        "cvss_v3_severity": "LOW",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-0573",
+      "description": "An URL redirection vulnerability was identified in GitHub Enterprise Server that allowed attacker-controlled redirects to leak sensitive authorization tokens. The repository_pages API insecurely followed HTTP redirects when fetching artifact URLs, preserving the authorization header containing a privileged JWT. An authenticated user could redirect these requests to an attacker-controlled domain, exfiltrate the Actions.ManageOrgs JWT, and leverage it for potential remote code execution. Attackers would require access to the target GitHub Enterprise Server instance and the ability to exploit a legacy redirect to an attacker-controlled domain. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.19 and was fixed in versions 3.19.2, 3.18.4, 3.17.10, 3.16.13, 3.15.17, and 3.14.22. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "3.14.22",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.14.21",
+              "status": "affected",
+              "version": "3.14",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.15.17",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.15.16",
+              "status": "affected",
+              "version": "3.15",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.16.13",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.16.12",
+              "status": "affected",
+              "version": "3.16",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.17.10",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.17.9",
+              "status": "affected",
+              "version": "3.17",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.18.4",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.18.3",
+              "status": "affected",
+              "version": "3.18",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "3.19.2",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThanOrEqual": "3.19.1",
+              "status": "affected",
+              "version": "3.19",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00656,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-601"
+        ],
+        "cpe_count": 6,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-15343",
+      "description": "A path traversal vulnerability was identified in GitHub Enterprise Server that allowed an attacker who had code execution inside the Dependabot updater container to write files to arbitrary repository paths, including GitHub Actions workflow files under .github/workflows/ as the path validation did not check the effective path which the attacker could control through the dependency file's directory and symlink target. If the repository used a pull_request_target workflow or had auto-merge enabled, an injected workflow could execute with access to the repository's GitHub Actions secrets. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.22 and was fixed in versions 3.21.3, 3.20.5, 3.19.9, 3.18.12, 3.17.18.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.17",
+              "changes": [
+                {
+                  "at": "3.17.18",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.11",
+              "changes": [
+                {
+                  "at": "3.18.12",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.8",
+              "changes": [
+                {
+                  "at": "3.19.9",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.4",
+              "changes": [
+                {
+                  "at": "3.20.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThanOrEqual": "3.21.2",
+              "changes": [
+                {
+                  "at": "3.21.3",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0057,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-17556",
+      "description": "A path traversal vulnerability was identified in GitHub Enterprise Server that allowed an unauthenticated attacker to delete arbitrary files and directories on the instance, including the entire user storage directory containing Git LFS objects, release assets, attachments, and avatars. The X-GitHub-Request-Id request header was used without sanitization as a filesystem path segment for the upload buffer directory, so a traversal value pointed the buffer at an arbitrary path and the deferred cleanup routine recursively removed the traversed target. Exploitation required only network reachability to the instance and no authentication, and it worked even when private mode was enabled. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.22 and was fixed in versions 3.21.4, 3.20.6, 3.19.10, 3.18.13 and 3.17.19. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.18",
+              "changes": [
+                {
+                  "at": "3.17.19",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.12",
+              "changes": [
+                {
+                  "at": "3.18.13",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.9",
+              "changes": [
+                {
+                  "at": "3.19.10",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.5",
+              "changes": [
+                {
+                  "at": "3.20.6",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThanOrEqual": "3.21.3",
+              "changes": [
+                {
+                  "at": "3.21.4",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00502,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-18428",
+      "description": "A SQL query validation bypass in the Flint extension query handler in the OpenSearch SQL plugin allows a remote authenticated actor with async query access to execute arbitrary code on Apache Spark workers by sending a crafted SQL query to the direct query endpoint.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "aws",
+          "product": "opensearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.13",
+              "lessThanOrEqual": "3.5",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "github",
+          "product": "opensearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.13",
+              "lessThanOrEqual": "3.6",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:opensearch",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00689,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-18730",
+      "description": "A server-side request forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an unauthenticated attacker to cause the Manage API to send crafted outbound requests to an attacker-controlled host. An unauthenticated endpoint parsed an attacker-supplied cluster configuration and issued gateway-to-agent requests whose HMAC authenticated only a timestamp, not the request path or body. An attacker positioned to intercept the outbound request could capture this token and replay it against privileged management agent endpoints. High-availability deployments were not affected due to a topology restriction. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.22 and was fixed in versions 3.17.19, 3.18.13, 3.19.10, 3.20.6, and 3.21.4. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.18",
+              "changes": [
+                {
+                  "at": "3.17.19",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.12",
+              "changes": [
+                {
+                  "at": "3.18.13",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.9",
+              "changes": [
+                {
+                  "at": "3.19.10",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.5",
+              "changes": [
+                {
+                  "at": "3.20.6",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThanOrEqual": "3.21.3",
+              "changes": [
+                {
+                  "at": "3.21.4",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00291,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-18952",
+      "description": "Missing input validation in the threat intelligence feed parser in the OpenSearch Security Analytics plugin might allow an authenticated remote user to perform server-side request forgery and read local files via a crafted URL parameter to the threat intel source configuration endpoint.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "aws",
+          "product": "opensearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.15.0",
+              "lessThan": "3.5.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "github",
+          "product": "opensearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.15.0",
+              "lessThan": "3.7.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:opensearch",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00378,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19118",
+      "description": "A time-of-check time-of-use race condition vulnerability was identified in GitHub Enterprise Server that allowed remote code execution. Exploitation required an authenticated user with write access to a repository and precise timing of concurrent upload requests. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.22 and was fixed in versions 3.17.20, 3.18.14, 3.19.11, 3.20.7, and 3.21.5. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.19",
+              "changes": [
+                {
+                  "at": "3.17.20",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.13",
+              "changes": [
+                {
+                  "at": "3.18.14",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.10",
+              "changes": [
+                {
+                  "at": "3.19.11",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.6",
+              "changes": [
+                {
+                  "at": "3.20.7",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThanOrEqual": "3.21.4",
+              "changes": [
+                {
+                  "at": "3.21.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.22.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00528,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19311",
+      "description": "Missing authorization in the Execute Monitor API in Amazon OpenSearch Alerting plugin might allow an authenticated remote user to read, modify, or delete arbitrary index data via a crafted inline monitor request with unintentional data source and input index parameters.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "aws",
+          "product": "opensearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.4",
+              "lessThanOrEqual": "3.5",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "github",
+          "product": "opensearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.4.0",
+              "lessThanOrEqual": "2.19.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThanOrEqual": "3.7.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:opensearch",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00415,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-475"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-1999",
+      "description": "An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed an attacker to merge their own pull request into a repository without having push access by exploiting an authorization bypass in the enable_auto_merge mutation for pull requests. This issue only affected repositories that allow forking as the attack relies on opening a pull request from an attacker-controlled fork into the target repository. Exploitation was only possible in specific scenarios. It required a clean pull request status and only applied to branches without branch protection rules enabled. This vulnerability affected GitHub Enterprise Server versions prior to 3.19.2, 3.18.5, and 3.17.11, and was fixed in versions 3.19.2, 3.18.5, and 3.17.11. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:L/SC:L/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThan": "3.17.11",
+              "changes": [
+                {
+                  "at": "3.17.11",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThan": "3.18.5",
+              "changes": [
+                {
+                  "at": "3.18.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThan": "3.19.2",
+              "changes": [
+                {
+                  "at": "3.19.2",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00329,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 3,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-29783",
+      "description": "The shell tool within GitHub Copilot CLI versions prior to and including 0.0.422 can allow arbitrary code execution through crafted bash parameter expansion patterns. An attacker who can influence the commands executed by the agent (e.g., via prompt injection through repository files, MCP server responses, or user instructions) can exploit bash parameter transformation operators to execute hidden commands, bypassing the safety assessment that classifies commands as \"read-only.\" This has been patched in version 0.0.423. \n\nThe vulnerability stems from how the CLI's shell safety assessment evaluates commands before execution. The safety layer parses and classifies shell commands as either read-only (safe) or write-capable (requires user approval). However, several bash parameter expansion features can embed executable code within arguments to otherwise read-only commands, causing them to appear safe while actually performing arbitrary operations.\n\nThe specific dangerous patterns are ${var@P}, ${var=value} / ${var:=value}, ${!var}, and nested $(cmd) or <(cmd) inside ${...} expansions. An attacker who can influence command text sent to the shell tool - for example, through prompt injection via malicious repository content (README files, code comments, issue bodies), compromised or malicious MCP server responses, or crafted user instructions containing obfuscated commands - could achieve arbitrary code execution on the user's workstation. This is possible even in permission modes that require user approval for write operations, since the commands can appear to use only read-only utilities to ultimately trigger write operations. Successful exploitation could lead to data exfiltration, file modification, or further system compromise.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "copilot-cli",
+          "versions": [
+            {
+              "version": "<= 0.0.422",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:copilot-cli",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00363,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-2266",
+      "description": "An improper neutralization of input vulnerability was identified in GitHub Enterprise Server that allowed DOM-based cross-site scripting via task list content. The task list content extraction logic did not properly re-encode browser-decoded text nodes before rendering, allowing user-supplied HTML to be injected into the page. An authenticated attacker could craft malicious task list items in issues or pull requests to execute arbitrary scripts in the context of another user's browser session. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.20 and was fixed in versions 3.18.6 and 3.19.3. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.5",
+              "changes": [
+                {
+                  "at": "3.18.6",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.2",
+              "changes": [
+                {
+                  "at": "3.19.3",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00176,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-3854",
+      "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fields through crafted push option values. This vulnerability was reported via the GitHub Bug Bounty program and has been fixed in GitHub Enterprise Server versions 3.14.25, 3.15.20, 3.16.16, 3.17.13, 3.18.7 and 3.19.4.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.14.0",
+              "lessThanOrEqual": "3.14.24",
+              "changes": [
+                {
+                  "at": "3.14.25",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.15.0",
+              "lessThanOrEqual": "3.15.19",
+              "changes": [
+                {
+                  "at": "3.15.20",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThanOrEqual": "3.16.15",
+              "changes": [
+                {
+                  "at": "3.16.16",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.12",
+              "changes": [
+                {
+                  "at": "3.17.13",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.6",
+              "changes": [
+                {
+                  "at": "3.18.7",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.3",
+              "changes": [
+                {
+                  "at": "3.19.4",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.40027,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-77"
+        ],
+        "cpe_count": 6,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-45033",
+      "description": "GitHub Copilot CLI brings AI-powered coding assistance directly to your command line. Prior to 1.0.43, a  security vulnerability has been identified in GitHub Copilot CLI where a malicious bare git repository nested inside a project directory can achieve arbitrary code execution when the agent performs git operations. By exploiting git's automatic bare repository discovery during directory traversal, an attacker can set core.fsmonitor or other executable config keys to run arbitrary commands without user awareness or approval. The vulnerability arises because git's core.fsmonitor config key (and 15+ similar keys such as core.hookspath, diff.external, merge.tool, etc.) can specify arbitrary shell commands that git will execute as part of normal operations like status, diff, or rev-parse. This vulnerability is fixed in 1.0.43.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "copilot-cli",
+          "versions": [
+            {
+              "version": "< 1.0.43",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:copilot-cli",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-696"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47427",
+      "description": "GitHub MCP Server is GitHub's official MCP Server. Prior to 1.1.0, the CompletionsHandler function in pkg/github/server.go accesses params.Ref without first checking whether it is nil, so a completion/complete request with a missing or empty ref field triggers a nil pointer dereference and a Go runtime panic; because the crash occurs before any authentication or token validation, any unauthenticated client able to send JSON-RPC messages can crash the server, resulting in a complete denial of service. This issue is fixed in version 1.1.0.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "github-mcp-server",
+          "versions": [
+            {
+              "version": "< 1.1.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:github-mcp-server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00442,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 1,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-4296",
+      "description": "An incorrect regular expression vulnerability was identified in GitHub Enterprise Server that allowed an attacker to bypass OAuth redirect URI validation. An attacker with knowledge of a first-party OAuth application's registered callback URL could craft a malicious authorization link that, when clicked by a victim, would redirect the OAuth authorization code to an attacker-controlled domain. This could allow the attacker to gain unauthorized access to the victim's account with the scopes granted to the OAuth application. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.21 and was fixed in versions 3.20.1, 3.19.5, 3.18.8, 3.17.14, 3.16.17, 3.15.21, 3.14.26. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.14.0",
+              "lessThanOrEqual": "3.14.25",
+              "changes": [
+                {
+                  "at": "3.14.26",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.15.0",
+              "lessThanOrEqual": "3.15.20",
+              "changes": [
+                {
+                  "at": "3.15.21",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThanOrEqual": "3.16.16",
+              "changes": [
+                {
+                  "at": "3.16.17",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.13",
+              "changes": [
+                {
+                  "at": "3.17.14",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.7",
+              "changes": [
+                {
+                  "at": "3.18.8",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.4",
+              "changes": [
+                {
+                  "at": "3.19.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThan": "3.20.1",
+              "changes": [
+                {
+                  "at": "3.20.1",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00426,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-185"
+        ],
+        "cpe_count": 7,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-5845",
+      "description": "An improper authorization vulnerability in scoped user-to-server (ghu_) token authorization in GitHub Enterprise Server allows an authenticated attacker to access private repositories outside the intended installation scope, which can include write operations, via an authorization fallback that treated a revoked/deleted installation as a global installation context, which could be chained with token revocation timing and SSH push attribution to obtain and reuse a victim-scoped token. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.21 and was fixed in versions 3.20.1, 3.19.5, 3.18.8, 3.17.14, 3.16.17, 3.15.21, and 3.14.26. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThan": "3.20.1",
+              "changes": [
+                {
+                  "at": "3.20.1",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.4",
+              "changes": [
+                {
+                  "at": "3.19.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.7",
+              "changes": [
+                {
+                  "at": "3.18.8",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.13",
+              "changes": [
+                {
+                  "at": "3.17.14",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThanOrEqual": "3.16.16",
+              "changes": [
+                {
+                  "at": "3.16.17",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.15.0",
+              "lessThanOrEqual": "3.15.20",
+              "changes": [
+                {
+                  "at": "3.15.21",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.14.0",
+              "lessThanOrEqual": "3.14.25",
+              "changes": [
+                {
+                  "at": "3.14.26",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0029,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 7,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-5921",
+      "description": "A server-side request forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an attacker to extract sensitive environment variables from the instance through a timing side-channel attack against the notebook rendering service. When private mode was disabled, the notebook viewer followed HTTP redirects without revalidating the destination host, enabling an unauthenticated SSRF to internal services. By chaining this with regex filter queries against an internal API and measuring response time differences, an attacker could infer secret values character by character. Exploitation required that private mode be disabled and that the attacker be able to chain the instance's open redirect endpoint through an external redirect to reach internal services.\u00a0This vulnerability affected all versions of GitHub Enterprise Server prior to 3.21 and was fixed in versions 3.14.26, 3.15.21, 3.16.17, 3.17.14, 3.18.8, 3.19.5, and 3.20.1. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/E:P",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.14.0",
+              "lessThan": "3.14.26",
+              "changes": [
+                {
+                  "at": "3.14.26",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.15.0",
+              "lessThan": "3.15.21",
+              "changes": [
+                {
+                  "at": "3.15.21",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThan": "3.16.17",
+              "changes": [
+                {
+                  "at": "3.16.17",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThan": "3.17.14",
+              "changes": [
+                {
+                  "at": "3.17.14",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThan": "3.18.8",
+              "changes": [
+                {
+                  "at": "3.18.8",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThan": "3.19.5",
+              "changes": [
+                {
+                  "at": "3.19.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThan": "3.20.1",
+              "changes": [
+                {
+                  "at": "3.20.1",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00424,
+      "nvd": {
+        "cvss_v3_score": 8.9,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 7,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76851",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed remote code execution on the instance. Insufficient network isolation allowed malicious pre-receive hook code to impersonate an internal service and redirect trusted internal requests to a privileged service, leading to elevated code execution. Exploitation required pre-receive hook networking to be enabled and either site administrator privileges or write access to a repository containing a configured pre-receive hook. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.22 and was fixed in versions 3.17.20, 3.18.14, 3.19.11, 3.20.7, and 3.21.5. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.19",
+              "changes": [
+                {
+                  "at": "3.17.20",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.13",
+              "changes": [
+                {
+                  "at": "3.18.14",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.10",
+              "changes": [
+                {
+                  "at": "3.19.11",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.6",
+              "changes": [
+                {
+                  "at": "3.20.7",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThanOrEqual": "3.21.4",
+              "changes": [
+                {
+                  "at": "3.21.5",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.22.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00509,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-8034",
+      "description": "A server-side request forgery (SSRF) vulnerability was identified in the GitHub Enterprise Server notebook viewer that allowed an attacker to access internal services by exploiting URL parser confusion between the validation layer and the HTTP request library. The hostname validation used a different URL parser than the request library, enabling a crafted URL to pass validation while directing the request to an unintended host. Exploitation required network access to the GitHub Enterprise Server instance. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.21 and was fixed in versions 3.16.18, 3.17.15, 3.18.9, 3.19.6, and 3.20.2. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThanOrEqual": "3.16.17",
+              "changes": [
+                {
+                  "at": "3.16.18",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.14",
+              "changes": [
+                {
+                  "at": "3.17.15",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.8",
+              "changes": [
+                {
+                  "at": "3.18.9",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.5",
+              "changes": [
+                {
+                  "at": "3.19.6",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.1",
+              "changes": [
+                {
+                  "at": "3.20.2",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.21.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0052,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-436",
+          "CWE-918"
+        ],
+        "cpe_count": 5,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-8606",
+      "description": "A Server-Side Request Forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an attacker to cause the server to issue HTTP requests to internal services via the security advisories package lookup feature. By directing requests to an internal management service and measuring response timing, an attacker could infer the values of sensitive environment variables, including signing secrets and private keys. Exploitation required GitHub Packages to be enabled; on instances not running in private mode the vulnerability was exploitable without authentication, otherwise any authenticated user could exploit it. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.21.1 and was fixed in versions 3.20.3, 3.19.7, 3.18.10, 3.17.16, and 3.16.19. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThan": "3.21.1",
+              "changes": [
+                {
+                  "at": "3.21.1",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.2",
+              "changes": [
+                {
+                  "at": "3.20.3",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.6",
+              "changes": [
+                {
+                  "at": "3.19.7",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.9",
+              "changes": [
+                {
+                  "at": "3.18.10",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.15",
+              "changes": [
+                {
+                  "at": "3.17.16",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThanOrEqual": "3.16.18",
+              "changes": [
+                {
+                  "at": "3.16.19",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00492,
+      "nvd": {
+        "cvss_v3_score": 5.9,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 6,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9312",
+      "description": "A server-side request forgery (SSRF) vulnerability was identified in GitHub Enterprise Server that allowed an unauthenticated attacker to send crafted requests to internal services by exploiting insufficient input validation in an upload endpoint. By injecting path traversal content into request parameters, an attacker could bypass the intended request flow and redirect internal API calls, potentially accessing internal services and exposing sensitive credentials. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.22 and was fixed in versions 3.17.17, 3.18.11, 3.19.8, 3.20.4, and 3.21.2. This vulnerability was reported via the GitHub Bug Bounty program.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "github",
+          "product": "enterprise server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.16.0",
+              "lessThanOrEqual": "3.16.19",
+              "changes": [
+                {
+                  "at": "3.16.20",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.17.0",
+              "lessThanOrEqual": "3.17.16",
+              "changes": [
+                {
+                  "at": "3.17.17",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.18.0",
+              "lessThanOrEqual": "3.18.10",
+              "changes": [
+                {
+                  "at": "3.18.11",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.19.0",
+              "lessThanOrEqual": "3.19.7",
+              "changes": [
+                {
+                  "at": "3.19.8",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.20.0",
+              "lessThanOrEqual": "3.20.3",
+              "changes": [
+                {
+                  "at": "3.20.4",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.21.0",
+              "lessThan": "3.21.1",
+              "changes": [
+                {
+                  "at": "3.21.1",
+                  "status": "unaffected"
+                }
+              ],
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise server",
+        "vendor:github"
+      ],
+      "active_threat": false,
+      "probability_score": 0.06552,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 6,
+        "reference_count": 5
+      }
+    }
+  ]
+}

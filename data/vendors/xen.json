@@ -1,0 +1,2048 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "xen",
+  "count": 50,
+  "items": [
+    {
+      "cve_id": "CVE-2022-23033",
+      "description": "arm: guest_physmap_remove_page not removing the p2m mappings The functions to remove one or more entries from a guest p2m pagetable on Arm (p2m_remove_mapping, guest_physmap_remove_page, and p2m_set_entry with mfn set to INVALID_MFN) do not actually clear the pagetable entry if the entry doesn't have the valid bit set. It is possible to have a valid pagetable entry without the valid bit set when a guest operating system uses set/way cache maintenance instructions. For instance, a guest issuing a set/way cache maintenance instruction, then calling the XENMEM_decrease_reservation hypercall to give back memory pages to Xen, might be able to retain access to those pages even after Xen started reusing them for other purposes.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-393"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 4.6,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-404"
+        ],
+        "cpe_count": 3,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2022-26357",
+      "description": "race in VT-d domain ID cleanup Xen domain IDs are up to 15 bits wide. VT-d hardware may allow for only less than 15 bits to hold a domain ID associating a physical device with a particular domain. Therefore internally Xen domain IDs are mapped to the smaller value range. The cleaning up of the housekeeping structures has a race, allowing for VT-d domain IDs to be leaked and flushes to be bypassed.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-399",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00258,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 6.2,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 5,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-26358",
+      "description": "IOMMU: RMRR (VT-d) and unity map (AMD-Vi) handling issues T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Certain PCI devices in a system might be assigned Reserved Memory Regions (specified via Reserved Memory Region Reporting, \"RMRR\") for Intel VT-d or Unity Mapping ranges for AMD-Vi. These are typically used for platform tasks such as legacy USB emulation. Since the precise purpose of these regions is unknown, once a device associated with such a region is active, the mappings of these regions need to remain continuouly accessible by the device. This requirement has been violated. Subsequent DMA or interrupts from the device may have unpredictable behaviour, ranging from IOMMU faults to memory corruption.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-400",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00358,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 4.4,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-26359",
+      "description": "IOMMU: RMRR (VT-d) and unity map (AMD-Vi) handling issues T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Certain PCI devices in a system might be assigned Reserved Memory Regions (specified via Reserved Memory Region Reporting, \"RMRR\") for Intel VT-d or Unity Mapping ranges for AMD-Vi. These are typically used for platform tasks such as legacy USB emulation. Since the precise purpose of these regions is unknown, once a device associated with such a region is active, the mappings of these regions need to remain continuouly accessible by the device. This requirement has been violated. Subsequent DMA or interrupts from the device may have unpredictable behaviour, ranging from IOMMU faults to memory corruption.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-400",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00355,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 4.4,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-26360",
+      "description": "IOMMU: RMRR (VT-d) and unity map (AMD-Vi) handling issues T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Certain PCI devices in a system might be assigned Reserved Memory Regions (specified via Reserved Memory Region Reporting, \"RMRR\") for Intel VT-d or Unity Mapping ranges for AMD-Vi. These are typically used for platform tasks such as legacy USB emulation. Since the precise purpose of these regions is unknown, once a device associated with such a region is active, the mappings of these regions need to remain continuouly accessible by the device. This requirement has been violated. Subsequent DMA or interrupts from the device may have unpredictable behaviour, ranging from IOMMU faults to memory corruption.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-400",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00358,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 4.4,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-26361",
+      "description": "IOMMU: RMRR (VT-d) and unity map (AMD-Vi) handling issues T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Certain PCI devices in a system might be assigned Reserved Memory Regions (specified via Reserved Memory Region Reporting, \"RMRR\") for Intel VT-d or Unity Mapping ranges for AMD-Vi. These are typically used for platform tasks such as legacy USB emulation. Since the precise purpose of these regions is unknown, once a device associated with such a region is active, the mappings of these regions need to remain continuouly accessible by the device. This requirement has been violated. Subsequent DMA or interrupts from the device may have unpredictable behaviour, ranging from IOMMU faults to memory corruption.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-400",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00358,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 4.4,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-33745",
+      "description": "insufficient TLB flush for x86 PV guests in shadow mode For migration as well as to work around kernels unaware of L1TF (see XSA-273), PV guests may be run in shadow paging mode. To address XSA-401, code was moved inside a function in Xen. This code movement missed a variable changing meaning / value between old and new code positions. The now wrong use of the variable did lead to a wrong TLB flush condition, omitting flushes where such are necessary.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-408",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42309",
+      "description": "Xenstore: Guests can crash xenstored Due to a bug in the fix of XSA-115 a malicious guest can cause xenstored to use a wrong pointer during node creation in an error path, resulting in a crash of xenstored or a memory corruption in xenstored causing further damage. Entering the error path can be controlled by the guest e.g. by exceeding the quota value of maximum nodes per domain.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-414",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00284,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-763"
+        ],
+        "cpe_count": 5,
+        "reference_count": 16
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42320",
+      "description": "Xenstore: Guests can get access to Xenstore nodes of deleted domains Access rights of Xenstore nodes are per domid. When a domain is gone, there might be Xenstore nodes left with access rights containing the domid of the removed domain. This is normally no problem, as those access right entries will be corrected when such a node is written later. There is a small time window when a new domain is created, where the access rights of a past domain with the same domid as the new one will be regarded to be still valid, leading to the new domain being able to get access to a node which was meant to be accessible by the removed domain. For this to happen another domain needs to write the node before the newly created domain is being introduced to Xenstore by dom0.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-417",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00282,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-459"
+        ],
+        "cpe_count": 5,
+        "reference_count": 16
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42327",
+      "description": "x86: unintended memory sharing between guests On Intel systems that support the \"virtualize APIC accesses\" feature, a guest can read and write the global shared xAPIC page by moving the local APIC out of xAPIC mode. Access to this shared page bypasses the expected isolation that should exist between two guests.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-412",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00232,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 3,
+        "reference_count": 12
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42330",
+      "description": "Guests can cause Xenstore crash via soft reset When a guest issues a \"Soft Reset\" (e.g. for performing a kexec) the libxl based Xen toolstack will normally perform a XS_RELEASE Xenstore operation. Due to a bug in xenstored this can result in a crash of xenstored. Any other use of XS_RELEASE will have the same impact.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-425",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01362,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 1,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42332",
+      "description": "x86 shadow plus log-dirty mode use-after-free In environments where host assisted address translation is necessary but Hardware Assisted Paging (HAP) is unavailable, Xen will run guests in so called shadow mode. Shadow mode maintains a pool of memory used for both shadow page tables as well as auxiliary data structures. To migrate or snapshot guests, Xen additionally runs them in so called log-dirty mode. The data structures needed by the log-dirty tracking are part of aformentioned auxiliary data. In order to keep error handling efforts within reasonable bounds, for operations which may require memory allocations shadow mode logic ensures up front that enough memory is available for the worst case requirements. Unfortunately, while page table memory is properly accounted for on the code path requiring the potential establishing of new shadows, demands by the log-dirty infrastructure were not taken into consideration. As a result, just established shadow page tables could be freed again immediately, while other code is still accessing them on the assumption that they would remain allocated.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-427",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42333",
+      "description": "x86/HVM pinned cache attributes mis-handling T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] To allow cachability control for HVM guests with passed through devices, an interface exists to explicitly override defaults which would otherwise be put in place. While not exposed to the affected guests themselves, the interface specifically exists for domains controlling such guests. This interface may therefore be used by not fully privileged entities, e.g. qemu running deprivileged in Dom0 or qemu running in a so called stub-domain. With this exposure it is an issue that - the number of the such controlled regions was unbounded (CVE-2022-42333), - installation and removal of such regions was not properly serialized (CVE-2022-42334).",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-428",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01189,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 4,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2022-42335",
+      "description": "x86 shadow paging arbitrary pointer dereference In environments where host assisted address translation is necessary but Hardware Assisted Paging (HAP) is unavailable, Xen will run guests in so called shadow mode. Due to too lax a check in one of the hypervisor routines used for shadow page handling it is possible for a guest with a PCI device passed through to cause the hypervisor to access an arbitrary pointer partially under guest control.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "version": "consult Xen advisory XSA-430",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00264,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 2,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34322",
+      "description": "For migration as well as to work around kernels unaware of L1TF (see\nXSA-273), PV guests may be run in shadow paging mode.  Since Xen itself\nneeds to be mapped when PV guests run, Xen and shadowed PV guests run\ndirectly the respective shadow page tables.  For 64-bit PV guests this\nmeans running on the shadow of the guest root page table.\n\nIn the course of dealing with shortage of memory in the shadow pool\nassociated with a domain, shadows of page tables may be torn down.  This\ntearing down may include the shadow root page table that the CPU in\nquestion is presently running on.  While a precaution exists to\nsupposedly prevent the tearing down of the underlying live page table,\nthe time window covered by that precaution isn't large enough.\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-438"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0023,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-273"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34325",
+      "description": "\n[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nlibfsimage contains parsing code for several filesystems, most of them based on\ngrub-legacy code.  libfsimage is used by pygrub to inspect guest disks.\n\nPygrub runs as the same user as the toolstack (root in a priviledged domain).\n\nAt least one issue has been reported to the Xen Security Team that allows an\nattacker to trigger a stack buffer overflow in libfsimage.  After further\nanalisys the Xen Security Team is no longer confident in the suitability of\nlibfsimage when run against guest controlled input with super user priviledges.\n\nIn order to not affect current deployments that rely on pygrub patches are\nprovided in the resolution section of the advisory that allow running pygrub in\ndeprivileged mode.\n\nCVE-2023-4949 refers to the original issue in the upstream grub\nproject (\"An attacker with local access to a system (either through a\ndisk or external drive) can present a modified XFS partition to\ngrub-legacy in such a way to exploit a memory corruption in grub\u2019s XFS\nfile system implementation.\")  CVE-2023-34325 refers specifically to\nthe vulnerabilities in Xen's copy of libfsimage, which is decended\nfrom a very old version of grub.\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-443"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34326",
+      "description": "The caching invalidation guidelines from the AMD-Vi specification (48882\u2014Rev\n3.07-PUB\u2014Oct 2022) is incorrect on some hardware, as devices will malfunction\n(see stale DMA mappings) if some fields of the DTE are updated but the IOMMU\nTLB is not flushed.\n\nSuch stale DMA mappings can point to memory ranges not owned by the guest, thus\nallowing access to unindented memory regions.\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-442"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00287,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-672"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-31142",
+      "description": "Because of a logical error in XSA-407 (Branch Type Confusion), the\nmitigation is not applied properly when it is intended to be used.\nXSA-434 (Speculative Return Stack Overflow) uses the same\ninfrastructure, so is equally impacted.\n\nFor more details, see:\n  https://xenbits.xen.org/xsa/advisory-407.html\n  https://xenbits.xen.org/xsa/advisory-434.html\n",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-455"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.17444,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 6,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2024-31143",
+      "description": "An optional feature of PCI MSI called \"Multiple Message\" allows a\ndevice to use multiple consecutive interrupt vectors.  Unlike for MSI-X,\nthe setting up of these consecutive vectors needs to happen all in one\ngo.  In this handling an error path could be taken in different\nsituations, with or without a particular lock held.  This error path\nwrongly releases the lock even when it is not currently held.\n",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-458"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00507,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-832"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-31145",
+      "description": "Certain PCI devices in a system might be assigned Reserved Memory\nRegions (specified via Reserved Memory Region Reporting, \"RMRR\") for\nIntel VT-d or Unity Mapping ranges for AMD-Vi.  These are typically used\nfor platform tasks such as legacy USB emulation.\n\nSince the precise purpose of these regions is unknown, once a device\nassociated with such a region is active, the mappings of these regions\nneed to remain continuouly accessible by the device.  In the logic\nestablishing these mappings, error handling was flawed, resulting in\nsuch mappings to potentially remain in place when they should have been\nremoved again.  Respective guests would then gain access to memory\nregions which they aren't supposed to have access to.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-460"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00234,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-31146",
+      "description": "When multiple devices share resources and one of them is to be passed\nthrough to a guest, security of the entire system and of respective\nguests individually cannot really be guaranteed without knowing\ninternals of any of the involved guests.  Therefore such a configuration\ncannot really be security-supported, yet making that explicit was so far\nmissing.\n\nResources the sharing of which is known to be problematic include, but\nare not limited to\n- - PCI Base Address Registers (BARs) of multiple devices mapping to the\n  same page (4k on x86),\n- - INTx lines.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-461"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00235,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-45817",
+      "description": "In x86's APIC (Advanced Programmable Interrupt Controller) architecture,\nerror conditions are reported in a status register.  Furthermore, the OS\ncan opt to receive an interrupt when a new error occurs.\n\nIt is possible to configure the error interrupt with an illegal vector,\nwhich generates an error when an error interrupt is raised.\n\nThis case causes Xen to recurse through vlapic_error().  The recursion\nitself is bounded; errors accumulate in the the status register and only\ngenerate an interrupt when a new status bit becomes set.\n\nHowever, the lock protecting this state in Xen will try to be taken\nrecursively, and deadlock.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-462"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00544,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-209"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-1713",
+      "description": "When setting up interrupt remapping for legacy PCI(-X) devices,\nincluding PCI(-X) bridges, a lookup of the upstream bridge is required.\nThis lookup, itself involving acquiring of a lock, is done in a context\nwhere acquiring that lock is unsafe.  This can lead to a deadlock.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-467"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00723,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-833"
+        ],
+        "cpe_count": 1,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-27462",
+      "description": "[This CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.]\n\n\nThe Windows PV drivers expose various facilities to userspace.  Several\nof these have no security descriptor, and are therefore fully accessible\nto unprivileged users.  These are:\n\n  1. XenCons,  CVE-2025-27462\n  2. XenIface, CVE-2025-27463\n  3. XenBus,   CVE-2025-27464",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "windows pv drivers",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "all"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:windows pv drivers",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00158,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-27463",
+      "description": "[This CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The Windows PV drivers expose various facilities to userspace. Several of these have no security descriptor, and are therefore fully accessible to unprivileged users. These are: 1. XenCons, CVE-2025-27462 2. XenIface, CVE-2025-27463 3. XenBus, CVE-2025-27464",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "windows pv drivers",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "all"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:windows pv drivers",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00158,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-27464",
+      "description": "[This CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] The Windows PV drivers expose various facilities to userspace. Several of these have no security descriptor, and are therefore fully accessible to unprivileged users. These are: 1. XenCons, CVE-2025-27462 2. XenIface, CVE-2025-27463 3. XenBus, CVE-2025-27464",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "windows pv drivers",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "all"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:windows pv drivers",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00158,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-27466",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nThere are multiple issues related to the handling and accessing of guest\nmemory pages in the viridian code:\n\n 1. A NULL pointer dereference in the updating of the reference TSC area.\n    This is CVE-2025-27466.\n\n 2. A NULL pointer dereference by assuming the SIM page is mapped when\n    a synthetic timer message has to be delivered.  This is\n    CVE-2025-58142.\n\n 3. A race in the mapping of the reference TSC page, where a guest can\n    get Xen to free a page while still present in the guest physical to\n    machine (p2m) page tables.  This is CVE-2025-58143.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-472"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00467,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-395"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58142",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nThere are multiple issues related to the handling and accessing of guest\nmemory pages in the viridian code:\n\n 1. A NULL pointer dereference in the updating of the reference TSC area.\n    This is CVE-2025-27466.\n\n 2. A NULL pointer dereference by assuming the SIM page is mapped when\n    a synthetic timer message has to be delivered.  This is\n    CVE-2025-58142.\n\n 3. A race in the mapping of the reference TSC page, where a guest can\n    get Xen to free a page while still present in the guest physical to\n    machine (p2m) page tables.  This is CVE-2025-58143.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-472"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00467,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-395"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58143",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nThere are multiple issues related to the handling and accessing of guest\nmemory pages in the viridian code:\n\n 1. A NULL pointer dereference in the updating of the reference TSC area.\n    This is CVE-2025-27466.\n\n 2. A NULL pointer dereference by assuming the SIM page is mapped when\n    a synthetic timer message has to be delivered.  This is\n    CVE-2025-58142.\n\n 3. A race in the mapping of the reference TSC page, where a guest can\n    get Xen to free a page while still present in the guest physical to\n    machine (p2m) page tables.  This is CVE-2025-58143.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-472"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00366,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-366"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58144",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nThere are two issues related to the mapping of pages belonging to other\ndomains: For one, an assertion is wrong there, where the case actually\nneeds handling.  A NULL pointer de-reference could result on a release\nbuild.  This is CVE-2025-58144.\n\nAnd then the P2M lock isn't held until a page reference was actually\nobtained (or the attempt to do so has failed).  Otherwise the page can\nnot only change type, but even ownership in between, thus allowing\ndomain boundaries to be violated.  This is CVE-2025-58145.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-473"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0045,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58145",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nThere are two issues related to the mapping of pages belonging to other\ndomains: For one, an assertion is wrong there, where the case actually\nneeds handling.  A NULL pointer de-reference could result on a release\nbuild.  This is CVE-2025-58144.\n\nAnd then the P2M lock isn't held until a page reference was actually\nobtained (or the attempt to do so has failed).  Otherwise the page can\nnot only change type, but even ownership in between, thus allowing\ndomain boundaries to be violated.  This is CVE-2025-58145.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-473"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58147",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nSome Viridian hypercalls can specify a mask of vCPU IDs as an input, in\none of three formats.  Xen has boundary checking bugs with all three\nformats, which can cause out-of-bounds reads and writes while processing\nthe inputs.\n\n * CVE-2025-58147.  Hypercalls using the HV_VP_SET Sparse format can\n   cause vpmask_set() to write out of bounds when converting the bitmap\n   to Xen's format.\n\n * CVE-2025-58148.  Hypercalls using any input format can cause\n   send_ipi() to read d->vcpu[] out-of-bounds, and operate on a wild\n   vCPU pointer.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-475"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00355,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58148",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nSome Viridian hypercalls can specify a mask of vCPU IDs as an input, in\none of three formats.  Xen has boundary checking bugs with all three\nformats, which can cause out-of-bounds reads and writes while processing\nthe inputs.\n\n * CVE-2025-58147.  Hypercalls using the HV_VP_SET Sparse format can\n   cause vpmask_set() to write out of bounds when converting the bitmap\n   to Xen's format.\n\n * CVE-2025-58148.  Hypercalls using any input format can cause\n   send_ipi() to read d->vcpu[] out-of-bounds, and operate on a wild\n   vCPU pointer.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-475"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00355,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58149",
+      "description": "When passing through PCI devices, the detach logic in libxl won't remove\naccess permissions to any 64bit memory BARs the device might have.  As a\nresult a domain can still have access any 64bit memory BAR when such\ndevice is no longer assigned to the domain.\n\nFor PV domains the permission leak allows the domain itself to map the memory\nin the page-tables.  For HVM it would require a compromised device model or\nstubdomain to map the leaked memory into the HVM domain p2m.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-476"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00405,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-672"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-58150",
+      "description": "Shadow mode tracing code uses a set of per-CPU variables to avoid\ncumbersome parameter passing.  Some of these variables are written to\nwith guest controlled data, of guest controllable size.  That size can\nbe larger than the variable, and bounding of the writes was missing.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-477"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00133,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-23554",
+      "description": "The Intel EPT paging code uses an optimization to defer flushing of any cached\nEPT state until the p2m lock is dropped, so that multiple modifications done\nunder the same locked region only issue a single flush.\n\nFreeing of paging structures however is not deferred until the flushing is\ndone, and can result in freed pages transiently being present in cached state.\nSuch stale entries can point to memory ranges not owned by the guest, thus\nallowing access to unintended memory regions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-480"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-23555",
+      "description": "Any guest issuing a Xenstore command accessing a node using the\n(illegal) node path \"/local/domain/\", will crash xenstored due to a\nclobbered error indicator in xenstored when verifying the node path.\n\nNote that the crash is forced via a failing assert() statement in\nxenstored. In case xenstored is being built with NDEBUG #defined,\nan unprivileged guest trying to access the node path \"/local/domain/\"\nwill result in it no longer being serviced by xenstored, other guests\n(including dom0) will still be serviced, but xenstored will use up\nall cpu time it can get.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-481"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00181,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-617"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-23558",
+      "description": "The adjustments made for XSA-379 as well as those subsequently becoming\nXSA-387 still left a race window, when a HVM or PVH guest does a grant\ntable version change from v2 to v1 in parallel with mapping the status\npage(s) via XENMEM_add_to_physmap.  Some of the status pages may then be\nfreed while mappings of them would still be inserted into the guest's\nsecondary (P2M) page tables.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-486"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00117,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42487",
+      "description": "HVM guest I/O port accesses are subject to either emulation or at least\ntranslation.  Translations are managed by the device model (via\nXEN_DOMCTL_ioport_mapping), and hence the linked list used may changed\nat any time.  Traversal of those lists (while handling guest I/O port\naccesses) therefore needs synchronizing with updates, which was missing\nso far.",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-491"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00095,
+      "nvd": {
+        "cvss_v3_score": 7.9,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42488",
+      "description": "Some shadow paging errors paths will switch the page-tables without\nupdating the currently running vCPU reference.  This causes a mismatch\nbetween the loaded page-tables and the mapcache metadata which can lead\nto corruption of the mapcache.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-494"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00353,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42492",
+      "description": "Xenstore, to have an up-to-date picture of the entire system, wants to\nknow of domains appearing and disappearing.  To make this more robust, a\nnew XEN_DOMCTL_get_domain_state was introduced.  The management of the\nbitmap underlying that operation is tied into the binding of the\nVIRQ_DOM_EXC virtual IRQ.  Unfortunately an error path there would tear\ndown the bitmap even in cases when it wasn't set up.  Unprivileged domains\ncan trigger that error path.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-496"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00459,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-459"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42493",
+      "description": "Addressing certain issues, in particular related to operations which may\ntake excessively long and therefore would need preemption, has turned out\noverly costly.  Since alternatives (HVM/PVH: HAP, PV: shim) are commonly\navailable, the decision was to deprecate the functionality, while still\nretaining it for people to use at their own (security) risk.  Memory-wise\nsmall enough guests may still be okay to run.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-495"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0045,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62426",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nTo manage the system, sysctl and platform operations are used by the\ncontrol domain or a possible Xenstore domain.  Some of these operations\nmay not be executed in parallel, so a system-wide lock each is used.\nThe way those locks are acquired is, however, not providing any fairness.\nFurthermore, with XSM/Flask in use, the lock acquire will, for some\noperations, occur ahead of any permission checking.\n\nThe sysctl issue is CVE-2026-62426.\n\nThe platform-op issue is CVE-2026-62427.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-499"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-412",
+          "CWE-667"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62427",
+      "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nTo manage the system, sysctl and platform operations are used by the\ncontrol domain or a possible Xenstore domain.  Some of these operations\nmay not be executed in parallel, so a system-wide lock each is used.\nThe way those locks are acquired is, however, not providing any fairness.\nFurthermore, with XSM/Flask in use, the lock acquire will, for some\noperations, occur ahead of any permission checking.\n\nThe sysctl issue is CVE-2026-62426.\n\nThe platform-op issue is CVE-2026-62427.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-499"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0024,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284",
+          "CWE-305"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62428",
+      "description": "When grant-copy operations are processed, the respective grant may or may\nnot already be in use by another operation (a mapping or another copy).\nFor all copy operations the referenced guest frame is looked up.  When\nanother operation is already active for the grant (the grant is \"pinned\"),\nwhat is being supplied back to actually carry out permission checks and\ncopy operation may not be consistent: The permission check may be carried\nout on a page different from the one involved in the copy.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-500"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00115,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62430",
+      "description": "Accesses to the CMOS memory contents are done using an indirect IO port\npair.  Therefore Xen needs to cache the guest chosen index, and one of\nthe usages of the index didn't take the necessary locking to avoid\nconcurrent changes.  As a result, a guest could change the index after\nit being checked, causing a subsequent out-of-bound read access to the\ncontents of an array.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-503"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00243,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62431",
+      "description": "The logic to handle periodic Viridian STIMERs performs a division with an\nunchecked user-controlled divisor value, that can be set to zero to cause a #DE\nfault.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-504"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00361,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-369"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62432",
+      "description": "The EVTCHNOP_expand_array hypercall checks for whether FIFO event\nchannels are enabled, but without holding the correct lock.  It can race\nwith EVTCHNOP_reset, resulting in dereferencing a NULL pointer.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-505"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00245,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-62433",
+      "description": "Parts of the DM_OP handling code assumes the caller has provided the\nrequired number of buffers for the given operation without any checking\nbeing done.  As a result, certain operations might access stack\nrubble as structures are possibly uninitialized.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-506"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00253,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-665"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-79602",
+      "description": "A guest with a PCI device assigned that has at least a BAR on the IO port\nspace can trigger a BUG() in Xen.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "xen",
+          "product": "xen",
+          "versions": [
+            {
+              "status": "unknown",
+              "version": "consult Xen advisory XSA-510"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xen",
+        "vendor:xen"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0013,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,2990 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "elastic",
+  "count": 61,
+  "items": [
+    {
+      "cve_id": "CVE-2022-23712",
+      "description": "A Denial of Service flaw was discovered in Elasticsearch. Using this vulnerability, an unauthenticated attacker could forcibly shut down an Elasticsearch node with a specifically formatted network request.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "versions 8.0.0 through 8.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.07374,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 5.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-754"
+        ],
+        "cpe_count": 1,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23714",
+      "description": "A local privilege escalation (LPE) issue was discovered in the ransomware canaries features of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "endpoint security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "Versions 7.13.0 through 7.17.4 and 8.0.0 through 8.2.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:endpoint security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00231,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 7.2,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-264"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38774",
+      "description": "An issue was discovered in the quarantine feature of Elastic Endpoint Security and Elastic Endgame for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic endpoint security and elastic endgame security",
+          "versions": [
+            {
+              "version": "Elastic Security versions up to 7.17.6 and 8.3.3 and Elastic Endgame versions up to 3.62.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic endpoint security and elastic endgame security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00243,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38775",
+      "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic endpoint security",
+          "versions": [
+            {
+              "version": "Version 8.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic endpoint security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38777",
+      "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic endpoint security",
+          "versions": [
+            {
+              "version": "Elastic Security versions up to 7.17.8 and 8.4.3 and Elastic Endgame versions up to 3.62.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic endpoint security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-31414",
+      "description": "Kibana versions 8.0.0 through 8.7.0 contain an arbitrary code execution flaw. An attacker with write access to Kibana yaml or env configuration could add a specific payload that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "version": "versions 8.0.0 through 8.7.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00603,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-31415",
+      "description": "Kibana version 8.7.0 contains an arbitrary code execution flaw. An attacker with All privileges to the Uptime/Synthetics feature could send a request that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "version": "version 8.7.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00957,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-31418",
+      "description": "An issue has been identified with how Elasticsearch handled incoming requests on the HTTP layer. An unauthenticated user could force an Elasticsearch node to exit with an OutOfMemory error by sending a moderate number of malformed HTTP requests. The issue was identified by Elastic Engineering and we have no indication that the issue is known or that it is being exploited in the wild.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.17.12"
+            },
+            {
+              "lessThan": "8.8.2",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.6.0",
+              "status": "affected",
+              "version": "2.13.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01638,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 4,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2023-31422",
+      "description": "An issue was discovered by Elastic whereby sensitive information is recorded in Kibana logs in the event of an error. The issue impacts only Kibana version 8.10.0 when logging in the JSON layout or when the pattern layout is configured to log the %meta pattern. Elastic has released Kibana 8.10.1 which resolves this issue. The error object recorded in the log contains request information, which can include sensitive data, such as authentication credentials, cookies, authorization headers, query params, request paths, and other metadata. Some examples of sensitive data which can be included in the logs are account credentials for kibana_system, kibana-metricbeat, or Kibana end-users.",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.10.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00656,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-46667",
+      "description": "An issue was discovered in Fleet Server >= v8.10.0 and < v8.10.3 where Agent enrolment tokens are being inserted into the Fleet Server\u2019s log file in plain text. These enrolment tokens could allow someone to enrol an agent into an agent policy, and potentially use that to retrieve other secrets in the policy including for Elasticsearch and third-party services. Alternatively a threat actor could potentially enrol agents to the clusters and send arbitrary events to Elasticsearch.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "fleet server",
+          "versions": [
+            {
+              "lessThan": "8.10.3",
+              "status": "affected",
+              "version": "8.10.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fleet server",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0055,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-46671",
+      "description": "An issue was discovered by Elastic whereby sensitive information may be recorded in Kibana logs in the event of an error. Elastic has released Kibana 8.11.1 which resolves this issue. The error message recorded in the log may contain account credentials for the kibana_system user, API Keys, and credentials of Kibana end-users. The issue occurs infrequently, only if an error is returned from an Elasticsearch cluster, in cases where there is user interaction and an unhealthy cluster (for example, when returning circuit breaker or no shard exceptions).\n",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "8.11.1",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00656,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-46672",
+      "description": "An issue was identified by Elastic whereby sensitive information is recorded in Logstash logs under specific circumstances.\n\nThe prerequisites for the manifestation of this issue are:\n\n  *  Logstash  is configured to log in JSON format https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html , which is not the default logging format.\n\n\n  *  Sensitive data is stored in the Logstash keystore and referenced as a variable in Logstash configuration.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "logstash",
+          "versions": [
+            {
+              "lessThan": "8.11.1",
+              "status": "affected",
+              "version": "8.10.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:logstash",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00338,
+      "nvd": {
+        "cvss_v3_score": 5.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 2,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2023-46675",
+      "description": "An issue was discovered by Elastic whereby sensitive information may be recorded in Kibana logs in the event of an error or in the event where debug level logging is enabled in Kibana. Elastic has released Kibana 8.11.2 which resolves this issue. The messages recorded in the log may contain Account credentials for the kibana_system user, API Keys, and credentials of Kibana end-users, Elastic Security package policy objects which can contain private keys, bearer token, and sessions of 3rd-party integrations and finally Authorization headers, client secrets, local file paths, and stack traces. The issue may occur in any Kibana instance running an affected version that could potentially receive an unexpected error when communicating to Elasticsearch causing it to include sensitive data into Kibana error logs. It could also occur under specific circumstances when debug level logging is enabled in Kibana. Note: It was found that the fix for ESA-2023-25 in Kibana 8.11.1 for a similar issue was incomplete.\n",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "7.17.16",
+              "status": "affected",
+              "version": "7.13.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.11.2",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00688,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12556",
+      "description": "Prototype Pollution in Kibana can lead to code injection via unrestricted file upload combined with path traversal.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "8.17.1",
+              "status": "affected",
+              "version": "8.16.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00544,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1321"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-14047",
+      "description": "A local vulnerability in the Winlogbeat Windows installer caused runtime files to be placed in a directory writable by unprivileged users. A low-privileged attacker with existing access to the system could pre-position malicious filesystem links, causing a subsequent elevated Winlogbeat operation to write to or delete arbitrary files. Successful exploitation could result in a denial of service.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic security",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "7.6.0",
+              "lessThanOrEqual": "8.12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00107,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-59"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-37282",
+      "description": "It was identified that under certain specific preconditions, an API key that was originally created with a specific privileges could be subsequently used to create new API keys that have elevated privileges.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic cloud enterprise",
+          "versions": [
+            {
+              "lessThan": "3.7.2",
+              "status": "affected",
+              "version": "3.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic cloud enterprise",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00603,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-285"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-37285",
+      "description": "A deserialization issue in Kibana can lead to arbitrary code execution when Kibana attempts to parse a YAML document containing a crafted payload. A successful attack requires a malicious user to have a combination of both specific  Elasticsearch indices privileges https://www.elastic.co/guide/en/elasticsearch/reference/current/defining-roles.html#roles-indices-priv \u00a0and  Kibana privileges https://www.elastic.co/guide/en/fleet/current/fleet-roles-and-privileges.html \u00a0assigned to them.\n\n\n\nThe following Elasticsearch indices permissions are required\n\n  *  write\u00a0privilege on the system indices .kibana_ingest*\n  *  The allow_restricted_indices\u00a0flag is set to true\n\n\nAny of the following Kibana privileges are additionally required\n\n  *  Under Fleet\u00a0the All\u00a0privilege is granted\n  *  Under Integration\u00a0the Read\u00a0or All\u00a0privilege is granted\n  *  Access to the fleet-setup\u00a0privilege is gained through the Fleet Server\u2019s service account token",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.15.0",
+              "status": "affected",
+              "version": "8.10.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01249,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-37287",
+      "description": "A flaw allowing arbitrary code execution was discovered in Kibana. An attacker with access to ML and Alerting connector features, as well as write access to internal ML indices can trigger a prototype pollution vulnerability, ultimately leading to arbitrary code execution.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "7.17.23, 8.14.2",
+              "status": "affected",
+              "version": "7.7.0, 8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01648,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-1321"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-37288",
+      "description": "A deserialization issue in Kibana can lead to arbitrary code execution when Kibana attempts to parse a YAML document containing a crafted payload. This issue only affects users that use  Elastic Security\u2019s built-in AI tools https://www.elastic.co/guide/en/security/current/ai-for-security.html \u00a0and have configured an  Amazon Bedrock connector https://www.elastic.co/guide/en/security/current/assistant-connect-to-bedrock.html .",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.15.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01013,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-43706",
+      "description": "Improper authorization in Kibana can lead to privilege abuse via a direct HTTP request to a Synthetic monitor endpoint.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "8.12.1",
+              "status": "affected",
+              "version": "8.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00441,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-285"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-43707",
+      "description": "An issue was identified in Kibana where a user without access to Fleet can view Elastic Agent policies that could contain sensitive information. The nature of the sensitive information depends on the integrations enabled for the Elastic Agent and their respective versions.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "8.15.0",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00425,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-52975",
+      "description": "An issue was identified in Fleet Server where Fleet policies that could contain sensitive information were logged on INFO and ERROR log levels. The nature of the sensitive information largely depends on the integrations enabled.",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "fleet server",
+          "versions": [
+            {
+              "lessThan": "8.15.0",
+              "status": "affected",
+              "version": "8.13.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fleet server",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00274,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-0712",
+      "description": "An uncontrolled search path element vulnerability can lead to local privilege Escalation (LPE) via Insecure Directory Permissions. The vulnerability arises from improper handling of directory permissions. An attacker with local access may exploit this flaw to move and delete arbitrary files, potentially gaining SYSTEM privileges.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "apm server",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.16.2",
+              "status": "affected",
+              "version": "8.16",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.17.0",
+              "status": "affected",
+              "version": "8.17",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apm server",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00135,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25009",
+      "description": "Improper Neutralization of Input During Web Page Generation in Kibana can lead to Stored XSS via case file upload.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.17.29",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.18.7",
+              "status": "affected",
+              "version": "8.14.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.4",
+              "status": "affected",
+              "version": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.0.7",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.1.4",
+              "status": "affected",
+              "version": "9.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00239,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25011",
+      "description": "An uncontrolled search path element vulnerability can lead to local privilege Escalation (LPE) via Insecure Directory Permissions. The vulnerability arises from improper handling of directory permissions. An attacker with local access may exploit this flaw to move and delete arbitrary files, potentially gaining SYSTEM privileges.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "beats",
+          "versions": [
+            {
+              "lessThan": "9.1.0",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:beats",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00141,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25014",
+      "description": "A Prototype pollution vulnerability in Kibana leads to arbitrary code execution via crafted HTTP requests to machine learning and reporting endpoints.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "8.17.6",
+              "status": "affected",
+              "version": "8.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.18.1",
+              "status": "affected",
+              "version": "8.18.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.0.1",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.21483,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1321"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25015",
+      "description": "Prototype pollution in Kibana leads to arbitrary code execution via a crafted file upload and specifically crafted HTTP requests.\nIn Kibana versions >= 8.15.0 and < 8.17.1, this is exploitable by users with the Viewer role. In Kibana versions 8.17.1 and 8.17.2 , this is only exploitable by users that have roles that contain all the following privileges: fleet-all, integrations-all, actions:execute-advanced-connectors",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThan": "8.16.6",
+              "status": "affected",
+              "version": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.17.3",
+              "status": "affected",
+              "version": "8.17.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01314,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1321"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25017",
+      "description": "Improper Neutralization of Input During Web Page Generation in Kibana can lead to Cross-Site Scripting (XSS)",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.17.29",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.18.7",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.3",
+              "status": "affected",
+              "version": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.0.6",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.1.3",
+              "status": "affected",
+              "version": "9.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00275,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25018",
+      "description": "Improper Neutralization of Input During Web Page Generation in Kibana can lead to stored Cross-Site Scripting (XSS)",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.17.29",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.18.7",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.4",
+              "status": "affected",
+              "version": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.0.7",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.1.4",
+              "status": "affected",
+              "version": "9.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00229,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-37729",
+      "description": "Improper neutralization of special elements used in a template engine in Elastic Cloud Enterprise (ECE) can lead to a malicious actor with Admin access exfiltrating sensitive information and issuing commands via a specially crafted string where Jinjava variables are evaluated.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic cloud enterprise (ece)",
+          "versions": [
+            {
+              "lessThanOrEqual": "3.8.1",
+              "status": "affected",
+              "version": "2.5.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "4.0.1",
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic cloud enterprise (ece)",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00665,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1336"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-37735",
+      "description": "Improper preservation of permissions in Elastic Defend on Windows hosts can lead to arbitrary files on the system being deleted by the Defend service running as SYSTEM. In some cases, this could result in local privilege escalation.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.19.5",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.1.5",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00132,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-281"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-37736",
+      "description": "Improper Authorization in Elastic Cloud Enterprise can lead to Privilege Escalation where the built-in readonly user can call APIs that should not be allowed. The list of APIs that are affected by this issue is:\n\n\n\n\n\npost:/platform/configuration/security/service-accounts\ndelete:/platform/configuration/security/service-accounts/{user_id}\npatch:/platform/configuration/security/service-accounts/{user_id}\npost:/platform/configuration/security/service-accounts/{user_id}/keys\ndelete:/platform/configuration/security/service-accounts/{user_id}/keys/{api_key_id}\npatch:/user\npost:/users\npost:/users/auth/keys\ndelete:/users/auth/keys\ndelete:/users/auth/keys/_all\ndelete:/users/auth/keys/{api_key_id}\ndelete:/users/{user_id}/auth/keys\ndelete:/users/{user_id}/auth/keys/{api_key_id}\ndelete:/users/{user_name}\npatch:/users/{user_name}",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic cloud enterprise (ece)",
+          "versions": [
+            {
+              "lessThanOrEqual": "3.8.2",
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "4.0.2",
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic cloud enterprise (ece)",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00375,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-68385",
+      "description": "Improper neutralization of input during web page generation ('Cross-site Scripting') (CWE-79) allows an authenticated user to embed a malicious script in content that will be served to web browsers causing cross-site scripting (XSS) (CAPEC-63) via a method in Vega bypassing a previous Vega XSS mitigation.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.17.29",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.8",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.1.8",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.2.2",
+              "status": "affected",
+              "version": "9.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00252,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-0532",
+      "description": "External Control of File Name or Path (CWE-73) combined with Server-Side Request Forgery (CWE-918) can allow an attacker to cause arbitrary file disclosure through a specially crafted credentials JSON payload in the Google Gemini connector configuration. This requires an attacker to have authenticated access with privileges sufficient to create or modify connectors (Alerts & Connectors: All). The server processes a configuration without proper validation, allowing for arbitrary network requests and for arbitrary file reads.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.19.9",
+              "status": "affected",
+              "version": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.1.9",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.2.3",
+              "status": "affected",
+              "version": "9.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00479,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-26938",
+      "description": "Improper Neutralization of Special Elements Used in a Template Engine (CWE-1336) exists in Workflows in Kibana which could allow an attacker to read arbitrary files from the Kibana server filesystem, and perform Server-Side Request Forgery (SSRF) via Code Injection (CAPEC-242). This requires an authenticated user who has the workflowsManagement:executeWorkflow privilege.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "9.3.0",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00254,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1336"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-33461",
+      "description": "Incorrect Authorization (CWE-863) in Kibana can lead to information disclosure via Privilege Abuse (CAPEC-122). A user with limited Fleet privileges can exploit an internal API endpoint to retrieve sensitive configuration data, including private keys and authentication tokens, that should only be accessible to users with higher-level settings privileges. The endpoint composes its response by fetching full configuration objects and returning them directly, bypassing the authorization checks enforced by the dedicated settings APIs.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "9.3.2",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.2.7",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.13",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00282,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-33466",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory (CWE-22) in Logstash can lead to arbitrary file write and potentially remote code execution via Relative Path Traversal (CAPEC-139). The archive extraction utilities used by Logstash do not properly validate file paths within compressed archives. An attacker who can serve a specially crafted archive to Logstash through a compromised or attacker-controlled update endpoint can write arbitrary files to the host filesystem with the privileges of the Logstash process. In certain configurations where automatic pipeline reloading is enabled, this can be escalated to remote code execution.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "logstash",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.19.13",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:logstash",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00545,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42398",
+      "description": "Server-Side Request Forgery (CWE-918) in Kibana allows authenticated users with connector management privileges to bypass the operator-configured connection allowlist. By configuring a Webhook connector with a crafted target, an attacker can cause Kibana to issue outbound requests to destinations that the egress restriction controls were intended to block.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "9.3.1",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.2.7",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.003,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-49091",
+      "description": "Improper Output Neutralization for Logs (CWE-117) in Kibana can lead to log injection via Log Injection-Tampering-Forging (CAPEC-93). An attacker can supply specially crafted input that is written to log files without proper neutralization. When the log files are subsequently viewed in a terminal that interprets control sequences, the injected content may alter the displayed log data.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.11.0",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "7.17.14",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00317,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-116"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-49095",
+      "description": "Improper Input Validation (CWE-20) in the Kibana Fleet agent policy management feature can lead to privilege escalation. An authenticated user with Fleet management privileges can manipulate agent policy configuration by injecting values into a configuration override mechanism that is not adequately validated. An attacker can cause Elastic Agents to be issued API keys with elevated Elasticsearch privileges, potentially granting unauthorized read and write access to sensitive Elasticsearch security indices beyond what is intended for the Fleet management role.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "9.3.4",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.4.1",
+              "status": "affected",
+              "version": "9.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.15",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00262,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-4498",
+      "description": "Execution with Unnecessary Privileges (CWE-250) in Kibana\u2019s Fleet plugin debug route handlers can lead reading index data beyond their direct Elasticsearch RBAC scope via Privilege Abuse (CAPEC-122). This requires an authenticated Kibana user with Fleet sub-feature privileges (such as agents, agent policies, and settings management).",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.19.13",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.003,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-250"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-56147",
+      "description": "Authorization Bypass Through User-Controlled Key (CWE-639) in Kibana can lead to unauthorized information disclosure and case attachment integrity compromise via Privilege Abuse (CAPEC-122). An inconsistency in Kibana's file access authorization logic allows a low-privileged authenticated user to retrieve, modify, and delete case attachments that belong to feature areas they are not authorized to access. Because the access control check and the resource retrieval use different resolution mechanisms, an authenticated attacker with limited file management permissions can obtain the contents of, modify, or delete protected case attachments \u2014 such as those associated with Security Solution cases \u2014 without holding the privileges required to access those features.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "lessThanOrEqual": "9.3.6",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "9.4.2",
+              "status": "affected",
+              "version": "9.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "8.19.17",
+              "status": "affected",
+              "version": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0033,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-63137",
+      "description": "Incorrect Authorization (CWE-863) in Kibana can lead to privilege escalation via Exploiting Incorrectly Configured Access Control Security Levels (CAPEC-180). A user holding workflow edit permissions could cause scheduled workflow executions to run with the privileges of a different, higher-privileged user, allowing access to and modification of data beyond their own authorization scope.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.3.0",
+              "lessThanOrEqual": "9.4.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00354,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72629",
+      "description": "Authorization Bypass Through User-Controlled Key (CWE-639) in Kibana can lead to unauthorized cross-space access via Accessing Functionality Not Properly Constrained by ACLs (CAPEC-1). The result is disclosure of inference output from a trained model in a different space that the user is not authorized to list, read, or use, which exposes the behavior of a model. The same pattern also reached the deployment stop and deployment update operations, allowing an active trained model deployment in another space to be stopped or to have its allocated resources altered.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.19.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00312,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72630",
+      "description": "Incorrect Authorization (CWE-863) in Kibana Fleet can lead to privilege escalation via Privilege Abuse (CAPEC-122). Fleet restricts some callers to managing integration policies for one specific integration. When an existing integration policy was updated, that restriction was evaluated against the integration recorded on the stored policy rather than against the replacement integration supplied with the update. An authenticated user holding only the Elastic Defend endpoint policy management privilege was therefore able to convert an endpoint policy they administer into a policy for a different integration, and to supply that integration's configuration at the same time.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.19.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00223,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72632",
+      "description": "Observable Discrepancy (CWE-203) in Kibana Fleet can lead to information disclosure via Excavation (CAPEC-116). Fleet removes the Elasticsearch API key value of an enrolled Elastic Agent from the responses of its agent listing capability, but that capability accepted caller-supplied filter expressions over the stored field that holds the value, and evaluated them with Kibana's own internal Elasticsearch privileges rather than the caller's. Because the number of matching agents is reported back to the caller, the difference between a matching and a non-matching filter formed a side channel from which the full API key value could be reconstructed one character at a time with a short sequence of requests.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.19.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00253,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-203"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72642",
+      "description": "The native inference process that Elasticsearch uses to evaluate uploaded machine learning models accepts a model operation that computes a memory address from an offset supplied inside the model, without validating that the offset stays within the bounds of the underlying storage. A user with the privileges required to upload and deploy a trained model can craft a model that reads and writes memory outside the intended allocation. The result is heap corruption that crashes the inference process, and, with sufficient control over the heap layout, could allow arbitrary code execution in the context of that process.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.19.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00336,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-823"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72643",
+      "description": "Kibana Agent Builder determines whether a caller owns a private agent by comparing a stable user identifier when one is recorded, and falling back to a comparison of the username when it is not. A username is not unique across Elasticsearch authentication realms, so two distinct principals that share a username in different realms are treated as the same owner. This discloses the configuration and instructions of an agent the caller does not own, and allows that agent to be altered or removed.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00267,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72649",
+      "description": "Deserialization of Untrusted Data (CWE-502) in the Elasticsearch machine learning component can lead to remote code execution via Object Injection (CAPEC-586). A specially crafted trained model artifact could cause attacker-controlled logic to execute with a materially broader system-call surface than intended. Exploitation requires an authenticated user with sufficient privileges to create and deploy trained models.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0058,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72658",
+      "description": "Cross-Site Request Forgery (CWE-352) in Kibana can lead to privilege escalation via Cross Site Request Forgery (CAPEC-62). A user who is permitted to create visualizations can save a specially crafted Vega visualization that, when it is opened by another user, causes authenticated requests to be issued to Kibana in the context of the viewing user's session.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.19.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00136,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72665",
+      "description": "Missing Authorization (CWE-862) in Kibana can lead to unauthorized execution of Osquery and Elastic Defend response actions on managed hosts via Accessing Functionality Not Properly Constrained by ACLs (CAPEC-1). A Kibana user who is able to author and evaluate Elastic Security detection rules can cause response actions to be carried out against enrolled agents without holding the Osquery live query privileges or the Elastic Defend response action privileges that normally govern those capabilities. Depending on the response action involved, this can result in disclosure of information from the affected hosts or in unauthorized changes to their state.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.5.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72669",
+      "description": "The state that Kibana stores for an Observability Onboarding flow is not bound to the user who created the flow, and the routes that read and update that state do not verify ownership. An authenticated user who holds only generic read access to the space can therefore discover the onboarding flows of other users, read their onboarding state, and write arbitrary progress data into them. A tampered flow can also cause the owner's onboarding view to fail with a server error.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.9.0",
+              "lessThanOrEqual": "8.19.18"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00233,
+      "nvd": {
+        "cvss_v3_score": 7.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72670",
+      "description": "A lower privileged user who holds only the privilege to read agent policies can read the entire configuration of a configured Fleet proxy. This would normally require the Fleet privilege to read settings.The proxy configuration possibly contains proxy authentication credentials and private key material that they should not be authorized to view.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00343,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72672",
+      "description": "The Elastic Security capability that suggests existing field values while a user authors endpoint policy artifacts queries Elastic Defend event data with Kibana's internal Elasticsearch account instead of the account of the requesting user. Only Kibana feature privileges are verified, and the caller's Elasticsearch index privileges are not. An authenticated user who holds Elastic Security feature privileges but no read access to the Elastic Defend event indices can therefore retrieve field values from that data, including process command line arguments, which commonly contain tokens, credentials, connection strings, and other sensitive operational detail from protected hosts.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.1.0",
+              "lessThanOrEqual": "9.4.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00274,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72675",
+      "description": "Missing Authorization (CWE-862) in Kibana can lead to cross-space information disclosure and unauthorized data modification via Privilege Abuse (CAPEC-122). Kibana Machine Learning carries out its Elasticsearch operations with elevated internal permissions and relies on a per-request space filter to keep the machine learning data of one space separated from another. Part of the Machine Learning functionality did not apply that filter, so operations issued from one space were carried out against the machine learning data of every space in the deployment.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.19"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00227,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72677",
+      "description": "Relative Path Traversal (CWE-23) in Kibana can lead to the unauthorized deletion of Kibana resources via Relative Path Traversal (CAPEC-139). Kibana Fleet accepted a user-supplied identifier for a Fleet Server host configuration without rejecting relative traversal sequences. The identifier is stored as provided and is later incorporated into the request that Kibana issues when that configuration is removed.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.16"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.3.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00278,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-23"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78583",
+      "description": "Incorrect Authorization (CWE-863) in Kibana can lead to privilege escalation via Input Data Manipulation (CAPEC-153). Elasticsearch cluster privilege declarations originating from integration packages were not validated before being used to mint credentials for enrolled Elastic Agents. A user holding Fleet management privileges could therefore cause every Elastic Agent on a targeted policy to receive a credential carrying arbitrarily elevated Elasticsearch cluster privileges, up to and including full cluster administration.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.20"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00221,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78590",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') (CWE-22) in the Kibana Fleet feature can lead to the unauthorized deletion of privileged resources via Path Traversal (CAPEC-126). A low-privileged user holding Fleet Settings write access could cause a subsequent administrative action to act on unintended internal resources, resulting in the deletion of privileged resources such as user accounts and other organizational assets. Exploitation requires an administrator to interact with the affected Fleet interface.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.17"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.3.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00278,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78592",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') (CWE-22) in Kibana can lead to the unauthorized deletion of privileged resources via Path Traversal (CAPEC-126). A low-privileged user holding tag creation privileges could cause a subsequent administrative action in the tag management interface to act on an unintended target, resulting in the deletion of privileged resources including administrative accounts and other organizational assets. Exploitation requires an administrator to interact with the affected interface.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "7.11.0",
+              "lessThanOrEqual": "7.17.29"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.15"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.3.4"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00251,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78604",
+      "description": "Incorrect Permission Assignment for Critical Resource (CWE-732) in Elastic Agent can lead to local privilege escalation via Replace Binaries (CAPEC-642). On Windows systems where Elastic Agent is installed in unprivileged mode, resources used by the agent service are created with access controls broader than required. A local user could take advantage of this to cause the service to execute code of their choosing, ultimately obtaining SYSTEM-level privileges on the host.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic agent",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.20"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic agent",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00101,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82302",
+      "description": "Incorrect Authorization (CWE-863) in Kibana can lead to unauthorized configuration modification via Exploiting Incorrectly Configured Access Control Security Levels (CAPEC-180).",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.20"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00221,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    }
+  ]
+}

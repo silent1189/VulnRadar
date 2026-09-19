@@ -1,0 +1,2640 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "zoom_video_communications_inc",
+  "count": 57,
+  "items": [
+    {
+      "cve_id": "CVE-2022-22781",
+      "description": "The Zoom Client for Meetings for MacOS (Standard and for IT Admin) prior to version 5.9.6 failed to properly check the package version during the update process. This could lead to a malicious actor updating an unsuspecting user\u2019s currently installed version to a less secure version.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for macos (standard and for it admin)",
+          "versions": [
+            {
+              "lessThan": "5.9.6",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for macos (standard and for it admin)",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00427,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 5.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-354"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-22782",
+      "description": "The Zoom Client for Meetings for Windows prior to version 5.9.7, Zoom Rooms for Conference Room for Windows prior to version 5.10.0, Zoom Plugins for Microsoft Outlook for Windows prior to version 5.10.3, and Zoom VDI Windows Meeting Clients prior to version 5.9.6; was susceptible to a local privilege escalation issue during the installer repair operation. A malicious actor could utilize this to potentially delete system level files or folders, causing integrity or availability issues on the user\u2019s host machine.",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for windows",
+          "versions": [
+            {
+              "lessThan": "5.9.7",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for conference room for windows",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom plugins for microsoft outlook for windows",
+          "versions": [
+            {
+              "lessThan": "5.10.3",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom vdi windows meeting clients",
+          "versions": [
+            {
+              "lessThan": "5.9.6",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for windows",
+        "product:zoom plugins for microsoft outlook for windows",
+        "product:zoom rooms for conference room for windows",
+        "product:zoom vdi windows meeting clients",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00376,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 6.6,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-22784",
+      "description": "The Zoom Client for Meetings (for Android, iOS, Linux, MacOS, and Windows) before version 5.10.0 failed to properly parse XML stanzas in XMPP messages. This can allow a malicious user to break out of the current XMPP message context and create a new message context to have the receiving users client perform a variety of actions.This issue could be used in a more sophisticated attack to forge XMPP messages from the server.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for android",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for ios",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for linux",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for macos",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for windows",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for android",
+        "product:zoom client for meetings for ios",
+        "product:zoom client for meetings for linux",
+        "product:zoom client for meetings for macos",
+        "product:zoom client for meetings for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.04018,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 5.5,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-91"
+        ],
+        "cpe_count": 5,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-22786",
+      "description": "The Zoom Client for Meetings for Windows before version 5.10.0 and Zoom Rooms for Conference Room for Windows before version 5.10.0, fails to properly check the installation version during the update process. This issue could be used in a more sophisticated attack to trick a user into downgrading their Zoom client to a less secure version.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for windows",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for conference room for windows",
+          "versions": [
+            {
+              "lessThan": "5.10.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for windows",
+        "product:zoom rooms for conference room for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01505,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 6.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-494"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-22788",
+      "description": "The Zoom Opener installer is downloaded by a user from the Launch meeting page, when attempting to join a meeting without having the Zoom Meeting Client installed. The Zoom Opener installer for Zoom Client for Meetings before version 5.10.3 and Zoom Rooms for Conference Room for Windows before version 5.10.3 are susceptible to a DLL injection attack. This vulnerability could be used to run arbitrary code on the victims host.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings",
+          "versions": [
+            {
+              "lessThan": "5.10.3",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "all zoom rooms for conference room for windows",
+          "versions": [
+            {
+              "lessThan": "5.10.3",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:all zoom rooms for conference room for windows",
+        "product:zoom client for meetings",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01475,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 6.9,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28750",
+      "description": "Zoom On-Premise Meeting Connector Zone Controller (ZC) before version 4.8.20220419.112 fails to properly parse STUN error codes, which can result in memory corruption and could allow a malicious actor to crash the application. In versions older than 4.8.12.20211115, this vulnerability could also be leveraged to execute arbitrary code.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom on-premise meeting connector zone controller (zc)",
+          "versions": [
+            {
+              "lessThan": "4.8.20220419.112",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom on-premise meeting connector zone controller (zc)",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01964,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28751",
+      "description": "The Zoom Client for Meetings for MacOS (Standard and for IT Admin) before version 5.11.3 contains a vulnerability in the package signature validation during the update process. A local low-privileged user could exploit this vulnerability to escalate their privileges to root.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for macos",
+          "versions": [
+            {
+              "lessThan": "5.11.3",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for macos",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00139,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28752",
+      "description": "Zoom Rooms for Conference Rooms for Windows versions before 5.11.0 are susceptible to a Local Privilege Escalation vulnerability. A local low-privileged malicious user could exploit this vulnerability to escalate their privileges to the SYSTEM user.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom room for conference room for windows",
+          "versions": [
+            {
+              "lessThan": "5.11.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom room for conference room for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00148,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28753",
+      "description": "Zoom On-Premise Meeting Connector MMR before version 4.8.129.20220714 contains an improper access control vulnerability. As a result, a malicious actor can join a meeting which they are authorized to join without appearing to the other participants, can admit themselves into the meeting from the waiting room, and can become host and cause other meeting disruptions.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom on-premise meeting connector mmr",
+          "versions": [
+            {
+              "lessThan": "4.8.129.20220714",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom on-premise meeting connector mmr",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00503,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28754",
+      "description": "Zoom On-Premise Meeting Connector MMR before version 4.8.129.20220714 contains an improper access control vulnerability. As a result, a malicious actor can join a meeting which they are authorized to join without appearing to the other participants, can admit themselves into the meeting from the waiting room, and can become host and cause other meeting disruptions.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom on-premise meeting connector mmr",
+          "versions": [
+            {
+              "lessThan": "4.8.129.20220714",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom on-premise meeting connector mmr",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00534,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28755",
+      "description": "The Zoom Client for Meetings (for Android, iOS, Linux, macOS, and Windows) before version 5.11.0 are susceptible to a URL parsing vulnerability. If a malicious Zoom meeting URL is opened, the malicious link may direct the user to connect to an arbitrary network address, leading to additional attacks including the potential for remote code execution through launching executables from arbitrary paths.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings (for android, ios, linux, macos, and windows)",
+          "versions": [
+            {
+              "lessThan": "5.11.0",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom vdi windows meeting clients",
+          "versions": [
+            {
+              "lessThan": "5.10.7",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings (for android, ios, linux, macos, and windows)",
+        "product:zoom vdi windows meeting clients",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00823,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-601"
+        ],
+        "cpe_count": 6,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28756",
+      "description": "The Zoom Client for Meetings for macOS (Standard and for IT Admin) starting with version 5.7.3 and before 5.11.5 contains a vulnerability in the auto update process. A local low-privileged user could exploit this vulnerability to escalate their privileges to root.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for macos",
+          "versions": [
+            {
+              "lessThan": "unspecified",
+              "status": "affected",
+              "version": "next of 5.7.3",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "5.11.5",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for macos",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00175,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28757",
+      "description": "The Zoom Client for Meetings for macOS (Standard and for IT Admin) starting with version 5.7.3 and before 5.11.6 contains a vulnerability in the auto update process. A local low-privileged user could exploit this vulnerability to escalate their privileges to root.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for macos",
+          "versions": [
+            {
+              "lessThan": "unspecified",
+              "status": "affected",
+              "version": "next of 5.7.3",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "5.11.6",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for macos",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00184,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28758",
+      "description": "Zoom On-Premise Meeting Connector MMR before version 4.8.20220815.130 contains an improper access control vulnerability. As a result, a malicious actor could obtain the audio and video feed of a meeting they were not authorized to join and cause other meeting disruptions.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom on-premise meeting connector mmr",
+          "versions": [
+            {
+              "lessThan": "4.8.20220815.130",
+              "status": "affected",
+              "version": "unspecified",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom on-premise meeting connector mmr",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0069,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28759",
+      "description": "Zoom On-Premise Meeting Connector MMR before version 4.8.20220815.130 contains an improper access control vulnerability. As a result, a malicious actor could obtain the audio and video feed of a meeting they were not authorized to join and cause other meeting disruptions.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom on-premise meeting connector mmr",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "4.8.20220815.130",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom on-premise meeting connector mmr",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00587,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28762",
+      "description": "Zoom Client for Meetings for macOS (Standard and for IT Admin) starting with 5.10.6 and prior to 5.12.0 contains a debugging port misconfiguration. When camera mode rendering context is enabled as part of the Zoom App Layers API by running certain Zoom Apps, a local debugging port is opened by the Zoom client. A local malicious user could use this debugging port to connect to and control the Zoom Apps running in the Zoom client.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for macos",
+          "versions": [
+            {
+              "version": "next of 5.10.6",
+              "status": "affected",
+              "lessThan": "unspecified",
+              "versionType": "custom"
+            },
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for macos",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00303,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-16"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28763",
+      "description": "The Zoom Client for Meetings (for Android, iOS, Linux, macOS, and Windows) before version 5.12.2 is susceptible to a URL parsing vulnerability. If a malicious Zoom meeting URL is opened, the malicious link may direct the user to connect to an arbitrary network address, leading to additional attacks including session takeovers.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings (for android, ios, linux, macos, and windows)",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.2",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom vdi windows meeting clients",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.2",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for conference room (for android, ios, linux, macos, and windows)",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.2",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings (for android, ios, linux, macos, and windows)",
+        "product:zoom rooms for conference room (for android, ios, linux, macos, and windows)",
+        "product:zoom vdi windows meeting clients",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01209,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-601"
+        ],
+        "cpe_count": 11,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28768",
+      "description": "The Zoom Client for Meetings Installer for macOS (Standard and for IT Admin) before version 5.12.6 contains a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability during the install process to escalate their privileges to root.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings installer for macos (standard and for it admin)",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.6",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings installer for macos (standard and for it admin)",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00187,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-689",
+          "CWE-362"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36924",
+      "description": "The Zoom Rooms Installer for Windows prior to 5.12.6 contains a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability during the install process to escalate their privileges to the SYSTEM user.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms installer for windows",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.6",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms installer for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00252,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36926",
+      "description": "Zoom Rooms for macOS clients before version 5.11.3 contain a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability to escalate their privileges to root.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for macos",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.11.3",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for macos",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00428,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36927",
+      "description": "Zoom Rooms for macOS clients before version 5.11.3 contain a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability to escalate their privileges to root.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for macos",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.11.3",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for macos",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00207,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36929",
+      "description": "The Zoom Rooms Installer for Windows prior to 5.12.6 contains a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability during the install process to escalate their privileges to the SYSTEM user.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.12.7",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00288,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36930",
+      "description": "Zoom Rooms for Windows installers before version 5.13.0 contain a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability in an attack chain to escalate their privileges to the SYSTEM user.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.13.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00466,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-22883",
+      "description": "Zoom Client for IT Admin Windows installers before version 5.13.5 contain a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability in an attack chain during the installation process to escalate their privileges to the SYSTEM user.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for it admin windows installers",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.13.5",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for it admin windows installers",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00185,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28596",
+      "description": "Zoom Client for IT Admin macOS installers before version 5.13.5 contain a local privilege escalation vulnerability. A local low-privileged user could exploit this vulnerability in an attack chain during the installation process to escalate their privileges to privileges to root.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom client for meetings for it admin macos installers",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.13.5",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom client for meetings for it admin macos installers",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00264,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28597",
+      "description": "Zoom clients prior to 5.13.5 contain an improper trust boundary implementation vulnerability. If a victim saves a local recording to an SMB location and later opens it using a link from Zoom\u2019s web portal, an attacker positioned on an adjacent network to the victim client could set up a malicious SMB server to respond to client requests, causing the client to execute attacker controlled executables. This could result in an attacker gaining access to a user's device and data, and remote code execution.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom (for android, ios, linux, macos, and windows)",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.13.5",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom rooms (for android, ios, linux, macos, and windows)",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.13.5",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications inc",
+          "product": "zoom vdi for windows",
+          "versions": [
+            {
+              "version": "unspecified",
+              "lessThan": "5.13.10",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom (for android, ios, linux, macos, and windows)",
+        "product:zoom rooms (for android, ios, linux, macos, and windows)",
+        "product:zoom vdi for windows",
+        "vendor:zoom video communications inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00525,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-501"
+        ],
+        "cpe_count": 12,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28598",
+      "description": "Zoom for  Linux clients prior to 5.13.10 contain an HTML injection vulnerability. If a victim starts a chat with a malicious user it could result in a Zoom application crash.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom for linux clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.13.10"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom for linux clients",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00542,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-74"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28601",
+      "description": "Zoom for Windows clients prior to 5.14.0 contain an improper restriction of operations within the bounds of a memory buffer vulnerability.  A malicious user may alter protected Zoom Client memory buffer potentially causing integrity issues within the Zoom Client.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom for windows client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom for windows client",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00953,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-358",
+          "CWE-119"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28603",
+      "description": "Zoom VDI client installer  prior to 5.14.0 contains an improper access control vulnerability.  A malicious user may potentially delete local files without proper permissions.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom vdi windows meeting client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom vdi windows meeting client",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00157,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-73"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34114",
+      "description": "Exposure of resource to wrong sphere in Zoom for Windows and Zoom for MacOS clients before 5.14.10  may allow an authenticated user to potentially enable information disclosure via network access. ",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom for windows client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before  5.14.10"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom for macos client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.10"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom for macos client",
+        "product:zoom for windows client",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00983,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-668"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34116",
+      "description": "Improper input validation in the Zoom Desktop Client for Windows before version 5.15.0 may allow an unauthorized user to enable an escalation of privilege via network access.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00959,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34118",
+      "description": "Improper privilege management in Zoom Rooms for Windows before version 5.14.5 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00182,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-250"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34119",
+      "description": "Insecure temporary file in the installer for Zoom Rooms for Windows\u00a0before version 5.15.0 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00188,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426",
+          "CWE-668"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34120",
+      "description": "Improper privilege management in Zoom for Windows, Zoom Rooms for Windows, and Zoom VDI for Windows clients before 5.14.0  may allow an authenticated user to potentially enable an escalation of privilege via local access. Users may potentially utilize higher level system privileges maintained by the Zoom client to spawn processes with escalated privileges.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom for windows client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.0"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.0"
+            }
+          ]
+        },
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom vdi for windows meeting clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom for windows client",
+        "product:zoom rooms client for windows",
+        "product:zoom vdi for windows meeting clients",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00134,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36533",
+      "description": "Uncontrolled resource consumption in Zoom SDKs before 5.14.7 may allow an unauthenticated user to enable a denial of service via network access.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom sdk's",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom sdk's",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00811,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-772"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36534",
+      "description": "Path traversal in Zoom Desktop Client for Windows before 5.14.7 may allow an unauthenticated user to enable an escalation of privilege via network access.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.01589,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36535",
+      "description": "Client-side enforcement of server-side security in Zoom clients before 5.14.10 may allow an authenticated user to enable information disclosure via network access.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.10"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.01245,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-449"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36536",
+      "description": " Untrusted search path in the installer for Zoom Rooms for Windows before version 5.15.0 may allow an authenticated user to enable an escalation of privilege via local access.\n",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.002,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36537",
+      "description": "Improper privilege management in Zoom Rooms for Windows before version 5.14.5 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.0013,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-354"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36538",
+      "description": "Improper access control in Zoom Rooms for Windows before version 5.15.0 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00194,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36540",
+      "description": "Untrusted search path in the installer for Zoom Desktop Client for Windows before 5.14.5 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00319,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-36541",
+      "description": "Insufficient verification of data authenticity in Zoom Desktop Client for Windows before 5.14.5 may allow an authenticated user to enable an escalation of privilege via network access.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00528,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39201",
+      "description": "Untrusted search path in CleanZoom before file date 07/24/2023 may allow a privileged user to conduct an escalation of privilege via local access.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "cleanzoom",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before file date 07/24/2023"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cleanzoom",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00166,
+      "nvd": {
+        "cvss_v3_score": 6.7,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39211",
+      "description": "Improper privilege management in Zoom Desktop Client for Windows and Zoom Rooms for Windows before 5.15.5 may allow an authenticated user to enable an information disclosure via local access.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows and zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows and zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00215,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347",
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39212",
+      "description": "\nUntrusted search path in Zoom Rooms for Windows before version 5.15.5 may allow an authenticated user to enable a denial of service via local access.\n\n",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00217,
+      "nvd": {
+        "cvss_v3_score": 5.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-144",
+          "CWE-426"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39213",
+      "description": "Improper neutralization of special elements in Zoom Desktop Client for Windows and Zoom VDI Client before 5.15.2 may allow an unauthenticated user to enable an escalation of privilege via network access.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows and zoom vdi client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows and zoom vdi client",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.01447,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-176",
+          "CWE-74"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39214",
+      "description": "Exposure of sensitive information in Zoom Client SDK's before 5.15.5 may allow an authenticated user to enable a denial of service via network access.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom sdk's",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.15.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom sdk's",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.0096,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-749",
+          "CWE-668"
+        ],
+        "cpe_count": 12,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39215",
+      "description": "Improper authentication in Zoom clients may allow an authenticated user to conduct a denial of service via network access.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see reference"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.01115,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-449",
+          "CWE-287"
+        ],
+        "cpe_count": 8,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-39216",
+      "description": "Improper input validation in Zoom Desktop Client for Windows before 5.14.7 may allow an unauthenticated user to enable an escalation of privilege via network access.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.14.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.01227,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-80"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-43585",
+      "description": "Improper access control in Zoom Mobile App for iOS and Zoom SDKs for iOS before version 5.16.5 may allow an authenticated user to conduct a disclosure of information via network access.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom mobile app for ios and sdks for ios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.16.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom mobile app for ios and sdks for ios",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00599,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-449"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-43586",
+      "description": "Path traversal in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom SDKs for Windows may allow an authenticated user to conduct an escalation of privilege via network access.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows, zoom vdi client for windows and zoom sdks for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "See references"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows, zoom vdi client for windows and zoom sdks for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00991,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426",
+          "CWE-22"
+        ],
+        "cpe_count": 5,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-43590",
+      "description": "Link following  in Zoom Rooms for macOS before version 5.16.0 may allow an authenticated user to conduct an escalation of privilege via local access.\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for macos",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.16.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for macos",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-59"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-43591",
+      "description": "Improper privilege management  in Zoom Rooms for macOS before version 5.16.0 may allow an authenticated user to conduct an escalation of privilege via local access.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms for macos",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.16.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms for macos",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.0017,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-280"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-49647",
+      "description": "Improper access control in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom SDKs for Windows before version 5.16.10 may allow an authenticated user to conduct an escalation of privilege via local access.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows, zoom vdi client for windows, and zoom sdks for windows before version 5.16.10",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before 5.16.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows, zoom vdi client for windows, and zoom sdks for windows before version 5.16.10",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00246,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-266"
+        ],
+        "cpe_count": 7,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-24691",
+      "description": "Improper input validation in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows may allow an unauthenticated user to conduct an escalation of privilege via network access.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom desktop client for windows, zoom vdi client for windows, and zoom meeting sdk for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom desktop client for windows, zoom vdi client for windows, and zoom meeting sdk for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.01703,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-176"
+        ],
+        "cpe_count": 6,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-24693",
+      "description": "Improper access control in the installer for Zoom Rooms Client for Windows before version 5.17.5 may allow an authenticated user to conduct a denial of service via local access.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom rooms client for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "before version 5.17.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms client for windows",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00182,
+      "nvd": {
+        "cvss_v3_score": 5.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-379"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-24697",
+      "description": "Untrusted search path in some Zoom 32 bit Windows clients may allow an authenticated user to conduct an escalation of privilege via local access.\n",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom video communications, inc.",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom video communications, inc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00273,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 6,
+        "reference_count": 2
+      }
+    }
+  ]
+}

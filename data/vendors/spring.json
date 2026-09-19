@@ -1,0 +1,5310 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "spring",
+  "count": 90,
+  "items": [
+    {
+      "cve_id": "CVE-2024-22233",
+      "description": "In Spring Framework versions 6.0.15 and 6.1.2, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC\n  *  Spring Security 6.1.6+ or 6.2.1+ is on the classpath\n\n\nTypically, Spring Boot applications need the org.springframework.boot:spring-boot-starter-web\u00a0and org.springframework.boot:spring-boot-starter-security\u00a0dependencies to meet all conditions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.1.2"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.15"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01048,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-22234",
+      "description": "In Spring Security, versions 6.1.x prior to 6.1.7 and versions 6.2.x prior to 6.2.2, an application is vulnerable to broken access control when it directly uses the AuthenticationTrustResolver.isFullyAuthenticated(Authentication)\u00a0method.\n\nSpecifically, an application is vulnerable if:\n\n  *  The application uses AuthenticationTrustResolver.isFullyAuthenticated(Authentication)\u00a0directly and a null\u00a0authentication parameter is passed to it resulting in an erroneous true\u00a0return value.\n\n\nAn application is not vulnerable if any of the following is true:\n\n  *  The application does not use AuthenticationTrustResolver.isFullyAuthenticated(Authentication)\u00a0directly.\n  *  The application does not pass null\u00a0to AuthenticationTrustResolver.isFullyAuthenticated\n  *  The application only uses isFullyAuthenticated\u00a0via  Method Security https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html \u00a0or  HTTP Request Security https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "lessThan": "6.1.7",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "6.1.7"
+            },
+            {
+              "lessThan": "6.2.2",
+              "status": "affected",
+              "version": "6.2.x",
+              "versionType": "6.2.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00682,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-22243",
+      "description": "Applications that use UriComponentsBuilder\u00a0to parse an externally provided URL (e.g. through a query parameter) AND\u00a0perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html \u00a0attack or to a SSRF attack if the URL is used after passing validation checks.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "lessThan": "6.0.17",
+              "status": "affected",
+              "version": "6.0.x",
+              "versionType": "6.0.17"
+            },
+            {
+              "lessThan": "6.1.4",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "6.1.4"
+            },
+            {
+              "lessThan": "5.3.32",
+              "status": "affected",
+              "version": "5.3.x",
+              "versionType": "5.3.32"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.03967,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-601"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2024-22259",
+      "description": "Applications that use UriComponentsBuilder in Spring Framework\u00a0to parse an externally provided URL (e.g. through a query parameter) AND\u00a0perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html \u00a0attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "lessThan": "6.1.5",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "git"
+            },
+            {
+              "lessThan": "6.0.18",
+              "status": "affected",
+              "version": "6.0.x",
+              "versionType": "git"
+            },
+            {
+              "lessThan": "5.3.33",
+              "status": "affected",
+              "version": "5.3.x",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02573,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-601"
+        ],
+        "cpe_count": 6,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-22262",
+      "description": "Applications that use UriComponentsBuilder\u00a0to parse an externally provided URL (e.g. through a query parameter) AND\u00a0perform validation checks on the host of the parsed URL may be vulnerable to a  open redirect https://cwe.mitre.org/data/definitions/601.html \u00a0attack or to a SSRF attack if the URL is used after passing validation checks.\n\nThis is the same as  CVE-2024-22259 https://spring.io/security/cve-2024-22259 \u00a0and  CVE-2024-22243 https://spring.io/security/cve-2024-22243 , but with different input.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "lessThan": "6.1.6",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "6.1.6"
+            },
+            {
+              "lessThan": "6.0.19",
+              "status": "affected",
+              "version": "6.0.x",
+              "versionType": "6.0.19"
+            },
+            {
+              "lessThan": "5.3.34",
+              "status": "affected",
+              "version": "5.3.x",
+              "versionType": "5.3.34"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01191,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-601",
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-37084",
+      "description": "In Spring Cloud Data Flow versions prior to 2.11.4,\u00a0\u00a0a malicious user who has access to the Skipper server api can use a crafted upload request to write an arbitrary file to any location on the file system which could lead to compromising the server",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud data flow",
+          "versions": [
+            {
+              "lessThan": "2.11.4",
+              "status": "affected",
+              "version": "2.11.x",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud data flow",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.35211,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-38816",
+      "description": "Applications serving static resources through the functional web frameworks WebMvc.fn or WebFlux.fn are vulnerable to path traversal attacks. An attacker can craft malicious HTTP requests and obtain any file on the file system that is also accessible to the process in which the Spring application is running.\n\nSpecifically, an application is vulnerable when both of the following are true:\n\n  *  the web application uses RouterFunctions\u00a0to serve static resources\n  *  resource handling is explicitly configured with a FileSystemResource\u00a0location\n\n\nHowever, malicious requests are blocked and rejected when any of the following is true:\n\n  *  the  Spring Security HTTP Firewall https://docs.spring.io/spring-security/reference/servlet/exploits/firewall.html \u00a0is in use\n  *  the application runs on Tomcat or Jetty",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring",
+          "versions": [
+            {
+              "lessThan": "5.3.40",
+              "status": "affected",
+              "version": "5.3.x",
+              "versionType": "enterprise Support Only"
+            },
+            {
+              "lessThan": "6.0.24",
+              "status": "affected",
+              "version": "6.0.x",
+              "versionType": "enterprise Support Only"
+            },
+            {
+              "lessThan": "6.1.13",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "OSS"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:spring",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.14718,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-38821",
+      "description": "Spring WebFlux applications that have Spring Security authorization rules on static resources can be bypassed under certain circumstances.\n\nFor this to impact an application, all of the following must be true:\n\n  *  It must be a WebFlux application\n  *  It must be using Spring's static resources support\n  *  It must have a non-permitAll authorization rule applied to the static resources support",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring",
+          "versions": [
+            {
+              "lessThan": "5.7.13",
+              "status": "affected",
+              "version": "5.7.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "5.8.15",
+              "status": "affected",
+              "version": "5.8.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.0.13",
+              "status": "affected",
+              "version": "6.0.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.1.11",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.2.7",
+              "status": "affected",
+              "version": "6.2.x",
+              "versionType": "OSS"
+            },
+            {
+              "lessThan": "6.3.4",
+              "status": "affected",
+              "version": "6.3.x",
+              "versionType": "OSS"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01741,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-22228",
+      "description": "BCryptPasswordEncoder.matches(CharSequence,String)\u00a0will incorrectly return true\u00a0for passwords larger than 72 characters as long as the first 72 characters are the same.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "lessThan": "5.7.16",
+              "status": "affected",
+              "version": "5.7.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "5.8.18",
+              "status": "affected",
+              "version": "5.8.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.0.16",
+              "status": "affected",
+              "version": "6.0.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.1.14",
+              "status": "affected",
+              "version": "6.1.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.2.10",
+              "status": "affected",
+              "version": "6.2.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "6.3.8",
+              "status": "affected",
+              "version": "6.3.x",
+              "versionType": "OSS"
+            },
+            {
+              "lessThan": "6.4.4",
+              "status": "affected",
+              "version": "6.4.x",
+              "versionType": "OSS"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00588,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-22235",
+      "description": "EndpointRequest.to()\u00a0creates a matcher for null/**\u00a0if the actuator endpoint, for which the EndpointRequest\u00a0has been created, is disabled or not exposed.\n\nYour application may be affected by this if all the following conditions are met:\n\n  *  You use Spring Security\n  *  EndpointRequest.to()\u00a0has been used in a Spring Security chain configuration\n  *  The endpoint which EndpointRequest\u00a0references is disabled or not exposed via web\n  *  Your application handles requests to /null\u00a0and this path needs protection\n\n\nYou are not affected if any of the following is true:\n\n  *  You don't use Spring Security\n  *  You don't use EndpointRequest.to()\n  *  The endpoint which EndpointRequest.to()\u00a0refers to is enabled and is exposed\n  *  Your application does not handle requests to /null\u00a0or this path does not need protection",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring boot",
+          "versions": [
+            {
+              "lessThan": "2.7.25",
+              "status": "affected",
+              "version": "2.7.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "3.1.16",
+              "status": "affected",
+              "version": "3.1.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "3.2.14",
+              "status": "affected",
+              "version": "3.2.x",
+              "versionType": "Enterprise Support Only"
+            },
+            {
+              "lessThan": "3.3.11",
+              "status": "affected",
+              "version": "3.3.x",
+              "versionType": "OSS"
+            },
+            {
+              "lessThan": "3.4.5",
+              "status": "affected",
+              "version": "3.4.x",
+              "versionType": "OSS"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring boot",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00415,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-41232",
+      "description": "Spring Security Aspects may not correctly locate method security annotations on private methods. This can cause an authorization bypass.\n\nYour application may be affected by this if the following are true:\n\n  *  You are using @EnableMethodSecurity(mode=ASPECTJ)\u00a0and spring-security-aspects, and\n  *  You have Spring Security method annotations on a private method\nIn that case, the target method may be able to be invoked without proper authorization.\n\nYou are not affected if:\n\n  *  You are not using @EnableMethodSecurity(mode=ASPECTJ)\u00a0or spring-security-aspects, or\n  *  You have no Spring Security-annotated private methods",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "lessThan": "6.4.6",
+              "status": "affected",
+              "version": "6.4.x",
+              "versionType": "oss"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00619,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22731",
+      "description": "Spring Boot applications with Actuator can be vulnerable to an \"Authentication Bypass\" vulnerability when an application endpoint that requires authentication is declared under a specific path, already configured for a Health Group additional path.\nThis issue affects Spring Boot: from 4.0 before 4.0.3, from 3.5 before 3.5.11, from 3.4 before 3.4.15.\nThis CVE is similar but not equivalent to CVE-2026-22733, as the conditions for exploit and vulnerable versions are different.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring boot",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0",
+              "lessThan": "4.0.3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.5",
+              "lessThan": "3.5.11",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4",
+              "lessThan": "3.4.15",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring boot",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00334,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-288",
+          "CWE-306"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22733",
+      "description": "Spring Boot applications with Actuator can be vulnerable to an \"Authentication Bypass\" vulnerability when an application endpoint that requires authentication is declared under the path used by the CloudFoundry Actuator endpoints.\u00a0This issue affects Spring Security: from 4.0.0 through 4.0.3, from 3.5.0 through 3.5.11, from 3.4.0 through 3.4.14, from 3.3.0 through 3.3.17, from 2.7.0 through 2.7.31.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "4.0.3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "lessThanOrEqual": "3.5.11",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.0",
+              "lessThanOrEqual": "3.4.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThanOrEqual": "3.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.7.0",
+              "lessThanOrEqual": "2.7.31",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0036,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-288"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22738",
+      "description": "In Spring AI, a SpEL injection vulnerability exists in\u00a0SimpleVectorStore\u00a0when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code.\u00a0Only applications that use\u00a0SimpleVectorStore\u00a0and pass user-supplied input as a filter expression key are affected.\nThis issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01087,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-917",
+          "CWE-88"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22739",
+      "description": "Vulnerability in Spring Cloud when substituting the profile parameter from a request made to the Spring Cloud Config Server configured to the native file system as a backend, because it was possible to access files outside of the configured search directories.This issue affects Spring Cloud: from 3.1.X before 3.1.13, from 4.1.X before 4.1.9, from 4.2.X before 4.2.3, from 4.3.X before 4.3.2, from 5.0.X before 5.0.2.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.x",
+              "lessThan": "3.1.13",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.x",
+              "lessThan": "4.1.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.2.x",
+              "lessThan": "4.2.3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.x",
+              "lessThan": "4.3.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.x",
+              "lessThan": "5.0.2",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:spring cloud",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0122,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22742",
+      "description": "Spring AI's spring-ai-bedrock-converse\u00a0contains a Server-Side Request Forgery (SSRF) vulnerability in\u00a0BedrockProxyChatModel\u00a0when processing multimodal messages that include user-supplied media URLs. Insufficient validation of those URLs allows an attacker to induce the server to issue HTTP requests to unintended internal or external destinations.\nThis issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00353,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22743",
+      "description": "Spring AI's\u00a0spring-ai-neo4j-store\u00a0contains a Cypher injection vulnerability in\u00a0Neo4jVectorFilterExpressionConverter. When a user-controlled string is passed as a filter expression key in\u00a0Neo4jVectorFilterExpressionConverter\u00a0of\u00a0spring-ai-neo4j-store,\u00a0doKey()\u00a0embeds the key into a backtick-delimited Cypher property accessor (node.`metadata.`) after stripping only double quotes, without escaping embedded backticks.This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0025,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22744",
+      "description": "In\u00a0RedisFilterExpressionConverter\u00a0of\u00a0spring-ai-redis-store, when a user-controlled string is passed as a filter value for a TAG field,\u00a0stringValue()\u00a0inserts the value directly into the\u00a0@field:{VALUE}\u00a0RediSearch TAG block without escaping characters.This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0025,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-74"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22753",
+      "description": "Vulnerability in Spring Spring Security. If an application is using\u00a0securityMatchers(String)\u00a0and a\u00a0PathPatternRequestMatcher.Builder\u00a0bean to prepend a servlet path, matching requests to that filter chain may fail and its related security components will not be exercised as intended by the application. This can lead to the authentication, authorization, and other security controls being rendered inactive on intended requests.This issue affects Spring Security: from 7.0.0 through 7.0.4.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-22754",
+      "description": "Vulnerability in Spring Spring Security. If an application uses\u00a0<sec:intercept-url servlet-path=\"/servlet-path\" pattern=\"/endpoint/**\"/>\u00a0to define the servlet path for computing a path matcher, then the servlet path is not included and the related authorization rules are not exercised. This can lead to an authorization bypass.This issue affects Spring Security: from 7.0.0 through 7.0.4.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00266,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284",
+          "CWE-551"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40967",
+      "description": "In Spring AI, various FilterExpressionConverter implementations accept a filter expression object and translate them to specific vector store query languages. In several cases, keys and values are not properly escaped, leading to the ability to alter the query.\n\nAffected versions:\nSpring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00394,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40972",
+      "description": "An attacker on the same network as the remote application may be able to utilize a timing attack to discover information about the remote secret. In extreme circumstances this could result in the attacker determining the secret and uploading changed classes, thereby achieving remote code execution in the remote application.\n\nAffected: Spring Boot 4.0.0\u20134.0.5 (fix 4.0.6), 3.5.0\u20133.5.13 (fix 3.5.14), 3.4.0\u20133.4.15 (fix 3.4.16), 3.3.0\u20133.3.18 (fix 3.3.19), 2.7.0\u20132.7.32 (fix 2.7.33); DevTools remote secret comparison. Versions that are no longer supported are also affected per vendor advisory.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring boot",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "lessThan": "3.5.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.0",
+              "lessThan": "3.4.16",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.3.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.7.0",
+              "lessThan": "2.7.33",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring boot",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00262,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-208"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40973",
+      "description": "A local attacker on the same host as the application may be able to take control of the directory used by `ApplicationTemp`. When `server.servlet.session.persistent` is set to `true` and the attack persists across application restarts, this may allow the attacker to read session information and hijack authenticated users or deploy a gadget chain and execute code as the application's user.\n\nAffected: Spring Boot 4.0.0\u20134.0.5 (fix 4.0.6), 3.5.0\u20133.5.13 (fix 3.5.14), 3.4.0\u20133.4.15 (fix 3.4.16), 3.3.0\u20133.3.18 (fix 3.3.19), 2.7.0\u20132.7.32 (fix 2.7.33); predictable temp directory / `ApplicationTemp` ownership verification. Versions that are no longer supported are also affected per vendor advisory.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring boot",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "lessThan": "3.5.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.0",
+              "lessThan": "3.4.16",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.3.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.7.0",
+              "lessThan": "2.7.33",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring boot",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00136,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-377"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40976",
+      "description": "In certain circumstances, Spring Boot's default web security is ineffective allowing unauthorized access to all endpoints. For an application to be vulnerable, it must: be a servlet-based web application; have no Spring Security configuration of its own and rely on the default web security filter chain; depend on spring-boot-actuator-autoconfigure; not depend on spring-boot-health. If any of the above does not apply, the application is not vulnerable.\n\nAffected: Spring Boot 4.0.0\u20134.0.5; upgrade to 4.0.6 or later per vendor advisory.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring boot",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.6",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring boot",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00489,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862",
+          "CWE-305"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40978",
+      "description": "SQL injection vulnerability in Spring AI's `CosmosDBVectorStore` allows attackers to execute arbitrary SQL queries via crafted document IDs.\n\nAffected versions:\nSpring AI: 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5)",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00338,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40981",
+      "description": "When using Google Secrets Manager as a backend for the Spring Cloud Config server a client can craft a request to the config server potentially exposing secrets from unintended GCP projects.\nSpring Cloud Config 3.1.x: affected from 3.1.0 through 3.1.13 (inclusive); upgrade to 3.1.14 or greater (Enterprise Support Only). Spring Cloud Config 4.1.x: affected from 4.1.0 through 4.1.9 (inclusive); upgrade to 4.1.10 or greater (Enterprise Support Only). Spring Cloud Config 4.2.x: affected from 4.2.0 through 4.2.6 (inclusive); upgrade to 4.2.7 or greater (Enterprise Support Only). Spring Cloud Config 4.3.x: affected from 4.3.0 through 4.3.2 (inclusive); upgrade to 4.3.3 or greater. Spring Cloud Config 5.0.x: affected from 5.0.0 through 5.0.2 (inclusive); upgrade to 5.0.3 or greater.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud config",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.10",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.2.0",
+              "lessThan": "4.2.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud config",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00435,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639",
+          "CWE-1220"
+        ],
+        "cpe_count": 5,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40982",
+      "description": "Spring Cloud Config allows applications to serve arbitrary text and binary files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially crafted URL that can lead to a directory traversal attack.\nSpring Cloud Config 3.1.x: affected from 3.1.0 through 3.1.13 (inclusive); upgrade to 3.1.14 or greater (Enterprise Support Only). Spring Cloud Config 4.1.x: affected from 4.1.0 through 4.1.9 (inclusive); upgrade to 4.1.10 or greater (Enterprise Support Only). Spring Cloud Config 4.2.x: affected from 4.2.0 through 4.2.6 (inclusive); upgrade to 4.2.7 or greater (Enterprise Support Only). Spring Cloud Config 4.3.x: affected from 4.3.0 through 4.3.2 (inclusive); upgrade to 4.3.3 or greater. Spring Cloud Config 5.0.x: affected from 5.0.0 through 5.0.2 (inclusive); upgrade to 5.0.3 or greater.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud config",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.10",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.2.0",
+              "lessThan": "4.2.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud config",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00727,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 5,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40987",
+      "description": "A malicious or compromised FTP/SFTP/SMB server can write arbitrary files anywhere on the client filesystem (outside the configured local-directory) with attacker-controlled content.\n\nAffected versions:\nSpring Integration 7.0.0 through 7.0.4; 6.5.0 through 6.5.8; 6.4.0 through 6.4.11; 6.3.0 through 6.3.14; 5.5.0 through 5.5.20.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring integration",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.4.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThan": "6.5.8.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThan": "6.4.12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.3.0",
+              "lessThan": "6.3.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.5.0",
+              "lessThan": "5.5.21",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring integration",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00218,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40988",
+      "description": "An application using spring-security-saml2-service-provider and the REDIRECT binding for SAML 2.0 Login or Logout may be vulnerable to a denial of service by way of an unbounded writer that inflates the compressed SAML payload into memory.\n\nAffected versions:\nSpring Security 5.7.0 through 5.7.23; 5.8.0 through 5.8.25; 6.3.0 through 6.3.16; 6.4.0 through 6.4.16; 6.5.0 through 6.5.10; 7.0.0 through 7.0.5.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.7.0",
+              "lessThan": "5.7.24",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.8.0",
+              "lessThan": "5.8.26",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.3.0",
+              "lessThan": "6.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThan": "6.4.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThan": "6.5.10.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.5.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00331,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40993",
+      "description": "An attacker with write permissions to the database table managed by JdbcAssertingPartyMetadataRepository (saml2_asserting_party_metadata) may be able to store malicious serialized payloads in the columns containing the collection of verification or encryption credentials (verification_credentials and encryption_credentials, respectively).\n\nAffected versions:\nSpring Security 7.0.0 through 7.0.5.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.5.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00198,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40994",
+      "description": "Wss4jSecurityInterceptor initialized its BSP (WS-I Basic Security Profile) compliance flag so that inbound validation disabled WSS4J BSP enforcement on RequestData. Services that validate WS-Security on the network could therefore accept messages that violate BSP rules, weakening protocol-level checks.\n\nAffected versions:\nSpring Web Services 5.0.0 through 5.0.1; 4.1.0 through 4.1.3; 4.0.0 through 4.0.18; 3.1.0 through 3.1.8.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring web services",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.1.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.3.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring web services",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00229,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1188"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40998",
+      "description": "Jaxp13XPathTemplate evaluated XPath expressions for StreamSource and SAXSource inputs using a code path that parsed attacker-controlled XML with the JDK's default DocumentBuilderFactory behavior instead of Spring's hardened parser configuration. Applications that evaluate XPath against untrusted XML payloads could therefore be exposed to XML External Entity (XXE) style attacks.\n\nAffected versions:\nSpring Web Services 5.0.0 through 5.0.1; 4.1.0 through 4.1.3; 4.0.0 through 4.0.18; 3.1.0 through 3.1.8.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring web services",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.1.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.3.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring web services",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-611"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40999",
+      "description": "When WS-Addressing is used with non-anonymous ReplyTo or FaultTo addresses, Spring WS may initiate outbound connections through configured WebServiceMessageSender instances to destinations taken directly from request headers without verifying that those destinations are safe to connect to.\n\nAffected versions:\nSpring Web Services 5.0.0 through 5.0.1; 4.1.0 through 4.1.3; 4.0.0 through 4.0.18; 3.1.0 through 3.1.8.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring web services",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.1.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.3.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring web services",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00383,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41002",
+      "description": "The base directory (`spring.cloud.config.server.git.basedir`) used by the Spring Cloud Config Server to clone Git repositories to is susceptible to time-of-check-time-of-use (TOCTOU) attacks.\nSpring Cloud Config 3.1.x: affected from 3.1.0 through 3.1.13 (inclusive); upgrade to 3.1.14 or greater (Enterprise Support Only). Spring Cloud Config 4.1.x: affected from 4.1.0 through 4.1.9 (inclusive); upgrade to 4.1.10 or greater (Enterprise Support Only). Spring Cloud Config 4.2.x: affected from 4.2.0 through 4.2.6 (inclusive); upgrade to 4.2.7 or greater (Enterprise Support Only). Spring Cloud Config 4.3.x: affected from 4.3.0 through 4.3.2 (inclusive); upgrade to 4.3.3 or greater. Spring Cloud Config 5.0.x: affected from 5.0.0 through 5.0.2 (inclusive); upgrade to 5.0.3 or greater.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud config",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.10",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.2.0",
+              "lessThan": "4.2.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud config",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41003",
+      "description": "An attacker able to influence values in RelyingPartyRegistration may be able to run arbitrary code on HTML forms generated by Spring Security filters.\n\nAffected versions:\nSpring Security 5.7.0 through 5.7.23; 5.8.0 through 5.8.25; 6.3.0 through 6.3.16; 6.4.0 through 6.4.16; 6.5.0 through 6.5.10; 7.0.0 through 7.0.5.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.7.0",
+              "lessThan": "5.7.24",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.8.0",
+              "lessThan": "5.8.26",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.3.0",
+              "lessThan": "6.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThan": "6.4.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThan": "6.5.10.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.5.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00204,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41006",
+      "description": "Spring HATEOAS's internal PropertyUtils.createObjectFromProperties method, used by the Collection+JSON and UBER media type deserializers, performs bean property binding via reflection without consulting Jackson access-control annotations.\n\nAffected versions:\nSpring HATEOAS 1.5.0 through 1.5.6; 2.3.0 through 2.3.4; 2.4.0 through 2.4.1; 2.5.0 through 2.5.2; 3.0.0 through 3.0.3.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring hateoas",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.5.0",
+              "lessThan": "1.5.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.3.0",
+              "lessThan": "2.3.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.4.0",
+              "lessThan": "2.4.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.5.0",
+              "lessThan": "2.5.2.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThan": "3.0.3.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring hateoas",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00277,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41007",
+      "description": "Spring HATEOAS maintains an unbounded static cache of StringLinkRelation instances keyed on attacker-supplied strings.\n\nAffected versions:\nSpring HATEOAS 1.5.0 through 1.5.6; 2.3.0 through 2.3.4; 2.4.0 through 2.4.1; 2.5.0 through 2.5.2; 3.0.0 through 3.0.3.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring hateoas",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.5.0",
+              "lessThan": "1.5.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.3.0",
+              "lessThan": "2.3.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.4.0",
+              "lessThan": "2.4.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.5.0",
+              "lessThan": "2.5.2.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThan": "3.0.3.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring hateoas",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00299,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41695",
+      "description": "Spring Data Commons applications may be vulnerable to denial of service through resource exhaustion when attacker-controlled property path strings are passed to MappingContext property path resolution.\n\nAffected versions:\nSpring Data Commons 4.0.0 through 4.0.5; 3.5.0 through 3.5.11; 3.4.0 through 3.4.14.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data commons",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "lessThan": "3.5.11.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.0",
+              "lessThan": "3.4.15",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data commons",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00364,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41699",
+      "description": "Spring for GraphQL applications are vulnerable to Unsafe Deserialization when processing paginated GraphQL queries. An attacker can craft a malicious GraphQL request that can lead to Remote Code Execution when the application exposes a paginated (Connection) field and the classpath contains specific classes that can be leveraged during deserialization.\n\nAffected versions:\nSpring for GraphQL 2.0.0 through 2.0.3; 1.4.0 through 1.4.5; 1.3.0 through 1.3.8.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.0.3.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThan": "1.4.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.3.0",
+              "lessThan": "1.3.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00431,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41700",
+      "description": "Spring for GraphQL applications that have enabled the WebSocket transport are vulnerable to Cross-Site WebSocket Hijacking. An attacker can trick an authenticated user into visiting a malicious page, allowing the attacker to execute arbitrary GraphQL operations with the victim's credentials.\n\nAffected versions:\nSpring for GraphQL 2.0.0 through 2.0.3; 1.4.0 through 1.4.5; 1.3.0 through 1.3.8; 1.0.0 through 1.0.6.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.0.3.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThan": "1.4.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.3.0",
+              "lessThan": "1.3.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.7",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00189,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41705",
+      "description": "Spring AI's MilvusVectorStore#doDelete(List) implementation is vulnerable to filter-expression injection via unsanitized document IDs.\nSpring AI 1.0.x: affected from 1.0.0 through latest 1.0.x; upgrade to 1.0.7 or greater. Spring AI 1.1.x: affected from 1.1.0 through latest 1.1.x; upgrade to 1.1.6 or greater.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.6",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00353,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-917"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41707",
+      "description": "Authentication Bypass by Capture-replay vulnerability in Spring Spring Security allows Spring Security's DPoPProofJwtDecoderFactory contains a cache-based replay attack vulnerability. The internal cache storing JWT ID claims has a strict size limit, allowing attackers to evict legitimate entries by flooding the server with dummy requests, then replay intercepted valid DPoP proofs.\n\nThis issue affects Spring Security: 7.1.0, from 7.0.0 through 7.0.6, and from 6.5.0 through 6.5.11.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThanOrEqual": "6.5.11",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00254,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-294"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41708",
+      "description": "In Spring Cloud Sleuth, it is possible for a user to provide specially crafted calls that may cause a denial-of-service (DoS) condition. The application is vulnerable when it uses a vulnerable version of org.springframework.cloud:spring-cloud-sleuth-instrumentation and Spring TX instrumentation is not disabled.\n\nAffected versions:\nSpring Cloud Sleuth 3.1.0 through 3.1.13.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud sleuth",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.14",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud sleuth",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00278,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41716",
+      "description": "Spring Data's internal property-lookup cache accepts and permanently retains attacker-supplied strings as cache keys, allowing heap exhaustion through repeated requests.\n\nAffected versions:\nSpring Data Commons 2.7.0 through 2.7.19; 3.3.0 through 3.3.16; 3.4.0 through 3.4.14; 3.5.0 through 3.5.11; 4.0.0 through 4.0.5.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data commons",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.7.0",
+              "lessThan": "2.7.20",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.0",
+              "lessThan": "3.4.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "lessThan": "3.5.11.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.5.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data commons",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00363,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41717",
+      "description": "Spring Data MongoDB contains a SpEL (Spring Expression Language) expression injection vulnerability. The issue occurs during parameter binding when a user-defined repository query method is annotated with @Query and utilizes a capture-all placeholder.\n\nAffected versions:\nSpring Data MongoDB 5.0.0 through 5.0.5; 4.5.0 through 4.5.11; 4.4.0 through 4.4.14; 4.3.0 through 4.3.16; 4.2.0 through 4.2.15; 4.1.0 through 4.1.14; 4.0.0 through 4.0.15; 3.4.0 through 3.4.19.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data mongodb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.5.0",
+              "lessThan": "4.5.11.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.4.0",
+              "lessThan": "4.4.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.2.0",
+              "lessThan": "4.2.16",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.16",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.0",
+              "lessThan": "3.4.20",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data mongodb",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00328,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-917"
+        ],
+        "cpe_count": 8,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41720",
+      "description": "Spring LDAP's DirContextAuthenticationStrategy implementations do not reject a bind request where a non-empty username is paired with an empty or null password.\n\nAffected versions:\nSpring LDAP 2.4.0 through 2.4.4; 3.2.0 through 3.2.17; 3.3.0 through 3.3.7; 4.0.0 through 4.0.3.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ldap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.4.0",
+              "lessThan": "2.4.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThan": "3.2.18",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.3.7.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.3.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ldap",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00257,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41728",
+      "description": "Spring Data REST's JSON Patch (application/json-patch+json) implementation does not apply the write-access filter to intermediate path segments when resolving a multi-segment JSON Pointer.\n\nAffected versions:\nSpring Data REST 3.7.0 through 3.7.19; 4.3.0 through 4.3.16; 4.4.0 through 4.4.14; 4.5.0 through 4.5.11; 5.0.0 through 5.0.5.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data rest",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThan": "3.7.20",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.4.0",
+              "lessThan": "4.4.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.5.0",
+              "lessThan": "4.5.11.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.5.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data rest",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00306,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41729",
+      "description": "Spring Data REST is vulnerable to SpEL expression injection through map-typed properties when processing JSON Patch (application/json-patch+json) requests. When a persistent entity exposes a Map-typed property, the JSON Pointer path segment used as the map key is embedded directly into a SpEL expression without sanitization or validation.\n\nAffected versions:\nSpring Data REST 3.7.0 through 3.7.19; 4.3.0 through 4.3.16; 4.4.0 through 4.4.14; 4.5.0 through 4.5.11; 5.0.0 through 5.0.5.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data rest",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThan": "3.7.20",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.17",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.4.0",
+              "lessThan": "4.4.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.5.0",
+              "lessThan": "4.5.12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.6",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data rest",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00393,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-917"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41731",
+      "description": "JsonKafkaHeaderMapper and the deprecated DefaultKafkaHeaderMapper matched type headers against trusted packages using a prefix check, meaning that trusting any package implicitly trusted all of its subpackages. Combined with Jackson's default bean deserialization, a producer could supply crafted header values that caused the consumer to deserialize arbitrary JDK types.\n\nAffected versions:\nSpring for Apache Kafka 4.0.0 through 4.0.5; 3.3.0 through 3.3.15; 3.2.0 through 3.2.13; 2.9.0 through 2.9.13; 2.8.0 through 2.8.11.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for apache kafka",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.3.15.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThan": "3.2.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.9.0",
+              "lessThan": "2.9.14",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.8.0",
+              "lessThan": "2.8.12",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for apache kafka",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0051,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 7,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41732",
+      "description": "JsonPulsarHeaderMapper matched type headers against trusted packages using a prefix check, meaning that trusting any package implicitly trusted all of its subpackages. Additionally, an empty trusted-packages configuration fell back to trusting all packages rather than applying a safe default allow-list.\n\nAffected versions:\nSpring for Apache Pulsar 2.0.0 through 2.0.5; 1.2.0 through 1.2.17; 1.1.0 through 1.1.17.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for apache pulsar",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.0.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.2.0",
+              "lessThan": "1.2.17.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.18",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for apache pulsar",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00347,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41842",
+      "description": "Spring MVC and WebFlux applications are vulnerable to Denial of Service (DoS) attacks when resolving static resources.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.7.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThan": "6.2.18.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThan": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThan": "5.3.49",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00399,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41845",
+      "description": "Due to incorrect escaping, the use of JavaScriptUtils.javaScriptEscape() may lead to JavaScript code injection in the browser, potentially resulting in a cross-site scripting (XSS) vulnerability.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.7.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThan": "6.2.18.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThan": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThan": "5.3.49",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41849",
+      "description": "An integer overflow vulnerability exists in the evaluation logic of the Spring Expression Language (SpEL). An attacker can exploit this by supplying a specially crafted SpEL expression that triggers excessive resource consumption, resulting in a Denial of Service (DoS).\n\nAffected versions:\nSpring Framework 5.3.0 through 5.3.48.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThan": "5.3.49",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00263,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41850",
+      "description": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions are vulnerable to an Algorithmic Denial of Service (DoS). By providing a specially crafted expression, an attacker can trigger excessive resource consumption during evaluation, leading to application degradation or unavailability.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.7.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThan": "6.2.18.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThan": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThan": "5.3.49",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0036,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41855",
+      "description": "In an untrusted JMS environment, org.springframework.jms.support.converter.MappingJackson2MessageConverter and org.springframework.jms.support.converter.JacksonJsonMessageConverter allow arbitrary class instantiation, which can lead to unauthorized actions via gadget class deserialization.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.7.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThan": "6.2.18.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThan": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThan": "5.3.49",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00288,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41856",
+      "description": "The Spring GraphQL annotation detection mechanism for @Controller data fetchers may not correctly resolve annotations on methods within type hierarchies. This can be an issue if such annotations are used for authorization decisions. When all conditions are met, security annotations can be ignored at runtime.\n\nAffected versions:\nSpring for GraphQL 2.0.0 through 2.0.3; 1.4.0 through 1.4.5; 1.3.0 through 1.3.8; 1.0.0 through 1.0.6.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.0.3.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThan": "1.4.5.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.3.0",
+              "lessThan": "1.3.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.7",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41862",
+      "description": "Spring Statemachine's Kryo-based persistence backends (JPA, MongoDB, Redis and ZooKeeper) deserialise persisted state-machine contexts without enforcing a class allowlist (CWE-502, deserialisation of untrusted data), which can lead to remote code execution inside the application JVM.\n\nAffected versions:\nSpring Statemachine 4.0.0 through 4.0.1\nSpring Statemachine 3.2.0 through 3.2.4",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring statemachine",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.0.1.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThan": "3.2.5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring statemachine",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00746,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47825",
+      "description": "Spring Cloud Gateway Server forwards the X-Forwarded-For and Forwarded headers from untrusted proxies in certain configuration scenarios. This affects both the WebMVC and WebFlux Gateway Servers.\n\nAffected versions:\nSpring Cloud Gateway 3.1.x (fix 3.1.13).\nSpring Cloud Gateway 4.1.x (fix 4.1.13).\nSpring Cloud Gateway 4.2.x (fix 4.2.9).\nSpring Cloud Gateway 4.3.x (fix 4.3.5).\nSpring Cloud Gateway 5.0.x (fix 5.0.2).",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.0",
+              "lessThan": "3.1.13",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "4.1.13",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.2.0",
+              "lessThan": "4.2.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "4.3.4.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.1.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud gateway",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00139,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47835",
+      "description": "In Spring AI Vector Stores, special characters could be used to force the execution of arbitrary queries in Elasticsearch, OpenSearch, and GemFire VectorDB. Affected components: spring-ai-elasticsearch-store, spring-ai-opensearch-store, spring-ai-gemfire-store.\n\nAffected versions:\nSpring AI 1.0.0 through 1.0.x (fix 1.0.9).\nSpring AI 1.1.0 through 1.1.x (fix 1.1.8).",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.8",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00304,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-943"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47836",
+      "description": "The base directory (spring.cloud.config.server.svn.basedir) used by the Spring Cloud Config Server to clone SVN repositories to is susceptible to time-of-check-time-of-use (TOCTOU) attacks.\nSpring Cloud Config 5.0.0 - 5.0.4\nSpring Cloud Config 4.3.0 - 4.3.4\nSpring Cloud Config 4.0.0 - 4.2.8\nSpring Cloud Config 3.1.14 and earlier",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud config",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThanOrEqual": "4.3.4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "4.2.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "3.1.14",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud config",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00142,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47841",
+      "description": "An application using Spring Security's WebAuthn support may be vulnerable to user verification bypass when using a distributed HTTP session store.\nSpring Security 7.1.0\nSpring Security 7.0.0 - 7.0.6\nSpring Security 6.5.0 - 6.5.11\nSpring Security 6.4.0 - 6.4.18",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThanOrEqual": "6.5.11",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThanOrEqual": "6.4.18",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47849",
+      "description": "Spring Data REST does not guard identifier (@Id) and version (@Version) properties against mutation via RFC 6902 JSON Patch (application/json-patch+json) requests.\nSpring Data REST 5.1.0\nSpring Data REST 5.0.0 - 5.0.6\nSpring Data REST 4.5.0 - 4.5.12\nSpring Data REST 4.0.0 - 4.4.15\nSpring Data REST 3.7.20 and earlier",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data rest",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.5.0",
+              "lessThanOrEqual": "4.5.12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "4.4.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "3.7.20",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data rest",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00273,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-915"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47851",
+      "description": "Analyzing a PDF with a deeply nested or cyclic table of contents can cause a StackOverflowError in the ingestion thread.\nSpring AI 2.0.0\nSpring AI 1.1.0 - 1.1.8\nSpring AI 1.0.0 - 1.0.9",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThanOrEqual": "1.1.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00263,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-674"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47852",
+      "description": "A local attacker on a multi-user host can pre-create the deterministic cache path and plant a malicious ONNX model file.\nSpring AI 2.0.0\nSpring AI 1.1.0 - 1.1.8\nSpring AI 1.0.0 - 1.0.9",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThanOrEqual": "1.1.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00202,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-377"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47858",
+      "description": "Starting Spring Boot applications in the Spring Tools with the live information mode enabled makes the running application vulnerable against JMX-based remote code execution.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier\nSpring Tools for VSCode / Cursor / Theia: 2.2.0 and earlier",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring tools for eclipse",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.2.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "spring",
+          "product": "spring tools for vscode / cursor / theia",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "2.2.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring tools for eclipse",
+        "product:spring tools for vscode / cursor / theia",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00209,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47873",
+      "description": "The Boot Dashboard Docker integration in Spring Tools publishes container control ports on all of the host's network interfaces (0.0.0.0) rather than restricting them to loopback.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring tools for eclipse",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.2.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring tools for eclipse",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00196,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1327"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47877",
+      "description": "Spring Security Authorization Server's default consent page renders user-controlled values without HTML entity encoding.\nSpring Security 7.1.0\nSpring Security 7.0.0 - 7.0.6",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.6",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00164,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47879",
+      "description": "Spring Cloud Gateway JsonToGrpcGatewayFilterFactory allows arbitrary Spring Resource locations for defining the proto descriptor.\nSpring Cloud Gateway 5.0.0 - 5.0.2\nSpring Cloud Gateway 4.3.0 - 4.3.5\nSpring Cloud Gateway 4.0.0 - 4.2.9\nSpring Cloud Gateway 3.1.13 and earlier",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring cloud gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThanOrEqual": "4.3.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "4.2.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "3.1.13",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring cloud gateway",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0025,
+      "nvd": {
+        "cvss_v3_score": 8.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47882",
+      "description": "When enabling Spring Boot DevTools support for a remote application target (for example a Docker container or Cloud Foundry app) from the Spring Tools Boot Dashboard, Spring Tools generates a shared secret that authenticates DevTools remote-restart uploads to the deployed application. This secret was generated using a non-cryptographic pseudo-random number generator rather than a cryptographically secure source of randomness.\nAffected Spring Products and Versions:\nSpring Tools for Eclipse: 5.2.0 and earlier",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring tools for eclipse",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.2.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring tools for eclipse",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00178,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-338"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47884",
+      "description": "Use of XsltView in a Spring MVC application can result in SSRF and RCE attack if the application has an \"/**\" mapping that results in view rendering, and where the view name is not explicitly specified.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.25.RELEASE and earlier",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00422,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47885",
+      "description": "The PartEventHttpMessageReader in Spring WebFlux does not enforce the maxPartSize limit when maxInMemorySize is set to -1.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00259,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47886",
+      "description": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions may be vulnerable to a Denial of Service (DoS) attack when the power operator (^) is used with a BigDecimal or BigInteger operand and a large exponent value.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.25.RELEASE and earlier",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00324,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47888",
+      "description": "A Spring RSocket application is exposed to a memory leak via a malformed SETUP frame.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.0.RELEASE - 5.2.25.RELEASE",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.2.0.RELEASE",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00324,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-401"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47889",
+      "description": "A WebFlux application running on the Jetty 12 Core reactive adapter serializes response cookies without the sameSite attribute.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00253,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1275"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47890",
+      "description": "Spring MVC and WebFlux applications are vulnerable to stream corruption when using Server-Sent Events (SSE) with view fragments.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00314,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-93"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47891",
+      "description": "A Spring WebFlux application that relies on the Aalto XML processor to parse XML input does not correctly enforce the maxInMemorySize limit.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.25.RELEASE and earlier",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0029,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47892",
+      "description": "A WebFlux application using functional endpoints and deployed with DispatcherServlet may be vulnerable to a header predicate bypass in a pre-flight request.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.5.RELEASE - 5.2.25.RELEASE",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.2.5.RELEASE",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00365,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-47893",
+      "description": "A Spring WebFlux application that supports WebSocket connections may expose indirectly sensitive user information by including request headers in an exception reason.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.25.RELEASE and earlier",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00245,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-209"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59270",
+      "description": "Spring Security's embedded UnboundID LDAP server (UnboundIdContainer) unconditionally registers an administrative credential and binds its listener to all available network interfaces.\nSpring Security 7.1.0\nSpring Security 7.0.0 - 7.0.6\nSpring Security 6.5.0 - 6.5.11\nSpring Security 6.4.0 - 6.4.18\nSpring Security 5.8.0 - 5.8.27\nSpring Security 5.7.0 - 5.7.25",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThanOrEqual": "6.5.11",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThanOrEqual": "6.4.18",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.8.0",
+              "lessThanOrEqual": "5.8.27",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.7.0",
+              "lessThanOrEqual": "5.7.25",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring security",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00271,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59279",
+      "description": "The MCP Streamable HTTP server transport (WebFlux and WebMvc variants) does not place any limit on the number of sessions it retains, and by default does not require clients to be authenticated. As a result, a remote attacker can cause the server to accumulate an unbounded number of sessions over time, gradually exhausting available memory and ultimately causing a Denial of Service that affects all legitimate clients.\nAffected versions:\nSpring AI: 2.0.0",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00386,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59282",
+      "description": "Spring Framework applications that use Spring's data binding infrastructure to apply user-supplied property paths onto a target object may be vulnerable to a Denial of Service (DoS) attack.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.25.RELEASE and earlier",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00324,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59283",
+      "description": "Applications that evaluate Spring Expression Language (SpEL) expressions using SimpleEvaluationContext may be vulnerable to a safety guard bypass when the SpEL expression compiler is active.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49\nSpring Framework 5.2.25.RELEASE and earlier",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.2.25.RELEASE",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00374,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-913"
+        ],
+        "cpe_count": 6,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59285",
+      "description": "Spring for GraphQL applications are vulnerable to Unsafe Deserialization when processing paginated GraphQL queries.\nSpring for GraphQL 2.0.0 - 2.0.4",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00478,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59286",
+      "description": "The GraphiQL page bundled with Spring for GraphQL loads JavaScript libraries from a public CDN, without Subresource Integrity checks. An attacker can inject malicious code in those scripts and execute arbitrary code on the browser loading the GraphiQL page.\nSpring for GraphQL 2.0.0 - 2.0.4\nSpring for GraphQL 1.4.0 - 1.4.6\nSpring for GraphQL 1.1.0 - 1.3.9\nSpring for GraphQL 1.0.0 - 1.0.7",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThanOrEqual": "1.4.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThanOrEqual": "1.3.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.7",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-494"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59288",
+      "description": "The GraphiQL page bundled with Spring for GraphQL sends requests to the GraphQL endpoints of the application. An attacker can share a malicious URL so that the victim's browser might leak confidential information to the attacker's website.\nSpring for GraphQL 2.0.0 - 2.0.4\nSpring for GraphQL 1.4.0 - 1.4.6\nSpring for GraphQL 1.1.0 - 1.3.9\nSpring for GraphQL 1.0.0 - 1.0.7",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThanOrEqual": "1.4.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThanOrEqual": "1.3.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.7",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59289",
+      "description": "Spring for GraphQL's Spring Data pagination support resolves arguments of a scrollable query and forwards the client-supplied values to the underlying repository. An attacker can forge a malicious query for a Connection field that can exhaust application memory or place significant, prolonged load on the underlying datastore, resulting in a Denial of Service.\nSpring for GraphQL 2.0.0 - 2.0.4\nSpring for GraphQL 1.4.0 - 1.4.6\nSpring for GraphQL 1.2.0 - 1.3.9",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring for graphql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThanOrEqual": "1.4.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.2.0",
+              "lessThanOrEqual": "1.3.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring for graphql",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00346,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59307",
+      "description": "An operator who calls JdbcMessageStore.addAllowedPatterns(...) to restrict deserialization receives no protection at all when the store is a Spring-managed bean.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0.5\nSpring Integration 6.5.0 - 6.5.10\nSpring Integration 6.4.0 - 6.4.12",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring integration",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThanOrEqual": "6.5.10",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThanOrEqual": "6.4.12",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring integration",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00346,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 8,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59313",
+      "description": "Spring MVC applications using the functional web framework are vulnerable to stream corruption when using Server-Sent Events (SSE).\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19\nSpring Framework 6.1.0 - 6.1.28\nSpring Framework 6.0.0 - 6.0.30\nSpring Framework 5.3.0 - 5.3.49",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.2.0",
+              "lessThanOrEqual": "6.2.19",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThanOrEqual": "6.1.28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.0.30",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.3.0",
+              "lessThanOrEqual": "5.3.49",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring framework",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00387,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-93"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59316",
+      "description": "Spring Authorization Server's default consent page renders user-controlled values without HTML entity encoding. When using the DefaultConsentPage, an attacker can craft an OAuth2 authorization request containing a malicious value that is stored server-side and later rendered unencoded in the default consent page presented to the end user.\nSpring Authorization Server 1.5.0 - 1.5.8\nSpring Authorization Server 1.4.0 - 1.4.11",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring authorization server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.5.0",
+              "lessThanOrEqual": "1.5.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "1.4.0",
+              "lessThanOrEqual": "1.4.11",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring authorization server",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00185,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59324",
+      "description": "When an IntegrationFlow uses .fluxTransform() with an asynchronous/reordering fluxFunction that emits raw payloads, concurrent requests on the same FluxMessageChannel subscription have their reply headers (replyChannel, errorChannel, correlationId, any propagated security/tenant headers) copied from whichever message was most recently consumed upstream.\nSpring Integration 7.1.0\nSpring Integration 7.0.0 - 7.0.5\nSpring Integration 6.5.0 - 6.5.10\nSpring Integration 6.4.0 - 6.4.12\nSpring Integration 5.5.21 and earlier",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring integration",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.1.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.5.0",
+              "lessThanOrEqual": "6.5.10",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0",
+              "lessThanOrEqual": "6.4.12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.5.21",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring integration",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00237,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,4065 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "ni",
+  "count": 75,
+  "items": [
+    {
+      "cve_id": "CVE-2023-4570",
+      "description": "An improper access restriction in NI MeasurementLink Python services could allow an attacker on an adjacent network to reach services exposed on localhost.  These services were previously thought to be unreachable outside of the node.  This affects measurement plug-ins written in Python using version 1.1.0 of the ni-measurementlink-service\u00a0Python package and all previous versions.\n",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "measurementlink",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.1.0",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "1.1.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:measurementlink",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00281,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-420"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-4601",
+      "description": "A stack-based buffer overflow vulnerability exists in NI System Configuration that could result in information disclosure and/or arbitrary code execution. Successful exploitation requires that an attacker can provide a specially crafted response. This affects NI System Configuration 2023 Q3 and all previous versions.\n",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "system configuration",
+          "versions": [
+            {
+              "lessThanOrEqual": "23.5.*",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:system configuration",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00623,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-10494",
+      "description": "An out of bounds read due to improper input validation in HeapObjMapImpl.cpp in NI LabVIEW may disclose information or result in arbitrary code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q3 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.4",
+              "status": "affected",
+              "version": "23.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.1",
+              "status": "affected",
+              "version": "24.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00193,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285",
+          "CWE-125"
+        ],
+        "cpe_count": 15,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-10495",
+      "description": "An out of bounds read due to improper input validation when loading the font table in fontmgr.cpp in NI LabVIEW may disclose information or result in arbitrary code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q3 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.4",
+              "status": "affected",
+              "version": "23.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.1",
+              "status": "affected",
+              "version": "24.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00193,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285",
+          "CWE-125"
+        ],
+        "cpe_count": 15,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-10496",
+      "description": "An out of bounds read due to improper input validation in BuildFontMap in fontmgr.cpp in NI LabVIEW may disclose information or result in arbitrary code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q3 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.4",
+              "status": "affected",
+              "version": "23.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "224.3.1",
+              "status": "affected",
+              "version": "24.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00193,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285",
+          "CWE-125"
+        ],
+        "cpe_count": 15,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12740",
+      "description": "Vision related software from NI used a third-party library for image processing that exposes several vulnerabilities.  These vulnerabilities may result in arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted file.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "vision development module",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "flexrio",
+          "versions": [
+            {
+              "lessThan": "25.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "ni-imaqdx",
+          "versions": [
+            {
+              "lessThanOrEqual": "23.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "vision acquisition software",
+          "versions": [
+            {
+              "lessThanOrEqual": "23.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "sem"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "vision builder for automated inspection",
+          "versions": [
+            {
+              "lessThanOrEqual": "23.*",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "data record ad",
+          "versions": [
+            {
+              "lessThanOrEqual": "2.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "frc game tools",
+          "versions": [
+            {
+              "lessThanOrEqual": "25.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:data record ad",
+        "product:flexrio",
+        "product:frc game tools",
+        "product:ni-imaqdx",
+        "product:vision acquisition software",
+        "product:vision builder for automated inspection",
+        "product:vision development module",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0019,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12741",
+      "description": "A deserialization of untrusted data vulnerability exists in NI DAQExpress that may result in remote code execution. Successful exploitation requires an attacker to get a user to open a specially crafted project file. This vulnerability affects DAQExpress 5.1 and prior versions. \u00a0Please note that DAQExpress is an EOL product and will not receive any updates.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "daqexpress",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:daqexpress",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0423,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12742",
+      "description": "A deserialization of untrusted data vulnerability exists in NI G Web Development Software that may result in arbitrary code execution.\u202f Successful exploitation requires an attacker to get a user to open a specially crafted project file.\u202f This vulnerability affects G Web Development Software 2022 Q3 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "g web development software",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:g web development software",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.05535,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1155",
+      "description": "Incorrect permissions in the installation directories for shared SystemLink Elixir based services may allow an authenticated user to potentially enable escalation of privilege via local access. \n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "systemlink server",
+          "versions": [
+            {
+              "lessThanOrEqual": "2023 Q3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "flexlogger",
+          "versions": [
+            {
+              "lessThanOrEqual": "2022 Q3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:flexlogger",
+        "product:systemlink server",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00274,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276",
+          "CWE-863"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1156",
+      "description": "Incorrect directory permissions for the shared NI RabbitMQ service may allow a local authenticated user to read RabbitMQ configuration information and potentially enable escalation of privileges.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "systemlink server",
+          "versions": [
+            {
+              "lessThanOrEqual": "2023 Q3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "flexlogger",
+          "versions": [
+            {
+              "lessThanOrEqual": "2022 Q3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:flexlogger",
+        "product:systemlink server",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276",
+          "CWE-863"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-23608",
+      "description": "An out of bounds write due to a missing bounds check in LabVIEW may result in remote code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q1 and prior versions.\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "2024 Q1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00591,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-23609",
+      "description": "An improper error handling vulnerability in LabVIEW may result in remote code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "2024 Q1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00591,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-23610",
+      "description": "An out of bounds write due to a missing bounds check in LabVIEW may result in remote code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q1 and prior versions.\n\n\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "2024 Q1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00591,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-23611",
+      "description": "An out of bounds write due to a missing bounds check in LabVIEW may result in remote code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects LabVIEW 2024 Q1 and prior versions.\n\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "2024 Q1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00604,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-23612",
+      "description": "An improper error handling vulnerability in LabVIEW may result in remote code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "2024 Q1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00604,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 10,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4044",
+      "description": "A deserialization of untrusted data vulnerability exists in common code used by FlexLogger and InstrumentStudio that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted project file.  This vulnerability affects NI FlexLogger 2024 Q1 and prior versions as well as NI InstrumentStudio 2024 Q1 and prior versions.\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "flexlogger",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "instrumentstudio",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:flexlogger",
+        "product:instrumentstudio",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.14692,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4079",
+      "description": "An out of bounds read due to a missing bounds check in LabVIEW may disclose information or result in arbitrary code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00281,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 9,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4080",
+      "description": "A memory corruption issue due to an improper length check in LabVIEW tdcore.dll may disclose information or result in arbitrary code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted VI.  This vulnerability affects LabVIEW 2024 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00271,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 9,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4081",
+      "description": "A memory corruption issue due to an improper length check in NI LabVIEW may disclose information or result in arbitrary code execution. Successful exploitation requires an attacker to provide a user with a specially crafted VI. This vulnerability affects NI LabVIEW 2024 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "sem"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00271,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 9,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5602",
+      "description": "A stack-based buffer overflow vulnerability due to a missing bounds check in the NI I/O Trace Tool may result in arbitrary code execution.  Successful exploitation requires an attacker to provide a user with a specially crafted nitrace file.\n\nThe NI I/O Trace tool is installed as part of the NI System Configuration utilities included with many NI software products.\u202f Refer to the NI Security Advisory for identifying the version of NI IO Trace.exe installed. The NI I/O Trace tool was also previously released as NI Spy.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "io trace tool",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "server"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:io trace tool",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00306,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6121",
+      "description": "An out-of-date version of Redis shipped with NI SystemLink Server is susceptible to multiple vulnerabilities, including CVE-2022-24834.  This affects NI SystemLink Server 2024 Q1 and prior versions.  It also affects NI FlexLogger 2023 Q2 and prior versions which installed this shared service.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "systemlink server",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "flexlogger",
+          "versions": [
+            {
+              "lessThanOrEqual": "23.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:flexlogger",
+        "product:systemlink server",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00273,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6675",
+      "description": "A deserialization of untrusted data vulnerability exists in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted project file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "veristand",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:veristand",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00396,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6791",
+      "description": "A directory path traversal vulnerability exists when loading a vsmodel file in NI VeriStand that may result in remote code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted .vsmodel file.  This vulnerability affects VeriStand 2024 Q2 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "veristand",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:veristand",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00458,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6793",
+      "description": "A\u00a0deserialization of untrusted data\u00a0vulnerability\u00a0exists in NI VeriStand  DataLogging Server that may result in remote code execution.  Successful exploitation requires an attacker to send a specially crafted message.  These vulnerabilities affect NI VeriStand 2024 Q2 and prior versions.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "veristand",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:veristand",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01193,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6794",
+      "description": "A deserialization of untrusted data vulnerability exists in NI VeriStand Waveform Streaming  Server that may result in remote code execution. Successful exploitation requires an attacker to send a specially crafted message. These vulnerabilities affect NI VeriStand 2024 Q2 and prior versions.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "veristand",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:veristand",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01152,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6805",
+      "description": "The NI VeriStand Gateway is missing authorization checks when an actor attempts to access File Transfer resources.  These missing checks may result in information disclosure or remote code execution.  This affects NI VeriStand 2024 Q2 and prior versions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "veristand",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:veristand",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00954,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6806",
+      "description": "The NI VeriStand Gateway is missing authorization checks when an actor attempts to access Project resources.  These missing checks may result in remote code execution.  This affects NI VeriStand 2024 Q2 and prior versions.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "veristand",
+          "versions": [
+            {
+              "lessThanOrEqual": "24.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:veristand",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01019,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-12097",
+      "description": "There is a relative path traversal vulnerability in the NI System Web Server that may result in information disclosure. \u00a0Successful exploitation requires an attacker to send a specially crafted request to the NI System Web Server, allowing the attacker to read arbitrary files. \u00a0This vulnerability existed in the NI System Web Server 2012 and prior versions. \u00a0It was fixed in 2013.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.*",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00617,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-23"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2449",
+      "description": "NI FlexLogger usiReg URI File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to create arbitrary files on affected installations of NI FlexLogger. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of URI files by the usiReg component. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-21805.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "flexlogger",
+          "versions": [
+            {
+              "version": "2024 Q1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:flexlogger",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.33705,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2450",
+      "description": "NI Vision Builder AI VBAI File Processing Missing Warning Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NI Vision Builder AI. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the processing of VBAI files. The issue results from allowing the execution of dangerous script without user warning. An attacker can leverage this vulnerability to execute code in the context of the current user. Was ZDI-CAN-22833.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "vision builder ai",
+          "versions": [
+            {
+              "version": "2023 Q3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:vision builder ai",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00527,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-356"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2629",
+      "description": "There is a DLL hijacking vulnerability due to an uncontrolled search path that exists in NI LabVIEW when loading NI Error Reporting.  This vulnerability may result in arbitrary code execution.  Successful exploitation requires an attacker to insert a malicious DLL into the uncontrolled search path.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThan": "22.3.4",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "223.3.5",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "24.3.2",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "sem"
+            },
+            {
+              "lessThan": "25.1.1",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00194,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 20,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2630",
+      "description": "There is a DLL hijacking vulnerability due to an uncontrolled search path that exists in NI LabVIEW.  This vulnerability may result in arbitrary code execution.  Successful exploitation requires an attacker to insert a malicious DLL into the uncontrolled search path.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThan": "22.3.4",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "23.3.5",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "224.3.2",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.1.1",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00194,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 20,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2631",
+      "description": "Out of bounds write vulnerability due to improper bounds checking in NI LabVIEW in InitCPUInformation() that may result in information disclosure or arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThan": "22.3.4",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "23.3.5",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "24.3.2",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.1.1",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00202,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 20,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2632",
+      "description": "Out of bounds write vulnerability due to improper bounds checking in NI LabVIEW reading CPU info from cache that may result in information disclosure or arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThan": "22.3.4",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "23.3.5",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "24.3.2",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.1.1",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00202,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 20,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2633",
+      "description": "Out of bounds read vulnerability due to improper bounds checking in NI LabVIEW in lvre!UDecStrToNum that may result in information disclosure or arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.6",
+              "status": "affected",
+              "version": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.3",
+              "status": "affected",
+              "version": "24.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.3.0",
+              "status": "affected",
+              "version": "25.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00157,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 24,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-2634",
+      "description": "Out of bounds read vulnerability due to improper bounds checking in NI LabVIEW in fontmgr may result in information disclosure or arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "sem"
+            },
+            {
+              "lessThanOrEqual": "23.3.6",
+              "status": "affected",
+              "version": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.3",
+              "status": "affected",
+              "version": "24.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.3.0",
+              "status": "affected",
+              "version": "25.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00157,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 24,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-30417",
+      "description": "There is a memory corruption vulnerability due to an out of bounds write in\u00a0Library!DecodeBase64() when using the SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability\u00a0affects NI Circuit Design Suite 14.3.0 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00197,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-30418",
+      "description": "There is a memory corruption vulnerability due to an out of bounds write in CheckPins() when using the SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability affects NI Circuit Design Suite 14.3.0 and prior versions.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14..3.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00197,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-30419",
+      "description": "There is a memory corruption vulnerability due to an out of bounds read in GetSymbolBorderRectSize() when using the SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability affects NI Circuit Design Suite 14.3.0 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00197,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-30420",
+      "description": "There is a memory corruption vulnerability due to an out of bounds read in Bitmap::InternalDraw() when using the SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability affects NI Circuit Design Suite 14.3.0 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00197,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-30421",
+      "description": "There is a memory corruption vulnerability due to a stack-based buffer overflow in DrObjectStorage::XML_Serialize() when using the SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability affects NI Circuit Design Suite 14.3.0 and prior versions.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3.0",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.002,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64461",
+      "description": "There is an out of bounds write vulnerability in NI LabVIEW in mgocre_SH_25_3!RevBL() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64462",
+      "description": "There is an out of bounds read vulnerability in NI LabVIEW in LVResFile::RGetMemFileHandle() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64463",
+      "description": "There is an out of bounds read vulnerability in NI LabVIEW in LVResource::DetachResource() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64464",
+      "description": "There is an out of bounds read vulnerability in NI LabVIEW in lvre!VisaWriteFromFile() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64465",
+      "description": "There is an out of bounds read vulnerability in NI LabVIEW in lvre!DataSizeTDR() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64466",
+      "description": "There is an out of bounds read vulnerability in NI LabVIEW in lvre!ExecPostedProcRecPost() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64467",
+      "description": "There is an out of bounds read vulnerability in NI LabVIEW in LVResFile::FindRsrcListEntry() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64468",
+      "description": "There is a use-after-free vulnerability in sentry!sentry_span_set_data() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-64469",
+      "description": "There is a stack-based buffer overflow vulnerability in NI LabVIEW in LVResFile::FindRsrcListEntry() when parsing a corrupted VI file.  This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI. This vulnerability affects NI LabVIEW 2025 Q3 (25.3) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.7",
+              "status": "affected",
+              "version": "23.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.4",
+              "status": "affected",
+              "version": "24.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "25.3.2",
+              "status": "affected",
+              "version": "25.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00164,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 31,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-6033",
+      "description": "There is a memory corruption vulnerability due to an out of bounds write in XML_Serialize() when using SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability affects NI Circuit Design Suite 14.3.1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00183,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-6034",
+      "description": "There is a memory corruption vulnerability due to an out of bounds read in DefaultFontOptions() when using SymbolEditor in NI Circuit Design Suite. \u00a0This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .sym file. This vulnerability affects NI Circuit Design Suite 14.3.1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "circuit design suite",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:circuit design suite",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00179,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-7361",
+      "description": "A code injection vulnerability due to an improper initialization check exists in NI LabVIEW that may result in arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI using a CIN node.  This vulnerability affects 32-bit NI LabVIEW 2025 Q1 and prior versions.  LabVIEW 64-bit versions do not support CIN nodes and are not affected.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.6",
+              "status": "affected",
+              "version": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.3",
+              "status": "affected",
+              "version": "24.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.3.0",
+              "status": "affected",
+              "version": "25.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00275,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 25,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-7848",
+      "description": "A memory corruption vulnerability due to improper input validation in lvpict.cpp exists in NI LabVIEW that may result in arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.6",
+              "status": "affected",
+              "version": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.3",
+              "status": "affected",
+              "version": "24.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.3.0",
+              "status": "affected",
+              "version": "25.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.05111,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 24,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-7849",
+      "description": "A memory corruption vulnerability due to improper error handling when a VILinkObj is null exists in NI LabVIEW that may result in arbitrary code execution.  Successful exploitation requires an attacker to get a user to open a specially crafted VI.  This vulnerability affects NI LabVIEW 2025 Q1 and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "lessThanOrEqual": "22.3.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "23.3.6",
+              "status": "affected",
+              "version": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "24.3.3",
+              "status": "affected",
+              "version": "24.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "25.3.0",
+              "status": "affected",
+              "version": "25.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00234,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 24,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-16233",
+      "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get a\nuser to open a specially crafted VI.\u00a0 This vulnerability affects NI\nLabVIEW 2026 Q3 (26.3.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 35,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-16234",
+      "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get a\nuser to open a specially crafted VI.\u00a0 This vulnerability affects NI\nLabVIEW 2026 Q3 (26.3.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 35,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-18485",
+      "description": "There is a local privilege escalation vulnerability recently discovered in the NI-PAL kernel driver.\u00a0\u00a0This may allow a local, authenticated user to escalate privileges and execute arbitrary code.\u00a0\u00a0This vulnerability affects NI-PAL 26.3.1 and prior versions running on Microsoft Windows.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "ni-pal",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ni-pal",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00114,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-32860",
+      "description": "There is a memory corruption vulnerability due to an out-of-bounds write when loading a corrupted LVLIB file in NI LabVIEW.\u00a0 This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .lvlib file. This vulnerability affects NI LabVIEW 2026 Q1 (26.1.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 29,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-32861",
+      "description": "There is a memory corruption vulnerability due to an out-of-bounds write when loading a corrupted LVCLASS file in NI LabVIEW.\u00a0 This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted .lvclass file. This vulnerability affects NI LabVIEW 2026 Q1 (26.1.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 29,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-32862",
+      "description": "There is a memory corruption vulnerability due to an out-of-bounds write in ResFileFactory::InitResourceMgr() in NI LabVIEW.\u00a0 This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI file. This vulnerability affects NI LabVIEW 2026 Q1 (26.1.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00148,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 29,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-32863",
+      "description": "There is a memory corruption vulnerability due to an out-of-bounds read in sentry_transaction_context_set_operation() in NI LabVIEW.\u00a0 This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI file. This vulnerability affects NI LabVIEW 2026 Q1 (26.1.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00193,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 29,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-32864",
+      "description": "There is a memory corruption vulnerability due to an out-of-bounds read in mgcore_SH_25_3!aligned_free() in NI LabVIEW.\u00a0 This vulnerability may result in information disclosure or arbitrary code execution. Successful exploitation requires an attacker to get a user to open a specially crafted VI file. This vulnerability affects NI LabVIEW 2026 Q1 (26.1.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0014,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 29,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48137",
+      "description": "There is an untrusted pointer dereference vulnerability in the NI grpc-device sideband streaming API that may allow an attacker to cause an arbitrary memory dereference, potentially resulting in remote code execution.\u00a0 Successful exploitation requires an attacker\u00a0 to supply a specially crafted\u00a0Moniker protobuf message.\u00a0 This affects NI grpc-device 2.17.0 and prior versions.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "grpc-device",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.17.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "instrumentstudio",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "26.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grpc-device",
+        "product:instrumentstudio",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00801,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-822"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48138",
+      "description": "There is an out-of-bounds read vulnerability in the NI grpc-device streaming API due to a missing bounds check that may result in a denial of service. Successful exploitation requires an attacker to supply a specially crafted write request. This affects NI grpc-device 2.17.0 and prior versions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "grpc-device",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.17.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "instrumentstudio",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "26.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grpc-device",
+        "product:instrumentstudio",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00488,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48139",
+      "description": "There is a NULL pointer dereference vulnerability in NI grpc-device in the data moniker service that may allow an attacker to cause a denial of service by triggering a crash.\u00a0 Successful exploitation requires an attacker to provide an unknown\u00a0value to the data moniker service. This affects NI grpc-device 2.17.0 and prior versions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "grpc-device",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.17.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "instrumentstudio",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "26.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grpc-device",
+        "product:instrumentstudio",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00488,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-4129",
+      "description": "There is an improper access control vulnerability in NI SystemLink that may allow an authenticated user with limited privileges to access host operating system files and directories that should be restricted. This vulnerability affects NI SystemLink and NI SystemLink Server versions prior to 2026 Q3.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "systemlink",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "26.5.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "systemlink server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "26.5.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:systemlink",
+        "product:systemlink server",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00201,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-4130",
+      "description": "There is a storage of sensitive information in cleartext vulnerability in NI SystemLink. This vulnerability may allow an attacker with local access to obtain sensitive information stored by the system in the clear.\u00a0 This vulnerability affects NI SystemLink and NI SystemLink Server\u00a0versions prior to 2026 Q3.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "systemlink",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "26.5.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "systemlink server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "26.5.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:systemlink",
+        "product:systemlink server",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00075,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-312"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-64201",
+      "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get a\nuser to open a specially crafted VI.\u00a0 This vulnerability affects NI LabVIEW 2026 Q3 (26.3.0)\nand prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-787"
+        ],
+        "cpe_count": 35,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-64202",
+      "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get a\nuser to open a specially crafted VI.\u00a0 This vulnerability affects NI LabVIEW 2026 Q3 (26.3.0)\nand prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-787"
+        ],
+        "cpe_count": 35,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-64203",
+      "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get a\nuser to open a specially crafted VI.\u00a0 This vulnerability affects NI\nLabVIEW 2026 Q3 (26.3.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-787"
+        ],
+        "cpe_count": 35,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-64204",
+      "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get a\nuser to open a specially crafted VI.\u00a0 This vulnerability affects NI\nLabVIEW 2026 Q3 (26.3.0) and prior versions.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "labview",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "23.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "23.1.0",
+              "lessThan": "23.3.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "24.1.0",
+              "lessThan": "24.3.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.1.0",
+              "lessThan": "25.3.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "26.1.0",
+              "lessThan": "26.3.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:labview",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00128,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 35,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-8036",
+      "description": "Improper input validation in NI-PAL may allow a local authenticated user to access arbitrary system memory, potentially leading to privilege escalation. This vulnerability affects NI-PAL 26.3.0 and prior versions on Windows and Linux.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "ni-pal",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "26.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ni-pal",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00107,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9051",
+      "description": "There is an authentication bypass vulnerability in the NI SystemLink Enterprise Dashboard application that may allow an unauthenticated remote attacker to bypass authentication controls leading to privilege escalation or information disclosure.\u00a0 Successful exploitation requires an attacker to send a specially crafted HTTP request.\u00a0 This vulnerability affects NI SystemLink Enterprise 2026-04 and prior versions.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "systemlink enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2026-04",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:systemlink enterprise",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00623,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9142",
+      "description": "There is an insecure default credentials vulnerability in NI grpc-device when TLS configuration is not present and the server is bound beyond loopback.\u00a0 This may allow an unauthenticated user access to the server on the local network.\u00a0 This affects NI grpc-device 2.17.0 and prior versions.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ni",
+          "product": "grpc-device",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.17.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ni",
+          "product": "instrumentstudio",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "26.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grpc-device",
+        "product:instrumentstudio",
+        "vendor:ni"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00434,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    }
+  ]
+}

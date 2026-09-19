@@ -1,0 +1,3393 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "watchguard",
+  "count": 56,
+  "items": [
+    {
+      "cve_id": "CVE-2024-1417",
+      "description": "Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in WatchGuard AuthPoint Password Manager on MacOS allows an a adversary with local access to execute code under the context of the AuthPoint Password Manager application.\nThis issue affects AuthPoint Password Manager for MacOS versions before 1.0.6.\n\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "authpoint password manager",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.0.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:authpoint password manager",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00721,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-77"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4944",
+      "description": "A local privilege escalation vlnerability in the WatchGuard Mobile VPN with SSL client on Windows enables a local user to execute arbitrary commands with elevated privileged.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "mobile vpn with ssl client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThan": "12.10.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mobile vpn with ssl client",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00333,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-77"
+        ],
+        "cpe_count": 2,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5974",
+      "description": "A buffer overflow in WatchGuard Fireware OS could may allow an authenticated remote attacker with privileged management access to execute arbitrary code with system privileges on the firewall.\nThis issue affects Fireware OS: from 11.9.6 through 12.10.3.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.9.4",
+              "versionType": "custom",
+              "lessThan": "12.10.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.12+701324"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01044,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-120"
+        ],
+        "cpe_count": 53,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6592",
+      "description": "An incorrect authorization vulnerability in the protocol communication between the WatchGuard Authentication Gateway (aka Single Sign-On Agent) on Windows and the WatchGuard Single Sign-On Client on Windows and MacOS allows an attacker with network access to forge communications to affected components.\n\nIn the event an attacker has already gained network access, they could exploit this vulnerability to retrieve authenticated usernames and group memberships from the Single Sign-On Agent or send arbitrary account and group information to the Single Sign-On Agent for their host. This vulnerability cannot be used by an attacker to gain access to user credentials.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "sso client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.7"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "sso client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.5.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "sso agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.10.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sso agent",
+        "product:sso client",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01158,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306",
+          "CWE-863"
+        ],
+        "cpe_count": 3,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6593",
+      "description": "Incorrect Authorization vulnerability in WatchGuard Authentication Gateway (aka Single Sign-On Agent) on Windows allows an attacker with network access to execute restricted management commands.\n\nAn attacker that has already gained network access could exploit this vulnerability to retrieve authenticated usernames and group memberships from the Single Sign-On Agent or tamper with the agent configuration. This vulnerability cannot be used by an attacker to gain access to user credentials.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "sso agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.10.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sso agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00579,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6594",
+      "description": "Improper Handling of Exceptional Conditions vulnerability in the WatchGuard Single Sign-On Client on Windows causes the client to crash while handling malformed commands. An attacker with network access to the client could create a denial of service condition for the Single Sign-On service by repeatedly issuing malformed commands.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "sso client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sso client",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00633,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-755"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-8424",
+      "description": "Improper Privilege Management vulnerability in WatchGuard EPDR, Panda AD360 and Panda Dome on Windows (PSANHost.exe module) allows arbitrary file delete with SYSTEM permissions.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "endpoint security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.00.00.0000",
+              "versionType": "semver",
+              "lessThan": "8.00.23.0000"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "panda dome",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "22.00.00",
+              "versionType": "semver",
+              "lessThan": "22.03.00"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:endpoint security",
+        "product:panda dome",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00189,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-11838",
+      "description": "A memory corruption vulnerability in WatchGuard Fireware OS may allow an unauthenticated attacker to trigger a Denial of Service (DoS) condition in the Mobile User VPN with IKEv2 and the Branch Office VPN using IKEv2 when configured with a dynamic gateway peer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThanOrEqual": "2025.1.3"
+            },
+            {
+              "status": "affected",
+              "version": "12.6.1",
+              "versionType": "custom",
+              "lessThanOrEqual": "12.11.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00495,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-763"
+        ],
+        "cpe_count": 33,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-12026",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS\u2019s certificate request command could allow an authenticated privileged user to execute arbitrary code via specially crafted CLI commands.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2025.1.3"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThanOrEqual": "12.11.5"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.14"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00441,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 36,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-12195",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS's CLI could allow an authenticated privileged user to execute arbitrary code\u00a0via specially crafted IPSec configuration CLI commands.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2025.1.3"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.5"
+            },
+            {
+              "status": "affected",
+              "version": "11.0",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.14"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00691,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 36,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-12196",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS's CLI could allow an authenticated privileged user to execute arbitrary code via a specially crafted CLI command.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.5"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.14"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00622,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 36,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-14733",
+      "description": "An Out-of-bounds Write vulnerability in the WatchGuard Fireware OS iked process may allow a remote unauthenticated attacker to execute arbitrary code. This vulnerability affects both the mobile user VPN with IKEv2 and the branch office VPN using IKEv2 when configured with a dynamic gateway peer.\n\nIf the Firebox was previously configured with the mobile user VPN with IKEv2 or a branch office VPN using IKEv2 to a dynamic gateway peer, and both of those configurations have since been deleted, that Firebox may still be vulnerable if a branch office VPN to a static gateway peer is still configured.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/U:Red",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2025.1.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.6"
+            },
+            {
+              "status": "affected",
+              "version": "11.10.2",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.3.1+728352"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.15"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": true,
+      "probability_score": 0.2651,
+      "kev": {
+        "cveID": "CVE-2025-14733",
+        "vendorProject": "WatchGuard",
+        "product": "Firebox",
+        "vulnerabilityName": "WatchGuard Firebox Out of Bounds Write Vulnerability",
+        "dateAdded": "2025-12-19",
+        "shortDescription": "WatchGuard Fireware OS iked process contains an out of bounds write vulnerability in the OS iked process. This vulnerability may allow a remote unauthenticated attacker to execute arbitrary code and affects both the mobile user VPN with IKEv2 and the branch office VPN using IKEv2 when configured with a dynamic gateway peer.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2025-12-26",
+        "knownRansomwareCampaignUse": "Known"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 41,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-1545",
+      "description": "An XPath Injection vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to retrieve sensitive information from the Firebox configuration through an exposed authentication or management web interface. This vulnerability only affects Firebox systems that have at least one authentication hotspot configured.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2025.1.3"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.5"
+            },
+            {
+              "status": "affected",
+              "version": "11.11",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.14"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00479,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-91"
+        ],
+        "cpe_count": 36,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-1547",
+      "description": "A stack-based buffer overflow vulnerability [CWE-121] in WatchGuard Fireware OS's certificate request command could allow an authenticated privileged user to execute arbitrary code via specially crafted CLI commands.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThanOrEqual": "12.11.3"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.13"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 29,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4106",
+      "description": "An authenticated admin user with access to both the management WebUI and command line interface on a Firebox can enable a diagnostic debug shell by uploading a platform and version-specific diagnostic package and executing a leftover diagnostic command.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.3"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.13"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00299,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-489"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-9242",
+      "description": "An Out-of-bounds Write vulnerability in the WatchGuard Fireware OS iked process may allow a remote unauthenticated attacker to execute arbitrary code. This vulnerability affects both the mobile user VPN with IKEv2 and the branch office VPN using IKEv2 when configured with a dynamic gateway peer.\nIf the Firebox was previously configured with the mobile user VPN with IKEv2 or a branch office VPN using IKEv2 to a dynamic gateway peer, and both of those configurations have since been deleted, that Firebox may still be vulnerable if a branch office VPN to a static gateway peer is still configured.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.4"
+            },
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2025.1.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.3.1+722811"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.13"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": true,
+      "probability_score": 0.913,
+      "kev": {
+        "cveID": "CVE-2025-9242",
+        "vendorProject": "WatchGuard",
+        "product": "Firebox",
+        "vulnerabilityName": "WatchGuard Firebox Out-of-Bounds Write Vulnerability",
+        "dateAdded": "2025-11-12",
+        "shortDescription": "WatchGuard Firebox contains an out-of-bounds write vulnerability in the OS iked process that may allow a remote unauthenticated attacker to execute arbitrary code.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2025-12-03",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 41,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13050",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS networkd process could allow an authenticated privileged user to execute arbitrary code via a specially crafted requests to the Management Web UI.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "affected",
+              "version": "11.8",
+              "versionType": "custom",
+              "lessThan": "*"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00651,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 44,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13053",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS's CLI could allow an authenticated privileged user to execute arbitrary code via a specially crafted CLI command.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "affected",
+              "version": "11.0",
+              "versionType": "custom",
+              "lessThan": "*"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00642,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 41,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13054",
+      "description": "A path traversal vulnerability in the WatchGuard Fireware OS Management Web UI allows a privileged authenticated attacker to write arbitrary files on the Firebox's filesystem.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "affected",
+              "version": "11.0",
+              "versionType": "custom",
+              "lessThan": "*"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00605,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 41,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13079",
+      "description": "A local privilege escalation vulnerability in the WatchGuard Mobile VPN with SSL client for Windows allows a local attacker to escalate their privileges to NT AUTHORITY\\SYSTEM on the machine where the client is installed.\n\nThis issue affects the Mobile VPN with SSL client for Windows up to and including 2026.2.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "mobile vpn with ssl client",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver",
+              "lessThan": "2026.2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mobile vpn with ssl client",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0014,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 42,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13084",
+      "description": "A null pointer dereference vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to create a denial-of-service (DoS) condition by sending specially crafted IKEv2 messages.\u00a0This vulnerability affects both the Mobile User VPN with IKEv2 and the Branch Office VPN using IKEv2 when configured with a dynamic gateway peer.\n\nThis vulnerability affects Fireware OS 11.10.2 up to and including 11.12.4_Update1, 12.0 up to and including 12.12 and 2025.1 up to and including 2026.2",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "affected",
+              "version": "11.10.2",
+              "versionType": "custom",
+              "lessThan": "*"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00499,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 44,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13086",
+      "description": "A stack-based buffer overflow in the epm (Endpoint Protection Manager) service used by the deprecated Mobile Security feature in WatchGuard Fireware OS allows an unauthenticated remote attacker to execute arbitrary code.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00441,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787",
+          "CWE-798"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13108",
+      "description": "WatchGuard Dimension is susceptible to a denial-of-service condition when an attacker sends a high volume of TCP SYN packets to the log listening service.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00253,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13368",
+      "description": "WatchGuard Fireware OS contains a race condition leading to a use-after-free vulnerability in LDAP authentication for the Mobile User VPN with IKEv2. A remote unauthenticated attacker could exploit this vulnerability to execute arbitrary code in the context of the iked process on Fireboxes that have a Mobile VPN with IKEv2 configured to use an external LDAP authentication server.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "unaffected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "unaffected",
+              "version": "11.10.2",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01012,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 44,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13383",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS ikestubd process could allow an authenticated privileged user to execute arbitrary code via a specially crafted requests to the Management Web UI.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00724,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 41,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13384",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS wgagent process could allow an authenticated privileged user to execute arbitrary code via a specially crafted requests to the Management Web UI.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00724,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 41,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13722",
+      "description": "WatchGuard Fireware OS contains a firmware validation bypass when processing a backup image via the backup/restore feature. An authenticated administrator can exploit this vulnerability to install a tampered firmware image.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "affected",
+              "version": "11.0",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "*"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00272,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 44,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19313",
+      "description": "An heap overflow vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to execute arbitrary code by sending specially crafted network traffic.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00471,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122",
+          "CWE-190",
+          "CWE-680"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19314",
+      "description": "An integer underflow vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to create a Denial of Service (DoS) condition in VPN processing by sending specially crafted network traffic.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00322,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-191",
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19315",
+      "description": "A type confusion vulnerability in the iked process of WatchGuard Fireware OS allows a remote unauthenticated attacker to execute arbitrary code by sending specially crafted network traffic.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00457,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-763",
+          "CWE-843"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19316",
+      "description": "A double-free vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to create a Denial of Service (DoS) condition in VPN processing by sending specially crafted network traffic.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00322,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-415",
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19317",
+      "description": "An out-of-bounds read vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to create a Denial of Service (DoS) condition in VPN processing by sending specially crafted network traffic.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00322,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-191"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19318",
+      "description": "A stack-based buffer overflow vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to execute arbitrary code by sending specially crafted network traffic.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00471,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-129",
+          "CWE-191"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-1498",
+      "description": "An LDAP Injection vulnerability in WatchGuard Fireware OS may allow a remote unauthenticated attacker to retrieve sensitive information from a connected LDAP authentication server through an exposed authentication or management web interface. This vulnerability may also allow a remote attacker to authenticate as an LDAP user with a partial identifier if they additionally have that user's valid passphrase.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.7"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00872,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-90"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-3342",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow an authenticated privileged administrator to execute arbitrary code with root permissions via an exposed management interface.\n\nThis vulnerability affects Fireware OS 11.9 up to and including 11.12.4_Update1, 12.0 up to and including 12.11.7 and 2025.1 up to and including 2026.1.1.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "lessThanOrEqual": "11.12.4+541730",
+              "status": "affected",
+              "version": "11.9",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.11.7",
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.5.16",
+              "status": "affected",
+              "version": "12.5",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "2026.1.1",
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.064,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 41,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-3987",
+      "description": "A path traversal vulnerability in the Fireware OS Web UI on WatchGuard Firebox systems may allow a privileged authenticated remote attacker to execute arbitrary code in the context of an elevated system process.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.6.1",
+              "versionType": "custom",
+              "lessThan": "12.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00679,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 38,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41286",
+      "description": "Stack-based Buffer Overflow vulnerability in the WatchGuard Agent discovery service on Windows allows Overflow Buffers. An unauthenticated attacker on the same local network could exploit this vulnerability to crash the agent service.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver",
+              "lessThan": "1.25.03.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00252,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41287",
+      "description": "Stack-based Buffer Overflow vulnerability in the WatchGuard Agent discovery service on Windows allows Overflow Buffers. An unauthenticated attacker on the same local network could exploit this vulnerability to crash the agent service.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver",
+              "lessThan": "1.25.03.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00252,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-41288",
+      "description": "Incorrect permission assignment for a resource in the patch management component of the WatchGuard Agent on Windows allows an authenticated local user to elevate their privileges to NT AUTHORITY\\\\SYSTEM.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver",
+              "lessThan": "1.25.03.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00107,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-4266",
+      "description": "An Insecure Deserialization vulnerability in WatchGuard Fireware OS allows an attacker that has obtained write access to the local filesystem through another vulnerability to execute arbitrary code in the context of the portald user.\n\nNote, this vulnerability does not affect Firebox platforms that do not support the Access Portal feature, including the T15 and T35.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.12"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00271,
+      "nvd": {
+        "cvss_v3_score": 6.7,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 38,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-4315",
+      "description": "A Cross-Site Request Forgery (CSRF) vulnerability in the WatchGuard Fireware OS WebUI could allow a remote attacker to trigger a denial-of-service (DoS) condition in the Fireware Web UI by convincing an authenticated administrator into visiting a malicious web page.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12"
+            },
+            {
+              "status": "affected",
+              "version": "11.8",
+              "versionType": "custom",
+              "lessThanOrEqual": "11.12.4+541730"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.18"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00165,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 44,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-57909",
+      "description": "A path traversal vulnerability in WatchGuard Agent allows a remote, unauthenticated attacker on an adjacent network to execute arbitrary code on an affected system.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "1.25.13.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00292,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-57910",
+      "description": "Improper authentication in the WatchGuard Agent allows an unauthenticated attacker with network access to cause the agent to execute arbitrary code with elevated privileges.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "1.17.01.0000"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "1.25.13.0000"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "1.17.21.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00196,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306",
+          "CWE-347",
+          "CWE-494"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-6787",
+      "description": "Use of Hard-coded Cryptographic Key vulnerability in WatchGuard Agent on Windows allows Inclusion of Code in Existing Process.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver",
+              "lessThan": "1.25.03.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00113,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-321"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-6788",
+      "description": "Uncontrolled Search Path Element vulnerability\u00a0in WatchGuard Agent on Windows allows Using Malicious Files.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver",
+              "lessThan": "1.25.03.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00126,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78008",
+      "description": "A buffer overflow vulnerability in the WatchGuard Fireware OS Management Web UI allows an authenticated administrator with network access to cause a denial of service (DoS) condition or potentially execute arbitrary code by sending specially crafted network traffic.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00365,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78009",
+      "description": "An out-of-bounds read vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to create a Denial of Service (DoS) condition in VPN processing by sending specially crafted network traffic.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00322,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-125"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78010",
+      "description": "A stack-based buffer overflow vulnerability in the WatchGuard Fireware OS iked process iallows a remote unauthenticated attacker to create a Denial of Service (DoS) condition in VPN processing by sending specially crafted network traffic.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00327,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787",
+          "CWE-1284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78011",
+      "description": "An integer underflow vulnerability in the WatchGuard Fireware OS iked process allows a remote unauthenticated attacker to create a Denial of Service (DoS) condition in VPN processing by sending specially crafted network traffic.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.2"
+            },
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00322,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-191",
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78174",
+      "description": "WatchGuard Dimension records unredacted session identifiers for logged-in users in its web UI diagnostic log. A low-privileged Dimension Administrator can retrieve this log and extract a Super Administrator's session token while that administrator is logged in, enabling account takeover.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00346,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200",
+          "CWE-269",
+          "CWE-532"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78610",
+      "description": "WatchGuard Dimension's Web UI exposes an administrator passphrase change action that lacks CSRF protection. An attacker who can induce an authenticated global administrator's browser to visit a crafted link or page can change that administrator's passphrase to an attacker-chosen value without the administrator's consent.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00162,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78612",
+      "description": "WatchGuard Dimension contains an authenticated SQL injection vulnerability in the scheduled report feature which allows an authenticated user with report administration permissions gain arbitrary command execution as the Dimension WebUI process user by sending specially crafted requests.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00729,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89",
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78613",
+      "description": "WatchGuard Dimension contains an authenticated SQL injection vulnerability in the log viewer feature which allows an authenticated user with report administration permissions gain arbitrary command execution as the Dimension WebUI process user by sending specially crafted requests.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00635,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-78614",
+      "description": "WatchGuard Dimension contains an authenticated SQL injection vulnerability in the audit report feature which allows an authenticated user with report administration permissions gain arbitrary command execution as the Dimension WebUI process user by sending specially crafted requests.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00729,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89",
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86135",
+      "description": "A Cross-Site Request Forgery (CSRF) vulnerability in WatchGuard Dimension's database snapshot creation feature allows a remote attacker to trigger unauthorized snapshot creation by tricking an authenticated administrator into visiting a specially crafted web page.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "dimension",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "versionType": "semver",
+              "lessThan": "2.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dimension",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00175,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352",
+          "CWE-400"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-8247",
+      "description": "An Out-of-bounds Write vulnerability in WatchGuard Fireware OS may allow an unauthenticated attacker on the same local network segment to execute arbitrary code.\n\n\n\n\nThis vulnerability affects Fireware OS 11.0 up to and including 11.12.4_Update1, 12.0 up to and including 12.12 and 2025.1 up to and including 2026.2.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.2.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.1"
+            },
+            {
+              "status": "affected",
+              "version": "11.0",
+              "versionType": "custom",
+              "lessThan": "*"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.11.9"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.19"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-120",
+          "CWE-787"
+        ],
+        "cpe_count": 44,
+        "reference_count": 2
+      }
+    }
+  ]
+}

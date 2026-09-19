@@ -1,0 +1,3310 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "netgear",
+  "count": 70,
+  "items": [
+    {
+      "cve_id": "CVE-2022-27641",
+      "description": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR R6700v3 1.0.4.120_10.0.91 routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the NetUSB module. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-15806.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "r6700v3",
+          "versions": [
+            {
+              "version": "1.0.4.120_10.0.91",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:r6700v3",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01244,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 18,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-27643",
+      "description": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR R6700v3 1.0.4.120_10.0.91 routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within the handling of SOAP requests. When parsing the SOAPAction header, the process does not properly validate the length of user-supplied data prior to copying it to a buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-15692.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "r6700v3",
+          "versions": [
+            {
+              "version": "1.0.4.120_10.0.91",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:r6700v3",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.25114,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-120"
+        ],
+        "cpe_count": 56,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-27645",
+      "description": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of NETGEAR R6700v3 routers. Authentication is not required to exploit this vulnerability. The specific flaw exists within readycloud_control.cgi. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-15762.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "r6700v3",
+          "versions": [
+            {
+              "version": "1.0.4.120_10.0.91",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:r6700v3",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01288,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306",
+          "CWE-697"
+        ],
+        "cpe_count": 46,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-27646",
+      "description": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR R6700v3 1.0.4.120_10.0.91 routers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed. The specific flaw exists within the circled daemon. A crafted circleinfo.txt file can trigger an overflow of a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-15879.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "r6700v3",
+          "versions": [
+            {
+              "version": "1.0.4.120_10.0.91",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:r6700v3",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01432,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 48,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-27647",
+      "description": "This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR R6700v3 1.0.4.120_10.0.91 routers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed. The specific flaw exists within the handling of the name or email field provided to libreadycloud.so. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-15874.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "r6700v3",
+          "versions": [
+            {
+              "version": "1.0.4.120_10.0.91",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:r6700v3",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01467,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 68,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36429",
+      "description": "A command execution vulnerability exists in the ubus backend communications functionality of Netgear Orbi Satellite RBS750 4.6.8.5. A specially-crafted JSON object can lead to arbitrary command execution. An attacker can send a sequence of malicious packets to trigger this vulnerability.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "orbi satellite rbs750",
+          "versions": [
+            {
+              "version": "4.6.8.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:orbi satellite rbs750",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01987,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-912"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2022-37337",
+      "description": "A command execution vulnerability exists in the access control functionality of Netgear Orbi Router RBR750 4.6.8.5. A specially-crafted HTTP request can lead to arbitrary command execution. An attacker can make an authenticated HTTP request to trigger this vulnerability.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "orbi router rbr750",
+          "versions": [
+            {
+              "version": "4.6.8.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:orbi router rbr750",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02828,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38452",
+      "description": "A command execution vulnerability exists in the hidden telnet service functionality of Netgear Orbi Router RBR750 4.6.8.5. A specially-crafted network request can lead to arbitrary command execution. An attacker can send a network request to trigger this vulnerability.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "orbi router rbr750",
+          "versions": [
+            {
+              "version": "4.6.8.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:orbi router rbr750",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02107,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-912"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2022-43654",
+      "description": "NETGEAR CAX30S SSO Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR CAX30S routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the token parameter provided to the sso.php endpoint. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-18227.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "cax30s",
+          "versions": [
+            {
+              "version": "1.4.10.8",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cax30s",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01144,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-24498",
+      "description": "An uspecified endpoint in the web server of the switch does not properly authenticate the user identity, and may allow downloading a config page with the password to the switch in clear text.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe 24 port 10/100 fs726tp",
+          "versions": [
+            {
+              "version": ".",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe 24 port 10/100 fs726tp",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00577,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-522"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-27358",
+      "description": "NETGEAR RAX30 SOAP Request SQL Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of specific SOAP requests. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the service account. Was ZDI-CAN-19754.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.90_3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00877,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 10,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-27360",
+      "description": "NETGEAR RAX30 lighttpd Misconfiguration Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the configuration of the lighttpd HTTP server. The issue results from allowing execution of files from untrusted sources. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19398.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.6.74_1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00449,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345",
+          "CWE-346"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-27367",
+      "description": "NETGEAR RAX30 libcms_cli Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the libcms_cli module. The issue results from the lack of proper validation of a user-supplied command before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19838.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.90_3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01371,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-27368",
+      "description": "NETGEAR RAX30 soap_serverd Stack-based Buffer Overflow Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the soap_serverd binary. When parsing SOAP message headers, the process does not properly validate the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19839.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.90_3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00782,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-27369",
+      "description": "NETGEAR RAX30 soap_serverd  Stack-based Buffer Overflow Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the soap_serverd binary. When parsing the request headers, the process does not properly validate the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19840.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.90_3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00782,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-34285",
+      "description": "NETGEAR RAX30 cmsCli_authenticate Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within a shared library used by the telnetd service, which listens on TCP port 23 by default. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19918.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.92_1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00897,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-35721",
+      "description": "NETGEAR Multiple Routers curl_post Improper Certificate Validation Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to compromise the integrity of downloaded information on affected installations of multiple NETGEAR routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the update functionality, which operates over HTTPS. The issue results from the lack of proper validation of the certificate presented by the server. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-19981.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "multiple routers",
+          "versions": [
+            {
+              "version": "1.0.12.120_2.0.83",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:multiple routers",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00997,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-35722",
+      "description": "NETGEAR RAX30 UPnP Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of UPnP port mapping requests. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-20429.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.92_1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01258,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38095",
+      "description": "NETGEAR ProSAFE Network Management System MFileUploadController Unrestricted File Upload Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the MFileUploadController class. The issue results from the lack of proper validation of user-supplied data, which can allow the upload of arbitrary files. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-19717.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.65517,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38096",
+      "description": "NETGEAR ProSAFE Network Management System MyHandlerInterceptor Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of NETGEAR ProSAFE Network Management System. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the MyHandlerInterceptor class. The issue results from improper implementation of the authentication mechanism. An attacker can leverage this vulnerability to bypass authentication on the system.\n. Was ZDI-CAN-19718.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.82035,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38097",
+      "description": "NETGEAR ProSAFE Network Management System BkreProcessThread Exposed Dangerous Function Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the BkreProcessThread class. The issue results from an exposed dangerous function. An attacker can leverage this vulnerability to execute code in the context of SYSTEM.\n. Was ZDI-CAN-19719.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02135,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-749"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38098",
+      "description": "NETGEAR ProSAFE Network Management System UpLoadServlet Unrestricted File Upload Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the UpLoadServlet class. The issue results from the lack of proper validation of user-supplied data, which can allow the upload of arbitrary files. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-19720.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.12658,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38099",
+      "description": "NETGEAR ProSAFE Network Management System getNodesByTopologyMapSearch SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the getNodesByTopologyMapSearch function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-19723.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.56756,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38100",
+      "description": "NETGEAR ProSAFE Network Management System clearAlertByIds SQL Injection Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the clearAlertByIds function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to escalate privileges to resources normally protected from the user. Was ZDI-CAN-19724.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01424,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38101",
+      "description": "NETGEAR ProSAFE Network Management System SettingConfigController Exposed Dangerous Function Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the SettingConfigController class. The issue results from an exposed dangerous function. An attacker can leverage this vulnerability to execute code in the context of SYSTEM.\n. Was ZDI-CAN-19725.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02135,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-749"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-38102",
+      "description": "NETGEAR ProSAFE Network Management System createUser Missing Authorization Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the createUser function. The issue results from the lack of authorization prior to allowing access to functionality. An attacker can leverage this vulnerability to escalate privileges to resources normally protected from the user. Was ZDI-CAN-19726.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01406,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40478",
+      "description": "NETGEAR RAX30 Telnet CLI passwd Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the telnet CLI service, which listens on TCP port 23. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-20009.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.9.92_1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0083,
+      "nvd": {
+        "cvss_v3_score": 6.8,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40479",
+      "description": "NETGEAR RAX30 UPnP Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the UPnP service. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19704.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.6.74_1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01275,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40480",
+      "description": "NETGEAR RAX30 DHCP Server Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the DHCP server. The issue results from the lack of proper validation of a user-supplied string before using it to execute a system call. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19705.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.6.74_1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01275,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-41182",
+      "description": "NETGEAR ProSAFE Network Management System ZipUtils Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Although authentication is required to exploit this vulnerability, the existing authentication mechanism can be bypassed.\n\nThe specific flaw exists within the ZipUtils class. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-19716.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.12 (Win64)",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.62287,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-41183",
+      "description": "NETGEAR Orbi 760 SOAP API Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of NETGEAR Orbi 760 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the implementation of the SOAP API. The issue results from the lack of authentication prior to allowing access to functionality. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-20524.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "orbi 760",
+          "versions": [
+            {
+              "version": "6.3.6.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:orbi 760",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.13644,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-44445",
+      "description": "NETGEAR CAX30 SSO Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR CAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the sso binary. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19058.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "cax30",
+          "versions": [
+            {
+              "version": "1.4.10.8",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00756,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-44449",
+      "description": "NETGEAR ProSAFE Network Management System clearAlertByIds SQL Injection Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the clearAlertByIds function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to escalate privileges to resources normally protected from the user. Was ZDI-CAN-21875.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.26 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.52562,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-44450",
+      "description": "NETGEAR ProSAFE Network Management System getNodesByTopologyMapSearch SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the getNodesByTopologyMapSearch function. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-21858.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.26 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.53563,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-48725",
+      "description": "A stack-based buffer overflow vulnerability exists in the JSON Parsing getblockschedule() functionality of Netgear RAX30 1.0.11.96 and 1.0.7.78. A specially crafted HTTP request can lead to code execution. An attacker can make an authenticated HTTP request to trigger this vulnerability.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.11.96",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.7.78",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.19356,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 3,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2023-49693",
+      "description": "\nNETGEAR ProSAFE Network Management System has Java Debug Wire Protocol (JDWP) listening on port 11611 and it is remotely accessible by unauthenticated users, allowing attackers to execute arbitrary code.\n\n",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "netgear prosafe network management system",
+          "versions": [
+            {
+              "lessThan": "1.7.0.34",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:netgear prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01154,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-49694",
+      "description": "\n\n\nA low-privileged OS user with access to a Windows host where NETGEAR ProSAFE Network Management System is installed can create arbitrary JSP files in a Tomcat web application directory. The user can then execute the JSP files under the security context of SYSTEM.\n\n\n\n",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "netgear prosafe network management system",
+          "versions": [
+            {
+              "lessThan": "1.7.0.34",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:netgear prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00537,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-50231",
+      "description": "NETGEAR ProSAFE Network Management System saveNodeLabel Cross-Site Scripting Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of NETGEAR ProSAFE Network Management System. Minimal user interaction is required to exploit this vulnerability. \n\nThe specific flaw exists within the saveNodeLabel method. The issue results from the lack of proper validation of user-supplied data, which can lead to the injection of an arbitrary script. An attacker can leverage this vulnerability to escalate privileges to resources normally protected from the user. Was ZDI-CAN-21838.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.26 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.53303,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-51634",
+      "description": "NETGEAR RAX30 Improper Certificate Validation Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to compromise the integrity of downloaded information on affected installations of NETGEAR RAX30  routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the downloading of files via HTTPS. The issue results from the lack of proper validation of the certificate presented by the server. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of root. Was ZDI-CAN-19589.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.7.78",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00571,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-51635",
+      "description": "NETGEAR RAX30 fing_dil Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of NETGEAR RAX30 routers. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within fing_dil service. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a fixed-length stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of root. Was ZDI-CAN-19843.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "rax30",
+          "versions": [
+            {
+              "version": "1.0.7.78",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rax30",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0134,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12147",
+      "description": "A vulnerability was found in Netgear R6900 1.0.1.26_1.0.20. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file upgrade_check.cgi of the component HTTP Header Handler. The manipulation of the argument Content-Length leads to buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "r6900",
+          "versions": [
+            {
+              "version": "1.0.1.26_1.0.20",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:r6900",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00809,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": 6.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12847",
+      "description": "NETGEAR DGN1000 before 1.1.00.48 is vulnerable to an authentication bypass vulnerability. A remote and unauthenticated attacker can execute arbitrary operating system commands as root by sending crafted HTTP requests to the setup.cgi endpoint. This vulnerability has been observed to be exploited in the wild since at least 2017 and specifically by the Shadowserver Foundation on 2025-02-06 UTC.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "dgn1000",
+          "versions": [
+            {
+              "lessThan": "1.1.00.48",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:dgn1000",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.29939,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78",
+          "CWE-306"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-23690",
+      "description": "The end-of-life Netgear FVS336Gv2 and FVS336Gv3 are affected by a command injection vulnerability in the Telnet interface. An authenticated and remote attacker can execute arbitrary OS commands as root over Telnet by sending crafted \"util backup_configuration\" commands.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "fvs336gv3",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.3.5-3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "netgear",
+          "product": "fvs336gv2",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.3.3-6",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fvs336gv2",
+        "product:fvs336gv3",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01129,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5245",
+      "description": "NETGEAR ProSAFE Network Management System Default Credentials Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NETGEAR ProSAFE Network Management System. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the product installer. The issue results from the use of default MySQL credentials. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-22755.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.34 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00568,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1392"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5246",
+      "description": "NETGEAR ProSAFE Network Management System Tomcat Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the product installer. The issue results from the use of a vulnerable version of Apache Tomcat. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-22868.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.34 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.31305,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5247",
+      "description": "NETGEAR ProSAFE Network Management System UpLoadServlet Unrestricted File Upload Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the UpLoadServlet class. The issue results from the lack of proper validation of user-supplied data, which can allow the upload of arbitrary files. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-22923.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.34 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.26919,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5505",
+      "description": "NETGEAR ProSAFE Network Management System UpLoadServlet Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the UpLoadServlet class. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-22724.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.34 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.46989,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6813",
+      "description": "NETGEAR ProSAFE Network Management System getSortString SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the getSortString method. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-23207.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.34 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01847,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6814",
+      "description": "NETGEAR ProSAFE Network Management System getFilterString SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NETGEAR ProSAFE Network Management System. Authentication is required to exploit this vulnerability.\n\nThe specific flaw exists within the getFilterString method. The issue results from the lack of proper validation of a user-supplied string before using it to construct SQL queries. An attacker can leverage this vulnerability to execute code in the context of SYSTEM. Was ZDI-CAN-23399.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "prosafe network management system",
+          "versions": [
+            {
+              "version": "1.7.0.34 x64",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:prosafe network management system",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02091,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25246",
+      "description": "NETGEAR XR1000 before 1.0.0.74, XR1000v2 before 1.1.0.22, and XR500 before 2.3.2.134 allow remote code execution by unauthenticated users.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "xr1000",
+          "versions": [
+            {
+              "lessThan": "1.0.0.74",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "netgear",
+          "product": "xr1000v2",
+          "versions": [
+            {
+              "lessThan": "1.1.0.22",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "netgear",
+          "product": "xr500",
+          "versions": [
+            {
+              "lessThan": "2.3.2.134",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:xr1000",
+        "product:xr1000v2",
+        "product:xr500",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00688,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4114",
+      "description": "A vulnerability classified as critical has been found in Netgear JWNR2000v2 1.0.0.11. Affected is the function check_language_file. The manipulation of the argument host leads to buffer overflow. It is possible to launch the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "jwnr2000v2",
+          "versions": [
+            {
+              "version": "1.0.0.11",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jwnr2000v2",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01033,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4115",
+      "description": "A vulnerability classified as critical was found in Netgear JWNR2000v2 1.0.0.11. Affected by this vulnerability is the function default_version_is_new. The manipulation of the argument host leads to buffer overflow. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "jwnr2000v2",
+          "versions": [
+            {
+              "version": "1.0.0.11",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jwnr2000v2",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00943,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4116",
+      "description": "A vulnerability, which was classified as critical, has been found in Netgear JWNR2000v2 1.0.0.11. Affected by this issue is the function get_cur_lang_ver. The manipulation of the argument host leads to buffer overflow. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "jwnr2000v2",
+          "versions": [
+            {
+              "version": "1.0.0.11",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jwnr2000v2",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00943,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4120",
+      "description": "A vulnerability was found in Netgear JWNR2000v2 1.0.0.11. It has been classified as critical. Affected is the function sub_4238E8. The manipulation of the argument host leads to buffer overflow. It is possible to launch the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "jwnr2000v2",
+          "versions": [
+            {
+              "version": "1.0.0.11",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jwnr2000v2",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00955,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4139",
+      "description": "A vulnerability classified as critical was found in Netgear EX6120 1.0.0.68. Affected by this vulnerability is the function fwAcosCgiInbound. The manipulation of the argument host leads to buffer overflow. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6120",
+          "versions": [
+            {
+              "version": "1.0.0.68",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6120",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01096,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4140",
+      "description": "A vulnerability, which was classified as critical, has been found in Netgear EX6120 1.0.3.94. Affected by this issue is the function sub_30394. The manipulation of the argument host leads to buffer overflow. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6120",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6120",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0113,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4141",
+      "description": "A vulnerability, which was classified as critical, was found in Netgear EX6200 1.0.3.94. This affects the function sub_3C03C. The manipulation of the argument host leads to buffer overflow. It is possible to initiate the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01091,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4142",
+      "description": "A vulnerability has been found in Netgear EX6200 1.0.3.94 and classified as critical. This vulnerability affects the function sub_3C8EC. The manipulation of the argument host leads to buffer overflow. The attack can be initiated remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0113,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4145",
+      "description": "A vulnerability, which was classified as critical, has been found in Netgear EX6200 1.0.3.94. This issue affects the function sub_3D0BC. The manipulation of the argument host leads to buffer overflow. The attack may be initiated remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0113,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4146",
+      "description": "A vulnerability, which was classified as critical, was found in Netgear EX6200 1.0.3.94. Affected is the function sub_41940. The manipulation of the argument host leads to buffer overflow. It is possible to launch the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01406,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4147",
+      "description": "A vulnerability has been found in Netgear EX6200 1.0.3.94 and classified as critical. Affected by this vulnerability is the function sub_47F7C. The manipulation of the argument host leads to buffer overflow. The attack can be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01091,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4148",
+      "description": "A vulnerability was found in Netgear EX6200 1.0.3.94 and classified as critical. Affected by this issue is the function sub_503FC. The manipulation of the argument host leads to buffer overflow. The attack may be launched remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01594,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4149",
+      "description": "A vulnerability was found in Netgear EX6200 1.0.3.94. It has been classified as critical. This affects the function sub_54014. The manipulation of the argument host leads to buffer overflow. It is possible to initiate the attack remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01594,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4150",
+      "description": "A vulnerability was found in Netgear EX6200 1.0.3.94. It has been declared as critical. This vulnerability affects the function sub_54340. The manipulation of the argument host leads to buffer overflow. The attack can be initiated remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6200",
+          "versions": [
+            {
+              "version": "1.0.3.94",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6200",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01538,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4978",
+      "description": "A vulnerability, which was classified as very critical, was found in Netgear DGND3700 1.1.00.15_1.00.15NA. This affects an unknown part of the file /BRS_top.html of the component Basic Authentication. The manipulation leads to improper authentication. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Other products might be affected as well. The vendor was contacted early about this disclosure.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "dgnd3700",
+          "versions": [
+            {
+              "version": "1.1.00.15_1.00.15NA",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dgnd3700",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.20955,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 10.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2025-5934",
+      "description": "A vulnerability was found in Netgear EX3700 up to 1.0.0.88. It has been classified as critical. Affected is the function sub_41619C of the file /mtd. The manipulation leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.0.0.98 is able to address this issue. It is recommended to upgrade the affected component. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex3700",
+          "versions": [
+            {
+              "version": "1.0.0.0",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.1",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.3",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.4",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.5",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.6",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.7",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.9",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.10",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.11",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.12",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.13",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.14",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.15",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.16",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.17",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.18",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.19",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.20",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.21",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.22",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.23",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.24",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.25",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.26",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.27",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.28",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.29",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.30",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.31",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.32",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.33",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.34",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.35",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.36",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.37",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.38",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.39",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.40",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.41",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.42",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.43",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.44",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.45",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.46",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.47",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.48",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.49",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.50",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.51",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.52",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.53",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.54",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.55",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.56",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.57",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.58",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.59",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.60",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.61",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.62",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.63",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.64",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.65",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.66",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.67",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.68",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.69",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.70",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.71",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.72",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.73",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.74",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.75",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.76",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.77",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.78",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.79",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.80",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.81",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.82",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.83",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.84",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.85",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.86",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.87",
+              "status": "affected"
+            },
+            {
+              "version": "1.0.0.88",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex3700",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01013,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2025-6510",
+      "description": "A vulnerability was found in Netgear EX6100 1.0.2.28_1.1.138. It has been rated as critical. Affected by this issue is the function sub_415EF8. The manipulation leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6100",
+          "versions": [
+            {
+              "version": "1.0.2.28_1.1.138",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6100",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00895,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-121"
+        ],
+        "cpe_count": 2,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2025-6511",
+      "description": "A vulnerability classified as critical has been found in Netgear EX6150 1.0.0.46_1.0.76. This affects the function sub_410090. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "ex6150",
+          "versions": [
+            {
+              "version": "1.0.0.46_1.0.76",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ex6150",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01147,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-121"
+        ],
+        "cpe_count": 2,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2025-6565",
+      "description": "A vulnerability was found in Netgear WNCE3001 1.0.0.50. It has been classified as critical. This affects the function http_d of the component HTTP POST Request Handler. The manipulation of the argument Host leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "wnce3001",
+          "versions": [
+            {
+              "version": "1.0.0.50",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:wnce3001",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00824,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 9.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-24714",
+      "description": "Some end of service NETGEAR products provide \"TelnetEnable\" functionality, which allows a magic packet to activate telnet service on the box.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "netgear",
+          "product": "netgear products",
+          "versions": [
+            {
+              "version": "versions which provide \"TelnetEnable\" functionality",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:netgear products",
+        "vendor:netgear"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00222,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1242"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    }
+  ]
+}

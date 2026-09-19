@@ -1,0 +1,3772 @@
+{
+  "generated_at": "2026-09-19T13:19:12+00:00",
+  "vendor": "progress_software_corporation",
+  "count": 78,
+  "items": [
+    {
+      "cve_id": "CVE-2023-40043",
+      "description": "\nIn Progress MOVEit Transfer versions released before 2021.1.8 (13.1.8), 2022.0.8 (14.0.8), 2022.1.9 (14.1.9), 2023.0.6 (15.0.6), a SQL injection vulnerability has been identified in the MOVEit Transfer web interface\u00a0that could allow a MOVEit system administrator account to gain unauthorized access to the MOVEit Transfer database. A\u00a0MOVEit system administrator\n\n could submit a crafted payload to the MOVEit Transfer web interface which could result in modification and disclosure of MOVEit database content.\n\n",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "moveit transfer",
+          "versions": [
+            {
+              "lessThan": "2023.0.6 (15.0.6)",
+              "status": "affected",
+              "version": "2023.0.0 (15.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.1.9 (14.1.9)",
+              "status": "affected",
+              "version": "2022.1.0 (14.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.0.8 (14.0.8)",
+              "status": "affected",
+              "version": "2022.0.0 (14.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2021.1.8 (13.1.8)",
+              "status": "affected",
+              "version": "2021.1.0 (13.1.0)",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:moveit transfer",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00561,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40044",
+      "description": "In WS_FTP Server versions prior to 8.7.4 and 8.8.2, a pre-authenticated attacker could leverage a .NET deserialization vulnerability in the Ad Hoc Transfer module to execute remote commands on the underlying WS_FTP Server operating system.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "ws_ftp server",
+          "versions": [
+            {
+              "lessThan": "8.8.2",
+              "status": "affected",
+              "version": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.7.4",
+              "status": "affected",
+              "version": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:ws_ftp server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": true,
+      "probability_score": 0.9015,
+      "kev": {
+        "cveID": "CVE-2023-40044",
+        "vendorProject": "Progress",
+        "product": "WS_FTP Server",
+        "vulnerabilityName": "Progress WS_FTP Server Deserialization of Untrusted Data Vulnerability",
+        "dateAdded": "2023-10-05",
+        "shortDescription": "Progress WS_FTP Server contains a deserialization of untrusted data vulnerability in the Ad Hoc Transfer module that allows an authenticated attacker to execute remote commands on the underlying operating system.",
+        "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2023-10-26",
+        "knownRansomwareCampaignUse": "Known"
+      },
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 2,
+        "reference_count": 17
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40045",
+      "description": "\n\n\nIn WS_FTP Server versions prior to 8.7.4 and 8.8.2,\n\n a reflected cross-site scripting (XSS) vulnerability exists in WS_FTP Server's Ad Hoc Transfer module.\u00a0 An attacker could leverage this vulnerability to target WS_FTP Server users with a specialized payload which results in the execution of malicious JavaScript within the context of the victims browser.\n\n",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "ws_ftp server",
+          "versions": [
+            {
+              "lessThan": "8.8.2",
+              "status": "affected",
+              "version": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.7.4",
+              "status": "affected",
+              "version": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ws_ftp server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00895,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40046",
+      "description": "\n\n\nIn WS_FTP Server versions prior to 8.7.4 and 8.8.2,\n\n a SQL injection vulnerability exists in the WS_FTP Server manager interface. An attacker may be able to infer information about the structure and contents of the database and execute SQL statements that alter or delete database elements.\n\n",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "ws_ftp server",
+          "versions": [
+            {
+              "lessThan": "8.8.2",
+              "status": "affected",
+              "version": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.7.4",
+              "status": "affected",
+              "version": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ws_ftp server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00854,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40047",
+      "description": "\n\n\nIn WS_FTP Server version prior to 8.8.2,\u00a0a stored cross-site scripting (XSS) vulnerability exists in WS_FTP Server's Management module.  An attacker with administrative privileges could import a SSL certificate with malicious attributes containing cross-site scripting payloads.\u00a0 Once the cross-site scripting payload is successfully stored,\u00a0\u00a0an attacker could leverage this vulnerability to target WS_FTP Server admins with a specialized payload which results in the execution of malicious JavaScript within the context of the victims browser.\n\n\n\n\n\n",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "ws_ftp server",
+          "versions": [
+            {
+              "lessThan": "8.8.2",
+              "status": "affected",
+              "version": "8.8.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ws_ftp server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00409,
+      "nvd": {
+        "cvss_v3_score": 4.8,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40050",
+      "description": "Upload profile either\nthrough API or user interface in Chef Automate prior to and including version 4.10.29 using InSpec\ncheck command with maliciously crafted profile allows remote code execution. \n\n\n\n\n\n\n\n\n\n\n\n",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "chef automate",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.10.29",
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chef automate",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01184,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-434"
+        ],
+        "cpe_count": 1,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40051",
+      "description": "This issue affects Progress Application Server (PAS) for OpenEdge in versions 11.7 prior to 11.7.18, 12.2 prior to 12.2.13, and innovation releases prior to 12.8.0.\u00a0An attacker can formulate a request for a WEB transport that allows unintended file uploads to a server directory path on the system running PASOE.  If the upload contains a payload that can further exploit the server or its network, the launch of a larger scale attack may be possible.\n\n\n\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "openedge",
+          "versions": [
+            {
+              "lessThan": "11.7.18",
+              "status": "affected",
+              "version": "11.7.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.2.13",
+              "status": "affected",
+              "version": "12.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.8.0",
+              "status": "affected",
+              "version": "Innovation Releases",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openedge",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00557,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40052",
+      "description": "\n\n\nThis issue affects Progress Application Server (PAS) for OpenEdge in versions 11.7 prior to 11.7.18, 12.2 prior to 12.2.13, and innovation releases prior to 12.8.0\n\n.\u00a0\n\nAn attacker who can produce a malformed web request may cause the crash of a PASOE agent potentially disrupting the thread activities of many web application clients. Multiple of these DoS attacks could lead to the flooding of invalid requests as compared to the server\u2019s remaining ability to process valid requests.\n\n\n\n\n\n",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "openedge",
+          "versions": [
+            {
+              "lessThan": "11.7.18",
+              "status": "affected",
+              "version": "11.7.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.2.13",
+              "status": "affected",
+              "version": "12.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.8.0",
+              "status": "affected",
+              "version": "Innovation Releases",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openedge",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0057,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-42657",
+      "description": "\n\n\nIn WS_FTP Server versions prior to 8.7.4 and 8.8.2, a directory traversal vulnerability was discovered.\u00a0 An attacker could leverage this vulnerability to perform file operations (delete, rename, rmdir, mkdir) on files and folders outside of their authorized WS_FTP folder path.\u00a0 Attackers could also escape the context of the WS_FTP Server file structure and perform the same level of operations (delete, rename, rmdir, mkdir) on file and folder locations on the underlying operating system.\n",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "ws_ftp server",
+          "versions": [
+            {
+              "lessThan": "8.8.2",
+              "status": "affected",
+              "version": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.7.4",
+              "status": "affected",
+              "version": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ws_ftp server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.17025,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-42658",
+      "description": "\nArchive command in Chef InSpec prior to 4.56.58 and 5.22.29 allow local command execution via maliciously crafted profile.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "chef inspec",
+          "versions": [
+            {
+              "lessThan": "4.56.58 ",
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "5.22.29",
+              "status": "affected",
+              "version": "5.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chef inspec",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00283,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-917"
+        ],
+        "cpe_count": 2,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2023-42659",
+      "description": "\nIn WS_FTP Server versions prior to 8.7.6 and 8.8.4, an unrestricted file upload flaw has been identified.  An authenticated Ad Hoc Transfer user has the ability to craft an API call which allows them to upload a file to a specified location on the underlying operating system hosting the WS_FTP Server application.\n",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "ws_ftp server",
+          "versions": [
+            {
+              "lessThan": "8.8.4",
+              "status": "affected",
+              "version": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.7.6",
+              "status": "affected",
+              "version": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ws_ftp server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00896,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-42660",
+      "description": "\nIn Progress MOVEit Transfer versions released before 2021.1.8 (13.1.8), 2022.0.8 (14.0.8), 2022.1.9 (14.1.9), 2023.0.6 (15.0.6), a SQL injection vulnerability has been identified in the MOVEit Transfer machine interface\u00a0that could allow an authenticated attacker to gain unauthorized access to the MOVEit Transfer database. An attacker could submit a crafted payload to the MOVEit Transfer machine interface which could result in modification and disclosure of MOVEit database content.\n\n",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "moveit transfer",
+          "versions": [
+            {
+              "lessThan": "2023.0.6 (15.0.6)",
+              "status": "affected",
+              "version": "2023.0.0 (15.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.1.9 (14.1.9)",
+              "status": "affected",
+              "version": "2022.1.0 (14.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.0.8 (14.0.8)",
+              "status": "affected",
+              "version": "2022.0.0 (14.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2021.1.8 (13.1.8)",
+              "status": "affected",
+              "version": "2021.1.0 (13.1.0)",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:moveit transfer",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00577,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6217",
+      "description": "\nIn Progress MOVEit Transfer versions released before 2022.0.9 (14.0.9), 2022.1.10 (14.1.10), 2023.0.7 (15.0.7),\u00a0a reflected cross-site scripting (XSS) vulnerability has been identified when MOVEit Gateway is used in conjunction with MOVEit Transfer.\u00a0 \n\nAn attacker could craft a malicious payload targeting the system which comprises a MOVEit Gateway and MOVEit Transfer deployment.  If a MOVEit user interacts with the crafted payload, the attacker would be able to execute malicious JavaScript within the context of the victim\u2019s browser.\n",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "moveit transfer",
+          "versions": [
+            {
+              "lessThan": "2023.1.1(15.1.1)",
+              "status": "unaffected",
+              "version": "2023.1.0(15.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2023.0.7 (15.0.7)",
+              "status": "affected",
+              "version": "2023.0.0 (15.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.1.10 (14.1.10)",
+              "status": "affected",
+              "version": "2022.1.0 (14.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.0.9 (14.0.9)",
+              "status": "affected",
+              "version": "2022.0.0 (14.0.0)",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:moveit transfer",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00511,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 5,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6218",
+      "description": "\nIn Progress MOVEit Transfer versions released before 2022.0.9 (14.0.9), 2022.1.10 (14.1.10), 2023.0.7 (15.0.7), a privilege escalation path associated with group administrators has been identified.\u00a0 It is possible for a group administrator to elevate a group members permissions to the role of an organization\u00a0administrator.\n",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "moveit transfer",
+          "versions": [
+            {
+              "lessThan": "2023.1.1(15.1.1)",
+              "status": "unaffected",
+              "version": "2023.1.0(15.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2023.0.7 (15.0.7)",
+              "status": "affected",
+              "version": "2023.0.0 (15.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.1.10 (14.1.10)",
+              "status": "affected",
+              "version": "2022.1.0 (14.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.0.9 (14.0.9)",
+              "status": "affected",
+              "version": "2022.0.0 (14.0.0)",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:moveit transfer",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00696,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 5,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6364",
+      "description": "In WhatsUp Gold versions released before 2023.1, a stored cross-site scripting (XSS) vulnerability has been identified.\u00a0 It is possible for an attacker to craft a XSS payload and store that value within a dashboard component.\u00a0\u00a0\n\nIf a WhatsUp Gold user interacts with the crafted payload, the attacker would be able to execute malicious JavaScript within the context of the victims browser.\n\n",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1",
+              "status": "affected",
+              "version": "2023.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "2022.1",
+              "status": "affected",
+              "version": "2022.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00513,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6365",
+      "description": "\nIn WhatsUp Gold versions released before 2023.1, a stored cross-site scripting (XSS) vulnerability has been identified.  It is possible for an attacker to craft a XSS payload and store that value within a device group. \u00a0\n\nIf a WhatsUp Gold user interacts with the crafted payload, the attacker would be able to execute malicious JavaScript within the context of the victims browser.\n\n",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1",
+              "status": "affected",
+              "version": "2023.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "2022.1",
+              "status": "affected",
+              "version": "2022.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00513,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6366",
+      "description": "\nIn WhatsUp Gold versions released before 2023.1, a stored cross-site scripting (XSS) vulnerability has been identified.  It is possible for an attacker to craft a XSS payload and store that value within Alert Center. \u00a0\n\nIf a WhatsUp Gold user interacts with the crafted payload, the attacker would be able to execute malicious JavaScript within the context of the victims browser.\n\n",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1",
+              "status": "affected",
+              "version": "2023.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "2022.1",
+              "status": "affected",
+              "version": "2022.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00513,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6367",
+      "description": "\nIn WhatsUp Gold versions released before 2023.1, a stored cross-site scripting (XSS) vulnerability has been identified.  It is possible for an attacker to craft a XSS payload and store that value within Roles. \u00a0\n\nIf a WhatsUp Gold user interacts with the crafted payload, the attacker would be able to execute malicious JavaScript within the context of the victims browser.\n\n",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1",
+              "status": "affected",
+              "version": "2023.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "2022.1",
+              "status": "affected",
+              "version": "2022.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00513,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6595",
+      "description": "In WhatsUp Gold versions released before 2023.1, an API endpoint was found to be missing an authentication mechanism. It is possible for an unauthenticated attacker to enumerate ancillary credential information stored within WhatsUp Gold.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1",
+              "status": "affected",
+              "version": "2023.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "2022.1",
+              "status": "affected",
+              "version": "2022.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.008,
+      "nvd": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-0396",
+      "description": "\nIn Progress MOVEit Transfer versions released before 2022.0.10 (14.0.10), 2022.1.11 (14.1.11), 2023.0.8 (15.0.8), 2023.1.3 (15.1.3), an input validation issue was discovered.  An authenticated user can manipulate a parameter in an HTTPS transaction.  The modified transaction could lead to computational errors within MOVEit Transfer and potentially result in a denial of service.\n\n",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "moveit transfer",
+          "versions": [
+            {
+              "lessThan": "2022.0.10 (14.0.10)",
+              "status": "affected",
+              "version": "2022.0.0 (14.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2022.1.11 (14.1.11)",
+              "status": "affected",
+              "version": "2022.1.0 (14.1.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2023.0.8 (15.0.8)",
+              "status": "affected",
+              "version": "2023.0.0 (15.0.0)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2023.1.3 (15.1.3)",
+              "status": "affected",
+              "version": "2023.1.0 (15.1.0)",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:moveit transfer",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00539,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-11625",
+      "description": "Information Exposure Through an Error Message vulnerability in Progress Software Corporation Sitefinity.This issue affects Sitefinity: from 4.0 through 14.4.8142, from 15.0.8200 through 15.0.8229, from 15.1.8300 through 15.1.8327, from 15.2.8400 through 15.2.8421.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "sitefinity",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.4.8142",
+              "status": "affected",
+              "version": "4.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThanOrEqual": "15.0.8229",
+              "status": "affected",
+              "version": "15.0.8200",
+              "versionType": "custom"
+            },
+            {
+              "lessThanOrEqual": "15.1.8327",
+              "status": "affected",
+              "version": "15.1.8300",
+              "versionType": "custom"
+            },
+            {
+              "lessThanOrEqual": "15.2.8421",
+              "status": "affected",
+              "version": "15.2.8400",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sitefinity",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00296,
+      "nvd": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-209"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-11626",
+      "description": "Improper Neutralization of Input During CMS Backend (adminstrative section) Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Progress Sitefinity.This issue affects Sitefinity: from 4.0 through 14.4.8142, from 15.0.8200 through 15.0.8229, from 15.1.8300 through 15.1.8327, from 15.2.8400 through 15.2.8421.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "sitefinity",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.4.8142",
+              "status": "affected",
+              "version": "4.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThanOrEqual": "15.0.8229",
+              "status": "affected",
+              "version": "15.0.8200",
+              "versionType": "custom"
+            },
+            {
+              "lessThanOrEqual": "15.1.8327",
+              "status": "affected",
+              "version": "15.1.8300",
+              "versionType": "custom"
+            },
+            {
+              "lessThanOrEqual": "15.2.8421",
+              "status": "affected",
+              "version": "15.2.8400",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sitefinity",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00357,
+      "nvd": {
+        "cvss_v3_score": 4.8,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 4,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12106",
+      "description": "In WhatsUp Gold versions released before 2024.0.2, an unauthenticated attacker can configure\u00a0LDAP settings.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.2",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.09678,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-12108",
+      "description": "In WhatsUp Gold versions released before 2024.0.2, an attacker can gain access to the WhatsUp Gold server via the public API.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.2",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.06798,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-290"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1632",
+      "description": "Low-privileged users with access to the Sitefinity backend may obtain sensitive information from the site's administrative area.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "sitefinity",
+          "versions": [
+            {
+              "lessThan": "13.3.7649",
+              "status": "affected",
+              "version": "13.3.7600",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "14.4.8135",
+              "status": "affected",
+              "version": "14.4.8100",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "15.0.8227",
+              "status": "affected",
+              "version": "15.0.8200",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sitefinity",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.005,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1636",
+      "description": "Potential Cross-Site Scripting (XSS) in the page editing area.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "sitefinity",
+          "versions": [
+            {
+              "lessThan": "13.3.7649",
+              "status": "affected",
+              "version": "13.3.7600",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "14.4.8135",
+              "status": "affected",
+              "version": "14.4.8100",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "15.0.8227",
+              "status": "affected",
+              "version": "15.0.8200",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sitefinity",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00402,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1800",
+      "description": "\nIn Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q1 (10.0.24.130), a remote code execution attack is possible through an insecure deserialization vulnerability.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "2024 Q1 (10.0.24.130)",
+              "status": "affected",
+              "version": "1.00",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.40375,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1801",
+      "description": "\nIn Progress\u00ae Telerik\u00ae Reporting versions prior to 2024 Q1 (18.0.24.130), a code execution attack is possible by a local threat actor through an insecure deserialization vulnerability.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik reporting",
+          "versions": [
+            {
+              "lessThan": "2024 Q1 (18.0.24.130)",
+              "status": "affected",
+              "version": "Q1 2007",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik reporting",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00422,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-1856",
+      "description": "\nIn Progress\u00ae Telerik\u00ae Reporting versions prior to 2024 Q1 (18.0.24.130), a code execution attack is possible by a remote threat actor through an insecure deserialization vulnerability.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik reporting",
+          "versions": [
+            {
+              "lessThan": "2024 Q1 (18.0.24.130)",
+              "status": "affected",
+              "version": "Q1 2007",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik reporting",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01129,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-3544",
+      "description": "\nUnauthenticated attackers can perform actions, using SSH private keys, by knowing the IP address and having access to the same network of one of the machines in the HA or Cluster group. This vulnerability has been closed by enhancing LoadMaster partner communications to require a shared secret that must be exchanged between the partners before communication can proceed.\n\n",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "loadmaster",
+          "versions": [
+            {
+              "lessThan": "7.2.59.4",
+              "status": "affected",
+              "version": "LoadMaster 7.2.55.0 (GA)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "7.2.54.10",
+              "status": "affected",
+              "version": "LoadMaster 7.2.49.0 (LTSF)",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "7.2.48.12",
+              "status": "affected",
+              "version": "LoadMaster 7.2.48.11 (LTS)",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:loadmaster",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00379,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-798"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-3892",
+      "description": "A local code execution vulnerability is possible in Telerik UI for WinForms beginning in v2021.1.122 but prior to v2024.2.514. This vulnerability could allow an untrusted theme assembly to execute arbitrary code on the local Windows system.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik ui for winforms",
+          "versions": [
+            {
+              "lessThan": "v2024.2.514",
+              "status": "affected",
+              "version": "v2021.1.122",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for winforms",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00217,
+      "nvd": {
+        "cvss_v3_score": 6.7,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-46905",
+      "description": "In WhatsUp Gold versions released before 2024.0.1, a SQL Injection vulnerability allows an authenticated lower-privileged user (at least Network Manager permissions required) to achieve privilege escalation to the admin account.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.1",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02241,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-46906",
+      "description": "In WhatsUp Gold versions released before 2024.0.1, a SQL Injection vulnerability allows an authenticated low-privileged user (at least Report Viewer permissions required)  to achieve privilege escalation to the admin account.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.1",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.40372,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-46907",
+      "description": "In WhatsUp Gold versions released before 2024.0.1, a SQL Injection vulnerability allows an authenticated low-privileged user (at least Report Viewer permissions required) to achieve privilege escalation to the admin account.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.1",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02241,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-46908",
+      "description": "In WhatsUp Gold versions released before 2024.0.1, a SQL Injection vulnerability allows an authenticated low-privileged user (at least Report Viewer permissions required)\n\n to achieve privilege escalation to the admin account.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.1",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02241,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-46909",
+      "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage this vulnerability to execute code in the context of the service account.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.1",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.48945,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-16",
+          "CWE-22",
+          "CWE-73"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4200",
+      "description": "In Progress\u00ae Telerik\u00ae Reporting versions prior to 2024 Q2 (18.1.24.2.514), a code execution attack is possible by a local threat actor through an insecure deserialization vulnerability.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik reporting",
+          "versions": [
+            {
+              "lessThan": "18.1.24.2.514",
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik reporting",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00295,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4202",
+      "description": "In Progress\u00ae Telerik\u00ae Reporting versions prior to 2024 Q2 (18.1.24.514), a code execution attack is possible through an insecure instantiation vulnerability.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik reporting",
+          "versions": [
+            {
+              "lessThan": "18.1.24.2.514",
+              "status": "affected",
+              "version": "1.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik reporting",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00271,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4358",
+      "description": "In Progress Telerik Report Server, version 2024 Q1 (10.0.24.305) or earlier, on IIS, an unauthenticated attacker can gain access to Telerik Report Server restricted functionality via an authentication bypass vulnerability.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "10.1.24.514",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": true,
+      "probability_score": 0.97482,
+      "kev": {
+        "cveID": "CVE-2024-4358",
+        "vendorProject": "Progress",
+        "product": "Telerik Report Server",
+        "vulnerabilityName": "Progress Telerik Report Server Authentication Bypass by Spoofing Vulnerability",
+        "dateAdded": "2024-06-13",
+        "shortDescription": "Progress Telerik Report Server contains an authorization bypass by spoofing vulnerability that allows an attacker to obtain unauthorized access.",
+        "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2024-07-04",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-290"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4883",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, a Remote Code Execution issue exists in Progress WhatsUp Gold. This vulnerability allows an unauthenticated attacker to achieve the RCE as a service account through NmApi.exe.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.64535,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-77",
+          "CWE-78",
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4884",
+      "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an unauthenticated Remote Code Execution vulnerability in Progress WhatsUpGold.\u00a0\u00a0The Apm.UI.Areas.APM.Controllers.CommunityController\n\n allows execution of commands with iisapppool\\nmconsole privileges.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.24306,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-77",
+          "CWE-78",
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-4885",
+      "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an unauthenticated Remote Code Execution vulnerability in Progress WhatsUpGold.\u00a0\u00a0The \n\nWhatsUp.ExportUtilities.Export.GetFileWithoutZip\n\n\n\n allows execution of commands with iisapppool\\nmconsole privileges.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": true,
+      "probability_score": 0.99288,
+      "kev": {
+        "cveID": "CVE-2024-4885",
+        "vendorProject": "Progress",
+        "product": "WhatsUp Gold",
+        "vulnerabilityName": "Progress WhatsUp Gold Path Traversal Vulnerability",
+        "dateAdded": "2025-03-03",
+        "shortDescription": "Progress WhatsUp Gold contains a path traversal vulnerability that allows an unauthenticated attacker to achieve remote code execution.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2025-03-24",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5008",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, \n\nan authenticated user with certain permissions can upload an arbitrary file and obtain RCE using\u00a0Apm.UI.Areas.APM.Controllers.Api.Applications.AppProfileImportController.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.1733,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5009",
+      "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an Improper Access Control vulnerability in Wug.UI.Controllers.InstallController.SetAdminPassword allows local attackers to modify admin's password.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.1742,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5010",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, a vulnerability exists in the TestController functionality.\u00a0 A specially crafted \n\nunauthenticated\n\nHTTP request can lead to a disclosure of sensitive information.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.69952,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 1,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5011",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, an uncontrolled resource consumption vulnerability exists.\u00a0A specially crafted unauthenticated HTTP request\u00a0to the TestController Chart functionality\u00a0can lead to denial of service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.47092,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 1,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5012",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, there is a\u00a0missing authentication vulnerability in WUGDataAccess.Credentials. This\u00a0vulnerability allows\u00a0unauthenticated attackers to disclose Windows Credentials stored in the product Credential Library.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00445,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5013",
+      "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an unauthenticated Denial of Service \n\nvulnerability was identified.\u00a0An unauthenticated attacker can put the application into the SetAdminPassword installation step, which renders the application non-accessible.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00847,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5014",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, a Server Side Request Forgery vulnerability exists in the\u00a0GetASPReport feature. This allows any authenticated user to retrieve ASP reports from an HTML form.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00477,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5015",
+      "description": "In WhatsUp Gold versions released before 2023.1.3,\u00a0an authenticated SSRF vulnerability in Wug.UI.Areas.Wug.Controllers.SessionControler.Update allows a low privileged user to chain this SSRF with an Improper Access Control vulnerability. This can be used to escalate privileges to Admin.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00525,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5016",
+      "description": "In WhatsUp Gold versions released before 2023.1.3, Distributed Edition installations can be exploited by using a deserialization\u00a0tool to achieve a Remote Code Execution as SYSTEM.\u00a0\nThe vulnerability exists in the main message processing routines\u00a0NmDistributed.DistributedServiceBehavior.OnMessage for server and NmDistributed.DistributedClient.OnMessage for clients.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2023.1.3",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.22367,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6096",
+      "description": "In Progress\u00ae Telerik\u00ae Reporting versions prior to 18.1.24.709, a code execution attack is possible through object injection via an insecure type resolution vulnerability.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik reporting",
+          "versions": [
+            {
+              "lessThan": "18.1.24.709",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik reporting",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00861,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-470"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6327",
+      "description": "In Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q2 (10.1.24.709), a remote code execution attack is possible through an insecure deserialization vulnerability.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "2024 Q2 (10.1.24.709)",
+              "status": "affected",
+              "version": "1.00",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01997,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6670",
+      "description": "In WhatsUp Gold versions released before 2024.0.0,\u00a0a SQL Injection vulnerability allows an unauthenticated attacker to retrieve the users encrypted password.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.0",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": true,
+      "probability_score": 0.93,
+      "kev": {
+        "cveID": "CVE-2024-6670",
+        "vendorProject": "Progress",
+        "product": "WhatsUp Gold",
+        "vulnerabilityName": "Progress WhatsUp Gold SQL Injection Vulnerability",
+        "dateAdded": "2024-09-16",
+        "shortDescription": "Progress WhatsUp Gold contains a SQL injection vulnerability that allows an unauthenticated attacker to retrieve the user's encrypted password if the application is configured with only a single user.",
+        "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2024-10-07",
+        "knownRansomwareCampaignUse": "Known"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6671",
+      "description": "In WhatsUp Gold versions released before 2024.0.0, if the application is configured with only a single user, a SQL Injection vulnerability allows an unauthenticated attacker to retrieve the users encrypted password.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.0",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.18988,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-6672",
+      "description": "In WhatsUp Gold versions released before 2024.0.0, a SQL Injection vulnerability allows an authenticated low-privileged attacker to achieve privilege escalation by modifying a privileged user's password.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.0",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00714,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-7292",
+      "description": "In Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q3 (10.2.24.806), a credential stuffing attack is possible through improper restriction of excessive login attempts.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "2024 Q3 (10.2.24.806)",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00334,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-307"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-7293",
+      "description": "In Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q3 (10.2.24.806), a password brute forcing attack is possible through weak password requirements.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "10.2.24.806",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00334,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-521"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-7294",
+      "description": "In Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q3 (10.2.24.806), an HTTP DoS attack is possible on anonymous endpoints without rate limiting.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "10.2.24.806",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00341,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-7295",
+      "description": "In Progress\u00ae Telerik\u00ae Report Server versions prior to 2024 Q4 (10.3.24.1112), the encryption of local asset data used an older algorithm which may allow a sophisticated actor to decrypt this information.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "lessThan": "10.3.24.1112",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00106,
+      "nvd": {
+        "cvss_v3_score": 6.2,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-798"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-7763",
+      "description": "In WhatsUp Gold versions released before 2024.0.0,\u00a0\n\nan Authentication Bypass issue exists which allows an attacker to obtain encrypted user credentials.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.0",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00613,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-8785",
+      "description": "In WhatsUp Gold versions released before 2024.0.1, a\u00a0remote unauthenticated attacker could leverage NmAPI.exe to create or change an existing registry value in registry path HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Ipswitch\\.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "lessThan": "2024.0.1",
+              "status": "affected",
+              "version": "2023.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.09541,
+      "nvd": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-648"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-1968",
+      "description": "Insufficient Session Expiration vulnerability in Progress Software Corporation Sitefinity under some specific and uncommon circumstances allows reusing Session IDs (Session Replay Attacks).This issue affects Sitefinity: from 14.0 through 14.3, from 14.4 before 14.4.8145, from 15.0 before 15.0.8231, from 15.1 before 15.1.8332, from 15.2 before 15.2.8429.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "sitefinity",
+          "versions": [
+            {
+              "lessThanOrEqual": "14.3",
+              "status": "affected",
+              "version": "14.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "14.4.8145",
+              "status": "affected",
+              "version": "14.4",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "15.0.8231",
+              "status": "affected",
+              "version": "15.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "15.1.8332",
+              "status": "affected",
+              "version": "15.1",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "15.2.8429",
+              "status": "affected",
+              "version": "15.2",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sitefinity",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00318,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-613"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-7388",
+      "description": "It was possible to perform Remote Command Execution (RCE) via Java\nRMI interface in the OpenEdge AdminServer, allowing authenticated users to inject and\nexecute OS commands under the delegated authority of the AdminServer process.\u00a0 An RMI interface permitted manipulation of a configuration\nproperty with inadequate input validation leading to OS command injection.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "openedge",
+          "versions": [
+            {
+              "lessThan": "12.2.18",
+              "status": "affected",
+              "version": "OpenEdge 12.2.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "12.8.8",
+              "status": "affected",
+              "version": "OpenEdge 12.8.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openedge",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00925,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-77"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-7389",
+      "description": "A vulnerability in the AdminServer component of OpenEdge on all supported platforms grants its authenticated users\u00a0OS-level access to the server\nthrough the adopted authority of the AdminServer process itself.\u00a0 The delegated authority of the AdminServer could allow its users the ability to read arbitrary files on the host system through the misuse of the setFile() and openFile()\n methods exposed through the RMI interface.\u00a0 Misuse was limited only by OS-level authority of the AdminServer's elevated \nprivileges granted and the user's access to these methods enabled through RMI.\u00a0 The exploitable methods have been removed thus eliminating their access through RMI or downstream of the RMI registry.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "openedge",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "OpenEdge 12.2.0",
+              "lessThanOrEqual": "12.2.9",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "OpenEdge 12.8.0",
+              "lessThanOrEqual": "12.2.18",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openedge",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00326,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-552"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-8095",
+      "description": "The OECH1 prefix encoding is intended to obfuscate values across the OpenEdge platform. \u00a0It has been identified as cryptographically weak and unsuitable for stored encodings and enterprise applications. \u00a0OECH1 encodings should be considered exploitable and immediately replaced by any other supported prefix encoding, all of which are based on symmetric encryption.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:U/AU:Y/V:D/RE:M/U:Red",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "openedge",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.0",
+              "lessThanOrEqual": "12.2.18",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.8.0",
+              "lessThanOrEqual": "12.8.9",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openedge",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00216,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-257"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-65937",
+      "description": "In WhatsUp Gold versions released before 2026.0.2, an authenticated attacker can bypass frontend controls and inject persistent script content.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "26.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-94"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-65941",
+      "description": "In WhatsUp Gold versions released before 2026.0.2,\u00a0an unauthenticated remote attacker with network access to the affected service can execute arbitrary code in the context of the IIS application service account.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "whatsup gold",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "26.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:whatsup gold",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00437,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-73",
+          "CWE-94",
+          "CWE-306",
+          "CWE-918"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-7326",
+      "description": "A cross-site request forgery vulnerability in the Admin UI of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows a remote attacker who lures an authenticated administrator to a malicious web page to perform administrative actions on the administrator's behalf. This can result in unauthorized changes to security configuration.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00148,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-7327",
+      "description": "An improper privilege management vulnerability in the REST API document processing pipeline of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with an administrative REST role to escalate privileges. This can result in unauthorized disclosure of sensitive server-side data when it is accessed by a higher-privileged user.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00236,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-7329",
+      "description": "An improper privilege management vulnerability in the SQL, SPARQL, and Optic REST query interfaces of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged REST role to escalate privileges to administrator. This enables execution of privileged operations and unauthorized data access.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00373,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-7557",
+      "description": "An improper verification of cryptographic signature vulnerability in the SAML authentication module of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an unauthenticated remote attacker to bypass authentication and impersonate any user, including administrators. This vulnerability affects deployments with SAML single sign-on enabled.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00317,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-8709",
+      "description": "An improper privilege management vulnerability in the REST API document patch operation of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged REST role to escalate privileges and execute privileged operations against the Security database.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9190",
+      "description": "An HTTP request smuggling vulnerability in the HTTP App Server of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows a remote attacker to bypass authentication and authorization checks, hijack a legitimate user's session, or capture credentials. The vulnerability occurs when a crafted HTTP request containing both Content-Length and Transfer-Encoding headers causes a reverse proxy and MarkLogic Server to interpret request boundaries differently.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00426,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-444"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9192",
+      "description": "An authentication bypass vulnerability in the ODBC App Server of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an unauthenticated remote attacker to bypass password verification and execute queries with the privileges of any named user known to the server, including administrators.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00524,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9193",
+      "description": "An improper privilege management vulnerability in the Hadoop integration of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged Hadoop role to escalate privileges and execute privileged operations against the Security database.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9195",
+      "description": "A cross-site scripting vulnerability in the Query Console of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows a remote attacker who lures an authenticated administrator to a crafted URL to execute arbitrary JavaScript in the administrator's browser session, capture credentials, and perform privileged actions on the administrator's behalf.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00443,
+      "nvd": {
+        "cvss_v3_score": 9.3,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9203",
+      "description": "A server-side request forgery vulnerability in Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with low-privileged roles to bypass protections for cloud instance metadata endpoints. Successful exploitation can disclose cloud credentials and compromise cloud resources accessible to the host instance.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.6",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.0.3",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00214,
+      "nvd": {
+        "cvss_v3_score": 8.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    }
+  ]
+}
