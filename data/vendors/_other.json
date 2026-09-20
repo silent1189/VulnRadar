@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T00:58:37+00:00",
+  "generated_at": "2026-09-20T06:01:12+00:00",
   "vendor": "_other",
-  "count": 2887,
+  "count": 2888,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -182444,6 +182444,38 @@
         "cpe_count": 2,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-4327",
+      "description": "The The Welcomizer plugin for WordPress is vulnerable to Remote Code Execution in all versions up to and including 2.8.1. This is due to missing authorization checks on the twiz_ajax_callback AJAX action's 'savesection' handler combined with the use of eval() to execute user-supplied 'custom logic' code on the frontend. The AJAX handler at twiz-ajax.php verifies a nonce but performs no current_user_can() capability check for the ACTION_SAVE_SECTION case. Furthermore, the nonce is exposed to any authenticated user through the directly-accessible twiz-ajax.js.php file which loads WordPress and outputs the nonce. This makes it possible for authenticated attackers, with Subscriber-level access and above, to inject arbitrary PHP code via the twiz_custom_logic POST parameter when saving a section with output choice 'twiz_logic_output'.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sebwordpress",
+          "product": "the welcomizer",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThanOrEqual": "2.8.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:the welcomizer",
+        "vendor:sebwordpress"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00696
     },
     {
       "cve_id": "CVE-2026-50161",
