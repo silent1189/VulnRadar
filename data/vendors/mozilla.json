@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T11:10:47+00:00",
+  "generated_at": "2026-09-20T15:58:22+00:00",
   "vendor": "mozilla",
-  "count": 737,
+  "count": 756,
   "items": [
     {
       "cve_id": "CVE-2022-0511",
@@ -46787,6 +46787,85 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92016",
+      "description": "Use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox 156, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00333,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
+      }
+    },
+    {
       "cve_id": "CVE-2026-92017",
       "description": "Privilege escalation in the DOM: Service Workers component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
       "cvss_score": 8.8,
@@ -46866,6 +46945,91 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92018",
+      "description": "Sandbox escape in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
         ],
         "cpe_count": 0,
         "reference_count": 8
@@ -46957,6 +47121,735 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92021",
+      "description": "Use-after-free in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 140.16 and Thunderbird 140.16.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92022",
+      "description": "Use-after-free in the DOM: HTML Parser component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92023",
+      "description": "Use-after-free in the XML component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92024",
+      "description": "Use-after-free in the SVG component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92025",
+      "description": "Use-after-free in the DOM: Navigation component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92026",
+      "description": "Use-after-free in the Networking component. This vulnerability was fixed in Firefox 156, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00333,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92027",
+      "description": "Use-after-free in the DOM: Streams component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92028",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92029",
+      "description": "Use-after-free in the SVG component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3, Thunderbird 156, Thunderbird 140.16, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.41",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.16",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0034,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
       "cve_id": "CVE-2026-92033",
       "description": "Privilege escalation in Firefox for Android. This vulnerability was fixed in Firefox 156.",
       "cvss_score": 8.8,
@@ -46997,6 +47890,128 @@
         ],
         "cpe_count": 0,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92040",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 156 and Thunderbird 156.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92042",
+      "description": "Race condition in the DOM: Content Processes component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00236,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
       }
     },
     {
@@ -47067,6 +48082,73 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92046",
+      "description": "Use-after-free in the Graphics component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-92047",
       "description": "Privilege escalation in the Crash Reporting component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
       "cvss_score": 8.8,
@@ -47128,6 +48210,73 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92049",
+      "description": "Use-after-free in the Widget: Win32 component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
         ],
         "cpe_count": 0,
         "reference_count": 5
@@ -47402,6 +48551,207 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92056",
+      "description": "Use-after-free in the Graphics: Text component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92058",
+      "description": "Use-after-free in the Graphics component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92060",
+      "description": "Use-after-free in the Internationalization component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-92062",
       "description": "Privilege escalation in the Session Restore component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
       "cvss_score": 8.8,
@@ -47463,6 +48813,73 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92067",
+      "description": "Use-after-free in the Widget: Gtk component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.3",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "156",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
         ],
         "cpe_count": 0,
         "reference_count": 5

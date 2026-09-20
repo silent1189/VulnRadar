@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-20T11:10:51+00:00`
+Generated: `2026-09-20T15:58:26+00:00`
 
 ## Executive Summary
 
@@ -32,14 +32,14 @@ Top critical items:
 | [CVE-2024-13159](https://www.cve.org/CVERecord?id=CVE-2024-13159) | 1.000 | 9.8 | 2025-03-31 | Absolute path traversal in Ivanti EPM before the 2024 January-2025 Security Update and 2022 SU6 January-2025 Security U… |
 | [CVE-2023-29300](https://www.cve.org/CVERecord?id=CVE-2023-29300) | 1.000 | 9.8 | 2024-01-29 | Adobe ColdFusion versions 2018u16 (and earlier), 2021u6 (and earlier) and 2023.0.0.330468 (and earlier) are affected by… |
 | [CVE-2024-7593](https://www.cve.org/CVERecord?id=CVE-2024-7593) | 1.000 | 9.8 | 2024-10-15 | Incorrect implementation of an authentication algorithm in Ivanti vTM other than versions 22.2R1 or 22.7R2 allows a rem… |
+| [CVE-2023-42793](https://www.cve.org/CVERecord?id=CVE-2023-42793) | 1.000 | 9.8 | 2023-10-25 | In JetBrains TeamCity before 2023.05.4 authentication bypass leading to RCE on TeamCity Server was possible |
 | [CVE-2024-4577](https://www.cve.org/CVERecord?id=CVE-2024-4577) | 1.000 | 9.8 | 2024-07-03 | In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, when using Apache and PHP-CGI on Windows,… |
 | [CVE-2022-40684](https://www.cve.org/CVERecord?id=CVE-2022-40684) | 1.000 | 9.8 | 2022-11-01 | An authentication bypass using an alternate path or channel [CWE-288] in Fortinet FortiOS version 7.2.0 through 7.2.1 a… |
-| [CVE-2023-29357](https://www.cve.org/CVERecord?id=CVE-2023-29357) | 1.000 | 9.8 | 2024-01-31 | Microsoft SharePoint Server Elevation of Privilege Vulnerability |
 
 ## Summary
 
-- Total items: **33072**
-- Watchlist hits: **32776**
+- Total items: **33105**
+- Watchlist hits: **32809**
 - CISA KEVs: **800**
 - Exploit Intel (PoC): **1001**
 - Exploit Intel + Watchlist (CRITICAL): **705**
@@ -70,11 +70,11 @@ Top critical items:
 | [CVE-2024-13159](https://www.cve.org/CVERecord?id=CVE-2024-13159) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-31 | 1.000 | 9.8 | ✅ | Absolute path traversal in Ivanti EPM before the 2024 January-2025 Security Update and 2022 SU6 January-2025 Security Update allows a remote unauthenticated at… |
 | [CVE-2023-29300](https://www.cve.org/CVERecord?id=CVE-2023-29300) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-29 | 1.000 | 9.8 | ✅ | Adobe ColdFusion versions 2018u16 (and earlier), 2021u6 (and earlier) and 2023.0.0.330468 (and earlier) are affected by a Deserialization of Untrusted Data vul… |
 | [CVE-2024-7593](https://www.cve.org/CVERecord?id=CVE-2024-7593) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-15 | 1.000 | 9.8 | ✅ | Incorrect implementation of an authentication algorithm in Ivanti vTM other than versions 22.2R1 or 22.7R2 allows a remote unauthenticated attacker to bypass a… |
+| [CVE-2023-42793](https://www.cve.org/CVERecord?id=CVE-2023-42793) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-25 | 1.000 | 9.8 | ✅ | In JetBrains TeamCity before 2023.05.4 authentication bypass leading to RCE on TeamCity Server was possible |
 | [CVE-2024-4577](https://www.cve.org/CVERecord?id=CVE-2024-4577) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-07-03 | 1.000 | 9.8 | ✅ | In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, when using Apache and PHP-CGI on Windows, if the system is set up to use certain … |
 | [CVE-2022-40684](https://www.cve.org/CVERecord?id=CVE-2022-40684) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-11-01 | 1.000 | 9.8 | ✅ | An authentication bypass using an alternate path or channel [CWE-288] in Fortinet FortiOS version 7.2.0 through 7.2.1 and 7.0.0 through 7.0.6, FortiProxy versi… |
 | [CVE-2023-29357](https://www.cve.org/CVERecord?id=CVE-2023-29357) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-31 | 1.000 | 9.8 | ✅ | Microsoft SharePoint Server Elevation of Privilege Vulnerability |
 | [CVE-2025-59287](https://www.cve.org/CVERecord?id=CVE-2025-59287) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-14 | 1.000 | 9.8 | ✅ | Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over a network. |
-| [CVE-2023-42793](https://www.cve.org/CVERecord?id=CVE-2023-42793) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-25 | 1.000 | 9.8 | ✅ | In JetBrains TeamCity before 2023.05.4 authentication bypass leading to RCE on TeamCity Server was possible |
 | [CVE-2022-47986](https://www.cve.org/CVERecord?id=CVE-2022-47986) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-03-14 | 1.000 | 9.8 | ✅ | IBM Aspera Faspex 4.4.2 Patch Level 1 and earlier could allow a remote attacker to execute arbitrary code on the system, caused by a YAML deserialization flaw.… |
 | [CVE-2022-1388](https://www.cve.org/CVERecord?id=CVE-2022-1388) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-05-31 | 1.000 | 9.8 | ✅ | On F5 BIG-IP 16.1.x versions prior to 16.1.2.2, 15.1.x versions prior to 15.1.5.1, 14.1.x versions prior to 14.1.4.6, 13.1.x versions prior to 13.1.5, and all … |
 | [CVE-2023-38035](https://www.cve.org/CVERecord?id=CVE-2023-38035) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-09-12 | 1.000 | 9.8 | ✅ | A security vulnerability in MICS Admin Portal in Ivanti MobileIron Sentry versions 9.18.0 and below, which may allow an attacker to bypass authentication contr… |
@@ -231,8 +231,8 @@ Top critical items:
 | [CVE-2023-21529](https://www.cve.org/CVERecord?id=CVE-2023-21529) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-27 | 0.621 | 8.8 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2024-21182](https://www.cve.org/CVERecord?id=CVE-2024-21182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-04 | 0.742 | 7.5 | ✅ | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14… |
 | [CVE-2024-43451](https://www.cve.org/CVERecord?id=CVE-2024-43451) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-12-03 | 0.841 | 6.5 | ✅ | NTLM Hash Disclosure Spoofing Vulnerability |
+| [CVE-2026-59310](https://www.cve.org/CVERecord?id=CVE-2026-59310) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-21 | 0.504 | 9.8 | ✅ | VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to ex… |
 | [CVE-2023-44221](https://www.cve.org/CVERecord?id=CVE-2023-44221) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 0.762 | 7.2 | ✅ | Improper neutralization of special elements in the SMA100 SSL-VPN management interface allows a remote authenticated attacker with administrative privilege to … |
-| [CVE-2026-59310](https://www.cve.org/CVERecord?id=CVE-2026-59310) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-21 | 0.497 | 9.8 | ✅ | VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to ex… |
 | [CVE-2022-34713](https://www.cve.org/CVERecord?id=CVE-2022-34713) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-08-30 | 0.678 | 7.8 | ✅ | Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability |
 | [CVE-2024-43572](https://www.cve.org/CVERecord?id=CVE-2024-43572) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-29 | 0.667 | 7.8 | ✅ | Microsoft Management Console Remote Code Execution Vulnerability |
 | [CVE-2023-41763](https://www.cve.org/CVERecord?id=CVE-2023-41763) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-31 | 0.904 | 5.3 | ✅ | Skype for Business Elevation of Privilege Vulnerability |
