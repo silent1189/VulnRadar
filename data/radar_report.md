@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-21T04:51:10+00:00`
+Generated: `2026-09-21T10:39:04+00:00`
 
 ## Executive Summary
 
@@ -253,6 +253,10 @@ Top critical items:
 
 | Date | CVE | Status |
 |------|-----|--------|
+| Sep 21 | [CVE-2026-13577](https://www.cve.org/CVERecord?id=CVE-2026-13577) | 🆕 New |
+| Sep 21 | [CVE-2026-93958](https://www.cve.org/CVERecord?id=CVE-2026-93958) | 🆕 New |
+| Sep 21 | [CVE-2026-94036](https://www.cve.org/CVERecord?id=CVE-2026-94036) | 🆕 New |
+| Sep 21 | [CVE-2026-94089](https://www.cve.org/CVERecord?id=CVE-2026-94089) | 🆕 New |
 | Sep 20 | [CVE-2026-4327](https://www.cve.org/CVERecord?id=CVE-2026-4327) | 🆕 New |
 | Sep 20 | [CVE-2026-78030](https://www.cve.org/CVERecord?id=CVE-2026-78030) | 🆕 New |
 | Sep 20 | [CVE-2026-93019](https://www.cve.org/CVERecord?id=CVE-2026-93019) | 🆕 New |
@@ -299,8 +303,4 @@ Top critical items:
 | Sep 19 | [CVE-2025-0436](https://www.cve.org/CVERecord?id=CVE-2025-0436) | 🆕 New |
 | Sep 19 | [CVE-2025-0437](https://www.cve.org/CVERecord?id=CVE-2025-0437) | 🆕 New |
 | Sep 19 | [CVE-2025-0438](https://www.cve.org/CVERecord?id=CVE-2025-0438) | 🆕 New |
-| Sep 19 | [CVE-2025-0439](https://www.cve.org/CVERecord?id=CVE-2025-0439) | 🆕 New |
-| Sep 19 | [CVE-2025-0440](https://www.cve.org/CVERecord?id=CVE-2025-0440) | 🆕 New |
-| Sep 19 | [CVE-2025-0441](https://www.cve.org/CVERecord?id=CVE-2025-0441) | 🆕 New |
-| Sep 19 | [CVE-2025-0442](https://www.cve.org/CVERecord?id=CVE-2025-0442) | 🆕 New |
-| ... | | _and 33740 more_ |
+| ... | | _and 33744 more_ |
