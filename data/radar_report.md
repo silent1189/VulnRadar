@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-21T20:59:38+00:00`
+Generated: `2026-09-22T00:03:21+00:00`
 
 ## Executive Summary
 
@@ -41,7 +41,7 @@ Top critical items:
 - Total items: **33110**
 - Watchlist hits: **32813**
 - CISA KEVs: **801**
-- Exploit Intel (PoC): **1001**
+- Exploit Intel (PoC): **1002**
 - Exploit Intel + Watchlist (CRITICAL): **705**
 
 ## Top Findings (max 200)
@@ -257,6 +257,7 @@ Top critical items:
 | Sep 21 | [CVE-2026-93958](https://www.cve.org/CVERecord?id=CVE-2026-93958) | 🆕 New |
 | Sep 21 | [CVE-2026-94036](https://www.cve.org/CVERecord?id=CVE-2026-94036) | 🆕 New |
 | Sep 21 | [CVE-2026-94089](https://www.cve.org/CVERecord?id=CVE-2026-94089) | 🆕 New |
+| Sep 21 | [CVE-2026-7273](https://www.cve.org/CVERecord?id=CVE-2026-7273) | 🔴 In CISA KEV |
 | Sep 20 | [CVE-2026-4327](https://www.cve.org/CVERecord?id=CVE-2026-4327) | 🆕 New |
 | Sep 20 | [CVE-2026-78030](https://www.cve.org/CVERecord?id=CVE-2026-78030) | 🆕 New |
 | Sep 20 | [CVE-2026-93019](https://www.cve.org/CVERecord?id=CVE-2026-93019) | 🆕 New |
@@ -302,5 +303,4 @@ Top critical items:
 | Sep 19 | [CVE-2025-0435](https://www.cve.org/CVERecord?id=CVE-2025-0435) | 🆕 New |
 | Sep 19 | [CVE-2025-0436](https://www.cve.org/CVERecord?id=CVE-2025-0436) | 🆕 New |
 | Sep 19 | [CVE-2025-0437](https://www.cve.org/CVERecord?id=CVE-2025-0437) | 🆕 New |
-| Sep 19 | [CVE-2025-0438](https://www.cve.org/CVERecord?id=CVE-2025-0438) | 🆕 New |
-| ... | | _and 33744 more_ |
+| ... | | _and 33745 more_ |
