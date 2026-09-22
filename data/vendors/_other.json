@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T18:59:35+00:00",
+  "generated_at": "2026-09-22T22:07:47+00:00",
   "vendor": "_other",
   "count": 2900,
   "items": [
@@ -73813,15 +73813,26 @@
       ],
       "watchlist_hit": true,
       "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
       "matched_terms": [
         "product:quantum security gateway",
         "vendor:checkpoint"
       ],
-      "active_threat": false,
+      "active_threat": true,
       "probability_score": 0.00329,
+      "kev": {
+        "cveID": "CVE-2026-85102",
+        "vendorProject": "Check Point",
+        "product": "Multiple Products",
+        "vulnerabilityName": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+        "dateAdded": "2026-09-22",
+        "shortDescription": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-09-25",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
