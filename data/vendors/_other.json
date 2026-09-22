@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T00:03:17+00:00",
+  "generated_at": "2026-09-22T05:12:10+00:00",
   "vendor": "_other",
-  "count": 2893,
+  "count": 2899,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -63902,7 +63902,7 @@
           "CWE-340"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 5
       }
     },
     {
@@ -157324,7 +157324,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -157336,7 +157336,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -157348,7 +157348,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -181724,6 +181724,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-58269",
+      "description": "Sync-in Server is an open-source platform for file storage, sharing, collaboration, and syncing. Prior to version 2.4.0, `POST /api/auth/token` authenticates with username and password only, then calls `getTokens()`, which returns full access and refresh JWTs without checking whether the account has TOTP 2FA enabled. An attacker with stolen or phished credentials can bypass 2FA in a single request. The parallel login endpoint (`POST /api/auth/login`) correctly enforces 2FA by calling `setCookies(user, res, true)`, which gates on `user.twoFaEnabled`. Version 2.4.0 patches the issue.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "sync-in",
+          "product": "server",
+          "versions": [
+            {
+              "version": "< 2.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:sync-in"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-47735",
       "description": "Arc is an open, SQL-native time-series database for telemetry. Prior to version 26.06.1, Arc's user-SQL validator (`internal/api/query.go:ValidateSQLRequest`) blocked only `read_parquet(` and `arc_partition_agg(` via regex denylist. The broader DuckDB I/O function family \u2014 `read_csv_auto`, `read_csv`, `read_json`, `read_json_auto`, `read_text`, `read_blob`, `glob`, `parquet_metadata`, `parquet_schema`, `read_xlsx`, etc. \u2014 was not blocked. RBAC table-reference extraction inspected only `FROM`/`JOIN` clauses, so scalar table functions in the `SELECT` list slipped past both layers. This is fixed in 2026.06.1 via a structural sandbox at the DuckDB layer. After lockdown, DuckDB refuses to open any file outside the allowlist and refuses further `INSTALL`/`LOAD`. Already-loaded extensions remain callable. Some workarounds are available. Restrict API access to known-trusted networks via firewall rules or, as a temporary mitigation, add `read_csv*`/`read_json*`/`glob` etc. to `dangerousSQLPattern` in `internal/api/query.go`.",
       "cvss_score": 7.1,
@@ -184980,6 +185010,223 @@
       }
     },
     {
+      "cve_id": "CVE-2026-61628",
+      "description": "nginx ignition is a user interface for the nginx web server. Prior to version 2.41.1, `POST /api/users/onboarding/finish` is registered as anonymous (unauthenticated) and creates a user with full ReadWrite admin permissions. Because the handler uses a check-then-act (TOCTOU) pattern between the \"onboarding already completed?\" check and the user-creation write, with no atomic guard, a remote unauthenticated attacker who can reach an instance in its pre-onboarding state can create an administrator account for themselves \u2014 and concurrent requests can create multiple admin accounts in a single race. Version 2.41.1 patches the issue.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "lucasdillmann",
+          "product": "nginx-ignition",
+          "versions": [
+            {
+              "version": "< 2.41.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ignition",
+        "vendor:lucasdillmann"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-61629",
+      "description": "nginx ignition is a user interface for the nginx web server. In versions 2.29.0 through 2.40.0, the gin i18n middleware in nginx-ignition's API server runs in front of every HTTP request and calls `golang.org/x/text/language.ParseAcceptLanguage` on the raw `Accept-Language` header without imposing any size or shape filter. The underlying parser has quadratic-time behaviour on long lists of malformed language tags. The CVE-2022-32149 guard that golang.org/x/text added in v0.3.8 caps the number of `-` characters in the input at 1000, but it does not cap `_` characters even though the parser's internal scanner aliases `_` to `-` before parsing. A single unauthenticated GET request with an `Accept-Language` header built out of `_` separators burns about 2.4 seconds of server CPU on the host running nginx-ignition; ten concurrent attackers saturate a ten-core box for the duration of the attack while consuming ~10 MiB/s of upstream bandwidth. Version 2.40.1 fixes this issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "lucasdillmann",
+          "product": "nginx-ignition",
+          "versions": [
+            {
+              "version": ">= 2.29.0, < 2.40.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ignition",
+        "vendor:lucasdillmann"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-62182",
+      "description": "KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. From 1.21.0 until 1.21.2, 1.22.2, and 1.23.1, ConfigUpdateJob processing in edge/pkg/taskmanager/actions/configupdatejob.go concatenates authenticated user-controlled updateFields values into the keadm config-update command and executes it through a system shell. A user with permission to create or modify ConfigUpdateJob resources can include shell metacharacters in the complete --set value and cause arbitrary commands to execute on an enrolled target edge node with the privileges of the KubeEdge process handling the job. This issue is fixed in versions 1.21.2, 1.22.2, and 1.23.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "kubeedge",
+          "product": "kubeedge",
+          "versions": [
+            {
+              "version": ">= 1.21.0, < 1.21.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.22.0, < 1.22.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.23.0, < 1.23.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kubeedge",
+        "vendor:kubeedge"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-62369",
+      "description": "KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. From 1.16.0 until 1.21.2, 1.22.2, and 1.23.1, the DecompressTarGz function in keadm/cmd/keadm/app/cmd/util/common.go joins archive entry names to the extraction destination without sufficient validation. During keadm join or installation on Windows edge nodes, an archive influenced through a compromised, replaced, or untrusted download source can contain parent-directory components, Windows-style backslashes, absolute paths, or drive-prefixed paths that escape the intended directory. The affected keadm process can consequently write or overwrite files with its own privileges, potentially modifying configuration, executable, or service files and enabling persistent system modification or code execution. This issue is fixed in versions 1.21.2, 1.22.2, and 1.23.1.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "kubeedge",
+          "product": "kubeedge",
+          "versions": [
+            {
+              "version": ">= 1.16.0, < 1.21.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.22.0, < 1.22.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.23.0, < 1.23.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kubeedge",
+        "vendor:kubeedge"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-62371",
+      "description": "KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. From 1.12.0 until 1.21.2, 1.22.2, and 1.23.1, the v1alpha2 NodeUpgradeJob handler in edge/pkg/taskmanager/actions/nodeupgradejob.go concatenates authenticated user-controlled spec.version and spec.image values into the keadm upgrade edge shell command. A user with permission to create or update NodeUpgradeJob resources can supply shell metacharacters in either field, causing arbitrary commands to execute on targeted edge nodes with the privileges of the upgrade process and compromising node confidentiality, integrity, and availability. This issue is fixed in versions 1.21.2, 1.22.2, and 1.23.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "kubeedge",
+          "product": "kubeedge",
+          "versions": [
+            {
+              "version": ">= 1.12.0, < 1.21.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.22.0, < 1.22.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.23.0, < 1.23.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kubeedge",
+        "vendor:kubeedge"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-82473",
+      "description": "KubeEdge CloudCore through 1.23.1 accepts node task status reports on its HTTPS server without authentication verification. Attackers can reach CloudCore on port 10002 to mark upgrade jobs as succeeded or failed, deceiving the control plane about node upgrade status and blocking further upgrade scheduling.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "kubeedge",
+          "product": "kubeedge",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "1.23.1",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kubeedge",
+        "vendor:kubeedge"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00354,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-63087",
       "description": "Grafana OnCall through 1.16.11 contains an unauthenticated access vulnerability that allows remote attackers to obtain a valid PluginAuthToken by sending a POST request to the internal plugin install endpoint using hardcoded default stack_id and org_id values present in the public source tree. Attackers can leverage the acquired token to authenticate against all internal API endpoints, create arbitrary Admin users via the user-context header bootstrap path, revoke the legitimate plugin token, and redirect OnCall-to-Grafana API calls to an attacker-controlled host by overwriting the organization's grafana_url and api_token.",
       "cvss_score": 9.3,
@@ -185158,49 +185405,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
-      }
-    },
-    {
-      "cve_id": "CVE-2026-65492",
-      "description": "Unauthenticated Cross Site Scripting (XSS) in Dokan Pro <= 5.0.0 versions.",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
-      "affected": [
-        {
-          "vendor": "dokan wordpress plugin",
-          "product": "dokan pro",
-          "versions": [
-            {
-              "lessThanOrEqual": "5.0.0",
-              "status": "affected",
-              "version": "n/a",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:dokan pro",
-        "vendor:dokan wordpress plugin"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00251,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
       }
     },
     {
@@ -188528,49 +188732,6 @@
       }
     },
     {
-      "cve_id": "CVE-2026-82473",
-      "description": "KubeEdge CloudCore through 1.23.1 accepts node task status reports on its HTTPS server without authentication verification. Attackers can reach CloudCore on port 10002 to mark upgrade jobs as succeeded or failed, deceiving the control plane about node upgrade status and blocking further upgrade scheduling.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "kubeedge",
-          "product": "kubeedge",
-          "versions": [
-            {
-              "version": "0",
-              "lessThanOrEqual": "1.23.1",
-              "status": "affected",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:kubeedge",
-        "vendor:kubeedge"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00354,
-      "nvd": {
-        "cvss_v3_score": 8.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-306"
-        ],
-        "cpe_count": 0,
-        "reference_count": 5
-      }
-    },
-    {
       "cve_id": "CVE-2026-82866",
       "description": "@pdfme/common before 5.5.10 contains a server-side request forgery vulnerability in the getB64BasePdf function that fetches arbitrary URLs without validation when basePdf is attacker-controlled. Attackers who control the basePdf template field can force servers or clients to make requests to internal endpoints, enabling metadata exfiltration, network reconnaissance, and blind request forgery attacks.",
       "cvss_score": 8.9,
@@ -190375,6 +190536,36 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-94146",
+      "description": "A vulnerability was found in BioStar BIOS Update Utility 1.9.7.3. This issue affects the function sub_110BC of the file BSMEM64_W10.sys of the component IOCTL Handler. The manipulation of the argument PhysicalAddress/Size results in write-what-where condition. Attacking locally is a requirement. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+      "affected": [
+        {
+          "vendor": "biostar",
+          "product": "bios update utility",
+          "versions": [
+            {
+              "version": "1.9.7.3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bios update utility",
+        "vendor:biostar"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00124
     },
     {
       "cve_id": "CVE-2026-9082",
