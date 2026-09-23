@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T00:20:04+00:00",
+  "generated_at": "2026-09-23T05:51:10+00:00",
   "vendor": "d_link",
-  "count": 491,
+  "count": 492,
   "items": [
     {
       "cve_id": "CVE-2022-26670",
@@ -25237,6 +25237,38 @@
         "cpe_count": 0,
         "reference_count": 6
       }
+    },
+    {
+      "cve_id": "CVE-2026-95675",
+      "description": "D-Link DAP-1360 firmware version 6.14 and earlier contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary commands as root by sending crafted requests to the device's web management interface without valid credentials. Attackers can fully compromise the device to persistently modify its configuration and use it as a pivot point into the local network.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dap-1360",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom",
+              "lessThanOrEqual": "6.14"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dap-1360",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }

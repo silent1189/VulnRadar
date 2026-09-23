@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T00:20:04+00:00",
+  "generated_at": "2026-09-23T05:51:10+00:00",
   "vendor": "hewlett_packard_enterprise_hpe",
-  "count": 74,
+  "count": 82,
   "items": [
     {
       "cve_id": "CVE-2022-37919",
@@ -3931,6 +3931,262 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-76708",
+      "description": "A vulnerability exists in the Analytics and Location Engine (ALE) where the application and underlying operating system use default, hard-coded credentials for several administrative and system accounts. An unauthenticated remote attacker could exploit this vulnerability by attempting to log in using these known default credentials.\n\nSuccessful exploitation could result in an attacker gaining unauthorized access to the application's management interface and the underlying operating system, potentially leading to full system compromise.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76709",
+      "description": "A vulnerability exists in the internal administrative component of Analytics and Location Engine (ALE). Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to gain unauthorized write access to the file system with elevated privileges, potentially resulting in full system compromise.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76710",
+      "description": "A vulnerability exists in the Analytics and Location Engine (ALE) management interface that may allow for the disclosure of sensitive information. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted requests to certain internal endpoints. Successful exploitation could result in the disclosure of sensitive site hierarchy, infrastructure details, and client device information.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76711",
+      "description": "A vulnerability exists in an Analytics and Location Engine (ALE) component where the impacted process improperly processes incoming socket connections. An unauthenticated remote attacker could exploit this vulnerability by providing specially crafted input during the connection process. Successful exploitation could result in unauthorized data injection.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76712",
+      "description": "A vulnerability exists in the Analytics and Location Engine (ALE) that may allow for unauthorized access, information disclosure, or denial of service. An unauthenticated remote attacker could exploit the vulnerable system by sending specially crafted input or intercepting network communications. Successful exploitation could result in the disclosure of sensitive information, bypass of security controls, or a denial of service condition on the affected system.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76713",
+      "description": "A vulnerability exists in the maintenance restore functionality of Analytics and Location Engine (ALE). Successful exploitation of this vulnerability could allow an authenticated remote attacker to gain unauthorized access to the file system with root privileges, potentially resulting in full system compromise.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76714",
+      "description": "Vulnerabilities in the Analytics and Location Engine web interface allows remote authenticated users to run arbitrary commands on the underlying host. A successful exploit could allow an attacker to execute arbitrary commands as root on the underlying operating system leading to complete system compromise.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76715",
+      "description": "A vulnerability in an administrative component of Analytics and Location Engine (ALE) is vulnerable to a man-in-the-middle (MitM) attack. Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to execute arbitrary code with root privileges on the affected appliance.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "hewlett packard enterprise (hpe)",
+          "product": "ale",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.0.0.0",
+              "status": "affected",
+              "version": "0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ale",
+        "vendor:hewlett packard enterprise (hpe)"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }
