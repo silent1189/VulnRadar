@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T23:36:02+00:00",
+  "generated_at": "2026-09-24T04:51:03+00:00",
   "vendor": "_other",
-  "count": 2914,
+  "count": 2895,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -4501,6 +4501,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-434"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-87902",
+      "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "wordpress",
+          "product": "wordpress",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "7.1.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:wordpress",
+        "vendor:wordpress"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0042,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-98"
         ],
         "cpe_count": 0,
         "reference_count": 1
@@ -45655,7 +45698,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 20,
         "reference_count": 3
       }
     },
@@ -65180,6 +65223,98 @@
       }
     },
     {
+      "cve_id": "CVE-2026-73639",
+      "description": "Imager::File::PNG versions from 1.003 before 1.004 for Perl write past the end of the row buffer reading a PNG with a tRNS transparency chunk in read_direct8.\n\nWith a tRNS chunk, read_direct8() adds an alpha channel to the image it creates but still sizes the row buffer from the original channel count. libpng expands the transparency into that extra channel, so png_read_row() fills one channel more than the buffer holds, at one byte per sample, and writes width bytes past the end of the allocation. Palette images go to read_paletted() and 16-bit images to read_direct16(), which sizes its buffer from png_get_rowbytes() and allocates enough for the expanded row.\n\nThe same reader ships bundled in the Imager distribution.\n\nReading an attacker-supplied PNG through Imager->read() corrupts the heap, which can crash the process.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "1.004",
+              "status": "affected",
+              "version": "1.003",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "1.035",
+              "status": "affected",
+              "version": "1.034",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00433,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-74766",
+      "description": "Net::IDN::Punycode versions from 2.301 before 2.590 for Perl allow a heap use-after-free via a decoded code point that reallocates the output buffer in decode_punycode.\n\nThe XS backend inserts each decoded code point into the string buffer of the scalar it returns. decode_punycode computes the insertion pointer first and only then grows the buffer when the code point does not fit. The growth reallocates the buffer and updates every pointer except the insertion pointer, so the move that follows and the write of the code point go through a freed pointer. The buffer starts at twice the label length, and a code point above U+FFFF takes four bytes in the output, so a label of such code points outgrows it and forces the reallocation.\n\nVersion 2.301, the fix for CVE-2016-15059, introduced the defect. Only the XS backend is affected.\n\nDecoding an attacker-supplied punycode label reads and writes freed heap memory.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.590",
+              "status": "affected",
+              "version": "2.301",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.0013,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-75589",
       "description": "Net::OAuth versions before 0.33 for Perl check HMAC-SHA1, HMAC-SHA256 and PLAINTEXT signatures with a non-constant-time comparison in verify.\n\nEach of the three compares the signature carried in the message against the locally computed one with the eq operator, which returns as soon as the two strings differ. The time taken to reject a signature varies with the length of the matching prefix. RSA-SHA1 is not affected, as it verifies through the RSA key object rather than by comparing strings.\n\nA client that can submit messages and time the replies may recover a valid signature one byte at a time rather than searching the whole signature space. Under PLAINTEXT the value compared against is the signature key itself, so the search recovers consumer_secret and token_secret.",
       "cvss_score": 7.5,
@@ -65713,6 +65848,207 @@
       }
     },
     {
+      "cve_id": "CVE-2026-87078",
+      "description": "Net::IDN::Punycode versions from 2.302 before 2.590 for Perl leak the output buffer on every rejected label in decode_punycode.\n\nThe XS backend allocates the scalar it returns before it validates the input, sizing the buffer at twice the input length. The scalar is released only on the success path, so each of the three croaks that reject a label leaves the scalar and its buffer allocated. Nothing bounds the label length in the to-Unicode direction, since the 63-byte DNS limit is checked only when converting to ASCII.\n\nOnly the XS backend is affected.\n\nA sender who supplies invalid labels grows the process by twice the label length per rejected call, with no successful call needed.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.590",
+              "status": "affected",
+              "version": "2.302",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00364,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-401"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-87079",
+      "description": "Net::IDN::Punycode versions before 2.590 for Perl allow CPU exhaustion via quadratic insertion cost when decoding a long label in decode_punycode.\n\nThe XS backend inserts each decoded code point into a UTF-8 buffer and finds the insertion point by scanning that buffer from the start, one character at a time. The scan runs once per code point over the output built so far, so the cost is quadratic in the label length. The pure-Perl backend downgrades its input to bytes so that substr can index it directly, but takes its working copy before the downgrade, so when the input carries the UTF-8 flag every substr on the copy scans from the start, with the same quadratic cost.\n\nNothing bounds the label length in the to-Unicode direction. The 63-byte DNS limit is checked only when converting to ASCII, so domain_to_unicode and uts46_to_unicode pass an attacker-supplied label of any length to the decoder.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.590",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-87080",
+      "description": "Net::IDN::Punycode::PP versions before 2.590 for Perl decode a truncated label to a name containing a character it never encoded in decode_punycode.\n\nThe pure-Perl decoder reads one digit at a time with four-argument substr and tests the result with defined to detect the end of the input. substr on an exhausted string returns the empty string rather than undef, so decoding continues past the end. The empty string converts to a digit value below the range, reducing the accumulator, and the decoder derives one extra code point and its position from it. The result is deterministic. The XS backend rejects the same label.\n\nNet::IDN::Punycode uses this backend wherever the XS does not build.\n\nThe two backends disagree about what such a label means, so a sender can pick a label that one installation resolves to a name and another rejects.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.590",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00372,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1286"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-87081",
+      "description": "Net::IDN::UTS46 versions before 2.590 for Perl allow CPU exhaustion via quadratic punycode encoding of an overlong label before the length check in to_ascii.\n\nto_ascii punycode encodes each label and only then applies the 63-byte DNS limit. encode_punycode in both backends follows the sample implementation in RFC 3492, whose outer loop runs once per distinct non-ASCII code point and scans the whole input each round, so a label of distinct non-ASCII characters costs the square of its length before the limit rejects it. Every ASCII conversion in the distribution, including domain_to_ascii and email_to_ascii, goes through to_ascii.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.590",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-87082",
+      "description": "Net::IDN::Punycode versions before 2.590 for Perl hang, crash or return a wrong label via unvalidated malformed UTF-8 in encode_punycode.\n\nNeither backend checks that its input is well-formed UTF-8, so a string with the UTF-8 flag set over malformed bytes, as the :utf8 PerlIO layer produces from any malformed input, reaches the encoder unchecked. On perl 5.32 and later the XS backend reports a malformed sequence with a length of `(STRLEN)-1`, so the scan steps back one byte instead of forward and never ends. On earlier perls the XS returns a valid label for a different name. The pure-Perl backend runs a regex over the flagged string. Depending on the bytes, it aborts with SIGBUS on perl 5.28 and later, dies with a panic, or returns a wrong label.\n\nThe documented conversion functions match the label against Unicode properties first and that match dies on such a string, so only a direct call to encode_punycode reaches the defect. The decoder is not affected.\n\nA direct caller encoding attacker-supplied bytes hangs, crashes or gets a label for a name the input never held.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.590",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00398,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-835",
+          "CWE-1286"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
       "cve_id": "CVE-2026-8376",
       "description": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.11 have a heap buffer overflow when compiling regular expressions with a repeated fixed string on 32-bit builds.\n\nPerl_study_chunk in regcomp_study.c checked the size of the joined substring buffer in characters rather than bytes. For a quantified fixed substring with a large minimum count, the byte length mincount * l could overflow SSize_t, producing an undersized SvGROW allocation; the subsequent copy writes past the end of the buffer.\n\nA caller that compiles an attacker-controlled regular expression on a 32-bit perl build triggers a heap buffer overflow at compile time.",
       "cvss_score": 9.8,
@@ -65765,6 +66101,46 @@
       }
     },
     {
+      "cve_id": "CVE-2026-93012",
+      "description": "Email::Sender::Transport::Sendmail versions before 2.602 for Perl allow arbitrary command execution on Windows sending a message whose envelope address reaches the shell in _sendmail_pipe.\n\nOn MSWin32 the envelope sender and every recipient go into a single command string, which open() passes to a shell. Every other platform gets the list form, which runs sendmail directly. When the caller supplies no envelope, Email::Sender::Simple takes the recipients from the To and Cc headers and the sender from the From header.\n\nAn attacker who controls one of those header addresses runs commands as the sending process.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.602",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00612,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-93019",
       "description": "Imager versions before 1.036 for Perl exit the process reading a TGA with a colour map length of 32768 or more in tga_palette_read.\n\nThe reader unpacks the two-byte colour map length into a signed short, so a length of 32768 or more becomes negative. tga_palette_read() casts that value to size_t and asks mymalloc() for a size near SIZE_MAX. The allocation fails and Imager's allocator calls exit(3).\n\nReading an attacker-supplied file through Imager->read() triggers an uncatchable exit.",
       "cvss_score": 9.1,
@@ -65803,6 +66179,126 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-93710",
+      "description": "Dancer2 versions from 2.0.0 before 2.2.0 for Perl dispatch a route that a dying hook refused when the exception handler halts the response in compile_hooks.\n\nA hook that dies fires core.app.hook_exception, then calls cleanup unless the failing hook is the exception handler. A handler that halts does not stop that cleanup, which discards the request, response and session the dispatcher has yet to read, so the refused route runs.\n\nThe handler has to halt the response object by calling its halt method or setting is_halted: the halt keyword unwinds through with_return before cleanup runs.\n\nA check in a before hook is not enforced: the caller gets the refusal, while the route body runs and its writes land.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.2.0",
+              "status": "affected",
+              "version": "2.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00384,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-460"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-93712",
+      "description": "Dancer2 versions from 2.1.0 before 2.2.0 for Perl serve files from outside public_dir via relative path segments in the File route handler.\n\nThe handler joins the request path onto public_dir without collapsing relative segments, and checks only that the result is a readable regular file. A request for `/../outside.txt` escapes public_dir, and percent-encoding the dots reaches the same file.\n\nThe handler is off by default. An application is affected once it names File in route_handlers and sets static_handler to 0, which otherwise refuses a dot segment before the route runs.\n\nAny file the worker process can read is served to an unauthenticated request, including the application's config.yml above public_dir.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.2.0",
+              "status": "affected",
+              "version": "2.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00402,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-95831",
+      "description": "Crypt::SelfCertificate versions from 1.01 through 1.05 for Perl contains malware which executes Python code from an obfuscated URL.\n\nThe generate_certificate runs a Python script saved as a certificate file.  The pyhton script attempts to retrieve code from a hardcoded http URL that is obfuscated with base64 encoding and run the response body directly.\n\nThe impact is that arbitrary code can be invoked as the user, without a dropped script being saved on the affected host.\n\nThe releases have no test scripts nor build hooks.  The intention may have been to trigger the payload after installation.\n\nFor version 1.01, the dropper script is in lib/Crypt/SelfCertificate/sample/validate.p12.\n\nFor version 1.05, the dropper script is in lib/Crypt/SelfCertificate/sample/cert7.pem.\n\nThe SHA-256 digests of the files are\n\n    fbff21f45ff748365062a5e36fb2d72558cad82a507a6f357f320b4fcdf07760 Crypt-SelfCertificate-1.01.tar.gz\n    27b2d2d3174ad771474fff2521f5084ec231e9218ea8c832515aef1cbd5897bc lib/Crypt/SelfCertificate/sample/validate.p12\n\n    9fdfa7d69b034b77d4510cda567e8da1e486ca81c7daaadc5732a45c41d71991 Crypt-SelfCertificate-1.05.tar.gz\n    27b2d2d3174ad771474fff2521f5084ec231e9218ea8c832515aef1cbd5897bc lib/Crypt/SelfCertificate/sample/cert7.pem",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.05",
+              "status": "affected",
+              "version": "1.01",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00119,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-506"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
@@ -73842,7 +74338,7 @@
           "CWE-295"
         ],
         "cpe_count": 0,
-        "reference_count": 1
+        "reference_count": 3
       }
     },
     {
@@ -74069,6 +74565,17 @@
         "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "dueDate": "2026-09-25",
         "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
@@ -76022,7 +76529,18 @@
         "vendor:mikrotik"
       ],
       "active_threat": false,
-      "probability_score": 0.00488
+      "probability_score": 0.00488,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2023-30845",
@@ -102602,7 +103120,7 @@
     },
     {
       "cve_id": "CVE-2026-80047",
-      "description": "A vulnerability in Hugging Face Transformers (versions >= 4.49.0 and <= 5.8.1) allows remote Python files to be written to local disk without user consent when using GenerativePreTrainedModel.load_custom_generate(). The function fetches and caches a remote module file before performing the required trust_remote_code consent check, inverting the security model enforced by other code-loading paths (such as AutoConfig, AutoModel, and AutoTokenizer). As a result, attacker\u2011controlled Python code from custom_generate/generate.py is copied into the user\u2019s ~/.cache/huggingface/modules directory even if the user declines the trust prompt. Although execution is correctly gated, the file write is not reversible and can persist across sessions. This can lead to persistent, unauthorized files on disk and stale cache collisions where cached attacker code may later be executed during trusted model loads. The issue stems from an unconditional file write in dynamic_module_utils.py prior to any trust verification.",
+      "description": "A vulnerability in Hugging Face Transformers (versions 4.57.0 to 5.16.1) allows remote Python files to be written to local disk without user consent when using GenerativePreTrainedModel.load_custom_generate(). The function fetches and caches a remote module file before performing the required trust_remote_code consent check, inverting the security model enforced by other code-loading paths (such as AutoConfig, AutoModel, and AutoTokenizer). As a result, attacker\u2011controlled Python code from custom_generate/generate.py is copied into the user\u2019s ~/.cache/huggingface/modules directory even if the user declines the trust prompt. Although execution is correctly gated, the file write is not reversible and can persist across sessions. This can lead to persistent, unauthorized files on disk and stale cache collisions where cached attacker code may later be executed during trusted model loads. The issue stems from an unconditional file write in dynamic_module_utils.py prior to any trust verification.",
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
@@ -102613,8 +103131,8 @@
           "versions": [
             {
               "status": "affected",
-              "version": "4.49.0",
-              "lessThanOrEqual": "5.8.1",
+              "version": "4.57.0",
+              "lessThanOrEqual": "5.16.1",
               "versionType": "custom"
             }
           ]
@@ -113352,6 +113870,17 @@
         "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "dueDate": "2026-09-25",
         "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
@@ -122088,7 +122617,18 @@
         "vendor:rti"
       ],
       "active_threat": false,
-      "probability_score": 0.00426
+      "probability_score": 0.00426,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-18459",
@@ -122156,7 +122696,18 @@
         "vendor:rti"
       ],
       "active_threat": false,
-      "probability_score": 0.00428
+      "probability_score": 0.00428,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-682"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-18461",
@@ -122194,7 +122745,18 @@
         "vendor:rti"
       ],
       "active_threat": false,
-      "probability_score": 0.00331
+      "probability_score": 0.00331,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-134"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-18462",
@@ -122238,7 +122800,19 @@
         "vendor:rti"
       ],
       "active_threat": false,
-      "probability_score": 0.00111
+      "probability_score": 0.00111,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190",
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-2467",
@@ -122678,7 +123252,18 @@
         "vendor:rti"
       ],
       "active_threat": false,
-      "probability_score": 0.00311
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-8849",
@@ -122710,7 +123295,18 @@
         "vendor:rti"
       ],
       "active_threat": false,
-      "probability_score": 0.00382
+      "probability_score": 0.00382,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2024-52301",
@@ -137691,10 +138287,10 @@
     },
     {
       "cve_id": "CVE-2026-13745",
-      "description": "A vulnerability in the Gemini CLI and associated GitHub Action allowed an unprivileged attacker\u00a0to achieve an arbitrary code execution in Gemini CLI via untrusted local .env files overriding GEMINI_CLI_HOME.",
-      "cvss_score": 9.2,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L/U:Amber",
+      "description": "A vulnerability in the Gemini CLI prior to version 0.39.1 allows attackers to achieve arbitrary code execution by tricking a victim into starting the CLI within an untrusted directory. The vulnerability is triggered via untrusted .env files overriding GEMINI_CLI_HOME to load malicious configuration files and bypass folder trust prompts.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/U:Amber",
       "affected": [
         {
           "vendor": "google cloud",
@@ -137707,18 +138303,6 @@
               "versionType": "custom"
             }
           ]
-        },
-        {
-          "vendor": "google cloud",
-          "product": "run-gemini-cli github action",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "0.1.22",
-              "versionType": "custom"
-            }
-          ]
         }
       ],
       "watchlist_hit": true,
@@ -137728,7 +138312,6 @@
       "priority_label": "",
       "matched_terms": [
         "product:gemini cli",
-        "product:run-gemini-cli github action",
         "vendor:google cloud"
       ],
       "active_threat": false,
@@ -138898,1661 +139481,6 @@
         "cpe_count": 2,
         "reference_count": 3
       }
-    },
-    {
-      "cve_id": "CVE-2025-10020",
-      "description": "Zohocorp ManageEngine ADManager Plus version before 8024 are vulnerable to authenticated command injection vulnerability in the Custom Script component.",
-      "cvss_score": 8.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine admanager plus",
-          "versions": [
-            {
-              "lessThan": "8024",
-              "status": "affected",
-              "version": "0",
-              "versionType": "8024"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine admanager plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.04542,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 10,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-11250",
-      "description": "Zohocorp ManageEngine ADSelfService Plus versions before 6519 are vulnerable to Authentication Bypass due to improper filter configurations.",
-      "cvss_score": 9.1,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adselfservice plus",
-          "versions": [
-            {
-              "lessThan": "6519",
-              "status": "affected",
-              "version": "0",
-              "versionType": "6519"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adselfservice plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01564,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-290"
-        ],
-        "cpe_count": 20,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-11669",
-      "description": "Zohocorp\u00a0ManageEngine PAM360 versions before 8202; Password Manager Pro\u00a0versions before 13221; Access Manager Plus versions prior to 4401 are vulnerable to an authorization issue in the initiate remote session functionality.",
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine pam360",
-          "versions": [
-            {
-              "lessThan": "8202",
-              "status": "affected",
-              "version": "0",
-              "versionType": "8202"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine password manager pro",
-          "versions": [
-            {
-              "lessThan": "13221",
-              "status": "affected",
-              "version": "0",
-              "versionType": "13221"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine access manager plus",
-          "versions": [
-            {
-              "lessThan": "4401",
-              "status": "affected",
-              "version": "0",
-              "versionType": "4401"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine access manager plus",
-        "product:manageengine pam360",
-        "product:manageengine password manager pro",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00797,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-862"
-        ],
-        "cpe_count": 9,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-1724",
-      "description": "Zohocorp's ManageEngine Analytics Plus and Zoho Analytics on-premise versions older than 6130 are vulnerable to an AD only account takeover because of a hardcoded sensitive token.",
-      "cvss_score": 7.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "analytics plus",
-          "versions": [
-            {
-              "lessThan": "6130",
-              "status": "affected",
-              "version": "0",
-              "versionType": "6130"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:analytics plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01288,
-      "nvd": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-798"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2025-7429",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions 5723 and below are vulnerable to the Stored XSS Vulnerability in the Mails Deleted or Moved report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "lessThan": "5724",
-              "status": "affected",
-              "version": "0",
-              "versionType": "5721"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00489,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 25,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-7430",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions 5723 and below are vulnerable to the Stored XSS Vulnerability in the Folder Message Count and Size report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "lessThan": "5724",
-              "status": "affected",
-              "version": "0",
-              "versionType": "5721"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00489,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 25,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-7632",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions 5723 and below are vulnerable to the Stored XSS Vulnerability in the Public\u00a0Folders report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "lessThan": "5724",
-              "status": "affected",
-              "version": "0",
-              "versionType": "5721"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00489,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 25,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-7633",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions 5723 and below are vulnerable to the Stored XSS Vulnerability in the Custom\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "lessThan": "5724",
-              "status": "affected",
-              "version": "0",
-              "versionType": "5721"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00494,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 25,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-8324",
-      "description": "Zohocorp ManageEngine Analytics Plus versions\u00a06170 and below are vulnerable to Unauthenticated SQL Injection due to the improper filter configuration.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine analytics plus",
-          "versions": [
-            {
-              "lessThan": "6171",
-              "status": "affected",
-              "version": "0",
-              "versionType": "6171"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine analytics plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01745,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-9223",
-      "description": "Zohocorp ManageEngine Applications Manager versions 178100 and below are vulnerable to authenticated command injection vulnerability due to the improper configuration in the execute program action feature.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine applications manager",
-          "versions": [
-            {
-              "lessThan": "178200",
-              "status": "affected",
-              "version": "0",
-              "versionType": "5721"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine applications manager",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.04242,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-9428",
-      "description": "Zohocorp ManageEngine Analytics Plus versions\u00a06171 and prior are vulnerable to authenticated SQL Injection via the key update api.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "analytics plus",
-          "versions": [
-            {
-              "lessThanOrEqual": "6171",
-              "status": "affected",
-              "version": "0",
-              "versionType": "6171"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:analytics plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.27381,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 10,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-11374",
-      "description": "In ManageEngine ADSelfService Plus, RecoveryManager Plus, M365 Manager Plus, and ADAudit Plus, the SSO tickets generated to authenticate that session could be predicted\n by an unauthenticated user, leading to account takeover.",
-      "cvss_score": 9.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine_adselfservice_plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6529",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine_recovery_manager_plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6321",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine_m365_manager_plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "4817",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine_adaudit_plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "8703",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine_adaudit_plus",
-        "product:manageengine_adselfservice_plus",
-        "product:manageengine_m365_manager_plus",
-        "product:manageengine_recovery_manager_plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.02523,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287",
-          "CWE-330",
-          "CWE-340"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-11840",
-      "description": "Zohocorp ManageEngine Password Manager Pro versions before 13232 and ManageEngine PAM360 versions before 8552 are vulnerable to authenticated SQL injection.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine password manager pro",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13232",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine pam360",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "8552",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine pam360",
-        "product:manageengine password manager pro",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01583,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-12263",
-      "description": "Zohocorp ManageEngine Password Manager Pro versions before 13232 and PAM360 versions before 8551 are vulnerable to an authentication bypass vulnerability due to improper SAML validation.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine password manager pro",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13232",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine pam360",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "8551",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine pam360",
-        "product:manageengine password manager pro",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00696,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-347"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-12571",
-      "description": "An authentication bypass in ManageEngine DDI Central's password-reset workflow allows account takeover.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine_ddi_central",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6201",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine_ddi_central",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01632,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287",
-          "CWE-640"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-14828",
-      "description": "Zohocorp ManageEngine Password Manager Pro versions before 13235, PAM360 versions before 8561, and Access Manager Plus versions before 4405 are vulnerable to an authenticated SQL Injection vulnerability.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine password manager pro",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13235",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine pam360",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "8561",
-              "versionType": "custom"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine access manager plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "4405",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine access manager plus",
-        "product:manageengine pam360",
-        "product:manageengine password manager pro",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01443,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-16053",
-      "description": "Zohocorp ManageEngine\u00a0M365 Manager Plus and M365 Security Plus versions below\u00a04820 are affected to Authenticated Path Traversal vulnerability in\u00a0Exchange Online backup module.",
-      "cvss_score": 8.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine m365 manager plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "4820",
-              "versionType": "4820"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine m365 security plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "4820",
-              "versionType": "4820"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine m365 manager plus",
-        "product:manageengine m365 security plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00991,
-      "nvd": {
-        "cvss_v3_score": 8.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-18911",
-      "description": "ManageEngine DataSecurity Plus versions before 6310 are vulnerable to an agent authentication bypass, allowing unenrolled agents to send requests without proper authentication.",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine datasecurity plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6310",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine datasecurity plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01062,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-18912",
-      "description": "ManageEngine DataSecurity Plus versions before 6310 are vulnerable to an authenticated SQL injection vulnerability, allowing an authenticated technician to execute arbitrary SQL queries through the Reports module.",
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine datasecurity plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6310",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine datasecurity plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.015,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-1367",
-      "description": "Zohocorp ManageEngine ADSelfService Plus versions 6522 and below are vulnerable to authenticated SQL Injection in the search report option.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adselfservice plus",
-          "versions": [
-            {
-              "lessThan": "6523",
-              "status": "affected",
-              "version": "0",
-              "versionType": "6523"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adselfservice plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.07719,
-      "nvd": {
-        "cvss_v3_score": 8.3,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-27655",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Permissions Based on Mailboxes\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00527,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-28703",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus\u00a0versions before 5802 are vulnerable to\u00a0Stored XSS\u00a0in\u00a0Mails Exchanged Between Users\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00538,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-28754",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus\u00a0versions before 5802 are vulnerable to\u00a0Stored XSS\u00a0in\u00a0Distribution Lists\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00538,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-28756",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus\u00a0versions before 5802 are vulnerable to\u00a0Stored XSS\u00a0in\u00a0Permissions based on Distribution Groups\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00538,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-2740",
-      "description": "Zohocorp ManageEngine ADSelfService Plus version before 6525, DataSecurity Plus before 6264 and RecoveryManager Plus before 6313 are vulnerable to Authenticated Remote code execution in the agent machines due to the bug in the 3rd party dependency.",
-      "cvss_score": 8.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:L",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adselfservice plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6525",
-              "versionType": "6525"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine datasecurity plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6264",
-              "versionType": "0"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine recoverymanager plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6313",
-              "versionType": "0"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adselfservice plus",
-        "product:manageengine datasecurity plus",
-        "product:manageengine recoverymanager plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01702,
-      "nvd": {
-        "cvss_v3_score": 8.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-3183",
-      "description": "Zohocorp ManageEngine ADSelfService Plus versions before 6524 are vulnerable to Multi Factor Authentication Bypass.",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adselfservice plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6524",
-              "versionType": "6524"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adselfservice plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01212,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-290"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-3324",
-      "description": "Zohocorp ManageEngine Log360 versions 13000 through 13013 are vulnerable to authentication bypass on certain actions due to improper filter configuration.",
-      "cvss_score": 8.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine log360",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "13000",
-              "lessThanOrEqual": "13013",
-              "versionType": "13013"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine log360",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01256,
-      "nvd": {
-        "cvss_v3_score": 8.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-288"
-        ],
-        "cpe_count": 8,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-3879",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Equipment Mailbox Details\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00527,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-3880",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Public Folder Client Permissions\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00538,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-4107",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Folder Message Count and Size\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00519,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-4108",
-      "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Non-Owner Mailbox\u00a0Permission\u00a0report.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine exchange reporter plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "5802",
-              "versionType": "5802"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine exchange reporter plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00538,
-      "nvd": {
-        "cvss_v3_score": 4.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-5785",
-      "description": "Zohocorp ManageEngine PAM360 versions before 8531 and ManageEngine Password Manager Pro versions from 8600 to 13230 are vulnerable to Authenticated SQL injection in the query report module.",
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine pam360",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "8531",
-              "versionType": "8531"
-            }
-          ]
-        },
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine password manager pro",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "8600",
-              "lessThanOrEqual": "13230",
-              "versionType": "13230"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine pam360",
-        "product:manageengine password manager pro",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01394,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-6516",
-      "description": "Zohocorp ManageEngine ADAudit Plus versions\u00a0before 8606 are affected by Unauthenticated Remote code execution due to the vulnerable agent API.",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adaudit plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "8606",
-              "versionType": "8606"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adaudit plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.04862,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-74849",
-      "description": "Zohocorp ManageEngine ADSelfService Plus versions before build 7001 are vulnerable to a remote code execution vulnerability in the GINA client.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adselfservice plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7001",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adselfservice plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.04459
-    },
-    {
-      "cve_id": "CVE-2026-75791",
-      "description": "Zohocorp ManageEngine ADSelfService Plus versions before build 7001 are vulnerable to an authentication bypass vulnerability in the REST API.",
-      "cvss_score": 8.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
-      "affected": [
-        {
-          "vendor": "zohocorp",
-          "product": "manageengine adselfservice plus",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7001",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:manageengine adselfservice plus",
-        "vendor:zohocorp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01715
     },
     {
       "cve_id": "CVE-2025-10198",
@@ -160658,7 +159586,239 @@
         "vendor:fasterxml"
       ],
       "active_threat": false,
-      "probability_score": 0.0063
+      "probability_score": 0.0063,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-1333"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-89425",
+      "description": "UTF8DataInputJsonParser._reportInvalidToken() in FasterXML jackson-core builds the offending-token text for its error message by appending Java identifier characters to a StringBuilder in a loop that has no upper bound. Unlike the three sibling parser implementations, including UTF8StreamJsonParser, it never consults ErrorReportConfiguration.getMaxErrorTokenLength() (default 256). A malformed token supplied to a parser created through JsonFactory.createParser(DataInput) is therefore accumulated in full. No StreamReadConstraints setting mitigates this: maxDocumentLength cannot be applied to DataInput sources at all, and maxStringLength does not cover this path because the accumulation bypasses ReadConstrainedTextBuffer. The reporter measured a 20,000,109-character exception message from a 20-million-character malformed token on the DataInput path, against 367 characters for identical input on the InputStream path. Scaling the payload drives the StringBuilder, which also incurs byte-to-char expansion and internal array doubling, to many times the raw payload size and can trigger OutOfMemoryError for the whole JVM. UTF8DataInputJsonParser was introduced in 2.8.0 together with createParser(DataInput); releases before 2.8.0 do not contain the affected class.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.8.0",
+              "lessThanOrEqual": "2.18.10",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThanOrEqual": "2.21.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThanOrEqual": "2.22.2",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThanOrEqual": "3.1.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.2",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-core",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00533,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-91776",
+      "description": "TypeDeserializerBase._findDeserializer() in FasterXML jackson-databind caches the resolved deserializer under the raw, attacker-supplied type ID. When name-based polymorphism is configured with a fallback, for example @JsonTypeInfo(use = Id.NAME, defaultImpl = ...), every distinct unrecognized type ID resolves to the same fallback deserializer but is retained as its own key in the _deserializers map. That map has no configurable bound and lives for the lifetime of the type deserializer, so an attacker who can repeatedly supply fresh unknown type IDs causes monotonic memory retention across requests. The reporter observed 10,000 retained entries from 10,000 distinct unknown IDs, against a single entry for a control that repeated one unknown ID the same number of times, isolating attacker-controlled key cardinality from request volume. Exploitation requires an application that enables name-based polymorphism with a defaultImpl or equivalent fallback, accepts attacker-influenced type IDs, and reuses a long-lived ObjectMapper across requests. The fix stops caching fallback resolutions for unrecognized IDs and bounds both the number of cached entries and the length of a cacheable type ID.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-databind",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.18.10",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThanOrEqual": "2.21.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThanOrEqual": "2.22.2",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-databind",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThanOrEqual": "3.1.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.2",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-databind",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00488,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-91777",
+      "description": "Forward-reference completion for @JsonIdentityInfo object IDs in FasterXML jackson-databind performs a linear scan of the pending-reference accumulator for every resolved ID. The affected paths are CollectionDeserializer.CollectionReferringAccumulator.resolveForwardReference() and the equivalent implementation in MapDeserializer. When a document first creates N unresolved object-ID references in an identity-enabled collection or map and then defines those same IDs in reverse order, completion performs on the order of N * (N + 1) / 2 identity comparisons, so a shallow document whose size grows linearly causes quadratic CPU work during deserialization. The reporter instrumented equals() calls on the ID class and measured exactly 2,003,000 comparisons at N = 2,000, against zero comparisons in the pending-reference lookup path for an equally sized control in which every reference was already resolved. The input requires no deep nesting and no syntactically unusual JSON. Exploitation requires an application that deserializes attacker-influenced JSON into an identity-enabled collection or map. The fix replaces the repeated linear lookup with a keyed pending-reference structure.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-databind",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.5.0",
+              "lessThanOrEqual": "2.18.10",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThanOrEqual": "2.21.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThanOrEqual": "2.22.2",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-databind",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThanOrEqual": "3.1.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.2",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-databind",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00488,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2025-53355",
@@ -171146,14 +170306,14 @@
       "active_threat": false,
       "probability_score": 0.00246,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-613"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -185826,7 +184986,18 @@
         "vendor:fecommunity"
       ],
       "active_threat": false,
-      "probability_score": 0.00535
+      "probability_score": 0.00535,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-62182",
@@ -191372,6 +190543,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-94181",
+      "description": "An address bar spoofing issue in affected versions of Arc could allow an attacker to spoof the browser address bar via a <select> element that triggers requestFullscreen without displaying the fullscreen notification.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "the browser company of new york",
+          "product": "arc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.159.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:arc",
+        "vendor:the browser company of new york"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-95815",
       "description": "OpenClaw iOS before 2026.8.11 logs complete agent deep-link URLs including persistent bearer keys to unified logs as public diagnostic data. Attackers who obtain diagnostic archives can recover unrotated keys and replay them in forged deep links to submit agent requests without local confirmation prompts.",
       "cvss_score": 7.2,
@@ -191406,7 +190609,18 @@
         "vendor:openclaw"
       ],
       "active_threat": false,
-      "probability_score": 0.0016
+      "probability_score": 0.0016,
+      "nvd": {
+        "cvss_v3_score": 6.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-9082",

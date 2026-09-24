@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T23:36:02+00:00",
+  "generated_at": "2026-09-24T04:51:03+00:00",
   "vendor": "gitlab",
-  "count": 190,
+  "count": 193,
   "items": [
     {
       "cve_id": "CVE-2022-0154",
@@ -9885,7 +9885,7 @@
     },
     {
       "cve_id": "CVE-2026-85706",
-      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
@@ -9895,21 +9895,33 @@
           "product": "gitlab",
           "versions": [
             {
+              "lessThan": "18.11.12",
+              "status": "affected",
               "version": "18.7",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "19.0.9",
               "status": "affected",
+              "version": "19.0",
+              "versionType": "semver"
+            },
+            {
               "lessThan": "19.1.8",
+              "status": "affected",
+              "version": "19.1",
               "versionType": "semver"
             },
             {
-              "version": "19.2",
-              "status": "affected",
               "lessThan": "19.2.6",
+              "status": "affected",
+              "version": "19.2",
               "versionType": "semver"
             },
             {
-              "version": "19.3",
-              "status": "affected",
               "lessThan": "19.3.2",
+              "status": "affected",
+              "version": "19.3",
               "versionType": "semver"
             }
           ]
@@ -9951,7 +9963,7 @@
     },
     {
       "cve_id": "CVE-2026-87719",
-      "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.3 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that under certain conditions could allow an authenticated user with Duo Chat access to obtain Advanced Search instance configurations and sensitive credentials using a specially crafted GraphQL subscription argument to bypass serialization and perform server object lookup.",
+      "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.3 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that under certain conditions could allow an authenticated user with Duo Chat access to obtain Advanced Search instance configurations and sensitive credentials using a specially crafted GraphQL subscription argument to bypass serialization and perform server object lookup.",
       "cvss_score": 9.9,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
@@ -9961,21 +9973,33 @@
           "product": "gitlab",
           "versions": [
             {
+              "lessThan": "18.11.12",
+              "status": "affected",
               "version": "18.3",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "19.0.9",
               "status": "affected",
+              "version": "19.0",
+              "versionType": "semver"
+            },
+            {
               "lessThan": "19.1.8",
+              "status": "affected",
+              "version": "19.1",
               "versionType": "semver"
             },
             {
-              "version": "19.2",
-              "status": "affected",
               "lessThan": "19.2.6",
+              "status": "affected",
+              "version": "19.2",
               "versionType": "semver"
             },
             {
-              "version": "19.3",
-              "status": "affected",
               "lessThan": "19.3.2",
+              "status": "affected",
+              "version": "19.3",
               "versionType": "semver"
             }
           ]
@@ -10060,6 +10084,50 @@
       }
     },
     {
+      "cve_id": "CVE-2026-89078",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated user to execute arbitrary code on the GitLab server due to a double free issue when parsing a specially crafted regular expression in a CI/CD configuration.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "19.2",
+              "status": "affected",
+              "lessThan": "19.2.7",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.3",
+              "status": "affected",
+              "lessThan": "19.3.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-8589",
       "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 13.1.4 before 18.10.8, 18.11 before 18.11.5, and 19.0 before 19.0.2 that under certain conditions could have allowed an authenticated user to add unauthorized email addresses to a targeted user's account due to improper sanitization of user-supplied input in certain group setting fields.",
       "cvss_score": 7.3,
@@ -10113,6 +10181,94 @@
         "cpe_count": 6,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-92470",
+      "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.7 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated user to access sensitive CI/CD variable values from debug-mode job traces through the Duo AI troubleshooting feature due to missing authorization checks.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "18.7",
+              "status": "affected",
+              "lessThan": "19.2.7",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.3",
+              "status": "affected",
+              "lessThan": "19.3.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93577",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated user to execute arbitrary code on the GitLab server due to an integer overflow issue when compiling a specially crafted regular expression in a CI/CD configuration.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "19.2",
+              "status": "affected",
+              "lessThan": "19.2.7",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.3",
+              "status": "affected",
+              "lessThan": "19.3.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }

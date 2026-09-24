@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T23:36:02+00:00",
+  "generated_at": "2026-09-24T04:51:03+00:00",
   "vendor": "f5",
   "count": 209,
   "items": [
@@ -14466,7 +14466,7 @@
     },
     {
       "cve_id": "CVE-2026-94127",
-      "description": "When a BIG-IP APM access policy and an OAuth profile is configured on a virtual server, specific malicious traffic can lead to Remote Code Execution (RCE).\n\nImpact:\nThis vulnerability allows an unauthenticated attacker to perform remote code execution. The BIG-IP system in Appliance mode is also vulnerable. This is a data plane issue; there is no control plane exposure.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "description": "When a BIG-IP APM access policy and an OAuth profile are configured on a virtual server, specific malicious traffic can lead to remote code execution (RCE). This vulnerability is only present when BIG-IP APM is configured as an OAuth Authorization Server. Deployments using APM strictly as an OAuth Client / Resource Server (without OAuth authorization server profiles configured) are not affected by this vulnerability.\n\nImpact:\nThis vulnerability allows an unauthenticated attacker to perform remote code execution. The BIG-IP system in Appliance mode is also vulnerable. This is a data plane issue; there is no control plane exposure.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
       "cvss_score": 9.8,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
@@ -14476,21 +14476,21 @@
           "product": "big-ip",
           "versions": [
             {
-              "lessThan": "Hotfix-BIGIP-21.1.0.2.0.30.22-ENG",
               "status": "affected",
               "version": "21.1.0",
+              "lessThan": "Hotfix-BIGIP-21.1.0.2.0.30.22-ENG",
               "versionType": "custom"
             },
             {
-              "lessThan": "Hotfix-BIGIP-17.5.1.9.0.160.12-ENG",
               "status": "affected",
               "version": "17.5.0",
+              "lessThan": "Hotfix-BIGIP-17.5.1.9.0.160.12-ENG",
               "versionType": "custom"
             },
             {
-              "lessThan": "Hotfix-BIGIP-17.1.3.5.0.41.14-ENG",
               "status": "affected",
               "version": "17.1.0",
+              "lessThan": "Hotfix-BIGIP-17.1.3.5.0.41.14-ENG",
               "versionType": "custom"
             }
           ]
@@ -14517,6 +14517,17 @@
         "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "dueDate": "2026-09-25",
         "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
