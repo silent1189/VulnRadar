@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T01:26:26+00:00",
+  "generated_at": "2026-09-25T07:39:03+00:00",
   "vendor": "mongodb",
-  "count": 97,
+  "count": 102,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -2436,14 +2436,14 @@
       "active_threat": false,
       "probability_score": 0.00281,
       "nvd": {
-        "cvss_v3_score": 5.9,
-        "cvss_v3_severity": "MEDIUM",
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-415"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -4240,6 +4240,227 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-362"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-96744",
+      "description": "Improper neutralization of special elements in data query logic in the cache lock implementation of the MongoDB integration for Laravel can cause a caller-supplied lock owner value to be evaluated as an aggregation expression rather than as a literal value. An authenticated user who can influence the owner value an application uses when acquiring or restoring a lock may take over or prematurely expire a lock held by another process, which can lead to duplicated or conflicting operations.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "laravel mongodb (php)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.3.0",
+              "lessThan": "5.11.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:laravel mongodb (php)",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-943"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-96746",
+      "description": "An out-of-bounds write in the connection-monitoring logic of the MongoDB C Driver may allow an unauthenticated party who controls name resolution and the responses of the hosts named in a client's connection string to write beyond the end of a heap buffer. This may cause the application using the driver to terminate unexpectedly.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "c driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.30.12",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.5.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:c driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-96748",
+      "description": "PyMongo's connection string parsing decodes percent-encoded characters in the host portion before the host list is separated on its delimiters. When an application places a hostname value supplied by an unauthenticated party into a connection string, that party may cause additional servers of their choosing to be added to the application's database client. The application may then send its authentication exchange and database operations to one of those servers, which can observe limited information and return altered results.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "python driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "4.18.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:python driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-177"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-96749",
+      "description": "An integer overflow in the BSON document encoding component of the MongoDB Python Driver's bundled native extension may occur when a single document is built from an unusually large amount of caller-supplied data. Size arithmetic is performed in a signed 32-bit type, and the guard meant to catch the overflow is written in a form whose behavior is not defined by the C language standard. A party with no privileges who can place a very large value into data that an application encodes may, depending on how the native extension was built, cause a write outside the bounds of an allocated buffer inside the application's own process.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "python driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.9.0",
+              "lessThan": "4.18.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:python driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-96750",
+      "description": "MongoDB Compass can interpolate a database name without escaping into the initial input of its embedded MongoDB shell when a user opens the shell from that database's view. A user with privileges to create databases on a server that a Compass user connects to may, under specific conditions, have content evaluated as shell input within the Compass process, with that process's privileges. This requires the Compass user to open the shell for the affected database.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "compass",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.44.0",
+              "lessThan": "1.49.12",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:compass",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
         ],
         "cpe_count": 0,
         "reference_count": 1

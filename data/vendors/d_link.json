@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T01:26:26+00:00",
+  "generated_at": "2026-09-25T07:39:03+00:00",
   "vendor": "d_link",
-  "count": 492,
+  "count": 493,
   "items": [
     {
       "cve_id": "CVE-2022-26670",
@@ -25279,6 +25279,48 @@
         ],
         "cpe_count": 0,
         "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-96891",
+      "description": "A vulnerability was identified in D-Link DIR-825 3.00b32. Affected is the function tunnel_set_params of the file tunnel.c of the component rp-l2tp. The manipulation of the argument peer_hostname\u00a0 leads to out-of-bounds write. The attack may be initiated remotely.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dir-825",
+          "versions": [
+            {
+              "version": "3.00b32",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dir-825",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00653,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 10.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
       }
     }
   ]

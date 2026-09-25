@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T01:26:26+00:00",
+  "generated_at": "2026-09-25T07:39:03+00:00",
   "vendor": "_other",
-  "count": 2896,
+  "count": 2904,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -56327,6 +56327,85 @@
       }
     },
     {
+      "cve_id": "CVE-2026-13016",
+      "description": "ServiceNow has remediated a SQL injection vulnerability that was identified in the ServiceNow AI Platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute arbitrary SQL statements against the instance's underlying database and gain access to, or modify, instance data beyond what was intended.\u00a0\n\n\n\n\n\nServiceNow deployed a security update to hosted instances and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 5a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 4a W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 2 Hot Fix 4b W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-18885",
       "description": "ServiceNow has remediated a code injection vulnerability that was identified in\u00a0the ServiceNow AI platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute arbitrary code in the ServiceNow platform and\u00a0gain access to, or modify, instance data beyond what was intended.\u00a0\n\n\n\n\n\nServiceNow deployed a security update to hosted instances and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances.\u00a0\n\n\n\nWe recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
       "cvss_score": 10.0,
@@ -56910,6 +56989,320 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86857",
+      "description": "ServiceNow has remediated an authorization bypass security issue that was identified in the ServiceNow AI Platform. This security issue, if exploited, could enable an authenticated user to access data within the ServiceNow AI Platform that the user otherwise would not be entitled to access, potentially enabling further unintended access.\n\n\n\n\n\nServiceNow deployed an update to hosted instances, and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 5a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 4a W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 2 Hot Fix 4b W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86858",
+      "description": "ServiceNow has remediated an improper access control security issue that was identified in the ServiceNow AI Platform. This security issue could enable an unauthenticated user, in certain circumstances, to create, modify, or delete instance data beyond what was intended.\n\n\n\n\n\nIn August 2026, ServiceNow deployed a security update to hosted instances and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 5a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 4a W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 2 Hot Fix 4b W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86859",
+      "description": "ServiceNow has remediated an authorization bypass security issue that was identified in the ServiceNow AI Platform. This security issue, if exploited, could enable an unauthenticated user to access data within the ServiceNow AI Platform that the user otherwise would not be entitled to access, potentially enabling further unintended access.\n\n\n\n\n\nServiceNow deployed a security update to hosted instances and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 5a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 4a W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 2 Hot Fix 4b W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86860",
+      "description": "ServiceNow has remediated a missing authorization vulnerability that was identified in the ServiceNow AI Platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to extract instance data beyond what was intended, resulting in privilege escalation.\n\n\n\n\n\nServiceNow deployed a security update to hosted instances and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 5a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 4a W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 2 Hot Fix 4b W32",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4 Hot Fix 3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
         ],
         "cpe_count": 0,
         "reference_count": 1
@@ -66298,7 +66691,7 @@
           "CWE-506"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -74337,7 +74730,7 @@
         "cwe_ids": [
           "CWE-295"
         ],
-        "cpe_count": 0,
+        "cpe_count": 180,
         "reference_count": 3
       }
     },
@@ -74574,7 +74967,7 @@
         "cwe_ids": [
           "CWE-22"
         ],
-        "cpe_count": 0,
+        "cpe_count": 242,
         "reference_count": 3
       }
     },
@@ -76501,7 +76894,7 @@
     },
     {
       "cve_id": "CVE-2026-93345",
-      "description": "MikroTik RouterOS before 7.25beta4 contains an improper input validation vulnerability in the labelled-VPN NLRI iterators of the routing service that allows an unauthenticated on-path attacker to crash the BGP service by sending a malformed MP_REACH_NLRI UPDATE message with a prefix-length value below the minimum valid for a labelled-VPN NLRI, which passes validation while describing a route with a negative-length address portion. Attackers can repeatedly send a single BGP UPDATE packet carrying a VPNv4 or VPNv6 NLRI with an out-of-bounds prefix-length to indefinitely hold down the BGP plane, causing session termination without a NOTIFICATION and triggering a service malfunction on the device.",
+      "description": "MikroTik RouterOS before 7.25beta4 contains an improper input validation vulnerability in the labelled-VPN NLRI iterators of the routing service that allows an unauthenticated on-path attacker to crash the BGP service by sending a malformed MP_REACH_NLRI UPDATE message with a prefix-length value below the minimum valid for a labelled-VPN NLRI, which passes validation while describing a route with a negative-length address portion. Attackers can repeatedly send a single BGP UPDATE packet carrying a VPNv4 or VPNv6 NLRI with an out-of-bounds prefix-length to indefinitely hold down the BGP plane, causing session termination without a NOTIFICATION and triggering a service malfunction on the device. The fix is carried only in 7.25beta4, a development build; the current stable release 7.24.2 and the current long-term release 7.23.5 both remain affected.",
       "cvss_score": 8.7,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
@@ -76512,9 +76905,14 @@
           "versions": [
             {
               "status": "affected",
-              "version": "7.21.5",
-              "versionType": "custom",
-              "lessThan": "7.25beta4"
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "7.24.2"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.25beta4",
+              "versionType": "custom"
             }
           ]
         }
@@ -96403,7 +96801,7 @@
         "cwe_ids": [
           "CWE-77"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -96458,7 +96856,7 @@
         "cwe_ids": [
           "CWE-617"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 1
       }
     },
@@ -96686,7 +97084,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -96746,7 +97144,7 @@
         "cwe_ids": [
           "CWE-943"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -96835,7 +97233,7 @@
         "cwe_ids": [
           "CWE-1333"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -96907,7 +97305,7 @@
         "cwe_ids": [
           "CWE-470"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 1
       }
     },
@@ -96955,7 +97353,7 @@
         "cwe_ids": [
           "CWE-312"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -97003,7 +97401,7 @@
         "cwe_ids": [
           "CWE-312"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -113879,7 +114277,7 @@
         "cwe_ids": [
           "CWE-20"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 2
       }
     },
@@ -138322,11 +138720,11 @@
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
-          "CWE-20",
-          "CWE-78"
+          "CWE-15",
+          "CWE-829"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -142154,7 +142552,7 @@
           "CWE-347"
         ],
         "cpe_count": 12,
-        "reference_count": 1
+        "reference_count": 2
       }
     },
     {
@@ -159860,7 +160258,7 @@
           "CWE-770"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -159933,7 +160331,7 @@
           "CWE-400"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -160006,7 +160404,7 @@
           "CWE-400"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -181631,7 +182029,7 @@
           "CWE-190"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -181806,7 +182204,7 @@
           "CWE-288"
         ],
         "cpe_count": 0,
-        "reference_count": 1
+        "reference_count": 2
       }
     },
     {
@@ -185144,7 +185542,7 @@
           "CWE-770"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -189457,6 +189855,92 @@
       }
     },
     {
+      "cve_id": "CVE-2026-89281",
+      "description": "The Apache Lounge Windows distribution of Apache HTTP Server build contains a hardcoded configuration path vulnerability within openssl.cnf path that can allow local code execution.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache http server project",
+          "product": "apache lounge windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Apache 2.4.68-260920 Win64",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache lounge windows",
+        "vendor:apache http server project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00125,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-89282",
+      "description": "The Apache Lounge Windows distribution of Apache HTTP Server build contains an insecure installation directory permissions vulnerability through its default install directory on C:\\, which inherits write access for Authenticated Users.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "apache http server project",
+          "product": "apache lounge windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Apache 2.4.68-260920 Win64",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache lounge windows",
+        "vendor:apache http server project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-8100",
       "description": "Impact\n\nA security issue has been identified in Chef 360 that could allow unauthorized access to protected API endpoints under specific conditions.\u00a0This issue is due to improper handling of URL-encoded paths during request processing. In certain scenarios, an authenticated request may bypass standard access controls gaining additional privileges, potentially allowing access to API endpoints that are intended to be restricted to higher-permissioned roles.\u00a0The impact is limited to environments where the affected request patterns can be triggered and depends on specific deployment configuration and access controls in place.\nResolution\nThe issue has been addressed through product updates that improve request validation and enforce strict path normalization before authorization checks.\u00a0 Customers are advised to update to the latest available version containing the fix, version 1.7.1 or later.",
       "cvss_score": 8.6,
@@ -190604,6 +191088,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-97057",
+      "description": "redis-parser through 3.0.0 fails to validate the multi-bulk length value in RESP protocol parsing, allowing attackers to trigger an uncaught RangeError by supplying an excessively large declared length. A malicious or compromised Redis endpoint can deliver a crafted RESP header with a length above 2^32-1 to crash the Node.js client process.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "noderedis",
+          "product": "redis-parser",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "3.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:redis-parser",
+        "vendor:noderedis"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
+      }
+    },
+    {
       "cve_id": "CVE-2026-93455",
       "description": "django-page-cms through 2.0.13 fails to properly validate page permissions in admin helper views, allowing any staff account to read arbitrary page content and stored media paths. Attackers with low-privilege staff credentials can enumerate content identifiers and access unpublished drafts, page listings, and file paths without proper authorization checks.",
       "cvss_score": 7.1,
@@ -190761,7 +191288,18 @@
         "vendor:the browser company of new york"
       ],
       "active_threat": false,
-      "probability_score": 0.0026
+      "probability_score": 0.0026,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-451"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-95815",
