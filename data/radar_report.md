@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-25T07:39:06+00:00`
+Generated: `2026-09-25T13:39:15+00:00`
 
 ## Executive Summary
 
@@ -125,6 +125,7 @@ Top critical items:
 | [CVE-2024-5217](https://www.cve.org/CVERecord?id=CVE-2024-5217) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 0.996 | 9.2 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in the Washington DC, Vancouver, and earlier Now Platform releases. This vulnera… |
 | [CVE-2026-20182](https://www.cve.org/CVERecord?id=CVE-2026-20182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-17 | 0.915 | 10.0 | ✅ | May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in Februar… |
 | [CVE-2023-48788](https://www.cve.org/CVERecord?id=CVE-2023-48788) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-04-15 | 0.984 | 9.3 | ✅ | A improper neutralization of special elements used in an sql command ('sql injection') in Fortinet FortiClientEMS version 7.2.0 through 7.2.2, FortiClientEMS 7… |
+| [CVE-2026-85706](https://www.cve.org/CVERecord?id=CVE-2026-85706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-14 | 0.914 | 10.0 | ✅ | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, an… |
 | [CVE-2024-6670](https://www.cve.org/CVERecord?id=CVE-2024-6670) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-07 | 0.930 | 9.8 | ✅ | In WhatsUp Gold versions released before 2024.0.0, a SQL Injection vulnerability allows an unauthenticated attacker to retrieve the users encrypted password. |
 | [CVE-2024-21887](https://www.cve.org/CVERecord?id=CVE-2024-21887) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 9.1 | ✅ | A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administ… |
 | [CVE-2024-38475](https://www.cve.org/CVERecord?id=CVE-2024-38475) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 1.000 | 9.1 | ✅ | Improper escaping of output in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows an attacker to map URLs to filesystem locations that are permitted t… |
@@ -143,8 +144,8 @@ Top critical items:
 | [CVE-2022-41040](https://www.cve.org/CVERecord?id=CVE-2022-41040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.8 | ✅ | Microsoft Exchange Server Elevation of Privilege Vulnerability |
 | [CVE-2022-36804](https://www.cve.org/CVERecord?id=CVE-2022-36804) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 0.992 | 8.8 | ✅ | Multiple API endpoints in Atlassian Bitbucket Server and Data Center 7.0.0 before version 7.6.17, from version 7.7.0 before version 7.17.10, from version 7.18.… |
 | [CVE-2025-61757](https://www.cve.org/CVERecord?id=CVE-2025-61757) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-12 | 0.886 | 9.8 | ✅ | Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 a… |
+| [CVE-2025-0108](https://www.cve.org/CVERecord?id=CVE-2025-0108) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.985 | 8.8 | ✅ | An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to b… |
 | [CVE-2023-27524](https://www.cve.org/CVERecord?id=CVE-2023-27524) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-29 | 0.974 | 8.9 | ✅ | Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY accordi… |
-| [CVE-2025-0108](https://www.cve.org/CVERecord?id=CVE-2025-0108) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.981 | 8.8 | ✅ | An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to b… |
 | [CVE-2024-24919](https://www.cve.org/CVERecord?id=CVE-2024-24919) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-06-20 | 1.000 | 8.6 | ✅ | Potentially allowing an attacker to read certain information on Check Point Security Gateways once connected to the internet and enabled with remote Access VPN… |
 | [CVE-2025-64446](https://www.cve.org/CVERecord?id=CVE-2025-64446) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-21 | 0.918 | 9.4 | ✅ | A relative path traversal vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.4, FortiWeb 7.4.0 through 7.4.9, FortiWeb 7.2.0 th… |
 | [CVE-2025-54236](https://www.cve.org/CVERecord?id=CVE-2025-54236) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-14 | 0.945 | 9.1 | ✅ | Adobe Commerce versions 2.4.9-alpha2, 2.4.8-p2, 2.4.7-p7, 2.4.6-p12, 2.4.5-p14, 2.4.4-p15 and earlier are affected by an Improper Input Validation vulnerabilit… |
@@ -155,6 +156,7 @@ Top critical items:
 | [CVE-2024-21893](https://www.cve.org/CVERecord?id=CVE-2024-21893) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-02 | 1.000 | 8.2 | ✅ | A server-side request forgery vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) and Ivanti Neurons … |
 | [CVE-2023-46805](https://www.cve.org/CVERecord?id=CVE-2023-46805) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 8.2 | ✅ | An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted reso… |
 | [CVE-2022-33891](https://www.cve.org/CVERecord?id=CVE-2022-33891) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-03-28 | 0.931 | 8.8 | ✅ | The Apache Spark UI offers the possibility to enable ACLs via the configuration option spark.acls.enable. With an authentication filter, this checks whether a … |
+| [CVE-2026-71362](https://www.cve.org/CVERecord?id=CVE-2026-71362) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-27 | 0.896 | 9.1 | ✅ | Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability… |
 | [CVE-2024-21412](https://www.cve.org/CVERecord?id=CVE-2024-21412) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-05 | 0.994 | 8.1 | ✅ | Internet Shortcut Files Security Feature Bypass Vulnerability |
 | [CVE-2022-41082](https://www.cve.org/CVERecord?id=CVE-2022-41082) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.0 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2026-24858](https://www.cve.org/CVERecord?id=CVE-2026-24858) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-30 | 0.858 | 9.4 | ✅ | An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.5, FortiAnalyzer … |
@@ -166,9 +168,9 @@ Top critical items:
 | [CVE-2025-33053](https://www.cve.org/CVERecord?id=CVE-2025-33053) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-01 | 0.870 | 8.8 | ✅ | External control of file name or path in Internet Shortcut Files allows an unauthorized attacker to execute code over a network. |
 | [CVE-2024-45195](https://www.cve.org/CVERecord?id=CVE-2024-45195) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-25 | 1.000 | 7.5 | ✅ | Direct Request ('Forced Browsing') vulnerability in Apache OFBiz.  This issue affects Apache OFBiz: before 18.12.16.  Users are recommended to upgrade to versi… |
 | [CVE-2023-21839](https://www.cve.org/CVERecord?id=CVE-2023-21839) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-22 | 0.999 | 7.5 | ✅ | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.3.0, 12.2.1… |
-| [CVE-2026-0257](https://www.cve.org/CVERecord?id=CVE-2026-0257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-01 | 0.969 | 7.8 | ✅ | Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security res… |
 | [CVE-2023-29298](https://www.cve.org/CVERecord?id=CVE-2023-29298) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-10 | 0.998 | 7.5 | ✅ | Adobe ColdFusion versions 2018u16 (and earlier), 2021u6 (and earlier) and 2023.0.0.330468 (and earlier) are affected by an Improper Access Control vulnerabilit… |
 | [CVE-2023-38205](https://www.cve.org/CVERecord?id=CVE-2023-38205) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-10 | 0.997 | 7.5 | ✅ | Adobe ColdFusion versions 2018u18 (and earlier), 2021u8 (and earlier) and 2023u2 (and earlier) are affected by an Improper Access Control vulnerability that co… |
+| [CVE-2026-0257](https://www.cve.org/CVERecord?id=CVE-2026-0257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-01 | 0.964 | 7.8 | ✅ | Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security res… |
 | [CVE-2026-20230](https://www.cve.org/CVERecord?id=CVE-2026-20230) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-28 | 0.882 | 8.6 | ✅ | A vulnerability in Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could… |
 | [CVE-2023-36884](https://www.cve.org/CVERecord?id=CVE-2023-36884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-29 | 0.989 | 7.5 | ✅ | Windows Search Remote Code Execution Vulnerability |
 | [CVE-2026-1603](https://www.cve.org/CVERecord?id=CVE-2026-1603) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-23 | 0.876 | 8.6 | ✅ | An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data. |
@@ -243,64 +245,62 @@ Top critical items:
 | [CVE-2026-20963](https://www.cve.org/CVERecord?id=CVE-2026-20963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-21 | 0.296 | 9.8 | ✅ | Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network. |
 | [CVE-2023-28252](https://www.cve.org/CVERecord?id=CVE-2023-28252) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-02 | 0.490 | 7.8 | ✅ | Windows Common Log File System Driver Elevation of Privilege Vulnerability |
 | [CVE-2026-9198](https://www.cve.org/CVERecord?id=CVE-2026-9198) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-07 | 0.287 | 9.8 | ✅ | IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER tokens to any network caller) with /api/v1/… |
+| [CVE-2026-76461](https://www.cve.org/CVERecord?id=CVE-2026-76461) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-17 | 0.283 | 9.8 | ✅ | A vulnerability in the email parsing of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to execute arbitr… |
 | [CVE-2025-32756](https://www.cve.org/CVERecord?id=CVE-2025-32756) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-06-04 | 0.298 | 9.6 | ✅ | A stack-based buffer overflow vulnerability [CWE-121] vulnerability in Fortinet FortiCamera 2.1.0 through 2.1.3, FortiCamera 2.0 all versions, FortiCamera 1.1 … |
 | [CVE-2026-0300](https://www.cve.org/CVERecord?id=CVE-2026-0300) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-09 | 0.317 | 9.3 | ✅ | A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthentica… |
-| [CVE-2025-24054](https://www.cve.org/CVERecord?id=CVE-2025-24054) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-08 | 0.589 | 6.5 | ✅ | External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network. |
-| [CVE-2024-38094](https://www.cve.org/CVERecord?id=CVE-2024-38094) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-11-12 | 0.509 | 7.2 | ✅ | Microsoft SharePoint Remote Code Execution Vulnerability |
-| [CVE-2023-41064](https://www.cve.org/CVERecord?id=CVE-2023-41064) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-02 | 0.448 | 7.8 | ✅ | A buffer overflow issue was addressed with improved memory handling. This issue is fixed in iOS 16.6.1 and iPadOS 16.6.1, macOS Monterey 12.6.9, macOS Ventura … |
 
 ## Recent Changes (Last 7 Days)
 
 | Date | CVE | Status |
 |------|-----|--------|
-| Sep 24 | [CVE-2026-87902](https://www.cve.org/CVERecord?id=CVE-2026-87902) | 🟠 In PatchThis |
-| Sep 24 | [CVE-2026-73639](https://www.cve.org/CVERecord?id=CVE-2026-73639) | 🆕 New |
-| Sep 24 | [CVE-2026-74766](https://www.cve.org/CVERecord?id=CVE-2026-74766) | 🆕 New |
-| Sep 24 | [CVE-2026-87078](https://www.cve.org/CVERecord?id=CVE-2026-87078) | 🆕 New |
-| Sep 24 | [CVE-2026-87079](https://www.cve.org/CVERecord?id=CVE-2026-87079) | 🆕 New |
-| Sep 24 | [CVE-2026-87080](https://www.cve.org/CVERecord?id=CVE-2026-87080) | 🆕 New |
-| Sep 24 | [CVE-2026-87081](https://www.cve.org/CVERecord?id=CVE-2026-87081) | 🆕 New |
-| Sep 24 | [CVE-2026-87082](https://www.cve.org/CVERecord?id=CVE-2026-87082) | 🆕 New |
-| Sep 24 | [CVE-2026-93012](https://www.cve.org/CVERecord?id=CVE-2026-93012) | 🆕 New |
-| Sep 24 | [CVE-2026-93710](https://www.cve.org/CVERecord?id=CVE-2026-93710) | 🆕 New |
-| Sep 24 | [CVE-2026-93712](https://www.cve.org/CVERecord?id=CVE-2026-93712) | 🆕 New |
-| Sep 24 | [CVE-2026-95831](https://www.cve.org/CVERecord?id=CVE-2026-95831) | 🆕 New |
-| Sep 24 | [CVE-2026-89425](https://www.cve.org/CVERecord?id=CVE-2026-89425) | 🆕 New |
-| Sep 24 | [CVE-2026-91776](https://www.cve.org/CVERecord?id=CVE-2026-91776) | 🆕 New |
-| Sep 24 | [CVE-2026-91777](https://www.cve.org/CVERecord?id=CVE-2026-91777) | 🆕 New |
-| Sep 24 | [CVE-2026-94181](https://www.cve.org/CVERecord?id=CVE-2026-94181) | 🆕 New |
-| Sep 24 | [CVE-2026-31377](https://www.cve.org/CVERecord?id=CVE-2026-31377) | 🆕 New |
-| Sep 24 | [CVE-2026-70410](https://www.cve.org/CVERecord?id=CVE-2026-70410) | 🆕 New |
-| Sep 24 | [CVE-2026-75157](https://www.cve.org/CVERecord?id=CVE-2026-75157) | 🆕 New |
-| Sep 24 | [CVE-2026-89078](https://www.cve.org/CVERecord?id=CVE-2026-89078) | 🆕 New |
-| Sep 24 | [CVE-2026-92470](https://www.cve.org/CVERecord?id=CVE-2026-92470) | 🆕 New |
-| Sep 24 | [CVE-2026-93577](https://www.cve.org/CVERecord?id=CVE-2026-93577) | 🆕 New |
-| Sep 24 | [CVE-2026-18177](https://www.cve.org/CVERecord?id=CVE-2026-18177) | 🆕 New |
-| Sep 24 | [CVE-2026-18181](https://www.cve.org/CVERecord?id=CVE-2026-18181) | 🆕 New |
-| Sep 24 | [CVE-2026-18184](https://www.cve.org/CVERecord?id=CVE-2026-18184) | 🆕 New |
-| Sep 24 | [CVE-2026-18185](https://www.cve.org/CVERecord?id=CVE-2026-18185) | 🆕 New |
-| Sep 24 | [CVE-2026-18490](https://www.cve.org/CVERecord?id=CVE-2026-18490) | 🆕 New |
-| Sep 24 | [CVE-2026-18872](https://www.cve.org/CVERecord?id=CVE-2026-18872) | 🆕 New |
-| Sep 24 | [CVE-2026-18875](https://www.cve.org/CVERecord?id=CVE-2026-18875) | 🆕 New |
-| Sep 24 | [CVE-2026-19179](https://www.cve.org/CVERecord?id=CVE-2026-19179) | 🆕 New |
-| Sep 24 | [CVE-2026-6721](https://www.cve.org/CVERecord?id=CVE-2026-6721) | 🆕 New |
-| Sep 24 | [CVE-2026-6730](https://www.cve.org/CVERecord?id=CVE-2026-6730) | 🆕 New |
-| Sep 24 | [CVE-2026-6794](https://www.cve.org/CVERecord?id=CVE-2026-6794) | 🆕 New |
-| Sep 24 | [CVE-2026-6928](https://www.cve.org/CVERecord?id=CVE-2026-6928) | 🆕 New |
-| Sep 24 | [CVE-2026-6935](https://www.cve.org/CVERecord?id=CVE-2026-6935) | 🆕 New |
-| Sep 24 | [CVE-2026-80379](https://www.cve.org/CVERecord?id=CVE-2026-80379) | 🆕 New |
-| Sep 24 | [CVE-2026-80412](https://www.cve.org/CVERecord?id=CVE-2026-80412) | 🆕 New |
-| Sep 24 | [CVE-2026-80423](https://www.cve.org/CVERecord?id=CVE-2026-80423) | 🆕 New |
-| Sep 24 | [CVE-2026-80425](https://www.cve.org/CVERecord?id=CVE-2026-80425) | 🆕 New |
-| Sep 24 | [CVE-2026-81208](https://www.cve.org/CVERecord?id=CVE-2026-81208) | 🆕 New |
-| Sep 24 | [CVE-2026-81536](https://www.cve.org/CVERecord?id=CVE-2026-81536) | 🆕 New |
-| Sep 24 | [CVE-2026-81537](https://www.cve.org/CVERecord?id=CVE-2026-81537) | 🆕 New |
-| Sep 24 | [CVE-2026-70125](https://www.cve.org/CVERecord?id=CVE-2026-70125) | 🆕 New |
-| Sep 24 | [CVE-2026-92071](https://www.cve.org/CVERecord?id=CVE-2026-92071) | 🆕 New |
-| Sep 24 | [CVE-2026-92072](https://www.cve.org/CVERecord?id=CVE-2026-92072) | 🆕 New |
-| Sep 24 | [CVE-2026-92074](https://www.cve.org/CVERecord?id=CVE-2026-92074) | 🆕 New |
-| Sep 24 | [CVE-2026-92075](https://www.cve.org/CVERecord?id=CVE-2026-92075) | 🆕 New |
-| Sep 24 | [CVE-2026-92076](https://www.cve.org/CVERecord?id=CVE-2026-92076) | 🆕 New |
-| Sep 24 | [CVE-2026-92079](https://www.cve.org/CVERecord?id=CVE-2026-92079) | 🆕 New |
-| Sep 24 | [CVE-2026-95676](https://www.cve.org/CVERecord?id=CVE-2026-95676) | 🆕 New |
-| ... | | _and 33955 more_ |
+| Sep 25 | [CVE-2026-13016](https://www.cve.org/CVERecord?id=CVE-2026-13016) | 🆕 New |
+| Sep 25 | [CVE-2026-86857](https://www.cve.org/CVERecord?id=CVE-2026-86857) | 🆕 New |
+| Sep 25 | [CVE-2026-86858](https://www.cve.org/CVERecord?id=CVE-2026-86858) | 🆕 New |
+| Sep 25 | [CVE-2026-86859](https://www.cve.org/CVERecord?id=CVE-2026-86859) | 🆕 New |
+| Sep 25 | [CVE-2026-86860](https://www.cve.org/CVERecord?id=CVE-2026-86860) | 🆕 New |
+| Sep 25 | [CVE-2026-89281](https://www.cve.org/CVERecord?id=CVE-2026-89281) | 🆕 New |
+| Sep 25 | [CVE-2026-89282](https://www.cve.org/CVERecord?id=CVE-2026-89282) | 🆕 New |
+| Sep 25 | [CVE-2026-97057](https://www.cve.org/CVERecord?id=CVE-2026-97057) | 🆕 New |
+| Sep 25 | [CVE-2026-57590](https://www.cve.org/CVERecord?id=CVE-2026-57590) | 🆕 New |
+| Sep 25 | [CVE-2026-75973](https://www.cve.org/CVERecord?id=CVE-2026-75973) | 🆕 New |
+| Sep 25 | [CVE-2026-76183](https://www.cve.org/CVERecord?id=CVE-2026-76183) | 🆕 New |
+| Sep 25 | [CVE-2026-77762](https://www.cve.org/CVERecord?id=CVE-2026-77762) | 🆕 New |
+| Sep 25 | [CVE-2026-77791](https://www.cve.org/CVERecord?id=CVE-2026-77791) | 🆕 New |
+| Sep 25 | [CVE-2026-78383](https://www.cve.org/CVERecord?id=CVE-2026-78383) | 🆕 New |
+| Sep 25 | [CVE-2026-78437](https://www.cve.org/CVERecord?id=CVE-2026-78437) | 🆕 New |
+| Sep 25 | [CVE-2026-79677](https://www.cve.org/CVERecord?id=CVE-2026-79677) | 🆕 New |
+| Sep 25 | [CVE-2026-82331](https://www.cve.org/CVERecord?id=CVE-2026-82331) | 🆕 New |
+| Sep 25 | [CVE-2026-86243](https://www.cve.org/CVERecord?id=CVE-2026-86243) | 🆕 New |
+| Sep 25 | [CVE-2026-86246](https://www.cve.org/CVERecord?id=CVE-2026-86246) | 🆕 New |
+| Sep 25 | [CVE-2026-86247](https://www.cve.org/CVERecord?id=CVE-2026-86247) | 🆕 New |
+| Sep 25 | [CVE-2026-86248](https://www.cve.org/CVERecord?id=CVE-2026-86248) | 🆕 New |
+| Sep 25 | [CVE-2026-86350](https://www.cve.org/CVERecord?id=CVE-2026-86350) | 🆕 New |
+| Sep 25 | [CVE-2026-87022](https://www.cve.org/CVERecord?id=CVE-2026-87022) | 🆕 New |
+| Sep 25 | [CVE-2026-94243](https://www.cve.org/CVERecord?id=CVE-2026-94243) | 🆕 New |
+| Sep 25 | [CVE-2026-96891](https://www.cve.org/CVERecord?id=CVE-2026-96891) | 🆕 New |
+| Sep 25 | [CVE-2026-77874](https://www.cve.org/CVERecord?id=CVE-2026-77874) | 🆕 New |
+| Sep 25 | [CVE-2026-81539](https://www.cve.org/CVERecord?id=CVE-2026-81539) | 🆕 New |
+| Sep 25 | [CVE-2026-81545](https://www.cve.org/CVERecord?id=CVE-2026-81545) | 🆕 New |
+| Sep 25 | [CVE-2026-81547](https://www.cve.org/CVERecord?id=CVE-2026-81547) | 🆕 New |
+| Sep 25 | [CVE-2026-81548](https://www.cve.org/CVERecord?id=CVE-2026-81548) | 🆕 New |
+| Sep 25 | [CVE-2026-81549](https://www.cve.org/CVERecord?id=CVE-2026-81549) | 🆕 New |
+| Sep 25 | [CVE-2026-81552](https://www.cve.org/CVERecord?id=CVE-2026-81552) | 🆕 New |
+| Sep 25 | [CVE-2026-82093](https://www.cve.org/CVERecord?id=CVE-2026-82093) | 🆕 New |
+| Sep 25 | [CVE-2026-82094](https://www.cve.org/CVERecord?id=CVE-2026-82094) | 🆕 New |
+| Sep 25 | [CVE-2026-93207](https://www.cve.org/CVERecord?id=CVE-2026-93207) | 🆕 New |
+| Sep 25 | [CVE-2026-93221](https://www.cve.org/CVERecord?id=CVE-2026-93221) | 🆕 New |
+| Sep 25 | [CVE-2026-93224](https://www.cve.org/CVERecord?id=CVE-2026-93224) | 🆕 New |
+| Sep 25 | [CVE-2026-93225](https://www.cve.org/CVERecord?id=CVE-2026-93225) | 🆕 New |
+| Sep 25 | [CVE-2026-93228](https://www.cve.org/CVERecord?id=CVE-2026-93228) | 🆕 New |
+| Sep 25 | [CVE-2026-93229](https://www.cve.org/CVERecord?id=CVE-2026-93229) | 🆕 New |
+| Sep 25 | [CVE-2026-93237](https://www.cve.org/CVERecord?id=CVE-2026-93237) | 🆕 New |
+| Sep 25 | [CVE-2026-93250](https://www.cve.org/CVERecord?id=CVE-2026-93250) | 🆕 New |
+| Sep 25 | [CVE-2026-93260](https://www.cve.org/CVERecord?id=CVE-2026-93260) | 🆕 New |
+| Sep 25 | [CVE-2026-93262](https://www.cve.org/CVERecord?id=CVE-2026-93262) | 🆕 New |
+| Sep 25 | [CVE-2026-93265](https://www.cve.org/CVERecord?id=CVE-2026-93265) | 🆕 New |
+| Sep 25 | [CVE-2026-93277](https://www.cve.org/CVERecord?id=CVE-2026-93277) | 🆕 New |
+| Sep 25 | [CVE-2026-93280](https://www.cve.org/CVERecord?id=CVE-2026-93280) | 🆕 New |
+| Sep 25 | [CVE-2026-93282](https://www.cve.org/CVERecord?id=CVE-2026-93282) | 🆕 New |
+| Sep 25 | [CVE-2026-93284](https://www.cve.org/CVERecord?id=CVE-2026-93284) | 🆕 New |
+| Sep 25 | [CVE-2026-93287](https://www.cve.org/CVERecord?id=CVE-2026-93287) | 🆕 New |
+| ... | | _and 34055 more_ |
