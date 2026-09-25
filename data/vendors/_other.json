@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T18:32:21+00:00",
+  "generated_at": "2026-09-25T22:19:33+00:00",
   "vendor": "_other",
   "count": 2905,
   "items": [
@@ -4535,8 +4535,19 @@
         "product:wordpress",
         "vendor:wordpress"
       ],
-      "active_threat": false,
+      "active_threat": true,
       "probability_score": 0.02877,
+      "kev": {
+        "cveID": "CVE-2026-87902",
+        "vendorProject": "WordPress",
+        "product": "Core",
+        "vulnerabilityName": "WordPress Core Remote File Inclusion Vulnerability",
+        "dateAdded": "2026-09-25",
+        "shortDescription": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-09-28",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
       "nvd": {
         "cvss_v3_score": 8.1,
         "cvss_v3_severity": "HIGH",
