@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T22:19:33+00:00",
+  "generated_at": "2026-09-26T01:45:44+00:00",
   "vendor": "_other",
-  "count": 2905,
+  "count": 2910,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -48130,6 +48130,56 @@
       }
     },
     {
+      "cve_id": "CVE-2026-91765",
+      "description": "cleanup_xml_node() in the SOAP XML parser recurses once per XML nesting level with no depth limit. An unauthenticated attacker can post a SOAP request containing tens of thousands of nested elements to any SoapServer endpoint, exhaust the stack and crash the process. The same unbounded recursion exists in the SOAP value decoder and in the WSDL node search helper.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "php group",
+          "product": "php",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.2.*",
+              "lessThan": "8.2.34",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.*",
+              "lessThan": "8.3.35",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.4.*",
+              "lessThan": "8.4.26",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.5.*",
+              "lessThan": "8.5.11",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php",
+        "vendor:php group"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2022-32151",
       "description": "The httplib and urllib Python libraries that Splunk shipped with Splunk Enterprise did not validate certificates using the certificate authority (CA) certificate stores by default in Splunk Enterprise versions before 9.0 and Splunk Cloud Platform versions before 8.2.2203. Python 3 client libraries now verify server certificates by default and use the appropriate CA certificate stores for each library. Apps and add-ons that include their own HTTP libraries are not affected. For Splunk Enterprise, update to Splunk Enterprise version 9.0 and Configure TLS host name validation for Splunk-to-Splunk communications (https://docs.splunk.com/Documentation/Splunk/9.0.0/Security/EnableTLSCertHostnameValidation) to enable the remediation.",
       "cvss_score": 7.4,
@@ -68996,6 +69046,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-97818",
+      "description": "phpIPAM through 1.8.3 has incorrect authorization for id==\"admins\" and id==\"all\" in api/controllers/User.php.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "phpipam",
+          "product": "phpipam",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.8.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:phpipam",
+        "vendor:phpipam"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00317,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2023-0851",
       "description": "Buffer overflow in CPCA Resource Download process of Office / Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code. *:Satera LBP660C Series/LBP620C Series/MF740C Series/MF640C Series firmware Ver.11.04 and earlier sold in Japan. Color imageCLASS LBP660C Series/LBP 620C Series/X LBP1127C/MF740C Series/MF640C Series/X MF1127C firmware Ver.11.04 and earlier sold in US. i-SENSYS LBP660C Series/LBP620C Series/MF740C Series/MF640C Series, C1127P, C1127iF, C1127i firmware Ver.11.04 and earlier sold in Europe.",
       "cvss_score": 9.8,
@@ -76984,7 +77077,7 @@
               "status": "affected",
               "version": "0",
               "versionType": "semver",
-              "lessThan": "7.24.2"
+              "lessThanOrEqual": "7.24.2"
             },
             {
               "status": "unaffected",
@@ -191425,6 +191518,102 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-97060",
+      "description": "X-SpringBoot through 6.0 lacks object-level authorization in user management endpoints, allowing sub-administrators to modify or delete users without ownership verification. Attackers with user-management permissions can reset passwords for any account including the super administrator, rebind roles, or delete users via POST /sys/user/update and POST /sys/user/delete endpoints.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "yzcheng90",
+          "product": "x-springboot",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "6.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:x-springboot",
+        "vendor:yzcheng90"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-97063",
+      "description": "X-SpringBoot through 6.0 returns login verification codes in HTTP responses from unauthenticated endpoints GET /sys/mobile/code and GET /sys/email/code without sending them to account owners. Attackers can request codes using known mobile numbers or email addresses, read them from responses, and authenticate as victims via POST /sys/emailOrMobileLogin/login to hijack accounts.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "yzcheng90",
+          "product": "x-springboot",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "6.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:x-springboot",
+        "vendor:yzcheng90"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-97064",
+      "description": "X-SpringBoot through 6.0 ships with a hardcoded static master login verification code 172839 enabled by default in the database seed. Unauthenticated attackers can authenticate as any user by submitting the public master code to the emailOrMobileLogin endpoint with a known email or mobile number.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "yzcheng90",
+          "product": "x-springboot",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "6.0",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:x-springboot",
+        "vendor:yzcheng90"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-9082",
