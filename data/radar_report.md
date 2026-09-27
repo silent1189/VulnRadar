@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-27T08:03:53+00:00`
+Generated: `2026-09-27T13:54:11+00:00`
 
 ## Executive Summary
 
@@ -209,9 +209,9 @@ Top critical items:
 | [CVE-2025-4427](https://www.cve.org/CVERecord?id=CVE-2025-4427) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-06-09 | 0.999 | 5.3 | ✅ | An authentication bypass in the API component of Ivanti Endpoint Manager Mobile 12.5.0.0 and prior allows attackers to access protected resources without prope… |
 | [CVE-2023-23752](https://www.cve.org/CVERecord?id=CVE-2023-23752) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-29 | 0.998 | 5.3 | ✅ | An issue was discovered in Joomla! 4.0.0 through 4.2.7. An improper access check allows unauthorized access to webservice endpoints. |
 | [CVE-2025-20362](https://www.cve.org/CVERecord?id=CVE-2025-20362) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-26 | 0.871 | 6.5 | ✅ | Update: On November 5, 2025, Cisco became aware of a new attack variant against devices running Cisco Secure ASA Software or Cisco Secure FTD Software releases… |
-| [CVE-2026-21509](https://www.cve.org/CVERecord?id=CVE-2026-21509) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-02-16 | 0.729 | 7.8 | ✅ | Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally. |
 | [CVE-2024-21182](https://www.cve.org/CVERecord?id=CVE-2024-21182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-04 | 0.742 | 7.5 | ✅ | Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14… |
 | [CVE-2024-43451](https://www.cve.org/CVERecord?id=CVE-2024-43451) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-12-03 | 0.841 | 6.5 | ✅ | NTLM Hash Disclosure Spoofing Vulnerability |
+| [CVE-2026-21509](https://www.cve.org/CVERecord?id=CVE-2026-21509) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-02-16 | 0.708 | 7.8 | ✅ | Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally. |
 | [CVE-2023-44221](https://www.cve.org/CVERecord?id=CVE-2023-44221) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 0.762 | 7.2 | ✅ | Improper neutralization of special elements in the SMA100 SSL-VPN management interface allows a remote authenticated attacker with administrative privilege to … |
 | [CVE-2023-21529](https://www.cve.org/CVERecord?id=CVE-2023-21529) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-27 | 0.593 | 8.8 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2026-34910](https://www.cve.org/CVERecord?id=CVE-2026-34910) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-26 | 0.458 | 10.0 | ✅ | A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection. |
@@ -253,6 +253,28 @@ Top critical items:
 
 | Date | CVE | Status |
 |------|-----|--------|
+| Sep 27 | [CVE-2026-85491](https://www.cve.org/CVERecord?id=CVE-2026-85491) | 🆕 New |
+| Sep 27 | [CVE-2026-92288](https://www.cve.org/CVERecord?id=CVE-2026-92288) | 🆕 New |
+| Sep 27 | [CVE-2026-92289](https://www.cve.org/CVERecord?id=CVE-2026-92289) | 🆕 New |
+| Sep 27 | [CVE-2026-97230](https://www.cve.org/CVERecord?id=CVE-2026-97230) | 🆕 New |
+| Sep 27 | [CVE-2026-100531](https://www.cve.org/CVERecord?id=CVE-2026-100531) | 🆕 New |
+| Sep 27 | [CVE-2026-100575](https://www.cve.org/CVERecord?id=CVE-2026-100575) | 🆕 New |
+| Sep 27 | [CVE-2026-100582](https://www.cve.org/CVERecord?id=CVE-2026-100582) | 🆕 New |
+| Sep 27 | [CVE-2026-100680](https://www.cve.org/CVERecord?id=CVE-2026-100680) | 🆕 New |
+| Sep 27 | [CVE-2026-100682](https://www.cve.org/CVERecord?id=CVE-2026-100682) | 🆕 New |
+| Sep 27 | [CVE-2026-100683](https://www.cve.org/CVERecord?id=CVE-2026-100683) | 🆕 New |
+| Sep 27 | [CVE-2026-100684](https://www.cve.org/CVERecord?id=CVE-2026-100684) | 🆕 New |
+| Sep 27 | [CVE-2026-100685](https://www.cve.org/CVERecord?id=CVE-2026-100685) | 🆕 New |
+| Sep 27 | [CVE-2026-100686](https://www.cve.org/CVERecord?id=CVE-2026-100686) | 🆕 New |
+| Sep 27 | [CVE-2026-100687](https://www.cve.org/CVERecord?id=CVE-2026-100687) | 🆕 New |
+| Sep 27 | [CVE-2026-100688](https://www.cve.org/CVERecord?id=CVE-2026-100688) | 🆕 New |
+| Sep 27 | [CVE-2026-94130](https://www.cve.org/CVERecord?id=CVE-2026-94130) | 🆕 New |
+| Sep 27 | [CVE-2026-92550](https://www.cve.org/CVERecord?id=CVE-2026-92550) | 🆕 New |
+| Sep 27 | [CVE-2026-92560](https://www.cve.org/CVERecord?id=CVE-2026-92560) | 🆕 New |
+| Sep 27 | [CVE-2026-92608](https://www.cve.org/CVERecord?id=CVE-2026-92608) | 🆕 New |
+| Sep 27 | [CVE-2026-92609](https://www.cve.org/CVERecord?id=CVE-2026-92609) | 🆕 New |
+| Sep 27 | [CVE-2026-100740](https://www.cve.org/CVERecord?id=CVE-2026-100740) | 🆕 New |
+| Sep 27 | [CVE-2026-72668](https://www.cve.org/CVERecord?id=CVE-2026-72668) | 🆕 New |
 | Sep 26 | [CVE-2026-91765](https://www.cve.org/CVERecord?id=CVE-2026-91765) | 🆕 New |
 | Sep 26 | [CVE-2026-97818](https://www.cve.org/CVERecord?id=CVE-2026-97818) | 🆕 New |
 | Sep 26 | [CVE-2026-97060](https://www.cve.org/CVERecord?id=CVE-2026-97060) | 🆕 New |
@@ -281,26 +303,4 @@ Top critical items:
 | Sep 26 | [CVE-2026-97570](https://www.cve.org/CVERecord?id=CVE-2026-97570) | 🆕 New |
 | Sep 26 | [CVE-2026-97573](https://www.cve.org/CVERecord?id=CVE-2026-97573) | 🆕 New |
 | Sep 26 | [CVE-2026-97575](https://www.cve.org/CVERecord?id=CVE-2026-97575) | 🆕 New |
-| Sep 26 | [CVE-2026-97576](https://www.cve.org/CVERecord?id=CVE-2026-97576) | 🆕 New |
-| Sep 26 | [CVE-2026-97577](https://www.cve.org/CVERecord?id=CVE-2026-97577) | 🆕 New |
-| Sep 26 | [CVE-2026-97578](https://www.cve.org/CVERecord?id=CVE-2026-97578) | 🆕 New |
-| Sep 26 | [CVE-2026-97579](https://www.cve.org/CVERecord?id=CVE-2026-97579) | 🆕 New |
-| Sep 26 | [CVE-2026-97580](https://www.cve.org/CVERecord?id=CVE-2026-97580) | 🆕 New |
-| Sep 26 | [CVE-2026-97583](https://www.cve.org/CVERecord?id=CVE-2026-97583) | 🆕 New |
-| Sep 26 | [CVE-2026-97584](https://www.cve.org/CVERecord?id=CVE-2026-97584) | 🆕 New |
-| Sep 26 | [CVE-2026-97589](https://www.cve.org/CVERecord?id=CVE-2026-97589) | 🆕 New |
-| Sep 26 | [CVE-2026-97594](https://www.cve.org/CVERecord?id=CVE-2026-97594) | 🆕 New |
-| Sep 26 | [CVE-2026-97595](https://www.cve.org/CVERecord?id=CVE-2026-97595) | 🆕 New |
-| Sep 26 | [CVE-2026-97602](https://www.cve.org/CVERecord?id=CVE-2026-97602) | 🆕 New |
-| Sep 26 | [CVE-2026-97608](https://www.cve.org/CVERecord?id=CVE-2026-97608) | 🆕 New |
-| Sep 26 | [CVE-2026-97609](https://www.cve.org/CVERecord?id=CVE-2026-97609) | 🆕 New |
-| Sep 26 | [CVE-2026-97611](https://www.cve.org/CVERecord?id=CVE-2026-97611) | 🆕 New |
-| Sep 26 | [CVE-2026-97612](https://www.cve.org/CVERecord?id=CVE-2026-97612) | 🆕 New |
-| Sep 26 | [CVE-2026-97903](https://www.cve.org/CVERecord?id=CVE-2026-97903) | 🆕 New |
-| Sep 26 | [CVE-2026-97910](https://www.cve.org/CVERecord?id=CVE-2026-97910) | 🆕 New |
-| Sep 26 | [CVE-2026-97911](https://www.cve.org/CVERecord?id=CVE-2026-97911) | 🆕 New |
-| Sep 26 | [CVE-2026-97926](https://www.cve.org/CVERecord?id=CVE-2026-97926) | 🆕 New |
-| Sep 26 | [CVE-2026-97931](https://www.cve.org/CVERecord?id=CVE-2026-97931) | 🆕 New |
-| Sep 26 | [CVE-2026-97937](https://www.cve.org/CVERecord?id=CVE-2026-97937) | 🆕 New |
-| Sep 26 | [CVE-2026-97940](https://www.cve.org/CVERecord?id=CVE-2026-97940) | 🆕 New |
-| ... | | _and 382 more_ |
+| ... | | _and 404 more_ |
