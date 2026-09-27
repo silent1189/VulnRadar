@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T01:22:57+00:00",
+  "generated_at": "2026-09-27T08:03:48+00:00",
   "vendor": "elastic",
-  "count": 61,
+  "count": 62,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -2457,6 +2457,49 @@
           "CWE-862"
         ],
         "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72668",
+      "description": "Unintended Proxy or Intermediary ('Confused Deputy') (CWE-441) in Kibana Agent Builder can lead to privilege escalation. A non-administrative user able to edit a shared agent could cause privileged operations to be carried out under the identity of a higher-privileged user who subsequently interacts with that agent. Where the same user can also author workflows, this can extend to full administrative control of Kibana and of the Elasticsearch cluster.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.6"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
+        ],
+        "cpe_count": 0,
         "reference_count": 1
       }
     },

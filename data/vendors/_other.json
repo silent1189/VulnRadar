@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T01:22:57+00:00",
+  "generated_at": "2026-09-27T08:03:48+00:00",
   "vendor": "_other",
-  "count": 2910,
+  "count": 2926,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -4557,7 +4557,7 @@
           "CWE-98"
         ],
         "cpe_count": 0,
-        "reference_count": 1
+        "reference_count": 3
       }
     },
     {
@@ -48177,7 +48177,18 @@
         "vendor:php group"
       ],
       "active_threat": false,
-      "probability_score": 0.00516
+      "probability_score": 0.00516,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-674"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2022-32151",
@@ -57127,7 +57138,9 @@
         "cvss_v3_severity": null,
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
-        "cwe_ids": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
         "cpe_count": 0,
         "reference_count": 1
       }
@@ -66182,6 +66195,47 @@
       }
     },
     {
+      "cve_id": "CVE-2026-85491",
+      "description": "Catalyst::Seal versions before 0.03 for Perl allow one request to disable a path or route a later one past an authorization check via a dispatch memo keyed on the request path alone.\n\nCatalyst::Seal replaces the dispatcher's prepare_action with a version that memoises how a path resolved: which dispatch type matched, at which level, and what was left over as arguments. The key is the request path and nothing else. Action roles that match on the method, content type, scheme or query make that resolution depend on state the key does not carry, so the memo answers for a request it was not built from.\n\nA path that resolves to no action is memoised as well, and replaying that entry returns without consulting any dispatch type, so no action is set and the request fails. A GET of a path whose action is declared POST-only therefore disables that path for every later request, the correct POST included. An entry that did resolve replays the level the earlier descent reached. Where a POST-only action sits below a shallower action on the same path, a GET memoises the shallow route, and a later POST is dispatched there with an auto() guarding the deeper controller never running.\n\nThe memo is cleared only when an action is registered, which happens at setup, so an entry lasts for the life of the process, and its cap of 2048 entries bounds how many paths one caller can disable. In the configuration measured, the misroute lands on the less privileged action, so it is an authorization check not running rather than a privilege gain.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.03",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00357,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-706",
+          "CWE-1023"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-86219",
       "description": "Authen::SASL::Perl::DIGEST_MD5 versions before 2.2100 for Perl accept replayed authentication responses via unverified nonce in server_step.\n\nserver_start generates a fresh nonce and sends it in the challenge, and nothing later compares that value against the nonce the client returns. server_step derives the expected digest from the client's own parameters, so a response verifies whenever its digest matches the nonce it carries. The count table it also checks is keyed on the client-supplied nonce and starts empty in each new server object, so a captured first response, carrying `nc=00000001`, passes that too. RFC 2831 defines the nonce in the response as the value the server sent in the preceding challenge.\n\nAn attacker who observes one successful `qop=auth` exchange can replay the captured response against a later session for the same service, host, realm and user, and authenticate as that user without knowing the password.",
       "cvss_score": 9.8,
@@ -66555,6 +66609,92 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92288",
+      "description": "Lemonldap::NG::Portal versions from 2.20.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow unauthenticated OAuth2 token introspection because checkEndPointAuthenticationCredentials does not verify the client secret of a public Relying Party.\n\ncheckEndPointAuthenticationCredentials() skips the secret comparison for a Relying Party marked public and still returns the authentication method deduced from the request, client_secret_basic or client_secret_post. introspection() rejects a caller only when that method is missing or none, so a request carrying a public client_id and an arbitrary or empty secret passes the endpoint's authentication check.\n\nAn attacker who holds an access token and knows the client_id of any public Relying Party can confirm the token is active and read its metadata, including scope, audience, expiry and the sub claim. The sub claim is computed with the calling Relying Party's user identifier attribute, so an attacker can translate a user identifier from one Relying Party to another, defeating per-client and pseudonymous identifiers.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.21.6",
+              "status": "affected",
+              "version": "2.20.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "2.23.4",
+              "status": "affected",
+              "version": "2.22.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00369,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1390"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92289",
+      "description": "Lemonldap::NG::Portal versions from 2.23.0 before 2.23.4 for Perl allow a PKCE bypass for public Relying Parties in \"PKCE or secret\" mode because checkEndPointAuthenticationCredentials does not verify the client secret.\n\nWith oidcRPMetaDataOptionsRequirePKCE set to 2, the authorization endpoint issues a code even when the request carries no code_challenge, and token() admits the exchange as long as a challenge was stored or an authentication method was returned for the caller. checkEndPointAuthenticationCredentials() skips the secret comparison for a Relying Party marked public and still returns the method deduced from the request, so any Basic or form credential satisfies the secret branch. validatePKCEChallenge() then passes, because neither a challenge nor a verifier is present.\n\nAn attacker who intercepts an authorization code issued to a public Relying Party can exchange it for the user's access, ID and refresh tokens by replaying the client_id with an arbitrary secret, which is the attack PKCE prevents. Dynamic client registration creates every Relying Party in this mode.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.23.4",
+              "status": "affected",
+              "version": "2.23.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00222,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1390"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-93012",
       "description": "Email::Sender::Transport::Sendmail versions before 2.602 for Perl allow arbitrary command execution on Windows sending a message whose envelope address reaches the shell in _sendmail_pipe.\n\nOn MSWin32 the envelope sender and every recipient go into a single command string, which open() passes to a shell. Every other platform gets the list form, which runs sendmail directly. When the caller supplies no envelope, Email::Sender::Simple takes the recipients from the To and Cc headers and the sender from the From header.\n\nAn attacker who controls one of those header addresses runs commands as the sending process.",
       "cvss_score": 9.8,
@@ -66753,6 +66893,45 @@
         ],
         "cpe_count": 0,
         "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-97230",
+      "description": "IO::Socket::SSL::SelfCertificate versions 1.00 for Perl contains malware which executes Python code from an obfuscated URL.\n\nThe generate_certificate runs a Python script saved as a certificate file.  The pyhton script attempts to retrieve code from a hardcoded http URL that is obfuscated with base64 encoding and run the response body directly.\n\nThe impact is that arbitrary code can be invoked as the user, without a dropped script being saved on the affected host.\n\nThe releases have no test scripts nor build hooks.  The intention may have been to trigger the payload after installation.\n\nThe dropper script is in lib/Crypt/SelfCertificate/sample/cert.pem.\n\nThis is similar to CVE-2026-95831 for the module Crypt::SelfCertificate.\n\nThe SHA-256 digests of the files are\n\n    ba24ee8ec3b7f47f65bed62e16fb413ace50653cf44bd8ea90914390922831e0  IO-Socket-SSL-SelfCertificate-1.00.tar.gz\n    821d38830e5eb8607738421c25ac25f59fff02a6ab67daa32fbd020429454dac  IO-Socket-SSL-SelfCertificate-1.00/lib/IO/Socket/SSL/SelfCertificate/sample/cert.pem\n\n    d483cb7b23b7271cb11cf242bff4a2e1c02df0b9525eb0429abeea8961c399d5  IO-Socket-SSL-SelfCertificate-1.00-upload.tar.gz",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.00",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00235,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-506"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
@@ -76748,14 +76927,14 @@
       "active_threat": false,
       "probability_score": 0.06451,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-347"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 6
       }
     },
@@ -76880,15 +77059,15 @@
         "knownRansomwareCampaignUse": "Unknown"
       },
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-841"
         ],
-        "cpe_count": 0,
-        "reference_count": 7
+        "cpe_count": 3,
+        "reference_count": 9
       }
     },
     {
@@ -76929,15 +77108,15 @@
       "active_threat": false,
       "probability_score": 0.00725,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-22",
           "CWE-824"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 6
       }
     },
@@ -97194,7 +97373,7 @@
         "cwe_ids": [
           "CWE-639"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -97631,7 +97810,7 @@
         "cwe_ids": [
           "CWE-470"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -169584,6 +169763,1353 @@
       }
     },
     {
+      "cve_id": "CVE-2026-100531",
+      "description": "The @openclaw/slack npm package before 2026.8.1 contains an authorization flaw in its Slack download-file handler: when a file lacks the share metadata used to prove it belongs to the requested conversation, the conversation-authorization check fails open. An authenticated caller restricted to a single conversation who knows or obtains a file identifier can therefore download file contents from outside that conversation's scope, disclosing data across configured conversation boundaries. The issue does not allow listing arbitrary Slack files and does not bypass Slack authentication itself. The issue is fixed in version 2026.8.1.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "slack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2026.8.1"
+            },
+            {
+              "version": "2026.8.1",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:slack",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00327,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100575",
+      "description": "OpenClaw Slack versions before 2026.8.1 fail to properly enforce sender allowlists in multi-person direct messages. Disallowed participants can trigger Slack agents and access tools and data granted to those agents by bypassing configured sender policies.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "slack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2026.8.1"
+            },
+            {
+              "version": "2026.8.1",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:slack",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00261,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100582",
+      "description": "OpenClaw channel plugins (@openclaw/msteams, @openclaw/feishu, @openclaw/matrix, and @openclaw/googlechat) before 2026.8.1 do not enforce the configured channel read allowlist for caller-supplied explicit read targets in message, reaction, pin, member, and related metadata read actions. A lower-trust sender or a steered agent with access to a channel read action can therefore retrieve content or metadata from channels or rooms excluded by the operator's read policy; the practical impact depends on the permissions held by the connected bot account. The issue is fixed in 2026.8.1.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "msteams",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2026.8.1"
+            },
+            {
+              "version": "2026.8.1",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "openclaw",
+          "product": "feishu",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2026.8.1"
+            },
+            {
+              "version": "2026.8.1",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "openclaw",
+          "product": "matrix",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2026.8.1"
+            },
+            {
+              "version": "2026.8.1",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "openclaw",
+          "product": "googlechat",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2026.8.1"
+            },
+            {
+              "version": "2026.8.1",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:msteams",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00209,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-95815",
+      "description": "OpenClaw iOS before 2026.8.11 logs complete agent deep-link URLs including persistent bearer keys to unified logs as public diagnostic data. Attackers who obtain diagnostic archives can recover unrotated keys and replay them in forged deep links to submit agent requests without local confirmation prompts.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "openclaw ios",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2026.8.11",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "2026.8.11",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openclaw ios",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0016,
+      "nvd": {
+        "cvss_v3_score": 6.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100680",
+      "description": "Budibase versions before 3.45.0 fail to disable external JSON reference resolution in the OpenAPI/Swagger import validator, allowing authenticated builders to read arbitrary local files. Attackers with builder access can embed file:// references in OpenAPI specifications submitted to the import endpoint to exfiltrate sensitive files including environment variables containing JWT secrets, API keys, and database credentials.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100682",
+      "description": "Budibase Server before 3.45.0 contains an arbitrary file write vulnerability in the PWA icon upload endpoint that extracts user-supplied ZIP archives without proper symlink validation. Attackers with BUILDER role can craft a malicious ZIP with leaf symlink entries followed by duplicate file entries to write arbitrary files as root, enabling remote code execution.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100683",
+      "description": "Budibase (@budibase/server) before 3.45.0 builds MySQL and MSSQL column-rename DDL in packages/backend-core/src/sql/sqlTable.ts by interpolating identifiers directly into a raw query string (backtick-quoted for MySQL, a single-quoted sp_rename literal for MSSQL) without applying the project's quoteMySqlIdentifier / quoteSqlServerIdentifier helpers. An attacker with DDL rights on a connected MySQL/MSSQL datasource can create a column whose name contains a backtick (MySQL) or single quote (MSSQL) plus additional SQL; Budibase's schema introspection stores the name verbatim, and when a Budibase builder later renames that column through the UI (POST /api/tables with _rename.old), the embedded quote character terminates the identifier and the injected SQL is executed. Because the MySQL connection is opened with multipleStatements: true, stacked statements run as Budibase's datasource user, allowing arbitrary reads, writes, or destructive operations on the connected database outside Budibase's row/table permission model. Fixed in 3.45.0.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100684",
+      "description": "Budibase versions 3.41.0 before 3.45.0 contain an authentication bypass in the OIDC/SSO login path of @budibase/server. In sso.authenticate, when no existing user matches the incoming SSO subject, the server looks up pending user invites by the IdP-asserted email address alone \u2014 without validating an invite code and without an email_verified check (the email_verified gate protects only the existing-account lookup). An attacker who can register at an IdP that the tenant trusts for OIDC and assert a victim's invited email address (even with email_verified=false) claims the pending invite and inherits all of its granted privileges, including builder and admin.global, with no admin exclusion. This results in takeover of the invited principal and, for admin invites, full tenant compromise (access to all apps, datasources including production credentials, and automations); the invite is consumed, denying onboarding to the legitimate invitee.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "3.41.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100685",
+      "description": "Budibase before 3.45.0 fails to properly scope the GET /api/chat-links endpoint by workspace, allowing builders to enumerate chat identity link records across all workspaces in a tenant. Attackers with builder access to a single workspace can retrieve sensitive chat identity linking data including user IDs and external chat service identifiers from other workspaces they have no permission to access.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100686",
+      "description": "Budibase versions before 3.45.0 fail to validate per-app authorization in the POST /api/global/groups/:groupId/apps endpoint, allowing builders to assign application roles across workspace boundaries. A builder of a single workspace can exploit missing per-app authorization checks to grant themselves admin roles in other workspaces by modifying user group role mappings.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100687",
+      "description": "Budibase Server before 3.45.0 fails to redact plaintext datasource credentials before broadcasting external table updates to the Builder collaboration websocket room. Attackers with Builder access can intercept unredacted datasource objects containing database passwords and API keys by observing table save or delete operations.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 5.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100688",
+      "description": "Budibase server before 3.45.0 contains a cross-tenant information disclosure vulnerability in the GET /api/applications/:appId/appPackage endpoint that allows authenticated users to read another tenant's application metadata and source code. Attackers can supply a victim tenant's app id to retrieve sensitive application details including navigation structure, role names, internal screen URLs, JavaScript snippets, and user identifiers without authorization checks.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.45.0"
+            },
+            {
+              "version": "3.45.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72849",
+      "description": "Budibase before 3.40.0 contains a cross-site request forgery vulnerability in the chat-link handoff endpoint that allows attackers to bind an external chat identity to a victim's account. Attackers can craft a phishing page that auto-submits a POST request with a leaked confirmation token to bind their chat identity to a victim user's account, enabling impersonation within agent operations and inheritance of victim permissions.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00162,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72850",
+      "description": "Budibase before 3.40.0 fails to properly sanitize S3 object keys, allowing authenticated builders to upload files with traversal sequences that are preserved during export. Attackers can craft filenames containing .. segments that escape the temporary directory during workspace export, writing arbitrary content to any path writable by the Budibase process.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00605,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72851",
+      "description": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with EXECUTE_QUERY steps. Attackers can POST attacker-controlled JSON to the webhook trigger endpoint to inject SQL payloads that execute with builder-configured database credentials, enabling data exfiltration, modification, and persistence in connected datasources like Snowflake.",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00417,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72855",
+      "description": "Budibase before 3.40.0 contains server-side request forgery vulnerabilities in OpenAPI query import and REST query execution that allow authenticated builder-level users to bypass DNS pinning protections through DNS rebinding attacks. Attackers can configure hostnames that resolve to public addresses during validation but resolve to loopback or private addresses during actual connection, allowing access to blocked internal HTTP services.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00375,
+      "nvd": {
+        "cvss_v3_score": 8.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-72859",
+      "description": "Budibase versions 3.39.4 before 3.40.0 contain an authorization regression in the S3 attachment upload endpoint that allows BASIC users to obtain S3 PutObject presigned URLs by sending POST requests to the attachments endpoint. The route was changed from a BUILDER permission check to a TABLE/WRITE check, which BASIC users hold by default. Attackers can specify arbitrary S3 buckets in the request body to generate presigned URLs for writing to any bucket accessible by the stored IAM credentials, enabling unauthorized file uploads.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "3.39.4",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-73617",
+      "description": "Budibase before 3.40.0 contains a NoSQL injection vulnerability in the MongoDB datasource integration where user-supplied parameters are enriched with handlebars using noEscaping: true and parsed without operator filtering. Attackers can inject MongoDB operators through query parameters to bypass per-user access controls, read arbitrary documents, execute JavaScript via $where operators, or modify collections through update and delete operations.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00343,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-943"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-73618",
+      "description": "Budibase Server before 3.40.0 contains a NoSQL injection vulnerability in the MongoDB query execution endpoint where user-supplied parameters are interpolated into JSON query templates without proper sanitization of JSON metacharacters. Attackers with query write permission can inject JSON structural characters to alter MongoDB queries, bypassing filters to read, modify, or delete arbitrary documents.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.40.0"
+            },
+            {
+              "version": "3.40.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00505,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-943"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82239",
+      "description": "Budibase before 3.41.3 fails to enforce per-table role restrictions on the POST /api/datasources/query endpoint, allowing low-privilege BASIC users to read, create, update, or delete rows in any table regardless of configured permissions. Attackers with BASIC role can submit crafted query requests with target table identifiers to bypass table-level access controls and manipulate restricted data.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00386,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82240",
+      "description": "Budibase before 3.41.3 fails to validate app-scoped builder role assignments in the public user create and update endpoints, allowing an authenticated app-scoped builder to grant builder access to unrelated apps. Attackers can submit crafted requests to the user update API with builder.apps fields to escalate privileges and gain unauthorized builder access to other applications in the same tenant.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00363,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82241",
+      "description": "Budibase backend-core (@budibase/backend-core, as used by @budibase/server) omits the shared address space range 100.64.0.0/10 from its default SSRF blacklist (DEFAULT_BLACKLIST) used by REST datasource query previews. When the default blacklist is active (i.e., a self-hosted deployment has not defined BLACKLIST_IPS), an authenticated user with the Builder permission can submit a REST datasource query preview request to POST /api/queries/preview targeting a reachable HTTP(S) service in the 100.64.0.0/10 range, causing the server to send a request to that target and return its response through the preview flow. Per the advisory, no released fix was identified at the time of publication; remediation is to add 100.64.0.0/10 to DEFAULT_BLACKLIST.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82242",
+      "description": "Budibase versions before 3.41.3 contain a missing authorization vulnerability in the POST /api/resources/duplicate endpoint that allows authenticated builders to inject tables, automations, queries, and screens into any other application without holding any role in the destination workspace. Attackers can inject resources by specifying an arbitrary destination workspace ID in the request body, then trigger injected automations with outgoing webhooks to exfiltrate data from victim applications.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00338,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82243",
+      "description": "Budibase Server before 3.41.3 contains a server-side request forgery vulnerability in the datasource verify endpoint that allows builder-level users to supply arbitrary URLs without SSRF validation. Attackers can exploit this to leak internal CouchDB credentials by making requests to attacker-controlled servers, gaining full database access in cloud deployments.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00333,
+      "nvd": {
+        "cvss_v3_score": 7.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82244",
+      "description": "Budibase versions before 3.41.3 contain a remote code execution vulnerability in plugin handling that allows authenticated admin users to execute arbitrary code by uploading a malicious plugin tarball. The server calls eval() on plugin JavaScript files without sandboxing in the main Node.js process, enabling attackers to exfiltrate environment variables and credentials with root privileges in default deployments.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00886,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82245",
+      "description": "Budibase before 3.41.3 fails to enforce role-based authorization on license management endpoints, allowing any authenticated user to delete license keys or manipulate offline tokens. Attackers with basic user privileges can access /api/global/license/* endpoints to disable premium features and downgrade deployments for all users.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00401,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82246",
+      "description": "Budibase Server before 3.41.3 contains a server-side request forgery vulnerability in the query import endpoint that fails to validate user-supplied URLs before fetching content. Attackers can submit arbitrary URLs to retrieve responses from internal services including cloud metadata endpoints and other restricted network resources.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.41.3"
+            },
+            {
+              "version": "3.41.3",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-10557",
       "description": "The Yarbo Android and iOS applications contain hard-coded MQTT broker credentials that are identical for all users and all devices. These credentials are embedded in the application binary and are readily extractable via APK decompilation. The credentials provide access to cloud MQTT brokers carrying real-time telemetry for the entire global Yarbo robot fleet. They allow both wildcard subscription to all robot telemetry topics and publishing to any robot's command topic using only the robot's serial number.",
       "cvss_score": 9.3,
@@ -187690,726 +189216,6 @@
       }
     },
     {
-      "cve_id": "CVE-2026-72849",
-      "description": "Budibase before 3.40.0 contains a cross-site request forgery vulnerability in the chat-link handoff endpoint that allows attackers to bind an external chat identity to a victim's account. Attackers can craft a phishing page that auto-submits a POST request with a leaked confirmation token to bind their chat identity to a victim user's account, enabling impersonation within agent operations and inheritance of victim permissions.",
-      "cvss_score": 8.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00162,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-352"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-72850",
-      "description": "Budibase before 3.40.0 fails to properly sanitize S3 object keys, allowing authenticated builders to upload files with traversal sequences that are preserved during export. Attackers can craft filenames containing .. segments that escape the temporary directory during workspace export, writing arbitrary content to any path writable by the Budibase process.",
-      "cvss_score": 9.4,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00605,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-72851",
-      "description": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with EXECUTE_QUERY steps. Attackers can POST attacker-controlled JSON to the webhook trigger endpoint to inject SQL payloads that execute with builder-configured database credentials, enabling data exfiltration, modification, and persistence in connected datasources like Snowflake.",
-      "cvss_score": 9.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00417,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-72855",
-      "description": "Budibase before 3.40.0 contains server-side request forgery vulnerabilities in OpenAPI query import and REST query execution that allow authenticated builder-level users to bypass DNS pinning protections through DNS rebinding attacks. Attackers can configure hostnames that resolve to public addresses during validation but resolve to loopback or private addresses during actual connection, allowing access to blocked internal HTTP services.",
-      "cvss_score": 8.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00375,
-      "nvd": {
-        "cvss_v3_score": 8.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-72859",
-      "description": "Budibase versions 3.39.4 before 3.40.0 contain an authorization regression in the S3 attachment upload endpoint that allows BASIC users to obtain S3 PutObject presigned URLs by sending POST requests to the attachments endpoint. The route was changed from a BUILDER permission check to a TABLE/WRITE check, which BASIC users hold by default. Attackers can specify arbitrary S3 buckets in the request body to generate presigned URLs for writing to any bucket accessible by the stored IAM credentials, enabling unauthorized file uploads.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "3.39.4",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00311,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-73617",
-      "description": "Budibase before 3.40.0 contains a NoSQL injection vulnerability in the MongoDB datasource integration where user-supplied parameters are enriched with handlebars using noEscaping: true and parsed without operator filtering. Attackers can inject MongoDB operators through query parameters to bypass per-user access controls, read arbitrary documents, execute JavaScript via $where operators, or modify collections through update and delete operations.",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00343,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-943"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-73618",
-      "description": "Budibase Server before 3.40.0 contains a NoSQL injection vulnerability in the MongoDB query execution endpoint where user-supplied parameters are interpolated into JSON query templates without proper sanitization of JSON metacharacters. Attackers with query write permission can inject JSON structural characters to alter MongoDB queries, bypassing filters to read, modify, or delete arbitrary documents.",
-      "cvss_score": 8.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.40.0"
-            },
-            {
-              "version": "3.40.0",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00505,
-      "nvd": {
-        "cvss_v3_score": 8.3,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-943"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82239",
-      "description": "Budibase before 3.41.3 fails to enforce per-table role restrictions on the POST /api/datasources/query endpoint, allowing low-privilege BASIC users to read, create, update, or delete rows in any table regardless of configured permissions. Attackers with BASIC role can submit crafted query requests with target table identifiers to bypass table-level access controls and manipulate restricted data.",
-      "cvss_score": 8.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00386,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-862"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82240",
-      "description": "Budibase before 3.41.3 fails to validate app-scoped builder role assignments in the public user create and update endpoints, allowing an authenticated app-scoped builder to grant builder access to unrelated apps. Attackers can submit crafted requests to the user update API with builder.apps fields to escalate privileges and gain unauthorized builder access to other applications in the same tenant.",
-      "cvss_score": 8.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00363,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-862"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82241",
-      "description": "Budibase backend-core (@budibase/backend-core, as used by @budibase/server) omits the shared address space range 100.64.0.0/10 from its default SSRF blacklist (DEFAULT_BLACKLIST) used by REST datasource query previews. When the default blacklist is active (i.e., a self-hosted deployment has not defined BLACKLIST_IPS), an authenticated user with the Builder permission can submit a REST datasource query preview request to POST /api/queries/preview targeting a reachable HTTP(S) service in the 100.64.0.0/10 range, causing the server to send a request to that target and return its response through the preview flow. Per the advisory, no released fix was identified at the time of publication; remediation is to add 100.64.0.0/10 to DEFAULT_BLACKLIST.",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00301,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82242",
-      "description": "Budibase versions before 3.41.3 contain a missing authorization vulnerability in the POST /api/resources/duplicate endpoint that allows authenticated builders to inject tables, automations, queries, and screens into any other application without holding any role in the destination workspace. Attackers can inject resources by specifying an arbitrary destination workspace ID in the request body, then trigger injected automations with outgoing webhooks to exfiltrate data from victim applications.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00338,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-862"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82243",
-      "description": "Budibase Server before 3.41.3 contains a server-side request forgery vulnerability in the datasource verify endpoint that allows builder-level users to supply arbitrary URLs without SSRF validation. Attackers can exploit this to leak internal CouchDB credentials by making requests to attacker-controlled servers, gaining full database access in cloud deployments.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:H/SI:L/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00333,
-      "nvd": {
-        "cvss_v3_score": 7.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82244",
-      "description": "Budibase versions before 3.41.3 contain a remote code execution vulnerability in plugin handling that allows authenticated admin users to execute arbitrary code by uploading a malicious plugin tarball. The server calls eval() on plugin JavaScript files without sandboxing in the main Node.js process, enabling attackers to exfiltrate environment variables and credentials with root privileges in default deployments.",
-      "cvss_score": 9.4,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00886,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-94"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82245",
-      "description": "Budibase before 3.41.3 fails to enforce role-based authorization on license management endpoints, allowing any authenticated user to delete license keys or manipulate offline tokens. Attackers with basic user privileges can access /api/global/license/* endpoints to disable premium features and downgrade deployments for all users.",
-      "cvss_score": 7.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00401,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-862"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82246",
-      "description": "Budibase Server before 3.41.3 contains a server-side request forgery vulnerability in the query import endpoint that fails to validate user-supplied URLs before fetching content. Attackers can submit arbitrary URLs to retrieve responses from internal services including cloud metadata endpoints and other restricted network resources.",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "budibase",
-          "product": "server",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "3.41.3"
-            },
-            {
-              "version": "3.41.3",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:budibase"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00301,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
       "cve_id": "CVE-2026-73086",
       "description": "nanoid is a secure, URL-friendly, unique string ID generator for JavaScript. Prior to versions 3.3.12 and 5.1.11, the nanoid(size) function in index.js and index.cjs coerces the user-influenced size parameter to a signed 32-bit integer, allowing a value of 2147483648 to become -2147483648 and corrupt the process-wide CSPRNG poolOffset in fillPool(), which causes subsequent session tokens, CSRF tokens, API keys, and unique identifiers to become the deterministic string \"uuuuuuuuuuuuuuuuuuuuu\" until the process restarts. This issue is fixed in versions 3.3.12 and 5.1.11.",
       "cvss_score": 7.4,
@@ -191387,6 +192193,47 @@
       }
     },
     {
+      "cve_id": "CVE-2026-94130",
+      "description": "Joomla Extension - joomlaboat.com - Unauthenticated SQL injection in YouTube Gallery extension < 5.7.3 - An SQL injection vulnerability in video search functionality and sorting allowed attackers to inject SQL commands in read queries.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomlaboat.com",
+          "product": "youtube gallery extension for joomla",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-5.7.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtube gallery extension for joomla",
+        "vendor:joomlaboat.com"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-94146",
       "description": "A vulnerability was found in BioStar BIOS Update Utility 1.9.7.3. This issue affects the function sub_110BC of the file BSMEM64_W10.sys of the component IOCTL Handler. The manipulation of the argument PhysicalAddress/Size results in write-what-where condition. Attacking locally is a requirement. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.",
       "cvss_score": 9.3,
@@ -191472,54 +192319,6 @@
       }
     },
     {
-      "cve_id": "CVE-2026-95815",
-      "description": "OpenClaw iOS before 2026.8.11 logs complete agent deep-link URLs including persistent bearer keys to unified logs as public diagnostic data. Attackers who obtain diagnostic archives can recover unrotated keys and replay them in forged deep links to submit agent requests without local confirmation prompts.",
-      "cvss_score": 7.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "openclaw",
-          "product": "openclaw ios",
-          "versions": [
-            {
-              "version": "0",
-              "lessThan": "2026.8.11",
-              "status": "affected",
-              "versionType": "semver"
-            },
-            {
-              "version": "2026.8.11",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:openclaw ios",
-        "vendor:openclaw"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0016,
-      "nvd": {
-        "cvss_v3_score": 6.3,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 0,
-        "reference_count": 5
-      }
-    },
-    {
       "cve_id": "CVE-2026-97060",
       "description": "X-SpringBoot through 6.0 lacks object-level authorization in user management endpoints, allowing sub-administrators to modify or delete users without ownership verification. Attackers with user-management permissions can reset passwords for any account including the super administrator, rebind roles, or delete users via POST /sys/user/update and POST /sys/user/delete endpoints.",
       "cvss_score": 8.6,
@@ -191549,7 +192348,18 @@
         "vendor:yzcheng90"
       ],
       "active_threat": false,
-      "probability_score": 0.00314
+      "probability_score": 0.00314,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2026-97063",
@@ -191581,7 +192391,18 @@
         "vendor:yzcheng90"
       ],
       "active_threat": false,
-      "probability_score": 0.00292
+      "probability_score": 0.00292,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2026-97064",
@@ -191613,7 +192434,18 @@
         "vendor:yzcheng90"
       ],
       "active_threat": false,
-      "probability_score": 0.00302
+      "probability_score": 0.00302,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1392"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-9082",
