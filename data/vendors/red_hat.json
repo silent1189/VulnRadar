@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T21:54:32+00:00",
+  "generated_at": "2026-09-29T01:56:22+00:00",
   "vendor": "red_hat",
-  "count": 323,
+  "count": 324,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -104,18 +104,7 @@
         "vendor:red hat"
       ],
       "active_threat": false,
-      "probability_score": 0.01044,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-502"
-        ],
-        "cpe_count": 4,
-        "reference_count": 6
-      }
+      "probability_score": 0.01044
     },
     {
       "cve_id": "CVE-2022-3596",
@@ -160,18 +149,7 @@
         "vendor:red hat"
       ],
       "active_threat": false,
-      "probability_score": 0.01107,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-402"
-        ],
-        "cpe_count": 2,
-        "reference_count": 6
-      }
+      "probability_score": 0.01107
     },
     {
       "cve_id": "CVE-2022-4244",
@@ -412,18 +390,7 @@
         "vendor:red hat"
       ],
       "active_threat": false,
-      "probability_score": 0.01347,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 2,
-        "reference_count": 8
-      }
+      "probability_score": 0.01347
     },
     {
       "cve_id": "CVE-2023-0118",
@@ -55474,6 +55441,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.15",
+          "versions": [
+            {
+              "version": "415.92.202609140326-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.16",
           "versions": [
             {
@@ -55776,7 +55755,7 @@
           "CWE-825"
         ],
         "cpe_count": 0,
-        "reference_count": 33
+        "reference_count": 34
       }
     },
     {
@@ -56032,6 +56011,18 @@
           "versions": [
             {
               "version": "414.92.202510211419-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.15",
+          "versions": [
+            {
+              "version": "415.92.202609140326-0",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -56354,7 +56345,7 @@
           "CWE-125"
         ],
         "cpe_count": 0,
-        "reference_count": 34
+        "reference_count": 35
       }
     },
     {
@@ -61370,6 +61361,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.15",
+          "versions": [
+            {
+              "version": "415.92.202609140326-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.16",
           "versions": [
             {
@@ -61619,7 +61622,7 @@
           "CWE-22"
         ],
         "cpe_count": 0,
-        "reference_count": 33
+        "reference_count": 34
       }
     },
     {
@@ -63131,6 +63134,36 @@
         "cpe_count": 0,
         "reference_count": 17
       }
+    },
+    {
+      "cve_id": "CVE-2026-101292",
+      "description": "Apache ActiveMQ Artemis before 2.34.0 contains an unsafe reflection vulnerability in FederationStreamConnectMessage.getFederationPolicy(). The method calls Class.forName(clazz).getConstructor().newInstance() where clazz is read directly from the CORE protocol wire buffer without type validation. An authenticated federation peer can send a FEDERATION_DOWNSTREAM_CONNECT packet with a crafted class name, causing the broker to load and instantiate arbitrary classes visible to the Artemis module classloader. Static initializers (<clinit>) and no-argument constructors (<init>()) execute as side effects before the type cast, enabling denial of service via system-property poisoning, out-of-memory conditions via classloading, or broker state manipulation.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat amq broker 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10059",
@@ -84308,6 +84341,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": [
+            {
+              "version": "0:3.0.26-20.el9_8",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of apache camel 4 for quarkus 3",
           "versions": null
         },
@@ -84329,11 +84374,6 @@
         {
           "vendor": "red hat",
           "product": "red hat enterprise linux 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 9",
           "versions": null
         },
         {
@@ -87305,6 +87345,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.15",
+          "versions": [
+            {
+              "version": "415.92.202609140326-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.16",
           "versions": [
             {
@@ -87582,7 +87634,7 @@
           "CWE-626"
         ],
         "cpe_count": 8,
-        "reference_count": 60
+        "reference_count": 61
       }
     },
     {
