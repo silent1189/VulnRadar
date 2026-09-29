@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-29T01:56:24+00:00`
+Generated: `2026-09-29T08:26:01+00:00`
 
 ## Executive Summary
 
@@ -20,7 +20,10 @@ Top critical items:
 | [CVE-2025-55182](https://www.cve.org/CVERecord?id=CVE-2025-55182) | 0.998 | 10.0 | 2025-12-12 | A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.… |
 | [CVE-2023-20198](https://www.cve.org/CVERecord?id=CVE-2023-20198) | 0.996 | 10.0 | 2023-10-20 | Cisco is providing an update for the ongoing investigation into observed exploitation of the web UI feature in Cisco IO… |
 | [CVE-2025-31324](https://www.cve.org/CVERecord?id=CVE-2025-31324) | 0.995 | 10.0 | 2025-05-20 | SAP NetWeaver Visual Composer Metadata Uploader is not protected with a proper authorization, allowing unauthenticated … |
+| [CVE-2022-0543](https://www.cve.org/CVERecord?id=CVE-2022-0543) | 0.994 | 10.0 | 2022-04-18 | It was discovered, that redis, a persistent key-value database, due to a packaging issue, is prone to a (Debian-specifi… |
 | [CVE-2023-22515](https://www.cve.org/CVERecord?id=CVE-2023-22515) | 0.992 | 10.0 | 2023-10-13 | Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploite… |
+| [CVE-2022-22947](https://www.cve.org/CVERecord?id=CVE-2022-22947) | 0.983 | 10.0 | 2022-06-06 | In spring cloud gateway versions prior to 3.1.1+ and 3.0.7+ , applications are vulnerable to a code injection attack wh… |
+| [CVE-2022-26134](https://www.cve.org/CVERecord?id=CVE-2022-26134) | 1.000 | 9.8 | 2022-06-06 | In affected versions of Confluence Server and Data Center, an OGNL injection vulnerability exists that would allow an u… |
 | [CVE-2023-1671](https://www.cve.org/CVERecord?id=CVE-2023-1671) | 1.000 | 9.8 | 2023-12-07 | A pre-auth command injection vulnerability in the warn-proceed handler of Sophos Web Appliance older than version 4.3.1… |
 | [CVE-2023-27350](https://www.cve.org/CVERecord?id=CVE-2023-27350) | 1.000 | 9.8 | 2023-05-12 | This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Bu… |
 | [CVE-2024-23897](https://www.cve.org/CVERecord?id=CVE-2024-23897) | 1.000 | 9.8 | 2024-09-09 | Jenkins 2.441 and earlier, LTS 2.426.2 and earlier does not disable a feature of its CLI command parser that replaces a… |
@@ -32,17 +35,14 @@ Top critical items:
 | [CVE-2023-42793](https://www.cve.org/CVERecord?id=CVE-2023-42793) | 1.000 | 9.8 | 2023-10-25 | In JetBrains TeamCity before 2023.05.4 authentication bypass leading to RCE on TeamCity Server was possible |
 | [CVE-2024-4577](https://www.cve.org/CVERecord?id=CVE-2024-4577) | 1.000 | 9.8 | 2024-07-03 | In PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, when using Apache and PHP-CGI on Windows,… |
 | [CVE-2022-40684](https://www.cve.org/CVERecord?id=CVE-2022-40684) | 1.000 | 9.8 | 2022-11-01 | An authentication bypass using an alternate path or channel [CWE-288] in Fortinet FortiOS version 7.2.0 through 7.2.1 a… |
-| [CVE-2023-29357](https://www.cve.org/CVERecord?id=CVE-2023-29357) | 1.000 | 9.8 | 2024-01-31 | Microsoft SharePoint Server Elevation of Privilege Vulnerability |
-| [CVE-2025-59287](https://www.cve.org/CVERecord?id=CVE-2025-59287) | 1.000 | 9.8 | 2025-11-14 | Deserialization of untrusted data in Windows Server Update Service allows an unauthorized attacker to execute code over… |
-| [CVE-2022-47986](https://www.cve.org/CVERecord?id=CVE-2022-47986) | 1.000 | 9.8 | 2023-03-14 | IBM Aspera Faspex 4.4.2 Patch Level 1 and earlier could allow a remote attacker to execute arbitrary code on the system… |
 
 ## Summary
 
-- Total items: **31714**
-- Watchlist hits: **31415**
+- Total items: **33563**
+- Watchlist hits: **33264**
 - CISA KEVs: **812**
-- Exploit Intel (PoC): **998**
-- Exploit Intel + Watchlist (CRITICAL): **699**
+- Exploit Intel (PoC): **1012**
+- Exploit Intel + Watchlist (CRITICAL): **713**
 
 ## Top Findings (max 200)
 
@@ -58,7 +58,10 @@ Top critical items:
 | [CVE-2025-55182](https://www.cve.org/CVERecord?id=CVE-2025-55182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-12 | 0.998 | 10.0 | ✅ | A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following … |
 | [CVE-2023-20198](https://www.cve.org/CVERecord?id=CVE-2023-20198) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-20 | 0.996 | 10.0 | ✅ | Cisco is providing an update for the ongoing investigation into observed exploitation of the web UI feature in Cisco IOS XE Software. We are updating the list … |
 | [CVE-2025-31324](https://www.cve.org/CVERecord?id=CVE-2025-31324) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-20 | 0.995 | 10.0 | ✅ | SAP NetWeaver Visual Composer Metadata Uploader is not protected with a proper authorization, allowing unauthenticated agent to upload potentially malicious ex… |
+| [CVE-2022-0543](https://www.cve.org/CVERecord?id=CVE-2022-0543) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-04-18 | 0.994 | 10.0 | ✅ | It was discovered, that redis, a persistent key-value database, due to a packaging issue, is prone to a (Debian-specific) Lua sandbox escape, which could resul… |
 | [CVE-2023-22515](https://www.cve.org/CVERecord?id=CVE-2023-22515) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-13 | 0.992 | 10.0 | ✅ | Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in … |
+| [CVE-2022-22947](https://www.cve.org/CVERecord?id=CVE-2022-22947) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-06-06 | 0.983 | 10.0 | ✅ | In spring cloud gateway versions prior to 3.1.1+ and 3.0.7+ , applications are vulnerable to a code injection attack when the Gateway Actuator endpoint is enab… |
+| [CVE-2022-26134](https://www.cve.org/CVERecord?id=CVE-2022-26134) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-06-06 | 1.000 | 9.8 | ✅ | In affected versions of Confluence Server and Data Center, an OGNL injection vulnerability exists that would allow an unauthenticated attacker to execute arbit… |
 | [CVE-2023-1671](https://www.cve.org/CVERecord?id=CVE-2023-1671) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-07 | 1.000 | 9.8 | ✅ | A pre-auth command injection vulnerability in the warn-proceed handler of Sophos Web Appliance older than version 4.3.10.4 allows execution of arbitrary code. |
 | [CVE-2023-27350](https://www.cve.org/CVERecord?id=CVE-2023-27350) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-12 | 1.000 | 9.8 | ✅ | This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not requir… |
 | [CVE-2024-23897](https://www.cve.org/CVERecord?id=CVE-2024-23897) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-09-09 | 1.000 | 9.8 | ✅ | Jenkins 2.441 and earlier, LTS 2.426.2 and earlier does not disable a feature of its CLI command parser that replaces an '@' character followed by a file path … |
@@ -75,12 +78,15 @@ Top critical items:
 | [CVE-2022-47986](https://www.cve.org/CVERecord?id=CVE-2022-47986) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-03-14 | 1.000 | 9.8 | ✅ | IBM Aspera Faspex 4.4.2 Patch Level 1 and earlier could allow a remote attacker to execute arbitrary code on the system, caused by a YAML deserialization flaw.… |
 | [CVE-2022-1388](https://www.cve.org/CVERecord?id=CVE-2022-1388) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-05-31 | 1.000 | 9.8 | ✅ | On F5 BIG-IP 16.1.x versions prior to 16.1.2.2, 15.1.x versions prior to 15.1.5.1, 14.1.x versions prior to 14.1.4.6, 13.1.x versions prior to 13.1.5, and all … |
 | [CVE-2023-38035](https://www.cve.org/CVERecord?id=CVE-2023-38035) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-09-12 | 1.000 | 9.8 | ✅ | A security vulnerability in MICS Admin Portal in Ivanti MobileIron Sentry versions 9.18.0 and below, which may allow an attacker to bypass authentication contr… |
+| [CVE-2022-22536](https://www.cve.org/CVERecord?id=CVE-2022-22536) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-08 | 0.979 | 10.0 | ✅ | SAP NetWeaver Application Server ABAP, SAP NetWeaver Application Server Java, ABAP Platform, SAP Content Server 7.53 and SAP Web Dispatcher are vulnerable for … |
+| [CVE-2022-22963](https://www.cve.org/CVERecord?id=CVE-2022-22963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.999 | 9.8 | ✅ | In Spring Cloud Function versions 3.1.6, 3.2.2 and older unsupported versions, when using routing functionality it is possible for a user to provide a speciall… |
 | [CVE-2024-27198](https://www.cve.org/CVERecord?id=CVE-2024-27198) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-28 | 0.999 | 9.8 | ✅ | In JetBrains TeamCity before 2023.11.4 authentication bypass allowing to perform admin actions was possible |
 | [CVE-2025-24813](https://www.cve.org/CVERecord?id=CVE-2025-24813) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-04-22 | 0.999 | 9.8 | ✅ | Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files vi… |
 | [CVE-2024-32113](https://www.cve.org/CVERecord?id=CVE-2024-32113) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-28 | 0.999 | 9.8 | ✅ | Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache OFBiz.This issue affects Apache OFBiz: before 18.12.13. … |
 | [CVE-2022-1040](https://www.cve.org/CVERecord?id=CVE-2022-1040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-04-21 | 0.998 | 9.8 | ✅ | An authentication bypass vulnerability in the User Portal and Webadmin allows a remote attacker to execute code in Sophos Firewall version v18.5 MR3 and older. |
 | [CVE-2023-3519](https://www.cve.org/CVERecord?id=CVE-2023-3519) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-09 | 0.997 | 9.8 | ✅ | Unauthenticated remote code execution |
 | [CVE-2025-61882](https://www.cve.org/CVERecord?id=CVE-2025-61882) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-10-27 | 0.997 | 9.8 | ✅ | Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: BI Publisher Integration).  Supported versions that are affect… |
+| [CVE-2022-22965](https://www.cve.org/CVERecord?id=CVE-2022-22965) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-04-25 | 0.996 | 9.8 | ✅ | A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires t… |
 | [CVE-2025-20281](https://www.cve.org/CVERecord?id=CVE-2025-20281) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-08-18 | 0.976 | 10.0 | ✅ | A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying op… |
 | [CVE-2023-34048](https://www.cve.org/CVERecord?id=CVE-2023-34048) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-12 | 0.994 | 9.8 | ✅ | vCenter Server contains an out-of-bounds write vulnerability in the implementation of the DCERPC protocol. A malicious actor with network access to vCenter Ser… |
 | [CVE-2024-38856](https://www.cve.org/CVERecord?id=CVE-2024-38856) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-09-17 | 0.994 | 9.8 | ✅ | Incorrect Authorization vulnerability in Apache OFBiz.  This issue affects Apache OFBiz: through 18.12.14.  Users are recommended to upgrade to version 18.12.1… |
@@ -91,6 +97,7 @@ Top critical items:
 | [CVE-2026-1281](https://www.cve.org/CVERecord?id=CVE-2026-1281) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-02-01 | 0.987 | 9.8 | ✅ | A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution. |
 | [CVE-2026-1340](https://www.cve.org/CVERecord?id=CVE-2026-1340) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-11 | 0.986 | 9.8 | ✅ | A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution. |
 | [CVE-2022-21587](https://www.cve.org/CVERecord?id=CVE-2022-21587) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-02-23 | 0.983 | 9.8 | ✅ | Vulnerability in the Oracle Web Applications Desktop Integrator product of Oracle E-Business Suite (component: Upload). Supported versions that are affected ar… |
+| [CVE-2022-26138](https://www.cve.org/CVERecord?id=CVE-2022-26138) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-08-19 | 0.982 | 9.8 | ✅ | The Atlassian Questions For Confluence app for Confluence Server and Data Center creates a Confluence user account in the confluence-users group with the usern… |
 | [CVE-2024-3272](https://www.cve.org/CVERecord?id=CVE-2024-3272) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-02 | 0.980 | 9.8 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as very critical, has been found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to… |
 | [CVE-2024-29824](https://www.cve.org/CVERecord?id=CVE-2024-29824) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-23 | 0.999 | 9.6 | ✅ | An unspecified SQL Injection vulnerability in Core server of Ivanti EPM 2022 SU5 and prior allows an unauthenticated attacker within the same network to execut… |
 | [CVE-2025-25257](https://www.cve.org/CVERecord?id=CVE-2025-25257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-08-08 | 0.998 | 9.6 | ✅ | An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] vulnerability in Fortinet FortiWeb 7.6.0 through… |
@@ -104,6 +111,7 @@ Top critical items:
 | [CVE-2023-7028](https://www.cve.org/CVERecord?id=CVE-2023-7028) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-22 | 0.946 | 10.0 | ✅ | An issue has been discovered in GitLab CE/EE affecting all versions from 16.1 prior to 16.1.6, 16.2 prior to 16.2.9, 16.3 prior to 16.3.7, 16.4 prior to 16.4.5… |
 | [CVE-2023-33246](https://www.cve.org/CVERecord?id=CVE-2023-33246) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-09-27 | 0.966 | 9.8 | ✅ | For RocketMQ versions 5.1.0 and below, under certain conditions, there is a risk of remote command execution.   Several components of RocketMQ, including NameS… |
 | [CVE-2023-46747](https://www.cve.org/CVERecord?id=CVE-2023-46747) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-11-21 | 0.965 | 9.8 | ✅ | Undisclosed requests may bypass configuration utility authentication, allowing an attacker with network access to the BIG-IP system through the management port… |
+| [CVE-2022-24112](https://www.cve.org/CVERecord?id=CVE-2022-24112) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.961 | 9.8 | ✅ | An attacker can abuse the batch-requests plugin to send requests to bypass the IP restriction of Admin API. A default configuration of Apache APISIX (with defa… |
 | [CVE-2023-4966](https://www.cve.org/CVERecord?id=CVE-2023-4966) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-11-08 | 1.000 | 9.4 | ✅ | Sensitive information disclosure in NetScaler ADC and NetScaler Gateway when configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) or AAA  v… |
 | [CVE-2024-53704](https://www.cve.org/CVERecord?id=CVE-2024-53704) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.951 | 9.8 | ✅ | An Improper Authentication vulnerability in the SSLVPN authentication mechanism allows a remote attacker to bypass authentication. |
 | [CVE-2024-4879](https://www.cve.org/CVERecord?id=CVE-2024-4879) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 1.000 | 9.3 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in Vancouver and Washington DC Now Platform releases. This vulnerability could e… |
@@ -122,6 +130,7 @@ Top critical items:
 | [CVE-2024-21887](https://www.cve.org/CVERecord?id=CVE-2024-21887) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 9.1 | ✅ | A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administ… |
 | [CVE-2024-38475](https://www.cve.org/CVERecord?id=CVE-2024-38475) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 1.000 | 9.1 | ✅ | Improper escaping of output in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows an attacker to map URLs to filesystem locations that are permitted t… |
 | [CVE-2023-40044](https://www.cve.org/CVERecord?id=CVE-2023-40044) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-26 | 0.906 | 10.0 | ✅ | In WS_FTP Server versions prior to 8.7.4 and 8.8.2, a pre-authenticated attacker could leverage a .NET deserialization vulnerability in the Ad Hoc Transfer mod… |
+| [CVE-2022-24706](https://www.cve.org/CVERecord?id=CVE-2022-24706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.925 | 9.8 | ✅ | In Apache CouchDB prior to 3.2.2, an attacker can access an improperly secured default installation without authenticating and gain admin privileges. The Couch… |
 | [CVE-2024-55591](https://www.cve.org/CVERecord?id=CVE-2024-55591) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-01-21 | 0.941 | 9.6 | ✅ | An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS version 7.0.0 through 7.0.16 and FortiProxy version 7.0.0… |
 | [CVE-2025-22457](https://www.cve.org/CVERecord?id=CVE-2025-22457) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-04-11 | 1.000 | 9.0 | ✅ | A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4, and Ivanti ZTA Gateways before ve… |
 | [CVE-2025-0282](https://www.cve.org/CVERecord?id=CVE-2025-0282) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-01-15 | 1.000 | 9.0 | ✅ | A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gatewa… |
@@ -134,6 +143,7 @@ Top critical items:
 | [CVE-2023-4863](https://www.cve.org/CVERecord?id=CVE-2023-4863) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-04 | 1.000 | 8.8 | ✅ | Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write v… |
 | [CVE-2022-41040](https://www.cve.org/CVERecord?id=CVE-2022-41040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.8 | ✅ | Microsoft Exchange Server Elevation of Privilege Vulnerability |
 | [CVE-2026-63077](https://www.cve.org/CVERecord?id=CVE-2026-63077) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-08 | 0.896 | 9.8 | ✅ | In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol |
+| [CVE-2022-36804](https://www.cve.org/CVERecord?id=CVE-2022-36804) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 0.992 | 8.8 | ✅ | Multiple API endpoints in Atlassian Bitbucket Server and Data Center 7.0.0 before version 7.6.17, from version 7.7.0 before version 7.17.10, from version 7.18.… |
 | [CVE-2025-61757](https://www.cve.org/CVERecord?id=CVE-2025-61757) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-12 | 0.886 | 9.8 | ✅ | Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 a… |
 | [CVE-2025-0108](https://www.cve.org/CVERecord?id=CVE-2025-0108) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.985 | 8.8 | ✅ | An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to b… |
 | [CVE-2023-27524](https://www.cve.org/CVERecord?id=CVE-2023-27524) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-29 | 0.974 | 8.9 | ✅ | Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY accordi… |
@@ -146,6 +156,7 @@ Top critical items:
 | [CVE-2023-26360](https://www.cve.org/CVERecord?id=CVE-2023-26360) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-04-05 | 0.973 | 8.6 | ✅ | Adobe ColdFusion versions 2018 Update 15 (and earlier) and 2021 Update 5 (and earlier) are affected by an Improper Access Control vulnerability that could resu… |
 | [CVE-2024-21893](https://www.cve.org/CVERecord?id=CVE-2024-21893) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-02 | 1.000 | 8.2 | ✅ | A server-side request forgery vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) and Ivanti Neurons … |
 | [CVE-2023-46805](https://www.cve.org/CVERecord?id=CVE-2023-46805) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 8.2 | ✅ | An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted reso… |
+| [CVE-2022-33891](https://www.cve.org/CVERecord?id=CVE-2022-33891) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-03-28 | 0.931 | 8.8 | ✅ | The Apache Spark UI offers the possibility to enable ACLs via the configuration option spark.acls.enable. With an authentication filter, this checks whether a … |
 | [CVE-2024-21412](https://www.cve.org/CVERecord?id=CVE-2024-21412) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-05 | 0.994 | 8.1 | ✅ | Internet Shortcut Files Security Feature Bypass Vulnerability |
 | [CVE-2022-41082](https://www.cve.org/CVERecord?id=CVE-2022-41082) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.0 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2026-24858](https://www.cve.org/CVERecord?id=CVE-2026-24858) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-30 | 0.858 | 9.4 | ✅ | An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.5, FortiAnalyzer … |
@@ -174,6 +185,7 @@ Top critical items:
 | [CVE-2026-16232](https://www.cve.org/CVERecord?id=CVE-2026-16232) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-25 | 0.780 | 9.3 | ✅ | An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login t… |
 | [CVE-2026-21962](https://www.cve.org/CVERecord?id=CVE-2026-21962) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-27 | 0.709 | 10.0 | ✅ | Vulnerability in the Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: Weblogic Server Proxy Plug-in for… |
 | [CVE-2025-61884](https://www.cve.org/CVERecord?id=CVE-2025-61884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-10 | 0.959 | 7.5 | ✅ | Vulnerability in the Oracle Configurator product of Oracle E-Business Suite (component: Runtime UI).  Supported versions that are affected are 12.2.3-12.2.14. … |
+| [CVE-2022-0847](https://www.cve.org/CVERecord?id=CVE-2022-0847) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-05-16 | 0.928 | 7.8 | ✅ | A flaw was found in the way the "flags" member of the new pipe buffer structure was lacking proper initialization in copy_page_to_iter_pipe and push_pipe funct… |
 | [CVE-2025-33073](https://www.cve.org/CVERecord?id=CVE-2025-33073) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-10 | 0.827 | 8.8 | ✅ | Improper access control in Windows SMB allows an authorized attacker to elevate privileges over a network. |
 | [CVE-2025-14847](https://www.cve.org/CVERecord?id=CVE-2025-14847) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-19 | 0.832 | 8.7 | ✅ | Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all… |
 | [CVE-2025-20333](https://www.cve.org/CVERecord?id=CVE-2025-20333) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-26 | 0.707 | 9.9 | ✅ | A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Softwa… |
@@ -191,6 +203,7 @@ Top critical items:
 | [CVE-2025-59718](https://www.cve.org/CVERecord?id=CVE-2025-59718) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-23 | 0.683 | 9.1 | ✅ | A improper verification of cryptographic signature vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.… |
 | [CVE-2024-38112](https://www.cve.org/CVERecord?id=CVE-2024-38112) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-07-30 | 0.842 | 7.5 | ✅ | Windows MSHTML Platform Spoofing Vulnerability |
 | [CVE-2025-4428](https://www.cve.org/CVERecord?id=CVE-2025-4428) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-06-09 | 0.865 | 7.2 | ✅ | Remote Code Execution in API component in Ivanti Endpoint Manager Mobile 12.5.0.0 and prior on unspecified platforms allows authenticated attackers to execute … |
+| [CVE-2022-2294](https://www.cve.org/CVERecord?id=CVE-2022-2294) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.705 | 8.8 | ✅ | Heap buffer overflow in WebRTC in Google Chrome prior to 103.0.5060.114 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. |
 | [CVE-2023-24955](https://www.cve.org/CVERecord?id=CVE-2023-24955) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-04-16 | 0.854 | 7.2 | ✅ | Microsoft SharePoint Server Remote Code Execution Vulnerability |
 | [CVE-2024-20353](https://www.cve.org/CVERecord?id=CVE-2024-20353) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-01 | 0.707 | 8.6 | ✅ | A vulnerability in the management and VPN web servers for Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software co… |
 | [CVE-2023-47565](https://www.cve.org/CVERecord?id=CVE-2023-47565) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-11 | 0.733 | 8.0 | ✅ | An OS command injection vulnerability has been found to affect legacy QNAP VioStor NVR models running QVR Firmware 4.x. If exploited, the vulnerability could a… |
@@ -231,28 +244,47 @@ Top critical items:
 | [CVE-2022-21882](https://www.cve.org/CVERecord?id=CVE-2022-21882) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-02-18 | 0.592 | 7.0 | ✅ | Win32k Elevation of Privilege Vulnerability |
 | [CVE-2023-21674](https://www.cve.org/CVERecord?id=CVE-2023-21674) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-01-31 | 0.410 | 8.8 | ✅ | Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability |
 | [CVE-2023-2033](https://www.cve.org/CVERecord?id=CVE-2023-2033) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-08 | 0.408 | 8.8 | ✅ | Type confusion in V8 in Google Chrome prior to 112.0.5615.121 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromi… |
+| [CVE-2022-4135](https://www.cve.org/CVERecord?id=CVE-2022-4135) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-12-19 | 0.319 | 9.6 | ✅ | Heap buffer overflow in GPU in Google Chrome prior to 107.0.5304.121 allowed a remote attacker who had compromised the renderer process to potentially perform … |
 | [CVE-2026-20963](https://www.cve.org/CVERecord?id=CVE-2026-20963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-21 | 0.296 | 9.8 | ✅ | Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network. |
 | [CVE-2023-28252](https://www.cve.org/CVERecord?id=CVE-2023-28252) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-02 | 0.490 | 7.8 | ✅ | Windows Common Log File System Driver Elevation of Privilege Vulnerability |
 | [CVE-2026-9198](https://www.cve.org/CVERecord?id=CVE-2026-9198) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-07 | 0.287 | 9.8 | ✅ | IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER tokens to any network caller) with /api/v1/… |
-| [CVE-2026-76461](https://www.cve.org/CVERecord?id=CVE-2026-76461) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-17 | 0.283 | 9.8 | ✅ | A vulnerability in the email parsing of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to execute arbitr… |
-| [CVE-2025-32756](https://www.cve.org/CVERecord?id=CVE-2025-32756) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-06-04 | 0.298 | 9.6 | ✅ | A stack-based buffer overflow vulnerability [CWE-121] vulnerability in Fortinet FortiCamera 2.1.0 through 2.1.3, FortiCamera 2.0 all versions, FortiCamera 1.1 … |
-| [CVE-2026-0300](https://www.cve.org/CVERecord?id=CVE-2026-0300) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-09 | 0.317 | 9.3 | ✅ | A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthentica… |
-| [CVE-2025-24054](https://www.cve.org/CVERecord?id=CVE-2025-24054) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-08 | 0.589 | 6.5 | ✅ | External control of file name or path in Windows NTLM allows an unauthorized attacker to perform spoofing over a network. |
-| [CVE-2024-38094](https://www.cve.org/CVERecord?id=CVE-2024-38094) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-11-12 | 0.509 | 7.2 | ✅ | Microsoft SharePoint Remote Code Execution Vulnerability |
-| [CVE-2025-58034](https://www.cve.org/CVERecord?id=CVE-2025-58034) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-25 | 0.556 | 6.7 | ✅ | An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] vulnerability in Fortinet FortiWeb 8.0.0 t… |
-| [CVE-2023-24880](https://www.cve.org/CVERecord?id=CVE-2023-24880) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-04-04 | 0.780 | 4.4 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
-| [CVE-2025-23006](https://www.cve.org/CVERecord?id=CVE-2025-23006) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-14 | 0.234 | 9.8 | ✅ | Pre-authentication deserialization of untrusted data vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) and Central Management… |
-| [CVE-2024-9680](https://www.cve.org/CVERecord?id=CVE-2024-9680) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-11-05 | 0.232 | 9.8 | ✅ | An attacker was able to achieve code execution in the content process by exploiting a use-after-free in Animation timelines. We have had reports of this vulner… |
-| [CVE-2023-36874](https://www.cve.org/CVERecord?id=CVE-2023-36874) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-01 | 0.426 | 7.8 | ✅ | Windows Error Reporting Service Elevation of Privilege Vulnerability |
-| [CVE-2023-3079](https://www.cve.org/CVERecord?id=CVE-2023-3079) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-06-28 | 0.321 | 8.8 | ✅ | Type confusion in V8 in Google Chrome prior to 114.0.5735.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromi… |
-| [CVE-2025-9377](https://www.cve.org/CVERecord?id=CVE-2025-9377) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-24 | 0.335 | 8.6 | ✅ | The authenticated remote command execution (RCE) vulnerability exists  in the Parental Control page on TP-Link Archer C7(EU) V2 and TL-WR841N/ND(MS) V9.  This … |
-| [CVE-2025-14733](https://www.cve.org/CVERecord?id=CVE-2025-14733) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-26 | 0.265 | 9.3 | ✅ | An Out-of-bounds Write vulnerability in the WatchGuard Fireware OS iked process may allow a remote unauthenticated attacker to execute arbitrary code. This vul… |
-| [CVE-2023-20118](https://www.cve.org/CVERecord?id=CVE-2023-20118) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-24 | 0.541 | 6.5 | ✅ | A vulnerability in the web-based management interface of Cisco Small Business Routers RV016, RV042, RV042G, RV082, RV320, and RV325 Routers could allow an auth… |
 
 ## Recent Changes (Last 7 Days)
 
 | Date | CVE | Status |
 |------|-----|--------|
+| Sep 29 | [CVE-2026-19759](https://www.cve.org/CVERecord?id=CVE-2026-19759) | 🆕 New |
+| Sep 29 | [CVE-2026-81375](https://www.cve.org/CVERecord?id=CVE-2026-81375) | 🆕 New |
+| Sep 29 | [CVE-2026-81867](https://www.cve.org/CVERecord?id=CVE-2026-81867) | 🆕 New |
+| Sep 29 | [CVE-2026-101898](https://www.cve.org/CVERecord?id=CVE-2026-101898) | 🆕 New |
+| Sep 29 | [CVE-2026-101901](https://www.cve.org/CVERecord?id=CVE-2026-101901) | 🆕 New |
+| Sep 29 | [CVE-2026-101903](https://www.cve.org/CVERecord?id=CVE-2026-101903) | 🆕 New |
+| Sep 29 | [CVE-2026-101905](https://www.cve.org/CVERecord?id=CVE-2026-101905) | 🆕 New |
+| Sep 29 | [CVE-2026-101906](https://www.cve.org/CVERecord?id=CVE-2026-101906) | 🆕 New |
+| Sep 29 | [CVE-2026-101907](https://www.cve.org/CVERecord?id=CVE-2026-101907) | 🆕 New |
+| Sep 29 | [CVE-2026-101909](https://www.cve.org/CVERecord?id=CVE-2026-101909) | 🆕 New |
+| Sep 29 | [CVE-2026-102334](https://www.cve.org/CVERecord?id=CVE-2026-102334) | 🆕 New |
+| Sep 29 | [CVE-2026-102335](https://www.cve.org/CVERecord?id=CVE-2026-102335) | 🆕 New |
+| Sep 29 | [CVE-2026-82348](https://www.cve.org/CVERecord?id=CVE-2026-82348) | 🆕 New |
+| Sep 29 | [CVE-2026-82375](https://www.cve.org/CVERecord?id=CVE-2026-82375) | 🆕 New |
+| Sep 29 | [CVE-2026-82376](https://www.cve.org/CVERecord?id=CVE-2026-82376) | 🆕 New |
+| Sep 29 | [CVE-2026-82377](https://www.cve.org/CVERecord?id=CVE-2026-82377) | 🆕 New |
+| Sep 29 | [CVE-2026-82378](https://www.cve.org/CVERecord?id=CVE-2026-82378) | 🆕 New |
+| Sep 29 | [CVE-2026-82379](https://www.cve.org/CVERecord?id=CVE-2026-82379) | 🆕 New |
+| Sep 29 | [CVE-2026-82380](https://www.cve.org/CVERecord?id=CVE-2026-82380) | 🆕 New |
+| Sep 29 | [CVE-2026-82383](https://www.cve.org/CVERecord?id=CVE-2026-82383) | 🆕 New |
+| Sep 29 | [CVE-2026-82384](https://www.cve.org/CVERecord?id=CVE-2026-82384) | 🆕 New |
+| Sep 29 | [CVE-2026-82386](https://www.cve.org/CVERecord?id=CVE-2026-82386) | 🆕 New |
+| Sep 29 | [CVE-2026-101081](https://www.cve.org/CVERecord?id=CVE-2026-101081) | 🆕 New |
+| Sep 29 | [CVE-2026-101292](https://www.cve.org/CVERecord?id=CVE-2026-101292) | 🆕 New |
+| Sep 29 | [CVE-2026-101891](https://www.cve.org/CVERecord?id=CVE-2026-101891) | 🆕 New |
+| Sep 29 | [CVE-2026-86102](https://www.cve.org/CVERecord?id=CVE-2026-86102) | 🆕 New |
+| Sep 29 | [CVE-2026-87969](https://www.cve.org/CVERecord?id=CVE-2026-87969) | 🆕 New |
+| Sep 29 | [CVE-2026-12264](https://www.cve.org/CVERecord?id=CVE-2026-12264) | 🆕 New |
+| Sep 29 | [CVE-2026-12265](https://www.cve.org/CVERecord?id=CVE-2026-12265) | 🆕 New |
+| Sep 29 | [CVE-2026-12267](https://www.cve.org/CVERecord?id=CVE-2026-12267) | 🆕 New |
+| Sep 29 | [CVE-2026-12268](https://www.cve.org/CVERecord?id=CVE-2026-12268) | 🆕 New |
+| Sep 29 | [CVE-2026-12269](https://www.cve.org/CVERecord?id=CVE-2026-12269) | 🆕 New |
 | Sep 28 | [CVE-2026-100741](https://www.cve.org/CVERecord?id=CVE-2026-100741) | 🆕 New |
 | Sep 28 | [CVE-2026-88771](https://www.cve.org/CVERecord?id=CVE-2026-88771) | 🔴 In CISA KEV |
 | Sep 28 | [CVE-2026-88772](https://www.cve.org/CVERecord?id=CVE-2026-88772) | 🔴 In CISA KEV |
@@ -271,36 +303,4 @@ Top critical items:
 | Sep 27 | [CVE-2026-100582](https://www.cve.org/CVERecord?id=CVE-2026-100582) | 🆕 New |
 | Sep 27 | [CVE-2026-100680](https://www.cve.org/CVERecord?id=CVE-2026-100680) | 🆕 New |
 | Sep 27 | [CVE-2026-100682](https://www.cve.org/CVERecord?id=CVE-2026-100682) | 🆕 New |
-| Sep 27 | [CVE-2026-100683](https://www.cve.org/CVERecord?id=CVE-2026-100683) | 🆕 New |
-| Sep 27 | [CVE-2026-100684](https://www.cve.org/CVERecord?id=CVE-2026-100684) | 🆕 New |
-| Sep 27 | [CVE-2026-100685](https://www.cve.org/CVERecord?id=CVE-2026-100685) | 🆕 New |
-| Sep 27 | [CVE-2026-100686](https://www.cve.org/CVERecord?id=CVE-2026-100686) | 🆕 New |
-| Sep 27 | [CVE-2026-100687](https://www.cve.org/CVERecord?id=CVE-2026-100687) | 🆕 New |
-| Sep 27 | [CVE-2026-100688](https://www.cve.org/CVERecord?id=CVE-2026-100688) | 🆕 New |
-| Sep 27 | [CVE-2026-94130](https://www.cve.org/CVERecord?id=CVE-2026-94130) | 🆕 New |
-| Sep 27 | [CVE-2026-92550](https://www.cve.org/CVERecord?id=CVE-2026-92550) | 🆕 New |
-| Sep 27 | [CVE-2026-92560](https://www.cve.org/CVERecord?id=CVE-2026-92560) | 🆕 New |
-| Sep 27 | [CVE-2026-92608](https://www.cve.org/CVERecord?id=CVE-2026-92608) | 🆕 New |
-| Sep 27 | [CVE-2026-92609](https://www.cve.org/CVERecord?id=CVE-2026-92609) | 🆕 New |
-| Sep 27 | [CVE-2026-100740](https://www.cve.org/CVERecord?id=CVE-2026-100740) | 🆕 New |
-| Sep 27 | [CVE-2026-72668](https://www.cve.org/CVERecord?id=CVE-2026-72668) | 🆕 New |
-| Sep 26 | [CVE-2026-91765](https://www.cve.org/CVERecord?id=CVE-2026-91765) | 🆕 New |
-| Sep 26 | [CVE-2026-97818](https://www.cve.org/CVERecord?id=CVE-2026-97818) | 🆕 New |
-| Sep 26 | [CVE-2026-97060](https://www.cve.org/CVERecord?id=CVE-2026-97060) | 🆕 New |
-| Sep 26 | [CVE-2026-97063](https://www.cve.org/CVERecord?id=CVE-2026-97063) | 🆕 New |
-| Sep 26 | [CVE-2026-97064](https://www.cve.org/CVERecord?id=CVE-2026-97064) | 🆕 New |
-| Sep 26 | [CVE-2026-96812](https://www.cve.org/CVERecord?id=CVE-2026-96812) | 🆕 New |
-| Sep 26 | [CVE-2026-84862](https://www.cve.org/CVERecord?id=CVE-2026-84862) | 🆕 New |
-| Sep 26 | [CVE-2026-84882](https://www.cve.org/CVERecord?id=CVE-2026-84882) | 🆕 New |
-| Sep 26 | [CVE-2026-84884](https://www.cve.org/CVERecord?id=CVE-2026-84884) | 🆕 New |
-| Sep 26 | [CVE-2026-84893](https://www.cve.org/CVERecord?id=CVE-2026-84893) | 🆕 New |
-| Sep 26 | [CVE-2026-85029](https://www.cve.org/CVERecord?id=CVE-2026-85029) | 🆕 New |
-| Sep 26 | [CVE-2026-85542](https://www.cve.org/CVERecord?id=CVE-2026-85542) | 🆕 New |
-| Sep 26 | [CVE-2026-93306](https://www.cve.org/CVERecord?id=CVE-2026-93306) | 🆕 New |
-| Sep 26 | [CVE-2026-100075](https://www.cve.org/CVERecord?id=CVE-2026-100075) | 🆕 New |
-| Sep 26 | [CVE-2026-97523](https://www.cve.org/CVERecord?id=CVE-2026-97523) | 🆕 New |
-| Sep 26 | [CVE-2026-97524](https://www.cve.org/CVERecord?id=CVE-2026-97524) | 🆕 New |
-| Sep 26 | [CVE-2026-97525](https://www.cve.org/CVERecord?id=CVE-2026-97525) | 🆕 New |
-| Sep 26 | [CVE-2026-97527](https://www.cve.org/CVERecord?id=CVE-2026-97527) | 🆕 New |
-| Sep 26 | [CVE-2026-97528](https://www.cve.org/CVERecord?id=CVE-2026-97528) | 🆕 New |
-| ... | | _and 375 more_ |
+| ... | | _and 397 more_ |

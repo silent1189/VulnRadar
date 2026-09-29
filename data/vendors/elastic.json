@@ -1,8 +1,213 @@
 {
-  "generated_at": "2026-09-29T01:56:22+00:00",
+  "generated_at": "2026-09-29T08:25:57+00:00",
   "vendor": "elastic",
-  "count": 57,
+  "count": 62,
   "items": [
+    {
+      "cve_id": "CVE-2022-23712",
+      "description": "A Denial of Service flaw was discovered in Elasticsearch. Using this vulnerability, an unauthenticated attacker could forcibly shut down an Elasticsearch node with a specifically formatted network request.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "versions 8.0.0 through 8.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.07374,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 5.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-754"
+        ],
+        "cpe_count": 1,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23714",
+      "description": "A local privilege escalation (LPE) issue was discovered in the ransomware canaries features of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "endpoint security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "Versions 7.13.0 through 7.17.4 and 8.0.0 through 8.2.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:endpoint security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00231,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 7.2,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-264"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38774",
+      "description": "An issue was discovered in the quarantine feature of Elastic Endpoint Security and Elastic Endgame for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic endpoint security and elastic endgame security",
+          "versions": [
+            {
+              "version": "Elastic Security versions up to 7.17.6 and 8.3.3 and Elastic Endgame versions up to 3.62.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic endpoint security and elastic endgame security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00243,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38775",
+      "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic endpoint security",
+          "versions": [
+            {
+              "version": "Version 8.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic endpoint security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-38777",
+      "description": "An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic endpoint security",
+          "versions": [
+            {
+              "version": "Elastic Security versions up to 7.17.8 and 8.4.3 and Elastic Endgame versions up to 3.62.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic endpoint security",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
     {
       "cve_id": "CVE-2023-31414",
       "description": "Kibana versions 8.0.0 through 8.7.0 contain an arbitrary code execution flaw. An attacker with write access to Kibana yaml or env configuration could add a specific payload that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.",

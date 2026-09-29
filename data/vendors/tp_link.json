@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T01:56:22+00:00",
+  "generated_at": "2026-09-29T08:25:57+00:00",
   "vendor": "tp_link",
-  "count": 63,
+  "count": 65,
   "items": [
     {
       "cve_id": "CVE-2022-0162",
@@ -31,7 +31,18 @@
         "vendor:tp-link"
       ],
       "active_threat": false,
-      "probability_score": 0.0067
+      "probability_score": 0.0067,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 7.5,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-319"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2022-24352",
@@ -61,7 +72,18 @@
         "vendor:tp-link"
       ],
       "active_threat": false,
-      "probability_score": 0.00739
+      "probability_score": 0.00739,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2022-24353",
@@ -91,7 +113,18 @@
         "vendor:tp-link"
       ],
       "active_threat": false,
-      "probability_score": 0.00739
+      "probability_score": 0.00739,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2022-24354",
@@ -121,7 +154,18 @@
         "vendor:tp-link"
       ],
       "active_threat": false,
-      "probability_score": 0.01788
+      "probability_score": 0.01788,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 8.3,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2022-24355",
@@ -151,7 +195,19 @@
         "vendor:tp-link"
       ],
       "active_threat": false,
-      "probability_score": 0.02058
+      "probability_score": 0.02058,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 8.3,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-787"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2022-43636",
@@ -181,7 +237,122 @@
         "vendor:tp-link"
       ],
       "active_threat": false,
-      "probability_score": 0.00905
+      "probability_score": 0.00905,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-330"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-4498",
+      "description": "In TP-Link routers, Archer C5 and WR710N-V1, running the latest available code, when receiving HTTP Basic Authentication the httpd service can be sent a crafted packet that causes a heap overflow. This can result in either a DoS (by crashing the httpd process) or an arbitrary code execution.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "tp-link",
+          "product": "wr710n",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "V1-151022"
+            }
+          ]
+        },
+        {
+          "vendor": "tp-link",
+          "product": "archer c5",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "V2_160221_US"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:archer c5",
+        "product:wr710n",
+        "vendor:tp-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01781,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 4,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2022-4499",
+      "description": "TP-Link routers, Archer C5 and WR710N-V1, using the latest software, the strcmp function used for checking credentials in httpd, is susceptible to a side-channel attack. By measuring the response time of the httpd process, an attacker could guess each byte of the username and password.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "tp-link",
+          "product": "wr710n",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "V1-151022"
+            }
+          ]
+        },
+        {
+          "vendor": "tp-link",
+          "product": "archer c5",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "V2_160221_US"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:archer c5",
+        "product:wr710n",
+        "vendor:tp-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00709,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-203"
+        ],
+        "cpe_count": 4,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2023-22303",
