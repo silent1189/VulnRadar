@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-09-29T08:26:01+00:00`
+Generated: `2026-09-29T15:47:34+00:00`
 
 ## Executive Summary
 
@@ -38,9 +38,9 @@ Top critical items:
 
 ## Summary
 
-- Total items: **33563**
-- Watchlist hits: **33264**
-- CISA KEVs: **812**
+- Total items: **33564**
+- Watchlist hits: **33265**
+- CISA KEVs: **813**
 - Exploit Intel (PoC): **1012**
 - Exploit Intel + Watchlist (CRITICAL): **713**
 
@@ -173,8 +173,8 @@ Top critical items:
 | [CVE-2023-38205](https://www.cve.org/CVERecord?id=CVE-2023-38205) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-10 | 0.997 | 7.5 | ✅ | Adobe ColdFusion versions 2018u18 (and earlier), 2021u8 (and earlier) and 2023u2 (and earlier) are affected by an Improper Access Control vulnerability that co… |
 | [CVE-2026-0257](https://www.cve.org/CVERecord?id=CVE-2026-0257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-01 | 0.964 | 7.8 | ✅ | Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security res… |
 | [CVE-2026-20230](https://www.cve.org/CVERecord?id=CVE-2026-20230) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-28 | 0.882 | 8.6 | ✅ | A vulnerability in Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could… |
+| [CVE-2026-1603](https://www.cve.org/CVERecord?id=CVE-2026-1603) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-23 | 0.879 | 8.6 | ✅ | An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data. |
 | [CVE-2023-36884](https://www.cve.org/CVERecord?id=CVE-2023-36884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-29 | 0.989 | 7.5 | ✅ | Windows Search Remote Code Execution Vulnerability |
-| [CVE-2026-1603](https://www.cve.org/CVERecord?id=CVE-2026-1603) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-23 | 0.876 | 8.6 | ✅ | An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data. |
 | [CVE-2024-29059](https://www.cve.org/CVERecord?id=CVE-2024-29059) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-25 | 0.986 | 7.5 | ✅ | .NET Framework Information Disclosure Vulnerability |
 | [CVE-2026-8037](https://www.cve.org/CVERecord?id=CVE-2026-8037) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-10 | 0.774 | 9.6 | ✅ | OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an un-authenticated attacker to execute arbitrary commands on t… |
 | [CVE-2024-3273](https://www.cve.org/CVERecord?id=CVE-2024-3273) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-02 | 1.000 | 7.3 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as critical, was found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to 20240403.… |
@@ -303,4 +303,4 @@ Top critical items:
 | Sep 27 | [CVE-2026-100582](https://www.cve.org/CVERecord?id=CVE-2026-100582) | 🆕 New |
 | Sep 27 | [CVE-2026-100680](https://www.cve.org/CVERecord?id=CVE-2026-100680) | 🆕 New |
 | Sep 27 | [CVE-2026-100682](https://www.cve.org/CVERecord?id=CVE-2026-100682) | 🆕 New |
-| ... | | _and 397 more_ |
+| ... | | _and 371 more_ |
