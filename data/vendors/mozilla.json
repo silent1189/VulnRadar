@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:28:54+00:00",
+  "generated_at": "2026-09-30T06:55:33+00:00",
   "vendor": "mozilla",
   "count": 781,
   "items": [
@@ -48113,7 +48113,7 @@
     },
     {
       "cve_id": "CVE-2026-92035",
-      "description": "Sandbox escape due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, and Thunderbird 153.3.",
+      "description": "Sandbox escape due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, Thunderbird 153.3, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -48122,6 +48122,18 @@
           "vendor": "mozilla",
           "product": "firefox",
           "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
             {
               "status": "unaffected",
               "version": "153.3",

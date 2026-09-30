@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T00:28:54+00:00",
+  "generated_at": "2026-09-30T06:55:33+00:00",
   "vendor": "gitlab",
-  "count": 193,
+  "count": 194,
   "items": [
     {
       "cve_id": "CVE-2022-0154",
@@ -5953,7 +5953,7 @@
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 3
       }
     },
@@ -7818,7 +7818,7 @@
         "cwe_ids": [
           "CWE-863"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 2
       }
     },
@@ -8674,7 +8674,7 @@
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 3
       }
     },
@@ -9652,14 +9652,14 @@
       "active_threat": false,
       "probability_score": 0.0027,
       "nvd": {
-        "cvss_v3_score": 8.2,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 3
       }
     },
@@ -9714,7 +9714,7 @@
         "cwe_ids": [
           "CWE-863"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 3
       }
     },
@@ -9884,6 +9884,50 @@
       }
     },
     {
+      "cve_id": "CVE-2026-84739",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 13.11 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the context of another user's browser session due to improper sanitization of path components in the merge request diff viewer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "13.11",
+              "status": "affected",
+              "lessThan": "19.2.7",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.3",
+              "status": "affected",
+              "lessThan": "19.3.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00362
+    },
+    {
       "cve_id": "CVE-2026-85706",
       "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
       "cvss_score": 10.0,
@@ -10024,7 +10068,7 @@
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
+        "cpe_count": 5,
         "reference_count": 2
       }
     },
@@ -10077,9 +10121,10 @@
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
-          "CWE-77"
+          "CWE-77",
+          "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 2
       }
     },
@@ -10134,7 +10179,7 @@
         "cwe_ids": [
           "CWE-415"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 3
       }
     },
@@ -10244,7 +10289,7 @@
         "cwe_ids": [
           "CWE-862"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 2
       }
     },
@@ -10299,7 +10344,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 3
       }
     }
