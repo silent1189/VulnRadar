@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T06:55:33+00:00",
+  "generated_at": "2026-09-30T13:42:36+00:00",
   "vendor": "mozilla",
-  "count": 781,
+  "count": 823,
   "items": [
     {
       "cve_id": "CVE-2022-0511",
@@ -24921,6 +24921,2305 @@
       }
     },
     {
+      "cve_id": "CVE-2026-100757",
+      "description": "Use-after-free in the Widget component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100761",
+      "description": "Privilege escalation due to use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00222,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100762",
+      "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100764",
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00222,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100765",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100767",
+      "description": "Use-after-free in the Networking: Cache component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100768",
+      "description": "Use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0027,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100769",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100770",
+      "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100772",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100773",
+      "description": "Use-after-free in the Storage: IndexedDB component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100774",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100776",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100777",
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100778",
+      "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100779",
+      "description": "Use-after-free in the XSLT component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100780",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100782",
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100784",
+      "description": "Use-after-free in the Layout: Text and Fonts component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100785",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100786",
+      "description": "Sandbox escape due to use-after-free in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100789",
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100790",
+      "description": "Use-after-free in the XSLT component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100791",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100796",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0027,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100797",
+      "description": "Privilege escalation due to use-after-free in the Graphics: WebRender component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00248,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100800",
+      "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100801",
+      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00236,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100804",
+      "description": "Sandbox escape due to use-after-free in the Preferences: Backend component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0027,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100805",
+      "description": "Race condition, use-after-free in the Audio/Video component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0019,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362",
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100807",
+      "description": "Privilege escalation in the DOM: Service Workers component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00236,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100811",
+      "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00262,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100813",
+      "description": "Invalid pointer in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00222,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-763"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100814",
+      "description": "Incorrect boundary conditions in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100815",
+      "description": "Use-after-free in the CSS Parsing and Computation component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0024,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100818",
+      "description": "Sandbox escape due to use-after-free in the Widget: Gtk component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00262,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100819",
+      "description": "Sandbox escape due to incorrect boundary conditions in the XPCOM component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100820",
+      "description": "Privilege escalation in the Address Bar component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00236,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100824",
+      "description": "Privilege escalation in the Places component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00228,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100825",
+      "description": "Use-after-free in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0024,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100831",
+      "description": "Use-after-free in the DOM: UI Events & Focus Handling component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00245,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100832",
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.42",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00253,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-10701",
       "description": "Incorrect boundary conditions in the Graphics: Text component. This vulnerability was fixed in Firefox 151.0.3.",
       "cvss_score": 7.5,
@@ -48177,7 +50476,7 @@
         "vendor:mozilla"
       ],
       "active_threat": false,
-      "probability_score": 0.0032,
+      "probability_score": 0.00342,
       "nvd": {
         "cvss_v3_score": 9.6,
         "cvss_v3_severity": "CRITICAL",
@@ -48187,7 +50486,7 @@
           "CWE-119"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 7
       }
     },
     {
