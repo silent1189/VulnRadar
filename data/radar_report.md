@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-01T08:45:04+00:00`
+Generated: `2026-10-01T16:19:59+00:00`
 
 ## Executive Summary
 
@@ -116,6 +116,7 @@ Top critical items:
 | [CVE-2024-53704](https://www.cve.org/CVERecord?id=CVE-2024-53704) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.951 | 9.8 | ✅ | An Improper Authentication vulnerability in the SSLVPN authentication mechanism allows a remote attacker to bypass authentication. |
 | [CVE-2024-4879](https://www.cve.org/CVERecord?id=CVE-2024-4879) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 1.000 | 9.3 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in Vancouver and Washington DC Now Platform releases. This vulnerability could e… |
 | [CVE-2025-5777](https://www.cve.org/CVERecord?id=CVE-2025-5777) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-11 | 1.000 | 9.3 | ✅ | Insufficient input validation leading to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA … |
+| [CVE-2026-85706](https://www.cve.org/CVERecord?id=CVE-2026-85706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-14 | 0.930 | 10.0 | ✅ | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, an… |
 | [CVE-2024-0012](https://www.cve.org/CVERecord?id=CVE-2024-0012) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-12-09 | 0.998 | 9.3 | ✅ | An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain … |
 | [CVE-2024-47575](https://www.cve.org/CVERecord?id=CVE-2024-47575) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-11-13 | 0.948 | 9.8 | ✅ | A missing authentication for critical function in FortiManager 7.6.0, FortiManager 7.4.0 through 7.4.4, FortiManager 7.2.0 through 7.2.7, FortiManager 7.0.0 th… |
 | [CVE-2024-21413](https://www.cve.org/CVERecord?id=CVE-2024-21413) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-27 | 0.947 | 9.8 | ✅ | Microsoft Outlook Remote Code Execution Vulnerability |
@@ -125,7 +126,6 @@ Top critical items:
 | [CVE-2024-5217](https://www.cve.org/CVERecord?id=CVE-2024-5217) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 0.996 | 9.2 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in the Washington DC, Vancouver, and earlier Now Platform releases. This vulnera… |
 | [CVE-2026-20182](https://www.cve.org/CVERecord?id=CVE-2026-20182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-17 | 0.915 | 10.0 | ✅ | May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in Februar… |
 | [CVE-2023-48788](https://www.cve.org/CVERecord?id=CVE-2023-48788) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-04-15 | 0.984 | 9.3 | ✅ | A improper neutralization of special elements used in an sql command ('sql injection') in Fortinet FortiClientEMS version 7.2.0 through 7.2.2, FortiClientEMS 7… |
-| [CVE-2026-85706](https://www.cve.org/CVERecord?id=CVE-2026-85706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-14 | 0.914 | 10.0 | ✅ | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, an… |
 | [CVE-2024-6670](https://www.cve.org/CVERecord?id=CVE-2024-6670) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-07 | 0.930 | 9.8 | ✅ | In WhatsUp Gold versions released before 2024.0.0, a SQL Injection vulnerability allows an unauthenticated attacker to retrieve the users encrypted password. |
 | [CVE-2024-21887](https://www.cve.org/CVERecord?id=CVE-2024-21887) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 9.1 | ✅ | A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administ… |
 | [CVE-2024-38475](https://www.cve.org/CVERecord?id=CVE-2024-38475) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 1.000 | 9.1 | ✅ | Improper escaping of output in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows an attacker to map URLs to filesystem locations that are permitted t… |
