@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T23:00:22+00:00",
+  "generated_at": "2026-10-01T02:07:10+00:00",
   "vendor": "mozilla",
   "count": 823,
   "items": [
@@ -24922,7 +24922,7 @@
     },
     {
       "cve_id": "CVE-2026-100757",
-      "description": "Use-after-free in the Widget component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Widget component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -24937,6 +24937,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -24983,11 +25007,23 @@
     },
     {
       "cve_id": "CVE-2026-100761",
-      "description": "Privilege escalation due to use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "description": "Privilege escalation due to use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -25026,7 +25062,7 @@
     },
     {
       "cve_id": "CVE-2026-100762",
-      "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -25041,6 +25077,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25087,11 +25147,23 @@
     },
     {
       "cve_id": "CVE-2026-100764",
-      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -25130,7 +25202,7 @@
     },
     {
       "cve_id": "CVE-2026-100765",
-      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25138,6 +25210,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -25179,7 +25269,7 @@
     },
     {
       "cve_id": "CVE-2026-100767",
-      "description": "Use-after-free in the Networking: Cache component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Networking: Cache component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25194,6 +25284,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25240,11 +25354,23 @@
     },
     {
       "cve_id": "CVE-2026-100768",
-      "description": "Use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
+      "description": "Use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -25283,11 +25409,35 @@
     },
     {
       "cve_id": "CVE-2026-100769",
-      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -25338,7 +25488,7 @@
     },
     {
       "cve_id": "CVE-2026-100770",
-      "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -25353,6 +25503,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25399,11 +25573,35 @@
     },
     {
       "cve_id": "CVE-2026-100772",
-      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -25454,7 +25652,7 @@
     },
     {
       "cve_id": "CVE-2026-100773",
-      "description": "Use-after-free in the Storage: IndexedDB component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Storage: IndexedDB component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25469,6 +25667,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25515,7 +25737,7 @@
     },
     {
       "cve_id": "CVE-2026-100774",
-      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25530,6 +25752,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25576,11 +25822,35 @@
     },
     {
       "cve_id": "CVE-2026-100776",
-      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -25631,7 +25901,7 @@
     },
     {
       "cve_id": "CVE-2026-100777",
-      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25646,6 +25916,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25692,7 +25986,7 @@
     },
     {
       "cve_id": "CVE-2026-100778",
-      "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -25707,6 +26001,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25753,7 +26071,7 @@
     },
     {
       "cve_id": "CVE-2026-100779",
-      "description": "Use-after-free in the XSLT component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the XSLT component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25768,6 +26086,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25814,7 +26156,7 @@
     },
     {
       "cve_id": "CVE-2026-100780",
-      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25829,6 +26171,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25875,7 +26241,7 @@
     },
     {
       "cve_id": "CVE-2026-100782",
-      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25890,6 +26256,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25936,7 +26326,7 @@
     },
     {
       "cve_id": "CVE-2026-100784",
-      "description": "Use-after-free in the Layout: Text and Fonts component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Layout: Text and Fonts component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -25951,6 +26341,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -25997,7 +26411,7 @@
     },
     {
       "cve_id": "CVE-2026-100785",
-      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26012,6 +26426,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26058,7 +26496,7 @@
     },
     {
       "cve_id": "CVE-2026-100786",
-      "description": "Sandbox escape due to use-after-free in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to use-after-free in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -26073,6 +26511,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26119,7 +26581,7 @@
     },
     {
       "cve_id": "CVE-2026-100789",
-      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26134,6 +26596,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26180,7 +26666,7 @@
     },
     {
       "cve_id": "CVE-2026-100790",
-      "description": "Use-after-free in the XSLT component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the XSLT component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26195,6 +26681,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26241,7 +26751,7 @@
     },
     {
       "cve_id": "CVE-2026-100791",
-      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26256,6 +26766,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26302,11 +26836,23 @@
     },
     {
       "cve_id": "CVE-2026-100796",
-      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 157.",
+      "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26345,7 +26891,7 @@
     },
     {
       "cve_id": "CVE-2026-100797",
-      "description": "Privilege escalation due to use-after-free in the Graphics: WebRender component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Privilege escalation due to use-after-free in the Graphics: WebRender component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26360,6 +26906,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26406,7 +26976,7 @@
     },
     {
       "cve_id": "CVE-2026-100800",
-      "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -26414,6 +26984,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -26455,11 +27043,35 @@
     },
     {
       "cve_id": "CVE-2026-100801",
-      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26510,11 +27122,23 @@
     },
     {
       "cve_id": "CVE-2026-100804",
-      "description": "Sandbox escape due to use-after-free in the Preferences: Backend component. This vulnerability was fixed in Firefox 157.",
+      "description": "Sandbox escape due to use-after-free in the Preferences: Backend component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26553,11 +27177,23 @@
     },
     {
       "cve_id": "CVE-2026-100805",
-      "description": "Race condition, use-after-free in the Audio/Video component. This vulnerability was fixed in Firefox 157.",
+      "description": "Race condition, use-after-free in the Audio/Video component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26597,11 +27233,35 @@
     },
     {
       "cve_id": "CVE-2026-100807",
-      "description": "Privilege escalation in the DOM: Service Workers component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Privilege escalation in the DOM: Service Workers component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26652,11 +27312,35 @@
     },
     {
       "cve_id": "CVE-2026-100811",
-      "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26707,11 +27391,23 @@
     },
     {
       "cve_id": "CVE-2026-100813",
-      "description": "Invalid pointer in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 157.",
+      "description": "Invalid pointer in the JavaScript Engine: JIT component. This vulnerability was fixed in Thunderbird 157 and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26750,7 +27446,7 @@
     },
     {
       "cve_id": "CVE-2026-100814",
-      "description": "Incorrect boundary conditions in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Incorrect boundary conditions in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26758,6 +27454,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -26799,7 +27513,7 @@
     },
     {
       "cve_id": "CVE-2026-100815",
-      "description": "Use-after-free in the CSS Parsing and Computation component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Use-after-free in the CSS Parsing and Computation component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -26807,6 +27521,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -26848,11 +27580,35 @@
     },
     {
       "cve_id": "CVE-2026-100818",
-      "description": "Sandbox escape due to use-after-free in the Widget: Gtk component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to use-after-free in the Widget: Gtk component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -26903,7 +27659,7 @@
     },
     {
       "cve_id": "CVE-2026-100819",
-      "description": "Sandbox escape due to incorrect boundary conditions in the XPCOM component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to incorrect boundary conditions in the XPCOM component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -26918,6 +27674,30 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -26964,11 +27744,35 @@
     },
     {
       "cve_id": "CVE-2026-100820",
-      "description": "Privilege escalation in the Address Bar component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Privilege escalation in the Address Bar component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
         {
           "vendor": "mozilla",
           "product": "firefox",
@@ -27019,7 +27823,7 @@
     },
     {
       "cve_id": "CVE-2026-100824",
-      "description": "Privilege escalation in the Places component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Privilege escalation in the Places component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -27027,6 +27831,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -27068,7 +27890,7 @@
     },
     {
       "cve_id": "CVE-2026-100825",
-      "description": "Use-after-free in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Use-after-free in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -27076,6 +27898,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -27117,7 +27957,7 @@
     },
     {
       "cve_id": "CVE-2026-100831",
-      "description": "Use-after-free in the DOM: UI Events & Focus Handling component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
+      "description": "Use-after-free in the DOM: UI Events & Focus Handling component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 153.4, and Firefox 157.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -27125,6 +27965,24 @@
         {
           "vendor": "mozilla",
           "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "157",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
           "versions": [
             {
               "status": "unaffected",
@@ -27166,7 +28024,7 @@
     },
     {
       "cve_id": "CVE-2026-100832",
-      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 140.17, Thunderbird 153.4, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -27181,6 +28039,24 @@
               "lessThanOrEqual": "115.*",
               "versionType": "rpm"
             },
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "153.4",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
             {
               "status": "unaffected",
               "version": "140.17",
@@ -50412,7 +51288,7 @@
     },
     {
       "cve_id": "CVE-2026-92035",
-      "description": "Sandbox escape due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Firefox 156, Firefox ESR 153.3, Thunderbird 156, Thunderbird 153.3, Firefox ESR 115.42, and Firefox ESR 140.17.",
+      "description": "Sandbox escape due to incorrect boundary conditions in the Graphics component. This vulnerability was fixed in Thunderbird 140.17, Firefox 156, Firefox ESR 153.3, Thunderbird 156, Thunderbird 153.3, Firefox ESR 115.42, and Firefox ESR 140.17.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -50451,6 +51327,12 @@
           "vendor": "mozilla",
           "product": "thunderbird",
           "versions": [
+            {
+              "status": "unaffected",
+              "version": "140.17",
+              "lessThanOrEqual": "140.*",
+              "versionType": "rpm"
+            },
             {
               "status": "unaffected",
               "version": "153.3",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T23:00:22+00:00",
+  "generated_at": "2026-10-01T02:07:10+00:00",
   "vendor": "watchguard",
-  "count": 73,
+  "count": 74,
   "items": [
     {
       "cve_id": "CVE-2024-1417",
@@ -4083,6 +4083,73 @@
         "cwe_ids": [
           "CWE-191",
           "CWE-1284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86134",
+      "description": "A NULL pointer dereference vulnerability in the WatchGuard Fireware OS authentication process allows a remote, unauthenticated attacker to crash the management daemon by sending a specially request to the login interface, resulting in a denial of service.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3",
+              "versionType": "custom",
+              "lessThan": "2026.3.2"
+            },
+            {
+              "status": "affected",
+              "version": "2025.0",
+              "versionType": "custom",
+              "lessThan": "2026.2.3"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.3"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00422,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
         ],
         "cpe_count": 0,
         "reference_count": 1

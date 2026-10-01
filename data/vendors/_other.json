@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T23:00:22+00:00",
+  "generated_at": "2026-10-01T02:07:10+00:00",
   "vendor": "_other",
-  "count": 2964,
+  "count": 2972,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -17228,6 +17228,124 @@
         "cpe_count": 0,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-76992",
+      "description": "The CODESYS Gateway Client allocates memory based on a size field in a gateway response without enforcing an appropriate upper limit. An unauthenticated remote attacker controlling a malicious gateway can exploit this behavior to trigger excessive memory consumption, resulting in a denial-of-service condition thus leading to a total loss of availablity.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "codesys",
+          "product": "development system 3",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "gateway",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "edge gateway for windows",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "hmi (sl)",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "opc da server sl",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "plchandler",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "runtime toolkit",
+          "versions": [
+            {
+              "lessThan": "3.5.22.40",
+              "status": "affected",
+              "version": "3.0.0.0",
+              "versionType": "generic"
+            }
+          ]
+        },
+        {
+          "vendor": "codesys",
+          "product": "edge gateway for linux",
+          "versions": [
+            {
+              "lessThan": "4.23.0.0",
+              "status": "affected",
+              "version": "3.15.0.0",
+              "versionType": "generic"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:edge gateway for linux",
+        "product:edge gateway for windows",
+        "product:gateway",
+        "vendor:codesys"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2022-22706",
@@ -101116,7 +101234,7 @@
           "versions": [
             {
               "lessThan": "2024R1.1.3",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101159,7 +101277,7 @@
           "versions": [
             {
               "lessThan": "2024R1.1.3",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101202,7 +101320,7 @@
           "versions": [
             {
               "lessThan": "2024R1.1.3",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101245,7 +101363,7 @@
           "versions": [
             {
               "lessThan": "2024R1.1.4",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101288,7 +101406,7 @@
           "versions": [
             {
               "lessThan": "2024R1.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101331,7 +101449,7 @@
           "versions": [
             {
               "lessThan": "2024R1.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101374,7 +101492,7 @@
           "versions": [
             {
               "lessThan": "2024R1.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101417,7 +101535,7 @@
           "versions": [
             {
               "lessThan": "2024R1.2.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101460,7 +101578,7 @@
           "versions": [
             {
               "lessThan": "2024R1.3.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101503,7 +101621,7 @@
           "versions": [
             {
               "lessThan": "2024R1.0.1",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101546,7 +101664,7 @@
           "versions": [
             {
               "lessThan": "2024R1.4.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101632,7 +101750,7 @@
           "versions": [
             {
               "lessThan": "2024R1.4.2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -101675,7 +101793,7 @@
           "versions": [
             {
               "lessThan": "2024R2",
-              "status": "unknown",
+              "status": "affected",
               "version": "0",
               "versionType": "custom"
             }
@@ -159709,6 +159827,42 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat ai inference server 3.2",
+          "versions": [
+            {
+              "version": "1790621714",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat ai inference server 3.2",
+          "versions": [
+            {
+              "version": "1790621718",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat ai inference server 3.2",
+          "versions": [
+            {
+              "version": "1790621713",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat discovery 2",
           "versions": [
             {
@@ -159725,6 +159879,66 @@
           "versions": [
             {
               "version": "1788206196",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276886",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276884",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790277045",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276889",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276974",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -160208,6 +160422,66 @@
           "versions": [
             {
               "version": "1786433656",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276886",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276884",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790277045",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276889",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.0",
+          "versions": [
+            {
+              "version": "1790276974",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -171527,6 +171801,166 @@
       }
     },
     {
+      "cve_id": "CVE-2026-101879",
+      "description": "OpenClaw Windows Node before 2026.7.1-3 contains a missing authorization vulnerability in NodeService capture handlers that allows connected gateways or agents to perform screen snapshots, camera snaps, and location captures without consent prompts. Attackers can invoke screen.snapshot, camera.snap, and location.get over the node WebSocket to silently capture screenshots, photograph users through webcams, and obtain device geolocation without user interaction.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "openclaw windows node",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2026.7.1-3",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openclaw windows node",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101880",
+      "description": "OpenClaw Windows Node before 2026.7.1 contains an incorrect authorization vulnerability in the system.run exec-approval policy where ExecShellWrapperParser fails to split commands on pipe operators or extract command substitutions. Connected gateways or agents can bypass approval rules by placing denied commands behind allowed prefixes using pipe operators or command substitution syntax, achieving arbitrary command execution on Windows hosts.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "openclaw windows node",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2026.7.1",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openclaw windows node",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101881",
+      "description": "OpenClaw Windows Node before 2026.7.1 contains an allocation of resources without limits vulnerability in the gateway WebSocket transport that allows connected gateways to exhaust node memory. Attackers can send an unending sequence of WebSocket continuation frames without EndOfMessage to cause unbounded memory growth until the node process crashes.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "openclaw windows node",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2026.7.1",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openclaw windows node",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101882",
+      "description": "OpenClaw Windows Node before 2026.7.1 contains an incomplete validation vulnerability in system.execApprovals.set that accepts wildcard-executable rules and abusable system binaries like mshta, rundll32, and certutil. Remote callers can add broad allow rules to execute arbitrary commands on the Windows host through system.run without operator checks or user prompts.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "openclaw windows node",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2026.7.1",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openclaw windows node",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101884",
+      "description": "OpenClaw Windows Node before 2026.7.1 contains an incomplete environment-variable sanitizer in system.run that fails to block GIT_CONFIG_*, DOTNET_STARTUP_HOOKS, and JAVA_TOOL_OPTIONS variables. Attackers with gateway or agent access can supply these variables to allowlisted tools like git, dotnet, or java to load attacker-controlled code and achieve arbitrary code execution.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "openclaw",
+          "product": "openclaw windows node",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2026.7.1",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openclaw windows node",
+        "vendor:openclaw"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-95815",
       "description": "OpenClaw iOS before 2026.8.11 logs complete agent deep-link URLs including persistent bearer keys to unified logs as public diagnostic data. Attackers who obtain diagnostic archives can recover unrotated keys and replay them in forged deep links to submit agent requests without local confirmation prompts.",
       "cvss_score": 7.2,
@@ -180191,9 +180625,10 @@
           "product": "wp squared",
           "versions": [
             {
-              "status": "unaffected",
-              "version": "11.136.1.7",
-              "versionType": "custom"
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom",
+              "lessThan": "11.136.1.7"
             }
           ]
         },
@@ -185468,6 +185903,66 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-46711",
+      "description": "Soft Machine is a Virtual Machine\u2013based agentic development environment / Cloud OS. In versions 0.2.247 and prior, the workspace HTTP service that listens on 0.0.0.0:8080 inside each sm-ws-* Fly Machine exposes endpoints (/health, /file/<path>, /archive/<dir>) without any authentication or origin check. Any host that can reach TCP/8080 on a workspace can read arbitrary files under that workspace's /workspace root and download whole project trees as tar archives. Because every workspace shares the same Fly private 6PN and resolves all peer addresses via the unauthenticated _instances.internal TXT record, every other sm-ws-* machine on the same Fly app/org is a reachable, unauthenticated attacker \u2014 the trust boundary (workspace owner \u2194 everyone-else) is missing. At time of publication, there are no publicly known patches.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "soft-machine-io",
+          "product": "security",
+          "versions": [
+            {
+              "version": "<= 0.2.247",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security",
+        "vendor:soft-machine-io"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-55176",
+      "description": "Soft Machine is a Virtual Machine\u2013based agentic development environment / Cloud OS. In versions 0.2.247 and prior, two authentication helpers in /app/server.js \u2014 verifyContainerAuth() and authenticateWorkspaceHttp() \u2014 accept the global CONTAINER_SHARED_SECRET as a bearer token without verifying which workspace the caller belongs to. Because that secret is set identically on every container in the Fly app and is reachable from the user-facing process environment inside each workspace, any tenant can use it to authenticate to any other tenant's workspace API. The result is cross-workspace read, write, and destructive-restore primitives reachable from any paying customer's shell. The existing per-workspace token check (workspaceTokenMatches) protects the user-facing per-workspace token path, but the shared-secret bearer path bypasses it entirely. At time of publication, there are no publicly known patches.",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "soft-machine-io",
+          "product": "security",
+          "versions": [
+            {
+              "version": "<= 0.2.247",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security",
+        "vendor:soft-machine-io"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-47252",
