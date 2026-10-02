@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T01:34:42+00:00",
+  "generated_at": "2026-10-02T08:24:11+00:00",
   "vendor": "_other",
-  "count": 2972,
+  "count": 2986,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -17345,7 +17345,18 @@
         "vendor:codesys"
       ],
       "active_threat": false,
-      "probability_score": 0.00573
+      "probability_score": 0.00573,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2022-22706",
@@ -64746,6 +64757,87 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102504",
+      "description": "Imager versions before 1.037 for Perl exit the process reading a raw image with an out-of-range raw_datachannels value in i_readraw_wiol.\n\nNothing range-checks raw_datachannels. The line buffer is sized as the image width times the channel count with no overflow check, so a negative or very large count requests an excessive allocation. When it fails, Imager's allocator calls exit(3).\n\nPassing an untrusted raw_datachannels value to Imager->read() triggers an uncatchable exit.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "1.037",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190",
+          "CWE-789"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103431",
+      "description": "colmux in collectl before 4.3.20.2 does not sanitize ANSI/VT100 terminal escape sequences in data received from remote collectl instances before displaying it, allowing a local user on a monitored host to inject escape sequences into the terminal of an operator running colmux, via a crafted process name (argv[0]).",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "4.3.20.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-150"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-13048",
       "description": "Data::MuForm::Localizer versions through 0.05 for Perl execute Perl from a message catalog header, reached at an arbitrary path because load_lexicon interpolates the language attribute into the catalog filename.\n\nload_lexicon builds the catalog path by appending `Messages/$lang.po` to the directory holding Localizer.pm, where $lang is the language attribute, with no check that it names a bare locale tag. A value holding `../` segments walks out of the message directory, so any readable path with a `.po` suffix is loaded. While parsing the catalog, extract_header_msgstr takes the `Plural-Forms:` header, prefixes `$` to the bare words nplurals, plural and n, and passes the rest verbatim into a string that is evaluated: the nplurals form evaluates the header expression immediately, and the plural_code form compiles it into a subroutine whose body runs when a plural message is localized. A header of `nplurals=2; plural=(system('...'),0);` therefore runs that command as the catalog loads. The evaluation inherits strict, so an expression that assigns to an undeclared variable fails to compile, while one built from calls alone does not.\n\nAn application that sets the language attribute from request data, an Accept-Language header or a locale parameter, and an attacker who can place a file with a `.po` suffix and chosen contents at a readable path, together give code execution as the application user. The message expansion path is not affected: expand_named substitutes only the placeholder names the caller supplies, and _mangle_value returns the value unchanged.",
       "cvss_score": 8.2,
@@ -66741,6 +66833,47 @@
       }
     },
     {
+      "cve_id": "CVE-2026-85644",
+      "description": "XS::Parse::Infix versions from 0.40 through 0.49 for Perl treat a number as an array reference.\n\nThe wrapper function XS::Parse::Infix generates for a list-associative infix operator checks whether arguments are array references, but it tests using SvRV() rather than SvROK(). SvRV() reads a union slot that only holds a referent once SvROK(sv) is true, so the guard never validates that it is a reference. For an IV or NV that slot holds the number itself, SvRV() returns the caller's value and SvTYPE() dereferences it at offset 12. This will generally result in a segmentation fault.\n\nAn application that hands the wrapper a list built from decoded input (for example, from JSON) lets whoever supplies a number in that list choose the address that the interpreter dereferences.\n\nAn ordinary string's byte 12 is rarely SVt_PVAV so the guard croaks by luck, but an attacker-crafted string carrying 0x0b there passes, and the buffer is then used as an AV head, with AvARRAY taken from bytes 16-23 and its entries pushed onto the Perl stack as live SVs.\n\nA simple proof-of-concept uses the zip operator:\n\n    use Syntax::Operator::Zip 'zip';\n\n    my @args = ([1], 2);\n    zip(@args);",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThanOrEqual": "0.49",
+              "status": "affected",
+              "version": "0.40",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00393,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125",
+          "CWE-843"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-86219",
       "description": "Authen::SASL::Perl::DIGEST_MD5 versions before 2.2100 for Perl accept replayed authentication responses via unverified nonce in server_step.\n\nserver_start generates a fresh nonce and sends it in the challenge, and nothing later compares that value against the nonce the client returns. server_step derives the expected digest from the client's own parameters, so a response verifies whenever its digest matches the nonce it carries. The count table it also checks is keyed on the client-supplied nonce and starts empty in each new server object, so a captured first response, carrying `nc=00000001`, passes that too. RFC 2831 defines the nonce in the response as the value the server sent in the preceding challenge.\n\nAn attacker who observes one successful `qop=auth` exchange can replay the captured response against a later session for the same service, host, realm and user, and authenticate as that user without knowing the password.",
       "cvss_score": 9.8,
@@ -67059,6 +67192,46 @@
         ],
         "cpe_count": 0,
         "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88816",
+      "description": "DBI versions before 1.654 for Perl incorrectly treat numeric values as strings in FetchHashKeyName.\n\nfetchrow_hashref uses the string pointer of the FetchHashKeyName attribute as the key name without stringifying it first. When FetchHashKeyName has been set to an integer (IV) or floating-point (NV) value, that pointer is invalid, so reading the key name triggers a segmentation fault.\n\nThis can be triggered with the following code:\n\n   my $dbh = DBI->connect( \"dbi:ExampleP:\", \"\", \"\",\n       { RaiseError => 0, PrintError => 0 } );\n   $dbh->{FetchHashKeyName} = 42;\n\n   my $sth = $dbh->prepare(\"select mode, size, name from .\");\n   $sth->execute;\n   $sth->fetchrow_hashref;",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "1.654",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00622,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-843"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
       }
     },
     {
@@ -72165,6 +72338,49 @@
           "CWE-89"
         ],
         "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100288",
+      "description": "Cleartext storage of sensitive information in the database in Devolutions Server\u00a02026.3.5.0 and earlier allows an attacker with read access to the database to obtain external identity provider tokens and active session identifiers via direct inspection of stored records.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "devolutions",
+          "product": "server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.3.7.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:devolutions"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00068,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-312"
+        ],
+        "cpe_count": 0,
         "reference_count": 1
       }
     },
@@ -79364,7 +79580,7 @@
         "cwe_ids": [
           "CWE-653"
         ],
-        "cpe_count": 82,
+        "cpe_count": 79,
         "reference_count": 3
       }
     },
@@ -91802,6 +92018,58 @@
       }
     },
     {
+      "cve_id": "CVE-2026-13313",
+      "description": "An Active Debug Code vulnerability in certain ASUS router models allows a remote authenticated user, via a crafted HTTP request, to bypass security mechanisms and enable the Telnet service, thereby executing arbitrary commands with root privileges and potentially affecting other devices connected to the router.\nRefer to the ' Security Update for ASUS Router Firmware\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.4_386 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4_388 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.6_102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-489"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-13385",
       "description": "An Improper Validation of Integrity Check Value and Improper Certificate Validation in certain ASUS router models allows a remote man-in-the-middle(MITM) user to make the router download and execute arbitrary command via a spoofed server.\nRefer to the '\u00a0\nSecurity Update for ASUS Router Firmware\u00a0\u00a0' section on the ASUS Security Advisory for more information.",
       "cvss_score": 9.5,
@@ -91849,6 +92117,48 @@
         "cwe_ids": [
           "CWE-295",
           "CWE-354"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-14157",
+      "description": "Use of an Externally Controlled Format String in the ASUS Router modules allow a remote authenticated user to execute arbitrary commands via a crafted file uploaded through the web management interface.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6_102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-134"
         ],
         "cpe_count": 0,
         "reference_count": 1
@@ -113286,6 +113596,92 @@
         ],
         "cpe_count": 0,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92172",
+      "description": "Prior to v66.0.0.733.524 of Meta Horizon OS, OVRMediaService could be induced to send a privileged PendingIntent including a com.oculus.horizon CallerIdentity to an arbitrary application registering for com.oculus.systemactivities.SCREENSHOT via a broadcast receiver. That would allow the application to impersonate the com.oculus.horizon package towards any endpoint within the OS that uses CallerIdentity authentication.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "meta platforms, inc",
+          "product": "meta horizon os",
+          "versions": [
+            {
+              "lessThan": "v66.0.0.733.524",
+              "status": "affected",
+              "version": "v0.0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:meta horizon os",
+        "vendor:meta platforms, inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0023,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-923"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92173",
+      "description": "Prior to v74.0.0.878.1682 of Meta Horizon OS, MediaSyncJobReceiver could be induced to send a privileged PendingIntent including a com.oculus.vrshell CallerIdentity to an arbitrary application listening via NotificationListenerService. That would allow the application to impersonate the com.oculus.vrshell package, as well as packages signed with the same key, towards any endpoint within the OS that uses CallerIdentity authentication.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "meta platforms, inc",
+          "product": "meta horizon os",
+          "versions": [
+            {
+              "lessThan": "v74.0.0.878.1682",
+              "status": "affected",
+              "version": "v0.0.0.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:meta horizon os",
+        "vendor:meta platforms, inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0023,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-923"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
       }
     },
     {
@@ -144220,6 +144616,55 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102294",
+      "description": "TP-Link TL-WR841N contains an authenticated OS command injection vulnerability in the IPv6 WAN configuration. A crafted IPv6 Gateway value is improperly incorporated into a system command, allowing an authenticated administrator to execute arbitrary operating system commands.\u00a0\n\nSuccessful exploitation may allow unauthorized access to sensitive information, modification of device configuration or services, and disruption of device operation.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link system inc.",
+          "product": "tl-wr841n v14",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "4.19 Build 260821 (EN)",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "4.19 Build 260820 (US)",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tl-wr841n v14",
+        "vendor:tp-link system inc."
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-22223",
       "description": "An OS Command Injection vulnerability in TP-Link Archer BE230 v1.2 and BE3600 v1 (vpn modules) allows adjacent \n\nauthenticated \n\nattacker \n\nexecute arbitrary code.\u00a0Successful exploitation could allow an attacker to gain full administrative control of the device, resulting in severe compromise of configuration integrity, network security, and service availability.\n\nThis CVE covers one of multiple distinct OS command injection issues identified across separate code paths. Although similar in nature, each instance is tracked under a unique CVE ID.\n\nThis issue affects Archer BE230 v1.2 < 1.2.4 Build 20251218 rel.70420.",
       "cvss_score": 8.5,
@@ -150488,7 +150933,7 @@
           "CWE-400"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -150571,7 +151016,7 @@
           "CWE-1321"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -150700,7 +151145,7 @@
           "CWE-1321"
         ],
         "cpe_count": 0,
-        "reference_count": 6
+        "reference_count": 7
       }
     },
     {
@@ -159671,6 +160116,30 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.12",
+          "versions": [
+            {
+              "version": "412.86.202609171314-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.17",
+          "versions": [
+            {
+              "version": "417.94.202609191027-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.22",
           "versions": [
             {
@@ -159947,6 +160416,78 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703497",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703506",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703590",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703568",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703586",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703494",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat update infrastructure 5",
           "versions": [
             {
@@ -160082,7 +160623,7 @@
           "CWE-193"
         ],
         "cpe_count": 6,
-        "reference_count": 30
+        "reference_count": 56
       }
     },
     {
@@ -160490,6 +161031,78 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703497",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703506",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703590",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703568",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703586",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.2",
+          "versions": [
+            {
+              "version": "1790703494",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat update infrastructure 5",
           "versions": [
             {
@@ -160625,7 +161238,7 @@
           "CWE-191"
         ],
         "cpe_count": 6,
-        "reference_count": 26
+        "reference_count": 38
       }
     },
     {
@@ -162146,6 +162759,154 @@
         ],
         "cpe_count": 0,
         "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-68495",
+      "description": "The CBOR parser in FasterXML jackson-dataformats-binary never invokes StreamReadConstraints.validateNameLength() when decoding JSON object property names, so the maxNameLength limit is not enforced for this format. CBORParser._decodeLongerName() decodes a definite-length property name with no length check, and CBORParser._decodeChunkedName() delegates to the value-oriented _finishChunkedText() routine, which validates maxStringLength rather than maxNameLength. An attacker who can have a CBOR document parsed may therefore embed a single property name of unbounded length; the parser buffers the whole name in memory before returning it, whatever maxNameLength is configured to. Because StreamReadConstraints.maxDocumentLength is also disabled by default, nothing else bounds the name under default settings, so the only limits are the attacker's upload capacity and available heap, leading to memory exhaustion and denial of service. No privileges beyond the ability to submit data to a parsing endpoint are required, and exploitation needs only that the bytes reach CBORFactory parsing, directly or through an ObjectMapper configured with the CBOR module. jackson-core's own JSON parsers enforce maxNameLength incrementally during name decoding; this gap is specific to the binary formats. maxNameLength and validateNameLength were introduced in jackson-core 2.16.0, so releases before 2.16.0 do not contain the constraint that is left unenforced. This issue is tracked together with the Smile parser defect in the same vendor advisory, GHSA-3v8f-v6vx-fmrm, which covers both binary formats. The CBOR parser defect (jackson-dataformats-binary issue #725) is CVE-2026-68495; the Smile parser defect (issue #726) is assigned CVE-2026-68496.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-dataformats-binary",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.16.0",
+              "lessThanOrEqual": "2.18.9",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThanOrEqual": "2.21.5",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThanOrEqual": "2.22.1",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-dataformats-binary",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThanOrEqual": "3.1.5",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.1",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-dataformats-binary",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-68496",
+      "description": "The Smile parser in FasterXML jackson-dataformats-binary never invokes StreamReadConstraints.validateNameLength() when decoding JSON object property names, so the maxNameLength limit is not enforced for this format. SmileParser._handleLongFieldName() grows its internal name buffer through an unconstrained _growArrayTo() call and performs no length validation. An attacker who can have a Smile document parsed may therefore embed a single property name of unbounded length; the parser buffers the whole name in memory before returning it, whatever maxNameLength is configured to. Because StreamReadConstraints.maxDocumentLength is also disabled by default, nothing else bounds the name under default settings, so the only limits are the attacker's upload capacity and available heap, leading to memory exhaustion and denial of service. No privileges beyond the ability to submit data to a parsing endpoint are required, and exploitation needs only that the bytes reach SmileFactory parsing, directly or through an ObjectMapper configured with the Smile module. jackson-core's own JSON parsers enforce maxNameLength incrementally during name decoding; this gap is specific to the binary formats. maxNameLength and validateNameLength were introduced in jackson-core 2.16.0, so releases before 2.16.0 do not contain the constraint that is left unenforced. This issue is tracked together with the CBOR parser defect in the same vendor advisory, GHSA-3v8f-v6vx-fmrm, which covers both binary formats. The Smile parser defect (jackson-dataformats-binary issue #726) is CVE-2026-68496; the CBOR parser defect (issue #725) is assigned CVE-2026-68495.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-dataformats-binary",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.16.0",
+              "lessThanOrEqual": "2.18.9",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThanOrEqual": "2.21.5",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThanOrEqual": "2.22.1",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-dataformats-binary",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThanOrEqual": "3.1.5",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.1",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-dataformats-binary",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
       }
     },
     {
@@ -170619,6 +171380,92 @@
       }
     },
     {
+      "cve_id": "CVE-2025-71427",
+      "description": "Office-PowerPoint-MCP-Server through 2.0.7 contains a path traversal vulnerability that allows MCP callers to write and read files outside the working directory by supplying absolute paths or ../ sequences. Attackers can steer an AI agent via prompt injection to abuse save_presentation, open_presentation, or manage_image output_path to overwrite any server-writable file or load external files.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "gongrzhe",
+          "product": "office-powerpoint-mcp-server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "2.0.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:office-powerpoint-mcp-server",
+        "vendor:gongrzhe"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 6.8,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-65695",
+      "description": "Office-Word-MCP-Server through 1.1.11 contains a path traversal vulnerability in its document tools that allows attackers who can influence the filename argument to read arbitrary .docx files or create and overwrite .docx files outside the intended working directory. Attackers can supply absolute paths or ../ traversal sequences directly to document open and save operations, bypassing the check_file_writeable and ensure_docx_extension helpers which perform no base-directory confinement or realpath validation.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "gongrzhe",
+          "product": "office-word-mcp-server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.1.11"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:office-word-mcp-server",
+        "vendor:gongrzhe"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00483,
+      "nvd": {
+        "cvss_v3_score": 6.8,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2025-8088",
       "description": "A path traversal vulnerability affecting the Windows version of WinRAR allows the attackers to execute arbitrary code by crafting malicious archive files. This vulnerability was exploited in the wild and was discovered by\u00a0Anton Cherepanov, Peter Ko\u0161in\u00e1r, and Peter Str\u00fd\u010dek\n     from ESET.",
       "cvss_score": 8.4,
@@ -171830,7 +172677,18 @@
         "vendor:openclaw"
       ],
       "active_threat": false,
-      "probability_score": 0.00493
+      "probability_score": 0.00493,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
     },
     {
       "cve_id": "CVE-2026-101880",
@@ -171862,7 +172720,18 @@
         "vendor:openclaw"
       ],
       "active_threat": false,
-      "probability_score": 0.0082
+      "probability_score": 0.0082,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
+      }
     },
     {
       "cve_id": "CVE-2026-101881",
@@ -171894,7 +172763,18 @@
         "vendor:openclaw"
       ],
       "active_threat": false,
-      "probability_score": 0.00548
+      "probability_score": 0.00548,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
     },
     {
       "cve_id": "CVE-2026-101882",
@@ -171926,7 +172806,18 @@
         "vendor:openclaw"
       ],
       "active_threat": false,
-      "probability_score": 0.00799
+      "probability_score": 0.00799,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-184"
+        ],
+        "cpe_count": 0,
+        "reference_count": 9
+      }
     },
     {
       "cve_id": "CVE-2026-101884",
@@ -171958,7 +172849,18 @@
         "vendor:openclaw"
       ],
       "active_threat": false,
-      "probability_score": 0.00681
+      "probability_score": 0.00681,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-184"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
     },
     {
       "cve_id": "CVE-2026-95815",
@@ -172101,7 +173003,7 @@
           "CWE-22"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -172245,7 +173147,7 @@
           "CWE-863"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -172293,7 +173195,7 @@
           "CWE-269"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -173330,6 +174232,169 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103922",
+      "description": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host and scheme but not its path, allowing a victim who activates an untrusted link to navigate a frame to /_capacitor_http_interceptor_. The native proxy can fetch an attacker-selected URL and return the response as a document at the application's own origin, allowing script in that response to access same-origin storage, cookies, and registered Capacitor plugin capabilities. Applications remain affected when CapacitorHttp is disabled because affected releases serve the proxy path regardless of that setting. This issue is fixed in versions 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ionic-team",
+          "product": "capacitor",
+          "versions": [
+            {
+              "version": ">= 6.0.0, < 6.2.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 7.0.0, < 7.6.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.0.0, < 8.3.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.3.5, < 8.4.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.5.0, < 8.5.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@capacitor",
+          "product": "android",
+          "versions": [
+            {
+              "version": ">= 8.5.0, < 8.5.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.3.5, < 8.4.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.0.0, < 8.3.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 7.0.0, < 7.6.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 6.0.0, < 6.2.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@capacitor",
+          "product": "ios",
+          "versions": [
+            {
+              "version": ">= 8.5.0, < 8.5.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.3.5, < 8.4.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.0.0, < 8.3.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 7.0.0, < 7.6.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 6.0.0, < 6.2.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "com.capacitorjs",
+          "product": "core",
+          "versions": [
+            {
+              "version": ">= 8.5.0, < 8.5.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.3.5, < 8.4.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.0.0, < 8.3.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 7.0.0, < 7.6.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 6.0.0, < 6.2.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "swift",
+          "product": "github.com/ionic-team/capacitor-swift-pm",
+          "versions": [
+            {
+              "version": ">= 8.5.0, < 8.5.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.3.5, < 8.4.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.0.0, < 8.3.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 7.0.0, < 7.6.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 6.0.0, < 6.2.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:android",
+        "product:ios",
+        "vendor:@capacitor"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 9.3,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346",
+          "CWE-441"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
       }
     },
     {
@@ -185932,7 +186997,18 @@
         "vendor:soft-machine-io"
       ],
       "active_threat": false,
-      "probability_score": 0.00312
+      "probability_score": 0.00312,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-55176",
@@ -185962,7 +187038,18 @@
         "vendor:soft-machine-io"
       ],
       "active_threat": false,
-      "probability_score": 0.00317
+      "probability_score": 0.00317,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-47252",
@@ -189973,49 +191060,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-65695",
-      "description": "Office-Word-MCP-Server through 1.1.11 contains a path traversal vulnerability in its document tools that allows attackers who can influence the filename argument to read arbitrary .docx files or create and overwrite .docx files outside the intended working directory. Attackers can supply absolute paths or ../ traversal sequences directly to document open and save operations, bypassing the check_file_writeable and ensure_docx_extension helpers which perform no base-directory confinement or realpath validation.",
-      "cvss_score": 7.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "gongrzhe",
-          "product": "office-word-mcp-server",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "versionType": "semver",
-              "lessThanOrEqual": "1.1.11"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:office-word-mcp-server",
-        "vendor:gongrzhe"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00483,
-      "nvd": {
-        "cvss_v3_score": 6.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
       }
     },
     {

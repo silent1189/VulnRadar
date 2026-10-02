@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T01:34:42+00:00",
+  "generated_at": "2026-10-02T08:24:11+00:00",
   "vendor": "tp_link_systems_inc",
-  "count": 119,
+  "count": 124,
   "items": [
     {
       "cve_id": "CVE-2025-10991",
@@ -6780,6 +6780,62 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102369",
+      "description": "Tapo C120 v1 and C200 V5\ndo not adequately protect login challenge data or sanitize\nattacker-controlled input processed by the MacTool handler. An unauthenticated\nattacker on the same local network can replay login challenge data to obtain an\nadministrative session, enable a privileged service that becomes accessible\nafter a reboot, and submit crafted input to execute arbitrary commands within\nthe device management process.\n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow arbitrary command execution on the camera and compromise\nthe confidentiality, integrity, and availability of the affected device.\nExploitation requires access from the same local network, replay of the login\nchallenge data, activation of the privileged service, and a device reboot.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c200 v5",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V5_1.4.6 Build 260709 Rel.27675n",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c120 v1",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V1_1.9.4 Build 260813 Rel.79754n",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c120 v1",
+        "product:tapo c200 v5",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-11409",
       "description": "An authenticated OS command injection vulnerability exists in the IPv6 PPPoE configuration handler in TL-WR940N v6 due to improper sanitization of user input. An attacker with administrative access may exploit this issue to execute arbitrary system commands with elevated privileges.",
       "cvss_score": 8.5,
@@ -7406,7 +7462,7 @@
     },
     {
       "cve_id": "CVE-2026-17176",
-      "description": "An OS\ncommand injection vulnerability in the TDDP module of Deco BE11000 allows an\nadjacent network attacker to execute arbitrary commands with root privileges by\nsending a crafted UDP packet.\n\n\n\nSuccessful exploitation may lead to complete\ndevice compromise, including unauthorized command execution, modification of\ndevice settings, and loss of confidentiality, integrity, and availability",
+      "description": "An OS\ncommand injection vulnerability in the TDDP module of Deco BE11000 and Deco M9 Plus allows an\nadjacent network attacker to execute arbitrary commands with root privileges by\nsending a crafted UDP packet.\n\n\n\nSuccessful exploitation may lead to complete\ndevice compromise, including unauthorized command execution, modification of\ndevice settings, and loss of confidentiality, integrity, and availability",
       "cvss_score": 7.7,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
@@ -7422,6 +7478,18 @@
               "versionType": "custom"
             }
           ]
+        },
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "deco m9 plus v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.9.2 Build 20260818",
+              "versionType": "custom"
+            }
+          ]
         }
       ],
       "watchlist_hit": true,
@@ -7431,6 +7499,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:deco be11000 v2",
+        "product:deco m9 plus v2",
         "vendor:tp-link systems inc."
       ],
       "active_threat": false,
@@ -7444,7 +7513,7 @@
           "CWE-78"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 4
       }
     },
     {
@@ -10647,6 +10716,105 @@
       }
     },
     {
+      "cve_id": "CVE-2026-78578",
+      "description": "Tapo C120 v1 and C200 v5\ndo not enforce authentication for do method HTTPS onboarding connect actions\nafter initial setup.\u00a0 An unauthenticated adjacent\nattacker can submit unauthorized wireless configuration parameters, causing the\ncamera to attempt connection to a different network.\n\n\n\n\n\nSuccessful\nexploitation disconnects the camera from its intended wireless network, making\nit unreachable on its management address, resulting in a denial-of-service\ncondition.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c200 v5",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V5_1.4.6 Build 260709 Rel.27675n",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c120 v1",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V1_1.9.4 Build 260813 Rel.79754n",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c120 v1",
+        "product:tapo c200 v5",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-84682",
+      "description": "A command injection vulnerability exists in the TDDPv2 service (/usr/bin/tddp) on Archer AX90 V1. An unauthenticated adjacent-network attacker can exploit the setProductVer command handler to execute arbitrary operating system commands as root during device boot.\u00a0\n\nSuccessful exploitation may result in complete device compromise through arbitrary command execution with root privileges.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "archer ax90 v1",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.1.4 Build 20260927",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:archer ax90 v1",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-85384",
       "description": "A stack-based buffer overflow vulnerability exists in the httpd component of RE210 AC750 due to improper bounds checking in the splitString function when processing an uploaded configuration file. An authenticated attacker on the local network can upload a crafted configuration file to trigger the overflow, leading to remote code execution.\n\n\n\n\n\nSuccessful exploitation may allow unauthorized access to sensitive information, modification of device configuration and network behavior, or disruption of device availability.",
       "cvss_score": 8.5,
@@ -10693,6 +10861,49 @@
         ],
         "cpe_count": 0,
         "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-8618",
+      "description": "A stack-based buffer overflow vulnerability exists in the TDDPv2 service (/usr/bin/tddp) on Deco M9 Plus due to insufficient validation of decrypted request data length before it is copied into a fixed-size stack buffer in the subtype 0x91 handler. Successful exploitation may allow an adjacent, unauthenticated attacker to cause a denial of service or achieve arbitrary code execution during the device setup phase through crafted TDDP packets.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "deco m9 plus v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.9.2 Build 20260818",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:deco m9 plus v2",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
@@ -10955,6 +11166,62 @@
         ],
         "cpe_count": 0,
         "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9032",
+      "description": "Tapo C120 v1 and C200 v5\ncontain a NULL pointer dereference in the HTTPS onboarding connect request parser.\u00a0 The interface is reachable without\nauthentication after initial setup and does not validate that a password field\nis present for certain authentication and encryption parameter combinations,\nallowing a malformed request from the same local network to crash the HTTPS service\n\n\n\n\n\n\n\n\n\n\n\u00a0Successful exploitation may\ntemporarily make HTTPS management functions unavailable. Repeated malformed\nrequests may sustain the denial-of-service condition, and recovery may in some\ncases require a device reboot.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c200 v5",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V5_1.4.6 Build 260709 Rel.27675n",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c120 v1",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V1_1.9.4 Build 260813 Rel.79754n",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c120 v1",
+        "product:tapo c200 v5",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
       }
     },
     {

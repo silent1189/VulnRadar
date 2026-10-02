@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T01:34:42+00:00",
+  "generated_at": "2026-10-02T08:24:11+00:00",
   "vendor": "watchguard",
-  "count": 74,
+  "count": 75,
   "items": [
     {
       "cve_id": "CVE-2024-1417",
@@ -988,6 +988,50 @@
         "cwe_ids": [
           "CWE-284",
           "CWE-923"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-13043",
+      "description": "A missing authentication vulnerability in the Kernel Memory Access Driver (PSKMAD) used by WatchGuard endpoint security products allows a local, authenticated attacker to bypass the driver's access-control handshake and issue arbitrary privileged commands to the driver, resulting in disclosure of kernel and process memory.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "endpoint security",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "8.00.26.0012"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:endpoint security",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306",
+          "CWE-798"
         ],
         "cpe_count": 0,
         "reference_count": 1
