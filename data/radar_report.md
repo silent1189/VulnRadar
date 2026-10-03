@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-03T12:28:45+00:00`
+Generated: `2026-10-03T17:13:55+00:00`
 
 ## Executive Summary
 
@@ -129,8 +129,8 @@ Top critical items:
 | [CVE-2024-6670](https://www.cve.org/CVERecord?id=CVE-2024-6670) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-07 | 0.930 | 9.8 | ✅ | In WhatsUp Gold versions released before 2024.0.0, a SQL Injection vulnerability allows an unauthenticated attacker to retrieve the users encrypted password. |
 | [CVE-2024-21887](https://www.cve.org/CVERecord?id=CVE-2024-21887) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 9.1 | ✅ | A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administ… |
 | [CVE-2024-38475](https://www.cve.org/CVERecord?id=CVE-2024-38475) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 1.000 | 9.1 | ✅ | Improper escaping of output in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows an attacker to map URLs to filesystem locations that are permitted t… |
-| [CVE-2023-40044](https://www.cve.org/CVERecord?id=CVE-2023-40044) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-26 | 0.906 | 10.0 | ✅ | In WS_FTP Server versions prior to 8.7.4 and 8.8.2, a pre-authenticated attacker could leverage a .NET deserialization vulnerability in the Ad Hoc Transfer mod… |
 | [CVE-2022-24706](https://www.cve.org/CVERecord?id=CVE-2022-24706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.925 | 9.8 | ✅ | In Apache CouchDB prior to 3.2.2, an attacker can access an improperly secured default installation without authenticating and gain admin privileges. The Couch… |
+| [CVE-2023-40044](https://www.cve.org/CVERecord?id=CVE-2023-40044) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-26 | 0.904 | 10.0 | ✅ | In WS_FTP Server versions prior to 8.7.4 and 8.8.2, a pre-authenticated attacker could leverage a .NET deserialization vulnerability in the Ad Hoc Transfer mod… |
 | [CVE-2024-55591](https://www.cve.org/CVERecord?id=CVE-2024-55591) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-01-21 | 0.941 | 9.6 | ✅ | An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS version 7.0.0 through 7.0.16 and FortiProxy version 7.0.0… |
 | [CVE-2025-22457](https://www.cve.org/CVERecord?id=CVE-2025-22457) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-04-11 | 1.000 | 9.0 | ✅ | A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.6, Ivanti Policy Secure before version 22.7R1.4, and Ivanti ZTA Gateways before ve… |
 | [CVE-2025-0282](https://www.cve.org/CVERecord?id=CVE-2025-0282) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-01-15 | 1.000 | 9.0 | ✅ | A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gatewa… |
