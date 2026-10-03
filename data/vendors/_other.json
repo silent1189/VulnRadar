@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-03T00:24:55+00:00",
+  "generated_at": "2026-10-03T06:23:16+00:00",
   "vendor": "_other",
-  "count": 2988,
+  "count": 2993,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -77840,6 +77840,42 @@
         "cpe_count": 2,
         "reference_count": 6
       }
+    },
+    {
+      "cve_id": "CVE-2026-84411",
+      "description": "The web management service in affected RouterOS versions contains an integer underflow in its HTTP request body handling that is reachable before authentication. This can be leveraged by an unauthenticated network attacker to achieve arbitrary code execution as root, or to cause a denial of service, using a single crafted request.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mikrotik",
+          "product": "routeros",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.24",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.24"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:routeros",
+        "vendor:mikrotik"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-86060",
@@ -160488,6 +160524,126 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703542",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703539",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703553",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703631",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703597",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703641",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703630",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703541",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703545",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703552",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat update infrastructure 5",
           "versions": [
             {
@@ -161095,6 +161251,18 @@
           "versions": [
             {
               "version": "1790703494",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1790703542",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -174514,6 +174682,169 @@
       }
     },
     {
+      "cve_id": "CVE-2026-104854",
+      "description": "Nx is a monorepo solution for TypeScript and polyglot codebases. From 14.6.0 until 22.7.9 and 23.1.2, Nx creates Unix domain sockets for its daemon and isolated plugin workers in shared temporary locations without owner-only directory and socket permissions. Another unprivileged local account on a shared build server, developer host, or multi-user container can discover and connect to a running socket because the transport performs no authentication and relies on filesystem containment. The daemon's PROCESS_IN_BACKGROUND request accepts a module path and invokes its default export, allowing a caller that controls a file to execute code as the account running Nx; other handlers can expose workspace file contents, project graphs, and task hashes. Disabling the daemon alone does not remove the vulnerable plugin-worker sockets, while single-user machines without another local account are not exposed. This issue is fixed in versions 22.7.9 and 23.1.2.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nrwl",
+          "product": "nx",
+          "versions": [
+            {
+              "version": ">= 14.6.0, < 22.7.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 23.0.0, < 23.1.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nx",
+        "vendor:nrwl"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104859",
+      "description": "Nx is a monorepo solution for TypeScript and polyglot codebases. From 21.4.0 until 22.7.8 and from 23.0.0 until 23.1.1, the @nx/docker release pipeline builds docker tag, image lookup, and docker push invocations as shell command strings. The release.docker.repositoryName and registryUrl configuration values are interpolated into those strings and passed to /bin/sh -c, allowing shell syntax in untrusted Nx configuration to execute during nx release version or nx release publish. A pull request or repository configuration change can therefore execute commands with the release job's privileges and expose registry credentials or cloud tokens, and dry-run publishing does not prevent the vulnerable pre-check command from executing. This issue is fixed in versions 22.7.8 and 23.1.1.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nrwl",
+          "product": "nx",
+          "versions": [
+            {
+              "version": ">= 21.4.0, < 22.7.8",
+              "status": "affected"
+            },
+            {
+              "version": ">= 23.0.0, < 23.1.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nx",
+        "vendor:nrwl"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-48027",
+      "description": "Nx Console is the user interface for Nx & Lerna. On 19 May 2026, a malicious version of Nx Console, 18.95.0, was published at 12:30 PM UTC and removed soon after at 12:48 PM UTC, leaving it available for ~18 minutes in Visual Studio Marketplace. For OpenVSX, the problem was detected later, and the compromised version was available from 12:33 UTC to 13:09 UTC (~36 minutes). Version 18.100.0 of Nx Console is not compromised and users may remediate by upgrading to that version.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nrwl",
+          "product": "nx-console",
+          "versions": [
+            {
+              "version": "= 18.95.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": false,
+      "in_watchlist": false,
+      "in_patchthis": true,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": true,
+      "probability_score": 0.01336,
+      "kev": {
+        "cveID": "CVE-2026-48027",
+        "vendorProject": "Nx",
+        "product": "Nx Console",
+        "vulnerabilityName": "Nx Console Embedded Malicious Code Vulnerability",
+        "dateAdded": "2026-05-27",
+        "shortDescription": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harvested credentials from multiple sources on disk and in memory.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2026-06-10",
+        "knownRansomwareCampaignUse": "Known"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-506"
+        ],
+        "cpe_count": 1,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-71476",
+      "description": "Nx is a monorepo solution for TypeScript and polyglot codebases. From version 20.8.0 until 22.7.7 and 23.0.2, the Nx self-hosted HTTP remote cache extracts downloaded cache artifacts without constraining where files are written. A malicious or on-path (MITM) remote cache server can return a crafted tar archive whose entries escape the cache directory and write to arbitrary locations on the machine running Nx, which can be escalated to remote code execution. Nx's default local cache and Nx Cloud are not affected; only workspaces configured to use a self-hosted remote cache are affected. This issue is fixed in versions 22.7.7 and 23.0.2.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nrwl",
+          "product": "nx",
+          "versions": [
+            {
+              "version": ">= 20.8.0, < 22.7.7",
+              "status": "affected"
+            },
+            {
+              "version": ">= 23.0.0, < 23.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nx",
+        "vendor:nrwl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00865,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-59"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-10557",
       "description": "The Yarbo Android and iOS applications contain hard-coded MQTT broker credentials that are identical for all users and all devices. These credentials are embedded in the application binary and are readily extractable via APK decompilation. The credentials provide access to cloud MQTT brokers carrying real-time telemetry for the entire global Yarbo robot fleet. They allow both wildcard subscription to all robot telemetry topics and publishing to any robot's command topic using only the robot's serial number.",
       "cvss_score": 9.3,
@@ -176173,6 +176504,57 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-94422",
+      "description": "An incorrect implementation of message filtering in xdg-dbus-proxy versions before 0.1.9 allows an attacker to bypass the intended message filtering on the D-Bus session bus by setting a reply serial number on non-reply messages. A malicious or compromised Flatpak app could use this to achieve arbitrary code execution outside its sandbox. xdg-dbus-proxy was designed to be part of the sandbox boundary for Flatpak, but it is released as a separate project and is sometimes used by other app frameworks such as Firejail.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "0.1.9",
+              "versionType": "semver",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "fedora",
+          "product": "fedora",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "0.1.9",
+              "versionType": "semver",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-19750",
@@ -187652,101 +188034,6 @@
       }
     },
     {
-      "cve_id": "CVE-2026-48027",
-      "description": "Nx Console is the user interface for Nx & Lerna. On 19 May 2026, a malicious version of Nx Console, 18.95.0, was published at 12:30 PM UTC and removed soon after at 12:48 PM UTC, leaving it available for ~18 minutes in Visual Studio Marketplace. For OpenVSX, the problem was detected later, and the compromised version was available from 12:33 UTC to 13:09 UTC (~36 minutes). Version 18.100.0 of Nx Console is not compromised and users may remediate by upgrading to that version.",
-      "cvss_score": 9.3,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "nrwl",
-          "product": "nx-console",
-          "versions": [
-            {
-              "version": "= 18.95.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": false,
-      "in_watchlist": false,
-      "in_patchthis": true,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [],
-      "active_threat": true,
-      "probability_score": 0.01336,
-      "kev": {
-        "cveID": "CVE-2026-48027",
-        "vendorProject": "Nx",
-        "product": "Nx Console",
-        "vulnerabilityName": "Nx Console Embedded Malicious Code Vulnerability",
-        "dateAdded": "2026-05-27",
-        "shortDescription": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harvested credentials from multiple sources on disk and in memory.",
-        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "dueDate": "2026-06-10",
-        "knownRansomwareCampaignUse": "Known"
-      },
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-506"
-        ],
-        "cpe_count": 1,
-        "reference_count": 5
-      }
-    },
-    {
-      "cve_id": "CVE-2026-71476",
-      "description": "Nx is a monorepo solution for TypeScript and polyglot codebases. From version 20.8.0 until 22.7.7 and 23.0.2, the Nx self-hosted HTTP remote cache extracts downloaded cache artifacts without constraining where files are written. A malicious or on-path (MITM) remote cache server can return a crafted tar archive whose entries escape the cache directory and write to arbitrary locations on the machine running Nx, which can be escalated to remote code execution. Nx's default local cache and Nx Cloud are not affected; only workspaces configured to use a self-hosted remote cache are affected. This issue is fixed in versions 22.7.7 and 23.0.2.",
-      "cvss_score": 8.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "nrwl",
-          "product": "nx",
-          "versions": [
-            {
-              "version": ">= 20.8.0, < 22.7.7",
-              "status": "affected"
-            },
-            {
-              "version": ">= 23.0.0, < 23.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:nx",
-        "vendor:nrwl"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00865,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22",
-          "CWE-59"
-        ],
-        "cpe_count": 0,
-        "reference_count": 5
-      }
-    },
-    {
       "cve_id": "CVE-2026-48160",
       "description": "react-tracked provides state usage tracking with Proxies. Between 2026-05-18 19:26:36 and 2026-05-19 15:22:45, the default branch contained malicious commits 6978272a7d6ca02225cb747ea69f427512e33699 through 949f1a3d6bb1ff7d1a0dec892afd773e742627e8 that executed remote attacker-controlled code on developer machines during `npm install`. The commits were removed by force-push, but local clones, forks, and direct-SHA URLs may still contain them, and `npm install` against an affected checkout will still execute the code today. The package was not published to npm. `src/install.js` was added and wired into the `postinstall` script. It fetched a JavaScript payload from an attacker-controlled HTTPS endpoint (configurable via an environment variable), disabled TLS verification, and evaluated the response as code with `require` available. Execution was deliberately skipped on CI and cloud/serverless environments, targeting developer workstations. The second-stage payload was attacker-hosted and cannot be reconstructed. Assume full compromise of anything reachable from a Node process with the user's permissions. Those who ran `npm install` against an affected checkout on a developer machine on or after 2026-05-18 19:26:36 should treat the machine as compromised, rotate every credential the machine could reach, audit account activity** since 2026-05-18 19:26:36, and clean local clones.",
       "cvss_score": 9.3,
@@ -190997,7 +191284,7 @@
     },
     {
       "cve_id": "CVE-2026-64849",
-      "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. This issue is fixed in version 3.15.0.",
+      "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Starting in 3.3.0 and prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and response_body. This issue is fixed in version 3.15.0.",
       "cvss_score": 9.3,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N",
@@ -191007,7 +191294,7 @@
           "product": "mlflow",
           "versions": [
             {
-              "version": "< 3.15.0",
+              "version": ">= 3.3.0, < 3.15.0",
               "status": "affected"
             }
           ]
@@ -196405,6 +196692,38 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-94541",
+      "description": "The WPMobile.App \u2013 Android and iOS App Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 11.82 This is due to the plugin not properly verifying that a user is authorized to perform an action. This makes it possible for unauthenticated attackers to exfiltrate password-reset URLs for arbitrary users, including administrators, mirrored into the push queue by the mail-to-push feature, and use those URLs to take over the targeted accounts. This exploit chain requires the plugin's mail-to-push feature (wpmobile_auto_mail=1) to be enabled, as that setting is what causes outbound WordPress password-reset emails \u2014 including the reset URL and key \u2014 to be mirrored into the push row queue where they become accessible to the attacker.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "amauric",
+          "product": "wpmobile.app \u2013 android and ios app builder",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThanOrEqual": "11.82",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:wpmobile.app \u2013 android and ios app builder",
+        "vendor:amauric"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00492
     },
     {
       "cve_id": "CVE-2026-97060",

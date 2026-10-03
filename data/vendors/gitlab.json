@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-03T00:24:55+00:00",
+  "generated_at": "2026-10-03T06:23:16+00:00",
   "vendor": "gitlab",
-  "count": 194,
+  "count": 195,
   "items": [
     {
       "cve_id": "CVE-2022-0154",
@@ -10248,6 +10248,50 @@
         "cpe_count": 6,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-90970",
+      "description": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway from 18.1.6 before 19.2.4, 19.3 before 19.3.2, and 19.4 before 19.4.1 that, under certain conditions, could have allowed an authenticated user with Duo Agent Platform access to escape the prompt template sandbox via a specially crafted flow configuration, resulting in arbitrary command execution on the AI Gateway.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab ai gateway",
+          "versions": [
+            {
+              "version": "18.1.6",
+              "status": "affected",
+              "lessThan": "19.2.4",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.3",
+              "status": "affected",
+              "lessThan": "19.3.2",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab ai gateway",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-92470",
