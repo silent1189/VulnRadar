@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-05T22:37:37+00:00",
+  "generated_at": "2026-10-06T03:00:12+00:00",
   "vendor": "progress_software",
-  "count": 71,
+  "count": 73,
   "items": [
     {
       "cve_id": "CVE-2024-0219",
@@ -3193,6 +3193,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-77805",
+      "description": "In Progress\u00ae Telerik\u00ae Fiddler\u00ae Classic for Windows, versions prior to v6.0.20262.10021, the integrity check applied to the external helper tools launched by the application is insufficient. Before executing a helper tool, the application only verifies that the file carries a valid Authenticode signature whose certificate subject name matches a broad allow list of publisher name fragments, rather than verifying that the file is the specific executable shipped with that version of the product. A local threat actor with low privileges who replaces one of these helper executables with any other validly signed binary from an allow-listed publisher can cause the substituted binary to be executed by the application, including with Administrator privileges for the tools that request elevation, resulting in privilege escalation and execution of unintended code. Successful exploitation requires the user to launch the affected external tool and to approve the elevation prompt without noticing that it refers to a different executable.",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "progress\u00ae telerik\u00ae fiddler\u00ae classic",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "6.0.20262.10021",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:progress\u00ae telerik\u00ae fiddler\u00ae classic",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-7195",
       "description": "CWE-20: Improper Input Validation in web services in Progress Sitefinity 14.1.x through 14.3.x, 14.4.x before 14.4.8152, 15.0.x before 15.0.8234, 15.1.x before 15.1.8335, 15.2.x before 15.2.8441, 15.3.x before 15.3.8531, and 15.4.x before 15.4.8630 allows a remote unauthenticated attacker to compromise the integrity and confidentiality of user accounts. Successful exploitation requires user interaction and a non-default site configuration.",
       "cvss_score": 8.8,
@@ -3722,6 +3754,38 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-92931",
+      "description": "CWE-918: Server-Side Request Forgery in the Progress @progress/sitefinity-nextjs-sdk npm package versions 15.1.8326 through 15.4.8637 may allow a remote attacker to make server-side requests to an attacker-controlled host, potentially exposing sensitive information.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "@progress/sitefinity-nextjs-sdk",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "15.1.8326",
+              "lessThan": "15.4.8638",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:@progress/sitefinity-nextjs-sdk",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-9272",

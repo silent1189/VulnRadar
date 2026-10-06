@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-05T22:37:37+00:00",
+  "generated_at": "2026-10-06T03:00:12+00:00",
   "vendor": "_other",
-  "count": 2995,
+  "count": 3002,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -34176,6 +34176,38 @@
         "cpe_count": 3,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-63277",
+      "description": "LibreOffice Calc can link a cell range to an external data source, and the link is saved in the document. A document could name a Java database driver for such a link to be loaded from a remote location, so opening the document could run Java code from that location. In fixed versions an entry in a Java class path has to be a file URL.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.5",
+              "versionType": "26.2 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2022-26324",
@@ -160655,6 +160687,90 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703656",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703557",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703645",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703554",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703554",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703630",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat update infrastructure 5",
           "versions": [
             {
@@ -174473,21 +174589,21 @@
           "product": "zammad",
           "versions": [
             {
+              "lessThan": "6.3.0",
               "status": "unknown",
               "version": "*",
-              "lessThan": "6.3.0",
               "versionType": "semver"
             },
             {
+              "lessThan": "6.5.4",
               "status": "affected",
               "version": "6.3.0",
-              "lessThan": "6.5.4",
               "versionType": "semver"
             },
             {
+              "lessThan": "*",
               "status": "unaffected",
               "version": "7.0.0",
-              "lessThan": "*",
               "versionType": "semver"
             }
           ]
@@ -174536,15 +174652,15 @@
           "product": "zammad",
           "versions": [
             {
+              "lessThan": "7.1.0-alpha",
               "status": "affected",
               "version": "1.5.0",
-              "lessThan": "7.1.0-alpha",
               "versionType": "semver"
             },
             {
+              "lessThan": "1.5.0",
               "status": "unknown",
               "version": "*",
-              "lessThan": "1.5.0",
               "versionType": "semver"
             }
           ]
@@ -174788,6 +174904,156 @@
       }
     },
     {
+      "cve_id": "CVE-2026-104706",
+      "description": "DigitalCanion has discovered a path traversal vulnerability that allows to view or download sensitive system files over the portal https://<ip>:8443 via menus Administration -> View Logs",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/AU:Y/U:Amber",
+      "affected": [
+        {
+          "vendor": "mitel",
+          "product": "mitel mivoice office 400",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.96.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mitel mivoice office 400",
+        "vendor:mitel"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00136
+    },
+    {
+      "cve_id": "CVE-2026-104805",
+      "description": "DigitalCanion has discovered a vulnerability in the backup restoration functionality that allows an attacker with access to the configured backup repository to introduce arbitrary files into the system during restoration.\n\n\n\n\nThe specific flaw exists within the backup restoration mechanism, which fails to properly validate the paths, file types, integrity, and authenticity of files contained within a restored TGZ archive. The application does not perform file-signature verification before extracting the archive, allowing a specially crafted backup to contain attacker-controlled files.\n\n\n\n\nAn attacker with access to the backup SFTP or other configured repository can therefore provide a malicious TGZ archive that, when restored by the system, may place arbitrary files on the underlying Linux system. Depending on the location and permissions of the extracted files, this behavior can potentially be leveraged to achieve arbitrary code execution with root privileges and compromise the underlying virtual machine.\n\n\n\n\nThe absence of enforced backup passwords further reduces the protection provided by the backup mechanism and may facilitate unauthorized access to the repository.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/AU:Y/R:U/V:D/RE:M/U:Amber",
+      "affected": [
+        {
+          "vendor": "mitel",
+          "product": "mitel mivoice office 400",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.96.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mitel mivoice office 400",
+        "vendor:mitel"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00216
+    },
+    {
+      "cve_id": "CVE-2026-104809",
+      "description": "DigitalCanion has discovered a vulnerability that allows an attacker to cause the system to load an attacker-controlled .so file instead of the expected legitimate module. The loading mechanism relies on a predictable module name without adequately verifying the file\u2019s origin or integrity. A malicious shared object using the expected name can therefore be loaded by a privileged process. The module code then executes within the context and privileges of that process. This results in arbitrary code execution and full compromise of the Mitel Linux virtual machine.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/AU:Y/U:Amber",
+      "affected": [
+        {
+          "vendor": "mitel",
+          "product": "mitel mivoice office 400",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.96.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mitel mivoice office 400",
+        "vendor:mitel"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00087
+    },
+    {
+      "cve_id": "CVE-2026-104810",
+      "description": "This vulnerability allows remote attackers to delete sensitive files on vulnerable installations of Mitel MiVoice Office 400. Authentication is required to exploit this vulnerability.\n\n\n\n\nThe specific flaw exists within the web portal listening on TCP port 443, under Maintenance \u2192 File Management \u2192 File Browser, which is affected by a directory traversal vulnerability. By exploiting this vulnerability, an authenticated attacker can access and delete files outside of the intended directory, including files belonging to the Mitel application and the underlying Linux system. Deleting critical system or application files can result in a denial-of-service condition affecting the underlying system.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/AU:Y/U:Amber",
+      "affected": [
+        {
+          "vendor": "mitel",
+          "product": "mitel mivoice office 400",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.96.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mitel mivoice office 400",
+        "vendor:mitel"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352
+    },
+    {
+      "cve_id": "CVE-2026-104811",
+      "description": "DigitalCanion SA has discovered a vulnerability that allows remote attackers to execute arbitrary code on affected installations of the product. Authentication may be required to exploit this vulnerability.\n\n\n\n\nThe specific flaw exists within the Configuration \u2192 Services \u2192 Music on Hold functionality of the web portal listening on TCP port 443. The application is intended to allow users to upload WAV audio files but fails to properly validate the uploaded file type. An attacker can exploit this behavior to upload a malicious shared object (.so) instead of a WAV file. When the uploaded file is subsequently processed by the affected component, attacker-controlled code is loaded and executed in the context of the affected process. This can result in remote code execution and potentially full compromise of the underlying Linux system.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P/AU:Y/U:Amber",
+      "affected": [
+        {
+          "vendor": "mitel",
+          "product": "mitel mivoice office 400",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.96.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mitel mivoice office 400",
+        "vendor:mitel"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00195
+    },
+    {
       "cve_id": "CVE-2026-104854",
       "description": "Nx is a monorepo solution for TypeScript and polyglot codebases. From 14.6.0 until 22.7.9 and 23.1.2, Nx creates Unix domain sockets for its daemon and isolated plugin workers in shared temporary locations without owner-only directory and socket permissions. Another unprivileged local account on a shared build server, developer host, or multi-user container can discover and connect to a running socket because the transport performs no authentication and relies on filesystem containment. The daemon's PROCESS_IN_BACKGROUND request accepts a module path and invokes its default export, allowing a caller that controls a file to execute code as the account running Nx; other handlers can expose workspace file contents, project graphs, and task hashes. Disabling the daemon alone does not remove the vulnerable plugin-worker sockets, while single-user machines without another local account are not exposed. This issue is fixed in versions 22.7.9 and 23.1.2.",
       "cvss_score": 8.5,
@@ -175014,6 +175280,49 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-105223",
+      "description": "maclof kubernetes-client 0.17.0 before 0.32.0 disables TLS certificate verification in parseKubeconfig() and parseKubeconfigFile() when a kubeconfig lacks certificate-authority-data, ignoring insecure-skip-tls-verify. On-path attackers can impersonate the Kubernetes API server to capture Bearer tokens or Basic credentials and tamper with WebSocket or REST API traffic.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "maclof",
+          "product": "kubernetes-client",
+          "versions": [
+            {
+              "version": "0.17.0",
+              "lessThan": "0.32.0",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kubernetes-client",
+        "vendor:maclof"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00199,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
       }
     },
     {
