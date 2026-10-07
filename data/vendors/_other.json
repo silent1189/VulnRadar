@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T01:29:18+00:00",
+  "generated_at": "2026-10-07T08:50:31+00:00",
   "vendor": "_other",
-  "count": 3002,
+  "count": 3016,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -28687,14 +28687,14 @@
       "active_threat": false,
       "probability_score": 0.00259,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 5.5,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -28732,14 +28732,14 @@
       "active_threat": false,
       "probability_score": 0.00325,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-22"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -28777,14 +28777,14 @@
       "active_threat": false,
       "probability_score": 0.00207,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-918"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -28822,14 +28822,14 @@
       "active_threat": false,
       "probability_score": 0.00259,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 6.0,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -28867,14 +28867,14 @@
       "active_threat": false,
       "probability_score": 0.00342,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-287"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -28927,14 +28927,14 @@
       "active_threat": false,
       "probability_score": 0.00272,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 6.7,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -28987,14 +28987,14 @@
       "active_threat": false,
       "probability_score": 0.00272,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -34207,7 +34207,18 @@
         "vendor:the document foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00145
+      "probability_score": 0.00145,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-829"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2022-26324",
@@ -44878,6 +44889,65 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82531",
+      "description": "Smarty before 4.5.8 and 5.x before 5.8.5 contains a code injection vulnerability where the top-level nocache_hash is never restored during extends:/multi-component template inheritance, leaving it null. Attackers can supply assigned data containing a forged SmartyNocache marker that is copied verbatim into the regenerated PHP cache file, executing arbitrary PHP on include for remote code execution.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "smarty-php",
+          "product": "smarty",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "4.5.8"
+            },
+            {
+              "version": "5.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "5.8.5"
+            },
+            {
+              "version": "4.5.8",
+              "status": "unaffected",
+              "versionType": "semver"
+            },
+            {
+              "version": "5.8.5",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:smarty",
+        "vendor:smarty-php"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
       }
     },
     {
@@ -119678,6 +119748,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-39747",
+      "description": "Subscriber SQL Injection in Woffice <= 5.4.35 versions.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "wofficeio",
+          "product": "woffice",
+          "versions": [
+            {
+              "lessThanOrEqual": "5.4.35",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:woffice",
+        "vendor:wofficeio"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00342,
+      "nvd": {
+        "cvss_v3_score": 8.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2024-37890",
       "description": "ws is an open source WebSocket client and server for Node.js. A request with a number of headers exceeding theserver.maxHeadersCount threshold could be used to crash a ws server. The vulnerability was fixed in ws@8.17.1 (e55e510) and backported to ws@7.5.10 (22c2876), ws@6.2.3 (eeb76d3), and ws@5.2.4 (4abd8f6). In vulnerable versions of ws, the issue can be mitigated in the following ways: 1. Reduce the maximum allowed length of the request headers using the --max-http-header-size=size and/or the maxHeaderSize options so that no more headers than the server.maxHeadersCount limit can be sent. 2. Set server.maxHeadersCount to 0 so that no limit is applied.",
       "cvss_score": 7.5,
@@ -153571,6 +153684,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-41555",
+      "description": "Unauthenticated SQL Injection in Newsletter Subscription Form \u2013 User Subscriptions Form, Capture Email <= 1.5.9 versions.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "weblizar \u2013 wordpress themes & plugin",
+          "product": "newsletter subscription form \u2013 user subscriptions form, capture email",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.5.9",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:newsletter subscription form \u2013 user subscriptions form, capture email",
+        "vendor:weblizar \u2013 wordpress themes & plugin"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 9.3,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2025-30902",
       "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ATL Software SRL AEC Kiosque aec-kiosque allows Reflected XSS.This issue affects AEC Kiosque: from n/a through <= 1.9.3.",
       "cvss_score": 7.1,
@@ -159010,6 +159166,55 @@
       }
     },
     {
+      "cve_id": "CVE-2026-62072",
+      "description": "Subscriber Broken Access Control in Progress Planner <= 1.10.0 versions.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress planner",
+          "product": "progress planner",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.10.0",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom",
+              "changes": [
+                {
+                  "at": "1.10.1",
+                  "status": "unaffected"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:progress planner",
+        "vendor:progress planner"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00338,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2025-48703",
       "description": "CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.",
       "cvss_score": 9.0,
@@ -160771,6 +160976,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift ai 3.5",
+          "versions": [
+            {
+              "version": "1790703706",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat update infrastructure 5",
           "versions": [
             {
@@ -160906,7 +161123,7 @@
           "CWE-193"
         ],
         "cpe_count": 6,
-        "reference_count": 56
+        "reference_count": 64
       }
     },
     {
@@ -168023,14 +168240,14 @@
         "knownRansomwareCampaignUse": "Unknown"
       },
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-119"
         ],
-        "cpe_count": 0,
+        "cpe_count": 7,
         "reference_count": 3
       }
     },
@@ -169249,6 +169466,52 @@
         ],
         "cpe_count": 1,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-104850",
+      "description": "MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. Starting in version 1.12.0 and prior to versions 1.31.0 and 2.2.0, the SDK's OAuth client support let the MCP server a client connected to decide which authorization server received the client's OAuth credentials. Stored and pre-provisioned credentials were not bound to the authorization server they belong to. A malicious or compromised MCP server could name its own authorization server in its protected resource metadata. Without any user interaction, the client would send that server the `refresh_token` and `client_secret` stored from an earlier sign-in (1.x), or the configured `client_secret` or signed assertion of a bundled non-interactive provider (1.x and 2.x). Only those applications that use the SDK as an MCP client over HTTP with an `authProvider`: your own `OAuthClientProvider`, or the bundled `ClientCredentialsProvider`, `PrivateKeyJwtProvider`, `StaticPrivateKeyJwtProvider` or (2.x) `CrossAppAccessProvider` and that may connect to an MCP server the owners does not fully trust while holding credentials for a legitimate authorization server are affected. `@modelcontextprotocol/sdk` 1.31.0 (1.x) and `@modelcontextprotocol/client` 2.2.0 (2.x) patch the issue. A workaround for those who cannot upgrade is available. 2.0.0 and 2.1.0 already accept `expectedIssuer`. On 1.x, the only workaround is to connect OAuth-enabled clients only to MCP servers you trust.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "modelcontextprotocol",
+          "product": "typescript-sdk",
+          "versions": [
+            {
+              "version": ">= 1.12.0, < 1.31.0",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.0.0, < 2.2.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:typescript-sdk",
+        "vendor:modelcontextprotocol"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345",
+          "CWE-522"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
       }
     },
     {
@@ -174931,7 +175194,18 @@
         "vendor:mitel"
       ],
       "active_threat": false,
-      "probability_score": 0.00136
+      "probability_score": 0.00136,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-31"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-104805",
@@ -174961,7 +175235,22 @@
         "vendor:mitel"
       ],
       "active_threat": false,
-      "probability_score": 0.00216
+      "probability_score": 0.00216,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-73",
+          "CWE-345",
+          "CWE-434",
+          "CWE-494"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-104809",
@@ -174991,7 +175280,22 @@
         "vendor:mitel"
       ],
       "active_threat": false,
-      "probability_score": 0.00087
+      "probability_score": 0.00087,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-73",
+          "CWE-426",
+          "CWE-427",
+          "CWE-494",
+          "CWE-829"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-104810",
@@ -175021,7 +175325,18 @@
         "vendor:mitel"
       ],
       "active_threat": false,
-      "probability_score": 0.00352
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-31"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-104811",
@@ -175051,7 +175366,21 @@
         "vendor:mitel"
       ],
       "active_threat": false,
-      "probability_score": 0.00195
+      "probability_score": 0.00195,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20",
+          "CWE-94",
+          "CWE-434",
+          "CWE-829"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-104854",
@@ -175323,6 +175652,389 @@
         ],
         "cpe_count": 0,
         "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106102",
+      "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 2.22.0, the SSR-only getHead() serializer in ui/src/plugins/meta/Meta.js used getAttr() to interpolate values supplied through useMeta() into title, meta, link, and script markup without HTML text or quoted-attribute encoding. injectServerMeta() appended that output to the raw server-rendered response. An attacker who can influence dynamic page metadata, such as a post title, product name, excerpt, or display name, can terminate the intended HTML context and inject executable markup before hydration. The client-side apply() path is not affected because it uses DOM APIs that encode attributes. This issue is fixed in version 2.22.0.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "quasarframework",
+          "product": "quasar",
+          "versions": [
+            {
+              "version": "< 2.22.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quasar",
+        "vendor:quasarframework"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-116"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106103",
+      "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to @quasar/icongenie 6.1.1, the icongenie generate --profile command accepted folder and name values from a user-supplied profile without constraining the resolved destination to the Quasar project directory. icongenie/lib/utils/get-assets-files.js joined those values with appDir, while icongenie/lib/utils/validate-profile-object.js required only non-empty strings, allowing parent-directory traversal. A developer who runs a crafted profile can cause generated image content to be written or overwritten at any path writable by that user, potentially modifying shell startup files, build scripts, or other executable configuration. This issue is fixed in version 6.1.1.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "quasarframework",
+          "product": "quasar",
+          "versions": [
+            {
+              "version": "< 2.22.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "icongenie",
+          "versions": [
+            {
+              "version": "< 6.1.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quasar",
+        "vendor:quasarframework"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-73"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106104",
+      "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 2.23.3, Platform.parseSSR() passed an unbounded User-Agent request header to getMatch() in ui/src/plugins/platform/Platform.js, whose browser-detection expressions combined greedy captures with repeated unbounded scans. Platform belongs to autoInstalledPlugins, so this parsing occurs before routing for every SSR request. A crafted unauthenticated request containing repeated version tokens without a terminating Safari token causes super-linear backtracking and blocks the Node.js event loop, delaying every other SSR request. SPA, PWA, Electron, Cordova, Capacitor, browser-extension, and static-site-generation targets are not affected because they do not parse an attacker-controlled request header through this path. This issue is fixed in version 2.23.3.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "quasarframework",
+          "product": "quasar",
+          "versions": [
+            {
+              "version": "< 2.23.3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quasar",
+        "vendor:quasarframework"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1333"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106105",
+      "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to @quasar/ssl-certificate 2.1.0, @quasar/cli 5.0.4, and @quasar/app-vite 3.3.0, the @quasar/ssl-certificate utility cached a combined private key and certificate PEM without explicitly applying owner-only filesystem permissions. Another local user able to read the cache can copy the key and impersonate a development TLS endpoint in an environment that trusts the certificate. The generated certificate was also CA-capable, carried unnecessarily broad key usages, and encoded the IPv6 loopback address as a DNS subject alternative name. This issue is fixed in @quasar/ssl-certificate 2.1.0, @quasar/cli 5.0.4, and @quasar/app-vite 3.3.0.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "quasarframework",
+          "product": "quasar",
+          "versions": [
+            {
+              "version": "< 2.23.3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "app-vite",
+          "versions": [
+            {
+              "version": "< 3.3.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "cli",
+          "versions": [
+            {
+              "version": "< 5.0.4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "ssl-certificate",
+          "versions": [
+            {
+              "version": "< 2.1.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quasar",
+        "vendor:quasarframework"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106106",
+      "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to @quasar/render-ssr-error 2.2.4 and @quasar/app-vite 3.3.0, renderSSRError() in utils/render-ssr-error/src/index.js used diagnostic data from utils/render-ssr-error/src/env.js to serialize process.env, request headers, and cookies into the HTTP page returned by serve.devError(), while the development server listened on all interfaces by default. Any network-adjacent client that reaches an SSR or SSG render failure through this development-only error path can obtain shell environment secrets. The renderer escaped only one exact lowercase script closing-tag spelling, so case variants and valid closing-tag delimiter variants in reflected diagnostic data could terminate the script element and inject markup; executing the injected code in a developer browser additionally requires the payload to accompany that developer's request. This issue is fixed in @quasar/render-ssr-error 2.2.4 and @quasar/app-vite 3.3.0.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:H/AT:P/PR:N/UI:P/VC:H/VI:L/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "quasarframework",
+          "product": "quasar",
+          "versions": [
+            {
+              "version": "< 2.23.3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "render-ssr-error",
+          "versions": [
+            {
+              "version": "< 2.2.4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "app-vite",
+          "versions": [
+            {
+              "version": "< 3.3.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quasar",
+        "vendor:quasarframework"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-497"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106107",
+      "description": "Quasar Framework is a framework for building high-performance Vue.js user interfaces. Prior to 3.3.0, several @quasar/app-vite SSR and SSG rendering paths interpolated ssrContext.nonce directly into quoted HTML attributes. An application that derives or overrides this value with attacker-controlled data can allow a quote to terminate the nonce attribute and inject additional attributes or markup into generated HTML across development and production SSR or SSG output. Cryptographically generated base64 or base64url nonces are not affected because they lack HTML attribute delimiters. This issue is fixed in version 3.3.0.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "quasarframework",
+          "product": "quasar",
+          "versions": [
+            {
+              "version": "< 2.23.4",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@quasar",
+          "product": "app-vite",
+          "versions": [
+            {
+              "version": "< 3.3.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quasar",
+        "vendor:quasarframework"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-116"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106486",
+      "description": "Backstage is an open framework for building developer portals. Prior to 0.3.10 in @backstage/plugin-scaffolder-backend-module-bitbucket-cloud and 0.2.25 in @backstage/plugin-scaffolder-backend-module-bitbucket-server, the Bitbucket pull-request Scaffolder actions did not sufficiently validate filesystem paths. An authenticated user who can execute an eligible template and influence an allowed Bitbucket repository could affect paths outside the expected working area, potentially compromising backend confidentiality, integrity, or availability. This issue is fixed in @backstage/plugin-scaffolder-backend-module-bitbucket-cloud 0.3.10 and @backstage/plugin-scaffolder-backend-module-bitbucket-server 0.2.25.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "backstage",
+          "product": "backstage",
+          "versions": [
+            {
+              "version": "< 1.54.6",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@backstage",
+          "product": "plugin-scaffolder-backend-module-bitbucket-cloud",
+          "versions": [
+            {
+              "version": "< 0.3.10",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@backstage",
+          "product": "plugin-scaffolder-backend-module-bitbucket-server",
+          "versions": [
+            {
+              "version": "< 0.2.25",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:plugin-scaffolder-backend-module-bitbucket-cloud",
+        "product:plugin-scaffolder-backend-module-bitbucket-server",
+        "vendor:@backstage"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-59"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
@@ -181747,6 +182459,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-39796",
+      "description": "Unauthenticated Broken Access Control in Advanced Posts Listing \u2013 Show Post List Easily <= 1.0.8 versions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "flipper code \u2013 wordpress development company",
+          "product": "advanced posts listing \u2013 show post list easily",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.0.8",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:advanced posts listing \u2013 show post list easily",
+        "vendor:flipper code \u2013 wordpress development company"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00299,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
         ],
         "cpe_count": 0,
         "reference_count": 1
@@ -197183,6 +197938,47 @@
         ],
         "cpe_count": 0,
         "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-94293",
+      "description": "An unauthenticated remote attacker can modify Asset Administration Shell submodel data via PATCH requests and can read all data exposed by the GET endpoints.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "murrelektronik",
+          "product": "software aas edge client all versions",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:software aas edge client all versions",
+        "vendor:murrelektronik"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00349,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
       }
     },
     {

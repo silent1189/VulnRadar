@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T01:29:18+00:00",
+  "generated_at": "2026-10-07T08:50:31+00:00",
   "vendor": "elastic",
-  "count": 62,
+  "count": 65,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -1607,6 +1607,171 @@
         ],
         "cpe_count": 0,
         "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-102406",
+      "description": "Authorization Bypass Through User-Controlled Key (CWE-639) in Kibana could lead to cross-tenant data interception. In this context, \"tenant\" refers to a user or team sharing the same Kibana deployment, not a separate Elastic Cloud organization or customer. Kibana's Fleet package installation process allowed a user holding delegated Fleet package-management privileges, without direct Elasticsearch administrative privileges, to claim a data stream identifier already in use by another tenant. Because ownership of that identifier was not verified before Fleet applied the uploaded package's generated index and ingest-pipeline settings to already-existing infrastructure, an attacker could redirect an existing tenant's data stream through infrastructure under their control. This exposed the affected tenant's subsequently ingested data to unauthorized disclosure and modification, and prevented that data from reaching its intended destination. Interception could continue even after the malicious package was removed, requiring separate remediation of the affected infrastructure.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.14.0",
+              "lessThanOrEqual": "8.19.21"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.6"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103007",
+      "description": "Incorrect Authorization (CWE-863) in Elasticsearch can lead to Privilege Escalation via a delegated administrative privilege whose scope is not fully enforced during authorization checks. Elasticsearch contains an incorrect authorization weakness in a configurable, non-default privilege that lets an administrator delegate limited role-management capability to another user, scoped to specific indices. The authorization check that enforces this scoping does not correctly account for a role-definition setting that can expand the matched index set. A user holding this delegated privilege with a broadly-scoped index pattern can exploit this inconsistency by updating their own assigned role to gain access to indices that should remain restricted, including internal security data. This can enable further escalation up to full administrative control of the cluster.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.16.0",
+              "lessThanOrEqual": "8.19.21"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.6"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103009",
+      "description": "Authorization Bypass Through User-Controlled Key (CWE-639) in Elasticsearch can lead to Information Disclosure via a specially crafted cross-cluster search request that references an unauthorized shard identifier. Elasticsearch contains an authorization bypass weakness in its handling of cross-cluster search requests made through the Remote Cluster Security (RCS) 2.0 model. An authorization check validates a request against one identifying attribute of the target shard, while a separate, independently-supplied identifying attribute in the same request determines which shard is actually accessed. A holder of a cross-cluster API key authorized for one index can craft a request whose two identifying attributes refer to different indices, causing the request to be authorized against an index they can access while actually operating against a different, unauthorized index. This can expose that index's document contents, field mappings, and other metadata, and in limited cases allows modification of retention-lease state on the unauthorized index.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.13.0",
+              "lessThanOrEqual": "8.19.22"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.7"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
       }
     },
     {

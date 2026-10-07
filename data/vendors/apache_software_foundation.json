@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T01:29:18+00:00",
+  "generated_at": "2026-10-07T08:50:31+00:00",
   "vendor": "apache_software_foundation",
-  "count": 1193,
+  "count": 1200,
   "items": [
     {
       "cve_id": "CVE-2022-22719",
@@ -27217,7 +27217,7 @@
         "cwe_ids": [
           "CWE-674"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -27260,7 +27260,7 @@
         "cwe_ids": [
           "CWE-674"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -27303,7 +27303,7 @@
         "cwe_ids": [
           "CWE-674"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -27578,6 +27578,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102731",
+      "description": "Memory allocation with excessive size value vulnerability in Apache Directory LDAP API.\n\n\n\nA malicious peer (or a MITM) can send a small BER-encoded response causing a large memory allocation before any data is received. This can lead to an OutOfMemoryError and denial of service.\n\n\n\nThe client JVM OOMs (OutOfMemoryError bypasses the DecoderException handlers) or pins the large allocation per connection while the attacker stalls.\n\n\n\nA handful of connections exhausts any heap. The same bytes from an unauthenticated pre-bind client hit any embedding server that did not set MAX_PDU_SIZE_ATTR.\n\n\n\nThis issue affects Apache Directory LDAP API: from 1.2.0 before 1.2.9.\n\n\n\nUsers are recommended to upgrade to version 1.2.9, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache directory ldap api",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.2.0",
+              "lessThan": "1.2.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache directory ldap api",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0043,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-789"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-102795",
       "description": "Improper Access Control vulnerability in Apache Traffic Server.\n\n\n\nThis issue affects Apache Traffic Server: from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\n\n\nUsers are recommended to upgrade to version 9.2.15 or 10.1.4, which fixes the issue.\n\n\n\nThis CVE supersedes CVE-2026-41920, whose record listed the affected 9.x versions as 9.0.0 through 9.1.14 and the fixed version as 9.1.15. All 9.2.x releases before 9.2.15 are affected.",
       "cvss_score": 9.3,
@@ -27664,6 +27707,269 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103878",
+      "description": "Cleartext transmission of sensitive information\u00a0vulnerability in Apache Directory LDAP API.\n\n\n\nA StartTLS extended operation started after a Search request has been sent can lead to receive data in plain text before the TLS Handshake has been completed.\n\n\n\nThis issue affects Apache Directory LDAP API: from 2.1.0 before 2.1.9.\n\n\n\nUsers are recommended to upgrade to version 2.1.9, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache directory ldap api",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.1.0",
+              "lessThan": "2.1.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache directory ldap api",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00213,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103880",
+      "description": "Asymmetric Resource Consumption\u00a0vulnerability in Apache Directory LDAP API.\n\n\n\nStoring a password using the bcrypt algorithm with a high force like 30 in a LDAP server that supports this algorithm will cause the server CPU to\u00a0 run for hours checking the credentials. A bounded cost should be enforced to avoid a server DOS.\n\n\n\nThis issue affects Apache Directory LDAP API: from 2.1.0 before 2.1.9.\n\n\n\nUsers are recommended to upgrade to version 2.1.9, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache directory ldap api",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.1.0",
+              "lessThan": "2.1.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache directory ldap api",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00488,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-405"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-104711",
+      "description": "Improper neutralization of special elements used in an expression language statement ('Expression Language Injection') vulnerability in Apache Struts. If the application is configured to use the legacy RESTful action mapper, a crafted request can inject an OGNL expression that may lead to remote code execution. Struts 7 is affected only when the OGNL allowlist is disabled; it is enabled by default. Applications using the default action mapper, the restful2 mapper, or the Struts REST plugin are not affected.\n\nThis issue affects Apache Struts: from 2.0.0 through 2.3.37, from 2.5.0 through 2.5.33, from 6.0.0 through 6.11.0, from 7.0.0 through 7.3.0.\n\nUsers are recommended to upgrade to version 6.12.0 or 7.4.0, which fixes the issue.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache struts",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.3.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.5.0",
+              "lessThanOrEqual": "2.5.33",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache struts",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00364,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-917"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-104712",
+      "description": "Asymmetric resource consumption (amplification) vulnerability in Apache Struts. When a request parameter is bound to an arbitrary-precision decimal (java.math.BigDecimal) property that is then rendered through the Struts tag library, the framework can produce a response many orders of magnitude larger than the request, allowing an unauthenticated remote attacker to exhaust server CPU and outbound network capacity with sustained low-volume traffic. Applications that do not bind request parameters to BigDecimal properties, or never render such a property through the Struts tag library, are not affected.\n\nThis issue affects Apache Struts: from 2.5.14 through 2.5.33, from 6.0.0 through 6.11.0, from 7.0.0 through 7.3.0.\n\nUsers are recommended to upgrade to version 6.12.0 or 7.4.0, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache struts",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.5.14",
+              "lessThanOrEqual": "2.5.33",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache struts",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00281,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-405"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-104714",
+      "description": "Concurrent execution using shared resource with improper synchronization ('race condition') vulnerability in Apache Struts. Where a localized message formats a date or time argument, the formatter retained for that message by the application-wide text provider is used by concurrently served requests without isolation, so a value belonging to one user can appear in another user's response, or the rendering can fail and surface as a server error. Applications whose localized messages format no date or time arguments are not affected.\n\nThis issue affects Apache Struts: from 2.0.0 through 2.3.37, from 2.5.0 through 2.5.33, from 6.0.0 through 6.11.0, from 7.0.0 through 7.3.0.\n\nUsers are recommended to upgrade to version 6.12.0 or 7.4.0, which fixes the issue.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache struts",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.3.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.5.0",
+              "lessThanOrEqual": "2.5.33",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThanOrEqual": "6.11.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache struts",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00176,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -41969,7 +42275,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -42098,7 +42404,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -42785,7 +43091,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -44566,6 +44872,67 @@
       }
     },
     {
+      "cve_id": "CVE-2026-59265",
+      "description": "A code execution issue in the Java integration in Apache OpenOffice v4.1.16 and earlier allows a crafted untrusted document to trigger executing arbitrary (even remote) code when opened by the user.\n\n\n\nThis issue is expected to be fixed in version 4.1.17, which is in the release candidate phase.\n\n\n\nUntil then, users can mitigate this issue by disabling Java runtime integration in the Preferences dialog. This prevents the attack. If this is not possible, or as an extra precaution, you can avoid opening\u00a0open untrusted files entirely.\u00a0Once 4.1.17 is released, upgrade to that version to fix the issue.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "95923fd437e06edd38a4f0e139a27c755a6f3ba6",
+              "versionType": "git"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "181421139242694b309751fb666406eddc203c50",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00224,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-59655",
       "description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache CloudStack's OAuth authentication plugin while listing OAuth providers.\n\nThis issue affects Apache CloudStack: from 4.19.0.0 through 4.20.3.0 and from 4.21.0.0 through 4.22.1.0.\n\nUsers are recommended to upgrade to version 4.20.3.1 or 4.22.1.1 or later, which fixes the issue.",
       "cvss_score": 7.5,
@@ -44702,7 +45069,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -44843,7 +45210,7 @@
         "cwe_ids": [
           "CWE-269"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -46287,7 +46654,7 @@
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -46428,7 +46795,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -46471,7 +46838,7 @@
         "cwe_ids": [
           "CWE-476"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -46569,7 +46936,7 @@
         "cwe_ids": [
           "CWE-444"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -50748,7 +51115,7 @@
         "cwe_ids": [
           "CWE-294"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -50791,7 +51158,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -54438,7 +54805,7 @@
         "cwe_ids": [
           "CWE-126"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -54487,7 +54854,7 @@
         "cwe_ids": [
           "CWE-1188"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -54536,7 +54903,7 @@
         "cwe_ids": [
           "CWE-366"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -55292,7 +55659,7 @@
         "cwe_ids": [
           "CWE-917"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 2
       }
     },
@@ -55504,7 +55871,7 @@
         "cwe_ids": [
           "CWE-345"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 2
       }
     },
@@ -56036,7 +56403,7 @@
         "cwe_ids": [
           "CWE-693"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 2
       }
     },
@@ -56166,7 +56533,7 @@
         "cwe_ids": [
           "CWE-789"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -56209,7 +56576,7 @@
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -56252,7 +56619,7 @@
         "cwe_ids": [
           "CWE-674"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -56295,7 +56662,7 @@
         "cwe_ids": [
           "CWE-248"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -56338,7 +56705,7 @@
         "cwe_ids": [
           "CWE-384"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -56381,7 +56748,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -56710,7 +57077,7 @@
         "cwe_ids": [
           "CWE-346"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -57686,7 +58053,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 2
       }
     },

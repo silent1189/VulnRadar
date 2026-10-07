@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T01:29:18+00:00",
+  "generated_at": "2026-10-07T08:50:31+00:00",
   "vendor": "jetbrains",
-  "count": 104,
+  "count": 105,
   "items": [
     {
       "cve_id": "CVE-2022-28650",
@@ -2100,7 +2100,7 @@
         "cwe_ids": [
           "CWE-184"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -2143,7 +2143,7 @@
         "cwe_ids": [
           "CWE-78"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -2487,7 +2487,7 @@
         "cwe_ids": [
           "CWE-863"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -2530,7 +2530,7 @@
         "cwe_ids": [
           "CWE-862"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -2574,6 +2574,49 @@
           "CWE-79"
         ],
         "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106218",
+      "description": "In JetBrains TeamCity before 2026.1.3\n2025.11.7 kotlin DSL sandbox escape leading to RCE on the server was possible",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "teamcity",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.1.3\n2025.11.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:teamcity",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-184"
+        ],
+        "cpe_count": 0,
         "reference_count": 1
       }
     },
