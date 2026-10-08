@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T22:00:29+00:00",
+  "generated_at": "2026-10-08T01:54:10+00:00",
   "vendor": "_other",
-  "count": 3016,
+  "count": 3022,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -92314,6 +92314,182 @@
       }
     },
     {
+      "cve_id": "CVE-2026-14911",
+      "description": "Improper Neutralization of Input During Web Page Generation (\u201cCross-site Scripting\u201d) in ASUS router modules allows a remote attacker to read DOM information, modify router settings, and cause a denial-of-service condition when an authenticated user visits a crafted URL.Refer to the '\nSecurity Update for ASUS Router Firmware\u00a0\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:H",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6.102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00319,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-16528",
+      "description": "Insertion of Sensitive Information into Log File in certain ASUS router models allows a remote authenticated attacker to obtain DDNS credentials from the system log, potentially enabling modification of DNS settings.Refer to the ' Security Update for ASUS Router Firmware\u00a0\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.4.386 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.388 series"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.6.102 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00207,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-532"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19386",
+      "description": "A stack-based buffer overflow in the ASUS router modules allows an authenticated nearby user to execute arbitrary code via a crafted configuration file upload that exceeds the expected buffer size.Refer to the ' Security Update for ASUS Router Firmware\u00a0\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6.102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00192,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19396",
+      "description": "A predictable seed in the pseudo-random number generator (PRNG) in the IFTTT pairing token generation of the ASUS RT-BE57 router allows an unauthenticated nearby user to\u00a0derive\u00a0the pairing token and read or modify router settings via observed values from an administrator-initiated IFTTT pairing session.Refer to the ' Security Update for ASUS Router Firmware\u00a0\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6_102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00127,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-337"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2023-3093",
       "description": "The YaySMTP plugin for WordPress is vulnerable to Stored Cross-Site Scripting via email contents in versions up to, and including, 2.4.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
       "cvss_score": 7.2,
@@ -138494,6 +138670,50 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92543",
+      "description": "Docker Engine classifies a registry hostname as insecure using an any-match DNS check. loadInsecureRegistries() injects 127.0.0.0/8 and ::1/128 as insecure CIDRs by default. isCIDRMatch resolves all of the hostname's addresses and returns true if a single address is in the insecure CIDR list. Because the transport re-dials the hostname rather than the CIDR-matching address, a DNS answer set of one loopback IP plus a non-loopback attacker IP disables certificate verification and enables HTTP fallback for the registry connection.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker engine",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "29.8.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "moby",
+          "product": "moby",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "v2.0.0-beta.25",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker engine",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2024-8956",
       "description": "PTZOptics PT30X-SDI/NDI-xx before firmware 6.3.40 is vulnerable to an insufficient authentication issue. The camera does not properly enforce authentication to /cgi-bin/param.cgi when requests are sent without an HTTP Authorization header. The result is a remote and unauthenticated attacker can leak sensitive data such as usernames, password hashes, and configurations details. Additionally, the attacker can update individual configuration values or overwrite the whole file.",
       "cvss_score": 9.1,
@@ -174842,7 +175062,7 @@
     },
     {
       "cve_id": "CVE-2026-102489",
-      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.",
+      "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The bug is also present in version 7.0.0 to version 7.1.2, but not exploitable due to changes in the underlying framework.",
       "cvss_score": 8.7,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L/E:A/AU:Y/V:C",
@@ -174852,21 +175072,21 @@
           "product": "zammad",
           "versions": [
             {
-              "lessThan": "6.3.0",
               "status": "unknown",
               "version": "*",
+              "lessThan": "6.3.0",
               "versionType": "semver"
             },
             {
-              "lessThan": "6.5.4",
               "status": "affected",
               "version": "6.3.0",
+              "lessThan": "6.5.4",
               "versionType": "semver"
             },
             {
-              "lessThan": "*",
-              "status": "unaffected",
+              "status": "unknown",
               "version": "7.0.0",
+              "lessThan": "7.1.3",
               "versionType": "semver"
             }
           ]
@@ -174915,15 +175135,15 @@
           "product": "zammad",
           "versions": [
             {
-              "lessThan": "7.1.0-alpha",
               "status": "affected",
               "version": "1.5.0",
+              "lessThan": "7.1.0-alpha",
               "versionType": "semver"
             },
             {
-              "lessThan": "1.5.0",
               "status": "unknown",
               "version": "*",
+              "lessThan": "1.5.0",
               "versionType": "semver"
             }
           ]
@@ -176036,6 +176256,46 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-106560",
+      "description": "Backstage is an open framework for building developer portals. Prior to 0.3.25, the @backstage/plugin-scaffolder-backend-module-confluence-to-markdown package is affected by improper repository path validation in a scaffolder backend module. An authenticated user who can execute an affected template and control its repository file location may cause generated content to be written outside the task workspace, within locations writable by the Backstage backend process. This issue is fixed in version 0.3.25.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "backstage",
+          "product": "backstage",
+          "versions": [
+            {
+              "version": "< 1.54.6",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@backstage",
+          "product": "plugin-scaffolder-backend-module-confluence-to-markdown",
+          "versions": [
+            {
+              "version": "< 0.3.25",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:plugin-scaffolder-backend-module-confluence-to-markdown",
+        "vendor:@backstage"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10557",
@@ -181074,12 +181334,26 @@
         {
           "vendor": "github.com/shamaton/msgpack/v2",
           "product": "github.com/shamaton/msgpack/v2",
-          "versions": null
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2.4.1",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
         },
         {
           "vendor": "github.com/shamaton/msgpack/v3",
           "product": "github.com/shamaton/msgpack/v3",
-          "versions": null
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "3.1.1",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
         }
       ],
       "watchlist_hit": true,

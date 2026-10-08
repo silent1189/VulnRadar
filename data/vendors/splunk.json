@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T22:00:29+00:00",
+  "generated_at": "2026-10-08T01:54:10+00:00",
   "vendor": "splunk",
-  "count": 109,
+  "count": 111,
   "items": [
     {
       "cve_id": "CVE-2022-26889",
@@ -4518,6 +4518,94 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-76266",
+      "description": "In Splunk Enterprise versions below 10.4.3, 10.2.7, 10.0.10, and 9.4.15 on Linux, a local user who can run commands as the user account running Splunk Enterprise could cause an affected Linux package upgrade to run attacker-controlled operating-system commands with root privileges. The vulnerability is possible because the Linux package maintainer script trusts existing Splunk Enterprise installation content when it performs upgrade operations with root privileges. The vulnerability requires an affected Linux package upgrade to occur after the local user modifies the installation. The local user should not be able to elevate privileges at will.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk enterprise",
+          "versions": [
+            {
+              "version": "10.4",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.4.3"
+            },
+            {
+              "version": "10.2",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.2.7"
+            },
+            {
+              "version": "10.0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.0.10"
+            },
+            {
+              "version": "9.4",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "9.4.15"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk enterprise",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-76268",
+      "description": "In Splunk Enterprise versions below 10.4.3 and 10.2.7, an unauthenticated user with network access to the Patroni Representational State Transfer (REST) Application Programming Interface (API) on a search head cluster member could execute attacker-controlled operating-system commands. The vulnerability is possible because this interface does not require authentication for critical configuration operations. For more information see Sidecar configuration settings (https://help.splunk.com/en/data-management/splunk-enterprise-admin-manual/10.2/splunk-sidecars/sidecar-configuration-settings) in the Splunk documentation.\n\nSplunk Enterprise versions 10.0.x and 9.4.x are not affected.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk enterprise",
+          "versions": [
+            {
+              "version": "10.4",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.4.3"
+            },
+            {
+              "version": "10.2",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.2.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk enterprise",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-76310",
