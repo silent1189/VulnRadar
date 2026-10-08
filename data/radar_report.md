@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-08T08:49:16+00:00`
+Generated: `2026-10-08T16:23:49+00:00`
 
 ## Executive Summary
 
@@ -161,8 +161,9 @@ Top critical items:
 | [CVE-2022-41082](https://www.cve.org/CVERecord?id=CVE-2022-41082) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.0 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2026-24858](https://www.cve.org/CVERecord?id=CVE-2026-24858) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-30 | 0.858 | 9.4 | ✅ | An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.5, FortiAnalyzer … |
 | [CVE-2024-21762](https://www.cve.org/CVERecord?id=CVE-2024-21762) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-16 | 0.834 | 9.6 | ✅ | A out-of-bounds write in Fortinet FortiOS versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, … |
-| [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.809 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
+| [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.810 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
 | [CVE-2026-71362](https://www.cve.org/CVERecord?id=CVE-2026-71362) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-27 | 0.875 | 9.1 | ✅ | Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability… |
+| [CVE-2026-50751](https://www.cve.org/CVERecord?id=CVE-2026-50751) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-11 | 0.853 | 9.3 | ✅ | A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to b… |
 | [CVE-2023-27997](https://www.cve.org/CVERecord?id=CVE-2023-27997) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-04 | 0.857 | 9.2 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS version 7.2.4 and below, version 7.0.11 and below, version 6.4.12 and below, version 6.0.16 and… |
 | [CVE-2022-30190](https://www.cve.org/CVERecord?id=CVE-2022-30190) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-07-05 | 0.992 | 7.8 | ✅ | A remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word. An attacker who successfully e… |
 | [CVE-2023-36025](https://www.cve.org/CVERecord?id=CVE-2023-36025) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-05 | 0.881 | 8.8 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
@@ -172,8 +173,8 @@ Top critical items:
 | [CVE-2026-0257](https://www.cve.org/CVERecord?id=CVE-2026-0257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-01 | 0.969 | 7.8 | ✅ | Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security res… |
 | [CVE-2023-29298](https://www.cve.org/CVERecord?id=CVE-2023-29298) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-10 | 0.998 | 7.5 | ✅ | Adobe ColdFusion versions 2018u16 (and earlier), 2021u6 (and earlier) and 2023.0.0.330468 (and earlier) are affected by an Improper Access Control vulnerabilit… |
 | [CVE-2023-38205](https://www.cve.org/CVERecord?id=CVE-2023-38205) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-10 | 0.998 | 7.5 | ✅ | Adobe ColdFusion versions 2018u18 (and earlier), 2021u8 (and earlier) and 2023u2 (and earlier) are affected by an Improper Access Control vulnerability that co… |
+| [CVE-2026-1603](https://www.cve.org/CVERecord?id=CVE-2026-1603) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-23 | 0.883 | 8.6 | ✅ | An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data. |
 | [CVE-2026-20230](https://www.cve.org/CVERecord?id=CVE-2026-20230) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-28 | 0.882 | 8.6 | ✅ | A vulnerability in Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could… |
-| [CVE-2026-1603](https://www.cve.org/CVERecord?id=CVE-2026-1603) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-23 | 0.879 | 8.6 | ✅ | An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data. |
 | [CVE-2023-36884](https://www.cve.org/CVERecord?id=CVE-2023-36884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-29 | 0.989 | 7.5 | ✅ | Windows Search Remote Code Execution Vulnerability |
 | [CVE-2024-29059](https://www.cve.org/CVERecord?id=CVE-2024-29059) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-25 | 0.986 | 7.5 | ✅ | .NET Framework Information Disclosure Vulnerability |
 | [CVE-2026-8037](https://www.cve.org/CVERecord?id=CVE-2026-8037) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-10 | 0.774 | 9.6 | ✅ | OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an un-authenticated attacker to execute arbitrary commands on t… |
@@ -247,7 +248,6 @@ Top critical items:
 | [CVE-2023-2033](https://www.cve.org/CVERecord?id=CVE-2023-2033) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-08 | 0.408 | 8.8 | ✅ | Type confusion in V8 in Google Chrome prior to 112.0.5615.121 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromi… |
 | [CVE-2022-4135](https://www.cve.org/CVERecord?id=CVE-2022-4135) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-12-19 | 0.319 | 9.6 | ✅ | Heap buffer overflow in GPU in Google Chrome prior to 107.0.5304.121 allowed a remote attacker who had compromised the renderer process to potentially perform … |
 | [CVE-2026-20963](https://www.cve.org/CVERecord?id=CVE-2026-20963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-21 | 0.296 | 9.8 | ✅ | Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network. |
-| [CVE-2026-87902](https://www.cve.org/CVERecord?id=CVE-2026-87902) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-28 | 0.461 | 8.1 | ✅ | An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme direct… |
 
 ## Recent Changes (Last 7 Days)
 
