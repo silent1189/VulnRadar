@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T22:01:00+00:00",
+  "generated_at": "2026-10-09T02:05:26+00:00",
   "vendor": "_other",
-  "count": 3023,
+  "count": 3044,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -19283,7 +19283,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -72536,6 +72536,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105488",
+      "description": "Missing authorization in the global vault in Devolutions Server 2026.3.7.0 and earlier allows an authenticated user with only the global vault view permission to modify and delete global contact and folder entries.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "devolutions",
+          "product": "server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.3.8",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:devolutions"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00259,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-13327",
       "description": "Improper certificate validation on LDAPS connections to Active Directory in\u00a0Devolutions Server 2026.2.16 and earlier allows a network-positioned attacker to intercept privileged directory service credentials via a spoofed domain controller certificate.",
       "cvss_score": 8.3,
@@ -79870,6 +79913,43 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-105830",
+      "description": "league/commonmark from 2.0.0 before 2.10.2 contains a quadratic-time denial of service vulnerability in the GitHub Flavored Markdown Table extension's TableStartParser::tryStart() block-start scan. Unauthenticated attackers can submit a large paragraph of pipe-free lines not starting with letters, forcing repeated full-buffer strpos scans that exhaust PHP worker CPU.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "thephpleague",
+          "product": "commonmark",
+          "versions": [
+            {
+              "version": "2.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2.10.2"
+            },
+            {
+              "version": "2.10.2",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:commonmark",
+        "vendor:thephpleague"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-71488",
@@ -107458,7 +107538,9 @@
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
-        "cwe_ids": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
         "cpe_count": 6,
         "reference_count": 8
       }
@@ -138760,7 +138842,19 @@
         "vendor:docker"
       ],
       "active_threat": false,
-      "probability_score": 0.00087
+      "probability_score": 0.00087,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295",
+          "CWE-319"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2024-8956",
@@ -160681,6 +160775,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.16",
+          "versions": [
+            {
+              "version": "416.94.202609281908-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.17",
           "versions": [
             {
@@ -167598,8 +167704,7 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-125",
-          "CWE-908",
-          "CWE-457"
+          "CWE-908"
         ],
         "cpe_count": 7,
         "reference_count": 10
@@ -167982,6 +168087,75 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-107406",
+      "description": "Memory overflow vulnerability leading to Remote Code Execution or Denial of Service Vulnerability in NetScaler ADC.\n\n\nNetScaler ADC or NetScaler Gateway must be configured as a SAML SP or SAML IdP, subject to the following version-specific requirements:\n\n\n\n\u00a0\n\n  *  For the following versions: Applicable only when configured as a\u00a0SAML IdP:\n  *  NetScaler ADC and NetScaler Gateway between 14.1-73.37 and 14.1-73.41, inclusive\n  *  NetScaler ADC 14.1-FIPS between 14.1-73.37 FIPS and 14.1-73.41 FIPS, inclusive\n  *  NetScaler ADC and NetScaler Gateway between 13.1-64.23 and 13.1-64.28, inclusive\n  *  NetScaler ADC 13.1-FIPS between 13.1-NDcPP 13.1-37.279 and 13.1- 37.282, inclusive\n\n\n\n\n\u00a0\n\n\n\nFor the following versions: Applicable only when configured as a\u00a0SAML SP or SAML IdP:\n\n  *  NetScaler ADC and NetScaler Gateway before 14.1-73.37\u00a0\n  *  NetScaler ADC 14.1-FIPS before 14.1-73.37 FIPS\u00a0\n  *  NetScaler ADC and NetScaler Gateway before 13.1-64.23\n  *  NetScaler ADC 13.1-FIPS before13.1-NDcPP 13.1-37.279",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:L",
+      "affected": [
+        {
+          "vendor": "netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.46",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.29",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.46 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.283 FIPS",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.46",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.29",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10816",
@@ -174976,6 +175150,422 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103010",
+      "description": "Heap-based buffer overflow in the legacy Blowfish decryption routine (BlowFishEncryptor::DecryptFromString) in Progressive Robot hMailServer 6.0.0 through 6.3.3 on Windows allows a local interactive user with no hMailServer credentials to write bytes of their choosing past the end of a 255-byte heap buffer in the hMailServer service process, which runs as LocalSystem by default. The user does this by passing a long hexadecimal string to the COM method Utilities.BlowfishDecrypt, which checked no authentication. The routine converted hexadecimal input of any length into a fixed 255-byte buffer before decrypting it in place. The result is a denial of service (service crash), and possibly code execution with the privileges of the service account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-103647",
+      "description": "Cross-site scripting in the webmail of Progressive Robot hMailServer 6.3.2 through 6.3.5 allows a remote attacker who can send a user an encrypted message to run script in the webmail's origin with that user's session. When the webmail decrypted an S/MIME message (from 6.3.2) or an OpenPGP message (from 6.3.4) in the browser, it offered each decrypted attachment as a blob URL of the media type the message declared for it. A click saved the file, but if the user opened the attachment in a new tab, a part declared as text/html was rendered as a document of the webmail's origin and its script could read the mailbox, send mail and change the account through the REST API. The webmail is served only when the REST API is enabled, which it is not by default.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.3.2",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-103649",
+      "description": "Missing network timeouts in the Linux builds of Progressive Robot hMailServer 6.3.0 through 6.3.5 allow a remote attacker to hold server threads indefinitely and so stop outbound mail delivery (denial of service). The server set its socket timeouts in the form Windows takes, which Linux refuses, and its HTTPS clients read without a deadline, so a peer that accepts a connection and then sends nothing held the waiting thread for as long as the connection stayed open. The MTA-STS policy fetch, enabled by default, is made during outbound delivery to mta-sts.<recipient domain>, so anyone who can make the server deliver mail to a domain they control - for example as the envelope sender of a message that bounces - can hold delivery threads until outbound delivery stops. The same flaw affects the DANE TLSA query, the OAuth2 token request, the ACME client, and the ManageSieve and metrics listeners, which a silent client stops from serving anyone else. Windows builds are not affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.3.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104658",
+      "description": "The Linux live-update apply helper (hmailserver-update) of Progressive Robot hMailServer 6.3.4 and 6.3.5 runs as root on a request file written by the unprivileged hmailserver service account, and took from that request the program used to verify an AppImage update's signature and the systemd unit to stop before reading the service account's files. An attacker who already runs code as the hmailserver service account, for example through another flaw in the mail server, can therefore have arbitrary code executed as root, on any Linux installation where the live update's path unit is active - the default for the project's .deb and .rpm packages - and on AppImage installations run under that unit.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.3.4",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104659",
+      "description": "Missing Host header validation and missing throttling of failed administrator sign-ins in the REST API listener of Progressive Robot hMailServer 6.0.0 through 6.3.5 allow a remote attacker to brute-force the server administrator's password through the administrator's own browser by DNS rebinding. The listener, which is off by default and bound to the loopback when enabled, answered requests whatever their Host header named, and a failed sign-in with the administrator's password from the loopback was neither auto-banned nor delayed. A web page whose host name the attacker rebinds to 127.0.0.1, opened in a browser on the server, can therefore send authenticated requests to the listener, read the answers and try administrator passwords at full speed until one is accepted, giving the attacker full administrative control of the mail server.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104660",
+      "description": "Missing authorization on COM objects in Progressive Robot hMailServer 6.0.0 through 6.3.5 (Windows only) lets a local interactive user with no hMailServer credential read and write arbitrary files as the service account and queue mail as any sender. The service registers its COM classes with no DCOM access or launch permission and calls CoInitializeSecurity with no security descriptor, so any user logged on at the console or over Remote Desktop can activate the classes in the running service; a hMailServer.Message, its Attachments and Attachment, and a hMailServer.FetchAccount created this way carry a credential that never authenticated. Attachments.Add(path) and Attachment.SaveAs(path) performed no authorization check, and Message.Save/Copy and FetchAccount.AccountID/Save performed none either up to 6.3.3 and from 6.3.4 treated a holder with no credential as the server's own event-script host. Because the service does not impersonate the COM caller, Attachments.Add reads any file the service account can read and returns it, Attachment.SaveAs writes attacker-chosen bytes to any path it can write (on a LocalSystem installation, code execution as SYSTEM), Message.Save queues outbound mail from any address past the SMTP checks, and FetchAccount attaches a mail-fetch job to any mailbox. The objects an Application handed out behave the same once a later Authenticate on that Application fails.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104704",
+      "description": "Progressive Robot hMailServer 6.0.0 through 6.3.5 does not enforce TLS for outbound SMTP delivery to a mail exchanger whose DNSSEC-validated TLSA records contain no DANE-EE (usage 3) record, contrary to RFC 7672 section 2.2. The server used only DANE-EE records and treated a validated TLSA record set consisting of DANE-TA (usage 2) or otherwise unusable records as if no records were published, so delivery to such a host fell back to opportunistic TLS. An attacker with an active position on the network path between the server and the recipient's mail exchanger can suppress or break the STARTTLS negotiation and cause messages to be delivered in cleartext, where they can be read and modified.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107573",
+      "description": "Incorrect default permissions in the Windows installer of Progressive Robot hMailServer 6.0.0 through 6.3.5 allow a local authenticated user to read the mail server's data. The installer created the data, log, temp, database and event folders and the hMailServer.INI configuration file with the permissions inherited from the installation folder, by default under Program Files, which give the local Users group read access. Any user who can sign in to the computer could read every stored message, the logs, the built-in database with the accounts' password hashes whenever the service is stopped, and the configuration file, including the database password, which is sealed only with the machine's DPAPI key and can be unsealed by any local account; with an external database that password gives full control of it. The Linux AppImage of 6.3.0 through 6.3.5 likewise created its per-user data folders readable by other local users.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107574",
+      "description": "Inefficient algorithmic complexity in the JSON reader of Progressive Robot hMailServer allows a remote unauthenticated attacker to make the mail services unavailable. Reading a JSON object kept the first of each duplicated member name by searching the members already read, so an object of N distinct member names cost O(N^2): 1 MB took 8.9 seconds and 4 MB took 300 seconds against the affected code. A remote attacker reaches the reader without an account by mailing a crafted TLS-RPT report (up to 16 MB after decompression) to a hosted domain's published report mailbox, which is read on a delivery thread; a few such reports hold every delivery thread (ten by default), so the server delivers no mail, local or outbound, for over an hour per report. A signed-in account reaches the same 16 MB body through the webmail's own REST routes, holding the REST API's own worker threads. Where no report mailbox is configured, the unauthenticated REST sign-in routes that read a JSON body are capped at 64 KB and are not affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.2.28",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107576",
+      "description": "Inefficient algorithmic complexity in the inbound DKIM and ARC signature verification of Progressive Robot hMailServer 6.0.0 through 6.3.5 allows a remote unauthenticated attacker to make the mail services unavailable by sending a message. Building the canonical header and choosing the header fields named in a signature's h= tag took time growing with the square of the message's header: the 'simple' canonicalisation prepended each continuation line of a folded field to the lines already gathered, and both canonicalisations searched the gathered fields from the bottom for each h= name and erased the match from the middle of the list. A message whose header holds very many fields, or a field folded over very many lines, with a DKIM-Signature the attacker signs for a domain they control, keeps a worker thread busy for tens of seconds per signature; up to ten signatures are evaluated per message by each of the DKIM and DMARC tests, on the threads that serve delivery and SMTP.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107577",
+      "description": "Inefficient algorithmic complexity and a non-terminating loop in the MIME processing of received messages in Progressive Robot hMailServer 6.0.0 through 6.3.5 allow a remote unauthenticated attacker to make the mail services unavailable by sending a message. Removing a MIME header parameter whose value is empty and directly followed by a semicolon (for example a Content-Disposition with 'filename=a.bat; filename=;') entered a loop that never terminates, holding a worker thread at full load until the server is restarted; this is reached when the attachment blocker renames a blocked attachment or a filename is set over the REST API. Separately, decoding a header field that holds many RFC 2047 encoded words of an encoding other than base64 or quoted-printable, removing a parameter with many RFC 2231 continuations, and deleting many header fields of one name each took time growing with the square of the message, on the small thread pools that serve IMAP, SMTP and POP3 connections, delivery and the REST API.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107579",
+      "description": "Inefficient algorithmic complexity in the bounce and complaint processing of Progressive Robot hMailServer 6.3.4 and 6.3.5 allows a remote unauthenticated attacker to stop mail delivery by sending messages, when bounce processing or complaint processing is enabled or a mailing list is managed by the server (none is by default). The readers of incoming delivery status notifications (RFC 3464) and abuse feedback reports (RFC 5965) removed the blank lines at the start of the returned headers part two bytes at a time, copying the rest of the part each time, so their work grew with the square of the number of blank lines. A message shaped like such a report, whose headers part begins with a very large number of blank lines within the reader's 2 MB limit, keeps a delivery thread busy for over a minute while it is delivered, and a few such messages a minute keep every delivery thread busy.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.3.4",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107584",
+      "description": "Progressive Robot hMailServer 6.0.0 through 6.3.5 fails open when applying DANE (RFC 7672) to outbound SMTP delivery. The server's validating DNSSEC resolver treated a TLSA or MX lookup that did not complete (no answer, SERVFAIL, a malformed reply), an answer without the requested records and without an NSEC/NSEC3 proof of their absence, and an answer whose records carried no applicable RRSIG as if the recipient domain were unsigned, and from 6.2.19 it also delivered to mail exchangers taken from an unvalidated MX lookup that the DNSSEC-validated MX record set did not name. An attacker who can drop, forge or strip DNS answers on the path to the server's resolver, at the resolver, or between the resolver and the recipient domain's name servers, and who holds an active position on the SMTP path, can thereby disable DANE for a DNSSEC-signed recipient domain and cause messages to be delivered in cleartext or to a host of the attacker's choosing with an arbitrary certificate, where they can be read and modified.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThan": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-102334",
       "description": "Nginx Proxy Manager through 2.16.0 lacks rate-limiting on authentication endpoints, allowing unauthenticated attackers to make unlimited password guesses against any account. Attackers can brute-force login credentials via POST /api/tokens and subsequently guess TOTP codes via POST /api/tokens/2fa to gain full session access and administrative control.",
       "cvss_score": 9.1,
@@ -175121,21 +175711,21 @@
           "product": "zammad",
           "versions": [
             {
+              "lessThan": "6.3.0",
               "status": "unknown",
               "version": "*",
-              "lessThan": "6.3.0",
               "versionType": "semver"
             },
             {
+              "lessThan": "6.5.4",
               "status": "affected",
               "version": "6.3.0",
-              "lessThan": "6.5.4",
               "versionType": "semver"
             },
             {
+              "lessThan": "7.1.3",
               "status": "unknown",
               "version": "7.0.0",
-              "lessThan": "7.1.3",
               "versionType": "semver"
             }
           ]
@@ -175168,13 +175758,13 @@
         "cwe_ids": [
           "CWE-384"
         ],
-        "cpe_count": 4,
-        "reference_count": 3
+        "cpe_count": 3,
+        "reference_count": 5
       }
     },
     {
       "cve_id": "CVE-2026-102490",
-      "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
+      "description": "Zammad packages built with packager.io (DEB and RPM) could have allowed a local attacker who already had file system write privileges as the unprivileged zammad service account to escalate to full root privileges on the host. Service processes began running as root and executed files that were owned and writable by the zammad account before dropping their identity to that account. An attacker holding that foothold could have escalated within seconds, because the affected services were restarted automatically whenever they stopped; no administrator interaction was required. Only installations from the DEB and RPM packages were affected \u2014 installations from source or the official container images were not. All released packaged versions were affected.",
       "cvss_score": 8.5,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:A/AU:Y/V:D",
@@ -175186,13 +175776,19 @@
             {
               "status": "affected",
               "version": "1.5.0",
-              "lessThan": "7.1.0-alpha",
+              "lessThan": "7.2.2",
               "versionType": "semver"
             },
             {
               "status": "unknown",
               "version": "*",
               "lessThan": "1.5.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.2.2",
+              "lessThan": "*",
               "versionType": "semver"
             }
           ]
@@ -175226,7 +175822,7 @@
           "CWE-269"
         ],
         "cpe_count": 4,
-        "reference_count": 3
+        "reference_count": 5
       }
     },
     {
@@ -176344,7 +176940,258 @@
         "vendor:@backstage"
       ],
       "active_threat": false,
-      "probability_score": 0.00329
+      "probability_score": 0.00329,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107303",
+      "description": "JHipster is a development platform to quickly generate, develop, and deploy modern web applications and microservice architectures. Prior to generator-jhipster 9.4.0 and react-jhipster 1.1.0, generated applications can persist attacker-controlled Blob data and companion ContentType values, return them through generated REST endpoints, and pass them to the generated openFile helper in generators/client/generators/common/templates/src/main/webapp/app/shared/jhipster/data-utils.ts.ejs. The helper uses the returned ContentType as the browser Blob MIME type and opens an object URL, so a normal authenticated user with write access to a Blob-bearing entity can store active HTML or SVG content that may execute under the application origin when a privileged user opens it. Exploitability depends on the generated application's content security policy and target-browser Blob behavior. This issue is fixed in generator-jhipster 9.4.0 and react-jhipster 1.1.0.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "jhipster",
+          "product": "generator-jhipster",
+          "versions": [
+            {
+              "version": "< 9.4.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "jhipster",
+          "product": "react-jhipster",
+          "versions": [
+            {
+              "version": "< 1.1.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:react-jhipster",
+        "vendor:jhipster"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107383",
+      "description": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. Prior to 3.2.5, 3.3.4, 3.4.7, and 3.5.4, the GeoJSON Polygon and MultiPolygon binary encoders size a Buffer.allocUnsafe() allocation from each ring's numeric length before confirming that the ring is an array. A malformed non-array ring can therefore reserve bytes that the writing loop skips, and the connector sends the full buffer through execute() or batch(), disclosing uninitialized Node.js heap data into a database value. The persisted data can include other users' content, session material, database credentials, or TLS key material and may propagate to backups and replicas. The text-protocol query() path is not affected. This issue is fixed in versions 3.2.5, 3.3.4, 3.4.7, and 3.5.4.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "mariadb-corporation",
+          "product": "mariadb-connector-nodejs",
+          "versions": [
+            {
+              "version": "< 3.2.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.3.0, < 3.3.4",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.4.0, < 3.4.7",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.5.0-rc.0, < 3.5.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mariadb-connector-nodejs",
+        "vendor:mariadb-corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107384",
+      "description": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. From 3.2.0 until 3.2.5, 3.3.4, 3.4.7, and 3.5.4, applications that enable permitSetMultiParamEntries can pass objects whose keys are expanded into a SQL SET clause without being processed by escapeId. An attacker-controlled key containing a backtick can close the quoted identifier and cause the remainder of the key to be interpreted as SQL. This can update columns the application did not intend to expose and can append arbitrary SQL with the database user's privileges. The option is disabled by default, and serialized-object handling used when it is disabled is not affected. This issue is fixed in versions 3.2.5, 3.3.4, 3.4.7, and 3.5.4.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb-corporation",
+          "product": "mariadb-connector-nodejs",
+          "versions": [
+            {
+              "version": ">= 3.2.0, < 3.2.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.3.0, < 3.3.4",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.4.0, < 3.4.7",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.5.0-rc.0, < 3.5.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mariadb-connector-nodejs",
+        "vendor:mariadb-corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107385",
+      "description": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. Prior to 3.2.5, 3.3.4, 3.4.7, and 3.5.4, text-protocol escaping always prefixes quotes with a backslash and does not honor the session's NO_BACKSLASH_ESCAPES mode, including in Connection.escape(). When that mode is enabled, the backslash is an ordinary character, so an attacker-controlled placeholder value can close the SQL string literal and inject arbitrary SQL with the application's database privileges. The vulnerable configuration may be enabled server-wide, through connector initialization options, or with an application-issued SET sql_mode; execute() and batch() use binary protocols and are not affected. This issue is fixed in versions 3.2.5, 3.3.4, 3.4.7, and 3.5.4.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb-corporation",
+          "product": "mariadb-connector-nodejs",
+          "versions": [
+            {
+              "version": "< 3.2.5",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.3.0, < 3.3.4",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.4.0, < 3.4.7",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.5.0-rc.0, < 3.5.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mariadb-connector-nodejs",
+        "vendor:mariadb-corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-55215",
+      "description": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. Prior to versions 3.3.3, 3.4.6, and 3.5.3, when ssl is enabled without a pinned CA or server certificate, MariaDB Connector/Node.js sends credentials before completing certificate fingerprint validation. In lib/cmd/handshake/auth/handshake.js, a server that selects mysql_clear_password as the initial authentication plugin can receive the password before the post-TLS identity check. In lib/cmd/handshake/authentication.js, an authentication switch can evaluate the previous plugin instead of the requested target plugin, allowing mysql_clear_password to send the credential first. An active man-in-the-middle can present a self-signed certificate, capture the database password, and use it to authenticate directly even though the connector later rejects the server and closes the connection. This issue is fixed in versions 3.3.3, 3.4.6, and 3.5.3.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "mariadb-corporation",
+          "product": "mariadb-connector-nodejs",
+          "versions": [
+            {
+              "version": "< 3.2.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mariadb-connector-nodejs",
+        "vendor:mariadb-corporation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00569,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295",
+          "CWE-522"
+        ],
+        "cpe_count": 0,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107510",
+      "description": "An authenticated high privilege user can inject arguments in troubleshooting commands resulting in privilege escalation.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "infoblox",
+          "product": "nios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.x",
+              "lessThanOrEqual": "9.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nios",
+        "vendor:infoblox"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10557",
@@ -176804,9 +177651,9 @@
       ],
       "watchlist_hit": true,
       "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
       "matched_terms": [],
       "active_threat": false,
       "probability_score": 0.00177,
@@ -190972,48 +191819,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
-      }
-    },
-    {
-      "cve_id": "CVE-2026-55215",
-      "description": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. Prior to versions 3.3.3, 3.4.6, and 3.5.3, when ssl is enabled without a pinned CA or server certificate, MariaDB Connector/Node.js sends credentials before completing certificate fingerprint validation. In lib/cmd/handshake/auth/handshake.js, a server that selects mysql_clear_password as the initial authentication plugin can receive the password before the post-TLS identity check. In lib/cmd/handshake/authentication.js, an authentication switch can evaluate the previous plugin instead of the requested target plugin, allowing mysql_clear_password to send the credential first. An active man-in-the-middle can present a self-signed certificate, capture the database password, and use it to authenticate directly even though the connector later rejects the server and closes the connection. This issue is fixed in versions 3.3.3, 3.4.6, and 3.5.3.",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "affected": [
-        {
-          "vendor": "mariadb-corporation",
-          "product": "mariadb-connector-nodejs",
-          "versions": [
-            {
-              "version": "< 3.2.4",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:mariadb-connector-nodejs",
-        "vendor:mariadb-corporation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00569,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-295",
-          "CWE-522"
-        ],
-        "cpe_count": 0,
-        "reference_count": 9
       }
     },
     {

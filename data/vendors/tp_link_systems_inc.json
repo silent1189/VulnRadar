@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T22:01:00+00:00",
+  "generated_at": "2026-10-09T02:05:26+00:00",
   "vendor": "tp_link_systems_inc",
-  "count": 125,
+  "count": 128,
   "items": [
     {
       "cve_id": "CVE-2025-10991",
@@ -6877,6 +6877,102 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-105672",
+      "description": "TP-Link Tapo\nC325WB V2 contains an unauthenticated authorization bypass vulnerability in the\nHTTPS JSON API dispatcher on TCP port 443. An attacker on the adjacent network\ncan append an onboarding-scoped object to a JSON request to bypass session\nverification and invoke privileged actions without authentication.\u00a0\n\n\n\n\n\nSuccessful\nexploitation may allow an unauthenticated adjacent-network attacker to access\nlive video and audio, modify device settings, and obtain sensitive device\ninformation or secrets.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c325wb v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V2_1.3.3 Build 260914",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c325wb v2",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105673",
+      "description": "An\nunauthenticated denial-of-service vulnerability exists in Tapo C325WB v2 in the\nRTSP streaming service on TCP port 554 when the Camera Account feature is\nenabled. A crafted pair of RTSP-over-HTTP tunneling requests can cause memory\ncorruption and crash the streaming daemon.\u00a0\n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow an unauthenticated adjacent-network attacker to disrupt\nlive video and related streaming functions until the affected service recovers\nor restarts.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c325wb v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V2_1.3.3 Build 260914",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c325wb v2",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105674",
+      "description": "TP-Link Tapo\nC325WB V2 generates the pre-shared key used by its local media streaming\nservice with a time-seeded pseudo-random number generator, making the key\npredictable and recoverable. An unauthenticated attacker on the adjacent\nnetwork can recover the key and authenticate to the media streaming service\nwithout valid user credentials.\u00a0\n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow an unauthenticated adjacent-network attacker to access\nand take over live video and audio streams, compromising the confidentiality\nand integrity of camera media.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c325wb v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V2_1.3.3 Build 260914",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c325wb v2",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-11409",

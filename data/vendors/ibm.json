@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-08T22:01:00+00:00",
+  "generated_at": "2026-10-09T02:05:26+00:00",
   "vendor": "ibm",
-  "count": 1036,
+  "count": 1103,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -23330,6 +23330,77 @@
       }
     },
     {
+      "cve_id": "CVE-2026-14269",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 is vulnerable to a heap-based buffer overflow, caused by improper bounds checking. An unauthenticated remote attacker could overflow the buffer and execute arbitrary code on the system.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-14446",
       "description": "IBM WebSphere Application Server 9.0, and 8.5 is vulnerable to broken access control/privilege escalation in the administrative console.",
       "cvss_score": 9.8,
@@ -23375,6 +23446,148 @@
       }
     },
     {
+      "cve_id": "CVE-2026-14496",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to a heap-based buffer overflow.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-14497",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote authenticated attacker to bypass security restrictions due to improper verification of cryptographic signatures.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-14499",
       "description": "IBM Langflow OSS 1.0.0 through 1.10.1 Langflow could allow an authenticated user to execute arbitrary commands with elevated privileges on the system due to improper validation of user supplied input in the Python Interpreter component.",
       "cvss_score": 8.8,
@@ -23416,6 +23629,109 @@
         "cpe_count": 4,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-14502",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to obtain administrative access due to failure to reject empty passwords during LDAP authentication.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-14507",
+      "description": "IBM DataPower Gateway 11.0.0.0 through 11.0.0.2 could allow a remote authenticated attacker to cause a denial of service due to improper memory allocation during key derivation.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-14512",
@@ -23793,6 +24109,77 @@
       }
     },
     {
+      "cve_id": "CVE-2026-14888",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to execute arbitrary code due to a heap-based buffer overflow.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-14893",
       "description": "IBM Observability with Instana (Agent) Build 1.0.303 through 1.0.320 IBM Instana Node.js tracer component @instana/core version 6.2.1 is vulnerable to prototype pollution through its configuration normalization API.",
       "cvss_score": 7.3,
@@ -23834,6 +24221,77 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-14905",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 is vulnerable to an XML external entity injection (XXE) attack when processing XML data. A remote attacker could exploit this vulnerability to expose sensitive information or consume memory resources.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-14958",
@@ -24210,6 +24668,180 @@
       }
     },
     {
+      "cve_id": "CVE-2026-14990",
+      "description": "IBM DataPower Gateway 10.6.0.0 through 10.6.0.10\u00a0is vulnerable to cross-site scripting. This vulnerability allows an unauthenticated user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.6.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-14991",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 is vulnerable to a buffer overflow, caused by improper bounds checking. A local user could overflow the buffer and execute arbitrary code on the system.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-14992",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 vulnerable to buffer overflow.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-14996",
       "description": "IBM Aspera Faspex 5 5.0.0 through 5.0.15.4 has addressed a vulnerability related to session management.",
       "cvss_score": 8.2,
@@ -24251,6 +24883,77 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-14999",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to bypass authentication by forging valid JSON Web Signatures due to improper verification of cryptographic signatures.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-15057",
@@ -24884,6 +25587,432 @@
       }
     },
     {
+      "cve_id": "CVE-2026-15762",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to execute arbitrary code due to an out-of-bounds write.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-15781",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote authenticated attacker to execute arbitrary code due to a buffer overflow.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-15784",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to execute arbitrary code due to an out-of-bounds write.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-15819",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to out-of-bounds memory access caused by a strict-weak-ordering violation in a sorting comparator.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-15822",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to improper memoization of GraphQL fragment spreads.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-15824",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to a heap-based buffer overflow.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-15955",
       "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 could allow a remote attacker to perform an arbitrary file write due to improper validation of file paths.",
       "cvss_score": 7.5,
@@ -24931,6 +26060,890 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-16111",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow an attacker to cause a denial of service due to a type confusion flaw.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16159",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to obtain sensitive information and cause a denial of service due to an out-of-bounds write.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16161",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to an out-of-bounds read.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16163",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause memory corruption due to an out-of-bounds write.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16164",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to a buffer overflow.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16165",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to a null pointer dereference.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16167",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to improper bounds checking.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16169",
+      "description": "IBM DataPower Gateway 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16170",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to a heap buffer overflow.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16176",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to improper validation of the length field during memory reallocation.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16178",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to cause a denial of service due to improper input validation.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16179",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow an attacker to cause a heap buffer underwrite and potentially crash the service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-16181",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to bypass security restrictions due to improper authorization.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-16184",
@@ -25150,6 +27163,77 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-16340",
+      "description": "IBM DataPower Gateway 10.5.0.0 through 10.5.0.22, 10.6.1 through 10.6.6, 10.6.0.0 through 10.6.0.10, and 11.0.0.0 through 11.0.0.2 could allow a remote attacker to execute arbitrary code due to an out-of-bounds write in the RFC2047 encoded-word parser.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6cd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.1",
+              "lessThanOrEqual": "10.6.6",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.6.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.6.0.0",
+              "lessThanOrEqual": "10.6.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 11.0.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0.0",
+              "lessThanOrEqual": "11.0.0.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "datapower gateway 10.5.0",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.5.0.0",
+              "lessThanOrEqual": "10.5.0.22",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datapower gateway 10.5.0",
+        "product:datapower gateway 10.6.0",
+        "product:datapower gateway 10.6cd",
+        "product:datapower gateway 11.0.0",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-16346",
@@ -26578,6 +28662,77 @@
         "cpe_count": 7,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-16823",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote attacker to bypass security restrictions due to improper authentication.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-16824",
@@ -29421,6 +31576,77 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-16916",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote authenticated attacker to execute arbitrary code due to a protection mechanism failure.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-16917",
@@ -33915,6 +36141,77 @@
       }
     },
     {
+      "cve_id": "CVE-2026-17189",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 is vulnerable to cross-site scripting. This vulnerability allows an unauthenticated user to\u00a0embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially\u00a0leading to credentials disclosure within a trusted session",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-17197",
       "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation of client-asserted identity.",
       "cvss_score": 8.1,
@@ -36420,14 +38717,14 @@
       "active_threat": false,
       "probability_score": 0.00358,
       "nvd": {
-        "cvss_v3_score": 8.2,
+        "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-287"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -36516,14 +38813,14 @@
       "active_threat": false,
       "probability_score": 0.00441,
       "nvd": {
-        "cvss_v3_score": 8.5,
+        "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -36718,14 +39015,14 @@
       "active_threat": false,
       "probability_score": 0.0026,
       "nvd": {
-        "cvss_v3_score": 7.6,
+        "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-470"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -36761,14 +39058,14 @@
       "active_threat": false,
       "probability_score": 0.00216,
       "nvd": {
-        "cvss_v3_score": 8.2,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -36811,7 +39108,7 @@
         "cwe_ids": [
           "CWE-319"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -36854,7 +39151,7 @@
         "cwe_ids": [
           "CWE-89"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37112,7 +39409,7 @@
         "cwe_ids": [
           "CWE-611"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37208,7 +39505,7 @@
         "cwe_ids": [
           "CWE-319"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37251,7 +39548,7 @@
         "cwe_ids": [
           "CWE-862"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37294,7 +39591,7 @@
         "cwe_ids": [
           "CWE-321"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37337,7 +39634,7 @@
         "cwe_ids": [
           "CWE-611"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37380,7 +39677,7 @@
         "cwe_ids": [
           "CWE-306"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -37717,7 +40014,7 @@
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -38384,6 +40681,77 @@
       }
     },
     {
+      "cve_id": "CVE-2026-18740",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote authenticated attacker to perform unauthorized actions due to argument injection.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-18821",
       "description": "IBM PowerVM Hypervisor FW1120.00, FW1110.00 through FW1110.30, FW1060.00 through FW1060.80, and FW950.00 through FW950.H2 Power Systems Firmware is affected by a vulnerability in partition firmware during network boot. An unauthenticated attacker on the same network as a partition undergoing network boot can send a malformed packet, allowing arbitrary code to be executed in the partition firmware and compromising everything subsequently loaded by that partition. Other partitions and the managed system are not affected. Only partitions actively performing a network boot are affected, resulting in a confidentiality, integrity, and availability impact.",
       "cvss_score": 7.5,
@@ -38979,7 +41347,7 @@
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -39022,7 +41390,7 @@
         "cwe_ids": [
           "CWE-74"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -39235,7 +41603,7 @@
         "cwe_ids": [
           "CWE-74"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -40033,6 +42401,77 @@
       }
     },
     {
+      "cve_id": "CVE-2026-19482",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3\u00a0could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of command arguments.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-19483",
       "description": "IBM Storage Scale 5.2.3.0 through 5.2.3.8, and 6.0.0.0 through 6.0.1.0 Secrets may be disclosed in log files in IBM Storage Scale Management GUI The admin password is logged into the GUI log of IBM Storage Scale Systems Deploy and Upgrade from GUI. Secrets may be disclosed in information related to exceptions in IBM Storage Scale Management GUI.",
       "cvss_score": 7.1,
@@ -40080,6 +42519,219 @@
         "cpe_count": 3,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-19491",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote attacker to bypass authentication due to improper authentication.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-19493",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote attacker to perform an arbitrary file write due to path traversal.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-19494",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-19646",
@@ -42002,6 +44654,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-75875",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to path traversal.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-75878",
       "description": "IBM Sterling File Gateway could allow a remote attacker to bypass authentication and obtain a fully authenticated session due to improper authentication via an unvalidated SSO header.",
       "cvss_score": 9.1,
@@ -42176,6 +44866,148 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-78401",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote unauthenticated attacker to execute arbitrary code on the system due to the deserialization of untrusted data.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-78406",
+      "description": "IBM Security Verify Access 10.0 through 10.0.9.2 and IBM Verify Identity Access 11.0 through 11.0.3 could allow a remote unauthenticated attacker to execute arbitrary code on the system due to the deserialization of untrusted data.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0",
+              "lessThanOrEqual": "10.0.9.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify identity access container",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0",
+              "lessThanOrEqual": "11.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:security verify access container",
+        "product:verify identity access",
+        "product:verify identity access container",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-78569",
@@ -43168,9 +46000,9 @@
       ],
       "watchlist_hit": true,
       "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
       "matched_terms": [
         "product:langflow oss",
         "vendor:ibm"
@@ -43397,6 +46229,44 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-80381",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute unauthorized SQL statements due to SQL injection.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-80412",
@@ -44783,6 +47653,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-81932",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0is vulnerable to SQL injection. A remote unauthenticated attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-81933",
       "description": "IBM Guardium Data Protection 12.2 is vulnerable to a SQL injection vulnerability in the Analytic Grid Service Handler. A low-privileged authenticated user can inject SQL statements through the analytic cases grid endpoint, potentially resulting in unauthorized access to sensitive data and impact to the confidentiality, integrity, and availability of the affected system.",
       "cvss_score": 8.8,
@@ -45320,6 +48228,82 @@
       }
     },
     {
+      "cve_id": "CVE-2026-82334",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, 12.2\u00a0is vulnerable to a heap-based out-of-bounds read in the TDS7 LOGIN7 protocol parser. A remote attacker could send a specially crafted TDS LOGIN7 packet containing invalid offset or length values, potentially causing information disclosure or denial of service.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-82335",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, 12.2 is vulnerable to a heap-based buffer overflow in the MongoDB protocol parser. A remote attacker could send a specially crafted MongoDB SCRAM username containing an excessive length and cause memory corruption, potentially resulting in denial of service or arbitrary code execution.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-82340",
       "description": "IBM Guardium Data Protection 12.2 is vulnerable to unauthenticated insecure deserialization and attacker-controlled reflective method dispatch in the Change Audit System (CAS) listener. A network attacker able to reach TCP port 16017 may submit crafted serialized messages and potentially cause unintended code execution in the Guardium appliance.",
       "cvss_score": 9.8,
@@ -45359,6 +48343,44 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-82344",
+      "description": "IBM Guardium Data Protection 12.0, 12.1\u00a0is vulnerable to a heap-based buffer overflow in the S-TAP TrafficTap TDS login reassembly functionality. An unauthenticated remote attacker can send crafted TDS login fragments that exceed the fixed-size reassembly buffer, potentially resulting in denial of service or arbitrary code execution on the affected system.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-82832",
@@ -45566,6 +48588,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-82895",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-82896",
       "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to traverse directories on the system due to a path traversal vulnerability.",
       "cvss_score": 7.6,
@@ -45605,6 +48665,40 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-82900",
+      "description": "IBM Guardium Data Protection 12.2.2, and 12.1 could allow a remote attacker to delete arbitrary files due to improper limitation of a pathname to a restricted directory.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-82967",
@@ -45730,6 +48824,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-84035",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to a stack-based buffer overflow.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-84036",
       "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to bypass security restrictions due to improper authorization.",
       "cvss_score": 7.4,
@@ -45769,6 +48901,78 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-84057",
+      "description": "IBM Guardium Data Protection 12.2.2, and 12.1 could allow a remote attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84058",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0is vulnerable to a buffer overrun in the TDS (Microsoft SQL Server) PRELOGIN packet decoder. A remote attacker who can send a specially crafted TDS PRELOGIN packet to a network monitored by an IBM Guardium Collector may cause a denial of service or potentially execute arbitrary code on the Collector appliance.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-84064",
@@ -46550,6 +49754,108 @@
       }
     },
     {
+      "cve_id": "CVE-2026-84198",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84209",
+      "description": "IBM Guardium Data Protection 12.2.2, and 12.1 could allow a remote attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84230",
+      "description": "IBM Guardium Data Protection 12.2.2 could allow a remote attacker to cause a denial of service due to a race condition resulting from concurrent unsynchronized writes to a shared map.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-84239",
       "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper neutralization of special elements used in an SQL command.",
       "cvss_score": 7.6,
@@ -46630,6 +49936,352 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-84244",
+      "description": "IBM Guardium Data Protection 12.2 IBM Security Guardium Data Protection is vulnerable to stored cross-site scripting (XSS) in the Quick Search results grid. An unauthenticated attacker who can influence monitored database traffic could execute malicious script in the browser of an authenticated Guardium user.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84245",
+      "description": "IBM Guardium Data Protection 12.2 is vulnerable to a local privilege escalation in the cp_wrapper component. A low-privileged local user could exploit this vulnerability to gain root privileges and access or modify sensitive system files.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84246",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84247",
+      "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to cause a denial of service due to a path traversal vulnerability.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84249",
+      "description": "IBM Guardium Data Protection 12.2, and 12.2.2 could allow a remote attacker to execute arbitrary management operations due to missing authentication for critical function.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84250",
+      "description": "IBM Guardium Data Protection 12.2 is vulnerable due to weak cryptographic protection and a hard-coded recovery key in the pkcrypto passkey component. A local attacker could exploit this vulnerability to recover the root password and gain root privileges.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84271",
+      "description": "IBM Guardium Data Protection 12.2 is vulnerable to a signature verification bypass in the patch installer. An attacker with local access could exploit this vulnerability to execute arbitrary code with root privileges.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84272",
+      "description": "IBM Guardium Data Protection 12.1 and 12.2.2 are vulnerable to missing authentication in the edge-controller component. An unauthenticated remote attacker could exploit this vulnerability to execute arbitrary container images and gain control of managed edge clusters.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84275",
+      "description": "IBM Guardium Data Protection 12.2 is vulnerable to path traversal in the GIM file-upload functionality. An unauthenticated attacker could exploit this vulnerability to write arbitrary files to the Collector.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84276",
+      "description": "IBM Guardium Data Protection 12.2.2 is affected by a denial-of-service vulnerability in the edge-controller. An unauthenticated remote attacker with network access to the edge-controller gRPC service can provide malformed task data that triggers an unchecked type assertion, causing the edge-controller process to terminate unexpectedly.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84278",
+      "description": "IBM Guardium Data Protection 12.2 is affected by a command injection vulnerability in the SUID-root ssh_config_wrapper component. An authenticated high-privileged user can inject arbitrary commands through attacker-controlled arguments, resulting in command execution with root privileges.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-84414",
@@ -46939,6 +50591,44 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-84875",
+      "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0"
+            },
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-84882",
@@ -49045,7 +52735,7 @@
         "cwe_ids": [
           "CWE-639"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49088,7 +52778,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49131,7 +52821,7 @@
         "cwe_ids": [
           "CWE-693"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49174,7 +52864,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49217,7 +52907,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49260,7 +52950,7 @@
         "cwe_ids": [
           "CWE-693"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49303,7 +52993,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -49346,7 +53036,7 @@
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
