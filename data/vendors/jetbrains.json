@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T00:44:08+00:00",
+  "generated_at": "2026-10-10T06:58:41+00:00",
   "vendor": "jetbrains",
-  "count": 105,
+  "count": 106,
   "items": [
     {
       "cve_id": "CVE-2022-28650",
@@ -2609,16 +2609,48 @@
       "active_threat": false,
       "probability_score": 0.00281,
       "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-184"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-108474",
+      "description": "In JetBrains Exposed before 1.5.1 sQL injection was possible via unescaped string arguments of several SQL functions",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "exposed",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "1.5.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:exposed",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-25847",

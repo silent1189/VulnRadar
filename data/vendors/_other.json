@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T00:44:08+00:00",
+  "generated_at": "2026-10-10T06:58:41+00:00",
   "vendor": "_other",
-  "count": 3044,
+  "count": 3066,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -15469,7 +15469,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 86,
+        "cpe_count": 88,
         "reference_count": 3
       }
     },
@@ -15518,7 +15518,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 103,
+        "cpe_count": 105,
         "reference_count": 2
       }
     },
@@ -19309,7 +19309,7 @@
           "CWE-312"
         ],
         "cpe_count": 1,
-        "reference_count": 6
+        "reference_count": 7
       }
     },
     {
@@ -59762,7 +59762,7 @@
         "cwe_ids": [
           "CWE-232"
         ],
-        "cpe_count": 2,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -64944,7 +64944,7 @@
           "CWE-190",
           "CWE-789"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 4
       }
     },
@@ -64987,6 +64987,35 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-108125",
+      "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in wp-post-author.\n\nThis issue affects wp-post-author version 4.0.0 prior to 4.1.0.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13048",
@@ -79949,7 +79978,18 @@
         "vendor:thephpleague"
       ],
       "active_threat": false,
-      "probability_score": 0.00367
+      "probability_score": 0.00367,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-71488",
@@ -113054,6 +113094,276 @@
       }
     },
     {
+      "cve_id": "CVE-2026-107805",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.5.0 until 2.6.0, the node-signature authentication path performs temporary file staging of an attacker-controlled request body and synchronizes it before validating the body digest and cryptographic signature. An unauthenticated remote client that can reach the API and provide syntactically valid signature metadata can consume temporary filesystem capacity, disk input and output, and request-processing resources before rejection. The issue affects availability and does not bypass authentication or provide confidentiality or integrity impact. This issue is fixed in version 2.6.0.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.5.0, < 2.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107806",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.3.8 until 2.5.0, an authenticated administrator with an active secure session can submit attacker-controlled portable backup key material and a matching manifest to POST /api/restore. The restore flow trusts the supplied key, decrypts attacker-controlled contents, and replaces the live app.ini, including protected nginx command settings such as TestConfigCmd. Triggering POST /api/nginx/test then executes the restored command in the Nginx UI runtime context, affecting confidentiality, integrity, and availability. This issue is fixed in version 2.5.0.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.3.8, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107807",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, Nginx UI accepts the Node.Secret master credential through the node_secret query parameter in HTTP and WebSocket authentication paths instead of requiring the X-Node-Secret header. The credential can consequently appear in access logs, proxy logs, browser history, Referer headers, configuration URLs, and deployment environment data. A party that obtains the secret can bypass normal password, JWT, session, and second-factor checks and obtain persistent administrative API access, including access to configuration and secret material. This issue is fixed in version 2.5.0.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107808",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, POST /api/login checks EnabledOTP but does not require a WebAuthn assertion when EnabledPasskey is true and no TOTP secret is configured. A passkey-only account is therefore issued a session after password verification, despite Enabled2FA reporting that the account has a second factor. An attacker who obtains the password can take over the account and reach administrative functionality without the registered passkey. This issue is fixed in version 2.5.0.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107809",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, AuthRequired accepts a browser-managed token cookie as an API credential after the front end stores the JWT in that cookie. Because management endpoints do not universally require a CSRF token or perform Origin or Referer validation, a remote attacker can induce a logged-in administrator's browser to submit authenticated cross-site state-changing requests, including POST /api/configs. The attack requires an administrator account without OTP/Passkey or a target endpoint that does not require secure-session proof. The attacker cannot read the cross-origin response but can modify Nginx configuration, trigger reloads, or invoke other management operations reachable with the victim's session. This issue is fixed in version 2.5.0.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107810",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, internal/backup/restore.go extracts inner archives before applying the restore_nginx and restore_nginx_ui flags and permits symlinks targeting the live Nginx configuration path. An authenticated user who can create and restore backups can craft a valid backup that places a symlink in the staging tree and then writes a regular file through that link, even when both restore flags are false. This can persistently inject configuration or cause denial of service when the modified files are later consumed. This issue is fixed in version 2.5.0.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107811",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, ordinary authenticated users can access /api/nodes and /api/nodes/:id, whose responses serialize the node token field. The same token is accepted as X-Node-Secret by AuthRequired and maps the request to initUser, allowing the user to impersonate a trusted node against a reachable cluster member. This cross-node authentication bypass can expose sensitive management operations, including configuration synchronization and service restart. This issue is fixed in version 2.5.0.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107812",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, the self-upgrade mechanism validates a downloaded binary only with a same-origin digest obtained from the same upgrade mirror. A compromised mirror or network attacker able to alter both responses can supply a malicious executable and matching digest. An operator-triggered upgrade is required, and the application installs and runs the attacker-controlled code in the Nginx UI process context on the next upgrade. This issue is fixed in version 2.5.0.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107813",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0 until 2.5.0, the api/cluster router exposes node and namespace mutation operations and cluster-wide Nginx reload or restart operations with AuthRequired but without RequireSecureSession. An authenticated OTP-enabled user possessing a stolen or persisted JWT can therefore perform node CRUD, read or replace node credentials, change namespaces, and invoke nodes/reload_nginx or nodes/restart_nginx without a fresh second-factor step-up. This issue is an incomplete fix for CVE-2026-84315 and is fixed in version 2.5.0.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-27944",
       "description": "Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.3, the /api/backup endpoint is accessible without authentication and discloses the encryption keys required to decrypt the backup in the X-Backup-Security response header. This allows an unauthenticated attacker to download a full system backup containing sensitive data (user credentials, session tokens, SSL private keys, Nginx configurations) and decrypt it immediately. This issue has been patched in version 2.3.3.",
       "cvss_score": 9.8,
@@ -138373,6 +138683,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-106581",
+      "description": "Before 4.92.0, Docker Desktop for Windows did not verify the signature of a package supplied to Docker Desktop Installer.exe install -package. An attacker able to provide a crafted package and convince a user to approve the Docker-signed UAC prompt could execute attacker-controlled installer actions as LocalSystem.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker desktop",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "4.92.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker desktop",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-17106",
       "description": "The tar extraction routines in moby/go-archive (Unpack, UnpackLayer, Untar/UntarUncompressed, and the ApplyLayer helpers) do not confine filesystem operations to the destination directory. The extractor decides where each archive entry lands using lexical string checks and then performs the filesystem operation on a path that is resolved by the OS, so links introduced by the archive can be followed out of the destination directory. An attacker who controls the contents of an archive can create or overwrite files at arbitrary paths writable by the extracting process.",
       "cvss_score": 7.1,
@@ -160775,6 +161117,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.14",
+          "versions": [
+            {
+              "version": "414.92.202609282130-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.16",
           "versions": [
             {
@@ -161498,7 +161852,7 @@
           "CWE-193"
         ],
         "cpe_count": 6,
-        "reference_count": 64
+        "reference_count": 66
       }
     },
     {
@@ -168155,7 +168509,16 @@
         "vendor:netscaler"
       ],
       "active_threat": false,
-      "probability_score": 0.00414
+      "probability_score": 0.00414,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-10816",
@@ -175107,6 +175470,290 @@
       }
     },
     {
+      "cve_id": "CVE-2026-100730",
+      "description": "A service console interface on openPDC and openHistorian deserializes a client-supplied data structure. On systems using Windows Authentication, an attacker must already be authenticated to reach this function; on systems without Windows Authentication, this is reachable by an unauthenticated network attacker. This allows an attacker to trigger deserialization of an arbitrary object graph, which could allow remote code execution under the privileges of the affected service account.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.9.482"
+            }
+          ]
+        },
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc (docker image)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "grid protection alliance",
+          "product": "openhistorian",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.8.580",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.8.585",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.8.585"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openpdc (docker image)",
+        "vendor:grid protection alliance"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104629",
+      "description": "A component loading mechanism in openPDC and openHistorian will construct and run any specified type, which may be an invalid component to load. An attacker with an authenticated user account and the ability to place a file on the host filesystem can use this to run arbitrary constructor code, and this code runs with the privileges of the affected service account.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.9.482"
+            }
+          ]
+        },
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc (docker image)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "grid protection alliance",
+          "product": "openhistorian",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.8.580",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.8.585",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.8.585"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openpdc (docker image)",
+        "vendor:grid protection alliance"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105278",
+      "description": "The published Docker image for openPDC includes a fixed administrative credential with no forced change on first use. An attacker with network access to the management interface can authenticate using this credential and gain full administrative control of the application.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc (docker image)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openpdc (docker image)",
+        "vendor:grid protection alliance"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105281",
+      "description": "The internal data publisher on openPDC accepts network connections without authentication in its default configuration. An unauthenticated network attacker can connect to this interface and retrieve the complete device and measurement topology of the system.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.9.482"
+            }
+          ]
+        },
+        {
+          "vendor": "grid protection alliance",
+          "product": "openpdc (docker image)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.477",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.9.482",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "grid protection alliance",
+          "product": "openhistorian",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.8.580",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.8.585",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.8.585"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openpdc (docker image)",
+        "vendor:grid protection alliance"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-100741",
       "description": "Eval injection in the JScript event-script dispatcher in Progressive Robot Ltd's hMailServer, versions 6.0.0 through 6.3.3 on Windows, allows a remote, unauthenticated attacker to run arbitrary JScript inside the hMailServer service process, with the privileges of the service account, via a password containing a backslash followed by an apostrophe, sent in any logon (SMTP AUTH, POP3, IMAP) that names an existing, active account. Exploitation requires a non-default configuration: event scripting enabled (off by default), the script language set to JScript (the default is VBScript), and an OnClientValidatePassword handler defined in the event script. The server wrote event values into the handler call as JScript string literals, escaping the apostrophe but not the backslash, so such a value closes the literal and the rest of it is parsed as script. The same flaw is reachable by a remote POP3 server through the message UID it returns, where an OnExternalAccountDownload handler is defined, and by a remote SMTP server through the error reply it rejects a delivery with, where an OnDeliveryFailed handler is defined. Before 6.2.25 the injected script can create any COM object, and from 6.2.25 it can with the default ScriptAllowedObjects value of '*'; WScript.Shell among them gives command execution as the service account. VBScript event scripts and the Linux builds of Progressive Robot Ltd's hMailServer are not affected.",
       "cvss_score": 9.8,
@@ -175179,7 +175826,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00162
+      "probability_score": 0.00162,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-103647",
@@ -175211,7 +175869,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00247
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-103649",
@@ -175243,7 +175912,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.0027
+      "probability_score": 0.0027,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1088"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-104658",
@@ -175275,7 +175955,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00114
+      "probability_score": 0.00114,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-807"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-104659",
@@ -175307,7 +175998,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00143
+      "probability_score": 0.00143,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-104660",
@@ -175339,7 +176041,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00107
+      "probability_score": 0.00107,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-104704",
@@ -175371,7 +176084,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.0015
+      "probability_score": 0.0015,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-319"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-107573",
@@ -175403,7 +176127,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00102
+      "probability_score": 0.00102,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-107574",
@@ -175435,7 +176170,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00428
+      "probability_score": 0.00428,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-107576",
@@ -175467,7 +176213,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00428
+      "probability_score": 0.00428,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-107577",
@@ -175499,7 +176256,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00428
+      "probability_score": 0.00428,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-835"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-107579",
@@ -175531,7 +176299,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00347
+      "probability_score": 0.00347,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-107584",
@@ -175563,7 +176342,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00151
+      "probability_score": 0.00151,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-636"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-102334",
@@ -176651,7 +177441,7 @@
           "CWE-1333"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -176991,7 +177781,18 @@
         "vendor:jhipster"
       ],
       "active_threat": false,
-      "probability_score": 0.00261
+      "probability_score": 0.00261,
+      "nvd": {
+        "cvss_v3_score": 7.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2026-107383",
@@ -177033,7 +177834,18 @@
         "vendor:mariadb-corporation"
       ],
       "active_threat": false,
-      "probability_score": 0.00388
+      "probability_score": 0.00388,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 0,
+        "reference_count": 10
+      }
     },
     {
       "cve_id": "CVE-2026-107384",
@@ -177075,7 +177887,18 @@
         "vendor:mariadb-corporation"
       ],
       "active_threat": false,
-      "probability_score": 0.00447
+      "probability_score": 0.00447,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 11
+      }
     },
     {
       "cve_id": "CVE-2026-107385",
@@ -177117,7 +177940,18 @@
         "vendor:mariadb-corporation"
       ],
       "active_threat": false,
-      "probability_score": 0.00438
+      "probability_score": 0.00438,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 11
+      }
     },
     {
       "cve_id": "CVE-2026-55215",
@@ -177191,7 +178025,617 @@
         "vendor:infoblox"
       ],
       "active_threat": false,
-      "probability_score": 0.00294
+      "probability_score": 0.00294,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-88",
+          "CWE-269",
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107814",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, MariaDB RPM packages created the dedicated mysql service account with the database data directory as its home directory. A database user with the FILE privilege could write startup dot-files such as .bash_profile into $HOME, and those files could execute when an administrator opened a login shell for the mysql account. Debian packages are not affected because they use /nonexistent as the account home. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107815",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the CONNECT engine's DOS table type used an incorrect boundary check that permitted a one-byte null write beyond a stack buffer at an attacker-controlled offset. An authenticated user able to use the CONNECT engine could cause a crash and potentially remote code execution. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107818",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the mariadb.service unit used /run/mysqld/wsrep-new-cluster during the next service restart. A database user with FILE privilege and a secure-file-priv configuration permitting writes to /run/mysqld could create that file and inject attacker-controlled environment values into the restarted service. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107821",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, MariaDB insufficiently validated counts, offsets, lengths, and field boundaries in FRM metadata while opening binary FRM files. An attacker able to place a crafted FRM file in the data directory could trigger out-of-bounds reads or writes, crash the server, or potentially execute code. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107823",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the MariaDB view FRM parser did not safely encode embedded newline characters in a username. An account with CREATE USER and CREATE VIEW WITH GRANT OPTION could create a crafted username containing additional view metadata, causing the parser to interpret part of the username as security metadata and potentially escalating database privileges. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-32710",
+      "description": "MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Under certain conditions it might be possible to turn the crash into a remote code execution. These conditions require tight control over memory layout which is generally only attainable in a lab environment. This issue is fixed in MariaDB 11.4.10, MariaDB 11.8.6, and MariaDB 12.2.2.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 11.4.1, < 11.4.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.6",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.1.2, < 12.2.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00802,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 3,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-44168",
+      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.26, 10.11.1 to before 10.11.17, 11.4.1 to before 11.4.11, 11.8.1 to before 11.8.7, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the mariabackup SST method. This issue has been patched in versions 10.6.26, 10.11.17, 11.4.11, 11.8.7, and 12.3.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.26",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.17",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.11",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.7",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0097,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 13
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48163",
+      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the rsync SST method. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.27",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.18",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.12",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.8",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01123,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 13
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48165",
+      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, a high-privileged MariaDB user could've used wsrep_sst_receive_address or wsrep_sst_donor global system variables to execute shell commands as the uid of the mariadbd process on the galera joiner node. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.27",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.18",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.12",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.8",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01602,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 13
+      }
+    },
+    {
+      "cve_id": "CVE-2026-49261",
+      "description": "MariaDB server is a community developed fork of MySQL server. Versions 10.6.1 through 10.6.26, 10.11.1 through 10.11.17, 11.4.1 through 11.4.11, 11.8.1 through 11.8.7, and 12.3.1 with  `wsrep_notify_cmd` enabled would execute shell commands embedded in the name of the joiner node. This is fixed in 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2. As a workaround, anyone who cannot upgrade now should disable `wsrep_notify_cmd`.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.27",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.18",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.12",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.8",
+              "status": "affected"
+            },
+            {
+              "version": "= 12.3.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01691,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 15
+      }
+    },
+    {
+      "cve_id": "CVE-2026-108261",
+      "description": "Tina is a headless content management system. Prior to tinacms 3.14.0 and @tinacms/app 2.5.14, the /~/* admin preview route in packages/tinacms/src/admin/index.tsx can turn an attacker-controlled hash-router splat into an off-origin iframe URL through packages/@tinacms/app/src/preview.tsx, while packages/@tinacms/app/src/lib/preview-origin.ts derives expectedOrigin from that same URL for the GraphQL message channel in packages/@tinacms/app/src/lib/graphql-reducer.ts. An unauthenticated attacker can send a crafted link to a signed-in editor, cause the admin to frame an attacker origin, and have that frame treated as the trusted preview. The attacker-controlled frame can submit GraphQL reads or mutations that the admin executes with the editor credentials, exposing or modifying protected content. This issue is fixed in tinacms 3.14.0 and @tinacms/app 2.5.14.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "tinacms",
+          "product": "tinacms",
+          "versions": [
+            {
+              "version": "< 3.14.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tinacms",
+          "product": "app",
+          "versions": [
+            {
+              "version": "< 2.5.14",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:app",
+        "vendor:@tinacms"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-108267",
+      "description": "Privasys Go is a maintained fork of the Go programming language that adds RA-TLS support to crypto/tls. Prior to privasys-v0.5.1-go1.26.5, challenge-mode RA-TLS certificates bound quote ReportData to the certificate public key and client nonce but not to the active TLS session. An attacker who obtained an enclave TLS private key could relay a genuine quote onto another connection, causing a relying party to accept a handshake terminated by the attacker as an attested enclave connection. This issue is fixed in privasys-v0.5.1-go1.26.5.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "privasys",
+          "product": "go",
+          "versions": [
+            {
+              "version": "< privasys-v0.5.1-go1.26.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:go",
+        "vendor:privasys"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10557",
@@ -182605,283 +184049,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-32710",
-      "description": "MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Under certain conditions it might be possible to turn the crash into a remote code execution. These conditions require tight control over memory layout which is generally only attainable in a lab environment. This issue is fixed in MariaDB 11.4.10, MariaDB 11.8.6, and MariaDB 12.2.2.",
-      "cvss_score": 8.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 11.4.1, < 11.4.10",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.6",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.1.2, < 12.2.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00802,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-122"
-        ],
-        "cpe_count": 3,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-44168",
-      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.26, 10.11.1 to before 10.11.17, 11.4.1 to before 11.4.11, 11.8.1 to before 11.8.7, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the mariabackup SST method. This issue has been patched in versions 10.6.26, 10.11.17, 11.4.11, 11.8.7, and 12.3.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.26",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.17",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.11",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.7",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0097,
-      "nvd": {
-        "cvss_v3_score": 8.0,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 13
-      }
-    },
-    {
-      "cve_id": "CVE-2026-48163",
-      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the rsync SST method. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.27",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.18",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.12",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.8",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01123,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 13
-      }
-    },
-    {
-      "cve_id": "CVE-2026-48165",
-      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, a high-privileged MariaDB user could've used wsrep_sst_receive_address or wsrep_sst_donor global system variables to execute shell commands as the uid of the mariadbd process on the galera joiner node. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.27",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.18",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.12",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.8",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01602,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 13
-      }
-    },
-    {
-      "cve_id": "CVE-2026-49261",
-      "description": "MariaDB server is a community developed fork of MySQL server. Versions 10.6.1 through 10.6.26, 10.11.1 through 10.11.17, 11.4.1 through 11.4.11, 11.8.1 through 11.8.7, and 12.3.1 with  `wsrep_notify_cmd` enabled would execute shell commands embedded in the name of the joiner node. This is fixed in 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2. As a workaround, anyone who cannot upgrade now should disable `wsrep_notify_cmd`.",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.27",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.18",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.12",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.8",
-              "status": "affected"
-            },
-            {
-              "version": "= 12.3.1",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01691,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 15
       }
     },
     {
