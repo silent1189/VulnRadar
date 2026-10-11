@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-11T01:50:29+00:00",
+  "generated_at": "2026-10-11T08:42:38+00:00",
   "vendor": "_other",
-  "count": 3067,
+  "count": 3070,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -172485,6 +172485,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-62120",
+      "description": "Unauthenticated PHP Object Injection in Law Office <= 3.20 versions.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "themerex",
+          "product": "law office",
+          "versions": [
+            {
+              "lessThanOrEqual": "3.20",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:law office",
+        "vendor:themerex"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2025-6213",
       "description": "The Nginx Cache Purge Preload plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.1.1 via the 'nppp_preload_cache_on_update' function. This is due to insufficient sanitization of the $_SERVER['HTTP_REFERERER'] parameter passed from the 'nppp_handle_fastcgi_cache_actions_admin_bar' function. This makes it possible for authenticated attackers, with Administrator-level access and above, to execute code on the server.",
       "cvss_score": 7.2,
@@ -178956,6 +178988,38 @@
         "cpe_count": 0,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-108551",
+      "description": "openapi-typescript-codegen through 0.31.0 contains a code injection vulnerability that allows attackers controlling an OpenAPI document to inject JavaScript by supplying unescaped values interpolated into single-quoted string literals. Attackers can embed a single quote in path keys, parameter names, servers[0].url, or info.version to execute arbitrary JavaScript when generated clients are imported or service methods called.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "ferdikoomen",
+          "product": "openapi-typescript-codegen",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "0.31.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openapi-typescript-codegen",
+        "vendor:ferdikoomen"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10557",
@@ -200342,6 +200406,38 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-93932",
+      "description": "Deserialization of Untrusted Data vulnerability in ThemeREX Group Smart Casa smart-casa allows Object Injection.This issue affects Smart Casa: from n/a through 1.0.12.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "themerex group",
+          "product": "smart casa",
+          "versions": [
+            {
+              "version": "0",
+              "versionType": "custom",
+              "status": "affected",
+              "lessThanOrEqual": "1.0.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:smart casa",
+        "vendor:themerex group"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00313
     },
     {
       "cve_id": "CVE-2026-94130",
