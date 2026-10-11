@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-11T08:42:42+00:00`
+Generated: `2026-10-11T15:37:18+00:00`
 
 ## Executive Summary
 
@@ -219,9 +219,9 @@ Top critical items:
 | [CVE-2026-34910](https://www.cve.org/CVERecord?id=CVE-2026-34910) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-26 | 0.458 | 10.0 | ✅ | A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection. |
 | [CVE-2022-34713](https://www.cve.org/CVERecord?id=CVE-2022-34713) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-08-30 | 0.678 | 7.8 | ✅ | Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability |
 | [CVE-2024-43572](https://www.cve.org/CVERecord?id=CVE-2024-43572) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-29 | 0.667 | 7.8 | ✅ | Microsoft Management Console Remote Code Execution Vulnerability |
-| [CVE-2023-41763](https://www.cve.org/CVERecord?id=CVE-2023-41763) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-31 | 0.904 | 5.3 | ✅ | Skype for Business Elevation of Privilege Vulnerability |
+| [CVE-2023-41763](https://www.cve.org/CVERecord?id=CVE-2023-41763) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-31 | 0.909 | 5.3 | ✅ | Skype for Business Elevation of Privilege Vulnerability |
 | [CVE-2026-20131](https://www.cve.org/CVERecord?id=CVE-2026-20131) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-22 | 0.432 | 10.0 | ✅ | A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker… |
-| [CVE-2026-2441](https://www.cve.org/CVERecord?id=CVE-2026-2441) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-10 | 0.551 | 8.8 | ✅ | Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Ch… |
+| [CVE-2026-2441](https://www.cve.org/CVERecord?id=CVE-2026-2441) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-10 | 0.550 | 8.8 | ✅ | Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Ch… |
 | [CVE-2024-43461](https://www.cve.org/CVERecord?id=CVE-2024-43461) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-07 | 0.545 | 8.8 | ✅ | Windows MSHTML Platform Spoofing Vulnerability |
 | [CVE-2026-48282](https://www.cve.org/CVERecord?id=CVE-2026-48282) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-10 | 0.424 | 10.0 | ✅ | ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability… |
 | [CVE-2023-4911](https://www.cve.org/CVERecord?id=CVE-2023-4911) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-12 | 0.638 | 7.8 | ✅ | A buffer overflow was discovered in the GNU C Library's dynamic loader ld.so while processing the GLIBC_TUNABLES environment variable. This issue could allow a… |
@@ -253,6 +253,9 @@ Top critical items:
 
 | Date | CVE | Status |
 |------|-----|--------|
+| Oct 11 | [CVE-2026-62120](https://www.cve.org/CVERecord?id=CVE-2026-62120) | 🆕 New |
+| Oct 11 | [CVE-2026-108551](https://www.cve.org/CVERecord?id=CVE-2026-108551) | 🆕 New |
+| Oct 11 | [CVE-2026-93932](https://www.cve.org/CVERecord?id=CVE-2026-93932) | 🆕 New |
 | Oct 10 | [CVE-2026-108125](https://www.cve.org/CVERecord?id=CVE-2026-108125) | 🆕 New |
 | Oct 10 | [CVE-2026-107805](https://www.cve.org/CVERecord?id=CVE-2026-107805) | 🆕 New |
 | Oct 10 | [CVE-2026-107806](https://www.cve.org/CVERecord?id=CVE-2026-107806) | 🆕 New |
@@ -300,7 +303,4 @@ Top critical items:
 | Oct 10 | [CVE-2026-76283](https://www.cve.org/CVERecord?id=CVE-2026-76283) | 🆕 New |
 | Oct 10 | [CVE-2026-56857](https://www.cve.org/CVERecord?id=CVE-2026-56857) | 🆕 New |
 | Oct 10 | [CVE-2026-106294](https://www.cve.org/CVERecord?id=CVE-2026-106294) | 🆕 New |
-| Oct 10 | [CVE-2026-76284](https://www.cve.org/CVERecord?id=CVE-2026-76284) | 🆕 New |
-| Oct 09 | [CVE-2026-105488](https://www.cve.org/CVERecord?id=CVE-2026-105488) | 🆕 New |
-| Oct 09 | [CVE-2026-105830](https://www.cve.org/CVERecord?id=CVE-2026-105830) | 🆕 New |
-| ... | | _and 391 more_ |
+| ... | | _and 394 more_ |
