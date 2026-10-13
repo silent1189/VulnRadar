@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T00:43:42+00:00",
+  "generated_at": "2026-10-13T07:40:55+00:00",
   "vendor": "sap_se",
-  "count": 247,
+  "count": 254,
   "items": [
     {
       "cve_id": "CVE-2022-22528",
@@ -13833,6 +13833,88 @@
       }
     },
     {
+      "cve_id": "CVE-2026-58249",
+      "description": "SAP NetWeaver and SAP Web Dispatcher do not properly validate certain fields in specially crafted requests handled by an internal protocol component. An unauthenticated attacker could send a malicious request that triggers a memory-handling error, causing the affected process to crash. Successful exploitation can therefore result in a high impact on the availability of the affected application. There is no impact on the confidentiality or integrity of the application.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver and sap web dispatcher (internet communication manager)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "HDB 2.00"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "WEBDISP 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "XS_ADVANCED_RUNTIME 1.00"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_EXTENDED_APP_SERVICES 1"
+            },
+            {
+              "status": "affected",
+              "version": "CONTSERV 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.19"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver and sap web dispatcher (internet communication manager)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-66763",
       "description": "SAP BusinessObjects Business Intelligence Platform stores certain sensitive credentials associated with user objects using a hard-coded cryptographic key. An attacker with high privileges and local access to the server could retrieve these objects and decrypt the stored credentials. Successful exploitation could allow the attacker to obtain sensitive authentication data and modify protected information, resulting in a high impact on confidentiality and integrity. There is no impact on availability.",
       "cvss_score": 7.9,
@@ -14198,6 +14280,210 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-89107",
+      "description": "SAP S/4HANA (Manage Substitution/Validation Rules) does not sufficiently validate input processed by rule definition functionality that utilizes a domain-specific scripting language. An authenticated attacker with specific business privileges could submit specially crafted input, which is interpreted as executable ABAP code by the rule processing logic. Successful exploitation could allow the attacker to execute ABAP arbitrary code into the system, resulting in full compromise of the affected system and high impact on confidentiality, integrity, and availability of the system.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap s/4hana (manage substitution/validation rules)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "S4CORE 105"
+            },
+            {
+              "status": "affected",
+              "version": "106"
+            },
+            {
+              "status": "affected",
+              "version": "107"
+            },
+            {
+              "status": "affected",
+              "version": "108"
+            },
+            {
+              "status": "affected",
+              "version": "109"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap s/4hana (manage substitution/validation rules)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-89108",
+      "description": "SAP Manufacturing Integration and Intelligence does not sufficiently enforce authorization boundaries within certain administrative functionality. An attacker with MII administrator privileges could submit a specially crafted request to provision an account with elevated privileges on the underlying Java application server. Successful exploitation could allow the attacker to gain administrative control over the underlying system, extending the impact beyond the vulnerable application. This results in a high impact on confidentiality, integrity and availability.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap manufacturing integration and intelligence (configuration service)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "XMII 15.4"
+            },
+            {
+              "status": "affected",
+              "version": "15.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap manufacturing integration and intelligence (configuration service)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-89110",
+      "description": "SAP NetWeaver Visual Composer does not perform sufficient authorization checks in certain portal functionality. An attacker with low privileges could invoke internal operations on a preconfigured remote system. Depending on the remote connection configuration, this could lead to a full compromise of the remote system. This results in a high impact on confidentiality, integrity and availability.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver visual composer",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "VC70RUNTIME 7.50"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver visual composer",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-89111",
+      "description": "The SAP Cloud SDK for Python contains an OAuth2 SSRF vulnerability affecting multi-tenant BTP applications. An attacker who controls the tenant_subdomain parameter can redirect OAuth2 token requests to an attacker-controlled server, causing client credentials to be exfiltrated.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap cloud",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "sap-cloud-sdk < 0.45.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap cloud",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-89113",
+      "description": "SAP Commerce Cloud does not sufficiently validate certain user-supplied input before it is incorporated into a database query. An authenticated user could send specially crafted requests to affected functionality to inject arbitrary SQL commands. Successful exploitation could allow the user to read, modify or delete sensitive data from the application's database, resulting in a high impact on confidentiality, integrity and availability of the application.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap commerce cloud (ootb code)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "COM_CLOUD 2211-JDK21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap commerce cloud (ootb code)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-89120",
+      "description": "A regression caused by an API change in SAP ABAP Platform reintroduces a previously fixed authorization weakness. The session manager can be opened in single transaction mode, including from FLP. A low-privileged attacker could exploit this to bypass restrictions via specially crafted requests, resulting in high impact on integrity and low impact on confidentiality. There is no impact on availability.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap abap platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KERNEL 7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap abap platform",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }

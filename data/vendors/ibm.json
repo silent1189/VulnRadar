@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T00:43:42+00:00",
+  "generated_at": "2026-10-13T07:40:55+00:00",
   "vendor": "ibm",
-  "count": 1103,
+  "count": 1144,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -17300,6 +17300,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102627",
+      "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to execute arbitrary code due to improper validation of file paths during archive extraction.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "tririga application platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tririga application platform",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-103360",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
       "cvss_score": 8.1,
@@ -17427,6 +17459,128 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-105052",
+      "description": "IBM Maximo Application Suite 8.10, 8.11, 9.0, 9.1, and 9.2 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request containing \"dot dot\" sequences (/../) to view arbitrary files on the system.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.10"
+            },
+            {
+              "status": "affected",
+              "version": "8.11"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.1"
+            },
+            {
+              "status": "affected",
+              "version": "9.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105464",
+      "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 for Linux, UNIX and Windows (includes DB2 Connect Server) could allow a local attacker to gain elevated privileges due to improper privilege management.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "db2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.5.0",
+              "lessThanOrEqual": "11.5.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:db2",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105465",
+      "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 is\u00a0vulnerable to privilege escalation when db2locssh is enabled with the db2 instance.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "db2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.5.0",
+              "lessThanOrEqual": "11.5.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:db2",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10025",
@@ -37899,6 +38053,40 @@
       }
     },
     {
+      "cve_id": "CVE-2026-17475",
+      "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote authenticated attacker to delete folders and applications belonging to other users due to improper functional level access control.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-17481",
       "description": "IBM Documentation Offline 1.0.0 through 1.4.1 could allow a remote attacker to execute arbitrary code due to improper output neutralization for logs.",
       "cvss_score": 8.8,
@@ -39702,6 +39890,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-18166",
+      "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 for Linux, UNIX and Windows (includes DB2 Connect Server) could allow a remote authenticated attacker to obtain sensitive information due to improper authorization when using the CREATE WRAPPER command.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "db2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.5.0",
+              "lessThanOrEqual": "11.5.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:db2",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-18169",
       "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote authenticated attacker to obtain sensitive information due to improper validation of symbolic links.",
       "cvss_score": 9.9,
@@ -40542,6 +40768,82 @@
       }
     },
     {
+      "cve_id": "CVE-2026-18513",
+      "description": "IBM Maximo Application Suite - Location Service for Esri Component 9.2, 9.1, and 9.0 is vulnerable to improper access control due to a schema-less Custom Resource Definition.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite - location service for esri component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.2"
+            },
+            {
+              "status": "affected",
+              "version": "9.1"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite - location service for esri component",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-18517",
+      "description": "IBM Maximo Application Suite - Location Service for Esri Component 9.2, 9.1, and 9.0 IBM Maximo Application Suite \u2014 Location Service for Esri Component is vulnerable to unintended network egress due to a misconfigured Kubernetes NetworkPolicy.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite - location service for esri component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.2"
+            },
+            {
+              "status": "affected",
+              "version": "9.1"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite - location service for esri component",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-18527",
       "description": "IBM Administration Runtime Expert for i 1R1M0 IBM Application Runtime Expert (ARE) for i could allow a remote attacker to gain elevated privileges, caused by ARE GUI component processing. An unauthenticated attacker can exploit this vulnerability to execute actions under another user's authenticated profile gaining elevated privileges on the IBM i system.",
       "cvss_score": 9.9,
@@ -40581,6 +40883,82 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-18529",
+      "description": "IBM Maximo Application Suite - Location Service for Esri Component 9.2, 9.1, and 9.0 is vulnerable to command injection due to improper sanitisation of a user-controlled value passed to a shell command in a Kubernetes operator task.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite - location service for esri component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.2"
+            },
+            {
+              "status": "affected",
+              "version": "9.1"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite - location service for esri component",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-18537",
+      "description": "IBM Maximo Application Suite - Location Service for Esri Component 9.2, 9.1, and 9.0 is vulnerable to improper input validation due to an unsanitised container image reference in a Kubernetes operator template.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite - location service for esri component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.2"
+            },
+            {
+              "status": "affected",
+              "version": "9.1"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite - location service for esri component",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-18544",
@@ -43163,6 +43541,108 @@
       }
     },
     {
+      "cve_id": "CVE-2026-19620",
+      "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote attacker to gain unauthorized administrative access due to improper authentication.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-19622",
+      "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote attacker to bypass authentication and escalate privileges due to improper validation of sub-requests.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-19627",
+      "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote attacker to read arbitrary host files and overwrite certain application files due to improper validation of file paths.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-19646",
       "description": "IBM Common Licensing Agent 9.0, Agent 9.0.0.1, Agent 9.0.0.2, ART 9.0, ART 9.0.0.1, and ART 9.0.0.2 could allow a remote attacker to redirect users to an arbitrary domain due to improper validation of the HTTP Host header.",
       "cvss_score": 9.1,
@@ -44991,6 +45471,72 @@
       }
     },
     {
+      "cve_id": "CVE-2026-75061",
+      "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted URL request containing \"dot dot\" sequences (/../) to write arbitrary files on the system.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-75095",
+      "description": "IBM Aspera Enterprise WebApps 1.0.0 through 1.0.6 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "aspera enterprise webapps",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:aspera enterprise webapps",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-75624",
       "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.1, and 12.0.1.0 through 12.0.12.27 could allow a remote authenticated attacker to bypass security restrictions due to incorrect authorization.",
       "cvss_score": 8.8,
@@ -45083,6 +45629,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-75782",
+      "description": "IBM Aspera Enterprise WebApps 1.0.0 through 1.0.6 could allow a local attacker to gain elevated privileges due to a misconfigured PATH environment variable.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "aspera enterprise webapps",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:aspera enterprise webapps",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-75875",
       "description": "IBM Guardium Data Protection 12.0, 12.1, and 12.2\u00a0could allow a remote attacker to execute arbitrary code due to path traversal.",
       "cvss_score": 9.8,
@@ -45173,6 +45751,44 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-75881",
+      "description": "IBM Maximo Application Suite - IoT Component 9.2.0, 9.1.0, and 9.0.0 could allow a remote attacker to cause a denial of service due to an infinite parsing loop when processing certain inputs.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite - iot component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite - iot component",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-76059",
@@ -45642,6 +46258,40 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-78673",
+      "description": "IBM Maximo AI Service 9.1.0, and 9.2.0 could allow a remote attacker to cause a denial of service due to improper input validation.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo ai service",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo ai service",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-79724",
@@ -48507,6 +49157,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-82096",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-82097",
       "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to a Server-Side Request Forgery (SSRF) vulnerability.",
       "cvss_score": 8.8,
@@ -48671,6 +49351,66 @@
       }
     },
     {
+      "cve_id": "CVE-2026-82101",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to cause a denial of service due to a path traversal vulnerability.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-82103",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an exposure of sensitive information to an unauthorized actor.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-82107",
       "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information and bypass security restrictions due to improper authentication.",
       "cvss_score": 9.6,
@@ -48710,6 +49450,66 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-82108",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-82110",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper validation of pathname during a path traversal.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-82334",
@@ -51070,6 +51870,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-84418",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 can allow a man-in-the-middle attacker to present a forged TLS certificate, intercept the connection, and capture the IAM bearer Authorization header automatically attached by the session adapter. The captured token grants full platform-scope tenant API access, enabling the attacker to read and manipulate the victim's DataStage projects, flows, assets, and pipeline definitions. This is client-side SDK code running on the user's own machine, so exploitation requires an external network interceptor rather than a co-tenant in the shared cluster.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-84421",
       "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper validation of paths during archive extraction.",
       "cvss_score": 8.8,
@@ -51623,6 +52453,40 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-85457",
+      "description": "IBM Planning Analytics 2.0, and 2.1 could allow a remote authenticated attacker to execute arbitrary code due to a stack-based buffer overflow.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-85542",
@@ -53075,6 +53939,180 @@
       }
     },
     {
+      "cve_id": "CVE-2026-90911",
+      "description": "IBM Maximo AI Service 9.1.0, and 9.2.0 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo ai service",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo ai service",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-90912",
+      "description": "IBM Maximo AI Service 9.1.0, and 9.2.0 SaaS could allow a remote attacker to cause a denial of service due to uncontrolled recursion.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo ai service",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo ai service",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-90920",
+      "description": "IBM Maximo AI Service 9.1.0, and 9.2.0 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo ai service",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo ai service",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-90921",
+      "description": "IBM Maximo AI Service 9.1.0, and 9.2.0 could allow a remote attacker to cause a denial of service due to improper handling of malformed frames, resulting in termination of the host process.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo ai service",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo ai service",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-92876",
+      "description": "IBM Maximo Application Suite - IoT Component 9.2.0, 9.1.0, and 9.0.0 could allow a remote attacker to cause a denial of service due to uncontrolled recursion.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "maximo application suite - iot component",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.2.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:maximo application suite - iot component",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-93306",
       "description": "IBM Server Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, FW1060.00 through FW1060.81, and FW950.00 through FW950.H3 is affected by a vulnerability in the ASMI web interface. An unauthenticated attacker on the management network can send a malformed HTTPS request to ASMI, causing the web server to crash with possible memory corruption and generate an error log. The ASMI web interface will restart automatically; however, repeated exploitation could result in a sustained loss of access to the ASMI management interface, resulting in an integrity and availability impact.",
       "cvss_score": 7.1,
@@ -53478,6 +54516,396 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-93886",
+      "description": "IBM i 7.3, 7.4, 7.5, and 7.6\u00a0could allow a remote authenticated attacker to execute arbitrary script code due to improper validation of user-supplied input.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "i",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.6"
+            },
+            {
+              "status": "affected",
+              "version": "7.5"
+            },
+            {
+              "status": "affected",
+              "version": "7.4"
+            },
+            {
+              "status": "affected",
+              "version": "7.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:i",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93891",
+      "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to obtain sensitive information due to an XML external entity (XXE) injection flaw.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "tririga application platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tririga application platform",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93892",
+      "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to obtain sensitive information due to exposure of session tokens in the HTML response.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "tririga application platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tririga application platform",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96012",
+      "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6\u00a0is vulnerable to privilege escalation. An authenticated attacker could craft a malicious request that bypasses additional authorization and input validation checks to execute malicious code. An attacker could exploit this vulnerability to obtain elevated privileges on the system.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "db2 mirror for i",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.4"
+            },
+            {
+              "status": "affected",
+              "version": "7.5"
+            },
+            {
+              "status": "affected",
+              "version": "7.6"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:db2 mirror for i",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96119",
+      "description": "IBM i 7.3, 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to obtain sensitive information or execute arbitrary code on the system due to improper data sanitization by the HTTP Server Administration web application.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "i",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.6"
+            },
+            {
+              "status": "affected",
+              "version": "7.5"
+            },
+            {
+              "status": "affected",
+              "version": "7.4"
+            },
+            {
+              "status": "affected",
+              "version": "7.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:i",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96261",
+      "description": "IBM Power Systems Firmware FW1060.00 through FW1060.81 is affected by a vulnerability in host firmware configuration parsing. An attacker with authenticated service-level access to the service processor can write specially crafted configuration data, causing the host firmware boot stack to crash with possible memory corruption during system initialisation, resulting in an integrity and availability impact to the managed system.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "powervm hypervisor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "FW1060.00",
+              "lessThanOrEqual": "FW1060.81",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:powervm hypervisor",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96262",
+      "description": "IBM Power Systems Firmware\u00a0FW1060.00 through FW1060.81 is affected by a vulnerability in the service processor mailbox interface. An attacker with authenticated service-level access to the FSP can send a specially crafted mailbox message to overflow host firmware runtime attribute storage, allowing arbitrary code to be executed in the host firmware runtime. This gives the attacker full access to the managed system's memory and hardware interfaces, resulting in a confidentiality, integrity, and availability impact to the managed system.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "powervm hypervisor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "FW1060.00",
+              "lessThanOrEqual": "FW1060.81",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:powervm hypervisor",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96263",
+      "description": "IBM Power Systems Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, and FW1060.00 through FW1060.81 is affected by a vulnerability in the host firmware boot process image validation path. An attacker with service access to the service processor can supply a maliciously crafted code update image, allowing arbitrary code to be executed on the host system. Successful exploitation could result in a confidentiality, integrity, and availability impact to the affected host system.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "powervm hypervisor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "FW1120.00",
+              "lessThanOrEqual": "FW1120.01",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "FW1110.00",
+              "lessThanOrEqual": "FW1110.31",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "FW1060.00",
+              "lessThanOrEqual": "FW1060.81",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:powervm hypervisor",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96264",
+      "description": "IBM Power Systems Firmware FW1060.00 through FW1060.81  is affected by a vulnerability in the service processor mailbox interface. An attacker with authenticated service-level access to the FSP can send a specially crafted mailbox message to overflow host firmware runtime attribute storage, allowing arbitrary code to be executed in the host firmware runtime. This gives the attacker full access to the managed system's memory and hardware interfaces, resulting in a confidentiality, integrity, and availability impact to the managed system.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "powervm hypervisor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "FW1060.00",
+              "lessThanOrEqual": "FW1060.81",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:powervm hypervisor",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96265",
+      "description": "IBM Power Systems Firmware FW1060.00 through FW1060.81 is affected by a vulnerability in the service processor mailbox interface. An attacker with authenticated service-level access to the FSP can send a specially crafted mailbox message to read or modify arbitrary regions of Hostboot memory, compromising the host firmware boot stack and the hypervisor subsequently loaded by it. Successful exploitation results in a confidentiality, integrity, and availability impact to the managed system.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "powervm hypervisor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "FW1060.00",
+              "lessThanOrEqual": "FW1060.81",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:powervm hypervisor",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96266",
+      "description": "IBM Power Systems Firmware FW1060.00 through FW1060.81 is affected by a vulnerability in host firmware configuration parsing. An attacker with authenticated service-level access to the FSP can write specially crafted configuration data to cause memory corruption in the host firmware boot stage during system IPL, compromising the host firmware boot stack and the hypervisor subsequently loaded by it. Successful exploitation results in a confidentiality, integrity, and availability impact to the managed system.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "powervm hypervisor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "FW1060.00",
+              "lessThanOrEqual": "FW1060.81",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:powervm hypervisor",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-97655",

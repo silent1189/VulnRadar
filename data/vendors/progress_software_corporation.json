@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T00:43:42+00:00",
+  "generated_at": "2026-10-13T07:40:55+00:00",
   "vendor": "progress_software_corporation",
-  "count": 78,
+  "count": 107,
   "items": [
     {
       "cve_id": "CVE-2023-40043",
@@ -3474,6 +3474,1052 @@
       }
     },
     {
+      "cve_id": "CVE-2026-85947",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an authorization flaw in certain forest-management operations. A remote attacker with forest-management privileges could exploit this flaw to create a persistent unauthorized administrator account, potentially resulting in complete unauthorized administrative control of the server.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85948",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an XQuery injection flaw in a deprecated Management API package path. A remote attacker with manage-user-level privileges could exploit this flaw to obtain persistent unauthorized administrative control.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85949",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 may record security-sensitive information in diagnostic logs under certain configurations. An attacker with access to the affected logs could use this information to obtain unauthorized access to protected resources.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85950",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an authorization flaw that could allow a remote attacker with administrative privileges to access authentication material associated with higher-privileged users, potentially resulting in unauthorized administrative access.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85951",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 on Azure contain a server-side request forgery vulnerability that could allow an authenticated attacker to access internal cloud services, potentially resulting in unauthorized access to cloud credentials or tokens.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85952",
+      "description": "Affected Linux-based Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain a server-side request forgery vulnerability that could allow an authenticated attacker to access internal cloud services, potentially resulting in unauthorized access to cloud credentials.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85953",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain privileged legacy InfoStudio modules that do not sufficiently validate user-controlled file paths and user-context values. Exploitation could result in unauthorized access to server files or execution under an unintended identity.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85954",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 can evaluate user-controlled values supplied to certain higher-order XQuery functions in an elevated security context, which could result in privilege escalation beyond the attacker's granted permissions.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85955",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 allow a remote attacker with query-execution access to invoke an XQuery evaluation function without the additional required evaluation privilege, which could result in server-side code execution with elevated permissions.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85956",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 allow a remote attacker with delegated database-administrator privileges to perform backup or restore operations on forests outside the authorized database scope, which could result in unauthorized access to or modification of security-critical data.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85957",
+      "description": "Affected Progress MarkLogic Server 11.x releases before 11.3.7 use a SAML parser configuration that can process external DTDs or entities, which could result in unintended network access or information disclosure.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85958",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an authentication validation weakness that could allow an attacker to use a token that should not be accepted by the affected server, which could result in unauthorized access.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85959",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not consistently record successful authentication events in audit logs, which could limit customers' ability to detect and investigate unauthorized access or credential misuse.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85960",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 use predictable CSRF tokens in Query Console. A remote attacker who lures an authenticated Query Console user to a malicious page could submit unauthorized requests and execute server-side code with the victim's permissions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85961",
+      "description": "On Azure deployments, Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 may record security-sensitive authentication information in diagnostic logs under certain configurations. An attacker with access to the affected logs could use this information to obtain unauthorized access to protected cloud resources.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85962",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an improper authentication vulnerability in SAML processing. In deployments that use SAML authentication, an unauthenticated remote attacker could cause the affected server to accept an assertion that should be rejected, potentially resulting in unauthorized access.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85963",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 include deprecated OpsDirector functionality with weaknesses that could allow an unauthenticated remote attacker to make unauthorized requests to internal services or forge trusted requests, potentially resulting in unauthorized access to protected information.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85964",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 allow an authenticated Query Console user to supply unsafe path values to a privileged filesystem helper, which could result in disclosure of arbitrary server files.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85965",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain memory-safety defects in the JavaScript engine integration that could result in memory corruption, controlled process failure, or server instability.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85966",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not sufficiently restrict access to certain security-sensitive information. A remote authenticated attacker with limited management permissions could obtain this information, which could result in unauthorized access to protected resources.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85968",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 contain an out-of-bounds read vulnerability in certain query-processing functionality. A remote authenticated attacker could exploit this vulnerability to cause server instability or disclose limited information from process memory.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85969",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an out-of-bounds write vulnerability in certain language-processing functionality. A remote authenticated attacker could exploit this vulnerability to cause server instability or limited modification of data.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85970",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 enable XML external entity processing by default in multiple server paths, which could allow crafted XML to cause server-side requests or disclosure of local files.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85971",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 assign overly permissive operating-system permissions to certain log files, which could allow a local user to read or alter log data. The corrected default permissions apply to newly created and rotated logs; existing logs retain their current permissions until remediated.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85972",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not sufficiently verify the identity of a Kerberos authentication service in certain password-based authentication configurations. A network-positioned attacker could impersonate trusted authentication infrastructure, potentially resulting in unauthorized access or modification of protected data.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85973",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 may use cleartext transport for certain cluster-management communications. A network-positioned attacker could intercept or modify information transmitted through an affected connection.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85974",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not consistently validate TLS certificate hostnames for certain outbound connections. A network-positioned attacker could exploit this weakness to intercept or modify communications with an affected service.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85975",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 may use cleartext transport for Amazon S3 connections by default. A network-positioned attacker could intercept data or credentials transmitted through an affected connection.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-8709",
       "description": "An improper privilege management vulnerability in the REST API document patch operation of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged REST role to escalate privileges and execute privileged operations against the Security database.",
       "cvss_score": 9.9,
@@ -3570,6 +4616,44 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-9191",
+      "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not sufficiently isolate user-supplied code executed through certain REST and XDBC evaluation paths from HTTP request, response, and session state. An attacker able to execute code through an affected path could perform unauthorized actions or compromise an authenticated session.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software corporation",
+          "product": "marklogic server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThan": "11.3.7",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThan": "12.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:marklogic server",
+        "vendor:progress software corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-9192",

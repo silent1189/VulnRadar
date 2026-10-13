@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T00:43:42+00:00",
+  "generated_at": "2026-10-13T07:40:55+00:00",
   "vendor": "_other",
-  "count": 3070,
+  "count": 3092,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -15520,6 +15520,47 @@
         ],
         "cpe_count": 105,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-21139",
+      "description": "Improper access control in Samsung Continuity Service for windows prior to version 4.6.1217.0 allows adjacent attackers to manipulate the connected mobile device.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "samsung mobile",
+          "product": "samsung continuity service for windows",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "4.6.1217.0",
+              "versionType": "semver",
+              "lessThan": "*"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:samsung continuity service for windows",
+        "vendor:samsung mobile"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0012,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 0,
+        "reference_count": 1
       }
     },
     {
@@ -77862,6 +77903,43 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103903",
+      "description": "An incorrect authorization vulnerability in the WinBox\nauthentication flow of MikroTik RouterOS allows a remote authenticated attacker\nwith credentials for a low-privilege account permitted to use WinBox to obtain\nthe authorization policy of a different existing account. The stage-one EC-SRP\nchallenge and proof are verified using the attacker's account, while the\nindependently supplied stage-two username is used to install the target\naccount's privileges. By specifying a higher-privilege account such as admin, a\nlow-privilege user can obtain a full administrative session without knowing the\ntarget account's password and can use that session to increase the privileges\nof the attacker's own account.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mikrotik",
+          "product": "routeros",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.24.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.25rc1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:routeros",
+        "vendor:mikrotik"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-16347",
       "description": "MikroTik RouterOS contains a weakness in its API authentication handling that lacks effective safeguards against excessive login attempts. The system does not enforce meaningful rate-limiting, account lockout, or source-based restrictions, allowing repeated authentication failures to proceed without defensive response. In some versions, a fixed per-connection delay is present, but it can be bypassed through concurrent sessions, resulting in continued high-volume attempts. This deficiency increases the risk that an attacker could eventually obtain valid credentials and gain unauthorized access to administrative services.",
       "cvss_score": 8.8,
@@ -110363,6 +110441,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-93695",
+      "description": "In Progress ShareFile Storage Zones Controller v5.12.6 and below, FileCopyService uses a remote file identifier when constructing a local temporary file path without enforcing containment. This can cause FileCopyService to write attacker-controlled content to filesystem locations writable by the service account. This can result in remote code execution when an executable IIS-served directory is writable.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress",
+          "product": "sharefile storage zones controller",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.12.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sharefile storage zones controller",
+        "vendor:progress"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2024-1474",
       "description": "In WS_FTP Server versions before 8.8.5, reflected cross-site scripting issues have been identified on various user supplied inputs on the WS_FTP Server administrative interface.",
       "cvss_score": 7.5,
@@ -113961,6 +114071,276 @@
         "cpe_count": 1,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-84312",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, GetCasdoorUri uses the configured Casdoor application name as a constant OAuth state value and CasdoorCallback does not compare the submitted state with a value bound to the initiating browser session. An unauthenticated attacker can cause a victim's browser to complete an attacker-controlled Casdoor authorization flow, and the callback can mint a Nginx UI session for the identity returned by that authorization code. This issue is fixed in version 2.4.1.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84313",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, POST /api/otp_enroll and POST /api/finish_passkey_register are registered outside RequireSecureSession and accept a normal authenticated session without verifying the current password. An attacker with a stolen JWT can bind an attacker-controlled TOTP secret when the victim has not already enabled TOTP, or can register an attacker-controlled passkey because that path has no equivalent existing-enrollment guard. These changes create persistent account access that can survive a password change and interfere with the legitimate user's authentication. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84314",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, the POST /api/users/:id user-management endpoint permits an authenticated user to change another user's password without passing RequireSecureSession, even though the self-service password-change path requires that step-up. An attacker with an authenticated account can change the initial administrator's password, invalidate existing administrator tokens, and then authenticate as the administrator. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84315",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, Nginx UI does not apply RequireSecureSession to multiple authenticated mutation routes even though OTP-enabled users are expected to present a fresh X-Secure-Session-ID for sensitive actions. A stolen authenticated session can therefore create or alter automatic backups, DNS credentials and records, certificates and ACME users, Nginx control settings, and site or stream automation without completing the OTP or passkey step-up. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84316",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, config.ValidateConfigDirectives splits configuration by newline and checks only the first directive token on each line even though Nginx permits multiple semicolon-separated directives on one line. An authenticated caller can place a benign directive first and a restricted load_module, js_import, perl, or user root directive later on the same line, or can use an unrestricted include directive to load restricted content. These mechanisms bypass validation on REST, nginx_config_modify, site, and stream write paths; when an executable module is available, the injected configuration can execute code in the Nginx worker context. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84317",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, internal/config/validation.go (ValidateConfigFile) is a security control that blocks dangerous nginx directives \u2014 js_*, perl_*, load_module of the njs/perl modules, and user root. It is enforced on three of the four config-write paths: api/config/add.go, api/config/modify.go, and mcp/config/config_modify.go. The fourth path \u2014 the MCP tool nginx_config_add (mcp/config/config_add.go) \u2014 does NOT call it: it writes the caller-supplied content straight to disk and reloads nginx. An authenticated MCP caller (or an MCP agent induced via prompt injection) can therefore inject exactly the directives the control is meant to block, leading to nginx code execution on deployments where the njs/perl module is available (e.g. the official Docker image). This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84318",
+      "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0-rc.6 until 2.4.1, the MCP tool nginx_config_add writes nginx configuration files to disk and triggers an nginx reload without calling config.ValidateConfigFile. The identical flow in the REST API (POST /api/configs) does call that function and correctly rejects dangerous directives. An authenticated attacker can exploit this gap to write config files containing any blocked directive (perl, js_import, load_module, user root, etc.), bypassing nginx-ui's entire security layer. On a server with the nginx Perl, njs, or Lua module loaded, this is post-authentication Remote Code Execution. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": ">= 2.0.0-rc.6, < 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84319",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, the regular HTTP configuration API rejects restricted Nginx directives such as load_module, js_import, and js_content. However, the MCP configuration interface allows a secondary authenticated user to write and apply equivalent restricted configuration content. This allows the user to load ngx_http_js_module.so, import attacker-controlled JavaScript, reload Nginx, and execute NJS in the Nginx worker context. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-84360",
+      "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, the HTTP configuration mutation routes require RequireSecureSession, but /mcp and /mcp_message require only ordinary authentication before exposing nginx_config_add and nginx_config_modify. An OTP-enabled user with a normal JWT but no valid X-Secure-Session-ID can therefore create or modify Nginx configuration and trigger reload behavior through MCP, bypassing the intended step-up control. This issue is fixed in version 2.4.1.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "0xjacky",
+          "product": "nginx-ui",
+          "versions": [
+            {
+              "version": "< 2.4.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx-ui",
+        "vendor:0xjacky"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2024-22263",
@@ -160295,6 +160675,11 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat jboss core services 2.4.62.sp2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat hardened images",
           "versions": [
             {
@@ -160333,7 +160718,9 @@
       "priority_label": "",
       "matched_terms": [
         "product:libxml2",
-        "vendor:gnome"
+        "product:red hat jboss core services 2.4.62.sp2",
+        "vendor:gnome",
+        "vendor:red hat"
       ],
       "active_threat": false,
       "probability_score": 0.00592,
@@ -160365,18 +160752,6 @@
               "version": "0",
               "lessThan": "2.15.2",
               "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 10",
-          "versions": [
-            {
-              "version": "0:2.12.5-8.el10_0",
-              "lessThan": "*",
-              "versionType": "rpm",
-              "status": "unaffected"
             }
           ]
         },
@@ -160862,7 +161237,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "openshift compliance operator 1",
+          "product": "compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -160874,7 +161249,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "openshift compliance operator 1",
+          "product": "compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -160886,7 +161261,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "openshift compliance operator 1",
+          "product": "compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -161055,11 +161430,6 @@
         {
           "vendor": "red hat",
           "product": "red hat enterprise linux 6",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
           "versions": null
         }
       ],
@@ -161795,6 +162165,30 @@
           "versions": [
             {
               "version": "1790703545",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1791231926",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1791232048",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -176942,6 +177336,75 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103902",
+      "description": "Improper verification of cryptographic signature vulnerability in DigiDoc libdigidocpp, DigiDoc DigiDoc4, DigiDoc DigiDoc Android, and DigiDoc DigiDoc iOS. The vulnerability allows an attacker to create forged digital signatures\n that are displayed a valid by affected DigiDoc software.This issue affects libdigidocpp: from 4.0.0 before 4.5.0; DigiDoc4: from 4.6.0 before 4.11.0; DigiDoc Android: from 2.7.0 before 3.1.0; DigiDoc iOS: from 2.7.0 before 3.1.0.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "digidoc",
+          "product": "libdigidocpp",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "4.5.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "digidoc",
+          "product": "digidoc4",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.6.0",
+              "lessThan": "4.11.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "digidoc",
+          "product": "digidoc android",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.7.0",
+              "lessThan": "3.1.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "digidoc",
+          "product": "digidoc ios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.7.0",
+              "lessThan": "3.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:digidoc android",
+        "product:digidoc ios",
+        "vendor:digidoc"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-103922",
       "description": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host and scheme but not its path, allowing a victim who activates an untrusted link to navigate a frame to /_capacitor_http_interceptor_. The native proxy can fetch an attacker-selected URL and return the response as a document at the application's own origin, allowing script in that response to access same-origin storage, cookies, and registered Capacitor plugin capabilities. Applications remain affected when CapacitorHttp is disabled because affected releases serve the proxy path regardless of that setting. This issue is fixed in versions 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1.",
       "cvss_score": 9.3,
@@ -179042,6 +179505,242 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-109422",
+      "description": "NetEase Cloud Music client for Windows (cloudmusic.exe) versions 3.1.38 and 3.1.39.205426 contains a remote code execution vulnerability in the renderer-process IPC bridge os.navigateExternal, which passes caller-supplied URLs to ShellExecuteW without validating the URL scheme. An attacker able to inject content into the renderer, such as by forging the /pc/upgrade/get API response using a publicly known AES key over an unvalidated TLS connection, can invoke os.navigateExternal with a file:// URL through an img onerror payload to execute arbitrary local binaries under the logged-in user's account.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netease",
+          "product": "netease cloud music for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.38",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1.39.205426",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:netease cloud music for windows",
+        "vendor:netease"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109423",
+      "description": "NetEase Cloud Music client for Windows (cloudmusic.exe) versions 3.1.38 and 3.1.39.205426 contains a TLS certificate validation vulnerability that allows a network-adjacent attacker to intercept and decrypt HTTPS traffic by failing to validate the server certificate chain, verify the hostname, or consult any Windows certificate trust store. Attackers can perform a man-in-the-middle attack using a rogue certificate authority to decrypt traffic, capture the MUSIC_U session credential sent in authenticated API requests, and modify server responses in transit, enabling account takeover and transport-layer response forgery.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netease",
+          "product": "netease cloud music for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.38",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1.39.205426",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:netease cloud music for windows",
+        "vendor:netease"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109424",
+      "description": "NetEase Cloud Music client for Windows (cloudmusic.exe) versions 3.1.38 and 3.1.39.205426 contains a weak encryption vulnerability where /eapi/ and /xeapi/ API response bodies are decrypted using a fixed, publicly documented AES-128-ECB key with no integrity credential. Attackers who can intercept or originate server responses can construct valid ciphertext under the known key with PKCS#7 padding, enabling the client to accept forged API responses that serve as a prerequisite for further exploitation such as reaching the os.navigateExternal bridge.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "netease",
+          "product": "netease cloud music for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.1.38",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1.39.205426",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:netease cloud music for windows",
+        "vendor:netease"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109556",
+      "description": "EdgeEver Desktop 1.92.0 through 1.112.0 contains a remote code execution vulnerability in the desktop:acp-probe IPC handler, which lacks a sender check and spawns a caller-supplied input.path executable. Attackers with script execution in a renderer, such as via template-preview or drag-preview stored cross-site scripting, can call probeAcpAdapter to launch local executables with the user's privileges.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tianma-if",
+          "product": "edgeever",
+          "versions": [
+            {
+              "version": "1.92.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.112.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:edgeever",
+        "vendor:tianma-if"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109557",
+      "description": "EdgeEver through 1.112.0 contains a stored cross-site scripting vulnerability in setMemoDragPreview that allows attackers to inject script through notebook names or memo titles. Attackers can set malicious names via MCP create_notebook, rename_notebook or create_memo tools, running script on drag with access to the desktop bridge's session token.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tianma-if",
+          "product": "edgeever",
+          "versions": [
+            {
+              "version": "0.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.112.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:edgeever",
+        "vendor:tianma-if"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109558",
+      "description": "EdgeEver 1.6.0 through 1.112.0 contains a stored cross-site scripting vulnerability in TemplatesPane.tsx that renders template contentMarkdown with raw HTML via dangerouslySetInnerHTML without sanitization. Attackers can write templates containing HTML event handlers through an API or MCP token to run script on preview and access the privileged window.edgeeverDesktop bridge.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tianma-if",
+          "product": "edgeever",
+          "versions": [
+            {
+              "version": "1.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.112.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:edgeever",
+        "vendor:tianma-if"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109559",
+      "description": "EdgeEver Desktop 1.6.26 through 1.112.0 contains a navigation allowlist bypass that lets attackers load arbitrary origins in the main window via string-prefix URL matching. Attackers can embed a link using userinfo syntax after the dev-server prefix, for example in a note-template preview, to obtain the edgeeverDesktop bridge including session token, sidecar RPC, and ACP channels.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tianma-if",
+          "product": "edgeever",
+          "versions": [
+            {
+              "version": "1.6.26",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.112.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:edgeever",
+        "vendor:tianma-if"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10557",
@@ -192690,6 +193389,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-49483",
+      "description": "Code for IBMi is a Visual Studio Code extension for maintaining and compiling ILE languages on the IBMi platform. Prior to 3.0.1, IBMi components implementing IBMiComponent were accepted after checking that a procedure existed without reliably verifying component integrity. Components installed with broad public permissions allow another local account to alter a program such as GETMBRINFO. A later connection can execute the altered program under the connecting account because the LONG_COMMENT marker alone does not establish integrity. This issue is fixed in version 3.0.1.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "codefori",
+          "product": "vscode-ibmi",
+          "versions": [
+            {
+              "version": "< 3.0.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:vscode-ibmi",
+        "vendor:codefori"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-49869",
       "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.21, AuthenticationFilter in Kestra OSS uses request.getPath().endsWith(\"/configs\") to whitelist the public configuration endpoint from Basic Auth. Because the check is a suffix match rather than an exact path match, any API path whose last segment is configs bypasses authentication entirely. An unauthenticated remote attacker can exploit this to create and execute arbitrary workflows without credentials. Because Kestra ships with script execution plugins (plugin-script-shell, plugin-script-python, etc.) enabled by default, this directly results in unauthenticated Remote Code Execution as root inside the Kestra worker container.  This vulnerability is fixed in 1.0.45 and 1.3.21.",
       "cvss_score": 10.0,
@@ -195414,6 +196143,81 @@
       }
     },
     {
+      "cve_id": "CVE-2026-65954",
+      "description": "PHPCSUtils is a suite of utility functions for use with PHP_CodeSniffer. From 1.0.0-alpha1 until 1.2.3, PHPCSUtils\\AbstractSniffs\\AbstractArrayDeclarationSniff::getActualArrayKey() evaluates attacker-controlled array-key expressions with eval(), allowing callback-form keys in untrusted PHP code scanned by an extending sniff to execute arbitrary commands on the scanning host. Known reachable paths include Universal.Arrays.DuplicateArrayKey and Universal.Arrays.MixedArrayKeyTypes. This issue is fixed in version 1.2.3.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "phpcsstandards",
+          "product": "phpcsutils",
+          "versions": [
+            {
+              "version": ">= 1.0.0-alpha1, <= 1.2.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:phpcsutils",
+        "vendor:phpcsstandards"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-67434",
+      "description": "PHP_CodeSniffer tokenizes PHP files and detects violations of a defined set of coding standards. Prior to versions 3.13.6 and 4.0.2, PHP_CodeSniffer contains a command injection vulnerability in the code that generates the Gitblame, Hgblame, and Svnblame report formats. As a result, running PHP_CodeSniffer over untrusted files, for example in a continuous integration pipeline that scans pull requests, or on a developer machine reviewing third party code, could result in attacker controlled shell commands being executed when the Gitblame, Hgblame, or Svnblame report processes a file whose name contains shell metacharacters. Users using the default Full report, or any of the other non-blame reports, are not affected. Users on a runtime platform which does not allow filenames to contain shell metacharacters, such as \" and ;, are not affected. This issue is fixed in versions 3.13.6 and 4.0.2.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "phpcsstandards",
+          "product": "php_codesniffer",
+          "versions": [
+            {
+              "version": "< 3.13.6",
+              "status": "affected"
+            },
+            {
+              "version": ">= 4.0.0, < 4.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php_codesniffer",
+        "vendor:phpcsstandards"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01063,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
       "cve_id": "CVE-2026-66098",
       "description": "The Mira hormone monitor device firmware accepts a 0x01 write from any BLE central without authentication, causing the device to reboot into bootloader mode. An attacker could cause a denial-of-service condition or disrupt ovulation tracking and fertility monitoring workflow.",
       "cvss_score": 7.1,
@@ -195775,51 +196579,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 4
-      }
-    },
-    {
-      "cve_id": "CVE-2026-67434",
-      "description": "PHP_CodeSniffer tokenizes PHP files and detects violations of a defined set of coding standards. Prior to versions 3.13.6 and 4.0.2, PHP_CodeSniffer contains a command injection vulnerability in the code that generates the Gitblame, Hgblame, and Svnblame report formats. As a result, running PHP_CodeSniffer over untrusted files, for example in a continuous integration pipeline that scans pull requests, or on a developer machine reviewing third party code, could result in attacker controlled shell commands being executed when the Gitblame, Hgblame, or Svnblame report processes a file whose name contains shell metacharacters. Users using the default Full report, or any of the other non-blame reports, are not affected. Users on a runtime platform which does not allow filenames to contain shell metacharacters, such as \" and ;, are not affected. This issue is fixed in versions 3.13.6 and 4.0.2.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "phpcsstandards",
-          "product": "php_codesniffer",
-          "versions": [
-            {
-              "version": "< 3.13.6",
-              "status": "affected"
-            },
-            {
-              "version": ">= 4.0.0, < 4.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:php_codesniffer",
-        "vendor:phpcsstandards"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01063,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 0,
-        "reference_count": 6
       }
     },
     {
