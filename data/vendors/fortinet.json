@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "fortinet",
-  "count": 238,
+  "count": 241,
   "items": [
     {
       "cve_id": "CVE-2022-22299",
@@ -14193,6 +14193,75 @@
       }
     },
     {
+      "cve_id": "CVE-2025-46773",
+      "description": "An Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 7.6.2 through 7.6.4, FortiAnalyzer Cloud 7.4.1 through 7.4.7, FortiAnalyzer Cloud 7.2.1 through 7.2.11 may allow a low privileged user to execute arbitrary commands via crafted requests.",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C",
+      "affected": [
+        {
+          "vendor": "fortinet",
+          "product": "fortianalyzer cloud",
+          "versions": [
+            {
+              "versionType": "semver",
+              "version": "7.6.2",
+              "lessThanOrEqual": "7.6.3",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.4.1",
+              "lessThanOrEqual": "7.4.7",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.2.1",
+              "lessThanOrEqual": "7.2.12",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "fortinet",
+          "product": "fortianalyzer",
+          "versions": [
+            {
+              "versionType": "semver",
+              "version": "7.6.0",
+              "lessThanOrEqual": "7.6.3",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.4.0",
+              "lessThanOrEqual": "7.4.7",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.2.0",
+              "lessThanOrEqual": "7.2.11",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fortianalyzer",
+        "product:fortianalyzer cloud",
+        "vendor:fortinet"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2025-47761",
       "description": "An Exposed IOCTL with Insufficient Access Control vulnerability [CWE-782] vulnerability in Fortinet FortiClientWindows 7.4.0 through 7.4.3, FortiClientWindows 7.2.0 through 7.2.9 may allow an authenticated local user to execute unauthorized code via fortips driver.  Success of the attack would require bypassing the Windows memory protections such as Heap integrity and HSP. In addition, it requires a valid and running VPN IPSec connection.",
       "cvss_score": 7.1,
@@ -14880,6 +14949,50 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2025-57739",
+      "description": "An improper neutralization of special elements used in an SQL Command (\"SQL Injection\") vulnerability [CWE-89] vulnerability in Fortinet FortiMail 7.6.0 through 7.6.3, FortiMail 7.4.0 through 7.4.5, FortiMail 7.2.0 through 7.2.8 allows an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP or HTTPS requests.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+      "affected": [
+        {
+          "vendor": "fortinet",
+          "product": "fortimail",
+          "versions": [
+            {
+              "versionType": "semver",
+              "version": "7.6.0",
+              "lessThanOrEqual": "7.6.3",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.4.0",
+              "lessThanOrEqual": "7.4.5",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.2.0",
+              "lessThanOrEqual": "7.2.8",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fortimail",
+        "vendor:fortinet"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2025-57741",
@@ -15701,6 +15814,66 @@
         "cpe_count": 3,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-106173",
+      "description": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiSIEM 7.5.0 may allow attacker to execute unauthorized code or commands via specially crafted packets.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O/RC:C",
+      "affected": [
+        {
+          "vendor": "fortinet",
+          "product": "fortisiem",
+          "versions": [
+            {
+              "version": "7.5.0",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.4.0",
+              "lessThanOrEqual": "7.4.2",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.3.0",
+              "lessThanOrEqual": "7.3.5",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.2.0",
+              "lessThanOrEqual": "7.2.7",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.1.0",
+              "lessThanOrEqual": "7.1.9",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fortisiem",
+        "vendor:fortinet"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-21643",

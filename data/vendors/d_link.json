@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "d_link",
-  "count": 495,
+  "count": 496,
   "items": [
     {
       "cve_id": "CVE-2022-26670",
@@ -18379,6 +18379,48 @@
         ],
         "cpe_count": 0,
         "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-108971",
+      "description": "A flaw has been found in D-Link DCS-930L B1.08B4. This impacts the function mpfd_decode of the file bootloader_region.bin of the component Emergency HTTP Recovery Server. Executing a manipulation of the argument firmware can lead to improper verification of cryptographic signature. The attack may be performed from remote. The exploit has been published and may be used.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dcs-930l",
+          "versions": [
+            {
+              "version": "B1.08B4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dcs-930l",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00225,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 10.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345",
+          "CWE-347"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
       }
     },
     {

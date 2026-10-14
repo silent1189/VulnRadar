@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "mozilla",
   "count": 845,
   "items": [
@@ -29642,7 +29642,7 @@
     },
     {
       "cve_id": "CVE-2026-106016",
-      "description": "Mitigation bypass in the File Handling component. This vulnerability was fixed in Firefox 157.0.1.",
+      "description": "Mitigation bypass in the File Handling component. This vulnerability was fixed in Firefox 157.0.1 and Thunderbird 158.",
       "cvss_score": 9.8,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
@@ -29654,6 +29654,18 @@
             {
               "status": "unaffected",
               "version": "157.0.1",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
               "lessThanOrEqual": "*",
               "versionType": "rpm"
             }

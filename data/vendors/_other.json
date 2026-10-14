@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "_other",
-  "count": 3092,
+  "count": 3104,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -31384,6 +31384,64 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103928",
+      "description": "Metabase is an open source business intelligence and analytics platform. From 1.55.0 until 1.58.16, 1.59.13, 1.60.9, and 1.61.4, native queries and actions against an H2 data source are passed through without restricting host-facing built-in functions. A user authorized to run native queries or actions can invoke FILE_READ, FILE_WRITE, CSVREAD, CSVWRITE, or LINK_SCHEMA to read or write arbitrary files on the Metabase server or link other databases. The default sample database uses H2, so the vulnerable surface is exposed by default. This issue is fixed in versions 1.58.16, 1.59.13, 1.60.9, and 1.61.4.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "metabase",
+          "product": "metabase",
+          "versions": [
+            {
+              "version": ">= 1.55.0, < 1.58.16",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.59.0, < 1.59.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.60.0, < 1.60.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 1.61.0, < 1.61.4",
+              "status": "affected"
+            },
+            {
+              "version": ">= 0.55.0, < 0.58.15.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 0.59.0, < 0.59.12.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 0.60.0, < 0.60.8.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 0.61.0, < 0.61.3.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:metabase",
+        "vendor:metabase"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-27464",
       "description": "Metabase is an open-source data analytics platform. In versions prior to 0.57.13 and versions 0.58.x through 0.58.6, authenticated users are able to retrieve sensitive information from a Metabase instance, including database access credentials. During testing, it was confirmed that a low-privileged user can extract sensitive information including database credentials, into the email body via template evaluation. This issue has been fixed in versions 0.57.13 and 0.58.7. To workaround this issue, users can disable notifications in their Metabase instance to disallow access to the vulnerable endpoints.",
       "cvss_score": 7.7,
@@ -38519,6 +38577,44 @@
         "cpe_count": 4,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-53562",
+      "description": "Improper link resolution before file access ('link following') vulnerability in Citrix UniconOS.\n\nThis issue affects UniconOS: before 2607 CR and before 2603 LTSR CU2.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "citrix",
+          "product": "uniconos",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2607 CR",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2603 LTSR CU2",
+              "versionType": "Patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:uniconos",
+        "vendor:citrix"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-53565",
@@ -139373,6 +139469,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105445",
+      "description": "An Incorrect Privilege Assignment vulnerability in Docker Hub's account-to-organization conversion feature allowed an authenticated attacker to reassign a personal access token (PAT) they controlled to another Docker Hub user without rotating or revoking the token secret. The unchanged PAT then authenticated to the registry as the recipient and could pull, push, or delete images, within its scopes, in repositories accessible to that user, including organization repositories.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker hub",
+          "versions": [
+            {
+              "version": "2024-08-26T20:33:00Z",
+              "status": "affected",
+              "lessThan": "2026-09-30T19:10:00Z",
+              "versionType": "date"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker hub",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-106581",
       "description": "Before 4.92.0, Docker Desktop for Windows did not verify the signature of a package supplied to Docker Desktop Installer.exe install -package. An attacker able to provide a crafted package and convince a user to approve the Docker-signed UAC prompt could execute attacker-controlled installer actions as LocalSystem.",
       "cvss_score": 8.2,
@@ -162036,6 +162164,42 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat ai inference server 3.5",
+          "versions": [
+            {
+              "version": "1791425869",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat ai inference server 3.5",
+          "versions": [
+            {
+              "version": "1791427182",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat ai inference server 3.5",
+          "versions": [
+            {
+              "version": "1791803821",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat discovery 2",
           "versions": [
             {
@@ -177463,6 +177627,752 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102989",
+      "description": "TanStack Router is a client-first, server-capable, fully type-safe router and full-stack framework for the web. From 1.143.12 until 1.169.39 for @tanstack/start-server-core, 1.168.60 for @tanstack/react-start, 1.168.57 for @tanstack/solid-start, and 1.168.56 for @tanstack/vue-start, an unauthenticated attacker can place non-public fields in a server-function request payload so that attacker-controlled middleware state reaches the error path and a response-shaped object is accepted as an HTTP response. A crafted server-function URL can therefore return attacker-controlled HTML from the application's origin; when a visitor opens the URL, the injected script can access same-origin data and issue requests with the visitor's authority. This issue is fixed in @tanstack/start-server-core 1.169.39, @tanstack/react-start 1.168.60, @tanstack/solid-start 1.168.57, and @tanstack/vue-start 1.168.56.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "tanstack",
+          "product": "router",
+          "versions": [
+            {
+              "version": "< release-2026-09-30-1747",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-start",
+          "versions": [
+            {
+              "version": ">= 1.143.12, < 1.168.60",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-start",
+          "versions": [
+            {
+              "version": ">= 1.143.12, < 1.168.57",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-server-core",
+          "versions": [
+            {
+              "version": ">= 1.143.12, < 1.169.39",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-start",
+          "versions": [
+            {
+              "version": ">= 1.143.12, < 1.168.56",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:react-start",
+        "product:router",
+        "product:vue-start",
+        "vendor:@tanstack",
+        "vendor:tanstack"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-45321",
+      "description": "On 2026-05-11, between approximately 19:20 and 19:26 UTC, 84 malicious versions across 42 @tanstack/* packages were published to the npm registry. The publishes were authenticated via the legitimate GitHub Actions OIDC trusted-publisher binding for TanStack/router, but the publish workflow itself was not modified. The attacker chained three known vulnerability classes \u2014 a pull_request_target \"Pwn Request\" misconfiguration, GitHub Actions cache poisoning across the fork\u2194base trust boundary, and runtime memory extraction of the OIDC token from the Actions runner process \u2014 to publish credential-stealing malware under a trusted identity. Each affected package received exactly two malicious versions, published a few minutes apart.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "@tanstack",
+          "product": "arktype-adapter",
+          "versions": [
+            {
+              "version": "1.166.12",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.15",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "eslint-plugin-router",
+          "versions": [
+            {
+              "version": "1.161.9",
+              "status": "affected"
+            },
+            {
+              "version": "1.161.12",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "eslint-plugin-start",
+          "versions": [
+            {
+              "version": "0.0.4",
+              "status": "affected"
+            },
+            {
+              "version": "0.0.7",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "history",
+          "versions": [
+            {
+              "version": "1.161.9",
+              "status": "affected"
+            },
+            {
+              "version": "1.161.12",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "nitro-v2-vite-plugin",
+          "versions": [
+            {
+              "version": "1.154.12",
+              "status": "affected"
+            },
+            {
+              "version": "1.154.15",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-router",
+          "versions": [
+            {
+              "version": "1.169.5",
+              "status": "affected"
+            },
+            {
+              "version": "1.169.8",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-router-devtools",
+          "versions": [
+            {
+              "version": "1.166.16",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.19",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-router-ssr-query",
+          "versions": [
+            {
+              "version": "1.166.15",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.18",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-start",
+          "versions": [
+            {
+              "version": "1.167.68",
+              "status": "affected"
+            },
+            {
+              "version": "1.167.71",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-start-client",
+          "versions": [
+            {
+              "version": "1.166.51",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.54",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-start-rsc",
+          "versions": [
+            {
+              "version": "0.0.47",
+              "status": "affected"
+            },
+            {
+              "version": "0.0.50",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "react-start-server",
+          "versions": [
+            {
+              "version": "1.166.55",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.58",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-cli",
+          "versions": [
+            {
+              "version": "1.166.46",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.49",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-core",
+          "versions": [
+            {
+              "version": "1.169.5",
+              "status": "affected"
+            },
+            {
+              "version": "1.169.8",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-devtools",
+          "versions": [
+            {
+              "version": "1.166.16",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.19",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-devtools-core",
+          "versions": [
+            {
+              "version": "1.167.6",
+              "status": "affected"
+            },
+            {
+              "version": "1.167.9",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-generator",
+          "versions": [
+            {
+              "version": "1.166.45",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.48",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-plugin",
+          "versions": [
+            {
+              "version": "1.167.38",
+              "status": "affected"
+            },
+            {
+              "version": "1.167.41",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-ssr-query-core",
+          "versions": [
+            {
+              "version": "1.168.3",
+              "status": "affected"
+            },
+            {
+              "version": "1.168.6",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "router-utils",
+          "versions": [
+            {
+              "version": "1.161.11",
+              "status": "affected"
+            },
+            {
+              "version": "1.161.14",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "outer-vite-plugin",
+          "versions": [
+            {
+              "version": "1.166.53",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.56",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-router",
+          "versions": [
+            {
+              "version": "1.169.5",
+              "status": "affected"
+            },
+            {
+              "version": "1.169.8",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-router-devtools",
+          "versions": [
+            {
+              "version": "1.166.16",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.19",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-router-ssr-query",
+          "versions": [
+            {
+              "version": "1.166.15",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.18",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-start",
+          "versions": [
+            {
+              "version": "1.167.65",
+              "status": "affected"
+            },
+            {
+              "version": "1.167.68",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-start-client",
+          "versions": [
+            {
+              "version": "1.166.50",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.53",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "solid-start-server",
+          "versions": [
+            {
+              "version": "1.166.54",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.57",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-client-core",
+          "versions": [
+            {
+              "version": "1.168.5",
+              "status": "affected"
+            },
+            {
+              "version": "1.168.8",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-fn-stubs",
+          "versions": [
+            {
+              "version": "1.161.9",
+              "status": "affected"
+            },
+            {
+              "version": "1.161.12",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-plugin-core",
+          "versions": [
+            {
+              "version": "1.169.23",
+              "status": "affected"
+            },
+            {
+              "version": "1.169.26",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-server-core",
+          "versions": [
+            {
+              "version": "1.167.33",
+              "status": "affected"
+            },
+            {
+              "version": "1.167.36",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-static-server-functions",
+          "versions": [
+            {
+              "version": "1.166.44",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.47",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "start-storage-context",
+          "versions": [
+            {
+              "version": "1.166.38",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.41",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "valibot-adapter",
+          "versions": [
+            {
+              "version": "1.166.12",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.15",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "virtual-file-routes",
+          "versions": [
+            {
+              "version": "1.161.10",
+              "status": "affected"
+            },
+            {
+              "version": "1.161.13",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-router",
+          "versions": [
+            {
+              "version": "1.169.5",
+              "status": "affected"
+            },
+            {
+              "version": "1.169.8",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-router-devtools",
+          "versions": [
+            {
+              "version": "1.166.16",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.19",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-router-ssr-query",
+          "versions": [
+            {
+              "version": "1.166.15",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.18",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-start",
+          "versions": [
+            {
+              "version": "1.167.61",
+              "status": "affected"
+            },
+            {
+              "version": "1.167.64",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-start-client",
+          "versions": [
+            {
+              "version": "1.166.46",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.49",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "vue-start-server",
+          "versions": [
+            {
+              "version": "1.166.50",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.53",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@tanstack",
+          "product": "zod-adapter",
+          "versions": [
+            {
+              "version": "1.166.12",
+              "status": "affected"
+            },
+            {
+              "version": "1.166.15",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:react-router",
+        "product:react-router-devtools",
+        "product:react-router-ssr-query",
+        "product:react-start",
+        "product:react-start-client",
+        "product:react-start-rsc",
+        "product:react-start-server",
+        "product:vue-router",
+        "product:vue-router-devtools",
+        "product:vue-router-ssr-query",
+        "product:vue-start",
+        "product:vue-start-client",
+        "product:vue-start-server",
+        "vendor:@tanstack"
+      ],
+      "active_threat": true,
+      "probability_score": 0.01054,
+      "kev": {
+        "cveID": "CVE-2026-45321",
+        "vendorProject": "TanStack",
+        "product": "TanStack",
+        "vulnerabilityName": "TanStack Unspecified Vulnerability",
+        "dateAdded": "2026-05-27",
+        "shortDescription": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
+        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2026-06-10",
+        "knownRansomwareCampaignUse": "Known"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-506"
+        ],
+        "cpe_count": 343,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-103316",
+      "description": "The macOS version of the DigiD app is not signed with Hardened Runtime. As a result, a local process can load its own dylib into DigiD via DYLD_INSERT_LIBRARIES.  An attacker with local user-level code execution can execute arbitrary code within the macOS version of the DigiD app, thereby gaining access to DigiD data and cryptographic capabilities that the process normally does not have. Reported by Kun Peeks (@SwayZGl1tZyyy)",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "logius",
+          "product": "digid for macos",
+          "versions": [
+            {
+              "version": "<6.19.2",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:digid for macos",
+        "vendor:logius"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00112
+    },
+    {
       "cve_id": "CVE-2026-103902",
       "description": "Improper verification of cryptographic signature vulnerability in DigiDoc libdigidocpp, DigiDoc DigiDoc4, DigiDoc DigiDoc Android, and DigiDoc DigiDoc iOS. The vulnerability allows an attacker to create forged digital signatures\n that are displayed a valid by affected DigiDoc software.This issue affects libdigidocpp: from 4.0.0 before 4.5.0; DigiDoc4: from 4.6.0 before 4.11.0; DigiDoc Android: from 2.7.0 before 3.1.0; DigiDoc iOS: from 2.7.0 before 3.1.0.",
       "cvss_score": 7.5,
@@ -178106,6 +179016,46 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-104875",
+      "description": "Ente provides end-to-end encrypted cloud services and security tools. Prior to server image 2026.07.09, the POST /emergency-contacts/approve-recovery endpoint authorized approval using a client-supplied userID and updated an emergency recovery session using only its client-supplied recovery-session UUID. An accepted emergency contact could submit the contact's own identifier, transition the victim's session from WAITING to READY, clear wait_till, retrieve recovery information, and continue account recovery before the owner-configured notice period expired. Exploitation of the approval bypass required the victim to have previously added and accepted the attacker as an emergency contact, and it did not create recovery rights for an arbitrary account. Separately, the same insufficiently scoped update pattern affected the reject and stop recovery transitions, allowing a user who knew another recovery-session UUID to potentially cancel a session to which the user was not a party. This issue is fixed in server image 2026.07.09.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ente",
+          "product": "ente",
+          "versions": [
+            {
+              "version": "< 0.1.18",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "ente",
+          "product": "ghcr.io/ente/server",
+          "versions": [
+            {
+              "version": "< 2026.07.09",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ente",
+        "vendor:ente"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-105216",
@@ -179506,6 +180456,688 @@
         "cpe_count": 5,
         "reference_count": 15
       }
+    },
+    {
+      "cve_id": "CVE-2026-108184",
+      "description": "Improper certificate validation in certain Zoom Clients for Windows may allow an unauthenticated user to conduct an information disclosure via network access.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-108185",
+      "description": "Improper certificate validation in the My Notes feature of certain Zoom Clients may allow an unauthenticated user to conduct an information disclosure via network access.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-30903",
+      "description": "External Control of File Name or Path in the Mail feature of Zoom Workplace for Windows before 6.6.0 may allow an unauthenticated user to conduct an escalation of privilege via network access.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00464,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-73",
+          "CWE-610"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-30905",
+      "description": "External Control of File Name or Path in the Zoom Workplace VDI Plugin Windows Universal Installer before version 6.6.11 may allow an authenticated user to conduct an escalation of privilege via local access.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace vdi plugin",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.6.11",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace vdi plugin",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00162,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-73",
+          "CWE-610"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-30906",
+      "description": "Untrusted search path in the installer for Zoom Rooms for Windows before version 7.0.0 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom rooms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00162,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-426"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53406",
+      "description": "Insufficient Verification of Data Authenticity in Remote Control for Zoom Contact Center for Windows before version 7.0.0 may allow an authenticated user to enable an escalation of privilege via local access.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "remote control for zoom contact center",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:remote control for zoom contact center",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00114,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-345"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53407",
+      "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace before version 7.0.4 for Android and before 7.0.3 for iOS may allow an unauthenticated user to conduct an escalation of privilege via network access.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.0.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00407,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-939"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53408",
+      "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace before version 7.0.4 for Android and before 7.0.3 for iOS may allow an unauthenticated user to conduct an escalation of privilege via network access.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.0.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00361,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-939"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53409",
+      "description": "Improper Privilege Management in Zoom Rooms for Windows before version 7.1.0 may allow an authenticated user to conduct an escalation of privilege via local access.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom rooms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom rooms",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00167,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53410",
+      "description": "A time-of-check to time-of-use (TOCTOU) race condition in the installation and uninstallation process of certain Zoom Clients for Windows could allow an authenticated local user to escalate privileges.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.001,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53411",
+      "description": "A time-of-check to time-of-use (TOCTOU) race condition in the installation and uninstallation process of certain Zoom Clients for Windows could allow an authenticated local user to escalate privileges.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace vdi plugin",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.6.14",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace vdi plugin",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0014,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53412",
+      "description": "Improper Input Validation in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows may allow an unauthenticated user to conduct an account takeover via network access.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace for windows",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace for windows",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00529,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53413",
+      "description": "Missing bounds check in the annotator function of Zoom Clients allows buffer over-write, which may allow a meeting participant to achieve remote code execution of another participant via network access.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00494,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53415",
+      "description": "Use after Free in the annotator function of Zoom Clients may allow a meeting participant to achieve remote code execution of another participant via network access.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom clients",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "see references",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom clients",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00494,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53416",
+      "description": "Path traversal in Zoom VDI Client and Plugins may allow an authenticated user to conduct information disclosure via local access.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom vdi",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.0.11",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom vdi",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00214,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-23"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-53418",
+      "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace for Android before version 7.2.1 may allow an unauthenticated user to conduct an escalation of privilege via network access.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.2.1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-53420",
+      "description": "Buffer overflow in a Zoom Phone feature of Zoom Workplace Clients may allow an unauthenticated user to conduct a escalation of privilege via network access.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoom communications",
+          "product": "zoom workplace",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7.2.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoom workplace",
+        "vendor:zoom communications"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-108261",
@@ -182597,6 +184229,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-82416",
+      "description": "FrankenPHP is a modern application server for PHP. Prior to 1.12.5, FrankenPHP worker mode can retain PHP session state between requests when the session extension is loaded as a shared module and is unavailable through HAVE_PHP_SESSION at compile time. In this build configuration, frankenphp_reset_session_state() is compiled out, PS(id) can survive a request boundary, and a subsequent session_start() can ignore the new request's cookie because an identifier is already present. Under concurrent requests, session_id() can therefore return another client's identifier or a stale identifier from a previous request on the same worker thread, causing cross-user session exposure, possible session hijacking, and intermittent logout behavior. Builds with the session extension statically linked, including the official static binaries and Docker images, are not affected. This issue is fixed in version 1.12.5.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "php",
+          "product": "frankenphp",
+          "versions": [
+            {
+              "version": "< 1.12.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:frankenphp",
+        "vendor:php"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-25026",
       "description": "Missing Authorization vulnerability in RadiusTheme Team tlp-team allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Team: from n/a through <= 5.0.11.",
       "cvss_score": 7.5,
@@ -184378,562 +186040,6 @@
         ],
         "cpe_count": 1,
         "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-30903",
-      "description": "External Control of File Name or Path in the Mail feature of Zoom Workplace for Windows before 6.6.0 may allow an unauthenticated user to conduct an escalation of privilege via network access.",
-      "cvss_score": 9.6,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom workplace",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "see references"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom workplace",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00464,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-73",
-          "CWE-610"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-30905",
-      "description": "External Control of File Name or Path in the Zoom Workplace VDI Plugin Windows Universal Installer before version 6.6.11 may allow an authenticated user to conduct an escalation of privilege via local access.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom workplace vdi plugin",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6.6.11",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom workplace vdi plugin",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00162,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-73",
-          "CWE-610"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-30906",
-      "description": "Untrusted search path in the installer for Zoom Rooms for Windows before version 7.0.0 may allow an authenticated user to enable an escalation of privilege via local access.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom rooms",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.0.0",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom rooms",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00162,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-426"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53406",
-      "description": "Insufficient Verification of Data Authenticity in Remote Control for Zoom Contact Center for Windows before version 7.0.0 may allow an authenticated user to enable an escalation of privilege via local access.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "remote control for zoom contact center",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.0.0",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:remote control for zoom contact center",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00114,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-345"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53407",
-      "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace before version 7.0.4 for Android and before 7.0.3 for iOS may allow an unauthenticated user to conduct an escalation of privilege via network access.",
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom workplace",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.0.4",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom workplace",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00407,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-939"
-        ],
-        "cpe_count": 2,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53408",
-      "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace before version 7.0.4 for Android and before 7.0.3 for iOS may allow an unauthenticated user to conduct an escalation of privilege via network access.",
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom workplace",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.0.4",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom workplace",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00361,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-939"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53409",
-      "description": "Improper Privilege Management in Zoom Rooms for Windows before version 7.1.0 may allow an authenticated user to conduct an escalation of privilege via local access.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom rooms",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.1.0",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom rooms",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00167,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53410",
-      "description": "A time-of-check to time-of-use (TOCTOU) race condition in the installation and uninstallation process of certain Zoom Clients for Windows could allow an authenticated local user to escalate privileges.",
-      "cvss_score": 7.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom clients",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "see references",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom clients",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.001,
-      "nvd": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-367"
-        ],
-        "cpe_count": 5,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53411",
-      "description": "A time-of-check to time-of-use (TOCTOU) race condition in the installation and uninstallation process of certain Zoom Clients for Windows could allow an authenticated local user to escalate privileges.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom workplace vdi plugin",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6.6.14",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom workplace vdi plugin",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0014,
-      "nvd": {
-        "cvss_v3_score": 7.0,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53412",
-      "description": "Improper Input Validation in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows may allow an unauthenticated user to conduct an account takeover via network access.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom workplace for windows",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.0.0",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom workplace for windows",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00529,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53413",
-      "description": "Missing bounds check in the annotator function of Zoom Clients allows buffer over-write, which may allow a meeting participant to achieve remote code execution of another participant via network access.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom clients",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "see references",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom clients",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00494,
-      "nvd": {
-        "cvss_v3_score": 8.3,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53415",
-      "description": "Use after Free in the annotator function of Zoom Clients may allow a meeting participant to achieve remote code execution of another participant via network access.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom clients",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "see references",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom clients",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00494,
-      "nvd": {
-        "cvss_v3_score": 8.3,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-416"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-53416",
-      "description": "Path traversal in Zoom VDI Client and Plugins may allow an authenticated user to conduct information disclosure via local access.",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "zoom communications",
-          "product": "zoom vdi",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "7.0.11",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:zoom vdi",
-        "vendor:zoom communications"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00214,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
       }
     },
     {
@@ -191185,648 +192291,6 @@
           "CWE-502"
         ],
         "cpe_count": 1,
-        "reference_count": 5
-      }
-    },
-    {
-      "cve_id": "CVE-2026-45321",
-      "description": "On 2026-05-11, between approximately 19:20 and 19:26 UTC, 84 malicious versions across 42 @tanstack/* packages were published to the npm registry. The publishes were authenticated via the legitimate GitHub Actions OIDC trusted-publisher binding for TanStack/router, but the publish workflow itself was not modified. The attacker chained three known vulnerability classes \u2014 a pull_request_target \"Pwn Request\" misconfiguration, GitHub Actions cache poisoning across the fork\u2194base trust boundary, and runtime memory extraction of the OIDC token from the Actions runner process \u2014 to publish credential-stealing malware under a trusted identity. Each affected package received exactly two malicious versions, published a few minutes apart.",
-      "cvss_score": 9.6,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "@tanstack",
-          "product": "arktype-adapter",
-          "versions": [
-            {
-              "version": "1.166.12",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.15",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "eslint-plugin-router",
-          "versions": [
-            {
-              "version": "1.161.9",
-              "status": "affected"
-            },
-            {
-              "version": "1.161.12",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "eslint-plugin-start",
-          "versions": [
-            {
-              "version": "0.0.4",
-              "status": "affected"
-            },
-            {
-              "version": "0.0.7",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "history",
-          "versions": [
-            {
-              "version": "1.161.9",
-              "status": "affected"
-            },
-            {
-              "version": "1.161.12",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "nitro-v2-vite-plugin",
-          "versions": [
-            {
-              "version": "1.154.12",
-              "status": "affected"
-            },
-            {
-              "version": "1.154.15",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-router",
-          "versions": [
-            {
-              "version": "1.169.5",
-              "status": "affected"
-            },
-            {
-              "version": "1.169.8",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-router-devtools",
-          "versions": [
-            {
-              "version": "1.166.16",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.19",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-router-ssr-query",
-          "versions": [
-            {
-              "version": "1.166.15",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.18",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-start",
-          "versions": [
-            {
-              "version": "1.167.68",
-              "status": "affected"
-            },
-            {
-              "version": "1.167.71",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-start-client",
-          "versions": [
-            {
-              "version": "1.166.51",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.54",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-start-rsc",
-          "versions": [
-            {
-              "version": "0.0.47",
-              "status": "affected"
-            },
-            {
-              "version": "0.0.50",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "react-start-server",
-          "versions": [
-            {
-              "version": "1.166.55",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.58",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-cli",
-          "versions": [
-            {
-              "version": "1.166.46",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.49",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-core",
-          "versions": [
-            {
-              "version": "1.169.5",
-              "status": "affected"
-            },
-            {
-              "version": "1.169.8",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-devtools",
-          "versions": [
-            {
-              "version": "1.166.16",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.19",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-devtools-core",
-          "versions": [
-            {
-              "version": "1.167.6",
-              "status": "affected"
-            },
-            {
-              "version": "1.167.9",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-generator",
-          "versions": [
-            {
-              "version": "1.166.45",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.48",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-plugin",
-          "versions": [
-            {
-              "version": "1.167.38",
-              "status": "affected"
-            },
-            {
-              "version": "1.167.41",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-ssr-query-core",
-          "versions": [
-            {
-              "version": "1.168.3",
-              "status": "affected"
-            },
-            {
-              "version": "1.168.6",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "router-utils",
-          "versions": [
-            {
-              "version": "1.161.11",
-              "status": "affected"
-            },
-            {
-              "version": "1.161.14",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "outer-vite-plugin",
-          "versions": [
-            {
-              "version": "1.166.53",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.56",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "solid-router",
-          "versions": [
-            {
-              "version": "1.169.5",
-              "status": "affected"
-            },
-            {
-              "version": "1.169.8",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "solid-router-devtools",
-          "versions": [
-            {
-              "version": "1.166.16",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.19",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "solid-router-ssr-query",
-          "versions": [
-            {
-              "version": "1.166.15",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.18",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "solid-start",
-          "versions": [
-            {
-              "version": "1.167.65",
-              "status": "affected"
-            },
-            {
-              "version": "1.167.68",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "solid-start-client",
-          "versions": [
-            {
-              "version": "1.166.50",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.53",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "solid-start-server",
-          "versions": [
-            {
-              "version": "1.166.54",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.57",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "start-client-core",
-          "versions": [
-            {
-              "version": "1.168.5",
-              "status": "affected"
-            },
-            {
-              "version": "1.168.8",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "start-fn-stubs",
-          "versions": [
-            {
-              "version": "1.161.9",
-              "status": "affected"
-            },
-            {
-              "version": "1.161.12",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "start-plugin-core",
-          "versions": [
-            {
-              "version": "1.169.23",
-              "status": "affected"
-            },
-            {
-              "version": "1.169.26",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "start-server-core",
-          "versions": [
-            {
-              "version": "1.167.33",
-              "status": "affected"
-            },
-            {
-              "version": "1.167.36",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "start-static-server-functions",
-          "versions": [
-            {
-              "version": "1.166.44",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.47",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "start-storage-context",
-          "versions": [
-            {
-              "version": "1.166.38",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.41",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "valibot-adapter",
-          "versions": [
-            {
-              "version": "1.166.12",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.15",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "virtual-file-routes",
-          "versions": [
-            {
-              "version": "1.161.10",
-              "status": "affected"
-            },
-            {
-              "version": "1.161.13",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "vue-router",
-          "versions": [
-            {
-              "version": "1.169.5",
-              "status": "affected"
-            },
-            {
-              "version": "1.169.8",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "vue-router-devtools",
-          "versions": [
-            {
-              "version": "1.166.16",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.19",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "vue-router-ssr-query",
-          "versions": [
-            {
-              "version": "1.166.15",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.18",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "vue-start",
-          "versions": [
-            {
-              "version": "1.167.61",
-              "status": "affected"
-            },
-            {
-              "version": "1.167.64",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "vue-start-client",
-          "versions": [
-            {
-              "version": "1.166.46",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.49",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "vue-start-server",
-          "versions": [
-            {
-              "version": "1.166.50",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.53",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "@tanstack",
-          "product": "zod-adapter",
-          "versions": [
-            {
-              "version": "1.166.12",
-              "status": "affected"
-            },
-            {
-              "version": "1.166.15",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": true,
-      "is_critical": true,
-      "priority_label": "CRITICAL (Active Exploit in Stack)",
-      "matched_terms": [
-        "product:react-router",
-        "product:react-router-devtools",
-        "product:react-router-ssr-query",
-        "product:react-start",
-        "product:react-start-client",
-        "product:react-start-rsc",
-        "product:react-start-server",
-        "product:vue-router",
-        "product:vue-router-devtools",
-        "product:vue-router-ssr-query",
-        "product:vue-start",
-        "product:vue-start-client",
-        "product:vue-start-server",
-        "vendor:@tanstack"
-      ],
-      "active_threat": true,
-      "probability_score": 0.01054,
-      "kev": {
-        "cveID": "CVE-2026-45321",
-        "vendorProject": "TanStack",
-        "product": "TanStack",
-        "vulnerabilityName": "TanStack Unspecified Vulnerability",
-        "dateAdded": "2026-05-27",
-        "shortDescription": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
-        "requiredAction": "Apply mitigations per vendor instructions, follow applicable BOD 22-01 guidance for cloud services, or discontinue use of the product if mitigations are unavailable.",
-        "dueDate": "2026-06-10",
-        "knownRansomwareCampaignUse": "Known"
-      },
-      "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-506"
-        ],
-        "cpe_count": 343,
         "reference_count": 5
       }
     },
@@ -198138,6 +198602,206 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-75826",
+      "description": "Command injection in the backup function in Teltonika Networks RUTOS 7.22 before 7.24.6 and 7.25 before 7.25.2 (RUT, RUTX, RUTM, RUTC, ATRM, CAP, OXA, DAP, TRB, OTD, and EBG devices), RUTOS 7.22 before 7.25.2 (TAP devices), and TSWOS 1.9 before 1.10.4 (TSW and SWM devices) allows a remote authenticated attacker to execute arbitrary OS commands.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "teltonika networks",
+          "product": "rut",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "RUT"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "rutx",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "RUTX"
+            },
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.25.2",
+              "versionType": "RUTX"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "rutm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "RUTM"
+            },
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.25.2",
+              "versionType": "RUTM"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "rutc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "RUTC"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "atrm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "ATRM"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "tap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.25.2",
+              "versionType": "TAP"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "cap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "CAP"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "oxa",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "OXA"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "dap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "DAP"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "trb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "TRB"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "otd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "OTD"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "ebg",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThan": "7.24.6",
+              "versionType": "EBG"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "swm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.9",
+              "lessThan": "1.10.4",
+              "versionType": "SWM"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "tsw",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.9",
+              "lessThan": "1.10.4",
+              "versionType": "TSW"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rut",
+        "vendor:teltonika networks"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00939
     },
     {
       "cve_id": "CVE-2026-76642",

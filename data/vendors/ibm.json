@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "ibm",
-  "count": 1144,
+  "count": 1155,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -17257,6 +17257,53 @@
       }
     },
     {
+      "cve_id": "CVE-2026-101294",
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 and IBM WebSphere Application Server 8.5, and 9.0 could allow a remote attacker to bypass cryptographic signature verification due to improper verification of cryptographic signature.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "17.0.0.3",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "websphere application server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.5"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server",
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-101331",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to insufficiently protected credentials.",
       "cvss_score": 7.7,
@@ -17384,6 +17431,53 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-103499",
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 and IBM WebSphere Application Server 8.5, and 9.0 Liberty could allow a remote unauthenticated attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "17.0.0.3",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "websphere application server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.5"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server",
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-104334",
@@ -17527,6 +17621,85 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-105442",
+      "description": "IBM WebSphere Application Server 8.5, and 9.0 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 Liberty could allow a remote attacker to cause a denial of service caused by an insecure deserialization in the messaging service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.5"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "17.0.0.3",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server",
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105443",
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 has insufficient isolation between servers sharing an install.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "17.0.0.3",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-105464",
@@ -45173,6 +45346,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-53709",
+      "description": "MCP Context Forge is an MCP gateway and administrative platform. Prior to 1.0.2, mcpgateway/config.py and .env.example ship a known JWT_SECRET_KEY, while verify_jwt_token() accepts HS256 tokens signed with that key and get_current_user() creates a platform administrator when the token subject matches PLATFORM_ADMIN_EMAIL and REQUIRE_USER_IN_DB is false. A remote unauthenticated attacker can therefore mint accepted administrator tokens without a database account. While the vulnerable signing key remains configured and the platform-admin bootstrap remains enabled, forged access survives password rotation, account deletion, and session revocation, allowing administrative disclosure, modification, and service disruption. This issue is fixed in version 1.0.2.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "mcp-context-forge",
+          "versions": [
+            {
+              "version": "< 1.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mcp-context-forge",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-53710",
       "description": "MCP Context Forge is an AI gateway, registry, and proxy for MCP, A2A, REST, and gRPC APIs. Prior to 1.0.2, the python_sandbox_server in mcp-servers/python/python_sandbox_server/src/python_sandbox_server/server_fastmcp.py exposes raw getattr through safe_builtins, omits a required _getattr_ guard, and relies on validate_code checks for literal dangerous dunder strings. An attacker can construct dunder names at runtime, traverse the Python class hierarchy, reach subprocess.Popen, and execute OS commands with the server process privileges through the execute_code MCP tool. The HTTP/SSE transport can expose this tool without authentication, while stdio-only deployments have reduced network reachability. The issue affects the python_sandbox_server subproject and does not directly affect the core Context Forge gateway or proxy components. This issue is fixed in version 1.0.2.",
       "cvss_score": 10.0,
@@ -54985,6 +55188,202 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-93895",
+      "description": "IBM WebSphere Application Server - Liberty 20.0.0.12 through 26.0.0.10 could allow an unauthenticated remote attacker to bypass access controls configured on gRPC service methods.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "20.0.0.12",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93905",
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 could allow an unauthenticated remote attacker to corrupt the persisted status of batch job instances.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "17.0.0.3",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93907",
+      "description": "IBM WebSphere Application Server 8.5, and 9.0 could allow a remote attacker to bypass authentication by exploiting a flaw in the CSIv2 inbound propagation handler.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.5"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93909",
+      "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 is vulnerable by an authentication bypass vulnerability when samlWeb-2.0 feature is enabled.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "17.0.0.3",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-95680",
+      "description": "IBM WebSphere Application Server 8.5, and 9.0 could allow an authenticated attacker to bypass authorization leading to administrative impersonation across the cell.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.5"
+            },
+            {
+              "status": "affected",
+              "version": "9.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-95695",
+      "description": "IBM WebSphere Application Server - Liberty 20.0.0.12 through 26.0.0.10 could allow a remote attacker to bypass security restrictions due to incorrect authorization.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere application server - liberty",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "20.0.0.12",
+              "lessThanOrEqual": "26.0.0.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere application server - liberty",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-96012",

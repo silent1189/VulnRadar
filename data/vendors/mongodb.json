@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "mongodb",
-  "count": 106,
+  "count": 109,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -219,6 +219,88 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-104004",
+      "description": "MongoDB Server's collection validation feature may not properly handle certain expressions stored in a validator. In some cases, this can cause the server process to stop running when a document is later inserted. The behavior can occur for authenticated users with write access.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.13",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0",
+              "lessThan": "8.0.34",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0",
+              "lessThan": "9.0.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104005",
+      "description": "A security issue was discovered in MongoDB mongos (the sharded cluster router) where an authenticated user with readWrite privileges could crash the mongos process by crafting a specially formed aggregation pipeline. The issue leverages an internal aggregation stage that lacks proper authorization checks despite being intended for internal use, allowing a subsequent stage to be forced to execute on the router under conditions it was not designed to handle. This results in an unhandled fatal error that causes the mongos process to immediately abort, resulting in denial of service for all clients routed through the affected mongos instance.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.13",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0",
+              "lessThan": "9.0.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-106429",
@@ -4434,6 +4516,44 @@
         "cpe_count": 6,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-96299",
+      "description": "A security issue was discovered in MongoDB mongos (the sharded cluster router) where an authenticated user with readWrite privileges could crash the mongos process by crafting a specially formed aggregation pipeline. The issue leverages an internal aggregation stage that lacks proper authorization checks despite being intended for internal use, allowing a subsequent stage to be forced to execute on the router under conditions it was not designed to handle. This results in an unhandled fatal error that causes the mongos process to immediately abort, resulting in denial of service for all clients routed through the affected mongos instance.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.13",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0",
+              "lessThan": "9.0.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-96744",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T01:30:01+00:00",
+  "generated_at": "2026-10-14T06:09:25+00:00",
   "vendor": "red_hat",
-  "count": 333,
+  "count": 334,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -13082,11 +13082,6 @@
           "vendor": "red hat",
           "product": "red hat enterprise linux 10",
           "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
-          "versions": null
         }
       ],
       "watchlist_hit": true,
@@ -16424,7 +16419,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "openshift compliance operator 1",
+          "product": "compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -16433,11 +16428,6 @@
               "status": "unaffected"
             }
           ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
-          "versions": null
         }
       ],
       "watchlist_hit": true,
@@ -43998,11 +43988,6 @@
           "vendor": "red hat",
           "product": "red hat openshift container platform 4",
           "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
-          "versions": null
         }
       ],
       "watchlist_hit": true,
@@ -46597,11 +46582,6 @@
         {
           "vendor": "red hat",
           "product": "red hat enterprise linux 10",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
           "versions": null
         }
       ],
@@ -65879,6 +65859,30 @@
           "versions": [
             {
               "version": "0:0.1.8-2.el8_6.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8.8 telecommunications update service",
+          "versions": [
+            {
+              "version": "0:0.1.8-5.el8_8.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8.8 update services for sap solutions",
+          "versions": [
+            {
+              "version": "0:0.1.8-5.el8_8.1",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -91711,6 +91715,11 @@
       "affected": [
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 8.1 for rhel 10",
           "versions": [
             {
@@ -93269,6 +93278,7 @@
       "matched_terms": [
         "product:red hat build of apache camel for spring boot 4",
         "product:red hat jboss enterprise application platform 7",
+        "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform 8.1 for rhel 10",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
@@ -93287,6 +93297,132 @@
         ],
         "cpe_count": 0,
         "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-66785",
+      "description": "A flaw was found in Submariner. This vulnerability allows a malicious cluster (spoke) to redirect network traffic from other connected clusters (peer clusters) by publishing a specially crafted network endpoint. The system fails to properly validate the network subnets provided by the malicious cluster, enabling it to declare arbitrary network ranges. Consequently, all network traffic intended for these arbitrary ranges from peer clusters will be rerouted through the attacker's tunnel, potentially leading to unauthorized information disclosure or network disruption.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788023916",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788023940",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788105072",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788043964",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788043961",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788073481",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2.17",
+          "versions": [
+            {
+              "version": "1788043970",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat advanced cluster management for kubernetes 2",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat advanced cluster management for kubernetes 2",
+        "product:red hat advanced cluster management for kubernetes 2.17",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00126,
+      "nvd": {
+        "cvss_v3_score": 2.5,
+        "cvss_v3_severity": "LOW",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
