@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T23:56:34+00:00",
+  "generated_at": "2026-10-15T04:47:33+00:00",
   "vendor": "cisco",
-  "count": 565,
+  "count": 566,
   "items": [
     {
       "cve_id": "CVE-2022-20622",
@@ -356942,6 +356942,135 @@
         ],
         "cpe_count": 6,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76519",
+      "description": "A vulnerability in the Advanced Malware Protection (AMP) feature of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.\r\n\r\nThis vulnerability is due to improper handling of email attachments when the file reputation service is enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to write arbitrary files and execute commands with&nbsp;root privileges on the underlying operating system.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "cisco",
+          "product": "cisco secure email",
+          "versions": [
+            {
+              "version": "14.0.0-698",
+              "status": "affected"
+            },
+            {
+              "version": "13.5.1-277",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.0-392",
+              "status": "affected"
+            },
+            {
+              "version": "14.2.0-620",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.5-007",
+              "status": "affected"
+            },
+            {
+              "version": "13.5.4-038",
+              "status": "affected"
+            },
+            {
+              "version": "14.2.1-020",
+              "status": "affected"
+            },
+            {
+              "version": "14.3.0-032",
+              "status": "affected"
+            },
+            {
+              "version": "15.0.0-104",
+              "status": "affected"
+            },
+            {
+              "version": "15.0.1-030",
+              "status": "affected"
+            },
+            {
+              "version": "15.5.0-048",
+              "status": "affected"
+            },
+            {
+              "version": "15.5.1-055",
+              "status": "affected"
+            },
+            {
+              "version": "15.5.2-018",
+              "status": "affected"
+            },
+            {
+              "version": "16.0.0-050",
+              "status": "affected"
+            },
+            {
+              "version": "15.0.3-002",
+              "status": "affected"
+            },
+            {
+              "version": "16.0.0-054",
+              "status": "affected"
+            },
+            {
+              "version": "15.5.3-022",
+              "status": "affected"
+            },
+            {
+              "version": "16.0.1-017",
+              "status": "affected"
+            },
+            {
+              "version": "15.5.4-012",
+              "status": "affected"
+            },
+            {
+              "version": "16.0.4-016",
+              "status": "affected"
+            },
+            {
+              "version": "15.0.5-016",
+              "status": "affected"
+            },
+            {
+              "version": "16.0.2-112",
+              "status": "affected"
+            },
+            {
+              "version": "16.0.3-044",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": true,
+      "priority_label": "CRITICAL (CISA KEV + Watchlist)",
+      "matched_terms": [
+        "product:cisco secure email",
+        "vendor:cisco"
+      ],
+      "active_threat": true,
+      "probability_score": null,
+      "kev": {
+        "cveID": "CVE-2026-76519",
+        "vendorProject": "Cisco",
+        "product": "Secure Email Gateway",
+        "vulnerabilityName": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+        "dateAdded": "2026-10-14",
+        "shortDescription": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-10-17",
+        "knownRansomwareCampaignUse": "Unknown"
       }
     }
   ]

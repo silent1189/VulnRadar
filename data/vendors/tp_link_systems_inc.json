@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T23:56:34+00:00",
+  "generated_at": "2026-10-15T04:47:33+00:00",
   "vendor": "tp_link_systems_inc",
-  "count": 129,
+  "count": 130,
   "items": [
     {
       "cve_id": "CVE-2025-10991",
@@ -7008,6 +7008,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-107795",
+      "description": "Omada Controller's MSP and OpenAPI certificate/private-key management APIs do not properly enforce administrative authorization, allowing an authenticated user to perform privileged certificate management operations.\u00a0\n\nSuccessful exploitation may allow a low-privileged authenticated user to upload or delete the controller's TLS certificate or private key, potentially disrupting secure management access.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "omada software controller",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.3.0.45",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:omada software controller",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-108473",
       "description": "Multiple\nKasa devices contain an improper authentication vulnerability in the local\ndevice-management protocol. An unauthenticated adjacent attacker may send\nmanagement instructions to an affected device without adequate authentication\nor authorization, allowing modification of the device state or management\nsettings. Under certain usage conditions involving interaction between the\nuser, mobile application, and device-cloud service, insufficient protection of\naccount-related communications may also expose account information.\n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow an unauthenticated adjacent-network attacker to perform\nunauthorized device-management actions and disrupt legitimate user control.\nUnder certain conditions, account-related information may also be exposed,\npotentially leading to compromise of the associated cloud account.",
       "cvss_score": 8.7,
@@ -7336,7 +7368,18 @@
         "vendor:tp-link systems inc."
       ],
       "active_threat": false,
-      "probability_score": 0.00275
+      "probability_score": 0.00275,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-11409",
@@ -9517,7 +9560,7 @@
     },
     {
       "cve_id": "CVE-2026-22222",
-      "description": "An OS Command Injection vulnerability in TP-Link Archer BE230 v1.2(web modules) allows adjacent \n\nauthenticated \n\nattacker to\u00a0execute arbitrary code.\u00a0Successful exploitation could allow an attacker to gain full administrative control of the device, resulting in severe compromise of configuration integrity, network security, and service availability.\n\nThis CVE covers one of multiple distinct OS command injection issues identified across separate code paths. Although similar in nature, each instance is tracked under a unique CVE ID.This issue affects Archer BE230 v1.2 < 1.2.4 Build 20251218 rel.70420.",
+      "description": "An OS Command Injection vulnerability in TP-Link Archer BE230 v1.2 and Archer AXE75 v2 (web modules) allows adjacent \n\nauthenticated \n\nattacker to\u00a0execute arbitrary code.\u00a0Successful exploitation could allow an attacker to gain full administrative control of the device, resulting in severe compromise of configuration integrity, network security, and service availability.\n\nThis CVE covers one of multiple distinct OS command injection issues identified across separate code paths. Although similar in nature, each instance is tracked under a unique CVE ID.",
       "cvss_score": 8.5,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
@@ -9527,9 +9570,21 @@
           "product": "archer be230 v1.2",
           "versions": [
             {
-              "lessThan": "1.2.4 Build 20251218 rel.70420",
               "status": "affected",
               "version": "0",
+              "lessThan": "1.2.4 Build 20251218 rel.70420",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tp link systems inc.",
+          "product": "archer axe75 v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V2_1.2.0 Build 20260603",
               "versionType": "custom"
             }
           ]

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T23:56:34+00:00",
+  "generated_at": "2026-10-15T04:47:33+00:00",
   "vendor": "ubiquiti_inc",
-  "count": 101,
+  "count": 103,
   "items": [
     {
       "cve_id": "CVE-2023-28365",
@@ -1354,6 +1354,92 @@
           "CWE-79"
         ],
         "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110455",
+      "description": "A malicious actor with access to the network and under certain conditions could exploit an Improper Input Validation vulnerability found in UniFi Protect AI Key to execute a Command Injection on the device.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ubiquiti inc",
+          "product": "unifi protect ai key",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.2.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:unifi protect ai key",
+        "vendor:ubiquiti inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01205,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110459",
+      "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi Protect AI Key to obtain information, make unauthorized changes, and execute a Denial of Service (DoS) attack on the device.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "ubiquiti inc",
+          "product": "unifi protect ai key",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.2.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:unifi protect ai key",
+        "vendor:ubiquiti inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00261,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
         "reference_count": 1
       }
     },
@@ -7362,9 +7448,9 @@
     {
       "cve_id": "CVE-2026-77532",
       "description": "A malicious actor with access to an adjacent network could exploit a Buffer Overflow vulnerability found in a DHCPv6-enabled EdgeMAX EdgeSwitch to initiate a Remote Code Execution on such device.",
-      "cvss_score": 9.6,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
       "affected": [
         {
           "vendor": "ubiquiti inc",
@@ -7391,8 +7477,8 @@
       "active_threat": false,
       "probability_score": 0.00271,
       "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [

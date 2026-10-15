@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T23:56:34+00:00",
+  "generated_at": "2026-10-15T04:47:33+00:00",
   "vendor": "f5",
-  "count": 209,
+  "count": 215,
   "items": [
     {
       "cve_id": "CVE-2022-1388",
@@ -11347,6 +11347,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-104939",
+      "description": "Description\nNGINX Ingress Controller has a vulnerability when implementing an externalAuth policy for ingress. NGINX Ingress Controller may mishandle the HTTP response from an OAuth IdP and allow an attacker to acquire unauthenticated access to protected paths before the proper external authentication can happen.\n\n\n\nImpact\nThis vulnerability may allow remote attackers \n\nunauthenticated\n\n access to protected \n\npaths.\u00a0There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx ingress controller",
+          "versions": [
+            {
+              "lessThan": "5.7.0",
+              "status": "affected",
+              "version": "5.6.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx ingress controller",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-11311",
       "description": "When NGINX Plus is configured as the data plane for NGINX Gateway Fabric, an injection vulnerability exists in the NGINX configuration generator component of NGINX Gateway Fabric. User-supplied string values from the NginxProxy\u00a0Custom Resource Definition serverTokens\u00a0field and the AuthenticationFilter\u00a0Custom Resource Definition extraAuthArgs\u00a0field are rendered directly into NGINX configuration templates without sanitization or escaping. An authenticated attacker with permission to create or modify these Custom Resource Definitions may craft values that inject arbitrary NGINX configuration directives. This is a control plane issue; there is no data plane exposure from the vulnerability trigger itself. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
       "cvss_score": 8.1,
@@ -11389,6 +11421,87 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-15176",
+      "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.1.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.5.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R36",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R35",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R34",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.7",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "1.30.6",
+              "status": "affected",
+              "version": "0.1.29",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-18329",
@@ -14465,6 +14578,119 @@
       }
     },
     {
+      "cve_id": "CVE-2026-91184",
+      "description": "Description\n\nNGINX Gateway Fabric\u00a0has a vulnerability when it renders the spec.basic.realm (and spec.jwt.realm) field of a namespaced AuthenticationFilter verbatim, unescaped and unvalidated, into the shared data-plane nginx.conf as auth_basic \"<realm>\";. A namespaced authenticated attacker that configures AuthenticationFilter CRD to an HTTPRoute/GRPCRoute on a shared Gateway can craft a realm value that closes the quoted directive and the enclosing location {} block and injects arbitrary NGINX directives into that Gateway's data-plane config.\u00a0\n\nImpact\n\nA remote authenticated attacker can send crafted requests to configure NGINX Gateway Fabric\u00a0AuthenticationFilter CRD and\u00a0may be able to read every co-located tenant's mounted secrets, SSRF via proxy_pass, reading the pod ServiceAccount token, or hijacking other tenants' routes.\u00a0There is no data plane exposure; this is a control plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx gateway fabric",
+          "versions": [
+            {
+              "lessThan": "2.8.0",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx gateway fabric",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93479",
+      "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\u00a0\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.1.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.5.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R36",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R35",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R34",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.7",
+              "status": "affected",
+              "version": "1.31.2",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "1.30.6",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-94127",
       "description": "When a BIG-IP APM access policy and an OAuth profile are configured on a virtual server, specific malicious traffic can lead to remote code execution (RCE). This vulnerability is only present when BIG-IP APM is configured as an OAuth Authorization Server. Deployments using APM strictly as an OAuth Client / Resource Server (without OAuth authorization server profiles configured) are not affected by this vulnerability.\n\nImpact:\nThis vulnerability allows an unauthenticated attacker to perform remote code execution. The BIG-IP system in Appliance mode is also vulnerable. This is a data plane issue; there is no control plane exposure.\n\n \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
       "cvss_score": 9.8,
@@ -14529,6 +14755,119 @@
         "cpe_count": 3,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-94197",
+      "description": "An authentication and authorization bypass vulnerability exists in F5 NGINX Kubernetes Ingress Controller (NIC) when configured with the `ExternalAuth` policy or Ingress external authentication. Client-supplied X-Forwarded-Prefix, X-Forwarded-URI, X-Original-URI, and X-Forwarded-Method routing and method headers are forwarded unsanitized into the internal authentication subrequest (handled by the NGINX auth_request directive). As a result, an unauthenticated, remote attacker may spoof request attributes evaluated by the external authentication provider. \n\nImpact:\nThis vulnerability may allow remote attackers \n\nunauthenticated\n\n access to protected \n\npaths. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx ingress controller",
+          "versions": [
+            {
+              "lessThan": "5.7.0",
+              "status": "affected",
+              "version": "5.5.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx ingress controller",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-97205",
+      "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing \u201cinclude virtual\u201d commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.1.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.5.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R36",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R35",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R34",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.7",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "1.30.6",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-9256",

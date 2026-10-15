@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T23:56:34+00:00",
+  "generated_at": "2026-10-15T04:47:33+00:00",
   "vendor": "red_hat",
-  "count": 334,
+  "count": 340,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -29043,10 +29043,10 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.6",
+          "product": "red hat jboss enterprise application platform 8.1.3",
           "versions": [
             {
-              "version": "2.3.24.SP2-redhat-00001",
+              "version": "2.3.20.SP4-redhat-00001",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -29468,7 +29468,7 @@
         "product:red hat jboss enterprise application platform 8.0 for rhel 9",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.6",
+        "product:red hat jboss enterprise application platform 8.1.3",
         "product:red hat jboss enterprise application platform expansion pack",
         "product:red hat jboss fuse service works 6",
         "vendor:red hat"
@@ -48786,10 +48786,10 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.6",
+          "product": "red hat jboss enterprise application platform 8.1.3",
           "versions": [
             {
-              "version": "2.3.24.SP2-redhat-00001",
+              "version": "2.3.20.SP4-redhat-00001",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -49207,7 +49207,7 @@
         "product:red hat jboss enterprise application platform 8.0 for rhel 9",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.6",
+        "product:red hat jboss enterprise application platform 8.1.3",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -50449,15 +50449,8 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.7.ga",
-          "versions": [
-            {
-              "version": "27.1.11.Final-redhat-00001",
-              "lessThan": "*",
-              "versionType": "rpm",
-              "status": "unaffected"
-            }
-          ]
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
         },
         {
           "vendor": "red hat",
@@ -50553,9 +50546,9 @@
         "product:red hat jboss data grid 7",
         "product:red hat jboss enterprise application platform 7",
         "product:red hat jboss enterprise application platform 7.3 eus for rhel 7",
+        "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.7.ga",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -58127,16 +58120,6 @@
           "vendor": "red hat",
           "product": "red hat enterprise linux 9",
           "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
-          "versions": null
         }
       ],
       "watchlist_hit": true,
@@ -62647,10 +62630,10 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.6",
+          "product": "red hat jboss enterprise application platform 8.1.3",
           "versions": [
             {
-              "version": "2.3.24.SP2-redhat-00001",
+              "version": "2.3.20.SP4-redhat-00001",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -63084,7 +63067,7 @@
         "product:red hat jboss enterprise application platform 8.0 for rhel 9",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.6",
+        "product:red hat jboss enterprise application platform 8.1.3",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -63969,6 +63952,156 @@
         "cpe_count": 0,
         "reference_count": 22
       }
+    },
+    {
+      "cve_id": "CVE-2026-100236",
+      "description": "A flaw was found in the DPDK GSO library. When software GSO copies packet headers into a new mbuf, it does not check that the header fits in the source first segment or in the destination buffer, and a header longer than the configured GSO segment size can underflow the payload-size calculation. A remote or guest-supplied packet processed with software GSO can trigger an out-of-bounds read or write.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-101292",
@@ -65951,7 +66084,7 @@
           "CWE-59"
         ],
         "cpe_count": 0,
-        "reference_count": 7
+        "reference_count": 8
       }
     },
     {
@@ -86315,10 +86448,10 @@
       "affected": [
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.7.ga",
+          "product": "red hat jboss enterprise application platform 8.1.6",
           "versions": [
             {
-              "version": "2.3.24.SP3-redhat-00001",
+              "version": "2.3.24.SP2-redhat-00001",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -86513,7 +86646,7 @@
         "product:red hat jboss enterprise application platform 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.7.ga",
+        "product:red hat jboss enterprise application platform 8.1.6",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -86540,10 +86673,10 @@
       "affected": [
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.7.ga",
+          "product": "red hat jboss enterprise application platform 8.1.6",
           "versions": [
             {
-              "version": "2.3.24.SP3-redhat-00001",
+              "version": "2.3.24.SP2-redhat-00001",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -86738,7 +86871,7 @@
         "product:red hat jboss enterprise application platform 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.7.ga",
+        "product:red hat jboss enterprise application platform 8.1.6",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -86765,10 +86898,10 @@
       "affected": [
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1.7.ga",
+          "product": "red hat jboss enterprise application platform 8.1.6",
           "versions": [
             {
-              "version": "2.3.24.SP3-redhat-00001",
+              "version": "2.3.24.SP2-redhat-00001",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -86963,7 +87096,7 @@
         "product:red hat jboss enterprise application platform 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
-        "product:red hat jboss enterprise application platform 8.1.7.ga",
+        "product:red hat jboss enterprise application platform 8.1.6",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -87362,6 +87495,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -87568,7 +87809,7 @@
           "CWE-191"
         ],
         "cpe_count": 7,
-        "reference_count": 59
+        "reference_count": 64
       }
     },
     {
@@ -88224,6 +88465,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -88430,7 +88779,7 @@
           "CWE-475"
         ],
         "cpe_count": 44,
-        "reference_count": 66
+        "reference_count": 71
       }
     },
     {
@@ -88836,6 +89185,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -89048,7 +89505,7 @@
           "CWE-626"
         ],
         "cpe_count": 8,
-        "reference_count": 63
+        "reference_count": 68
       }
     },
     {
@@ -89394,6 +89851,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -89564,7 +90129,7 @@
           "CWE-295"
         ],
         "cpe_count": 0,
-        "reference_count": 25
+        "reference_count": 30
       }
     },
     {
@@ -89850,6 +90415,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -90030,7 +90703,7 @@
           "CWE-295"
         ],
         "cpe_count": 0,
-        "reference_count": 20
+        "reference_count": 25
       }
     },
     {
@@ -90376,6 +91049,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -90546,7 +91327,7 @@
           "CWE-295"
         ],
         "cpe_count": 0,
-        "reference_count": 25
+        "reference_count": 30
       }
     },
     {
@@ -90696,6 +91477,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift for windows containers 10.20",
+          "versions": [
+            {
+              "version": "1789075603",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift for windows containers 10.21",
           "versions": [
             {
@@ -90736,6 +91529,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat openshift for windows containers 10.19",
+        "product:red hat openshift for windows containers 10.20",
         "product:red hat openshift for windows containers 10.21",
         "product:red hat openshift for windows containers 10.22",
         "vendor:red hat"
@@ -90751,7 +91545,7 @@
           "CWE-269"
         ],
         "cpe_count": 2,
-        "reference_count": 10
+        "reference_count": 11
       }
     },
     {
@@ -90775,6 +91569,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift for windows containers 10.20",
+          "versions": [
+            {
+              "version": "1789075603",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift for windows containers 10.21",
           "versions": [
             {
@@ -90815,6 +91621,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat openshift for windows containers 10.19",
+        "product:red hat openshift for windows containers 10.20",
         "product:red hat openshift for windows containers 10.21",
         "product:red hat openshift for windows containers 10.22",
         "vendor:red hat"
@@ -90830,7 +91637,7 @@
           "CWE-295"
         ],
         "cpe_count": 2,
-        "reference_count": 10
+        "reference_count": 11
       }
     },
     {
@@ -91381,6 +92188,114 @@
         },
         {
           "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371080",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791371069",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791788287",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.17",
+          "versions": [
+            {
+              "version": "1791970484",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459707",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459711",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791459759",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1789029076",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "cert manager support for red hat openshift release 1.18",
+          "versions": [
+            {
+              "version": "1791966259",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.20",
           "versions": [
             {
@@ -91556,7 +92471,7 @@
           "CWE-126"
         ],
         "cpe_count": 0,
-        "reference_count": 25
+        "reference_count": 30
       }
     },
     {
@@ -93414,12 +94329,12 @@
       "active_threat": false,
       "probability_score": 0.00163,
       "nvd": {
-        "cvss_v3_score": 2.5,
-        "cvss_v3_severity": "LOW",
+        "cvss_v3_score": 8.7,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
-          "CWE-732"
+          "CWE-345"
         ],
         "cpe_count": 0,
         "reference_count": 3
@@ -100346,6 +101261,756 @@
       }
     },
     {
+      "cve_id": "CVE-2026-86562",
+      "description": "A flaw was found in DPDK lib/vhost. A TOCTOU double-fetch of control-queue descriptors allows a heap buffer overflow with attacker-controlled content in the VDUSE control-queue handler.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-86563",
+      "description": "A flaw was found in DPDK lib/vhost. A double-offset bug in vhost log mapping calculation can lead to incorrect memory access.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-86565",
+      "description": "A flaw was found in DPDK lib/vhost. A guest can desynchronize virtqueue size from inflight descriptor table size, causing an out-of-bounds write in the host vhost process.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-86567",
+      "description": "A flaw was found in DPDK lib/vhost. The VDUSE handler fails to invalidate vring pointers when the IOTLB is invalidated, leading to use-after-unmap.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-86848",
+      "description": "A flaw was found in DPDK lib/vhost vhost-crypto. The indirect-descriptor snapshot double-fetches a guest descriptor next index, allowing a malicious guest to cause an out-of-bounds access in the host backend.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "fast datapath for rhel 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-87874",
       "description": "A flaw was found in the memcached cache plugin of the community.general Ansible\ncollection. Although its documentation states that records are stored in JSON\nformat, the plugin performs no explicit serialization and relies on\npython-memcached, which pickles values on write and unpickles them on read.\nBecause memcached is unauthenticated and cache keys are predictable, an attacker\nable to reach a network-exposed or shared memcached instance can write a crafted\npickle payload that is deserialized and executed on the Ansible controller when\nthe poisoned fact cache is next read, leading to remote code execution.",
       "cvss_score": 8.1,
@@ -103255,6 +104920,16 @@
         {
           "vendor": "red hat",
           "product": "red hat build of keycloak 26.6.4",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of quarkus 3.27.4.sp2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of quarkus 3.33.2.sp2",
           "versions": null
         },
         {
