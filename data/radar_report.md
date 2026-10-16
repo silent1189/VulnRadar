@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-16T12:35:31+00:00`
+Generated: `2026-10-16T17:22:04+00:00`
 
 ## Executive Summary
 
@@ -115,7 +115,7 @@ Top critical items:
 | [CVE-2023-46747](https://www.cve.org/CVERecord?id=CVE-2023-46747) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-11-21 | 0.965 | 9.8 | ✅ | Undisclosed requests may bypass configuration utility authentication, allowing an attacker with network access to the BIG-IP system through the management port… |
 | [CVE-2022-24112](https://www.cve.org/CVERecord?id=CVE-2022-24112) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.961 | 9.8 | ✅ | An attacker can abuse the batch-requests plugin to send requests to bypass the IP restriction of Admin API. A default configuration of Apache APISIX (with defa… |
 | [CVE-2023-4966](https://www.cve.org/CVERecord?id=CVE-2023-4966) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-11-08 | 1.000 | 9.4 | ✅ | Sensitive information disclosure in NetScaler ADC and NetScaler Gateway when configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) or AAA  v… |
-| [CVE-2024-53704](https://www.cve.org/CVERecord?id=CVE-2024-53704) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.951 | 9.8 | ✅ | An Improper Authentication vulnerability in the SSLVPN authentication mechanism allows a remote attacker to bypass authentication. |
+| [CVE-2024-53704](https://www.cve.org/CVERecord?id=CVE-2024-53704) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.953 | 9.8 | ✅ | An Improper Authentication vulnerability in the SSLVPN authentication mechanism allows a remote attacker to bypass authentication. |
 | [CVE-2024-4879](https://www.cve.org/CVERecord?id=CVE-2024-4879) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 1.000 | 9.3 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in Vancouver and Washington DC Now Platform releases. This vulnerability could e… |
 | [CVE-2025-5777](https://www.cve.org/CVERecord?id=CVE-2025-5777) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-11 | 1.000 | 9.3 | ✅ | Insufficient input validation leading to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA … |
 | [CVE-2026-85706](https://www.cve.org/CVERecord?id=CVE-2026-85706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-14 | 0.930 | 10.0 | ✅ | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, an… |
@@ -145,7 +145,7 @@ Top critical items:
 | [CVE-2023-4863](https://www.cve.org/CVERecord?id=CVE-2023-4863) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-04 | 1.000 | 8.8 | ✅ | Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write v… |
 | [CVE-2022-41040](https://www.cve.org/CVERecord?id=CVE-2022-41040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.8 | ✅ | Microsoft Exchange Server Elevation of Privilege Vulnerability |
 | [CVE-2026-63077](https://www.cve.org/CVERecord?id=CVE-2026-63077) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-08 | 0.896 | 9.8 | ✅ | In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol |
-| [CVE-2022-36804](https://www.cve.org/CVERecord?id=CVE-2022-36804) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 0.991 | 8.8 | ✅ | Multiple API endpoints in Atlassian Bitbucket Server and Data Center 7.0.0 before version 7.6.17, from version 7.7.0 before version 7.17.10, from version 7.18.… |
+| [CVE-2022-36804](https://www.cve.org/CVERecord?id=CVE-2022-36804) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 0.992 | 8.8 | ✅ | Multiple API endpoints in Atlassian Bitbucket Server and Data Center 7.0.0 before version 7.6.17, from version 7.7.0 before version 7.17.10, from version 7.18.… |
 | [CVE-2025-61757](https://www.cve.org/CVERecord?id=CVE-2025-61757) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-12 | 0.886 | 9.8 | ✅ | Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 a… |
 | [CVE-2025-0108](https://www.cve.org/CVERecord?id=CVE-2025-0108) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.985 | 8.8 | ✅ | An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to b… |
 | [CVE-2023-27524](https://www.cve.org/CVERecord?id=CVE-2023-27524) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-29 | 0.974 | 8.9 | ✅ | Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY accordi… |
@@ -294,13 +294,13 @@ Top critical items:
 | Oct 16 | [CVE-2026-84823](https://www.cve.org/CVERecord?id=CVE-2026-84823) | 🆕 New |
 | Oct 16 | [CVE-2026-85634](https://www.cve.org/CVERecord?id=CVE-2026-85634) | 🆕 New |
 | Oct 16 | [CVE-2026-92982](https://www.cve.org/CVERecord?id=CVE-2026-92982) | 🆕 New |
-| Oct 15 | [CVE-2026-87093](https://www.cve.org/CVERecord?id=CVE-2026-87093) | 🆕 New |
-| Oct 15 | [CVE-2026-89067](https://www.cve.org/CVERecord?id=CVE-2026-89067) | 🆕 New |
-| Oct 15 | [CVE-2026-89068](https://www.cve.org/CVERecord?id=CVE-2026-89068) | 🆕 New |
-| Oct 15 | [CVE-2026-89069](https://www.cve.org/CVERecord?id=CVE-2026-89069) | 🆕 New |
-| Oct 15 | [CVE-2026-89070](https://www.cve.org/CVERecord?id=CVE-2026-89070) | 🆕 New |
-| Oct 15 | [CVE-2026-89071](https://www.cve.org/CVERecord?id=CVE-2026-89071) | 🆕 New |
-| Oct 15 | [CVE-2026-89072](https://www.cve.org/CVERecord?id=CVE-2026-89072) | 🆕 New |
-| Oct 15 | [CVE-2026-89073](https://www.cve.org/CVERecord?id=CVE-2026-89073) | 🆕 New |
-| Oct 15 | [CVE-2026-89074](https://www.cve.org/CVERecord?id=CVE-2026-89074) | 🆕 New |
-| ... | | _and 1436 more_ |
+| Oct 16 | [CVE-2026-92392](https://www.cve.org/CVERecord?id=CVE-2026-92392) | 🆕 New |
+| Oct 16 | [CVE-2026-100227](https://www.cve.org/CVERecord?id=CVE-2026-100227) | 🆕 New |
+| Oct 16 | [CVE-2026-107937](https://www.cve.org/CVERecord?id=CVE-2026-107937) | 🆕 New |
+| Oct 16 | [CVE-2026-107938](https://www.cve.org/CVERecord?id=CVE-2026-107938) | 🆕 New |
+| Oct 16 | [CVE-2026-108039](https://www.cve.org/CVERecord?id=CVE-2026-108039) | 🆕 New |
+| Oct 16 | [CVE-2026-71575](https://www.cve.org/CVERecord?id=CVE-2026-71575) | 🆕 New |
+| Oct 16 | [CVE-2026-73179](https://www.cve.org/CVERecord?id=CVE-2026-73179) | 🆕 New |
+| Oct 16 | [CVE-2026-78384](https://www.cve.org/CVERecord?id=CVE-2026-78384) | 🆕 New |
+| Oct 16 | [CVE-2026-86463](https://www.cve.org/CVERecord?id=CVE-2026-86463) | 🆕 New |
+| ... | | _and 1496 more_ |
