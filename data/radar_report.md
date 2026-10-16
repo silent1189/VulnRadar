@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-16T01:15:18+00:00`
+Generated: `2026-10-16T07:27:35+00:00`
 
 ## Executive Summary
 
@@ -38,11 +38,11 @@ Top critical items:
 
 ## Summary
 
-- Total items: **35738**
-- Watchlist hits: **35434**
+- Total items: **32123**
+- Watchlist hits: **31819**
 - CISA KEVs: **826**
-- Exploit Intel (PoC): **1031**
-- Exploit Intel + Watchlist (CRITICAL): **727**
+- Exploit Intel (PoC): **1027**
+- Exploit Intel + Watchlist (CRITICAL): **723**
 
 ## Top Findings (max 200)
 
@@ -165,7 +165,6 @@ Top critical items:
 | [CVE-2024-21762](https://www.cve.org/CVERecord?id=CVE-2024-21762) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-16 | 0.834 | 9.6 | ✅ | A out-of-bounds write in Fortinet FortiOS versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, … |
 | [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.810 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
 | [CVE-2026-71362](https://www.cve.org/CVERecord?id=CVE-2026-71362) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-27 | 0.875 | 9.1 | ✅ | Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability… |
-| [CVE-2026-50751](https://www.cve.org/CVERecord?id=CVE-2026-50751) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-11 | 0.853 | 9.3 | ✅ | A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to b… |
 | [CVE-2023-27997](https://www.cve.org/CVERecord?id=CVE-2023-27997) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-04 | 0.857 | 9.2 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS version 7.2.4 and below, version 7.0.11 and below, version 6.4.12 and below, version 6.0.16 and… |
 | [CVE-2022-30190](https://www.cve.org/CVERecord?id=CVE-2022-30190) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-07-05 | 0.992 | 7.8 | ✅ | A remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word. An attacker who successfully e… |
 | [CVE-2023-36025](https://www.cve.org/CVERecord?id=CVE-2023-36025) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-05 | 0.881 | 8.8 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
@@ -225,7 +224,6 @@ Top critical items:
 | [CVE-2024-43572](https://www.cve.org/CVERecord?id=CVE-2024-43572) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-29 | 0.667 | 7.8 | ✅ | Microsoft Management Console Remote Code Execution Vulnerability |
 | [CVE-2023-41763](https://www.cve.org/CVERecord?id=CVE-2023-41763) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-31 | 0.905 | 5.3 | ✅ | Skype for Business Elevation of Privilege Vulnerability |
 | [CVE-2026-20131](https://www.cve.org/CVERecord?id=CVE-2026-20131) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-22 | 0.432 | 10.0 | ✅ | A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker… |
-| [CVE-2026-2441](https://www.cve.org/CVERecord?id=CVE-2026-2441) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-10 | 0.550 | 8.8 | ✅ | Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Ch… |
 | [CVE-2024-43461](https://www.cve.org/CVERecord?id=CVE-2024-43461) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-07 | 0.545 | 8.8 | ✅ | Windows MSHTML Platform Spoofing Vulnerability |
 | [CVE-2026-48282](https://www.cve.org/CVERecord?id=CVE-2026-48282) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-10 | 0.424 | 10.0 | ✅ | ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability… |
 | [CVE-2023-4911](https://www.cve.org/CVERecord?id=CVE-2023-4911) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-12 | 0.638 | 7.8 | ✅ | A buffer overflow was discovered in the GNU C Library's dynamic loader ld.so while processing the GLIBC_TUNABLES environment variable. This issue could allow a… |
@@ -234,7 +232,6 @@ Top critical items:
 | [CVE-2024-21338](https://www.cve.org/CVERecord?id=CVE-2024-21338) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-25 | 0.598 | 7.8 | ✅ | Windows Kernel Elevation of Privilege Vulnerability |
 | [CVE-2023-21608](https://www.cve.org/CVERecord?id=CVE-2023-21608) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-31 | 0.596 | 7.8 | ✅ | Adobe Acrobat Reader versions 22.003.20282 (and earlier), 22.003.20281 (and earlier) and 20.005.30418 (and earlier) are affected by a Use After Free vulnerabil… |
 | [CVE-2023-5217](https://www.cve.org/CVERecord?id=CVE-2023-5217) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-23 | 0.490 | 8.8 | ✅ | Heap buffer overflow in vp8 encoding in libvpx in Google Chrome prior to 117.0.5938.132 and libvpx 1.13.1 allowed a remote attacker to potentially exploit heap… |
-| [CVE-2026-85046](https://www.cve.org/CVERecord?id=CVE-2026-85046) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-18 | 0.489 | 8.8 | ✅ | Type confusion in V8 in Google Chrome prior to 152.0.7977.82 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (C… |
 | [CVE-2024-0769](https://www.cve.org/CVERecord?id=CVE-2024-0769) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-16 | 0.827 | 5.3 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in D-Link DIR-859 1.06B01. It has been rated as critical. Affected by this issue is some unknown func… |
 | [CVE-2023-35081](https://www.cve.org/CVERecord?id=CVE-2023-35081) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-21 | 0.636 | 7.2 | ✅ | A path traversal vulnerability in Ivanti EPMM versions (11.10.x < 11.10.0.3,  11.9.x < 11.9.1.2 and 11.8.x < 11.8.1.2) allows an authenticated administrator to… |
 | [CVE-2024-29988](https://www.cve.org/CVERecord?id=CVE-2024-29988) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-21 | 0.449 | 8.8 | ✅ | SmartScreen Prompt Security Feature Bypass Vulnerability |
@@ -248,6 +245,9 @@ Top critical items:
 | [CVE-2023-32434](https://www.cve.org/CVERecord?id=CVE-2023-32434) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-14 | 0.515 | 7.8 | ✅ | An integer overflow was addressed with improved input validation. This issue is fixed in watchOS 9.5.2, macOS Big Sur 11.7.8, iOS 15.7.7 and iPadOS 15.7.7, mac… |
 | [CVE-2023-4762](https://www.cve.org/CVERecord?id=CVE-2023-4762) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-27 | 0.414 | 8.8 | ✅ | Type Confusion in V8 in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security s… |
 | [CVE-2022-21882](https://www.cve.org/CVERecord?id=CVE-2022-21882) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-02-18 | 0.592 | 7.0 | ✅ | Win32k Elevation of Privilege Vulnerability |
+| [CVE-2023-21674](https://www.cve.org/CVERecord?id=CVE-2023-21674) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-01-31 | 0.410 | 8.8 | ✅ | Windows Advanced Local Procedure Call (ALPC) Elevation of Privilege Vulnerability |
+| [CVE-2023-2033](https://www.cve.org/CVERecord?id=CVE-2023-2033) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-08 | 0.408 | 8.8 | ✅ | Type confusion in V8 in Google Chrome prior to 112.0.5615.121 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromi… |
+| [CVE-2022-4135](https://www.cve.org/CVERecord?id=CVE-2022-4135) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-12-19 | 0.319 | 9.6 | ✅ | Heap buffer overflow in GPU in Google Chrome prior to 107.0.5304.121 allowed a remote attacker who had compromised the renderer process to potentially perform … |
 
 ## Recent Changes (Last 7 Days)
 
@@ -303,4 +303,4 @@ Top critical items:
 | Oct 15 | [CVE-2026-86567](https://www.cve.org/CVERecord?id=CVE-2026-86567) | 🆕 New |
 | Oct 15 | [CVE-2026-86848](https://www.cve.org/CVERecord?id=CVE-2026-86848) | 🆕 New |
 | Oct 15 | [CVE-2026-76285](https://www.cve.org/CVERecord?id=CVE-2026-76285) | 🆕 New |
-| ... | | _and 1512 more_ |
+| ... | | _and 1395 more_ |
