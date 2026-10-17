@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T23:41:49+00:00",
+  "generated_at": "2026-10-17T05:00:39+00:00",
   "vendor": "_other",
-  "count": 3091,
+  "count": 3100,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -21835,6 +21835,44 @@
         ],
         "cpe_count": 2,
         "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-21589",
+      "description": "",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [],
+      "watchlist_hit": false,
+      "in_watchlist": false,
+      "in_patchthis": true,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": true,
+      "probability_score": 0.12711,
+      "kev": {
+        "cveID": "CVE-2026-21589",
+        "vendorProject": "Atlassian",
+        "product": "Multiple Products",
+        "vulnerabilityName": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+        "dateAdded": "2026-10-15",
+        "shortDescription": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-10-18",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-552"
+        ],
+        "cpe_count": 20,
+        "reference_count": 10
       }
     },
     {
@@ -123236,6 +123274,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-109232",
+      "description": "The Salon Booking System \u2013 Appointment Booking for Salons, Barbershops & Spas plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'sln[<checkout-field-key>]' parameter in all versions up to, and including, 10.31.9 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. Exploitation requires that the site administrator has configured at least one custom checkout field of type Html or File, which is a standard documented plugin feature.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "wordpresschef",
+          "product": "salon booking system \u2013 appointment booking for salons, barbershops & spas",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThanOrEqual": "10.31.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:salon booking system \u2013 appointment booking for salons, barbershops & spas",
+        "vendor:wordpresschef"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
       "cve_id": "CVE-2026-15070",
       "description": "The Salon Booking System \u2013 Free Version plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 10.30.32. This is due to missing or incorrect nonce validation on the setCustomText function. This makes it possible for unauthenticated attackers to inject arbitrary PHP code into the web-accessible translate-constants.php file within the plugin directory, enabling remote code execution on the server via a forged request granted they can trick a site administrator into performing an action such as clicking on a link. sanitize_text_field() is applied to the POST 'value' parameter but does not neutralize the characters \u2014 single quotes, parentheses, semicolons, $, and [] \u2014 required to break out of the PHP string literal into which the value is interpolated before being written to disk via file_put_contents().",
       "cvss_score": 8.8,
@@ -163561,6 +163642,93 @@
       }
     },
     {
+      "cve_id": "CVE-2026-68498",
+      "description": "StreamReadConstraints.maxNameLength (default 50,000 characters) is intended to bound how much memory a single JSON Object property name can consume while being parsed, independently of the much larger maxStringLength (default 100,000,000 characters) that bounds ordinary string values. For parsers built over character input \u2014 Reader, String or char[] sources, all served by ReaderBasedJsonParser \u2014 that bound is not applied while the name is being accumulated. The code path instead re-uses the string-value length check, which is roughly 2000x larger by default.\n\n\n\nIn the character-input slow path, ReaderBasedJsonParser._parseName2() accumulates the name into the TextBuffer and, when a segment fills, calls TextBuffer.finishCurrentSegment(), which validates only maxStringLength. The correct check, StreamReadConstraints.validateNameLength(int), is reached afterwards in CharsToNameCanonicalizer.findSymbol(), once the entire name has been scanned to its closing quote. By that point the full name \u2014 up to maxStringLength characters \u2014 has already been buffered in memory.\n\n\n\nA remote attacker who can have a single sufficiently long JSON Object property name parsed through this path can force allocation on the order of 100,000,000 characters (approximately 200 MB, with segment bookkeeping pushing real peak usage higher) before any StreamConstraintsException is thrown, instead of the approximately 50,000-character (about 100 KB) bound the API promises. Repeating this across concurrent requests can exhaust the heap and crash the process. No authentication or user interaction is required. Because StreamReadConstraints.maxDocumentLength is disabled by default (-1), nothing else bounds the token first, so the issue is exploitable under default configuration.\n\n\n\nByte-input parsers are not affected: UTF8StreamJsonParser, UTF8DataInputJsonParser and the non-blocking (async) parsers re-validate maxNameLength on every growth of the name-decode buffer via ParserBase._growNameDecodeBuffer(), rejecting an oversized name after allocating only tens of kilobytes. Applications are exposed when untrusted JSON is parsed from a String, Reader or char[] \u2014 for example an HTTP request body already read into a String \u2014 rather than from raw UTF-8 bytes.\n\n\n\nThis issue affects com.fasterxml.jackson.core:jackson-core from 2.16.0 and tools.jackson.core:jackson-core from 3.0.0. Releases before 2.16.0 are not affected, because StreamReadConstraints.maxNameLength was first introduced in jackson-core 2.16.0.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.16.0",
+              "lessThan": "2.18.10",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.18.10",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThan": "2.21.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.21.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThan": "2.22.2",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.22.2",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThan": "3.1.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.1.6",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThan": "3.2.2",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.2.2",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-core",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-89407",
       "description": "NumberInput.looksLikeValidNumber() in FasterXML jackson-core pre-validates \"stringified numbers\" with two regular expressions: PATTERN_FLOAT ([+-]?[0-9]*[\\.]?[0-9]+([eE][+-]?[0-9]+)?), present since 2.17.0, and PATTERN_FLOAT_TRAILING_DOT, added in 2.17.2. PATTERN_FLOAT places adjacent quantifiers over the same character class -- an optional [0-9]* run, an optional dot, then a required [0-9]+ run -- so input that ultimately fails to match forces Java's backtracking engine to retry every possible split point of the digit run.\u00a0\n\n\n\nMatching cost therefore grows with the square of the input length.\u00a0\n\n\n\nAn attacker who can supply JSON that an application deserializes into a numeric target type reaches this method through jackson-databind's default String-to-number coercion (StdDeserializer and NumberDeserializers for BigDecimal, BigInteger, Double and Float).\u00a0\n\n\n\nBecause StreamReadConstraints.maxStringLength defaults to 20,000,000 characters, no constraint bounds the input before it reaches the regex.\u00a0\n\n\n\nTesting by the reporter confirmed O(n^2) growth across five consecutive input-size doublings, with a single 160,000-character string consuming roughly 74 seconds in one call; a small number of concurrent requests of ordinary body size can therefore exhaust a server's request-handling thread pool.\u00a0\n\n\n\nThe affected method does not exist before 2.17.0, so 2.16.x and earlier releases are not affected.\u00a0\n\n\n\nThe fix replaces both regular expressions with a hand-rolled single-pass scan.",
       "cvss_score": 7.5,
@@ -179469,6 +179637,240 @@
         "cpe_count": 5,
         "reference_count": 15
       }
+    },
+    {
+      "cve_id": "CVE-2026-85746",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ST_AsText can write beyond an allocated output buffer when converting deeply nested GeometryCollections because recursive WKT serialization does not account for bytes consumed or reserve sufficient space. A low-privileged remote attacker can submit a specially crafted GIS object to corrupt memory and potentially achieve code execution when combined with another vulnerability. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-85748",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 12.3.1 until 12.3.3 and 13.0.2, SYS_REFCURSOR handling is affected because cursor-array reallocation can leave stale references in routine contexts. A low-privileged attacker can open a large number of SYS_REFCURSORs and then fetch one to trigger a use-after-free that can enable remote code execution when combined with another vulnerability. This issue is fixed in versions 12.3.3 and 13.0.2.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-86047",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, SHOW CREATE SERVER, SHOW CREATE USER, and mariadb-dump are affected because each does not consistently quote identifiers and values when serializing SQL. A low-privileged attacker can trigger the issue when an attacker-created object with crafted identifiers or values is included in SHOW output or a dump, then create an object with crafted identifiers or values so generated SQL contains injected statements and execute attacker-injected SQL when the poisoned output is applied. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-92262",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the #mysql50# bypass prefix is affected because it allows the #mysql50# prefix to bypass normal table-name filesystem encoding. An attacker can trigger the issue with a table name using the #mysql50# prefix, then use a #mysql50# table name to access files under their legacy unencoded name and cause crashes, data corruption, data exfiltration, or remote code execution. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-97380",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the GRANT PROXY statement treats an IDENTIFIED clause with an empty password as though authentication were not specified, causing it to check the wrong grantor privileges. A low-privileged attacker who can name another account can exploit this authorization error to set that account's password. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-108184",
@@ -201351,6 +201753,36 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-92263",
+      "description": "SparkyFitness is a self-hosted, AI-powered health and fitness tracker for families. Prior to 1.6.0, the api/admin/backup/restore endpoint interpolates an uploaded filename into a shell command. An authenticated global administrator uploads a restore archive with a crafted filename. The administrator can supply a restore archive with a filename containing shell metacharacters. Successful exploitation can execute arbitrary operating-system commands with the server process privileges. This issue is fixed in version 1.6.0.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "codewithcj",
+          "product": "sparkyfitness",
+          "versions": [
+            {
+              "version": "< 1.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sparkyfitness",
+        "vendor:codewithcj"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-92779",
