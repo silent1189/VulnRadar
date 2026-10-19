@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-19T12:56:00+00:00`
+Generated: `2026-10-19T19:17:01+00:00`
 
 ## Executive Summary
 
@@ -99,7 +99,7 @@ Top critical items:
 | [CVE-2026-1340](https://www.cve.org/CVERecord?id=CVE-2026-1340) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-11 | 0.986 | 9.8 | ✅ | A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution. |
 | [CVE-2022-21587](https://www.cve.org/CVERecord?id=CVE-2022-21587) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-02-23 | 0.983 | 9.8 | ✅ | Vulnerability in the Oracle Web Applications Desktop Integrator product of Oracle E-Business Suite (component: Upload). Supported versions that are affected ar… |
 | [CVE-2022-26138](https://www.cve.org/CVERecord?id=CVE-2022-26138) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-08-19 | 0.982 | 9.8 | ✅ | The Atlassian Questions For Confluence app for Confluence Server and Data Center creates a Confluence user account in the confluence-users group with the usern… |
-| [CVE-2024-3272](https://www.cve.org/CVERecord?id=CVE-2024-3272) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-02 | 0.980 | 9.8 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as very critical, has been found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to… |
+| [CVE-2024-3272](https://www.cve.org/CVERecord?id=CVE-2024-3272) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-02 | 0.981 | 9.8 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as very critical, has been found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to… |
 | [CVE-2024-29824](https://www.cve.org/CVERecord?id=CVE-2024-29824) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-23 | 0.999 | 9.6 | ✅ | An unspecified SQL Injection vulnerability in Core server of Ivanti EPM 2022 SU5 and prior allows an unauthenticated attacker within the same network to execut… |
 | [CVE-2025-25257](https://www.cve.org/CVERecord?id=CVE-2025-25257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-08-08 | 0.999 | 9.6 | ✅ | An improper neutralization of special elements used in an SQL command ('SQL Injection') vulnerability [CWE-89] vulnerability in Fortinet FortiWeb 7.6.0 through… |
 | [CVE-2024-4358](https://www.cve.org/CVERecord?id=CVE-2024-4358) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-07-04 | 0.975 | 9.8 | ✅ | In Progress Telerik Report Server, version 2024 Q1 (10.0.24.305) or earlier, on IIS, an unauthenticated attacker can gain access to Telerik Report Server restr… |
