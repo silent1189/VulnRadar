@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T23:34:59+00:00",
+  "generated_at": "2026-10-20T04:46:21+00:00",
   "vendor": "_other",
-  "count": 3100,
+  "count": 3106,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -21835,44 +21835,6 @@
         ],
         "cpe_count": 2,
         "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-21589",
-      "description": "",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-      "affected": [],
-      "watchlist_hit": false,
-      "in_watchlist": false,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [],
-      "active_threat": true,
-      "probability_score": null,
-      "kev": {
-        "cveID": "CVE-2026-21589",
-        "vendorProject": "Atlassian",
-        "product": "Multiple Products",
-        "vulnerabilityName": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-        "dateAdded": "2026-10-15",
-        "shortDescription": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external parties vulnerability which could allow an unauthenticated attacker to access specific files within the web application root directory in affected versions.",
-        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "dueDate": "2026-10-18",
-        "knownRansomwareCampaignUse": "Unknown"
-      },
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-552"
-        ],
-        "cpe_count": 20,
-        "reference_count": 10
       }
     },
     {
@@ -78286,6 +78248,280 @@
       }
     },
     {
+      "cve_id": "CVE-2026-112158",
+      "description": "A weakness has been identified in MikroTik RouterOS up to 6.40.5/6.44/7.20.8. Impacted is the function same_check of the file ipt_SAME.ko. Executing a manipulation can lead to integer overflow. The attack may be launched remotely. Upgrading to version 7.21.5 and 7.23.1 is recommended to address this issue. You should upgrade the affected component.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X",
+      "affected": [
+        {
+          "vendor": "mikrotik",
+          "product": "routeros",
+          "versions": [
+            {
+              "version": "6.0",
+              "status": "affected"
+            },
+            {
+              "version": "6.1",
+              "status": "affected"
+            },
+            {
+              "version": "6.2",
+              "status": "affected"
+            },
+            {
+              "version": "6.3",
+              "status": "affected"
+            },
+            {
+              "version": "6.4",
+              "status": "affected"
+            },
+            {
+              "version": "6.5",
+              "status": "affected"
+            },
+            {
+              "version": "6.6",
+              "status": "affected"
+            },
+            {
+              "version": "6.7",
+              "status": "affected"
+            },
+            {
+              "version": "6.8",
+              "status": "affected"
+            },
+            {
+              "version": "6.9",
+              "status": "affected"
+            },
+            {
+              "version": "6.10",
+              "status": "affected"
+            },
+            {
+              "version": "6.11",
+              "status": "affected"
+            },
+            {
+              "version": "6.12",
+              "status": "affected"
+            },
+            {
+              "version": "6.13",
+              "status": "affected"
+            },
+            {
+              "version": "6.14",
+              "status": "affected"
+            },
+            {
+              "version": "6.15",
+              "status": "affected"
+            },
+            {
+              "version": "6.16",
+              "status": "affected"
+            },
+            {
+              "version": "6.17",
+              "status": "affected"
+            },
+            {
+              "version": "6.18",
+              "status": "affected"
+            },
+            {
+              "version": "6.19",
+              "status": "affected"
+            },
+            {
+              "version": "6.20",
+              "status": "affected"
+            },
+            {
+              "version": "6.21",
+              "status": "affected"
+            },
+            {
+              "version": "6.22",
+              "status": "affected"
+            },
+            {
+              "version": "6.23",
+              "status": "affected"
+            },
+            {
+              "version": "6.24",
+              "status": "affected"
+            },
+            {
+              "version": "6.25",
+              "status": "affected"
+            },
+            {
+              "version": "6.26",
+              "status": "affected"
+            },
+            {
+              "version": "6.27",
+              "status": "affected"
+            },
+            {
+              "version": "6.28",
+              "status": "affected"
+            },
+            {
+              "version": "6.29",
+              "status": "affected"
+            },
+            {
+              "version": "6.30",
+              "status": "affected"
+            },
+            {
+              "version": "6.31",
+              "status": "affected"
+            },
+            {
+              "version": "6.32",
+              "status": "affected"
+            },
+            {
+              "version": "6.33",
+              "status": "affected"
+            },
+            {
+              "version": "6.34",
+              "status": "affected"
+            },
+            {
+              "version": "6.35",
+              "status": "affected"
+            },
+            {
+              "version": "6.36",
+              "status": "affected"
+            },
+            {
+              "version": "6.37",
+              "status": "affected"
+            },
+            {
+              "version": "6.38",
+              "status": "affected"
+            },
+            {
+              "version": "6.39",
+              "status": "affected"
+            },
+            {
+              "version": "6.40",
+              "status": "affected"
+            },
+            {
+              "version": "6.40.0",
+              "status": "affected"
+            },
+            {
+              "version": "6.40.1",
+              "status": "affected"
+            },
+            {
+              "version": "6.40.2",
+              "status": "affected"
+            },
+            {
+              "version": "6.40.3",
+              "status": "affected"
+            },
+            {
+              "version": "6.40.4",
+              "status": "affected"
+            },
+            {
+              "version": "6.40.5",
+              "status": "affected"
+            },
+            {
+              "version": "6.41",
+              "status": "affected"
+            },
+            {
+              "version": "6.42",
+              "status": "affected"
+            },
+            {
+              "version": "6.43",
+              "status": "affected"
+            },
+            {
+              "version": "6.44",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.0",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.1",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.2",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.3",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.4",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.5",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.6",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.7",
+              "status": "affected"
+            },
+            {
+              "version": "7.20.8",
+              "status": "affected"
+            },
+            {
+              "version": "7.21.5",
+              "status": "unaffected"
+            },
+            {
+              "version": "7.23.1",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:routeros",
+        "vendor:mikrotik"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-16347",
       "description": "MikroTik RouterOS contains a weakness in its API authentication handling that lacks effective safeguards against excessive login attempts. The system does not enforce meaningful rate-limiting, account lockout, or source-based restrictions, allowing repeated authentication failures to proceed without defensive response. In some versions, a fixed per-connection delay is present, but it can be bypassed through concurrent sessions, resulting in continued high-volume attempts. This deficiency increases the risk that an attacker could eventually obtain valid credentials and gain unauthorized access to administrative services.",
       "cvss_score": 8.8,
@@ -96887,6 +97123,66 @@
       }
     },
     {
+      "cve_id": "CVE-2026-111064",
+      "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, keepalive timeout handling is absent during the initial portion of a request. An attacker can keep an idle connection open indefinitely before sending any request data, consuming server connection capacity. This issue is fixed in version 3.14.4.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "aio-libs",
+          "product": "aiohttp",
+          "versions": [
+            {
+              "version": "< 3.14.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:aiohttp",
+        "vendor:aio-libs"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-111066",
+      "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. From 2.0.0 until 3.14.4, multipart request processing can retain an unbounded number of open file descriptors. An unauthenticated attacker can consequently exhaust file descriptors with specially crafted multipart requests when a handler uses Request.post(). This issue is fixed in version 3.14.4.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "aio-libs",
+          "product": "aiohttp",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 3.14.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:aiohttp",
+        "vendor:aio-libs"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-69244",
       "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.3, an out-of-bounds heap read could occur in the C response parser while building an error message for a malformed response. An attacker controlled server, or possibly an accidental response, could trigger a DoS in the client. The vulnerable path was error message construction in aiohttp/_http_parser.pyx, where an llhttp error-position pointer was used to build a snippet for malformed chunked responses and malformed request or response bytes at the buffer end. This issue is fixed in version 3.14.3.",
       "cvss_score": 7.1,
@@ -98234,6 +98530,50 @@
         "cpe_count": 3,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-112368",
+      "description": "An uncontrolled recursion weakness in the BSON decoding logic of the MongoDB PHP driver may allow an unauthenticated party who can supply crafted binary document data to the decoder to exhaust the process stack. This may cause the PHP process using the driver to terminate unexpectedly, resulting in a loss of availability for that process. The condition occurs below the PHP layer and cannot be intercepted by application-level error handling.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb inc.",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.21.12",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.1.0",
+              "lessThan": "2.1.12",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.5.0",
+              "lessThan": "2.5.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-1847",
@@ -175843,6 +176183,102 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-107567",
+      "description": "Use of a less trusted source in the DKIM signing of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote unauthenticated attacker to have mail they write signed with the DKIM key of a domain the server hosts, so that it passes DKIM and DMARC for that domain at other receivers. With DKIM signing enabled for a hosted domain, the server signed every message on its first delivery pass as the domain named in its From header, before local delivery, whatever the message's origin and without checking that its sender had authenticated. A sender anywhere could therefore send the server, as ordinary inbound mail, a message whose From is any address at such a domain, and the server signed it with that domain's key. Every copy the server then sent on to an address outside carried a valid signature aligned with the forged From, whatever the domain's DMARC policy: an account's forward, a mail rule's forward or copy, a Sieve redirect, an alias or distribution list with an outside member, the mirror copy, a managed-list or journal copy, or a message released from quarantine. A signed copy can also be re-sent to other recipients while the domain's key is unchanged. Exploitation needs DKIM signing to be enabled for the hosted domain (it is off until configured) and, for the forgery to leave the server, a forward, alias, list or rule that carries the domain's mail to an outside address. The signer likewise signed a message submitted over authenticated SMTP as whatever hosted domain its From header named, a header authenticated SMTP does not hold to the submitting account, so that an account of one hosted domain could have mail written in the name of another hosted domain signed with that domain's key; this mattered where the server holds signed-in senders to their own envelope addresses (SmtpAuthenticatedSenderCheck, off by default), as the signature was then the remaining way for such mail to pass the other domain's DMARC policy.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThanOrEqual": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107569",
+      "description": "Unchecked input for a loop condition in Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote unauthenticated attacker to stop the server carrying mail. The server bounds the mail it generates in response to a message - a rule forward, reply or copy, an account forward, a Sieve redirect, vacation or notify, a bounce, an out-of-office reply - by a counter it carries in the message's X-hMailServer-LoopCount header, and makes no more once the counter reaches the configured rule loop limit (5 by default); that is what ends a forwarding or auto-reply cycle in a bounded number of hops. X-hMailServer-LoopCount is an ordinary header that is not stripped from mail arriving from outside, and the server read it with a signed conversion and no validation, so a count below zero passed every test against the limit: a sender who sets X-hMailServer-LoopCount to a negative value, or on the Linux builds to a value above the 32-bit signed range that the conversion wraps to a negative one, lifts the bound, and a message that enters a generated-mail cycle then loops up to about two thousand million times, each hop a queued message and a delivery, filling the queue and disk and stopping mail service. The Sieve notify action (from 6.2.22) consulted no limit at all, and its increment of the count could overflow a signed integer; and an account could reset the counter on its own mail through a Sieve editheader of the header (from 6.2.22) or a rule Set header value action (all versions) ahead of a forward or redirect.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThanOrEqual": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107571",
+      "description": "Incorrect default permissions in the Windows installer of Progressive Robot hMailServer 6.0.0 through 6.3.6 allow a local authenticated user to run code as the mail server's high-privileged accounts when the product is installed in a folder whose permissions are inherited from a writable parent, such as the root of a drive. The installer places the server's programs in the Bin folder of the program folder and gives neither the program folder nor Bin any permissions of their own, so they inherit the parent's. Under the default location, Program Files, ordinary users receive only read and execute and the configuration is not affected; but the installer accepts any path without warning, and a program folder at the root of an NTFS volume inherits write access for a broad group - Authenticated Users (Modify) on a Windows client, Users (create files and folders) on Windows Server. A local user without administrator rights can then alter or replace the service program, which runs as LocalSystem or as the service's virtual account, or the programs an administrator runs elevated from Bin during setup and maintenance, or place a library in Bin that those programs load in place of the system copy, gaining code execution with those privileges. The default Program Files installation is not affected.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progressive robot ltd",
+          "product": "hmailserver",
+          "versions": [
+            {
+              "version": "6.0.0",
+              "status": "affected",
+              "lessThanOrEqual": "6.3.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hmailserver",
+        "vendor:progressive robot ltd"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-107573",

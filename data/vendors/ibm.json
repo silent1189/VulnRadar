@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T23:34:59+00:00",
+  "generated_at": "2026-10-20T04:46:21+00:00",
   "vendor": "ibm",
-  "count": 1156,
+  "count": 1167,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -17788,6 +17788,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105453",
+      "description": "IBM Sterling Connect Direct for Unix 6.3.0.0 through 6.3.0.7 and\u00a06.4.0.0 through 6.4.0.6 could allow a local attacker to gain elevated privileges due to improper privilege management.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "sterling connect direct for unix",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.3.0.0",
+              "lessThanOrEqual": "6.3.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.4.0.0",
+              "lessThanOrEqual": "6.4.0.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sterling connect direct for unix",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-105464",
       "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 for Linux, UNIX and Windows (includes DB2 Connect Server) could allow a local attacker to gain elevated privileges due to improper privilege management.",
       "cvss_score": 8.8,
@@ -17884,6 +17922,111 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-107366",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 contains three message endpoints that perform no ownership verification. Any authenticated user can bulk-delete another user's messages, overwrite message content to inject malicious prompts, or hijack an entire conversation session by reassigning its session ID.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107400",
+      "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to execute arbitrary code due to improper authentication.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "tririga application platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tririga application platform",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-109126",
+      "description": "IBM Verify Identity Access 11.0.3.1 and IBM Security Verify Access 10.0.9.3 Appliance could allow a physically proximate attacker to gain elevated privileges due to the use of hard-coded credentials.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "verify identity access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "security verify access",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0.9.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify access",
+        "product:verify identity access",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10025",
@@ -18617,6 +18760,852 @@
       }
     },
     {
+      "cve_id": "CVE-2026-10572",
+      "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer overflow when processing MQPUT operations with malformed message options.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "mq operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.29",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.4.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.1",
+              "lessThanOrEqual": "3.5.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.6.0",
+              "lessThanOrEqual": "3.6.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThanOrEqual": "3.7.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.29",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "mq advanced container images",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r1",
+              "lessThanOrEqual": "r1, 9.4.0.6-r2, 9.4.0.7-r1, 9.4.0.10-r1, 9.4.0.10-r2, 9.4.0.11-r1, 9.4.0.11-r2, 9.4.0.11-r3, 9.4.0.12-r1, 9.4.0.15-r1 - 9.4.0.15-r4, 9.4.0.16-r1, 9.4.0.16-r2, 9.4.0.17-r1, 9.4.0.17-r2, 9.4.0.20-r1, 9.4.0.21-r1, 9.4.0.21-r2, 9.4.0.25-r1 - 9.4.0.25-r3, 9.4.0.26-r1CD: 9.4.1.0-r1, 9.4.1.0-r2, 9.4.1.1-r1, 9.4.2.0-r1, 9.4.2.0-r2, 9.4.2.1-r1, 9.4.2.1-r2, 9.4.3.0-r1, 9.4.3.0-r2, 9.4.3.1-r1 - 9.4.3.1-r3, 9.4.4.0-r1 - 9.4.4.0-r4, 9.4.4.1-r1, 9.4.5.0-r1, 9.4.5.0-r2, 9.4.5.1-r1, 10.0.0.0-r1 - 10.0.0.0-r4, 10.0.0.5-r1LTS: 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2, 9.3.0.21-r1, 9.3.0.21-r2, 9.3.0.21-r3, 9.3.0.25-r1, 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.4.0.5-r1, 9.4.0.5-r2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.7-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.12-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.15-r1",
+              "lessThanOrEqual": "9.4.0.15-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.25-r1",
+              "lessThanOrEqual": "9.4.0.25-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.26-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.1-r1",
+              "lessThanOrEqual": "9.4.3.1-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.0-r1",
+              "lessThanOrEqual": "10.0.0.0-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r4"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.3-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.6-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.15-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.25-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mq advanced container images",
+        "product:mq operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-10574",
+      "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer overflow when processing MQPUT or MQPUT1 operations with malformed message handle properties.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "mq operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.29",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.4.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.1",
+              "lessThanOrEqual": "3.5.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.6.0",
+              "lessThanOrEqual": "3.6.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThanOrEqual": "3.7.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.29",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "mq advanced container images",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r1",
+              "lessThanOrEqual": "r1, 9.4.0.6-r2, 9.4.0.7-r1, 9.4.0.10-r1, 9.4.0.10-r2, 9.4.0.11-r1, 9.4.0.11-r2, 9.4.0.11-r3, 9.4.0.12-r1, 9.4.0.15-r1 - 9.4.0.15-r4, 9.4.0.16-r1, 9.4.0.16-r2, 9.4.0.17-r1, 9.4.0.17-r2, 9.4.0.20-r1, 9.4.0.21-r1, 9.4.0.21-r2, 9.4.0.25-r1 - 9.4.0.25-r3, 9.4.0.26-r1CD: 9.4.1.0-r1, 9.4.1.0-r2, 9.4.1.1-r1, 9.4.2.0-r1, 9.4.2.0-r2, 9.4.2.1-r1, 9.4.2.1-r2, 9.4.3.0-r1, 9.4.3.0-r2, 9.4.3.1-r1 - 9.4.3.1-r3, 9.4.4.0-r1 - 9.4.4.0-r4, 9.4.4.1-r1, 9.4.5.0-r1, 9.4.5.0-r2, 9.4.5.1-r1, 10.0.0.0-r1 - 10.0.0.0-r4, 10.0.0.5-r1LTS: 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2, 9.3.0.21-r1, 9.3.0.21-r2, 9.3.0.21-r3, 9.3.0.25-r1, 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.4.0.5-r1, 9.4.0.5-r2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.7-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.12-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.15-r1",
+              "lessThanOrEqual": "9.4.0.15-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.25-r1",
+              "lessThanOrEqual": "9.4.0.25-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.26-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.1-r1",
+              "lessThanOrEqual": "9.4.3.1-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.0-r1",
+              "lessThanOrEqual": "10.0.0.0-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r4"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.3-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.6-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.15-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.25-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mq advanced container images",
+        "product:mq operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-10575",
       "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially escalate privileges due to a heap buffer overflow when processing MQPUT operations with malformed distribution headers.",
       "cvss_score": 8.8,
@@ -18692,6 +19681,429 @@
         "cpe_count": 7,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-10743",
+      "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or corrupt memory due to improper validation of buffer sizes in MQOPEN operations.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "mq operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.29",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.4.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.1",
+              "lessThanOrEqual": "3.5.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.6.0",
+              "lessThanOrEqual": "3.6.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThanOrEqual": "3.7.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.29",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "mq advanced container images",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r1",
+              "lessThanOrEqual": "r1, 9.4.0.6-r2, 9.4.0.7-r1, 9.4.0.10-r1, 9.4.0.10-r2, 9.4.0.11-r1, 9.4.0.11-r2, 9.4.0.11-r3, 9.4.0.12-r1, 9.4.0.15-r1 - 9.4.0.15-r4, 9.4.0.16-r1, 9.4.0.16-r2, 9.4.0.17-r1, 9.4.0.17-r2, 9.4.0.20-r1, 9.4.0.21-r1, 9.4.0.21-r2, 9.4.0.25-r1 - 9.4.0.25-r3, 9.4.0.26-r1CD: 9.4.1.0-r1, 9.4.1.0-r2, 9.4.1.1-r1, 9.4.2.0-r1, 9.4.2.0-r2, 9.4.2.1-r1, 9.4.2.1-r2, 9.4.3.0-r1, 9.4.3.0-r2, 9.4.3.1-r1 - 9.4.3.1-r3, 9.4.4.0-r1 - 9.4.4.0-r4, 9.4.4.1-r1, 9.4.5.0-r1, 9.4.5.0-r2, 9.4.5.1-r1, 10.0.0.0-r1 - 10.0.0.0-r4, 10.0.0.5-r1LTS: 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2, 9.3.0.21-r1, 9.3.0.21-r2, 9.3.0.21-r3, 9.3.0.25-r1, 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.4.0.5-r1, 9.4.0.5-r2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.7-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.12-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.15-r1",
+              "lessThanOrEqual": "9.4.0.15-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.25-r1",
+              "lessThanOrEqual": "9.4.0.25-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.26-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.1-r1",
+              "lessThanOrEqual": "9.4.3.1-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.0-r1",
+              "lessThanOrEqual": "10.0.0.0-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r4"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.3-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.6-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.15-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.25-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mq advanced container images",
+        "product:mq operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-10744",
@@ -20976,6 +22388,429 @@
       }
     },
     {
+      "cve_id": "CVE-2026-12148",
+      "description": "IBM MQ Operator could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to unrestricted Java deserialization in the MQ Classes for Java.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "mq operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.29",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.4.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.1",
+              "lessThanOrEqual": "3.5.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.6.0",
+              "lessThanOrEqual": "3.6.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThanOrEqual": "3.7.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.29",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "mq advanced container images",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r1",
+              "lessThanOrEqual": "r1, 9.4.0.6-r2, 9.4.0.7-r1, 9.4.0.10-r1, 9.4.0.10-r2, 9.4.0.11-r1, 9.4.0.11-r2, 9.4.0.11-r3, 9.4.0.12-r1, 9.4.0.15-r1 - 9.4.0.15-r4, 9.4.0.16-r1, 9.4.0.16-r2, 9.4.0.17-r1, 9.4.0.17-r2, 9.4.0.20-r1, 9.4.0.21-r1, 9.4.0.21-r2, 9.4.0.25-r1 - 9.4.0.25-r3, 9.4.0.26-r1CD: 9.4.1.0-r1, 9.4.1.0-r2, 9.4.1.1-r1, 9.4.2.0-r1, 9.4.2.0-r2, 9.4.2.1-r1, 9.4.2.1-r2, 9.4.3.0-r1, 9.4.3.0-r2, 9.4.3.1-r1 - 9.4.3.1-r3, 9.4.4.0-r1 - 9.4.4.0-r4, 9.4.4.1-r1, 9.4.5.0-r1, 9.4.5.0-r2, 9.4.5.1-r1, 10.0.0.0-r1 - 10.0.0.0-r4, 10.0.0.5-r1LTS: 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2, 9.3.0.21-r1, 9.3.0.21-r2, 9.3.0.21-r3, 9.3.0.25-r1, 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.4.0.5-r1, 9.4.0.5-r2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.7-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.12-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.15-r1",
+              "lessThanOrEqual": "9.4.0.15-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.25-r1",
+              "lessThanOrEqual": "9.4.0.25-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.26-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.1-r1",
+              "lessThanOrEqual": "9.4.3.1-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.0-r1",
+              "lessThanOrEqual": "10.0.0.0-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r4"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.3-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.6-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.15-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.25-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mq advanced container images",
+        "product:mq operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-12150",
       "description": "IBM MQ 9.1.0.0 through 9.1.0.37 LTS, 9.2.0.0 through 9.2.0.43 LTS, 9.3.0.0 through 9.3.0.41 LTS, 9.3.0.0 through 9.3.5.1 CD, 9.4.0.0 through 9.4.0.25 LTS, 9.4.0.0 through 9.4.5.1 CD, and 10.0.0.0 could allow a remote attacker with a trusted TLS client certificate to cause a denial of service and potentially affect memory contents due to improper validation of deeply nested certificate data during TLS certificate processing.",
       "cvss_score": 7.0,
@@ -21572,6 +23407,429 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-12665",
+      "description": "IBM MQ could allow a remote attacker to execute arbitrary code due to a stack buffer overflow when processing TLS certificates with malformed distinguished names during channel connection establishment.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "mq operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThanOrEqual": "3.2.29",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.3.0",
+              "lessThan": "3.4.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.4.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.5.1",
+              "lessThanOrEqual": "3.5.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.6.0",
+              "lessThanOrEqual": "3.6.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.7.0",
+              "lessThanOrEqual": "3.7.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.8.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "3.9.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.29",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "mq advanced container images",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r1",
+              "lessThanOrEqual": "r1, 9.4.0.6-r2, 9.4.0.7-r1, 9.4.0.10-r1, 9.4.0.10-r2, 9.4.0.11-r1, 9.4.0.11-r2, 9.4.0.11-r3, 9.4.0.12-r1, 9.4.0.15-r1 - 9.4.0.15-r4, 9.4.0.16-r1, 9.4.0.16-r2, 9.4.0.17-r1, 9.4.0.17-r2, 9.4.0.20-r1, 9.4.0.21-r1, 9.4.0.21-r2, 9.4.0.25-r1 - 9.4.0.25-r3, 9.4.0.26-r1CD: 9.4.1.0-r1, 9.4.1.0-r2, 9.4.1.1-r1, 9.4.2.0-r1, 9.4.2.0-r2, 9.4.2.1-r1, 9.4.2.1-r2, 9.4.3.0-r1, 9.4.3.0-r2, 9.4.3.1-r1 - 9.4.3.1-r3, 9.4.4.0-r1 - 9.4.4.0-r4, 9.4.4.1-r1, 9.4.5.0-r1, 9.4.5.0-r2, 9.4.5.1-r1, 10.0.0.0-r1 - 10.0.0.0-r4, 10.0.0.5-r1LTS: 9.3.0.0-r1, 9.3.0.0-r2, 9.3.0.0-r3, 9.3.0.1-r1, 9.3.0.1-r2, 9.3.0.1-r3, 9.3.0.1-r4, 9.3.0.3-r1, 9.3.0.4-r1, 9.3.0.4-r2, 9.3.0.5-r1, 9.3.0.5-r2, 9.3.0.5-r3, 9.3.0.6-r1, 9.3.0.10-r1, 9.3.0.10-r2, 9.3.0.11-r1,9.3.0.11-r2, 9.3.0.15-r1, 9.3.0.16-r1, 9.3.0.16-r2, 9.3.0.17-r1, 9.3.0.17-r2, 9.3.0.17-r3, 9.3.0.20-r1, 9.3.0.20-r2, 9.3.0.21-r1, 9.3.0.21-r2, 9.3.0.21-r3, 9.3.0.25-r1, 9.4.0.0-r1, 9.4.0.0-r2, 9.4.0.0-r3, 9.4.0.5-r1, 9.4.0.5-r2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.6-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.7-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.11-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.12-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.15-r1",
+              "lessThanOrEqual": "9.4.0.15-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.25-r1",
+              "lessThanOrEqual": "9.4.0.25-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.26-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.1.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.2.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.3.1-r1",
+              "lessThanOrEqual": "9.4.3.1-r3",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.4.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.5.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.0-r1",
+              "lessThanOrEqual": "10.0.0.0-r4",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.1-r4"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.3-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.4-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.5-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.6-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.10-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.11-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.15-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.16-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.17-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.20-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.21-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.3.0.25-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r2"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.0-r3"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r1"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0.5-r2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mq advanced container images",
+        "product:mq operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-12666",
@@ -44843,6 +47101,40 @@
       }
     },
     {
+      "cve_id": "CVE-2026-3295",
+      "description": "IBM Cloud Pak System 2.3.6.0, and 2.3.6.1 is vulnerable to cross site scripting. The web app user\u2011supplied input is not properly sanitized or HTML\u2011encoded before being stored and rendered. An authenticated attacker could exploit this vulnerability by entering specially crafted payloads containing malicious JavaScript which are saved within the app and later executed automatically when user views affected pages, resulting in Stored Cross\u2011Site Scripting (Stored XSS).",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "cloud pak system",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.3.6.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.3.6.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cloud pak system",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-3357",
       "description": "IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the system, caused by an insecure default setting which permits the deserialization of untrusted data in the FAISS component.",
       "cvss_score": 8.8,
@@ -45700,6 +47992,38 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-6719",
+      "description": "IBM Concert 1.0 through 3.0.0 uses weaker than expected cryptographic algorithms that could allow an attacker to decrypt highly sensitive information.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "concert",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "3.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:concert",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-6721",

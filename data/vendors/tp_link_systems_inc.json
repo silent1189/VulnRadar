@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T23:34:59+00:00",
+  "generated_at": "2026-10-20T04:46:21+00:00",
   "vendor": "tp_link_systems_inc",
-  "count": 130,
+  "count": 132,
   "items": [
     {
       "cve_id": "CVE-2025-10991",
@@ -7008,6 +7008,70 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105810",
+      "description": "Tapo C320WS\nV2.0 contains an authenticated stack-based buffer overflow in the local\nonboarding Wi-Fi configuration path. An authenticated attacker on the\nadjacent network can submit a crafted request containing an oversized encrypted\npassword field, overwrite stack state, and execute commands with root\nprivileges.\n\n\n\n\n\nSuccessful\nexploitation may allow an authenticated adjacent-network attacker to take\ncontrol of the affected camera, modify camera behavior, access sensitive local\nconfiguration, and disrupt device availability.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c320ws v2",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.6.6 Build 260917 Rel.81089n",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c320ws v2",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105815",
+      "description": "TP-Link Tapo\nC210 V3.60 may expose shared credential material and cryptographic metadata\nthrough unauthenticated DS JSON API requests. The exposed shared credential can\nbe accepted by the Streamd Digest authentication mechanism as an administrative\npassword, allowing an unauthenticated adjacent-network attacker to establish\nencrypted media sessions without knowledge of the device account\npassword.\u00a0 \n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may disclose credential and cryptographic material and allow\nunauthorized access to encrypted media sessions.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c210 v3.6",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V3.6_1.2.7 Build 260818",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tapo c210 v3.6",
+        "vendor:tp-link systems inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-107795",
       "description": "Omada Controller's MSP and OpenAPI certificate/private-key management APIs do not properly enforce administrative authorization, allowing an authenticated user to perform privileged certificate management operations.\u00a0\n\nSuccessful exploitation may allow a low-privileged authenticated user to upload or delete the controller's TLS certificate or private key, potentially disrupting secure management access.",
       "cvss_score": 7.5,
@@ -10009,7 +10073,7 @@
     },
     {
       "cve_id": "CVE-2026-34118",
-      "description": "A heap-based buffer overflow vulnerability was identified in TP-Link Tapo C100/C101 v5, C520WS v2.6\u00a0in the HTTP POST body parsing logic due to missing validation of remaining buffer capacity after dynamic allocation, due to\u00a0insufficient boundary validation when handling externally supplied HTTP input.\u00a0\u00a0\n\nAn attacker\non the same network segment could trigger heap memory corruption conditions by\nsending crafted payloads that cause write operations beyond allocated buffer\nboundaries.\u00a0 Successful exploitation\ncauses a Denial-of-Service (DoS) condition, causing the device\u2019s process to\ncrash or become unresponsive.",
+      "description": "A heap-based buffer overflow vulnerability was identified in TP-Link Tapo C100/C101 v5, C210 v3.6 and C520WS v2.6\u00a0in the HTTP POST body parsing logic due to missing validation of remaining buffer capacity after dynamic allocation, due to\u00a0insufficient boundary validation when handling externally supplied HTTP input.\u00a0\u00a0\n\nAn attacker\non the same network segment could trigger heap memory corruption conditions by\nsending crafted payloads that cause write operations beyond allocated buffer\nboundaries.\u00a0 Successful exploitation\ncauses a Denial-of-Service (DoS) condition, causing the device\u2019s process to\ncrash or become unresponsive.",
       "cvss_score": 7.1,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
@@ -10046,6 +10110,18 @@
               "status": "affected",
               "version": "0",
               "lessThan": "1.5.4 Build 260528 Rel.11462n",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tp link systems inc.",
+          "product": "tapo c210 v3",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V3.6_1.2.7 Build 260818",
               "versionType": "custom"
             }
           ]
