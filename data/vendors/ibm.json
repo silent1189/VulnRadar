@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "ibm",
-  "count": 1167,
+  "count": 1174,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -48648,6 +48648,40 @@
       }
     },
     {
+      "cve_id": "CVE-2026-76587",
+      "description": "IBM Planning Analytics 2.0 and 2.1 are vulnerable to a stack-based buffer overflow, caused by improper\u00a0bounds checking. An attacker could overflow the buffer and execute arbitrary code on the system.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "planning analytics",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0"
+            },
+            {
+              "status": "affected",
+              "version": "2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:planning analytics",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-77822",
       "description": "IBM ContextForge MCP Gateway could allow a remote authenticated attacker to obtain sensitive information due to server-side request forgery via DNS rebinding.",
       "cvss_score": 8.2,
@@ -50754,6 +50788,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-81212",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 allows an unauthenticated user to perform an arbitrary write into shared Redis under any tenant's key. This collapses the platform's credential-encryption boundary and lets an anonymous caller poison any tenant's cached flow parameters.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-81213",
       "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote attacker to obtain sensitive information from internal network resources due to improper validation of user-supplied URLs.",
       "cvss_score": 8.6,
@@ -52703,6 +52767,40 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-82891",
+      "description": "IBM Guardium Data Protection 12.1, and 12.2 could allow a remote attacker to obtain sensitive information due to use of a hard-coded cryptographic key.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "guardium data protection",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1"
+            },
+            {
+              "status": "affected",
+              "version": "12.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:guardium data protection",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-82892",
@@ -57021,6 +57119,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-92559",
+      "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to binding to an unrestricted IP address.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "app connect enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "13.0.1.0",
+              "lessThanOrEqual": "13.0.8.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:app connect enterprise",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-92876",
       "description": "IBM Maximo Application Suite - IoT Component 9.2.0, 9.1.0, and 9.0.0 could allow a remote attacker to cause a denial of service due to uncontrolled recursion.",
       "cvss_score": 7.5,
@@ -57129,6 +57259,82 @@
         "cpe_count": 19,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-93441",
+      "description": "IBM QRadar SIEM could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "qradar security information and event management",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.4-20210823144546",
+              "lessThanOrEqual": "7.5-20260930064858",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "7.6-20260330053257",
+              "lessThanOrEqual": "7.6-20260930064910",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:qradar security information and event management",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93442",
+      "description": "IBM QRadar SIEM 7.6.0.0 through 7.6.0.4, and 7.5.0 through 7.5.0 Update Package 16 Interim Fix 001 could allow a remote attacker to cause a denial of service or obtain sensitive information due to an out-of-bounds read.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "qradar",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.6.0.0",
+              "lessThanOrEqual": "7.6.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.5.0",
+              "lessThanOrEqual": "7.5.0 Update Package 16 Interim Fix 001",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:qradar",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-93443",
@@ -57526,6 +57732,44 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-93888",
+      "description": "IBM Sterling Connect Direct for Unix 6.4.0.0 through 6.4.0.6 and 6.3.0.0 through 6.3.0.7 apnotify utility\u00a0is vulnerable to a code injection due to insufficient validation of user input.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "sterling connect direct for unix",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.4.0.0",
+              "lessThanOrEqual": "6.4.0.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.3.0.0",
+              "lessThanOrEqual": "6.3.0.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sterling connect direct for unix",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-93891",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "google",
-  "count": 3318,
+  "count": 3319,
   "items": [
     {
       "cve_id": "CVE-2022-0096",
@@ -68384,6 +68384,38 @@
         "cpe_count": 1,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-105772",
+      "description": "Path Traversal (CWE-22) in FileArtifactService in Google ADK TypeScript (@google/adk) versions 0.4.0 before 0.6.0 allows a remote unauthenticated attacker to read files matching the artifact directory layout or write files (when an agent tool invokes saveArtifact) outside the intended artifact storage root via crafted relative or percent-encoded path traversal sequences (such as ../ or ..%2F) in the userId or sessionId parameters when the ADK API server is exposed with the non-default FileArtifactService enabled. Applications using the default InMemoryArtifactService are unaffected. Upgrade to @google/adk version 0.6.0 or later.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "adk typescript (@google/adk)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0.4.0",
+              "lessThan": "0.6.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adk typescript (@google/adk)",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-106186",

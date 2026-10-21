@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "apache_software_foundation",
-  "count": 1236,
+  "count": 1239,
   "items": [
     {
       "cve_id": "CVE-2022-22719",
@@ -56792,6 +56792,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-86471",
+      "description": "An unvalidated runtime configuration value in Apache CouchDB 3.5.2 and below on all platforms allows a CouchDB server admin to run arbitrary shell commands as the CouchDB operating system user.\n\nUsers are recommended to upgrade to version 3.5.3, which fixes this issue.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/E:A/S:N/AU:Y/R:U/V:C/RE:M/U:Red",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache couchdb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "3.5.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache couchdb",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-86473",
       "description": "Apache Airflow: the Core API logout endpoint revokes only a session token presented as the _token cookie. When a client logs out presenting its credential as an Authorization bearer header instead, the endpoint returns its normal logout response but revokes nothing, so the token remains valid until it expires. An attacker who already holds a copy of that token keeps the victim's access after the victim has logged out and believes the session ended; the default token lifetime is 24 hours and is configurable.\n\nAffects API clients that authenticate with a bearer token rather than the browser session cookie. The attacker must already possess a copy of a valid token; obtaining one is outside the scope of this issue, and no privileges beyond the victim's own are gained.\n\nUsers of apache-airflow are recommended to upgrade to apache-airflow version 3.3.2 or later, which fixes the issue.",
       "cvss_score": 9.1,
@@ -57628,6 +57660,70 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-90797",
+      "description": "An unlimited gzip decompression routine in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any remote client to cause a denial of service via memory exhaustion.\nUsers are recommended to upgrade to version 3.5.3, which fixes this issue.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:U/S:N/AU:Y/R:A/V:D/RE:M/U:Red",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache couchdb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "3.5.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache couchdb",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-90800",
+      "description": "Missing authorisation checks in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any request to read the full contents of a prefixed _user or _replicator database via an unauthorised API endpoint.\n\n\nThe use of prefixed system databases is very rare.\n\nUsers are recommended to upgrade to version 3.5.3, which fixes this issue.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:U/S:N/AU:Y/R:U/V:C/RE:M/U:Amber",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache couchdb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "3.5.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache couchdb",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-90979",

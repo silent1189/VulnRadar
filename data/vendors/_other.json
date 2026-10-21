@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "_other",
-  "count": 3110,
+  "count": 3115,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -93429,6 +93429,41 @@
       }
     },
     {
+      "cve_id": "CVE-2026-17518",
+      "description": "Buffer Copy without Checking Size of Input in certain ASUS router models allows an adjacent authenticated user to corrupt device operations and cause a denial of service via an HTTP request with input exceeding the expected length.\nRefer to the ' Security Update for ASUS Router Firmware' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:H",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "ASUSWRT 3.0.0.4_386 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "ASUSWRT 3.0.0.4_388 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00147
+    },
+    {
       "cve_id": "CVE-2026-19386",
       "description": "A stack-based buffer overflow in the ASUS router modules allows an authenticated nearby user to execute arbitrary code via a crafted configuration file upload that exceeds the expected buffer size.Refer to the ' Security Update for ASUS Router Firmware\u00a0\u00a0' section on the ASUS Security Advisory for more information.",
       "cvss_score": 9.3,
@@ -157232,6 +157267,66 @@
       }
     },
     {
+      "cve_id": "CVE-2026-14933",
+      "description": "Cross-site scripting in the embedded co-browsing feature in Unblu inc. Unblu Spark 7.0 through 7.57.7 and 8.0 through 8.39.2, on on-premises and cloud deployments, allows an unauthenticated remote attacker in the visitor role to execute arbitrary JavaScript in the browser of an agent taking part in the attacker's co-browsing session, via content of the co-browsed page that the agent's browser renders as HTML.\n\n\n\nThe JavaScript runs in the context and under the identity of the agent's session in the Agent Desk or the Single Conversation Desk.\n\n\n\nExploitation requires an agent to join an embedded co-browsing session with the attacker. Mobile co-apping isn't affected.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "unblu inc.",
+          "product": "unblu spark",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "8.35.2-hotfix.0",
+              "lessThan": "8.35.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "8.37.2-hotfix.2",
+              "lessThan": "8.37.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "8.38.2-hotfix.0",
+              "lessThan": "8.38.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0",
+              "lessThanOrEqual": "7.57.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0",
+              "lessThanOrEqual": "8.39.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "8.39.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:unblu spark",
+        "vendor:unblu inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-8152",
       "description": "Unblu Spark contains an open redirect vulnerability that can be escalated to a DOM-based cross-site scripting (XSS) attack.\n\n\nWhen Unblu Spark is deployed with com.unblu.identifier.siteEmbeddedSetup=true, it runs in the same origin as the host application. Any JavaScript injected through this vulnerability therefore executes with full access to the host application's cookies, DOM, and same-origin APIs \u2014 an attacker can reach all resources of the host application, not just Unblu's. This expanded blast radius is the reason on-premises deployments using this configuration are rated CRITICAL.",
       "cvss_score": 9.3,
@@ -157284,6 +157379,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-9589",
+      "description": "Missing authorization in the configuration cascade operations of the Collaboration Server in Unblu inc. Unblu Spark 7.0 through 8.36.1-hotfix.0, on on-premises and cloud deployments, allows an authenticated remote attacker to read and change configuration properties of entities they aren't authorized to access, including other users, other accounts and, in Unblu Cloud, other customers' accounts, via configuration read and write operations that target those entities.\n\n\n\nThe Collaboration Server doesn't check whether the user reading or changing configuration has access to the entity the configuration belongs to. With certain non-default configuration validation settings, a registered user can additionally write configuration properties they aren't allowed to edit, in any scope.\n\n\n\nExploitation requires an authenticated session but no user interaction.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "unblu inc.",
+          "product": "unblu spark",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0",
+              "lessThan": "8.37.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:unblu spark",
+        "vendor:unblu inc."
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2025-40635",
@@ -170321,6 +170448,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-111767",
+      "description": "MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. From version 1.24.0 to before version 1.32.0, the experimental tasks feature (taskStore) did not check which session created a task. Clients sharing one InMemoryTaskStore could list, read and cancel each other's tasks. This issue has been patched in version 1.32.0.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "modelcontextprotocol",
+          "product": "typescript-sdk",
+          "versions": [
+            {
+              "version": ">= 1.24.0, < 1.32.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:typescript-sdk",
+        "vendor:modelcontextprotocol"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-25536",
       "description": "MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. From version 1.10.0 to 1.25.3, cross-client response data leak when a single McpServer/Server and transport instance is reused across multiple client connections, most commonly in stateless StreamableHTTPServerTransport deployments. This issue has been patched in version 1.26.0.",
       "cvss_score": 7.1,
@@ -177608,6 +177765,58 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-103672",
+      "description": "The PEAK-System PCAN parser indexes a length table using attacker-controlled DLC without enforcing DLC <= 0x0f, then copies attacker payload from record+0x1c into a fixed-size stack destination.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "hms networks",
+          "product": "peak-system device driver setup",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.1.2.1151",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "5.1.4"
+            }
+          ]
+        },
+        {
+          "vendor": "hms networks",
+          "product": "pcan windows can device drivers",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "5.1.2",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "5.1.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:pcan windows can device drivers",
+        "vendor:hms networks"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-103902",

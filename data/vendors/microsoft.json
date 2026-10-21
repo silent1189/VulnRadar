@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "microsoft",
   "count": 6477,
   "items": [
@@ -620550,17 +620550,19 @@
     },
     {
       "cve_id": "CVE-2026-102204",
-      "description": "Improper link resolution before file access ('link following') in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
+      "description": "Improper link resolution before file access ('link following') in Windows Subsystem for Linux allows an authorized attacker to elevate privileges locally.",
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "microsoft defender for endpoint for linux",
+          "product": "windows subsystem for linux (wsl2)",
           "versions": [
             {
-              "version": "-",
+              "version": "5.0.0.0",
+              "lessThan": "3.0.1",
+              "versionType": "custom",
               "status": "affected"
             }
           ]
@@ -620572,7 +620574,7 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:microsoft defender for endpoint for linux",
+        "product:windows subsystem for linux (wsl2)",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -982147,26 +982149,6 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "microsoft sharepoint enterprise server 2016",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "microsoft sharepoint server 2019",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sharepoint server subscription edition",
           "versions": [
             {
@@ -982184,8 +982166,6 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:microsoft sharepoint enterprise server 2016",
-        "product:microsoft sharepoint server 2019",
         "product:microsoft sharepoint server subscription edition",
         "vendor:microsoft"
       ],

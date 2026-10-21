@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "google_cloud",
-  "count": 50,
+  "count": 51,
   "items": [
     {
       "cve_id": "CVE-2025-0982",
@@ -2843,6 +2843,38 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-85267",
+      "description": "A Cross-Site WebSocket Hijacking vulnerability in Cloud Shell prior to 2026-07-22 on Google Cloud Platform allows an unauthenticated attacker to hijack an active Cloud Shell session and exfiltrate the user's OAuth access token using a cross-origin WebSocket request.\n\n\nThis vulnerability was patched on 22 July 2026, and no customer action is needed.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L/U:Clear",
+      "affected": [
+        {
+          "vendor": "google cloud",
+          "product": "cloud shell",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026-07-22",
+              "versionType": "date"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cloud shell",
+        "vendor:google cloud"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00221
     },
     {
       "cve_id": "CVE-2026-85298",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T23:10:42+00:00",
+  "generated_at": "2026-10-21T04:29:24+00:00",
   "vendor": "apple",
   "count": 1227,
   "items": [
@@ -69536,7 +69536,7 @@
     },
     {
       "cve_id": "CVE-2026-28930",
-      "description": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Tahoe 26.5. An app may be able to access protected user data.",
+      "description": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Sequoia 15.8, macOS Tahoe 26.5. An app may be able to access protected user data.",
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
@@ -69545,6 +69545,12 @@
           "vendor": "apple",
           "product": "macos",
           "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "15.8",
+              "versionType": "custom"
+            },
             {
               "version": "0",
               "status": "affected",
@@ -81707,7 +81713,7 @@
     },
     {
       "cve_id": "CVE-2026-64758",
-      "description": "The issue was addressed with improved bounds checks. This issue is fixed in iOS 26.6 and iPadOS 26.6, macOS Tahoe 26.6, tvOS 26.6, visionOS 26.6, watchOS 26.6. Processing a maliciously crafted file may lead to unexpected app termination.",
+      "description": "The issue was addressed with improved bounds checks. This issue is fixed in iOS 26.6 and iPadOS 26.6, iOS 26.7 and iPadOS 26.7, macOS Sequoia 15.8, macOS Tahoe 26.6, tvOS 26.6, visionOS 26.6, watchOS 26.6. Processing a maliciously crafted file may lead to unexpected app termination.",
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -81721,6 +81727,12 @@
               "status": "affected",
               "lessThan": "26.6",
               "versionType": "custom"
+            },
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "26.7",
+              "versionType": "custom"
             }
           ]
         },
@@ -81728,6 +81740,12 @@
           "vendor": "apple",
           "product": "macos",
           "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "15.8",
+              "versionType": "custom"
+            },
             {
               "version": "0",
               "status": "affected",
@@ -85199,7 +85217,7 @@
     },
     {
       "cve_id": "CVE-2026-84506",
-      "description": "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to execute arbitrary code with kernel privileges.",
+      "description": "A use after free issue was addressed with improved memory management. This issue is fixed in macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7. An app may be able to cause unexpected system termination or corrupt kernel memory.",
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
