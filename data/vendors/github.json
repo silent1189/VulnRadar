@@ -1,302 +1,8 @@
 {
-  "generated_at": "2026-10-21T04:29:24+00:00",
+  "generated_at": "2026-10-21T10:30:09+00:00",
   "vendor": "github",
-  "count": 70,
+  "count": 63,
   "items": [
-    {
-      "cve_id": "CVE-2022-23732",
-      "description": "A path traversal vulnerability was identified in GitHub Enterprise Server management console that allowed the bypass of CSRF protections. This could potentially lead to privilege escalation. To exploit this vulnerability, an attacker would need to target a user that was actively logged into the management console. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.5 and was fixed in versions 3.1.19, 3.2.11, 3.3.6, 3.4.1. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "lessThan": "3.1.19",
-              "status": "affected",
-              "version": "3.1",
-              "versionType": "custom"
-            },
-            {
-              "lessThan": "3.2.11",
-              "status": "affected",
-              "version": "3.2",
-              "versionType": "custom"
-            },
-            {
-              "lessThan": "3.3.6",
-              "status": "affected",
-              "version": "3.3",
-              "versionType": "custom"
-            },
-            {
-              "lessThan": "3.4.1",
-              "status": "affected",
-              "version": "3.4",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01739,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": 6.8,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23",
-          "CWE-22"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
-    },
-    {
-      "cve_id": "CVE-2022-23734",
-      "description": "A deserialization of untrusted data vulnerability was identified in GitHub Enterprise Server that could potentially lead to remote code execution on the SVNBridge. To exploit this vulnerability, an attacker would need to gain access via a server-side request forgery (SSRF) that would let an attacker control the data being deserialized. This vulnerability affected all versions of GitHub Enterprise Server prior to v3.6 and was fixed in versions 3.5.3, 3.4.6, 3.3.11, and 3.2.16. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "version": "3.2",
-              "status": "affected",
-              "lessThan": "3.2.16",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.3",
-              "status": "affected",
-              "lessThan": "3.3.11",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.4",
-              "status": "affected",
-              "lessThan": "3.4.6",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.5",
-              "status": "affected",
-              "lessThan": "3.5.3",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.02693,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-502"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
-    },
-    {
-      "cve_id": "CVE-2022-23739",
-      "description": "An incorrect authorization vulnerability was identified in GitHub Enterprise Server, allowing for escalation of privileges in GraphQL API requests from GitHub Apps. This vulnerability allowed an app installed on an organization to gain access to and modify most organization-level resources that are not tied to a repository regardless of granted permissions, such as users and organization-wide projects. Resources associated with repositories were not impacted, such as repository file content, repository-specific projects, issues, or pull requests. This vulnerability affected all versions of GitHub Enterprise Server prior to 3.7.1 and was fixed in versions 3.3.16, 3.4.11, 3.5.8, 3.6.4, 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "version": "3.3",
-              "status": "affected",
-              "lessThan": "3.3.16",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.4",
-              "status": "affected",
-              "lessThan": "3.4.11",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.5",
-              "status": "affected",
-              "lessThan": "3.5.8",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.6",
-              "status": "affected",
-              "lessThan": "3.6.4",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.7",
-              "status": "affected",
-              "lessThan": "3.7.1",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01244,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
-    },
-    {
-      "cve_id": "CVE-2022-23740",
-      "description": "CRITICAL: An improper neutralization of argument delimiters in a command vulnerability was identified in GitHub Enterprise Server that enabled remote code execution. To exploit this vulnerability, an attacker would need permission to create and build GitHub Pages using GitHub Actions. This vulnerability affected only version 3.7.0 of GitHub Enterprise Server and was fixed in version 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "version": "3.7",
-              "status": "affected",
-              "lessThan": "3.7.1",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01195,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-88"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2022-23741",
-      "description": "An incorrect authorization vulnerability was identified in GitHub Enterprise Server that allowed a scoped user-to-server token to escalate to full admin/owner privileges. An attacker would require an account with admin access to install a malicious GitHub App. This vulnerability was fixed in versions 3.3.17, 3.4.12, 3.5.9, and 3.6.5. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 7.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "version": "3.3",
-              "status": "affected",
-              "lessThan": "3.3.17",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.4",
-              "status": "affected",
-              "lessThan": "3.4.12",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.5",
-              "status": "affected",
-              "lessThan": "3.5.9",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.6",
-              "status": "affected",
-              "lessThan": "3.6.5",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0117,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
-    },
     {
       "cve_id": "CVE-2022-24722",
       "description": "VIewComponent is a framework for building view components in Ruby on Rails. Versions prior to 2.31.2 and 2.49.1 contain a cross-site scripting vulnerability that has the potential to impact anyone using translations with the view_component gem. Data received via user input and passed as an interpolation argument to the `translate` method is not properly sanitized before display. Versions 2.31.2 and 2.49.1 have been released and fully mitigate the vulnerability. As a workaround, avoid passing user input to the `translate` function, or sanitize the inputs before passing them.",
@@ -329,18 +35,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01092,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": 4.3,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 2,
-        "reference_count": 8
-      }
+      "probability_score": 0.01092
     },
     {
       "cve_id": "CVE-2022-24724",
@@ -374,18 +69,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.0451,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": 7.5,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-190"
-        ],
-        "cpe_count": 5,
-        "reference_count": 16
-      }
+      "probability_score": 0.0451
     },
     {
       "cve_id": "CVE-2022-39209",
@@ -415,129 +99,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02151,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-400",
-          "CWE-407"
-        ],
-        "cpe_count": 4,
-        "reference_count": 12
-      }
-    },
-    {
-      "cve_id": "CVE-2022-46255",
-      "description": "An improper limitation of a pathname to a restricted directory vulnerability was identified in GitHub Enterprise Server that enabled remote code execution. A check was added within Pages to ensure the working directory is clean before unpacking new content to prevent an arbitrary file overwrite bug. This vulnerability affected only version 3.7.0 of GitHub Enterprise Server and was fixed in version 3.7.1. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "version": "3.7",
-              "status": "affected",
-              "lessThan": "3.7.1",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01565,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2022-46256",
-      "description": "A path traversal vulnerability was identified in GitHub Enterprise Server that allowed remote code execution when building a GitHub Pages site. To exploit this vulnerability, an attacker would need permission to create and build a GitHub Pages site on the instance. This vulnerability was fixed in versions 3.3.17, 3.4.12, 3.5.9, 3.6.5 and 3.7.2. This vulnerability was reported via the GitHub Bug Bounty program.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "github",
-          "product": "github enterprise server",
-          "versions": [
-            {
-              "version": "3.3",
-              "status": "affected",
-              "lessThan": "3.3.17",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.4",
-              "status": "affected",
-              "lessThan": "3.4.12",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.5",
-              "status": "affected",
-              "lessThan": "3.5.9",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.6",
-              "status": "affected",
-              "lessThan": "3.6.5",
-              "versionType": "custom"
-            },
-            {
-              "version": "3.7",
-              "status": "affected",
-              "lessThan": "3.7.2",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:github enterprise server",
-        "vendor:github"
-      ],
-      "active_threat": false,
-      "probability_score": 0.02094,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
+      "probability_score": 0.02151
     },
     {
       "cve_id": "CVE-2023-23761",
@@ -627,18 +189,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00462,
-      "nvd": {
-        "cvss_v3_score": 5.3,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
+      "probability_score": 0.00462
     },
     {
       "cve_id": "CVE-2023-46647",
@@ -704,18 +255,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00638,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-269"
-        ],
-        "cpe_count": 3,
-        "reference_count": 8
-      }
+      "probability_score": 0.00638
     },
     {
       "cve_id": "CVE-2023-46648",
@@ -765,18 +305,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00744,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-331"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.00744
     },
     {
       "cve_id": "CVE-2023-6746",
@@ -862,18 +391,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.0051,
-      "nvd": {
-        "cvss_v3_score": 5.7,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
+      "probability_score": 0.0051
     },
     {
       "cve_id": "CVE-2023-6802",
@@ -947,18 +465,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00719,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.00719
     },
     {
       "cve_id": "CVE-2023-6847",
@@ -1002,18 +509,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00815,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287"
-        ],
-        "cpe_count": 3,
-        "reference_count": 6
-      }
+      "probability_score": 0.00815
     },
     {
       "cve_id": "CVE-2024-0200",
@@ -1063,18 +559,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.71725,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-470"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.71725
     },
     {
       "cve_id": "CVE-2024-10001",
@@ -1160,18 +645,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00385,
-      "nvd": {
-        "cvss_v3_score": 7.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-94"
-        ],
-        "cpe_count": 4,
-        "reference_count": 5
-      }
+      "probability_score": 0.00385
     },
     {
       "cve_id": "CVE-2024-10007",
@@ -1245,18 +719,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00844,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-59"
-        ],
-        "cpe_count": 4,
-        "reference_count": 4
-      }
+      "probability_score": 0.00844
     },
     {
       "cve_id": "CVE-2024-1354",
@@ -1334,19 +797,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.0172,
-      "nvd": {
-        "cvss_v3_score": 8.0,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.0172
     },
     {
       "cve_id": "CVE-2024-1355",
@@ -1424,19 +875,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02363,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02363
     },
     {
       "cve_id": "CVE-2024-1359",
@@ -1514,19 +953,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02275,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02275
     },
     {
       "cve_id": "CVE-2024-1369",
@@ -1604,19 +1031,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02275,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02275
     },
     {
       "cve_id": "CVE-2024-1372",
@@ -1694,19 +1109,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02275,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02275
     },
     {
       "cve_id": "CVE-2024-1374",
@@ -1784,19 +1187,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02632,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02632
     },
     {
       "cve_id": "CVE-2024-1378",
@@ -1874,19 +1265,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02339,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02339
     },
     {
       "cve_id": "CVE-2024-1482",
@@ -1948,18 +1327,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00422,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 3,
-        "reference_count": 6
-      }
+      "probability_score": 0.00422
     },
     {
       "cve_id": "CVE-2024-2443",
@@ -2045,18 +1413,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02086,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
+      "probability_score": 0.02086
     },
     {
       "cve_id": "CVE-2024-2469",
@@ -2142,18 +1499,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01616,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
+      "probability_score": 0.01616
     },
     {
       "cve_id": "CVE-2024-3646",
@@ -2203,18 +1549,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01742,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.01742
     },
     {
       "cve_id": "CVE-2024-3684",
@@ -2264,18 +1599,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01095,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-88"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.01095
     },
     {
       "cve_id": "CVE-2024-4985",
@@ -2353,18 +1677,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.02573,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-303"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.02573
     },
     {
       "cve_id": "CVE-2024-5746",
@@ -2414,18 +1727,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00861,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 4,
-        "reference_count": 8
-      }
+      "probability_score": 0.00861
     },
     {
       "cve_id": "CVE-2024-5795",
@@ -2511,18 +1813,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00557,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-400"
-        ],
-        "cpe_count": 5,
-        "reference_count": 10
-      }
+      "probability_score": 0.00557
     },
     {
       "cve_id": "CVE-2024-6800",
@@ -2596,18 +1887,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01527,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-347"
-        ],
-        "cpe_count": 4,
-        "reference_count": 4
-      }
+      "probability_score": 0.01527
     },
     {
       "cve_id": "CVE-2024-8810",
@@ -2693,18 +1973,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00439,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-269"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00439
     },
     {
       "cve_id": "CVE-2024-9487",
@@ -2778,18 +2047,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.25607,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-347"
-        ],
-        "cpe_count": 4,
-        "reference_count": 4
-      }
+      "probability_score": 0.25607
     },
     {
       "cve_id": "CVE-2025-11578",
@@ -2875,18 +2133,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00707,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-59"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00707
     },
     {
       "cve_id": "CVE-2025-11892",
@@ -2972,18 +2219,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00699,
-      "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00699
     },
     {
       "cve_id": "CVE-2025-13744",
@@ -3081,18 +2317,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00217,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 6,
-        "reference_count": 6
-      }
+      "probability_score": 0.00217
     },
     {
       "cve_id": "CVE-2025-14046",
@@ -3183,18 +2408,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00386,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00386
     },
     {
       "cve_id": "CVE-2025-23369",
@@ -3273,18 +2487,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01624,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-347"
-        ],
-        "cpe_count": 4,
-        "reference_count": 4
-      }
+      "probability_score": 0.01624
     },
     {
       "cve_id": "CVE-2025-24362",
@@ -3318,18 +2521,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01245,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 0,
-        "reference_count": 8
-      }
+      "probability_score": 0.01245
     },
     {
       "cve_id": "CVE-2025-3246",
@@ -3367,18 +2559,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00302,
-      "nvd": {
-        "cvss_v3_score": 7.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00302
     },
     {
       "cve_id": "CVE-2025-3509",
@@ -3464,18 +2645,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01314,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-94"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.01314
     },
     {
       "cve_id": "CVE-2025-8447",
@@ -3549,18 +2719,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.0031,
-      "nvd": {
-        "cvss_v3_score": 3.1,
-        "cvss_v3_severity": "LOW",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-639"
-        ],
-        "cpe_count": 4,
-        "reference_count": 4
-      }
+      "probability_score": 0.0031
     },
     {
       "cve_id": "CVE-2026-0573",
@@ -3658,18 +2817,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00736,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-601"
-        ],
-        "cpe_count": 6,
-        "reference_count": 6
-      }
+      "probability_score": 0.00736
     },
     {
       "cve_id": "CVE-2026-15343",
@@ -3755,18 +2903,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00752,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 5
-      }
+      "probability_score": 0.00752
     },
     {
       "cve_id": "CVE-2026-17556",
@@ -3852,18 +2989,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00805,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00805
     },
     {
       "cve_id": "CVE-2026-18428",
@@ -3907,18 +3033,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00999,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-693"
-        ],
-        "cpe_count": 0,
-        "reference_count": 5
-      }
+      "probability_score": 0.00999
     },
     {
       "cve_id": "CVE-2026-18730",
@@ -4004,18 +3119,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00291,
-      "nvd": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00291
     },
     {
       "cve_id": "CVE-2026-18952",
@@ -4059,18 +3163,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00519,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
+      "probability_score": 0.00519
     },
     {
       "cve_id": "CVE-2026-19118",
@@ -4161,18 +3254,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00688,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-367"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00688
     },
     {
       "cve_id": "CVE-2026-19311",
@@ -4222,18 +3304,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00582,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-475"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
+      "probability_score": 0.00582
     },
     {
       "cve_id": "CVE-2026-1999",
@@ -4295,18 +3366,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.0036,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 3,
-        "reference_count": 3
-      }
+      "probability_score": 0.0036
     },
     {
       "cve_id": "CVE-2026-29783",
@@ -4336,18 +3396,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00565,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.00565
     },
     {
       "cve_id": "CVE-2026-2266",
@@ -4397,18 +3446,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00183,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.00183
     },
     {
       "cve_id": "CVE-2026-3854",
@@ -4506,18 +3544,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.01504,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 6,
-        "reference_count": 7
-      }
+      "probability_score": 0.01504
     },
     {
       "cve_id": "CVE-2026-45033",
@@ -4547,18 +3574,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00384,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-696"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.00384
     },
     {
       "cve_id": "CVE-2026-47427",
@@ -4588,18 +3604,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00772,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-476"
-        ],
-        "cpe_count": 1,
-        "reference_count": 5
-      }
+      "probability_score": 0.00772
     },
     {
       "cve_id": "CVE-2026-4296",
@@ -4709,18 +3714,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00737,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-185"
-        ],
-        "cpe_count": 7,
-        "reference_count": 7
-      }
+      "probability_score": 0.00737
     },
     {
       "cve_id": "CVE-2026-5845",
@@ -4830,18 +3824,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00479,
-      "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-639"
-        ],
-        "cpe_count": 7,
-        "reference_count": 7
-      }
+      "probability_score": 0.00479
     },
     {
       "cve_id": "CVE-2026-5921",
@@ -4951,18 +3934,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00645,
-      "nvd": {
-        "cvss_v3_score": 8.9,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 7,
-        "reference_count": 7
-      }
+      "probability_score": 0.00645
     },
     {
       "cve_id": "CVE-2026-76851",
@@ -5053,18 +4025,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00829,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00829
     },
     {
       "cve_id": "CVE-2026-77912",
@@ -5162,18 +4123,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00207,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 6,
-        "reference_count": 6
-      }
+      "probability_score": 0.00207
     },
     {
       "cve_id": "CVE-2026-77987",
@@ -5271,19 +4221,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00878,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-208",
-          "CWE-918"
-        ],
-        "cpe_count": 6,
-        "reference_count": 6
-      }
+      "probability_score": 0.00878
     },
     {
       "cve_id": "CVE-2026-8034",
@@ -5374,19 +4312,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00857,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-436",
-          "CWE-918"
-        ],
-        "cpe_count": 5,
-        "reference_count": 5
-      }
+      "probability_score": 0.00857
     },
     {
       "cve_id": "CVE-2026-8606",
@@ -5484,18 +4410,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.007,
-      "nvd": {
-        "cvss_v3_score": 5.9,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 6,
-        "reference_count": 6
-      }
+      "probability_score": 0.007
     },
     {
       "cve_id": "CVE-2026-96890",
@@ -5557,18 +4472,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.00477,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 3,
-        "reference_count": 3
-      }
+      "probability_score": 0.00477
     },
     {
       "cve_id": "CVE-2026-9312",
@@ -5666,18 +4570,7 @@
         "vendor:github"
       ],
       "active_threat": false,
-      "probability_score": 0.0059,
-      "nvd": {
-        "cvss_v3_score": 8.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 6,
-        "reference_count": 5
-      }
+      "probability_score": 0.0059
     }
   ]
 }

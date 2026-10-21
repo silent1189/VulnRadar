@@ -1,94 +1,8 @@
 {
-  "generated_at": "2026-10-21T04:29:24+00:00",
+  "generated_at": "2026-10-21T10:30:09+00:00",
   "vendor": "ubiquiti_inc",
-  "count": 103,
+  "count": 88,
   "items": [
-    {
-      "cve_id": "CVE-2023-28365",
-      "description": "A backup file vulnerability found in UniFi applications (Version 7.3.83 and earlier) running on Linux operating systems allows application administrators to execute malicious commands on the host device being restored.",
-      "cvss_score": 9.1,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc.",
-          "product": "unifi network application",
-          "versions": [
-            {
-              "version": "7.3.83",
-              "status": "affected",
-              "lessThanOrEqual": "7.3.83",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi network application",
-        "vendor:ubiquiti inc."
-      ],
-      "active_threat": false,
-      "probability_score": 0.00882,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2023-31997",
-      "description": "UniFi OS 3.1 introduces a misconfiguration on consoles running UniFi Network that allows users on a local network to access MongoDB. Applicable Cloud Keys that are both (1) running UniFi OS 3.1 and (2) hosting the UniFi Network application. \"Applicable Cloud Keys\" include the following: Cloud Key Gen2 and Cloud Key Gen2 Plus.\r\n\r\n",
-      "cvss_score": 9.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc.",
-          "product": "unifi os",
-          "versions": [
-            {
-              "version": "3.1.13",
-              "status": "affected",
-              "lessThanOrEqual": "3.1.13",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi os",
-        "vendor:ubiquiti inc."
-      ],
-      "active_threat": false,
-      "probability_score": 0.00254,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 3,
-        "reference_count": 2
-      }
-    },
     {
       "cve_id": "CVE-2023-35085",
       "description": "An integer overflow vulnerability in all UniFi Access Points and Switches, excluding the Switch Flex Mini, with SNMP Monitoring and default settings enabled could allow a Remote Code Execution (RCE).\n\n \n\nAffected Products:\nAll UniFi Access Points (Version 6.5.50 and earlier)\nAll UniFi Switches (Version 6.5.32 and earlier) \n-USW Flex Mini excluded.\n \n\nMitigation:\nUpdate UniFi Access Points to Version 6.5.62 or later.\nUpdate the UniFi Switches to Version 6.5.59 or later.",
@@ -132,18 +46,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01039,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-190"
-        ],
-        "cpe_count": 47,
-        "reference_count": 2
-      }
+      "probability_score": 0.01039
     },
     {
       "cve_id": "CVE-2023-38034",
@@ -188,143 +91,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0135,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 47,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2024-22054",
-      "description": "A malformed discovery packet sent by a malicious actor with preexisting access to the network could interrupt the functionality of device management and discovery.\n\n\nAffected Products:\nUniFi Access Points\nUniFi Switches\nUniFi LTE Backup\nUniFi Express (Only Mesh Mode, Router mode is not affected)\n\n  \nMitigation:\nUpdate UniFi Access Points to Version 6.6.55 or later.\nUpdate UniFi Switches to Version 6.6.61 or later.\nUpdate UniFi LTE Backup to Version 6.6.57 or later.\nUpdate UniFi Express to Version 3.2.5 or later.",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access points",
-          "versions": [
-            {
-              "version": "6.6.55",
-              "status": "affected",
-              "lessThan": "6.6.55",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi switches",
-          "versions": [
-            {
-              "version": "6.6.61",
-              "status": "affected",
-              "lessThan": "6.6.61",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi lte backup",
-          "versions": [
-            {
-              "version": "6.6.57",
-              "status": "affected",
-              "lessThan": "6.6.57",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi express",
-          "versions": [
-            {
-              "version": "3.2.5",
-              "status": "affected",
-              "lessThan": "3.2.5",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi access points",
-        "product:unifi express",
-        "product:unifi lte backup",
-        "product:unifi switches",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00515,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2024-27981",
-      "description": "A Command Injection vulnerability found in a Self-Hosted UniFi Network Servers (Linux) with UniFi Network Application (Version 8.0.28 and earlier) allows a malicious actor with UniFi Network Application Administrator credentials to escalate privileges to root on the host device.\r\n\r\nAffected Products:\r\nUniFi Network Application (Version 8.0.28 and earlier) .\r\n \r\nMitigation:\r\nUpdate UniFi Network Application to Version 8.1.113 or later.",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi network application",
-          "versions": [
-            {
-              "version": "8.1.113",
-              "status": "affected",
-              "lessThan": "8.1.113",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi network application",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01303,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
+      "probability_score": 0.0135
     },
     {
       "cve_id": "CVE-2024-29207",
@@ -408,18 +175,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00325,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
+      "probability_score": 0.00325
     },
     {
       "cve_id": "CVE-2024-42025",
@@ -451,18 +207,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00823,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00823
     },
     {
       "cve_id": "CVE-2024-42028",
@@ -494,18 +239,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00162,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-276"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00162
     },
     {
       "cve_id": "CVE-2025-23115",
@@ -537,18 +271,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00716,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-416"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00716
     },
     {
       "cve_id": "CVE-2025-23116",
@@ -580,18 +303,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00512,
-      "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00512
     },
     {
       "cve_id": "CVE-2025-23119",
@@ -623,18 +335,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00712,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00712
     },
     {
       "cve_id": "CVE-2025-23123",
@@ -666,61 +367,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01163,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-122"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-24285",
-      "description": "Multiple Improper Input Validation vulnerabilities in UniFi Connect EV Station Lite may allow a Command Injection by a malicious actor with network access to the UniFi Connect EV Station Lite.\r\n \r\nAffected Products:\r\nUniFi Connect EV Station Lite (Version 1.5.1 and earlier)\r\n \r\nMitigation:\r\nUpdate UniFi Connect EV Station Lite to Version 1.5.2 or later",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi connect ev station lite",
-          "versions": [
-            {
-              "version": "1.5.2",
-              "status": "affected",
-              "lessThan": "1.5.2",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi connect ev station lite",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01192,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01163
     },
     {
       "cve_id": "CVE-2025-24289",
@@ -752,18 +399,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00165,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-352"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00165
     },
     {
       "cve_id": "CVE-2025-24290",
@@ -795,524 +431,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00346,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-27211",
-      "description": "An Improper Input Validation in EdgeMAX EdgeSwitch (Version 1.10.4 and earlier) could allow a Command Injection by a malicious actor with access to EdgeSwitch adjacent network.",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "edgemax edgeswitch",
-          "versions": [
-            {
-              "version": "1.11.0",
-              "status": "unaffected",
-              "lessThan": "1.11.0",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:edgemax edgeswitch",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00582,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-27212",
-      "description": "An Improper Input Validation in certain UniFi Access devices could allow a Command Injection by a malicious actor with access to UniFi Access management network.\r\n\r\n \r\n\r\nAffected Products:\r\nUniFi Access Reader Pro (Version 2.14.21 and earlier)\r\nUniFi Access G2 Reader Pro (Version 1.10.32 and earlier)\r\nUniFi Access G3 Reader Pro (Version 1.10.30 and earlier)\r\nUniFi Access Intercom (Version 1.7.28 and earlier)\r\nUniFi Access G3 Intercom (Version 1.7.29 and earlier)\r\nUniFi Access Intercom Viewer (Version 1.3.20 and earlier)\r\n\r\n \r\n\r\nMitigation:\r\nUpdate UniFi Access Reader Pro Version 2.15.9 or later\r\nUpdate UniFi Access G2 Reader Pro Version 1.11.23 or later\r\nUpdate UniFi Access G3 Reader Pro Version 1.11.22 or later\r\nUpdate UniFi Access Intercom Version 1.8.22 or later\r\nUpdate UniFi Access G3 Intercom Version 1.8.22 or later\r\nUpdate UniFi Access Intercom Viewer Version 1.4.39 or later",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access reader pro",
-          "versions": [
-            {
-              "version": "2.15.9",
-              "status": "affected",
-              "lessThan": "2.15.9",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access g2 reader pro",
-          "versions": [
-            {
-              "version": "1.11.23",
-              "status": "affected",
-              "lessThan": "1.11.23",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access g3 reader pro",
-          "versions": [
-            {
-              "version": "1.11.22",
-              "status": "affected",
-              "lessThan": "1.11.22",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access intercom",
-          "versions": [
-            {
-              "version": "1.8.22",
-              "status": "affected",
-              "lessThan": "1.8.22",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access g3 intercom",
-          "versions": [
-            {
-              "version": "1.8.22",
-              "status": "affected",
-              "lessThan": "1.8.22",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access intercom viewer",
-          "versions": [
-            {
-              "version": "1.4.39",
-              "status": "affected",
-              "lessThan": "1.4.39",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi access g2 reader pro",
-        "product:unifi access g3 intercom",
-        "product:unifi access g3 reader pro",
-        "product:unifi access intercom",
-        "product:unifi access intercom viewer",
-        "product:unifi access reader pro",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01205,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-27214",
-      "description": "A Missing Authentication for Critical Function vulnerability in the UniFi Connect EV Station Pro may allow a malicious actor with physical or adjacent access to perform an unauthorized factory reset.\r\n\r\n \r\n\r\nAffected Products:\r\n\r\nUniFi Connect EV Station Pro (Version 1.5.18 and earlier)\r\n\r\n \r\n\r\nMitigation:\r\n\r\nUpdate UniFi Connect EV Station Pro to Version 1.5.27 or later",
-      "cvss_score": 9.8,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi connect ev station pro",
-          "versions": [
-            {
-              "version": "1.5.27",
-              "status": "affected",
-              "lessThan": "1.5.27",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi connect ev station pro",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00397,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-306"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-27215",
-      "description": "An Improper Access Control could allow a malicious actor authenticated in the API of certain UniFi Connect Display Cast devices to make unsupported changes to the system.\r\n\r\n \r\n\r\nAffected Products:\r\n\r\nUniFi Connect Display Cast (Version 1.10.3 and earlier)\r\nUniFi Connect Display Cast Pro (Version 1.0.89 and earlier)\r\nUniFi Connect Display Cast Lite (Version 1.0.3 and earlier)\r\n\r\n \r\n\r\nMitigation:\r\n\r\nUpdate UniFi Connect Display Cast to Version 1.10.7 or later\r\nUpdate UniFi Connect Display Cast Pro to Version 1.0.94 or later\r\nUpdate UniFi Connect Display Cast Lite to Version 1.1.8 or later",
-      "cvss_score": 8.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi connect display cast",
-          "versions": [
-            {
-              "version": "1.10.7",
-              "status": "affected",
-              "lessThan": "1.10.7",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi connect display cast pro",
-          "versions": [
-            {
-              "version": "1.0.94",
-              "status": "affected",
-              "lessThan": "1.0.94",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi connect display cast lite",
-          "versions": [
-            {
-              "version": "1.1.8",
-              "status": "affected",
-              "lessThan": "1.1.8",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi connect display cast",
-        "product:unifi connect display cast lite",
-        "product:unifi connect display cast pro",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00261,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-27216",
-      "description": "Multiple Incorrect Permission Assignment for Critical Resource in UISP Application may allow a malicious actor with certain permissions to escalate privileges.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "uisp application",
-          "versions": [
-            {
-              "version": "2.4.220",
-              "status": "affected",
-              "lessThan": "2.4.220",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:uisp application",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00302,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-732"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-27217",
-      "description": "A Server-Side Request Forgery (SSRF) in the UISP Application may allow a malicious actor with certain permissions to make requests outside of UISP Application scope.",
-      "cvss_score": 9.1,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "uisp application",
-          "versions": [
-            {
-              "version": "2.4.220",
-              "status": "affected",
-              "lessThan": "2.4.220",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:uisp application",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.004,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-48978",
-      "description": "An Improper Input Validation in EdgeMAX EdgeSwitch (Version 1.11.0 and earlier) could allow a Command Injection by a malicious actor with access to EdgeSwitch adjacent network.\r\n\r\nAffected Products:\r\n\r\nEdgeMAX EdgeSwitch (Version 1.11.0 and earlier) \r\n\r\n  \r\n\r\nMitigation:\r\n\r\nUpdate the EdgeMAX EdgeSwitch to Version 1.11.1 or later.",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "edgemax edgeswitch",
-          "versions": [
-            {
-              "version": "1.11.1",
-              "status": "affected",
-              "lessThan": "1.11.1",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:edgemax edgeswitch",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00669,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-52663",
-      "description": "A vulnerability was identified in certain UniFi Talk devices where internal debugging functionality remained unintentionally enabled. This issue could allow an attacker with access to the UniFi Talk management network to invoke internal debug operations through the device API.\r\n\r\n\r\nAffected Products:\r\nUniFi Talk Touch (Version 1.21.16 and earlier) \r\nUniFi Talk Touch Max (Version 2.21.22 and earlier) \r\nUniFi Talk G3 Phones (Version 3.21.26 and earlier) \r\n \r\nMitigation:\r\nUpdate the UniFi Talk Touch to Version 1.21.17 or later.\r\nUpdate the UniFi Talk Touch Max to Version 2.21.23 or later.\r\nUpdate the UniFi Talk G3 Phones to Version 3.21.27 or later.",
-      "cvss_score": 7.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi talk touch",
-          "versions": [
-            {
-              "version": "1.21.17",
-              "status": "unaffected",
-              "lessThan": "1.21.17",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi talk touch max",
-          "versions": [
-            {
-              "version": "2.21.23",
-              "status": "unaffected",
-              "lessThan": "2.21.23",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi talk g3 phones",
-          "versions": [
-            {
-              "version": "3.21.27",
-              "status": "unaffected",
-              "lessThan": "3.21.27",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi talk g3 phones",
-        "product:unifi talk touch",
-        "product:unifi talk touch max",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00239,
-      "nvd": {
-        "cvss_v3_score": 7.3,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-489"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2025-52665",
-      "description": "A malicious actor with access to the management network could exploit a misconfiguration in UniFi\u2019s door access application, UniFi Access, that exposed a management API without proper authentication. This vulnerability was introduced in Version 3.3.22 and was fixed in Version 4.0.21 and later.\u00a0\n \nAffected Products:\nUniFi Access Application (Version 3.3.22 through 3.4.31). \u2028 \n\nMitigation:\nUpdate your UniFi Access Application to Version 4.0.21 or later.",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi access application",
-          "versions": [
-            {
-              "version": "3.3.22",
-              "status": "affected",
-              "lessThanOrEqual": "3.4.31",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": true,
-      "is_critical": true,
-      "priority_label": "CRITICAL (Active Exploit in Stack)",
-      "matched_terms": [
-        "product:unifi access application",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.41089,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-306"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00346
     },
     {
       "cve_id": "CVE-2025-59467",
@@ -1344,18 +463,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00256,
-      "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00256
     },
     {
       "cve_id": "CVE-2026-110455",
@@ -1387,18 +495,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01205,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01205
     },
     {
       "cve_id": "CVE-2026-110459",
@@ -1430,18 +527,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00261,
-      "nvd": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00261
     },
     {
       "cve_id": "CVE-2026-21633",
@@ -1473,18 +559,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00459,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00459
     },
     {
       "cve_id": "CVE-2026-21638",
@@ -1542,18 +617,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00432,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 8,
-        "reference_count": 1
-      }
+      "probability_score": 0.00432
     },
     {
       "cve_id": "CVE-2026-21639",
@@ -1624,19 +688,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00392,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-120",
-          "CWE-77"
-        ],
-        "cpe_count": 8,
-        "reference_count": 1
-      }
+      "probability_score": 0.00392
     },
     {
       "cve_id": "CVE-2026-22557",
@@ -1680,18 +732,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.28116,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.28116
     },
     {
       "cve_id": "CVE-2026-22558",
@@ -1735,18 +776,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00564,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-943"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00564
     },
     {
       "cve_id": "CVE-2026-22559",
@@ -1778,18 +808,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00358,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00358
     },
     {
       "cve_id": "CVE-2026-22562",
@@ -1834,18 +853,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00774,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00774
     },
     {
       "cve_id": "CVE-2026-22563",
@@ -1890,18 +898,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01051,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01051
     },
     {
       "cve_id": "CVE-2026-22564",
@@ -1946,74 +943,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0042,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-22565",
-      "description": "An Improper Input Validation vulnerability could allow a malicious actor with access to the UniFi Play network to cause the device to stop responding.\u2028 \n\nAffected Products:\nUniFi Play PowerAmp (Version 1.0.35 and earlier)\u2028\nUniFi Play Audio Port\u00a0 (Version 1.0.24 and earlier)\u2028 \n\nMitigation:\nUpdate UniFi Play PowerAmp to Version 1.0.38 or later\u2028\nUpdate UniFi Play Audio Port\u00a0 to Version 1.1.9 or later",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "affected": [
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi play poweramp",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "lessThan": "1.0.38",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "ubiquiti inc",
-          "product": "unifi play audio port",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "lessThan": "1.1.9",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:unifi play audio port",
-        "product:unifi play poweramp",
-        "vendor:ubiquiti inc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00432,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.0042
     },
     {
       "cve_id": "CVE-2026-22566",
@@ -2058,18 +988,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00361,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00361
     },
     {
       "cve_id": "CVE-2026-33000",
@@ -2101,18 +1020,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01443,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.01443
     },
     {
       "cve_id": "CVE-2026-34908",
@@ -2545,17 +1453,6 @@
         "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "dueDate": "2026-06-26",
         "knownRansomwareCampaignUse": "Unknown"
-      },
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 61,
-        "reference_count": 3
       }
     },
     {
@@ -3002,17 +1899,6 @@
         "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "dueDate": "2026-06-26",
         "knownRansomwareCampaignUse": "Unknown"
-      },
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 63,
-        "reference_count": 3
       }
     },
     {
@@ -3446,17 +2332,6 @@
         "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
         "dueDate": "2026-06-26",
         "knownRansomwareCampaignUse": "Unknown"
-      },
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 61,
-        "reference_count": 3
       }
     },
     {
@@ -3879,18 +2754,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00592,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 61,
-        "reference_count": 1
-      }
+      "probability_score": 0.00592
     },
     {
       "cve_id": "CVE-2026-47367",
@@ -3922,18 +2786,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-47368",
@@ -4368,18 +3221,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00503,
-      "nvd": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00503
     },
     {
       "cve_id": "CVE-2026-47369",
@@ -4814,18 +3656,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00479,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00479
     },
     {
       "cve_id": "CVE-2026-47370",
@@ -5260,18 +4091,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-48610",
@@ -5485,18 +4305,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00373,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00373
     },
     {
       "cve_id": "CVE-2026-50746",
@@ -5528,18 +4337,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01687,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.01687
     },
     {
       "cve_id": "CVE-2026-50747",
@@ -5571,18 +4369,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00493,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00493
     },
     {
       "cve_id": "CVE-2026-50748",
@@ -5614,18 +4401,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01628,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.01628
     },
     {
       "cve_id": "CVE-2026-54400",
@@ -5657,18 +4433,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00524,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00524
     },
     {
       "cve_id": "CVE-2026-54401",
@@ -5843,18 +4608,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00431,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 63,
-        "reference_count": 1
-      }
+      "probability_score": 0.00431
     },
     {
       "cve_id": "CVE-2026-54402",
@@ -6029,19 +4783,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0176,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20",
-          "CWE-77"
-        ],
-        "cpe_count": 63,
-        "reference_count": 1
-      }
+      "probability_score": 0.0176
     },
     {
       "cve_id": "CVE-2026-54403",
@@ -6216,18 +4958,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00774,
-      "nvd": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 63,
-        "reference_count": 1
-      }
+      "probability_score": 0.00774
     },
     {
       "cve_id": "CVE-2026-54404",
@@ -6402,18 +5133,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00493,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 63,
-        "reference_count": 1
-      }
+      "probability_score": 0.00493
     },
     {
       "cve_id": "CVE-2026-54405",
@@ -6445,18 +5165,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00522,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00522
     },
     {
       "cve_id": "CVE-2026-54406",
@@ -6488,18 +5197,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00587,
-      "nvd": {
-        "cvss_v3_score": 8.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00587
     },
     {
       "cve_id": "CVE-2026-54407",
@@ -6531,18 +5229,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00453,
-      "nvd": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00453
     },
     {
       "cve_id": "CVE-2026-54408",
@@ -6574,18 +5261,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00566,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00566
     },
     {
       "cve_id": "CVE-2026-54409",
@@ -6617,18 +5293,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0044,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-665"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.0044
     },
     {
       "cve_id": "CVE-2026-55110",
@@ -6803,18 +5468,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00271,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-942"
-        ],
-        "cpe_count": 61,
-        "reference_count": 1
-      }
+      "probability_score": 0.00271
     },
     {
       "cve_id": "CVE-2026-55111",
@@ -6846,18 +5500,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00503,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 2,
-        "reference_count": 1
-      }
+      "probability_score": 0.00503
     },
     {
       "cve_id": "CVE-2026-55112",
@@ -6967,18 +5610,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00356,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 38,
-        "reference_count": 1
-      }
+      "probability_score": 0.00356
     },
     {
       "cve_id": "CVE-2026-55113",
@@ -7010,18 +5642,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0037,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.0037
     },
     {
       "cve_id": "CVE-2026-55114",
@@ -7053,18 +5674,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00468,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00468
     },
     {
       "cve_id": "CVE-2026-55115",
@@ -7096,18 +5706,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00468,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00468
     },
     {
       "cve_id": "CVE-2026-55116",
@@ -7217,18 +5816,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00412,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00412
     },
     {
       "cve_id": "CVE-2026-55117",
@@ -7260,18 +5848,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00561,
-      "nvd": {
-        "cvss_v3_score": 8.6,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00561
     },
     {
       "cve_id": "CVE-2026-55118",
@@ -7303,18 +5880,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00367,
-      "nvd": {
-        "cvss_v3_score": 8.3,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00367
     },
     {
       "cve_id": "CVE-2026-55119",
@@ -7346,18 +5912,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00386,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00386
     },
     {
       "cve_id": "CVE-2026-56841",
@@ -7389,18 +5944,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00493,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00493
     },
     {
       "cve_id": "CVE-2026-56842",
@@ -7432,18 +5976,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00362,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.00362
     },
     {
       "cve_id": "CVE-2026-77532",
@@ -7475,18 +6008,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00271,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-122"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00271
     },
     {
       "cve_id": "CVE-2026-77533",
@@ -7518,18 +6040,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-77534",
@@ -7717,18 +6228,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00468,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00468
     },
     {
       "cve_id": "CVE-2026-77535",
@@ -7760,18 +6260,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01294,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01294
     },
     {
       "cve_id": "CVE-2026-77536",
@@ -7959,18 +6448,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00417,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00417
     },
     {
       "cve_id": "CVE-2026-77537",
@@ -8002,18 +6480,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01635,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01635
     },
     {
       "cve_id": "CVE-2026-77538",
@@ -8045,18 +6512,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00392,
-      "nvd": {
-        "cvss_v3_score": 8.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00392
     },
     {
       "cve_id": "CVE-2026-77539",
@@ -8088,18 +6544,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01294,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01294
     },
     {
       "cve_id": "CVE-2026-77540",
@@ -8131,18 +6576,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01294,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01294
     },
     {
       "cve_id": "CVE-2026-77541",
@@ -8174,18 +6608,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00462,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00462
     },
     {
       "cve_id": "CVE-2026-77542",
@@ -8217,18 +6640,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01294,
-      "nvd": {
-        "cvss_v3_score": 9.1,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01294
     },
     {
       "cve_id": "CVE-2026-77543",
@@ -8260,18 +6672,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-77544",
@@ -8394,18 +6795,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00522,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00522
     },
     {
       "cve_id": "CVE-2026-77545",
@@ -8593,18 +6983,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00392,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-489"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00392
     },
     {
       "cve_id": "CVE-2026-77546",
@@ -8636,18 +7015,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-77547",
@@ -8679,18 +7047,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-77548",
@@ -8722,18 +7079,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01444,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01444
     },
     {
       "cve_id": "CVE-2026-77549",
@@ -8934,18 +7280,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00512,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-93"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00512
     },
     {
       "cve_id": "CVE-2026-77550",
@@ -9146,18 +7481,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00801,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-93"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00801
     },
     {
       "cve_id": "CVE-2026-77551",
@@ -9189,18 +7513,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00373,
-      "nvd": {
-        "cvss_v3_score": 9.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00373
     },
     {
       "cve_id": "CVE-2026-77552",
@@ -9232,18 +7545,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01635,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01635
     },
     {
       "cve_id": "CVE-2026-77553",
@@ -9275,18 +7577,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00468,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00468
     },
     {
       "cve_id": "CVE-2026-77554",
@@ -9318,18 +7609,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.01635,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.01635
     },
     {
       "cve_id": "CVE-2026-77555",
@@ -9452,18 +7732,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0046,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.0046
     },
     {
       "cve_id": "CVE-2026-77556",
@@ -9586,18 +7855,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00522,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-125"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00522
     },
     {
       "cve_id": "CVE-2026-77557",
@@ -9629,18 +7887,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00548,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00548
     },
     {
       "cve_id": "CVE-2026-77558",
@@ -9763,18 +8010,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.00522,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-125"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.00522
     },
     {
       "cve_id": "CVE-2026-95861",
@@ -9897,18 +8133,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0046,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-674"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.0046
     },
     {
       "cve_id": "CVE-2026-95862",
@@ -10031,18 +8256,7 @@
         "vendor:ubiquiti inc"
       ],
       "active_threat": false,
-      "probability_score": 0.0046,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 0,
-        "reference_count": 1
-      }
+      "probability_score": 0.0046
     }
   ]
 }
