@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-22T15:25:12+00:00`
+Generated: `2026-10-22T19:27:36+00:00`
 
 ## Executive Summary
 
@@ -38,11 +38,11 @@ Top critical items:
 
 ## Summary
 
-- Total items: **29021**
-- Watchlist hits: **28712**
+- Total items: **30118**
+- Watchlist hits: **29809**
 - CISA KEVs: **834**
-- Exploit Intel (PoC): **1005**
-- Exploit Intel + Watchlist (CRITICAL): **696**
+- Exploit Intel (PoC): **1010**
+- Exploit Intel + Watchlist (CRITICAL): **701**
 
 ## Top Findings (max 200)
 
@@ -79,6 +79,7 @@ Top critical items:
 | [CVE-2022-22536](https://www.cve.org/CVERecord?id=CVE-2022-22536) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-08 | 0.979 | 10.0 | ✅ | SAP NetWeaver Application Server ABAP, SAP NetWeaver Application Server Java, ABAP Platform, SAP Content Server 7.53 and SAP Web Dispatcher are vulnerable for … |
 | [CVE-2022-22963](https://www.cve.org/CVERecord?id=CVE-2022-22963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-15 | 0.999 | 9.8 | ✅ | In Spring Cloud Function versions 3.1.6, 3.2.2 and older unsupported versions, when using routing functionality it is possible for a user to provide a speciall… |
 | [CVE-2024-27198](https://www.cve.org/CVERecord?id=CVE-2024-27198) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-28 | 0.999 | 9.8 | ✅ | In JetBrains TeamCity before 2023.11.4 authentication bypass allowing to perform admin actions was possible |
+| [CVE-2025-24813](https://www.cve.org/CVERecord?id=CVE-2025-24813) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-04-22 | 0.999 | 9.8 | ✅ | Path Equivalence: 'file.Name' (Internal Dot) leading to Remote Code Execution and/or Information disclosure and/or malicious content added to uploaded files vi… |
 | [CVE-2022-1040](https://www.cve.org/CVERecord?id=CVE-2022-1040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-04-21 | 0.998 | 9.8 | ✅ | An authentication bypass vulnerability in the User Portal and Webadmin allows a remote attacker to execute code in Sophos Firewall version v18.5 MR3 and older. |
 | [CVE-2023-3519](https://www.cve.org/CVERecord?id=CVE-2023-3519) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-09 | 0.997 | 9.8 | ✅ | Unauthenticated remote code execution |
 | [CVE-2025-61882](https://www.cve.org/CVERecord?id=CVE-2025-61882) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-10-27 | 0.997 | 9.8 | ✅ | Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: BI Publisher Integration).  Supported versions that are affect… |
@@ -223,6 +224,7 @@ Top critical items:
 | [CVE-2023-35081](https://www.cve.org/CVERecord?id=CVE-2023-35081) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-21 | 0.636 | 7.2 | ✅ | A path traversal vulnerability in Ivanti EPMM versions (11.10.x < 11.10.0.3,  11.9.x < 11.9.1.2 and 11.8.x < 11.8.1.2) allows an authenticated administrator to… |
 | [CVE-2024-29988](https://www.cve.org/CVERecord?id=CVE-2024-29988) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-21 | 0.452 | 8.8 | ✅ | SmartScreen Prompt Security Feature Bypass Vulnerability |
 | [CVE-2025-20393](https://www.cve.org/CVERecord?id=CVE-2025-20393) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-24 | 0.324 | 10.0 | ✅ | A vulnerability in the Spam Quarantine feature of Cisco AsyncOS Software for Cisco Secure Email Gateway and Cisco Secure Email and Web Manager could allow an u… |
+| [CVE-2025-43300](https://www.cve.org/CVERecord?id=CVE-2025-43300) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-11 | 0.320 | 10.0 | ✅ | An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 15.8.5 and iPadOS 15.8.5, iOS 16.7.12 and iPadOS 16.7.12, … |
 | [CVE-2022-21971](https://www.cve.org/CVERecord?id=CVE-2022-21971) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-08 | 0.538 | 7.8 | ✅ | Windows Runtime Remote Code Execution Vulnerability |
 | [CVE-2024-9380](https://www.cve.org/CVERecord?id=CVE-2024-9380) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-30 | 0.597 | 7.2 | ✅ | An OS command injection vulnerability in the admin web console of Ivanti CSA before version 5.0.2 allows a remote authenticated attacker with admin privileges … |
 | [CVE-2026-56290](https://www.cve.org/CVERecord?id=CVE-2026-56290) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-10 | 0.309 | 10.0 | ✅ | Joomla Extension - joomlack.fr - Unauthenticated file upload in Page Builder CK extension < 3.6.0 - The Joomla extension Page Builder CK is vulnerable to an un… |
@@ -241,13 +243,11 @@ Top critical items:
 | [CVE-2024-38094](https://www.cve.org/CVERecord?id=CVE-2024-38094) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-11-12 | 0.509 | 7.2 | ✅ | Microsoft SharePoint Remote Code Execution Vulnerability |
 | [CVE-2023-24880](https://www.cve.org/CVERecord?id=CVE-2023-24880) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-04-04 | 0.780 | 4.4 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
 | [CVE-2025-58034](https://www.cve.org/CVERecord?id=CVE-2025-58034) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-25 | 0.547 | 6.7 | ✅ | An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] vulnerability in Fortinet FortiWeb 8.0.0 t… |
+| [CVE-2025-23006](https://www.cve.org/CVERecord?id=CVE-2025-23006) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-14 | 0.234 | 9.8 | ✅ | Pre-authentication deserialization of untrusted data vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) and Central Management… |
 | [CVE-2023-36874](https://www.cve.org/CVERecord?id=CVE-2023-36874) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-01 | 0.426 | 7.8 | ✅ | Windows Error Reporting Service Elevation of Privilege Vulnerability |
 | [CVE-2025-14733](https://www.cve.org/CVERecord?id=CVE-2025-14733) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-26 | 0.265 | 9.3 | ✅ | An Out-of-bounds Write vulnerability in the WatchGuard Fireware OS iked process may allow a remote unauthenticated attacker to execute arbitrary code. This vul… |
 | [CVE-2023-29336](https://www.cve.org/CVERecord?id=CVE-2023-29336) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-30 | 0.412 | 7.8 | ✅ | Win32k Elevation of Privilege Vulnerability |
 | [CVE-2023-20118](https://www.cve.org/CVERecord?id=CVE-2023-20118) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-24 | 0.541 | 6.5 | ✅ | A vulnerability in the web-based management interface of Cisco Small Business Routers RV016, RV042, RV042G, RV082, RV320, and RV325 Routers could allow an auth… |
-| [CVE-2022-21999](https://www.cve.org/CVERecord?id=CVE-2022-21999) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-04-15 | 0.410 | 7.8 | ✅ | Windows Print Spooler Elevation of Privilege Vulnerability |
-| [CVE-2025-20352](https://www.cve.org/CVERecord?id=CVE-2025-20352) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-10-20 | 0.415 | 7.7 | ✅ | A vulnerability in the Simple Network Management Protocol (SNMP) subsystem of Cisco IOS Software and Cisco IOS XE Software could allow the following:   An a… |
-| [CVE-2025-0994](https://www.cve.org/CVERecord?id=CVE-2025-0994) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-28 | 0.311 | 8.6 | ✅ | Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This … |
 
 ## Recent Changes (Last 7 Days)
 
