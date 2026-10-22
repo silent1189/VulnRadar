@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T23:32:57+00:00",
+  "generated_at": "2026-10-22T04:41:02+00:00",
   "vendor": "mongodb",
-  "count": 108,
+  "count": 109,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -352,6 +352,38 @@
       ],
       "active_threat": false,
       "probability_score": 0.00236
+    },
+    {
+      "cve_id": "CVE-2026-113870",
+      "description": "MongoDB Compass improperly escapes certain BSON values when converting a stored view\u2019s aggregation pipeline into editable source. When a user connects to a MongoDB deployment containing a specially crafted view and opens that view for editing, the values can cause arbitrary code to execute with the privileges of the user running Compass.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "compass",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.7.0",
+              "lessThan": "1.49.15",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:compass",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-11933",
