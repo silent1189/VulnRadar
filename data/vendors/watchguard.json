@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-22T23:42:44+00:00",
+  "generated_at": "2026-10-23T04:43:21+00:00",
   "vendor": "watchguard",
-  "count": 75,
+  "count": 76,
   "items": [
     {
       "cve_id": "CVE-2024-1417",
@@ -803,6 +803,38 @@
       ],
       "active_threat": false,
       "probability_score": 0.00273
+    },
+    {
+      "cve_id": "CVE-2026-115253",
+      "description": "An incorrect permission assignment vulnerability in the WatchGuard Agent's log directory allows a local, authenticated non-administrative user to create, modify, append to, or delete the agent's log files and write other files into the directory. This allows an attacker to tamper with or destroy the agent's security logs and stage further local attacks by placing executable content in a directory owned by a privileged service.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "watchguard agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "1.25.14.0000"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:watchguard agent",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00096
     },
     {
       "cve_id": "CVE-2026-13043",

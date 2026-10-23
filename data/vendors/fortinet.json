@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-22T23:42:44+00:00",
+  "generated_at": "2026-10-23T04:43:21+00:00",
   "vendor": "fortinet",
-  "count": 242,
+  "count": 241,
   "items": [
     {
       "cve_id": "CVE-2022-22299",
@@ -3744,7 +3744,7 @@
     },
     {
       "cve_id": "CVE-2022-42476",
-      "description": "A relative path traversal vulnerability [CWE-23] in Fortinet FortiOS version 7.2.0 through 7.2.2, 7.0.0 through 7.0.8 and before 6.4.11, FortiProxy version 7.2.0 through 7.2.2 and 7.0.0 through 7.0.8 allows privileged VDOM administrators to escalate their privileges to super admin of the box via crafted CLI requests.",
+      "description": "A relative path traversal vulnerability [CWE-23] vulnerability in Fortinet FortiOS 7.2.0 through 7.2.3, FortiOS 7.0.0 through 7.0.8, FortiOS 6.4.0 through 6.4.11, FortiOS 6.2.0 through 6.2.12, FortiProxy 7.2.0 through 7.2.1, FortiProxy 7.0.0 through 7.0.7, FortiProxy 2.0.0 through 2.0.11, FortiProxy 1.2 all versions, FortiProxy 01.02 all versions, FortiProxy 1.1 all versions, FortiProxy 01.01 all versions allows privileged VDOM administrators to escalate their privileges to super admin of the box via crafted CLI requests.",
       "cvss_score": 7.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:X/RC:C",
@@ -3803,14 +3803,24 @@
             },
             {
               "versionType": "semver",
-              "version": "1.2.0",
+              "version": "1.2.1",
               "lessThanOrEqual": "1.2.13",
               "status": "affected"
             },
             {
+              "version": "01.02.00",
+              "status": "affected"
+            },
+            {
               "versionType": "semver",
-              "version": "1.1.0",
+              "version": "1.1.4",
               "lessThanOrEqual": "1.1.6",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.01.00",
+              "lessThanOrEqual": "01.01.03",
               "status": "affected"
             }
           ]
@@ -4139,22 +4149,11 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00654,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-264"
-        ],
-        "cpe_count": 7,
-        "reference_count": 2
-      }
+      "probability_score": 0.00654
     },
     {
       "cve_id": "CVE-2023-22640",
-      "description": "A out-of-bounds write in Fortinet FortiOS version 7.2.0 through 7.2.3, FortiOS version 7.0.0 through 7.0.10, FortiOS version 6.4.0 through 6.4.11, FortiOS version 6.2.0 through 6.2.13, FortiOS all versions 6.0,  FortiProxy version 7.2.0 through 7.2.1, FortiProxy version 7.0.0 through 7.0.7, FortiProxy all versions 2.0, FortiProxy all versions 1.2, FortiProxy all versions 1.1, FortiProxy all versions 1.0 allows an authenticated attacker to execute unauthorized code or commands via specifically crafted requests.",
+      "description": "A out-of-bounds write vulnerability in Fortinet FortiOS 7.2.0 through 7.2.3, FortiOS 7.0.0 through 7.0.10, FortiOS 6.4.0 through 6.4.11, FortiOS 6.2.0 through 6.2.13, FortiOS 6.0.0 through 6.0.16, FortiProxy 7.2.0 through 7.2.1, FortiProxy 7.0.0 through 7.0.7, FortiProxy 2.0 all versions, FortiProxy 01.02 all versions, FortiProxy 1.2 all versions, FortiProxy 01.01 all versions, FortiProxy 1.1 all versions, FortiProxy 01.00 all versions allows an authenticated attacker to execute unauthorized code or commands via specifically crafted requests.",
       "cvss_score": 7.1,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C",
@@ -4214,25 +4213,35 @@
             {
               "versionType": "semver",
               "version": "2.0.0",
-              "lessThanOrEqual": "2.0.12",
+              "lessThanOrEqual": "2.0.14",
               "status": "affected"
             },
             {
               "versionType": "semver",
-              "version": "1.2.0",
+              "version": "1.2.1",
               "lessThanOrEqual": "1.2.13",
               "status": "affected"
             },
             {
+              "version": "01.02.00",
+              "status": "affected"
+            },
+            {
               "versionType": "semver",
-              "version": "1.1.0",
+              "version": "1.1.4",
               "lessThanOrEqual": "1.1.6",
               "status": "affected"
             },
             {
               "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.7",
+              "version": "01.01.00",
+              "lessThanOrEqual": "01.01.03",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.00.00",
+              "lessThanOrEqual": "01.00.07",
               "status": "affected"
             }
           ]
@@ -4249,18 +4258,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.0089,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 9,
-        "reference_count": 2
-      }
+      "probability_score": 0.0089
     },
     {
       "cve_id": "CVE-2023-23777",
@@ -4304,18 +4302,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01322,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 4,
-        "reference_count": 2
-      }
+      "probability_score": 0.01322
     },
     {
       "cve_id": "CVE-2023-23780",
@@ -4359,19 +4346,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00792,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-121",
-          "CWE-787"
-        ],
-        "cpe_count": 3,
-        "reference_count": 2
-      }
+      "probability_score": 0.00792
     },
     {
       "cve_id": "CVE-2023-23782",
@@ -4433,19 +4408,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00192,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-122",
-          "CWE-787"
-        ],
-        "cpe_count": 4,
-        "reference_count": 2
-      }
+      "probability_score": 0.00192
     },
     {
       "cve_id": "CVE-2023-25602",
@@ -4531,19 +4494,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00192,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-121",
-          "CWE-787"
-        ],
-        "cpe_count": 6,
-        "reference_count": 2
-      }
+      "probability_score": 0.00192
     },
     {
       "cve_id": "CVE-2023-25605",
@@ -4575,18 +4526,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00906,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.00906
     },
     {
       "cve_id": "CVE-2023-25607",
@@ -4714,18 +4654,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01653,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 18,
-        "reference_count": 2
-      }
+      "probability_score": 0.01653
     },
     {
       "cve_id": "CVE-2023-25610",
@@ -5027,18 +4956,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.18331,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-124"
-        ],
-        "cpe_count": 29,
-        "reference_count": 1
-      }
+      "probability_score": 0.18331
     },
     {
       "cve_id": "CVE-2023-26205",
@@ -5088,18 +5006,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00576,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 6,
-        "reference_count": 2
-      }
+      "probability_score": 0.00576
     },
     {
       "cve_id": "CVE-2023-26210",
@@ -5220,18 +5127,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00478,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 21,
-        "reference_count": 2
-      }
+      "probability_score": 0.00478
     },
     {
       "cve_id": "CVE-2023-27995",
@@ -5263,18 +5159,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01141,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-1336"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.01141
     },
     {
       "cve_id": "CVE-2023-27997",
@@ -5439,18 +5324,6 @@
         "requiredAction": "Apply updates per vendor instructions.",
         "dueDate": "2023-07-04",
         "knownRansomwareCampaignUse": "Known"
-      },
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-122",
-          "CWE-787"
-        ],
-        "cpe_count": 25,
-        "reference_count": 3
       }
     },
     {
@@ -5487,22 +5360,11 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00498,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.00498
     },
     {
       "cve_id": "CVE-2023-29180",
-      "description": "A null pointer dereference in Fortinet FortiOS version 7.2.0 through 7.2.4, 7.0.0 through 7.0.11, 6.4.0 through 6.4.12, 6.2.0 through 6.2.14, 6.0.0 through 6.0.16, FortiProxy 7.2.0 through 7.2.3, 7.0.0 through 7.0.10, 2.0.0 through 2.0.12, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7 allows attacker to denial of service via specially crafted HTTP requests.",
+      "description": "A null pointer dereference vulnerability in Fortinet FortiOS 7.2.0 through 7.2.4, FortiOS 7.0.0 through 7.0.11, FortiOS 6.4.0 through 6.4.12, FortiOS 6.2.0 through 6.2.14, FortiOS 6.0.0 through 6.0.16, FortiProxy 7.2.0 through 7.2.3, FortiProxy 7.0.0 through 7.0.10, FortiProxy 2.0.0 through 2.0.12, FortiProxy 01.02 all versions, FortiProxy 1.2 all versions, FortiProxy 01.01 all versions, FortiProxy 1.1 all versions, FortiProxy 01.00 all versions allows attacker to denial of service via specially crafted HTTP requests.",
       "cvss_score": 7.3,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:F/RL:U/RC:C",
@@ -5567,20 +5429,30 @@
             },
             {
               "versionType": "semver",
-              "version": "1.2.0",
+              "version": "1.2.1",
               "lessThanOrEqual": "1.2.13",
               "status": "affected"
             },
             {
+              "version": "01.02.00",
+              "status": "affected"
+            },
+            {
               "versionType": "semver",
-              "version": "1.1.0",
+              "version": "1.1.4",
               "lessThanOrEqual": "1.1.6",
               "status": "affected"
             },
             {
               "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.7",
+              "version": "01.01.00",
+              "lessThanOrEqual": "01.01.03",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.00.00",
+              "lessThanOrEqual": "01.00.07",
               "status": "affected"
             }
           ]
@@ -5597,38 +5469,15 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.0261,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-476"
-        ],
-        "cpe_count": 11,
-        "reference_count": 2
-      }
+      "probability_score": 0.0261
     },
     {
       "cve_id": "CVE-2023-29181",
-      "description": "A use of externally-controlled format string in Fortinet FortiOS 7.2.0 through 7.2.4, 7.0.0 through 7.0.11, 6.4.0 through 6.4.12, 6.2.0 through 6.2.14, 6.0.0 through 6.0.16, FortiProxy 7.2.0 through 7.2.4, 7.0.0 through 7.0.10, 2.0.0 through 2.0.12, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7, FortiPAM 1.0.0 through 1.0.3 allows attacker to execute unauthorized code or commands via specially crafted command.",
+      "description": "A use of externally-controlled format string vulnerability in Fortinet FortiOS 7.2.0 through 7.2.4, FortiOS 7.0.0 through 7.0.11, FortiOS 6.4.0 through 6.4.12, FortiOS 6.2.0 through 6.2.14, FortiOS 6.0.0 through 6.0.16, FortiOS 5.6 all versions, FortiOS 5.4 all versions, FortiOS 5.2 all versions, FortiOS 5.0 all versions, FortiOS 4.3 all versions, FortiOS 4.2 all versions, FortiOS 4.1 all versions, FortiOS 4.0 all versions, FortiPAM 1.0 all versions, FortiProxy 7.2.0 through 7.2.4, FortiProxy 7.0.0 through 7.0.10, FortiProxy 2.0.0 through 2.0.12, FortiProxy 01.02 all versions, FortiProxy 1.2 all versions, FortiProxy 01.01 all versions, FortiProxy 1.1 all versions, FortiProxy 01.00 all versions allows attacker to execute unauthorized code or commands via specially crafted command.",
       "cvss_score": 8.3,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C",
       "affected": [
-        {
-          "vendor": "fortinet",
-          "product": "fortipam",
-          "versions": [
-            {
-              "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.3",
-              "status": "affected"
-            }
-          ]
-        },
         {
           "vendor": "fortinet",
           "product": "fortios",
@@ -5715,6 +5564,18 @@
         },
         {
           "vendor": "fortinet",
+          "product": "fortipam",
+          "versions": [
+            {
+              "versionType": "semver",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.0.3",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "fortinet",
           "product": "fortiproxy",
           "versions": [
             {
@@ -5737,20 +5598,30 @@
             },
             {
               "versionType": "semver",
-              "version": "1.2.0",
+              "version": "1.2.1",
               "lessThanOrEqual": "1.2.13",
               "status": "affected"
             },
             {
+              "version": "01.02.00",
+              "status": "affected"
+            },
+            {
               "versionType": "semver",
-              "version": "1.1.0",
+              "version": "1.1.4",
               "lessThanOrEqual": "1.1.6",
               "status": "affected"
             },
             {
               "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.7",
+              "version": "01.01.00",
+              "lessThanOrEqual": "01.01.03",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.00.00",
+              "lessThanOrEqual": "01.00.07",
               "status": "affected"
             }
           ]
@@ -5768,18 +5639,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00724,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-134"
-        ],
-        "cpe_count": 8,
-        "reference_count": 2
-      }
+      "probability_score": 0.00724
     },
     {
       "cve_id": "CVE-2023-29183",
@@ -5848,18 +5708,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01313,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 6,
-        "reference_count": 2
-      }
+      "probability_score": 0.01313
     },
     {
       "cve_id": "CVE-2023-33299",
@@ -5937,18 +5786,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.24296,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-502"
-        ],
-        "cpe_count": 12,
-        "reference_count": 2
-      }
+      "probability_score": 0.24296
     },
     {
       "cve_id": "CVE-2023-33303",
@@ -5980,18 +5818,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00518,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-613"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.00518
     },
     {
       "cve_id": "CVE-2023-33308",
@@ -6048,19 +5875,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02121,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-121",
-          "CWE-787"
-        ],
-        "cpe_count": 6,
-        "reference_count": 2
-      }
+      "probability_score": 0.02121
     },
     {
       "cve_id": "CVE-2023-34984",
@@ -6110,18 +5925,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00733,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-693"
-        ],
-        "cpe_count": 4,
-        "reference_count": 2
-      }
+      "probability_score": 0.00733
     },
     {
       "cve_id": "CVE-2023-34985",
@@ -6159,18 +5963,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-34986",
@@ -6208,18 +6001,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-34987",
@@ -6257,18 +6039,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-34988",
@@ -6306,18 +6077,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-34989",
@@ -6355,18 +6115,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-34990",
@@ -6404,19 +6153,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.24751,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23",
-          "CWE-94"
-        ],
-        "cpe_count": 2,
-        "reference_count": 1
-      }
+      "probability_score": 0.24751
     },
     {
       "cve_id": "CVE-2023-34991",
@@ -6470,18 +6207,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.28783,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 9,
-        "reference_count": 2
-      }
+      "probability_score": 0.28783
     },
     {
       "cve_id": "CVE-2023-34992",
@@ -6535,18 +6261,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.81698,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 8,
-        "reference_count": 2
-      }
+      "probability_score": 0.81698
     },
     {
       "cve_id": "CVE-2023-34993",
@@ -6584,18 +6299,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.21321,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.21321
     },
     {
       "cve_id": "CVE-2023-36547",
@@ -6633,18 +6337,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-36548",
@@ -6682,18 +6375,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-36549",
@@ -6731,18 +6413,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02487,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02487
     },
     {
       "cve_id": "CVE-2023-36550",
@@ -6780,18 +6451,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02486,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.02486
     },
     {
       "cve_id": "CVE-2023-36553",
@@ -6863,18 +6523,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01877,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 17,
-        "reference_count": 2
-      }
+      "probability_score": 0.01877
     },
     {
       "cve_id": "CVE-2023-36554",
@@ -6928,18 +6577,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00765,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 5,
-        "reference_count": 2
-      }
+      "probability_score": 0.00765
     },
     {
       "cve_id": "CVE-2023-36556",
@@ -6995,18 +6633,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01092,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 7,
-        "reference_count": 2
-      }
+      "probability_score": 0.01092
     },
     {
       "cve_id": "CVE-2023-36639",
@@ -7102,18 +6729,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01059,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-134"
-        ],
-        "cpe_count": 10,
-        "reference_count": 2
-      }
+      "probability_score": 0.01059
     },
     {
       "cve_id": "CVE-2023-37931",
@@ -7157,18 +6773,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00821,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 2,
-        "reference_count": 1
-      }
+      "probability_score": 0.00821
     },
     {
       "cve_id": "CVE-2023-37933",
@@ -7246,18 +6851,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00327,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 3,
-        "reference_count": 1
-      }
+      "probability_score": 0.00327
     },
     {
       "cve_id": "CVE-2023-37936",
@@ -7317,19 +6911,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00987,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-321",
-          "CWE-798"
-        ],
-        "cpe_count": 5,
-        "reference_count": 1
-      }
+      "probability_score": 0.00987
     },
     {
       "cve_id": "CVE-2023-37937",
@@ -7389,18 +6971,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00528,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 1
-      }
+      "probability_score": 0.00528
     },
     {
       "cve_id": "CVE-2023-40714",
@@ -7448,18 +7019,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00745,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
+      "probability_score": 0.00745
     },
     {
       "cve_id": "CVE-2023-40723",
@@ -7555,22 +7115,11 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00363,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-200"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
+      "probability_score": 0.00363
     },
     {
       "cve_id": "CVE-2023-41677",
-      "description": "A insufficiently protected credentials in Fortinet FortiProxy 7.4.0, 7.2.0 through 7.2.6, 7.0.0 through 7.0.12, 2.0.0 through 2.0.13, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7, Fortinet FortiOS 7.4.0 through 7.4.1, 7.2.0 through 7.2.6, 7.0.0 through 7.0.12, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, 6.0.0 through 6.0.17 allows attacker to execute unauthorized code or commands via targeted social engineering attack",
+      "description": "A insufficiently protected credentials vulnerability in Fortinet FortiOS 7.4.0 through 7.4.1, FortiOS 7.2.0 through 7.2.6, FortiOS 7.0.0 through 7.0.12, FortiOS 6.4.0 through 6.4.14, FortiOS 6.2.0 through 6.2.15, FortiOS 6.0 all versions, FortiProxy 7.4.0 through 7.4.1, FortiProxy 7.2.0 through 7.2.7, FortiProxy 7.0.0 through 7.0.13, FortiProxy 2.0 all versions, FortiProxy 01.02 all versions, FortiProxy 1.2 all versions, FortiProxy 01.01 all versions, FortiProxy 1.1 all versions, FortiProxy 01.00 all versions allows attacker to execute unauthorized code or commands via targeted social engineering attack",
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C",
@@ -7647,20 +7196,30 @@
             },
             {
               "versionType": "semver",
-              "version": "1.2.0",
+              "version": "1.2.1",
               "lessThanOrEqual": "1.2.13",
               "status": "affected"
             },
             {
+              "version": "01.02.00",
+              "status": "affected"
+            },
+            {
               "versionType": "semver",
-              "version": "1.1.0",
+              "version": "1.1.4",
               "lessThanOrEqual": "1.1.6",
               "status": "affected"
             },
             {
               "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.7",
+              "version": "01.01.00",
+              "lessThanOrEqual": "01.01.03",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.00.00",
+              "lessThanOrEqual": "01.00.07",
               "status": "affected"
             }
           ]
@@ -7677,18 +7236,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00753,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-522"
-        ],
-        "cpe_count": 8,
-        "reference_count": 2
-      }
+      "probability_score": 0.00753
     },
     {
       "cve_id": "CVE-2023-41678",
@@ -7739,18 +7287,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01068,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-415"
-        ],
-        "cpe_count": 12,
-        "reference_count": 2
-      }
+      "probability_score": 0.01068
     },
     {
       "cve_id": "CVE-2023-41679",
@@ -7800,18 +7337,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00654,
-      "nvd": {
-        "cvss_v3_score": 9.6,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 7,
-        "reference_count": 2
-      }
+      "probability_score": 0.00654
     },
     {
       "cve_id": "CVE-2023-41680",
@@ -7883,18 +7409,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.0064,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 8,
-        "reference_count": 2
-      }
+      "probability_score": 0.0064
     },
     {
       "cve_id": "CVE-2023-41681",
@@ -7966,18 +7481,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00475,
-      "nvd": {
-        "cvss_v3_score": 6.1,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 8,
-        "reference_count": 2
-      }
+      "probability_score": 0.00475
     },
     {
       "cve_id": "CVE-2023-41682",
@@ -8049,18 +7553,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.0108,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 6,
-        "reference_count": 2
-      }
+      "probability_score": 0.0108
     },
     {
       "cve_id": "CVE-2023-41840",
@@ -8096,18 +7589,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00313,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-426"
-        ],
-        "cpe_count": 3,
-        "reference_count": 2
-      }
+      "probability_score": 0.00313
     },
     {
       "cve_id": "CVE-2023-41841",
@@ -8145,18 +7627,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01071,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-285"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.01071
     },
     {
       "cve_id": "CVE-2023-41843",
@@ -8228,18 +7699,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00618,
-      "nvd": {
-        "cvss_v3_score": 5.4,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-79"
-        ],
-        "cpe_count": 8,
-        "reference_count": 2
-      }
+      "probability_score": 0.00618
     },
     {
       "cve_id": "CVE-2023-42783",
@@ -8293,18 +7753,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00898,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23"
-        ],
-        "cpe_count": 9,
-        "reference_count": 2
-      }
+      "probability_score": 0.00898
     },
     {
       "cve_id": "CVE-2023-42788",
@@ -8393,18 +7842,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01553,
-      "nvd": {
-        "cvss_v3_score": 6.7,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 10,
-        "reference_count": 4
-      }
+      "probability_score": 0.01553
     },
     {
       "cve_id": "CVE-2023-42789",
@@ -8500,18 +7938,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.03306,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 10,
-        "reference_count": 2
-      }
+      "probability_score": 0.03306
     },
     {
       "cve_id": "CVE-2023-42790",
@@ -8596,18 +8023,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01083,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-121"
-        ],
-        "cpe_count": 9,
-        "reference_count": 2
-      }
+      "probability_score": 0.01083
     },
     {
       "cve_id": "CVE-2023-42791",
@@ -8696,19 +8112,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.03987,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-23",
-          "CWE-22"
-        ],
-        "cpe_count": 5,
-        "reference_count": 2
-      }
+      "probability_score": 0.03987
     },
     {
       "cve_id": "CVE-2023-44250",
@@ -8757,18 +8161,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00899,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-269"
-        ],
-        "cpe_count": 5,
-        "reference_count": 2
-      }
+      "probability_score": 0.00899
     },
     {
       "cve_id": "CVE-2023-44251",
@@ -8806,18 +8199,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00844,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22"
-        ],
-        "cpe_count": 4,
-        "reference_count": 2
-      }
+      "probability_score": 0.00844
     },
     {
       "cve_id": "CVE-2023-44252",
@@ -8855,22 +8237,11 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00724,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-287"
-        ],
-        "cpe_count": 4,
-        "reference_count": 2
-      }
+      "probability_score": 0.00724
     },
     {
       "cve_id": "CVE-2023-45581",
-      "description": "An improper privilege management vulnerability [CWE-269] in Fortinet FortiClientEMS version 7.2.0 through 7.2.2 and before 7.0.10 allows an\u00a0Site administrator with Super Admin privileges to perform global administrative operations affecting other sites via crafted HTTP or HTTPS requests.",
+      "description": "An improper privilege management vulnerability [CWE-269] vulnerability in Fortinet FortiClientEMS 7.2.0 through 7.2.2, FortiClientEMS 7.0.6 through 7.0.10, FortiClientEMS 7.0.0 through 7.0.4, FortiClientEMS 6.4 all versions, FortiClientEMS 06.02 all versions, FortiClientEMS 6.2 all versions allows an\u00a0Site administrator with Super Admin privileges to perform global administrative operations affecting other sites via crafted HTTP or HTTPS requests.",
       "cvss_score": 7.9,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:U",
@@ -8917,8 +8288,14 @@
             },
             {
               "versionType": "semver",
-              "version": "6.2.0",
+              "version": "6.2.3",
               "lessThanOrEqual": "6.2.4",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "06.02.00",
+              "lessThanOrEqual": "06.02.02",
               "status": "affected"
             }
           ]
@@ -8934,18 +8311,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00823,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-269"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.00823
     },
     {
       "cve_id": "CVE-2023-45588",
@@ -8983,18 +8349,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.00275,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-73"
-        ],
-        "cpe_count": 2,
-        "reference_count": 1
-      }
+      "probability_score": 0.00275
     },
     {
       "cve_id": "CVE-2023-45590",
@@ -9036,22 +8391,11 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01524,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-94"
-        ],
-        "cpe_count": 4,
-        "reference_count": 2
-      }
+      "probability_score": 0.01524
     },
     {
       "cve_id": "CVE-2023-47534",
-      "description": "A improper neutralization of formula elements in a csv file in Fortinet FortiClientEMS version 7.2.0 through 7.2.2, 7.0.0 through 7.0.10, 6.4.0 through 6.4.9, 6.2.0 through 6.2.9, 6.0.0 through 6.0.8 allows attacker to execute unauthorized code or commands via specially crafted packets.",
+      "description": "A improper neutralization of formula elements in a csv file vulnerability in Fortinet FortiClientEMS 7.2.0 through 7.2.2, FortiClientEMS 7.0.0 through 7.0.10, FortiClientEMS 6.4 all versions, FortiClientEMS 06.02 all versions, FortiClientEMS 6.2 all versions, FortiClientEMS 06.00 all versions, FortiClientEMS 6.0 all versions allows attacker to execute unauthorized code or commands via specially crafted packets.",
       "cvss_score": 8.7,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H/E:P/RL:U/RC:R",
@@ -9092,8 +8436,14 @@
             },
             {
               "versionType": "semver",
-              "version": "6.2.0",
+              "version": "6.2.3",
               "lessThanOrEqual": "6.2.4",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "06.02.00",
+              "lessThanOrEqual": "06.02.02",
               "status": "affected"
             },
             {
@@ -9102,8 +8452,8 @@
             },
             {
               "versionType": "semver",
-              "version": "6.0.0",
-              "lessThanOrEqual": "6.0.6",
+              "version": "06.00.00",
+              "lessThanOrEqual": "06.00.06",
               "status": "affected"
             }
           ]
@@ -9119,18 +8469,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01051,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-1236"
-        ],
-        "cpe_count": 5,
-        "reference_count": 2
-      }
+      "probability_score": 0.01051
     },
     {
       "cve_id": "CVE-2023-47539",
@@ -9160,18 +8499,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01058,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-284"
-        ],
-        "cpe_count": 1,
-        "reference_count": 1
-      }
+      "probability_score": 0.01058
     },
     {
       "cve_id": "CVE-2023-48782",
@@ -9203,18 +8531,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.02661,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.02661
     },
     {
       "cve_id": "CVE-2023-48788",
@@ -9263,17 +8580,6 @@
         "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
         "dueDate": "2024-04-15",
         "knownRansomwareCampaignUse": "Known"
-      },
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 2,
-        "reference_count": 3
       }
     },
     {
@@ -9328,18 +8634,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.0024,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-352"
-        ],
-        "cpe_count": 4,
-        "reference_count": 1
-      }
+      "probability_score": 0.0024
     },
     {
       "cve_id": "CVE-2023-48791",
@@ -9375,18 +8670,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.01265,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-77"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.01265
     },
     {
       "cve_id": "CVE-2023-50178",
@@ -9440,18 +8724,7 @@
         "vendor:fortinet"
       ],
       "active_threat": false,
-      "probability_score": 0.002,
-      "nvd": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-295"
-        ],
-        "cpe_count": 6,
-        "reference_count": 2
-      }
+      "probability_score": 0.002
     },
     {
       "cve_id": "CVE-2024-21755",
@@ -9605,59 +8878,11 @@
     },
     {
       "cve_id": "CVE-2024-21762",
-      "description": "A out-of-bounds write in Fortinet FortiOS versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.6, 7.0.0 through 7.0.13, 6.4.0 through 6.4.14, 6.2.0 through 6.2.15, 6.0.0 through 6.0.17, FortiProxy versions 7.4.0 through 7.4.2, 7.2.0 through 7.2.8, 7.0.0 through 7.0.14, 2.0.0 through 2.0.13, 1.2.0 through 1.2.13, 1.1.0 through 1.1.6, 1.0.0 through 1.0.7 allows attacker to execute unauthorized code or commands via specifically crafted requests",
+      "description": "A out-of-bounds write vulnerability in Fortinet FortiOS 7.4.0 through 7.4.2, FortiOS 7.2.0 through 7.2.6, FortiOS 7.0.0 through 7.0.13, FortiOS 6.4.0 through 6.4.14, FortiOS 6.2.0 through 6.2.15, FortiOS 6.0 all versions, FortiProxy 7.4.0 through 7.4.2, FortiProxy 7.2.0 through 7.2.8, FortiProxy 7.0.0 through 7.0.14, FortiProxy 2.0.0 through 2.0.13, FortiProxy 01.02 all versions, FortiProxy 1.2 all versions, FortiProxy 01.01 all versions, FortiProxy 1.1 all versions, FortiProxy 01.00 all versions allows attacker to execute unauthorized code or commands via specifically crafted requests",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:W/RC:C",
       "affected": [
-        {
-          "vendor": "fortinet",
-          "product": "fortiproxy",
-          "versions": [
-            {
-              "versionType": "semver",
-              "version": "7.4.0",
-              "lessThanOrEqual": "7.4.2",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.2.0",
-              "lessThanOrEqual": "7.2.8",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.0.0",
-              "lessThanOrEqual": "7.0.14",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "2.0.0",
-              "lessThanOrEqual": "2.0.13",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "1.2.0",
-              "lessThanOrEqual": "1.2.13",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "1.1.0",
-              "lessThanOrEqual": "1.1.6",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.7",
-              "status": "affected"
-            }
-          ]
-        },
         {
           "vendor": "fortinet",
           "product": "fortios",
@@ -9695,7 +8920,65 @@
             {
               "versionType": "semver",
               "version": "6.0.0",
-              "lessThanOrEqual": "6.0.17",
+              "lessThanOrEqual": "6.0.18",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "fortinet",
+          "product": "fortiproxy",
+          "versions": [
+            {
+              "versionType": "semver",
+              "version": "7.4.0",
+              "lessThanOrEqual": "7.4.2",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.2.0",
+              "lessThanOrEqual": "7.2.8",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "7.0.0",
+              "lessThanOrEqual": "7.0.14",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.0.13",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "1.2.1",
+              "lessThanOrEqual": "1.2.13",
+              "status": "affected"
+            },
+            {
+              "version": "01.02.00",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "1.1.4",
+              "lessThanOrEqual": "1.1.6",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.01.00",
+              "lessThanOrEqual": "01.01.03",
+              "status": "affected"
+            },
+            {
+              "versionType": "semver",
+              "version": "01.00.00",
+              "lessThanOrEqual": "01.00.07",
               "status": "affected"
             }
           ]
@@ -11976,141 +11259,6 @@
         "dueDate": "2024-11-13",
         "knownRansomwareCampaignUse": "Unknown"
       }
-    },
-    {
-      "cve_id": "CVE-2024-48884",
-      "description": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiManager 7.6.0 through 7.6.1, FortiManager 7.4.1 through 7.4.3, FortiManager Cloud 7.4.1 through 7.4.3, FortiOS 7.6.0, FortiOS 7.4.0 through 7.4.4, FortiOS 7.2.0 through 7.2.9, FortiOS 7.0.0 through 7.0.15, FortiOS 6.4.0 through 6.4.15, FortiProxy 7.4.0 through 7.4.5, FortiProxy 7.2.0 through 7.2.11, FortiProxy 7.0.0 through 7.0.18, FortiProxy 2.0 all versions, FortiProxy 1.2 all versions, FortiProxy 1.1 all versions, FortiProxy 1.0 all versions may allow a remote authenticated attacker with access to the security fabric interface and port to write arbitrary files or a remote unauthenticated attacker to delete an arbitrary folder",
-      "cvss_score": 7.1,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
-      "affected": [
-        {
-          "vendor": "fortinet",
-          "product": "fortimanager",
-          "versions": [
-            {
-              "versionType": "semver",
-              "version": "7.6.0",
-              "lessThanOrEqual": "7.6.1",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.4.1",
-              "lessThanOrEqual": "7.4.3",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "fortinet",
-          "product": "fortiproxy",
-          "versions": [
-            {
-              "versionType": "semver",
-              "version": "7.4.0",
-              "lessThanOrEqual": "7.4.5",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.2.0",
-              "lessThanOrEqual": "7.2.11",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.0.0",
-              "lessThanOrEqual": "7.0.18",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "2.0.0",
-              "lessThanOrEqual": "2.0.14",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "1.2.0",
-              "lessThanOrEqual": "1.2.13",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "1.1.0",
-              "lessThanOrEqual": "1.1.6",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "1.0.0",
-              "lessThanOrEqual": "1.0.7",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "fortinet",
-          "product": "fortios",
-          "versions": [
-            {
-              "version": "7.6.0",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.4.0",
-              "lessThanOrEqual": "7.4.4",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.2.0",
-              "lessThanOrEqual": "7.2.9",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.0.0",
-              "lessThanOrEqual": "7.0.15",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "6.4.0",
-              "lessThanOrEqual": "6.4.15",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "fortinet",
-          "product": "fortimanager cloud",
-          "versions": [
-            {
-              "versionType": "semver",
-              "version": "7.4.1",
-              "lessThanOrEqual": "7.4.3",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:fortimanager",
-        "product:fortimanager cloud",
-        "product:fortios",
-        "product:fortiproxy",
-        "vendor:fortinet"
-      ],
-      "active_threat": false,
-      "probability_score": 0.15212
     },
     {
       "cve_id": "CVE-2024-48886",

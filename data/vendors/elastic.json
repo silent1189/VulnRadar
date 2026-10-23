@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-22T23:42:44+00:00",
+  "generated_at": "2026-10-23T04:43:21+00:00",
   "vendor": "elastic",
-  "count": 65,
+  "count": 63,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -209,88 +209,6 @@
       }
     },
     {
-      "cve_id": "CVE-2023-31414",
-      "description": "Kibana versions 8.0.0 through 8.7.0 contain an arbitrary code execution flaw. An attacker with write access to Kibana yaml or env configuration could add a specific payload that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "elastic",
-          "product": "kibana",
-          "versions": [
-            {
-              "version": "versions 8.0.0 through 8.7.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:kibana",
-        "vendor:elastic"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00603,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-94"
-        ],
-        "cpe_count": 1,
-        "reference_count": 4
-      }
-    },
-    {
-      "cve_id": "CVE-2023-31415",
-      "description": "Kibana version 8.7.0 contains an arbitrary code execution flaw. An attacker with All privileges to the Uptime/Synthetics feature could send a request that will attempt to execute JavaScript code. This could lead to the attacker executing arbitrary commands on the host system with permissions of the Kibana process.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "elastic",
-          "product": "kibana",
-          "versions": [
-            {
-              "version": "version 8.7.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:kibana",
-        "vendor:elastic"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00957,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-94"
-        ],
-        "cpe_count": 1,
-        "reference_count": 4
-      }
-    },
-    {
       "cve_id": "CVE-2023-31418",
       "description": "An issue has been identified with how Elasticsearch handled incoming requests on the HTTP layer. An unauthenticated user could force an Elasticsearch node to exit with an OutOfMemory error by sending a moderate number of malformed HTTP requests. The issue was identified by Elastic Engineering and we have no indication that the issue is known or that it is being exploited in the wild.",
       "cvss_score": 7.5,
@@ -330,18 +248,7 @@
         "vendor:elastic"
       ],
       "active_threat": false,
-      "probability_score": 0.0205,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-400"
-        ],
-        "cpe_count": 4,
-        "reference_count": 6
-      }
+      "probability_score": 0.0205
     },
     {
       "cve_id": "CVE-2023-31422",
@@ -371,18 +278,7 @@
         "vendor:elastic"
       ],
       "active_threat": false,
-      "probability_score": 0.00784,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 1,
-        "reference_count": 4
-      }
+      "probability_score": 0.00784
     },
     {
       "cve_id": "CVE-2023-46667",
@@ -414,18 +310,7 @@
         "vendor:elastic"
       ],
       "active_threat": false,
-      "probability_score": 0.00658,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 1,
-        "reference_count": 4
-      }
+      "probability_score": 0.00658
     },
     {
       "cve_id": "CVE-2023-46671",
@@ -457,18 +342,7 @@
         "vendor:elastic"
       ],
       "active_threat": false,
-      "probability_score": 0.00656,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 1,
-        "reference_count": 2
-      }
+      "probability_score": 0.00656
     },
     {
       "cve_id": "CVE-2023-46672",
@@ -500,18 +374,7 @@
         "vendor:elastic"
       ],
       "active_threat": false,
-      "probability_score": 0.00338,
-      "nvd": {
-        "cvss_v3_score": 5.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 2,
-        "reference_count": 8
-      }
+      "probability_score": 0.00338
     },
     {
       "cve_id": "CVE-2023-46675",
@@ -549,18 +412,7 @@
         "vendor:elastic"
       ],
       "active_threat": false,
-      "probability_score": 0.00688,
-      "nvd": {
-        "cvss_v3_score": 6.5,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-532"
-        ],
-        "cpe_count": 2,
-        "reference_count": 2
-      }
+      "probability_score": 0.00688
     },
     {
       "cve_id": "CVE-2024-12556",
