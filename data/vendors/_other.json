@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T00:33:20+00:00",
+  "generated_at": "2026-10-24T05:40:46+00:00",
   "vendor": "_other",
-  "count": 3147,
+  "count": 3156,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -9802,6 +9802,132 @@
         "cpe_count": 4,
         "reference_count": 20
       }
+    },
+    {
+      "cve_id": "CVE-2026-105482",
+      "description": "A flaw in Node.js DNS resolution allows hostnames containing a NUL byte to be silently truncated by the dns.resolve*() functions and dns.reverse(). This is an incomplete fix of CVE-2026-48930, which only covered dns.lookup() and the net/tls host options.\r\n\r\nBecause the name is passed to c-ares as a C string, resolving attacker.example\\0.trusted.example queries attacker.example and returns its records without any error. Applications that validate a hostname, for example against a domain allowlist, and then resolve it with dns.resolve*() can act on records for a different name than the one they validated.\r\n\r\nThis vulnerability affects Node.js 26.x, 24.x, and 22.x.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "nodejs",
+          "product": "node",
+          "versions": [
+            {
+              "version": "22.23.3",
+              "status": "affected",
+              "lessThanOrEqual": "22.23.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "24.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "24.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "26.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "26.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:node",
+        "vendor:nodejs"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105483",
+      "description": "A flaw in Node.js TLS hostname verification allows a certificate without a matching IP address SAN to authenticate a connection to an IPv4 address when the host is written with non-ASCII characters, such as fullwidth digits (`\uff11\uff12\uff17.0.0.1`).\n\n`tls.checkServerIdentity()` did not recognize such hosts as IP addresses, even though they normalize and resolve to a regular IPv4 address, and matched them against the certificate DNS names and Common Name instead. A certificate containing `DNS:127.0.0.1` or `DNS:*.0.0.1` could therefore be accepted for an IP endpoint it was not issued for. This is a regression introduced after the fix for CVE-2026-48618.\n\nThis vulnerability affects Node.js **26.x** and **24.x**.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "nodejs",
+          "product": "node",
+          "versions": [
+            {
+              "version": "24.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "24.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "26.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "26.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:node",
+        "vendor:nodejs"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-106069",
+      "description": "A flaw in Node.js TLS hostname verification can cause a server certificate to be validated against a different IP address than the one the client connected to, when the host is a non-canonical IPv4 literal with a leading zero, such as `0127.0.0.1`.\n\n`tls.checkServerIdentity()` normalizes the host following the WHATWG URL rules, which read a leading-zero octet as octal (`0127.0.0.1` becomes `87.0.0.1`), while the connection is made through the operating system resolver, which on some platforms such as macOS reads it as decimal (`127.0.0.1`). A server at the connected address can then be authenticated with a certificate issued for another IP address.\n\nThis vulnerability affects Node.js **26.x**, **24.x**, and **22.x**.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "nodejs",
+          "product": "node",
+          "versions": [
+            {
+              "version": "22.23.3",
+              "status": "affected",
+              "lessThanOrEqual": "22.23.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "24.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "24.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "26.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "26.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:node",
+        "vendor:nodejs"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-21710",
@@ -65898,6 +66024,35 @@
       }
     },
     {
+      "cve_id": "CVE-2026-110975",
+      "description": "A flaw was found in Kruize Autotune. Its REST API ships without an authentication layer, and the endpoints that return datasource configuration \u2014 the list-datasources endpoint (GET /datasources) and the datasource-metadata endpoint \u2014 serialized datasource objects using a default Gson configuration with no field-exclusion strategy. As a result, the authentication secrets stored for each configured monitoring datasource (basic-auth passwords, bearer tokens, API keys, and OAuth2 client secrets) were returned in cleartext to any client able to reach the service. An attacker with network access to Autotune could harvest these credentials and reuse them to authenticate to the backing monitoring stack.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "0.11.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-13048",
       "description": "Data::MuForm::Localizer versions through 0.05 for Perl execute Perl from a message catalog header, reached at an arbitrary path because load_lexicon interpolates the language attribute into the catalog filename.\n\nload_lexicon builds the catalog path by appending `Messages/$lang.po` to the directory holding Localizer.pm, where $lang is the language attribute, with no check that it names a bare locale tag. A value holding `../` segments walks out of the message directory, so any readable path with a `.po` suffix is loaded. While parsing the catalog, extract_header_msgstr takes the `Plural-Forms:` header, prefixes `$` to the bare words nplurals, plural and n, and passes the rest verbatim into a string that is evaluated: the nplurals form evaluates the header expression immediately, and the plural_code form compiles it into a subroutine whose body runs when a plural message is localized. A header of `nplurals=2; plural=(system('...'),0);` therefore runs that command as the catalog loads. The evaluation inherits strict, so an expression that assigns to an undeclared variable fails to compile, while one built from calls alone does not.\n\nAn application that sets the language attribute from request data, an Accept-Language header or a locale parameter, and an attacker who can place a file with a `.po` suffix and chosen contents at a readable path, together give code execution as the application user. The message expansion path is not affected: expand_named substitutes only the placeholder names the caller supplies, and _mangle_value returns the value unchanged.",
       "cvss_score": 8.2,
@@ -94276,6 +94431,98 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-75775",
+      "description": "Improper Neutralization of Special Elements used in an OS Command in certain ASUS routers allows remote user to execute arbitrary commands with root privileges via crafted parameters sent to the router while the device is in its factory-default state.Refer to the ' Security Update for ASUS Router Firmware\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6.102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00477
+    },
+    {
+      "cve_id": "CVE-2026-75779",
+      "description": "Improper Neutralization of Special\nElements used in an OS Command (\u201cOS Command Injection\u201d) and Cross-Site Request\nForgery (CSRF) in an ASUS router model allow an attacker to trick a logged-in\nadministrator into visiting a phishing website, causing the router to execute\narbitrary commands with root privileges.\nRefer to the '\nSecurity Update for ASUS Router Firmware\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6.102 series",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01044
+    },
+    {
+      "cve_id": "CVE-2026-93489",
+      "description": "Improper Authentication in ASUS router modules allows an unauthenticated nearby user to send an HTTP request and forge an access ticket, subsequently enabling the user to perform administrator operations.\nRefer to the ' Security Update for ASUS Router Firmware\u00a0' section on the ASUS Security Advisory for more information.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "asus",
+          "product": "router",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0.6_102 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:router",
+        "vendor:asus"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00189
     },
     {
       "cve_id": "CVE-2023-3093",
@@ -183756,6 +184003,86 @@
       }
     },
     {
+      "cve_id": "CVE-2026-115729",
+      "description": "@pdfme/common from 5.5.10 before 6.2.6 contains a server-side request forgery vulnerability that allows attackers to bypass the isUrlSafeToFetch denylist in getB64BasePdf. Attackers can supply basePdf URLs using IPv4-mapped IPv6, [::], NAT64 or localhost alias hostnames to read loopback, internal or cloud metadata responses through generated documents.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "pdfme",
+          "product": "common",
+          "versions": [
+            {
+              "version": "5.5.10",
+              "lessThan": "6.2.6",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:common",
+        "vendor:pdfme"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-82866",
+      "description": "@pdfme/common before 5.5.10 contains a server-side request forgery vulnerability in the getB64BasePdf function that fetches arbitrary URLs without validation when basePdf is attacker-controlled. Attackers who control the basePdf template field can force servers or clients to make requests to internal endpoints, enabling metadata exfiltration, network reconnaissance, and blind request forgery attacks.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "pdfme",
+          "product": "common",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "5.5.10"
+            },
+            {
+              "version": "5.5.10",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:common",
+        "vendor:pdfme"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00347,
+      "nvd": {
+        "cvss_v3_score": 6.8,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-12225",
       "description": "syracom AG Secure Login (2FA) for Atlassian Jira, Confluence, and Bitbucket 3.4.0.x contains an authentication bypass vulnerability. An attacker with valid credentials for a user account can bypass the two-factor authentication flow by sending HTTP requests with a crafted User-Agent header containing specific strings such as AtlassianMobileApp or JIRA. When such a User-Agent is present, the plugin does not enforce the configured 2FA checks for protected web resources. Successful exploitation allows the attacker to access the affected Atlassian application as the compromised user without completing 2FA. If the compromised account has administrative privileges, the attacker can access administrative functionality and may disable the 2FA plugin or make arbitrary administrative changes. The issue is fixed in version 3.5.0.0.",
       "cvss_score": 8.7,
@@ -188444,6 +188771,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-87901",
+      "description": "Improper sanitization in the registration module allows reflected Cross-Site Scripting.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "phpbb",
+          "product": "phpbb",
+          "versions": [
+            {
+              "version": "3.3.0",
+              "status": "affected",
+              "lessThanOrEqual": "3.3.18",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:phpbb",
+        "vendor:phpbb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-29793",
@@ -202332,54 +202691,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 4
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82866",
-      "description": "@pdfme/common before 5.5.10 contains a server-side request forgery vulnerability in the getB64BasePdf function that fetches arbitrary URLs without validation when basePdf is attacker-controlled. Attackers who control the basePdf template field can force servers or clients to make requests to internal endpoints, enabling metadata exfiltration, network reconnaissance, and blind request forgery attacks.",
-      "cvss_score": 8.9,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "pdfme",
-          "product": "common",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "versionType": "semver",
-              "lessThan": "5.5.10"
-            },
-            {
-              "version": "5.5.10",
-              "status": "unaffected",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:common",
-        "vendor:pdfme"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00347,
-      "nvd": {
-        "cvss_v3_score": 6.8,
-        "cvss_v3_severity": "MEDIUM",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
       }
     },
     {
