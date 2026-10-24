@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-24T10:48:01+00:00`
+Generated: `2026-10-24T14:28:27+00:00`
 
 ## Executive Summary
 
@@ -146,7 +146,7 @@ Top critical items:
 | [CVE-2022-41040](https://www.cve.org/CVERecord?id=CVE-2022-41040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.8 | ✅ | Microsoft Exchange Server Elevation of Privilege Vulnerability |
 | [CVE-2024-13161](https://www.cve.org/CVERecord?id=CVE-2024-13161) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-31 | 0.898 | 9.8 | ✅ | Absolute path traversal in Ivanti EPM before the 2024 January-2025 Security Update and 2022 SU6 January-2025 Security Update allows a remote unauthenticated at… |
 | [CVE-2026-63077](https://www.cve.org/CVERecord?id=CVE-2026-63077) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-08 | 0.896 | 9.8 | ✅ | In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol |
-| [CVE-2022-36804](https://www.cve.org/CVERecord?id=CVE-2022-36804) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 0.992 | 8.8 | ✅ | Multiple API endpoints in Atlassian Bitbucket Server and Data Center 7.0.0 before version 7.6.17, from version 7.7.0 before version 7.17.10, from version 7.18.… |
+| [CVE-2022-36804](https://www.cve.org/CVERecord?id=CVE-2022-36804) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 0.991 | 8.8 | ✅ | Multiple API endpoints in Atlassian Bitbucket Server and Data Center 7.0.0 before version 7.6.17, from version 7.7.0 before version 7.17.10, from version 7.18.… |
 | [CVE-2025-61757](https://www.cve.org/CVERecord?id=CVE-2025-61757) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-12 | 0.886 | 9.8 | ✅ | Vulnerability in the Identity Manager product of Oracle Fusion Middleware (component: REST WebServices).  Supported versions that are affected are 12.2.1.4.0 a… |
 | [CVE-2025-0108](https://www.cve.org/CVERecord?id=CVE-2025-0108) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.985 | 8.8 | ✅ | An authentication bypass in the Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to b… |
 | [CVE-2023-27524](https://www.cve.org/CVERecord?id=CVE-2023-27524) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-29 | 0.974 | 8.9 | ✅ | Session Validation attacks in Apache Superset versions up to and including 2.0.1. Installations that have not altered the default configured SECRET_KEY accordi… |
@@ -196,8 +196,9 @@ Top critical items:
 | [CVE-2025-14847](https://www.cve.org/CVERecord?id=CVE-2025-14847) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-19 | 0.832 | 8.7 | ✅ | Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all… |
 | [CVE-2025-20333](https://www.cve.org/CVERecord?id=CVE-2025-20333) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-26 | 0.712 | 9.9 | ✅ | A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Softwa… |
 | [CVE-2026-25089](https://www.cve.org/CVERecord?id=CVE-2026-25089) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-19 | 0.761 | 9.1 | ✅ | A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiS… |
+| [CVE-2026-76460](https://www.cve.org/CVERecord?id=CVE-2026-76460) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-19 | 0.666 | 10.0 | ✅ | A vulnerability in an API of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to bypass authentication.  This vulnerabili… |
 | [CVE-2022-41080](https://www.cve.org/CVERecord?id=CVE-2022-41080) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-01-31 | 0.773 | 8.8 | ✅ | Microsoft Exchange Server Elevation of Privilege Vulnerability |
-| [CVE-2023-20273](https://www.cve.org/CVERecord?id=CVE-2023-20273) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-27 | 0.930 | 7.2 | ✅ | A vulnerability in the web UI feature of Cisco IOS XE Software could allow an authenticated, remote attacker to inject commands with the privileges of root. Th… |
+| [CVE-2023-20273](https://www.cve.org/CVERecord?id=CVE-2023-20273) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-27 | 0.929 | 7.2 | ✅ | A vulnerability in the web UI feature of Cisco IOS XE Software could allow an authenticated, remote attacker to inject commands with the privileges of root. Th… |
 | [CVE-2025-49706](https://www.cve.org/CVERecord?id=CVE-2025-49706) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-23 | 0.991 | 6.5 | ✅ | Improper authentication in Microsoft Office SharePoint allows an unauthorized attacker to perform spoofing over a network. |
 | [CVE-2024-9474](https://www.cve.org/CVERecord?id=CVE-2024-9474) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-12-09 | 0.948 | 6.9 | ✅ | A privilege escalation vulnerability in Palo Alto Networks PAN-OS software allows a PAN-OS administrator with access to the management web interface to perform… |
 | [CVE-2026-55040](https://www.cve.org/CVERecord?id=CVE-2026-55040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-21 | 0.695 | 9.1 | ✅ | Weak authentication in Microsoft Office SharePoint allows an unauthorized attacker to bypass a security feature over a network. |
@@ -247,7 +248,6 @@ Top critical items:
 | [CVE-2026-56290](https://www.cve.org/CVERecord?id=CVE-2026-56290) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-10 | 0.309 | 10.0 | ✅ | Joomla Extension - joomlack.fr - Unauthenticated file upload in Page Builder CK extension < 3.6.0 - The Joomla extension Page Builder CK is vulnerable to an un… |
 | [CVE-2022-44698](https://www.cve.org/CVERecord?id=CVE-2022-44698) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-01-03 | 0.763 | 5.4 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
 | [CVE-2023-32434](https://www.cve.org/CVERecord?id=CVE-2023-32434) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-14 | 0.515 | 7.8 | ✅ | An integer overflow was addressed with improved input validation. This issue is fixed in watchOS 9.5.2, macOS Big Sur 11.7.8, iOS 15.7.7 and iPadOS 15.7.7, mac… |
-| [CVE-2023-4762](https://www.cve.org/CVERecord?id=CVE-2023-4762) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-27 | 0.414 | 8.8 | ✅ | Type Confusion in V8 in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security s… |
 
 ## Recent Changes (Last 7 Days)
 
