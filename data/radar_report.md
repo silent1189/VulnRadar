@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-26T11:48:56+00:00`
+Generated: `2026-10-26T17:43:45+00:00`
 
 ## Executive Summary
 
@@ -41,8 +41,8 @@ Top critical items:
 - Total items: **36945**
 - Watchlist hits: **36634**
 - CISA KEVs: **836**
-- Exploit Intel (PoC): **1046**
-- Exploit Intel + Watchlist (CRITICAL): **735**
+- Exploit Intel (PoC): **1047**
+- Exploit Intel + Watchlist (CRITICAL): **736**
 
 ## Top Findings (max 200)
 
@@ -144,10 +144,10 @@ Top critical items:
 | [CVE-2026-93616](https://www.cve.org/CVERecord?id=CVE-2026-93616) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-25 | 0.916 | 9.8 | ✅ | A directory traversal and file upload vulnerability allows an unauthenticated attacker to upload and execute arbitrary scripts on Check Point Management Server. |
 | [CVE-2026-20127](https://www.cve.org/CVERecord?id=CVE-2026-20127) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-02-27 | 0.893 | 10.0 | ✅ | A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vMana… |
 | [CVE-2024-13160](https://www.cve.org/CVERecord?id=CVE-2024-13160) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-31 | 0.910 | 9.8 | ✅ | Absolute path traversal in Ivanti EPM before the 2024 January-2025 Security Update and 2022 SU6 January-2025 Security Update allows a remote unauthenticated at… |
+| [CVE-2025-54253](https://www.cve.org/CVERecord?id=CVE-2025-54253) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-05 | 0.888 | 10.0 | ✅ | Adobe Experience Manager versions 6.5.23 and earlier are affected by a Misconfiguration vulnerability that could result in arbitrary code execution. An attacke… |
 | [CVE-2026-21643](https://www.cve.org/CVERecord?id=CVE-2026-21643) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-16 | 0.977 | 9.1 | ✅ | An improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiClientEMS 7.4.4 may allow an unauthentic… |
 | [CVE-2026-20079](https://www.cve.org/CVERecord?id=CVE-2026-20079) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-12 | 0.885 | 10.0 | ✅ | A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authen… |
 | [CVE-2026-34908](https://www.cve.org/CVERecord?id=CVE-2026-34908) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-26 | 0.883 | 10.0 | ✅ | A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to t… |
-| [CVE-2025-54253](https://www.cve.org/CVERecord?id=CVE-2025-54253) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-05 | 0.883 | 10.0 | ✅ | Adobe Experience Manager versions 6.5.23 and earlier are affected by a Misconfiguration vulnerability that could result in arbitrary code execution. An attacke… |
 | [CVE-2025-49704](https://www.cve.org/CVERecord?id=CVE-2025-49704) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-23 | 1.000 | 8.8 | ✅ | Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network. |
 | [CVE-2023-4863](https://www.cve.org/CVERecord?id=CVE-2023-4863) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-04 | 1.000 | 8.8 | ✅ | Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write v… |
 | [CVE-2022-41040](https://www.cve.org/CVERecord?id=CVE-2022-41040) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.8 | ✅ | Microsoft Exchange Server Elevation of Privilege Vulnerability |
@@ -160,9 +160,9 @@ Top critical items:
 | [CVE-2024-24919](https://www.cve.org/CVERecord?id=CVE-2024-24919) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-06-20 | 1.000 | 8.6 | ✅ | Potentially allowing an attacker to read certain information on Check Point Security Gateways once connected to the internet and enabled with remote Access VPN… |
 | [CVE-2025-54236](https://www.cve.org/CVERecord?id=CVE-2025-54236) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-14 | 0.947 | 9.1 | ✅ | Adobe Commerce versions 2.4.9-alpha2, 2.4.8-p2, 2.4.7-p7, 2.4.6-p12, 2.4.5-p14, 2.4.4-p15 and earlier are affected by an Improper Input Validation vulnerabilit… |
 | [CVE-2026-48907](https://www.cve.org/CVERecord?id=CVE-2026-48907) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-19 | 0.854 | 10.0 | ✅ | A vulnerability in the JCE editor extension for Joomla allows the creation of new editor profiles for unauthenticated users, ultimately resulting in PHP code u… |
+| [CVE-2025-9242](https://www.cve.org/CVERecord?id=CVE-2025-9242) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-03 | 0.922 | 9.3 | ✅ | An Out-of-bounds Write vulnerability in the WatchGuard Fireware OS iked process may allow a remote unauthenticated attacker to execute arbitrary code. This vul… |
 | [CVE-2025-64446](https://www.cve.org/CVERecord?id=CVE-2025-64446) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-21 | 0.911 | 9.4 | ✅ | A relative path traversal vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.1, FortiWeb 7.6.0 through 7.6.4, FortiWeb 7.4.0 through 7.4.9, FortiWeb 7.2.0 th… |
 | [CVE-2026-35616](https://www.cve.org/CVERecord?id=CVE-2026-35616) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-09 | 0.940 | 9.1 | ✅ | A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or co… |
-| [CVE-2025-9242](https://www.cve.org/CVERecord?id=CVE-2025-9242) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-12-03 | 0.918 | 9.3 | ✅ | An Out-of-bounds Write vulnerability in the WatchGuard Fireware OS iked process may allow a remote unauthenticated attacker to execute arbitrary code. This vul… |
 | [CVE-2026-3055](https://www.cve.org/CVERecord?id=CVE-2026-3055) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-02 | 0.915 | 9.3 | ✅ | Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread |
 | [CVE-2026-39808](https://www.cve.org/CVERecord?id=CVE-2026-39808) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-19 | 0.932 | 9.1 | ✅ | A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may all… |
 | [CVE-2023-26360](https://www.cve.org/CVERecord?id=CVE-2023-26360) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-04-05 | 0.973 | 8.6 | ✅ | Adobe ColdFusion versions 2018 Update 15 (and earlier) and 2021 Update 5 (and earlier) are affected by an Improper Access Control vulnerability that could resu… |
