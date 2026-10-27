@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-10-26T22:40:45+00:00`
+Generated: `2026-10-27T02:25:50+00:00`
 
 ## Executive Summary
 
@@ -38,9 +38,9 @@ Top critical items:
 
 ## Summary
 
-- Total items: **36945**
-- Watchlist hits: **36634**
-- CISA KEVs: **836**
+- Total items: **36958**
+- Watchlist hits: **36647**
+- CISA KEVs: **838**
 - Exploit Intel (PoC): **1047**
 - Exploit Intel + Watchlist (CRITICAL): **736**
 
@@ -127,6 +127,8 @@ Top critical items:
 | [CVE-2024-8963](https://www.cve.org/CVERecord?id=CVE-2024-8963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-10 | 0.986 | 9.4 | ✅ | Path Traversal in the Ivanti CSA before 4.6 Patch 519 allows a remote unauthenticated attacker to access restricted functionality. |
 | [CVE-2026-21589](https://www.cve.org/CVERecord?id=CVE-2026-21589) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-18 | 0.995 | 9.3 | ✅ | This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. C… |
 | [CVE-2022-42475](https://www.cve.org/CVERecord?id=CVE-2022-42475) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-01-03 | 0.995 | 9.3 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6… |
+| [CVE-2026-109619](https://www.cve.org/CVERecord?id=CVE-2026-109619) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-29 | 1.000 | 9.2 | ✅ | PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated aft… |
+| [CVE-2026-109618](https://www.cve.org/CVERecord?id=CVE-2026-109618) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-29 | 1.000 | 9.2 | ✅ | PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for thi… |
 | [CVE-2025-11953](https://www.cve.org/CVERecord?id=CVE-2025-11953) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-02-26 | 0.940 | 9.8 | ✅ | The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that i… |
 | [CVE-2026-20182](https://www.cve.org/CVERecord?id=CVE-2026-20182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-17 | 0.918 | 10.0 | ✅ | May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in Februar… |
 | [CVE-2024-5217](https://www.cve.org/CVERecord?id=CVE-2024-5217) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 0.996 | 9.2 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in the Washington DC, Vancouver, and earlier Now Platform releases. This vulnera… |
@@ -246,8 +248,6 @@ Top critical items:
 | [CVE-2025-14174](https://www.cve.org/CVERecord?id=CVE-2025-14174) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-02 | 0.553 | 8.8 | ✅ | Out of bounds memory access in ANGLE in Google Chrome on Mac prior to 143.0.7499.110 allowed a remote attacker to perform out of bounds memory access via a cra… |
 | [CVE-2026-20131](https://www.cve.org/CVERecord?id=CVE-2026-20131) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-22 | 0.432 | 10.0 | ✅ | A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker… |
 | [CVE-2026-2441](https://www.cve.org/CVERecord?id=CVE-2026-2441) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-10 | 0.550 | 8.8 | ✅ | Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Ch… |
-| [CVE-2024-43461](https://www.cve.org/CVERecord?id=CVE-2024-43461) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-07 | 0.545 | 8.8 | ✅ | Windows MSHTML Platform Spoofing Vulnerability |
-| [CVE-2026-48282](https://www.cve.org/CVERecord?id=CVE-2026-48282) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-10 | 0.424 | 10.0 | ✅ | ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability… |
 
 ## Recent Changes (Last 7 Days)
 
