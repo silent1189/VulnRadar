@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T23:46:42+00:00",
+  "generated_at": "2026-10-28T05:53:02+00:00",
   "vendor": "mozilla",
-  "count": 879,
+  "count": 884,
   "items": [
     {
       "cve_id": "CVE-2022-0511",
@@ -28046,7 +28046,7 @@
     },
     {
       "cve_id": "CVE-2026-100801",
-      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 159, Firefox ESR 153.6, Thunderbird 159, Thunderbird 153.6, Firefox 157, and Firefox ESR 140.17.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
@@ -28069,7 +28069,19 @@
             },
             {
               "status": "unaffected",
+              "version": "153.6",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
               "version": "157",
+              "lessThanOrEqual": "157.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "159",
               "lessThanOrEqual": "*",
               "versionType": "rpm"
             }
@@ -28093,7 +28105,19 @@
             },
             {
               "status": "unaffected",
+              "version": "153.6",
+              "lessThanOrEqual": "153.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
               "version": "157",
+              "lessThanOrEqual": "157.*",
+              "versionType": "rpm"
+            },
+            {
+              "status": "unaffected",
+              "version": "159",
               "lessThanOrEqual": "*",
               "versionType": "rpm"
             }
@@ -29807,7 +29831,7 @@
     },
     {
       "cve_id": "CVE-2026-109705",
-      "description": "Sandbox escape, site isolation issue due to incorrect boundary conditions, use-after-free in the Networking component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, and Thunderbird 153.5.",
+      "description": "Sandbox escape, site isolation issue due to incorrect boundary conditions, use-after-free in the Networking component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, Thunderbird 153.5, and Firefox ESR 115.44.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -29816,6 +29840,12 @@
           "vendor": "mozilla",
           "product": "firefox",
           "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.44",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
             {
               "status": "unaffected",
               "version": "153.5",
@@ -29874,7 +29904,7 @@
     },
     {
       "cve_id": "CVE-2026-109707",
-      "description": "Sandbox escape due to use-after-free in the Networking component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, and Thunderbird 153.5.",
+      "description": "Sandbox escape due to use-after-free in the Networking component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, Thunderbird 153.5, and Firefox ESR 115.44.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -29883,6 +29913,12 @@
           "vendor": "mozilla",
           "product": "firefox",
           "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.44",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
             {
               "status": "unaffected",
               "version": "153.5",
@@ -29941,7 +29977,7 @@
     },
     {
       "cve_id": "CVE-2026-109708",
-      "description": "Sandbox escape due to incorrect boundary conditions in the Networking component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, and Thunderbird 153.5.",
+      "description": "Sandbox escape due to incorrect boundary conditions in the Networking component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, Thunderbird 153.5, and Firefox ESR 115.44.",
       "cvss_score": 9.6,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
@@ -29950,6 +29986,12 @@
           "vendor": "mozilla",
           "product": "firefox",
           "versions": [
+            {
+              "status": "unaffected",
+              "version": "115.44",
+              "lessThanOrEqual": "115.*",
+              "versionType": "rpm"
+            },
             {
               "status": "unaffected",
               "version": "153.5",
@@ -31865,6 +31907,116 @@
       }
     },
     {
+      "cve_id": "CVE-2026-109772",
+      "description": "Same-origin policy bypass in the DevTools component. This vulnerability was fixed in Firefox 158 and Thunderbird 158.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00181,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109774",
+      "description": "Invalid pointer, undefined behavior in the DOM: Notifications component. This vulnerability was fixed in Firefox 158 and Thunderbird 158.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00342,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-824"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-109778",
       "description": "Privilege escalation in the WebExtensions component. This vulnerability was fixed in Firefox 158, Firefox ESR 153.5, Thunderbird 158, and Thunderbird 153.5.",
       "cvss_score": 8.8,
@@ -31929,6 +32081,171 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109780",
+      "description": "Mitigation bypass in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 158 and Thunderbird 158.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00363,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109782",
+      "description": "Mitigation bypass in the File Handling component. This vulnerability was fixed in Firefox ESR 153.5 and Thunderbird 153.5.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.5",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.5",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00273,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109783",
+      "description": "Mitigation bypass in the File Handling component. This vulnerability was fixed in Firefox ESR 153.5 and Thunderbird 153.5.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.5",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "153.5",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00273,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {

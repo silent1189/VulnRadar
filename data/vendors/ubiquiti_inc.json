@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T23:46:42+00:00",
+  "generated_at": "2026-10-28T05:53:02+00:00",
   "vendor": "ubiquiti_inc",
-  "count": 103,
+  "count": 107,
   "items": [
     {
       "cve_id": "CVE-2023-28365",
@@ -1438,6 +1438,217 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-116836",
+      "description": "A malicious actor with access to the adjacent network and under certain conditions could exploit a Stored Cross-Site Scripting (XSS) vulnerability found in airMAX M devices to escalate privileges on the device.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ubiquiti inc",
+          "product": "airmax m",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.3.26",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:airmax m",
+        "vendor:ubiquiti inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00194,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-116837",
+      "description": "A malicious actor with access to the adjacent network could exploit a Heap-based Buffer Overflow vulnerability found in airMAX M, LTU, SolarPoint, and SolarSwitch devices to execute arbitrary code on the device.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ubiquiti inc",
+          "product": "airmax m",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.3.26",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ubiquiti inc",
+          "product": "ltu ptmp",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.4.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ubiquiti inc",
+          "product": "ltu ptp",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.5.7",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ubiquiti inc",
+          "product": "solarpoint / solarswitch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:airmax m",
+        "product:ltu ptmp",
+        "product:ltu ptp",
+        "product:solarpoint / solarswitch",
+        "vendor:ubiquiti inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00214,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-116838",
+      "description": "A malicious actor who lures an authenticated user to a malicious page could exploit a Cross-Site Request Forgery (CSRF) vulnerability found in airMAX M devices to execute a Command Injection on the device.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ubiquiti inc",
+          "product": "airmax m",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.3.26",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:airmax m",
+        "vendor:ubiquiti inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0038,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-116839",
+      "description": "A malicious actor who lures an authenticated user to a malicious page could exploit a Cross-Site Request Forgery (CSRF) vulnerability found in airMAX M devices to make unauthorized changes and execute a Denial of Service (DoS) attack on the device.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "ubiquiti inc",
+          "product": "airmax m",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.3.26",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:airmax m",
+        "vendor:ubiquiti inc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00101,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
         ],
         "cpe_count": 0,
         "reference_count": 1

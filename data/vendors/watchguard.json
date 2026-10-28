@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T23:46:42+00:00",
+  "generated_at": "2026-10-28T05:53:02+00:00",
   "vendor": "watchguard",
-  "count": 76,
+  "count": 90,
   "items": [
     {
       "cve_id": "CVE-2024-1417",
@@ -992,6 +992,244 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-103593",
+      "description": "A stack-based buffer overflow vulnerability in the Fireware OS logging service allows a network-adjacent attacker who can impersonate or intercept traffic to the configured log server to execute arbitrary code with root privileges by presenting a specially crafted certificate.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-103594",
+      "description": "A stack-based buffer overflow vulnerability in Fireware OS's WireGuard configuration processing allows a remote attacker that has man-in-the-middle TLS-decrypted access between the Firebox and WatchGuard Cloud to create a Denial of Service condition and potentially execute arbitrary code by tampering with a FireCloud Gateway configuration payload.",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.2",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.12",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-111107",
+      "description": "A NULL pointer dereference vulnerability in WatchGuard Fireware OS\u2019s management interface allows a remote, unauthenticated attacker with network access to the management interface to crash the management service by sending a specially crafted login request. Repeated exploitation terminates all active administrator sessions and in-progress management operations and can prevent management of the device. Traffic processing is not affected.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-112709",
+      "description": "A heap-based buffer overflow vulnerability in the Fireware OS authentication service allows an attacker who controls or intercepts traffic to the configured Active Directory server to create a denial of service condition and potentially execute arbitrary code by returning a specially crafted response.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-112710",
+      "description": "A heap-based buffer overflow vulnerability exists in the Fireware OS authentication service allows an attacker who controls or intercepts traffic to the configured Active Directory server to create a denial of service condition and potentially execute arbitrary code by returning a specially crafted response.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-115253",
@@ -4547,6 +4785,456 @@
         "cpe_count": 4,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-90442",
+      "description": "A stack-based buffer overflow vulnerability in the Fireware OS certd process allows an authenticated attacker with access to the Firebox management interface to crash the certificate management service and potentially execute arbitrary code by sending a specially crafted request.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-90464",
+      "description": "An external control of file path vulnerability in a WatchGuard Fireware OS firewall diagnostic command allows a remote, authenticated attacker with at least read-only (Device Monitor) privileges and access to the management CLI to create, truncate, or overwrite arbitrary files and modify kernel parameters with root privileges by submitting a specially crafted command. Written content is limited to numeric values.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-90465",
+      "description": "A missing authentication vulnerability in the FireCluster Sync processing allows an attacker positioned on the cluster interconnect, such as a compromised cluster peer or an on-path network attacker, to invoke privileged firewall management actions as root by sending a specially crafted request.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93434",
+      "description": "An XPath injection vulnerability in WatchGuard Fireware OS's SSH authentication process allows a remote, unauthenticated attacker with access to the management SSH interface to extract sensitive configuration data by submitting a specially crafted request.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93857",
+      "description": "A stack-based buffer overflow vulnerability in Fireware OS's SIP proxy allows a remote, unauthenticated attacker to execute arbitrary code by sending a specially crafted request through a policy that uses the SIP proxy.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93862",
+      "description": "An out-of-bounds read vulnerability in the FireCluster Sync processing allows an attacker positioned on the cluster interconnect, such as a compromised cluster peer or an on-path network attacker, to repeatedly crash the firewall's cluster synchronization process by sending specially crafted network traffic, resulting in a sustained denial of service.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93864",
+      "description": "A link following vulnerability in WatchGuard Fireware OS\u2019s firewall daemon allows a local attacker with code execution as a low-privileged system process to overwrite arbitrary files with root privileges, and to tamper with firewall IP set data, by planting a crafted file system object and triggering a list update. Written content is partially constrained.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93865",
+      "description": "A missing authentication vulnerability in the Fireware OS FireCluster synchronization daemon allows a remote, unauthenticated attacker to invoke privileged system-level administrative actions by sending a specially crafted request to the FireCluster management IP when the clustering feature is enabled.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-93866",
+      "description": "An integer overflow vulnerability in the WebSocket connection handling used by WatchGuard Fireware OS's Access Portal allows a remote, unauthenticated attacker to write beyond the bounds of a heap buffer by sending a specially crafted request while the Access Portal feature is enabled.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2025.1",
+              "versionType": "custom",
+              "lessThan": "2026.4"
+            },
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.12.4"
+            }
+          ]
+        },
+        {
+          "vendor": "watchguard",
+          "product": "fireware os",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0",
+              "versionType": "custom",
+              "lessThan": "12.5.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fireware os",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-95676",

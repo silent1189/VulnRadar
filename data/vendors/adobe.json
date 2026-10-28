@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T23:46:42+00:00",
+  "generated_at": "2026-10-28T05:53:02+00:00",
   "vendor": "adobe",
-  "count": 1580,
+  "count": 1591,
   "items": [
     {
       "cve_id": "CVE-2022-23186",
@@ -51469,6 +51469,339 @@
       }
     },
     {
+      "cve_id": "CVE-2026-104349",
+      "description": "Creative Cloud Desktop is affected by an Uncontrolled Search Path Element vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "creative cloud desktop application",
+          "versions": [
+            {
+              "lessThanOrEqual": "6.10.0.252.41",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "6.11.0.478.6",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:creative cloud desktop application",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104350",
+      "description": "Adobe Campaign Classic (ACC) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104351",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104353",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104354",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105489",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105779",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measures and gain unauthorized read and limited write access. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105780",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105781",
+      "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary SQL commands, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe campaign classic",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.4.4 build 9402",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "7.4.4 build 9403",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe campaign classic",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-105895",
       "description": "Adobe Experience Manager is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss_score": 9.9,
@@ -51512,7 +51845,7 @@
         "cwe_ids": [
           "CWE-20"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 1
       }
     },
@@ -53198,7 +53531,7 @@
         "cwe_ids": [
           "CWE-20"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 1
       }
     },
@@ -53348,7 +53681,7 @@
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -53414,7 +53747,7 @@
         "cwe_ids": [
           "CWE-79"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -70922,6 +71255,61 @@
       }
     },
     {
+      "cve_id": "CVE-2026-48360",
+      "description": "Adobe Connect is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe connect desktop app",
+          "versions": [
+            {
+              "lessThanOrEqual": "2026.8.51 (Win), 2026.08.45 (Mac Silicon), 2026.01.39 (Mac Intel)",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2026.9.61 (Win), 2026.10.66 (Mac Silicon), 2026.10.170 (Mac Intel)",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "adobe",
+          "product": "adobe connect android mobile app",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.4",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "4.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe connect android mobile app",
+        "product:adobe connect desktop app",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-48362",
       "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
       "cvss_score": 10.0,
@@ -71706,6 +72094,43 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-48379",
+      "description": "Substance3D - Painter is affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "adobe substance 3d painter",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.1.5",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "12.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adobe substance 3d painter",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-48381",
