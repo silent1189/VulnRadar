@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T23:12:10+00:00",
+  "generated_at": "2026-10-29T02:28:53+00:00",
   "vendor": "gitlab",
-  "count": 204,
+  "count": 205,
   "items": [
     {
       "cve_id": "CVE-2022-0154",
@@ -1696,21 +1696,21 @@
           "product": "gitlab",
           "versions": [
             {
-              "version": "11.6",
-              "status": "affected",
               "lessThan": "16.3.6",
+              "status": "affected",
+              "version": "11.6",
               "versionType": "semver"
             },
             {
-              "version": "16.4",
-              "status": "affected",
               "lessThan": "16.4.2",
+              "status": "affected",
+              "version": "16.4",
               "versionType": "semver"
             },
             {
-              "version": "16.5",
-              "status": "affected",
               "lessThan": "16.5.1",
+              "status": "affected",
+              "version": "16.5",
               "versionType": "semver"
             }
           ]
@@ -1847,6 +1847,61 @@
         ],
         "cpe_count": 3,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2023-3932",
+      "description": "An issue has been discovered in GitLab EE affecting all versions starting from 13.12 before 16.0.8, all versions starting from 16.1 before 16.1.3, all versions starting from 16.2 before 16.2.2. It was possible for an attacker to run pipeline jobs as an arbitrary user via scheduled security scan policies.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "lessThan": "16.0.8",
+              "status": "affected",
+              "version": "13.12",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "16.1.3",
+              "status": "affected",
+              "version": "16.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "16.2.2",
+              "status": "affected",
+              "version": "16.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00877,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-286"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
       }
     },
     {
@@ -2017,8 +2072,8 @@
     {
       "cve_id": "CVE-2023-5009",
       "description": "An issue has been discovered in GitLab EE affecting all versions starting from 13.12 before 16.2.7, all versions starting from 16.3 before 16.3.4. It was possible for an attacker to run pipeline jobs as an arbitrary user via scheduled security scan policies. This was a bypass of [CVE-2023-3932](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3932) showing additional impact.",
-      "cvss_score": 9.6,
-      "cvss_severity": "CRITICAL",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
       "affected": [
         {
@@ -2026,15 +2081,15 @@
           "product": "gitlab",
           "versions": [
             {
-              "version": "13.12",
-              "status": "affected",
               "lessThan": "16.2.7",
+              "status": "affected",
+              "version": "13.12",
               "versionType": "semver"
             },
             {
-              "version": "16.3",
-              "status": "affected",
               "lessThan": "16.3.4",
+              "status": "affected",
+              "version": "16.3",
               "versionType": "semver"
             }
           ]

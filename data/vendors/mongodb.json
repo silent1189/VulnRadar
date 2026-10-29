@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T23:12:10+00:00",
+  "generated_at": "2026-10-29T02:28:53+00:00",
   "vendor": "mongodb",
-  "count": 115,
+  "count": 117,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -765,6 +765,70 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-116641",
+      "description": "The DB Tools rely on the TLS implementation in Golang\u2019s standard library, which generally uses the system CA store. However, the crypto/x509 package also has its own internal denylist of known-bad CA certificates. Golang 1.27.3 adds the eMudhra certificates to this list.\n\n\n\n\nDB Tools version 100.19.0 was compiled with Golang 1.26.8, which does not include this check.\n\n\n\n\nThe issue is resolved by updating to Golang 1.27.3 in DB Tools 100.20.0",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "database tools",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "100.20.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:database tools",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-118510",
+      "description": "A type-handling flaw in the relationship query building of this MongoDB integration library can cause a check for the absence of a related record to be compiled with an identifier of the wrong data type. In an application that relies on such a check to decide which documents a request may see or act on, a user with basic privileges may be served, may change, or may remove documents that the check was intended to withhold. The failure is silent and produces no error.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "laravel mongodb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.3",
+              "lessThan": "5.12.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:laravel mongodb",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-11933",

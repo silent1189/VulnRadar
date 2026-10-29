@@ -1,0 +1,3529 @@
+{
+  "generated_at": "2026-10-29T02:28:53+00:00",
+  "vendor": "grafana",
+  "count": 51,
+  "items": [
+    {
+      "cve_id": "CVE-2022-23498",
+      "description": "Grafana is an open-source platform for monitoring and observability. When datasource query caching is enabled, Grafana caches all headers, including `grafana_session`. As a result, any user that queries a datasource where the caching is enabled can acquire another user\u2019s session. To mitigate the vulnerability you can disable datasource query caching for all datasources. This issue has been patched in versions 9.2.10 and 9.3.4.\n",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "version": ">= 8.3.0-beta1, < 9.2.10",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01132,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 4,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23552",
+      "description": "Grafana is an open-source platform for monitoring and observability. Starting with the 8.1 branch and prior to versions 8.5.16, 9.2.10, and 9.3.4, Grafana had a stored XSS vulnerability affecting the core plugin GeoMap. The stored XSS vulnerability was possible because SVG files weren't properly sanitized and allowed arbitrary JavaScript to be executed in the context of the currently authorized user of the Grafana instance. \n\nAn attacker needs to have the Editor role in order to change a panel to include either an external URL to a SVG-file containing JavaScript, or use the `data:` scheme to load an inline SVG-file containing JavaScript. This means that vertical privilege escalation is possible, where a user with Editor role can change to a known password for a user having Admin role if the user with Admin role executes malicious JavaScript viewing a dashboard.   \n\nUsers may upgrade to version 8.5.16, 9.2.10, or 9.3.4 to receive a fix.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "version": ">= 9.0, < 9.2.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 9.3, < 9.3.4",
+              "status": "affected"
+            },
+            {
+              "version": ">= 8.1, < 8.5.16",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00779,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 3,
+        "reference_count": 11
+      }
+    },
+    {
+      "cve_id": "CVE-2022-24812",
+      "description": "Grafana is an open-source platform for monitoring and observability. When fine-grained access control is enabled and a client uses Grafana API Key to make requests, the permissions for that API Key are cached for 30 seconds for the given organization. Because of the way the cache ID is constructed, the consequent requests with any API Key evaluate to the same permissions as the previous requests. This can lead to an escalation of privileges, when for example a first request is made with Admin permissions, and the second request with different API Key is made with Viewer permissions, the second request will get the cached permissions from the previous Admin, essentially accessing higher privilege than it should. The vulnerability is only impacting Grafana Enterprise when the fine-grained access control beta feature is enabled and there are more than one API Keys in one organization with different roles assigned. All installations after Grafana Enterprise v8.1.0-beta1 should be upgraded as soon as possible. As an alternative, disable fine-grained access control will mitigate the vulnerability.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "status": "affected",
+              "version": " >= 8.1.0-beta1, < 8.4.6"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02358,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 6.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 1,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2022-31097",
+      "description": "Grafana is an open-source platform for monitoring and observability. Versions on the 8.x and 9.x branch prior to 9.0.3, 8.5.9, 8.4.10, and 8.3.10 are vulnerable to stored cross-site scripting via the Unified Alerting feature of Grafana. An attacker can exploit this vulnerability to escalate privilege from editor to admin by tricking an authenticated admin to click on a link. Versions 9.0.3, 8.5.9, 8.4.10, and 8.3.10 contain a patch. As a workaround, it is possible to disable alerting or use legacy alerting.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "status": "affected",
+              "version": ">= 9.0.0, < 9.0.3"
+            },
+            {
+              "status": "affected",
+              "version": ">= 8.5.0, < 8.5.9"
+            },
+            {
+              "status": "affected",
+              "version": ">= 8.4.0, < 8.4.10"
+            },
+            {
+              "status": "affected",
+              "version": ">= 8.0.0, < 8.3.10"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.7006,
+      "nvd": {
+        "cvss_v3_score": 8.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2022-31107",
+      "description": "Grafana is an open-source platform for monitoring and observability. In versions 5.3 until 9.0.3, 8.5.9, 8.4.10, and 8.3.10, it is possible for a malicious user who has authorization to log into a Grafana instance via a configured OAuth IdP which provides a login name to take over the account of another user in that Grafana instance. This can occur when the malicious user is authorized to log in to Grafana via OAuth, the malicious user's external user id is not already associated with an account in Grafana, the malicious user's email address is not already associated with an account in Grafana, and the malicious user knows the Grafana username of the target user. If these conditions are met, the malicious user can set their username in the OAuth provider to that of the target user, then go through the OAuth flow to log in to Grafana. Due to the way that external and internal user accounts are linked together during login, if the conditions above are all met then the malicious user will be able to log in to the target user's Grafana account. Versions 9.0.3, 8.5.9, 8.4.10, and 8.3.10 contain a patch for this issue. As a workaround, concerned users can disable OAuth login to their Grafana instance, or ensure that all users authorized to log in via OAuth have a corresponding user account in Grafana linked to their email address.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "status": "affected",
+              "version": ">= 5.3, < 8.3.10"
+            },
+            {
+              "status": "affected",
+              "version": ">= 8.4.0, < 8.4.10"
+            },
+            {
+              "status": "affected",
+              "version": ">= 8.5.0, < 8.5.9"
+            },
+            {
+              "status": "affected",
+              "version": ">= 9.0.0, < 9.0.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02874,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 5,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2022-31176",
+      "description": "Grafana Image Renderer is a Grafana backend plugin that handles rendering of panels & dashboards to PNGs using a headless browser (Chromium/Chrome). An internal security review identified an unauthorized file disclosure vulnerability. It is possible for a malicious user to retrieve unauthorized files under some network conditions or via a fake datasource (if user has admin permissions in Grafana). All Grafana installations should be upgraded to version 3.6.1 as soon as possible. As a workaround it is possible to [disable HTTP remote rendering](https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#plugingrafana-image-renderer).",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana-image-renderer",
+          "versions": [
+            {
+              "version": "< 3.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana-image-renderer",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01138,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200",
+          "CWE-306"
+        ],
+        "cpe_count": 1,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2022-36062",
+      "description": "Grafana is an open-source platform for monitoring and observability. In versions prior to 8.5.13, 9.0.9, and 9.1.6, Grafana is subject to Improper Preservation of Permissions resulting in privilege escalation on some folders where Admin is the only used permission. The vulnerability impacts Grafana instances where RBAC was disabled and enabled afterwards, as the migrations which are translating legacy folder permissions to RBAC permissions do not account for the scenario where the only user permission in the folder is Admin, as a result RBAC adds permissions for Editors and Viewers which allow them to edit and view folders accordingly. This issue has been patched in versions 8.5.13, 9.0.9, and 9.1.6. A workaround when the impacted folder/dashboard is known is to remove the additional permissions manually.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "version": "< 8.5.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 9.0.0, < 9.0.9",
+              "status": "affected"
+            },
+            {
+              "version": ">=  9.1.0, < 9.1.6",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00749,
+      "nvd": {
+        "cvss_v3_score": 3.8,
+        "cvss_v3_severity": "LOW",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-281"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-39328",
+      "description": "Grafana is an open-source platform for monitoring and observability. Versions starting with 9.2.0 and less than 9.2.4 contain a race condition in the authentication middlewares logic which may allow an unauthenticated user to query an administration endpoint under heavy load. This issue is patched in 9.2.4. There are no known workarounds.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "version": ">= 9.2.0, < 9.2.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01085,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-362"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-46156",
+      "description": "The Synthetic Monitoring Agent for Grafana's Synthetic Monitoring application provides probe functionality and executes network checks for monitoring remote targets. Users running the Synthetic Monitoring agent prior to version 0.12.0 in their local network are impacted. The authentication token used to communicate with the Synthetic Monitoring API is exposed through a debugging endpoint. This token can be used to retrieve the Synthetic Monitoring checks created by the user and assigned to the agent identified with that token. The Synthetic Monitoring API will reject connections from already-connected agents, so access to the token does not guarantee access to the checks. Version 0.12.0 contains a fix. Users are advised to rotate the agent tokens. After upgrading to version v0.12.0 or later, it's recommended that users of distribution packages review the configuration stored in `/etc/synthetic-monitoring/synthetic-monitoring-agent.conf`, specifically the `API_TOKEN` variable which has been renamed to `SM_AGENT_API_TOKEN`. As a workaround for previous versions, it's recommended that users review the agent settings and set the HTTP listening address in a manner that limits the exposure, for example, localhost or a non-routed network, by using the command line parameter `-listen-address`, e.g. `-listen-address localhost:4050`.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "synthetic-monitoring-agent",
+          "versions": [
+            {
+              "version": "< 0.12.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:synthetic-monitoring-agent",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00514,
+      "nvd": {
+        "cvss_v3_score": 3.3,
+        "cvss_v3_severity": "LOW",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-489",
+          "CWE-749"
+        ],
+        "cpe_count": 1,
+        "reference_count": 12
+      }
+    },
+    {
+      "cve_id": "CVE-2023-0507",
+      "description": "Grafana is an open-source platform for monitoring and observability. \n\nStarting with the 8.1 branch, Grafana had a stored XSS vulnerability affecting the core plugin GeoMap. \n\nThe stored XSS vulnerability was possible due to map attributions weren't properly sanitized and allowed arbitrary JavaScript to be executed in the context of the currently authorized user of the Grafana instance. \n\nAn attacker needs to have the Editor role in order to change a panel to include a map attribution containing JavaScript. \n\nThis means that vertical privilege escalation is possible, where a user with Editor role can change to a known password for a user having Admin role if the user with Admin role executes malicious JavaScript viewing a dashboard. \n\nUsers may upgrade to version 8.5.21, 9.2.13 and 9.3.8 to receive a fix.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "8.5.21",
+              "status": "affected",
+              "version": "8.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.2.13",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.3.8",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThan": "8.5.21",
+              "status": "affected",
+              "version": "8.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.2.13",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.3.8",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "product:grafana enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.1546,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 3,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-0594",
+      "description": "Grafana is an open-source platform for monitoring and observability. \n\nStarting with the 7.0 branch, Grafana had a stored XSS vulnerability in the trace view visualization. \n\nThe stored XSS vulnerability was possible due the value of a span's attributes/resources were not properly sanitized and this will be rendered when the span's attributes/resources are expanded.\n\nAn attacker needs to have the Editor role in order to change the value of a trace view visualization to contain JavaScript. \n\nThis means that vertical privilege escalation is possible, where a user with Editor role can change to a known password for a user having Admin role if the user with Admin role executes malicious JavaScript viewing a dashboard. \n\nUsers may upgrade to version 8.5.21, 9.2.13 and 9.3.8 to receive a fix. \n\n",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "8.5.21",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.2.13",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.3.8",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThan": "8.5.21",
+              "status": "affected",
+              "version": "7.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.2.13",
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.3.8",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "product:grafana enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.09216,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 3,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2023-2801",
+      "description": "Grafana is an open-source platform for monitoring and observability. \n\nUsing public dashboards users can query multiple distinct data sources using mixed queries. However such query has a possibility of crashing a Grafana instance.\n\nThe only feature that uses mixed queries at the moment is public dashboards, but it's also possible to cause this by calling the query API directly.\n\nThis might enable malicious users to crash Grafana instances through that endpoint.\n\nUsers may upgrade to version 9.4.12 and 9.5.3 to receive a fix.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "9.4.12",
+              "status": "affected",
+              "version": "9.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.5.3",
+              "status": "affected",
+              "version": "9.5.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThan": "9.4.12",
+              "status": "affected",
+              "version": "9.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.5.3",
+              "status": "affected",
+              "version": "9.5.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "product:grafana enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00745,
+      "nvd": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-820",
+          "CWE-662"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-3010",
+      "description": "Grafana is an open-source platform for monitoring and observability. \n\nThe WorldMap panel plugin, versions before 1.0.4 contains a DOM XSS vulnerability.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "worldmap-panel",
+          "versions": [
+            {
+              "lessThan": "1.0.4",
+              "status": "affected",
+              "version": "0.3.30",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:worldmap-panel",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00537,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2023-3128",
+      "description": "Grafana is validating Azure AD accounts based on the email claim. \n\nOn Azure AD, the profile email field is not unique and can be easily modified. \n\nThis leads to account takeover and authentication bypass when Azure AD OAuth is configured with a multi-tenant app.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "9.5.4",
+              "status": "affected",
+              "version": "9.5.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.4.13",
+              "status": "affected",
+              "version": "9.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.3.16",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.2.20",
+              "status": "affected",
+              "version": "9.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.5.27",
+              "status": "affected",
+              "version": "6.7.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThan": "9.5.4",
+              "status": "affected",
+              "version": "9.5.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.4.13",
+              "status": "affected",
+              "version": "9.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.3.16",
+              "status": "affected",
+              "version": "9.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "9.2.20",
+              "status": "affected",
+              "version": "9.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "8.5.27",
+              "status": "affected",
+              "version": "6.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "product:grafana enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.03995,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-290"
+        ],
+        "cpe_count": 10,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2023-5123",
+      "description": "The JSON datasource plugin ( https://grafana.com/grafana/plugins/marcusolsson-json-datasource/ ) is a Grafana Labs maintained plugin for Grafana that allows for retrieving and processing JSON data from a remote endpoint (including a specific sub-path) configured by an administrator. Due to inadequate sanitization of the dashboard-supplied path parameter, it was possible to include path traversal characters (../) in the path parameter and send requests to paths on the configured endpoint outside the configured sub-path. \n\n\n\n\n\n    \n    \n            \n\n\n\n\n\n\n    \n    \n            This means that if the datasource was configured by an administrator to point at some sub-path of a domain (e.g.  https://example.com/api/some_safe_api/ ), it was possible for an editor to create a dashboard referencing the datasource which issues queries containing path traversal characters, which would in turn cause the datasource to instead query arbitrary subpaths on the configured domain (e.g.  https://example.com/api/admin_api/) .\n\nIn the rare case that this plugin is configured by an administrator to point back at the Grafana instance itself, this vulnerability becomes considerably more severe, as an administrator browsing a maliciously configured panel could be compelled to make requests to Grafana administrative API endpoints with their credentials, resulting in the potential for privilege escalation, hence the high score for this vulnerability.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana-json-datasource",
+          "versions": [
+            {
+              "lessThan": "1.3.21",
+              "status": "affected",
+              "version": "0.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana-json-datasource",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0077,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-5526",
+      "description": "Grafana OnCall is an easy-to-use on-call management tool that will help reduce toil in on-call management through simpler workflows and interfaces that are tailored specifically for engineers.\n\nGrafana OnCall, from version 1.1.37 before 1.5.2 are vulnerable to a Server Side Request Forgery (SSRF) vulnerability in the webhook functionallity. \n\nThis issue was fixed in version 1.5.2",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "oncall",
+          "versions": [
+            {
+              "lessThan": "1.5.2",
+              "status": "affected",
+              "version": "1.1.37",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:oncall",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00402,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-8975",
+      "description": "Unquoted Search Path or Element vulnerability in Grafana Alloy on Windows allows Privilege Escalation from Local User to SYSTEM\nThis issue affects Alloy: before 1.3.3, from 1.4.0-rc.0 through 1.4.0-rc.1.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "alloy",
+          "versions": [
+            {
+              "lessThan": "1.3.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "1.4.0-rc.1",
+              "status": "affected",
+              "version": "1.4.0-rc.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:alloy",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.003,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-428"
+        ],
+        "cpe_count": 4,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-8996",
+      "description": "Unquoted Search Path or Element vulnerability in Grafana Agent (Flow mode) on Windows allows Privilege Escalation from Local User to SYSTEM\nThis issue affects Agent Flow: before 0.43.2",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "agent flow",
+          "versions": [
+            {
+              "lessThan": "0.43.2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:agent flow",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00264,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-428"
+        ],
+        "cpe_count": 2,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2024-9264",
+      "description": "The SQL Expressions experimental feature of Grafana allows for the evaluation of `duckdb` queries containing user input. These queries are insufficiently sanitized before being passed to `duckdb`, leading to a command injection and local file inclusion vulnerability. Any user with the VIEWER or higher permission is capable of executing this attack.  The `duckdb` binary must be present in Grafana's $PATH for this attack to function; by default, this binary is not installed in Grafana distributions.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "+security-01",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "11.0.5",
+              "status": "affected",
+              "version": "11.0.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "+security-01",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "11.1.6",
+              "status": "affected",
+              "version": "11.1.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "+security-01",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "11.2.1",
+              "status": "affected",
+              "version": "11.2.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "+security-01",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "11.0.6",
+              "status": "affected",
+              "version": "11.0.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "+security-01",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "11.1.7",
+              "status": "affected",
+              "version": "11.1.0",
+              "versionType": "semver"
+            },
+            {
+              "changes": [
+                {
+                  "at": "+security-01",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "11.2.2",
+              "status": "affected",
+              "version": "11.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.97553,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-77"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-11539",
+      "description": "Grafana Image Renderer is vulnerable to remote code execution due to an\u00a0arbitrary file write vulnerability. This is due to the fact that the /render/csv endpoint lacked validation of the filePath parameter that allowed an attacker to save a shared object to an arbitrary location that is then loaded by the Chromium process.\n\nInstances are vulnerable if:\n\n1. The default token (\"authToken\") is not changed, or is known to the attacker.\n2. The attacker can reach the image renderer endpoint.\nThis issue affects grafana-image-renderer: from 1.0.0 through 4.0.16.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana-image-renderer",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.0.16",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana-image-renderer",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00636,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2025-3260",
+      "description": "A security vulnerability in the /apis/dashboard.grafana.app/* endpoints allows authenticated users to bypass dashboard and folder permissions. The vulnerability affects all API versions (v0alpha1, v1alpha1, v2alpha1).\n\nImpact:\n\n- Viewers can view all dashboards/folders regardless of permissions\n\n- Editors can view/edit/delete all dashboards/folders regardless of permissions\n\n- Editors can create dashboards in any folder regardless of permissions\n\n- Anonymous users with viewer/editor roles are similarly affected\n\nOrganization isolation boundaries remain intact. The vulnerability only affects dashboard access and does not grant access to datasources.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "11.6.1+security-01",
+              "status": "affected",
+              "version": "11.6.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00557,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-41115",
+      "description": "SCIM provisioning was\u00a0introduced\u00a0in Grafana Enterprise and Grafana Cloud in April to improve how organizations manage users and teams in Grafana by introducing automated user lifecycle management.\n\nIn Grafana versions 12.x where SCIM provisioning is enabled and configured, a vulnerability in user identity handling allows a malicious or compromised SCIM client to provision a user with a numeric externalId, which in turn could allow to override internal user IDs and lead to impersonation or privilege escalation.\n\nThis vulnerability applies only if\u00a0all\u00a0of the following conditions are met:\n- `enableSCIM`\u00a0feature flag set to true\n- `user_sync_enabled`\u00a0config option in the\u00a0`[auth.scim]`\u00a0block set to true",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.17498,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-266"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-41118",
+      "description": "Pyroscope is an open-source continuous profiling database. The database supports various storage backends, including Tencent Cloud Object Storage (COS).\n\nIf the database is configured to use Tencent COS as the storage backend, an attacker could extract the secret_key configuration value from the Pyroscope API.\n\nTo exploit this vulnerability, an attacker needs direct access to the Pyroscope API. We highly recommend limiting the public internet exposure of all our databases, such that they are only accessible by trusted users or internal systems.\n\nThis vulnerability is fixed in versions:\n\n1.15.x: 1.15.2 and above.\n1.16.x: 1.16.1 and above.\n1.17.x: 1.17.0 and above (i.e. all versions).\n\nThanks to Th\u00e9o Cusnir for reporting this vulnerability to us via our bug bounty program.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "pyroscope",
+          "versions": [
+            {
+              "version": "1.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "1.16.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:pyroscope",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00407,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732",
+          "CWE-201"
+        ],
+        "cpe_count": 2,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-4123",
+      "description": "A cross-site scripting (XSS) vulnerability exists in Grafana caused by combining a client path traversal and open redirect. This allows attackers to redirect users to a website that hosts a frontend plugin that will execute arbitrary JavaScript. This vulnerability does not require editor permissions and if anonymous access is enabled, the XSS will work. If the Grafana Image Renderer plugin is installed, it is possible to exploit the open redirect to achieve a full read SSRF.\n\nThe default Content-Security-Policy (CSP) in Grafana will block the XSS though the `connect-src` directive.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "10.4.19",
+              "status": "affected",
+              "version": "10.4.18+security-01",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.2.10",
+              "status": "affected",
+              "version": "11.2.9+security-01",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.3.7",
+              "status": "affected",
+              "version": "11.3.6+security-01",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.4.5",
+              "status": "affected",
+              "version": "11.4.4+security-01",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.5.5",
+              "status": "affected",
+              "version": "11.5.4+security-01",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.6.2",
+              "status": "affected",
+              "version": "11.6.1+security-01",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.0.1",
+              "status": "affected",
+              "version": "12.0.0+security-01",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.97083,
+      "nvd": {
+        "cvss_v3_score": 6.1,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-601"
+        ],
+        "cpe_count": 13,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2025-6023",
+      "description": "An open redirect vulnerability has been identified in Grafana OSS that can be exploited to achieve XSS attacks. The vulnerability was introduced in Grafana v11.5.0.\n\nThe open redirect can be chained with path traversal vulnerabilities to achieve XSS.\n\nFixed in versions 12.0.2+security-01, 11.6.3+security-01, 11.5.6+security-01, 11.4.6+security-01 and 11.3.8+security-01",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "lessThan": "12.0.2+security-01",
+              "status": "affected",
+              "version": "12.0.x",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.6.3+security-01",
+              "status": "affected",
+              "version": "11.6.x",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.5.6+security-01",
+              "status": "affected",
+              "version": "11.5.x",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.4.6+security-01",
+              "status": "affected",
+              "version": "11.4.x",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "11.3.8+security-01",
+              "status": "affected",
+              "version": "11.3.x",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.57743,
+      "nvd": {
+        "cvss_v3_score": 7.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-601"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-100105",
+      "description": "A user with permission to edit contact points but not their protected fields can change protected settings, such as a contact point's destination URL, by switching an integration to a legacy schema version, which can expose stored credentials and redirect alert notifications (incorrect authorization).",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.4.13",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.11",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.8",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.4",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.4.13",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.11",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.8",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.4",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-103506",
+      "description": "An authenticated user in Grafana can read SSO client secrets and modify instance-wide SSO settings without the required permissions (missing authorization). This affects Grafana OSS and Enterprise 13.2 installations with the experimental kubernetesSsoSettingsApi feature toggle enabled, which is disabled by default.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "13.2.4",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "13.2.4",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-14199",
+      "description": "Only self-managed Grafana instances with Auth Proxy authentication and identity caching enabled (sync_ttl greater than zero) are affected. The Auth Proxy cache key concatenated the username and forwarded identity attributes without a delimiter, so distinct identities could collide on one key. An authenticated user who shapes their own attributes to collide with a higher-privileged user's, while that user's cache entry is live, is authenticated as that user, up to Administrator (authentication bypass by spoofing).",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "version": "11.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.17"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.11"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.11"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.9"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.7"
+            },
+            {
+              "version": "13.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.1.4"
+            },
+            {
+              "version": "13.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.2.0"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "11.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.17"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.11"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.11"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.9"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.7"
+            },
+            {
+              "version": "13.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.1.4"
+            },
+            {
+              "version": "13.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00325,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-290",
+          "CWE-863",
+          "CWE-1023"
+        ],
+        "cpe_count": 4,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-15583",
+      "description": "A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-URL request header. This also enables SSRF against arbitrary internal services, including cloud metadata endpoints.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana mcp server",
+          "versions": [
+            {
+              "version": "0.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "0.17.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana mcp server",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00529,
+      "nvd": {
+        "cvss_v3_score": 8.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-610"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-15815",
+      "description": "Grafana OSS and Grafana Enterprise did not safely resolve symbolic links when\nextracting plugin archives. A crafted plugin archive can chain relative symbolic link\nentries to escape the plugin installation directory, writing arbitrary files and an\nexecutable backend binary outside that directory. The dropped executable runs with the\nprivileges of the Grafana server process, resulting in remote code execution.\n\nPlugin archives are extracted before their signature is verified, so a valid plugin\nsignature does not prevent the write. An operator can therefore be affected by\ninstalling a plugin that appears legitimate, as well as by installing a plugin from an\narbitrary archive using grafana-cli, the GF_INSTALL_PLUGINS environment variable, or\npreinstall configuration.\n\nGrafana Enterprise is affected because it includes the same plugin extraction code as\nGrafana OSS.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.17"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.1.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.10"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.8"
+            },
+            {
+              "version": "13.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.1.5"
+            },
+            {
+              "version": "13.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.2.1"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.17"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.1.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.10"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.8"
+            },
+            {
+              "version": "13.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.1.5"
+            },
+            {
+              "version": "13.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.2.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00685,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-59",
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-17183",
+      "description": "An authenticated user with permission to create or edit alert rules can bypass datasource query authorization by marking an alert rule query as a server-side expression while referencing a real datasource UID (incorrect authorization). This can expose data accessible through Grafana's configured datasource credentials to users who lack permission to query that datasource.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "8.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.11"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.4.9"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "13.0.7"
+            },
+            {
+              "version": "13.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "13.1.4"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "version": "8.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.11"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.4.9"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "13.0.7"
+            },
+            {
+              "version": "13.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "13.1.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00285,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19516",
+      "description": "A caller-supplied X-Grafana-URL request header controls the destination of mcp-grafana's outbound requests, and the grafana_api_request tool lets the caller also choose the HTTP method, path, and body. Because the destination is not restricted to the configured Grafana instance, a caller can direct requests at internal, loopback, and link-local network services (including metadata endpoints) and read the responses, resulting in server-side request forgery. The fix for CVE-2026-15583 prevented the configured service-account token from being sent to unintended destinations but did not restrict the destinations themselves.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana mcp server",
+          "versions": [
+            {
+              "version": "0.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.0.0"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "mcp-grafana",
+          "versions": [
+            {
+              "version": "0.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana mcp server",
+        "product:mcp-grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0031,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-21720",
+      "description": "Every uncached /avatar/:hash request spawns a goroutine that refreshes the Gravatar image. If the refresh sits in the 10-slot worker queue longer than three seconds, the handler times out and stops listening for the result, so that goroutine blocks forever trying to send on an unbuffered channel. Sustained traffic with random hashes keeps tripping this timeout, so goroutine count grows linearly, eventually exhausting memory and causing Grafana to crash on some systems.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "11.6.9"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.0.8"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.1.5"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "11.6.9"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.0.8"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.1.5"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.2.3"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.2.3"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana/grafana",
+        "product:grafana/grafana-enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00691,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-703",
+          "CWE-772"
+        ],
+        "cpe_count": 10,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-21721",
+      "description": "The dashboard permissions API does not verify the target dashboard scope and only checks the dashboards.permissions:* action. As a result, a user who has permission management rights on one dashboard can read and modify permissions on other dashboards. This is an organization\u2011internal privilege escalation.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.1"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.2.3"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "12.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.1.5"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.0.8"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana",
+          "versions": [
+            {
+              "version": "10.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "11.6.9"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "10.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "11.6.9"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.0.8"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "12.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.1.5"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.2.3"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana/grafana-enterprise",
+          "versions": [
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana/grafana",
+        "product:grafana/grafana-enterprise",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00724,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863",
+          "CWE-639"
+        ],
+        "cpe_count": 10,
+        "reference_count": 11
+      }
+    },
+    {
+      "cve_id": "CVE-2026-21728",
+      "description": "Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.\n\nMitigation can be done by setting max_result_limit in the search config, e.g. to 262144 (2^18). Alternatively, automatically restart the service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "tempo",
+          "versions": [
+            {
+              "version": "1.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "2.8.3"
+            },
+            {
+              "version": "2.9.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "2.9.1"
+            },
+            {
+              "version": "2.10.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "2.10.1"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "enterprise traces (get)",
+          "versions": [
+            {
+              "version": "1.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "2.8.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise traces (get)",
+        "product:tempo",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00637,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-770"
+        ],
+        "cpe_count": 3,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-21729",
+      "description": "Loki queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "loki",
+          "versions": [
+            {
+              "version": "v3.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "v3.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:loki",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0046,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-27876",
+      "description": "A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always recommended to update to avoid future attack vectors going this path.\n\nOnly instances with the sqlExpressions feature toggle enabled are vulnerable.\n\nOnly instances in the following version ranges are affected:\n\n- 11.6.0 (inclusive) to 11.6.14 (exclusive): 11.6.14 has the fix. 11.5 and below are not affected.\n- 12.0.0 (inclusive) to 12.1.10 (exclusive): 12.1.10 has the fix. 12.0 did not receive an update, as it is end-of-life.\n- 12.2.0 (inclusive) to 12.2.8 (exclusive): 12.2.8 has the fix.\n- 12.3.0 (inclusive) to 12.3.6 (exclusive): 12.3.6 has the fix.\n- 12.4.0 (inclusive) to 12.4.2 (exclusive): 12.4.2 has the fix. 13.0.0 and above also have the fix: no v13 release is affected.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "11.6.14"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.1.10"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.2.8"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.3.6"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "12.4.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01963,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-89"
+        ],
+        "cpe_count": 5,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-27880",
+      "description": "The OpenFeature feature toggle evaluation endpoint reads unbounded values into memory, which can cause out-of-memory crashes.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana",
+          "versions": [
+            {
+              "version": "v12.1.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "v12.1.10"
+            },
+            {
+              "version": "v12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "v12.2.8"
+            },
+            {
+              "version": "v12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "v12.3.6"
+            },
+            {
+              "version": "v12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "v12.4.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00786,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787",
+          "CWE-125",
+          "CWE-770"
+        ],
+        "cpe_count": 4,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-28377",
+      "description": "A vulnerability in Grafana Tempo exposes the S3 SSE-C encryption key in plaintext through the /status/config endpoint, potentially allowing unauthorized users to obtain the key used to encrypt trace data stored in S3.\n\nThanks to william_goodfellow for reporting this vulnerability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "tempo",
+          "versions": [
+            {
+              "version": "2.10.3",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tempo",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00161,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-326"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-28381",
+      "description": "The Snowflake datasource allows for GET/PUT commands, which can allow any user with access to run queries against the data source to read/write files between the local grafana server and the connected Snowflake host.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "snowflake datasource",
+          "versions": [
+            {
+              "version": "1.14.7",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.14.12"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:snowflake datasource",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-33376",
+      "description": "When using an IPv6 allow-list for the Auth Proxy feature, it defaults to /32 addresses. Addresses specifying a mask explicitly are not affected; to mitigate easily, add the desired mask (usually /128) to the addresses. Only auth proxy is affected; Okta, SAML, LDAP, etc are unaffected here.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "9.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.14"
+            },
+            {
+              "version": "11.6.14",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "11.6.14+security-04"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.8"
+            },
+            {
+              "version": "12.2.8",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "12.2.8+security-04"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.6"
+            },
+            {
+              "version": "12.3.6",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "12.3.6+security-04"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "12.4.3",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "12.4.3+security-02"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            },
+            {
+              "version": "13.0.1",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "13.0.1+security-01"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00282,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1188"
+        ],
+        "cpe_count": 13,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-33377",
+      "description": "An Editor can overwrite a dashboard not owned by them to acquire admin on that specific dashboard. The user must have write access to the dashboard to escalate privilege.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "8.5.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.14"
+            },
+            {
+              "version": "11.6.14",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "11.6.14+security-04"
+            },
+            {
+              "version": "12.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.8"
+            },
+            {
+              "version": "12.2.8",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "12.2.8+security-04"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.6"
+            },
+            {
+              "version": "12.3.6",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "12.3.6+security-04"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "12.4.3",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "12.4.3+security-02"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            },
+            {
+              "version": "13.0.1",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "13.0.1+security-01"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00226,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287",
+          "CWE-284"
+        ],
+        "cpe_count": 13,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-33382",
+      "description": "Several Grafana API endpoints, some of them unauthenticated, do not limit the size of the request body before processing it. An attacker can send very large payloads that force excessive memory allocation, potentially exhausting memory and causing a denial of service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.14"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.8"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.6"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00388,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42127",
+      "description": "The public dashboard query endpoint does not limit request body size before processing, allowing unauthenticated attackers to trigger excessive memory allocation by sending arbitrarily large JSON payloads. This can lead to denial of service through memory exhaustion. No valid dashboard access token or authentication is required to exploit this vulnerability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.14"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.8"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.6"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.14"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.8"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.6"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00432,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-770"
+        ],
+        "cpe_count": 5,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-42129",
+      "description": "A user with Viewer permissions can use a path traversal in the Loki data source plugin to reach administrative Loki endpoints and read sensitive backend configuration and internal service information.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "11.6.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "11.6.14"
+            },
+            {
+              "version": "12.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.2.8"
+            },
+            {
+              "version": "12.3.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.3.6"
+            },
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00443,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-75889",
+      "description": "Grafana Alloy\u2019s prometheus.operator.servicemonitors component allows a user who can create or modify ServiceMonitor resources in a watched namespace to specify an arbitrary local file through bearerTokenFile. Alloy reads the file and sends its contents as a bearer token to an attacker-controlled scrape endpoint. This may disclose files accessible to the Alloy process, including its projected Kubernetes service account token, potentially granting the attacker Alloy\u2019s Kubernetes permissions. Exploitation requires ServiceMonitor write access and lower privileges than Alloy\u2019s service account.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "alloy",
+          "versions": [
+            {
+              "lessThanOrEqual": "1.18.1",
+              "status": "affected",
+              "version": "1.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:alloy",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00219,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-552"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76154",
+      "description": "A stored cross-site scripting vulnerability in the Geomap panel's MapLibre base layer allows a user with the Editor role to execute arbitrary JavaScript in another user's session by hosting a malicious style configuration, enabling escalation to Org Admin.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.10",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.8",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.5",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.1",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.10",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.8",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.5",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.1",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00353,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88967",
+      "description": "A user with query access to an Azure Monitor data source in Grafana can cause server-side requests to an attacker-controlled endpoint that disclose the data source's Azure access token (server-side request forgery).",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "11.6.16",
+              "status": "affected",
+              "version": "10.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.2.10",
+              "status": "affected",
+              "version": "12.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.3.11",
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.13",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.11",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.8",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.4",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "11.6.16",
+              "status": "affected",
+              "version": "10.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.2.10",
+              "status": "affected",
+              "version": "12.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.3.11",
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.13",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.11",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.8",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.4",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-9029",
+      "description": "A user with Editor permissions can place a malicious script in the attribution field of a Geomap panel's XYZ tile layer via a template variable. The script then executes in the browser of any user who views the affected dashboard (stored cross-site scripting).",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "version": "12.4.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "12.4.3"
+            },
+            {
+              "version": "13.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "13.0.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00251,
+      "nvd": {
+        "cvss_v3_score": 5.4,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9703",
+      "description": "Grafana's data source proxy did not apply role-based access control to write requests forwarded to Loki data sources. A user holding only the Viewer role on an affected Grafana instance could send POST, PUT and DELETE requests through the proxy to the Loki rules API (/loki/api/v1/rules), allowing them to create, modify and delete Loki alerting rules. Because those rules are stored by Loki rather than by Grafana, the change took effect for every user of that Loki data source, not only for the Viewer who made the request.\n\nExploitation requires an authenticated Viewer account on the Grafana instance and a configured Loki data source; no other privileges are needed. Both Grafana OSS and Grafana Enterprise are affected. The defect is in Grafana's data source proxy; Loki itself is not vulnerable and does not need to be patched.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "11.5.10",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "11.6.16",
+              "status": "affected",
+              "version": "11.6.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.1.10",
+              "status": "affected",
+              "version": "12.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.2.10",
+              "status": "affected",
+              "version": "12.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.3.8",
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.5",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.3",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.3.8",
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.5",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.3.0",
+              "status": "affected",
+              "version": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.3",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00195,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9765",
+      "description": "Note: The CVE and blog post don't exist because we determined this is actually a cloud-only issue.\n\nAccess Controls are \u201cBroken\u201d when a user can access resources they are not authorized to access. An attacker can bypass any access control mechanisms in a web application, and gain unauthorized access to resources that are not available with their permissions. \n\nBroken access control can allow attackers to:\nAccess resources only accessible to certain users, thus allowing unauthorized access to data\nPerform operations on behalf of other users, leading to account takeovers in the worst cases\nAttempt privilege escalation\nAttempt to take over an account",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana irm",
+          "versions": [
+            {
+              "version": "1.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "1.164.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana irm",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00402,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    }
+  ]
+}
