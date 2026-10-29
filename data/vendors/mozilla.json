@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T02:28:53+00:00",
+  "generated_at": "2026-10-29T10:03:12+00:00",
   "vendor": "mozilla",
-  "count": 884,
+  "count": 885,
   "items": [
     {
       "cve_id": "CVE-2022-0511",
@@ -28144,7 +28144,7 @@
           "CWE-269"
         ],
         "cpe_count": 6,
-        "reference_count": 7
+        "reference_count": 11
       }
     },
     {
@@ -29899,7 +29899,7 @@
           "CWE-416"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -29972,7 +29972,7 @@
           "CWE-416"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -30045,7 +30045,7 @@
           "CWE-119"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -32290,6 +32290,61 @@
         ],
         "cpe_count": 1,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-118008",
+      "description": "Privilege escalation in the DOM: Navigation component. This vulnerability was fixed in Firefox 159 and Thunderbird 159.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "159",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "159",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {

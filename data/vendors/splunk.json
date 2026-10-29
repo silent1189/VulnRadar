@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T02:28:53+00:00",
+  "generated_at": "2026-10-29T10:03:12+00:00",
   "vendor": "splunk",
-  "count": 128,
+  "count": 129,
   "items": [
     {
       "cve_id": "CVE-2022-26889",
@@ -5277,6 +5277,67 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-664"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76301",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76301 are related to protection mechanism failure and are grouped under the Common Weakness Enumeration (CWE) CWE-693.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk enterprise",
+          "versions": [
+            {
+              "version": "10.4",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.4.4"
+            },
+            {
+              "version": "10.2",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.2.8"
+            },
+            {
+              "version": "10.0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "10.0.11"
+            },
+            {
+              "version": "9.4",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "9.4.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk enterprise",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00382,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
         ],
         "cpe_count": 0,
         "reference_count": 1
