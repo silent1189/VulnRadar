@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T17:01:01+00:00",
+  "generated_at": "2026-10-29T21:54:51+00:00",
   "vendor": "gitlab",
   "count": 205,
   "items": [
@@ -10968,14 +10968,25 @@
       "watchlist_hit": true,
       "in_watchlist": true,
       "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "is_critical": true,
+      "priority_label": "CRITICAL (CISA KEV + Watchlist)",
       "matched_terms": [
         "product:gitlab",
         "vendor:gitlab"
       ],
-      "active_threat": false,
+      "active_threat": true,
       "probability_score": 0.18427,
+      "kev": {
+        "cveID": "CVE-2026-97229",
+        "vendorProject": "GitLab",
+        "product": "Community Edition and Enterprise Edition",
+        "vulnerabilityName": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+        "dateAdded": "2026-10-29",
+        "shortDescription": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-11-01",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
       "nvd": {
         "cvss_v3_score": 10.0,
         "cvss_v3_severity": "CRITICAL",
