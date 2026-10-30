@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T21:54:51+00:00",
+  "generated_at": "2026-10-30T01:57:54+00:00",
   "vendor": "_other",
-  "count": 3139,
+  "count": 3146,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -54475,6 +54475,154 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-103093",
+      "description": "ServiceNow has remediated a sandbox escape security issue that was identified in the ServiceNow AI Platform. This vulnerability could enable an authenticated user with the admin role to bypass Rhino sandbox restrictions and execute arbitrary code on the underlying host operating system, potentially enabling further unintended access. \n\n\n\nServiceNow deployed an update to hosted instances, and ServiceNow provided the update to our partners and self-hosted customers. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 4a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 13",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-103094",
+      "description": "ServiceNow has remediated an information disclosure vulnerability that was identified in the ServiceNow AI Platform. This vulnerability could cause a user's plaintext password to be persisted in a system table, potentially exposing that password to a user who otherwise would not be entitled to view it.\n\n\n\n\n\nServiceNow remediated the vulnerability through security updates that address the unintended persistence of plaintext credentials. We are not currently aware of malicious exploitation against ServiceNow instances. We recommend customers promptly apply appropriate updates or upgrade to a patched release if they have not already done so.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "servicenow",
+          "product": "servicenow ai platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Xanadu Patch 11 Hot Fix 7a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Yokohama Patch 13 Hot Fix 4a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 10 Hot Fix 3a",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11 Hot Fix 1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 11m (m-branch)",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Zurich Patch 13",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 2 Hot Fix 3b",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4 Hot Fix 1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 4m (m-branch)",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "Australia Patch 5",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:servicenow ai platform",
+        "vendor:servicenow"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13016",
@@ -125311,6 +125459,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-62131",
+      "description": "Unauthenticated PHP Object Injection in Zoho Flow <= 2.14.5 versions.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zoho flow",
+          "product": "zoho flow",
+          "versions": [
+            {
+              "lessThanOrEqual": "2.14.5",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zoho flow",
+        "vendor:zoho flow"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2024-47657",
       "description": "This vulnerability exists in the Shilpi Net Back Office due to improper access controls on certain API endpoints. An authenticated remote attacker could exploit this vulnerability by manipulating a parameter dfclientid through API request URLs which could lead to unauthorized access to sensitive information belonging to other users.",
       "cvss_score": 7.1,
@@ -146232,13 +146412,13 @@
               "status": "affected",
               "version": "09.1.00",
               "versionType": "custom",
-              "lessThanOrEqual": "09.4.05"
+              "lessThan": "09.4.05"
             },
             {
               "status": "affected",
               "version": "10.0.00",
               "versionType": "custom",
-              "lessThanOrEqual": "10.3.01"
+              "lessThan": "10.3.01"
             }
           ]
         }
@@ -160283,6 +160463,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.18",
+          "versions": [
+            {
+              "version": "418.94.202610242013-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat openshift container platform 4.22",
           "versions": [
             {
@@ -160683,6 +160875,90 @@
           "versions": [
             {
               "version": "1788206196",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793206758",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793194817",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793194815",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793194834",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793135861",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793194815",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux ai 3.5",
+          "versions": [
+            {
+              "version": "1793135863",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -172432,6 +172708,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-62013",
+      "description": "Unauthenticated PHP Object Injection in Edge Decor <= 2.9 versions.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "themerex",
+          "product": "edge decor",
+          "versions": [
+            {
+              "lessThanOrEqual": "2.9",
+              "status": "affected",
+              "version": "n/a",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:edge decor",
+        "vendor:themerex"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-62120",
       "description": "Unauthenticated PHP Object Injection in Law Office <= 3.20 versions.",
       "cvss_score": 9.8,
@@ -177915,6 +178223,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103665",
+      "description": "The installer for Yamaha LAN Monitor for Windows provided by Yamaha Corporation may insecurely load Dynamic Link Libraries (DLLs). When the installer is launched in a directory containing a specially crafted DLL file, the malicious DLL may be loaded, resulting in arbitrary code execution with administrative privileges.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "yamaha corporation",
+          "product": "yamaha lan monitor for windows",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "Ver.1.9.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:yamaha lan monitor for windows",
+        "vendor:yamaha corporation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-103672",
       "description": "The PEAK-System PCAN parser indexes a length table using attacker-controlled DLC without enforcing DLC <= 0x0f, then copies attacker payload from record+0x1c into a fixed-size stack destination.",
       "cvss_score": 7.1,
@@ -178608,6 +178948,68 @@
         "cpe_count": 0,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-119282",
+      "description": "Nx is a monorepo solution for TypeScript and polyglot codebases. From 22.0.2 until 22.7.9 and 23.1.2 for @nx/maven, and from 21.0.0 until 22.7.9 and 23.1.2 for @nx/gradle, the plugins' project-graph analyzers launch through a shell and interpolate plugin options from nx.json into command arguments. The @nx/maven targetNamePrefix value and arbitrary @nx/gradle option names or values can therefore be interpreted as shell syntax whenever an nx command constructs the project graph. A user who runs Nx in an attacker-controlled repository or pull request can execute injected commands with the user's privileges, while workspaces that register neither affected plugin are not exposed to this path. Remediation requires upgrading both nx and each affected plugin to matching releases because the plugin fix depends on code in the nx package. This issue is fixed in versions 22.7.9 and 23.1.2.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nrwl",
+          "product": "nx",
+          "versions": [
+            {
+              "version": ">= 21.0.0, < 22.7.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 23.0.0, < 23.1.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@nx",
+          "product": "maven",
+          "versions": [
+            {
+              "version": ">= 21.0.0, < 22.7.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 23.0.0, < 23.1.2",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@nx",
+          "product": "gradle",
+          "versions": [
+            {
+              "version": ">= 21.0.0, < 22.7.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 23.0.0, < 23.1.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nx",
+        "vendor:nrwl"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-48027",
@@ -183681,6 +184083,62 @@
         "cpe_count": 0,
         "reference_count": 7
       }
+    },
+    {
+      "cve_id": "CVE-2026-119025",
+      "description": "open 7.2.0 before 11.0.0 contains an OS command injection vulnerability that allows attackers to execute PowerShell code by supplying crafted URLs on Windows and WSL. Attackers can embed $(...) subexpressions in URLs, such as OAuth authorization_endpoint values from malicious MCP servers, which execute when index.js passes them unescaped to powershell -EncodedCommand.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "sindresorhus",
+          "product": "open",
+          "versions": [
+            {
+              "version": "7.2.0",
+              "lessThan": "11.0.0",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "modelcontextprotocol",
+          "product": "inspector",
+          "versions": [
+            {
+              "version": "2.0.0",
+              "lessThan": "2.12.0",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "anomalyco",
+          "product": "opencode",
+          "versions": [
+            {
+              "version": "1.0.137",
+              "lessThan": "1.18.33",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:open",
+        "vendor:sindresorhus"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-12225",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T21:54:51+00:00",
+  "generated_at": "2026-10-30T01:57:54+00:00",
   "vendor": "elastic",
-  "count": 65,
+  "count": 68,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -1773,6 +1773,114 @@
         "cpe_count": 3,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-115708",
+      "description": "Improper Link Resolution Before File Access ('Link Following') (CWE-59) in Elastic Cloud Enterprise (ECE) can lead to authentication bypass and unauthorized changes to the configuration of other deployments on the same host via Symlink Attack (CAPEC-132).",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic cloud enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "1.0.0",
+              "lessThanOrEqual": "3.8.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "4.0.0",
+              "lessThanOrEqual": "4.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic cloud enterprise",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-115709",
+      "description": "Improper Link Resolution Before File Access ('Link Following') (CWE-59) in Elastic Cloud Enterprise (ECE) can lead to unauthorized disclosure and loss of data belonging to other deployments on the same host via Symlink Attack (CAPEC-132).",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic cloud enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "2.6.0",
+              "lessThanOrEqual": "3.8.5"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "4.0.0",
+              "lessThanOrEqual": "4.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic cloud enterprise",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-115713",
+      "description": "Improper Link Resolution Before File Access ('Link Following') (CWE-59) in Elastic Cloud Enterprise (ECE) can lead to unauthorized read and write access to data of other deployments on the same host via Symlink Attack (CAPEC-132).",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic cloud enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "4.1.0",
+              "lessThanOrEqual": "4.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic cloud enterprise",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-26938",

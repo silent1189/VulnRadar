@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T21:54:51+00:00",
+  "generated_at": "2026-10-30T01:57:54+00:00",
   "vendor": "red_hat",
-  "count": 346,
+  "count": 348,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -26255,11 +26255,6 @@
         {
           "vendor": "red hat",
           "product": "red hat enterprise linux 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 9",
           "versions": null
         },
         {
@@ -64450,10 +64445,10 @@
       "affected": [
         {
           "vendor": "red hat",
-          "product": "red hat advanced cluster security for kubernetes 4.11",
+          "product": "red hat advanced cluster security for kubernetes 4.10",
           "versions": [
             {
-              "version": "1792492060",
+              "version": "1793184257",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -64462,8 +64457,15 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat advanced cluster security 4",
-          "versions": null
+          "product": "red hat advanced cluster security for kubernetes for ibm z and linuxone 4.11",
+          "versions": [
+            {
+              "version": "1792492060",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
         }
       ],
       "watchlist_hit": true,
@@ -64472,7 +64474,8 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:red hat advanced cluster security for kubernetes 4.11",
+        "product:red hat advanced cluster security for kubernetes 4.10",
+        "product:red hat advanced cluster security for kubernetes for ibm z and linuxone 4.11",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -65540,6 +65543,69 @@
       }
     },
     {
+      "cve_id": "CVE-2026-114488",
+      "description": "A flaw was found in Wildfly. A remote attacker can bypass authentication on IIOP EJB invocations as the CSIv2 security interceptor accepts ITTPrincipalName identity assertions in the service context without verifying transport-level authentication, allowing a pre-auth attacker on the port 3528 to impersonate any principal on every IIOP-exposed @Remote EJB.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat fuse 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform expansion pack",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat single sign-on 7",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
+        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform expansion pack",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00338,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-829"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-11332",
       "description": "A flaw was found in ansible-core. The ansible-galaxy role install command processes dependency specifications from a role's meta/requirements.yml file. Due to improper neutralization of argument delimiters, a malicious role author can inject arbitrary git configuration flags through the src field. This allows arbitrary code execution on the machine of a user who installs the role via ansible-galaxy role install.",
       "cvss_score": 7.8,
@@ -66317,6 +66383,18 @@
       "affected": [
         {
           "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": [
+            {
+              "version": "0:0.2.10-1.el10_2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat enterprise linux 10.0 extended update support",
           "versions": [
             {
@@ -66374,11 +66452,6 @@
               "status": "unaffected"
             }
           ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 10",
-          "versions": null
         },
         {
           "vendor": "red hat",
@@ -66624,8 +66697,15 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat openshift ai (rhoai)",
-          "versions": null
+          "product": "red hat openshift ai 3.4",
+          "versions": [
+            {
+              "version": "1793001859",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
         },
         {
           "vendor": "red hat",
@@ -80467,6 +80547,58 @@
       }
     },
     {
+      "cve_id": "CVE-2026-15564",
+      "description": "Wildfly's IIOP listener may permit deserialization of input streams before authentication is performed. An attacker who can gain access to the IIOP port may be able to construct and send malicious objects and achieve deserialization, if the target EJB allows untyped method parameters, and depending on the potential gadget chains available in the running classpath.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
+        "product:red hat jboss enterprise application platform 8",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00124,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-829"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-15565",
       "description": "A flaw was found in Undertow. A remote attacker can cause Out of Memory on websockets endpoint without authentication on any @ServerEndpoint class that has any @OnMessage method. This allows an attacker to cause Denial of Service attack without authentication and using only a standard WebSocket handshake.",
       "cvss_score": 7.5,
@@ -90299,6 +90431,42 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.20",
+          "versions": [
+            {
+              "version": "4.20.9.6.202610242033-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.21",
+          "versions": [
+            {
+              "version": "4.21.9.6.202610241345-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.22",
+          "versions": [
+            {
+              "version": "4.22.9.8.202610241758-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.17",
           "versions": [
             {
@@ -90863,6 +91031,42 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift container platform 4.20",
+          "versions": [
+            {
+              "version": "4.20.9.6.202610242033-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.21",
+          "versions": [
+            {
+              "version": "4.21.9.6.202610241345-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.22",
+          "versions": [
+            {
+              "version": "4.22.9.8.202610241758-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "cert manager support for red hat openshift release 1.17",
           "versions": [
             {
@@ -91116,11 +91320,6 @@
         {
           "vendor": "red hat",
           "product": "red hat enterprise linux 6",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
           "versions": null
         },
         {
@@ -91489,6 +91688,42 @@
           "versions": [
             {
               "version": "4.19.9.6.202607151909-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.20",
+          "versions": [
+            {
+              "version": "4.20.9.6.202610242033-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.21",
+          "versions": [
+            {
+              "version": "4.21.9.6.202610241345-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.22",
+          "versions": [
+            {
+              "version": "4.22.9.8.202610241758-0",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -92652,6 +92887,54 @@
           "versions": [
             {
               "version": "4.19.9.6.202607151909-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.19",
+          "versions": [
+            {
+              "version": "4.19.9.6.202610241701-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.20",
+          "versions": [
+            {
+              "version": "4.20.9.6.202610242033-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.21",
+          "versions": [
+            {
+              "version": "4.21.9.6.202610241345-0",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 4.22",
+          "versions": [
+            {
+              "version": "4.22.9.8.202610241758-0",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -103963,6 +104246,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": [
+            {
+              "version": "0:11.9.0-6.el10_2.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat enterprise linux 9",
           "versions": [
             {
@@ -104006,11 +104301,6 @@
         {
           "vendor": "red hat",
           "product": "red hat certificate system 11",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 10",
           "versions": null
         },
         {
@@ -104156,6 +104446,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": [
+            {
+              "version": "0:11.9.0-6.el10_2.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat enterprise linux 9",
           "versions": [
             {
@@ -104199,11 +104501,6 @@
         {
           "vendor": "red hat",
           "product": "red hat certificate system 11",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 10",
           "versions": null
         },
         {
@@ -104979,6 +105276,18 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat openshift service mesh 3.4",
+          "versions": [
+            {
+              "version": "1789021200",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "migration toolkit for applications 8",
           "versions": null
         },
@@ -104990,11 +105299,6 @@
         {
           "vendor": "red hat",
           "product": "migration toolkit for virtualization",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "openshift service mesh 3",
           "versions": null
         },
         {

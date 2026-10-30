@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T21:54:51+00:00",
+  "generated_at": "2026-10-30T01:57:54+00:00",
   "vendor": "ibm",
-  "count": 1174,
+  "count": 1191,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -17257,6 +17257,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-101288",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-101294",
       "description": "IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.10 and IBM WebSphere Application Server 8.5, and 9.0 could allow a remote attacker to bypass cryptographic signature verification due to improper verification of cryptographic signature.",
       "cvss_score": 8.7,
@@ -17454,6 +17486,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103092",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper access control.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-103360",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
       "cvss_score": 8.1,
@@ -17555,6 +17619,102 @@
       }
     },
     {
+      "cve_id": "CVE-2026-104317",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote attacker who could reach the message broker to execute arbitrary code on the system due to the deserialization of untrusted data.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104324",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to deserialization of untrusted data.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104328",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-104334",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
       "cvss_score": 9.8,
@@ -17639,6 +17799,38 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-104339",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-105052",
@@ -17944,6 +18136,134 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-107326",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107327",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to missing authorization.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107328",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of code in eval/exec.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107329",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-107366",
@@ -20594,6 +20914,198 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-110186",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-110193",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker with a low-privileged authenticated account to cause the Agentic Assistant to generate or submit component code using these unblocked patterns, resulting in arbitrary operating system command execution on the server.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-110196",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker with a low-privileged authenticated account to bypass the administrator-only restriction and execute arbitrary code on the server by configuring a built-in code-execution component with attacker-supplied inputs.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-110244",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-110245",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote attacker to obtain sensitive information due to improper authentication.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-110309",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper control of code generation.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-11375",
@@ -57877,6 +58389,38 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-93680",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.8 could allow a remote attacker to bypass security restrictions due to improper authentication.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.8",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-93886",
