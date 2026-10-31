@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T00:41:33+00:00",
+  "generated_at": "2026-10-31T06:57:44+00:00",
   "vendor": "splunk",
-  "count": 129,
+  "count": 130,
   "items": [
     {
       "cve_id": "CVE-2022-26889",
@@ -7632,6 +7632,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-707"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76527",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76527 are related to improper check or handling of exceptional conditions and are grouped under the Common Weakness Enumeration (CWE) CWE-703.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk soar",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "8.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk soar",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00431,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-703"
         ],
         "cpe_count": 0,
         "reference_count": 1

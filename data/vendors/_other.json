@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T00:41:33+00:00",
+  "generated_at": "2026-10-31T06:57:44+00:00",
   "vendor": "_other",
-  "count": 3146,
+  "count": 3177,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -1951,6 +1951,61 @@
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": null,
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-111739",
+      "description": "The Two Factor Authentication WordPress plugin before 1.17.0, All-In-One Security (AIOS)  WordPress plugin before 5.5.0 do not bind the account whose two-factor code is verified to the account being authenticated, allowing an attacker who knows a victim's password and holds their own two-factor-enabled account to satisfy the victim's second-factor check with their own code and obtain the victim's session.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "unknown",
+          "product": "two factor authentication",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "0",
+              "lessThan": "1.17.0"
+            }
+          ]
+        },
+        {
+          "vendor": "unknown",
+          "product": "all-in-one security (aios)",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "0",
+              "lessThan": "5.5.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:all-in-one security (aios)",
+        "vendor:unknown"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00286,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
         "cpe_count": 0,
         "reference_count": 1
       }
@@ -47834,6 +47889,40 @@
       }
     },
     {
+      "cve_id": "CVE-2026-63393",
+      "description": "OpenSearch SQL supports querying OpenSearch data using SQL and Piped Processing Language. In the 2.x line from 2.8.0.0 until 2.19.6.0, and the 3.x line prior to 3.7.0.0, a remote authenticated user with basic read/search permissions can provide a crafted `cursor` parameter to the `plugins/sql` endpoint and trigger unsafe deserialization of untrusted data, resulting in arbitrary code execution on the server. This issue is fixed in repository releases 2.19.6.0 and 3.7.0.0.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "opensearch-project",
+          "product": "sql",
+          "versions": [
+            {
+              "version": ">= 2.8.0.0, < 2.19.6.0",
+              "status": "affected"
+            },
+            {
+              "version": ">= 3.0.0.0-alpha1, < 3.7.0.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sql",
+        "vendor:opensearch-project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2022-36010",
       "description": "This library allows strings to be parsed as functions and stored as a specialized component, [`JsonFunctionValue`](https://github.com/oxyno-zeta/react-editable-json-tree/blob/09a0ca97835b0834ad054563e2fddc6f22bc5d8c/src/components/JsonFunctionValue.js). To do this, Javascript's [`eval`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) function is used to execute strings that begin with \"function\" as Javascript. This unfortunately could allow arbitrary code to be executed if it exists as a value within the JSON structure being displayed. Given that this component may often be used to display data from arbitrary, untrusted sources, this is extremely dangerous. One important note is that users who have defined a custom [`onSubmitValueParser`](https://github.com/oxyno-zeta/react-editable-json-tree/tree/09a0ca97835b0834ad054563e2fddc6f22bc5d8c#onsubmitvalueparser) callback prop on the [`JsonTree`](https://github.com/oxyno-zeta/react-editable-json-tree/blob/09a0ca97835b0834ad054563e2fddc6f22bc5d8c/src/JsonTree.js) component should be ***unaffected***. This vulnerability exists in the default `onSubmitValueParser` prop which calls [`parse`](https://github.com/oxyno-zeta/react-editable-json-tree/blob/master/src/utils/parse.js#L30). Prop is added to `JsonTree` called `allowFunctionEvaluation`. This prop will be set to `true` in v2.2.2, which allows upgrade without losing backwards-compatibility. In v2.2.2, we switched from using `eval` to using [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) to construct anonymous functions. This is better than `eval` for the following reasons: - Arbitrary code should not be able to execute immediately, since the `Function` constructor explicitly *only creates* anonymous functions - Functions are created without local closures, so they only have access to the global scope If you use: - **Version `<2.2.2`**, you must upgrade as soon as possible. - **Version `^2.2.2`**, you must explicitly set `JsonTree`'s `allowFunctionEvaluation` prop to `false` to fully mitigate this vulnerability. - **Version `>=3.0.0`**, `allowFunctionEvaluation` is already set to `false` by default, so no further steps are necessary.",
       "cvss_score": 10.0,
@@ -54530,7 +54619,18 @@
         "vendor:servicenow"
       ],
       "active_threat": false,
-      "probability_score": 0.00429
+      "probability_score": 0.00429,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-103094",
@@ -54622,7 +54722,18 @@
         "vendor:servicenow"
       ],
       "active_threat": false,
-      "probability_score": 0.00269
+      "probability_score": 0.00269,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-256"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-13016",
@@ -62707,6 +62818,446 @@
         ],
         "cpe_count": 0,
         "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110672",
+      "description": "Cpanel::JSON::XS versions before 4.80 for Perl leak the decoded key of an object rejected for a duplicate key or a missing colon in decode_hv.\n\nA quoted key of 24 or more bytes, or one containing a non-ASCII byte or an escape sequence, is decoded into a new scalar. Nothing frees that scalar when the object is rejected for a missing ':' after the key or, from 4.09, for a duplicate key. Duplicate keys are an error unless allow_dupkeys, dupkeys_as_arrayref or relaxed is set.\n\nA process that keeps running after a failed decode retains one key per rejected document, with its size chosen by the sender. Repeated requests exhaust process memory.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00486,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-401"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110673",
+      "description": "Cpanel::JSON::XS versions before 4.80 for Perl allow stack exhaustion via nested tagged values under allow_tags in decode_tag.\n\nWith allow_tags, \"(\" starts a tagged value. Its tag and value are decoded recursively, and each can start another tagged value. Unlike arrays and objects, this nesting is not counted against max_depth.\n\nA run of \"(\" bytes exhausts the C stack and triggers an uncatchable segmentation fault regardless of max_depth.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00486,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-674"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110675",
+      "description": "Cpanel::JSON::XS versions from 4.33 before 4.80 for Perl accept malformed UTF-8 in bare hash keys under allow_barekey in decode_hv.\n\nWith utf8 and allow_barekey, which relaxed enables, a quoted key is validated as UTF-8 but a bare key's bytes are stored as a UTF-8 flagged string without any check. Malformed UTF-8, control bytes and backslashes reach the decoded hash, while malformed UTF-8 and control bytes in a quoted key or a value are rejected.\n\nLater operations on the key, including lc, uc or encoding the hash again, die with a malformed UTF-8 error.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "4.33",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00454,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1286"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110676",
+      "description": "Cpanel::JSON::XS versions before 4.80 for Perl allow memory exhaustion by encoding exponent notation as full decimal digits under allow_bignum.\n\nWith allow_bignum, a JSON number with a fraction or exponent decodes to a Math::BigFloat, which stores the exponent separately and so decodes cheaply. Encoding it untyped or as JSON_TYPE_FLOAT writes the plain decimal form with one digit per unit of exponent. Nothing bounds the exponent, so the 12-byte text [1e30000000] encodes to 30 MB.\n\nUntrusted JSON decoded with allow_bignum and encoded again can exhaust memory and CPU.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00486,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-405"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110677",
+      "description": "Cpanel::JSON::XS versions from 4.28 before 4.80 for Perl leak the array collecting duplicate key values under dupkeys_as_arrayref in decode_hv.\n\nWith dupkeys_as_arrayref, the values of a duplicate object key are collected into a new array. An extra reference is never released, so the array and every value in it outlive the decoded structure. The array also leaks when decoding fails after a duplicate key.\n\nRepeatedly decoding untrusted JSON with a duplicate key holding a large value exhausts process memory.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "4.28",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00485,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-401"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110678",
+      "description": "Cpanel::JSON::XS versions before 4.80 for Perl allow memory exhaustion by buffering incremental input past max_size in incr_parse.\n\nThe parser appends each chunk to its buffer. In scalar or list context, it compares max_size with how far it has progressed, not with the buffer length. A chunk that starts with a NUL byte stops the parser before it progresses, and a call in void context skips the check, so the buffer grows without limit.\n\nA peer streaming data to an incr_parse consumer can exhaust process memory regardless of max_size.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00486,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110682",
+      "description": "Cpanel::JSON::XS versions from 4.42 before 4.80 for Perl let input chunking change the decoded value of top-level numbers in incr_parse.\n\nallow_nonref is enabled by default and incr_parse inherits it. A top-level number, true, false or null has no closing delimiter, so the incremental parser decodes whatever has arrived. The bytes 12 decode as one value when read together, but as 1 and then 2 when split across two reads.\n\nA peer that can influence read boundaries can change how many messages a stream consumer decodes and what values they carry.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "4.42",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00422,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-436"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110684",
+      "description": "Cpanel::JSON::XS versions from 3.0202 before 4.80 for Perl leak memory and retain overloaded objects when encoding values as strings in encode_stringify.\n\nencode_stringify writes a value in its string form under allow_stringify, under convert_blessed for objects without TO_JSON, and under allow_bignum. For an array or hash object with a \"\" overload, and from 4.20 a scalar object, it takes an extra reference that is never released, so the object and everything it references are never freed. From 4.10 it also never frees its copy of the string.\n\nRepeatedly encoding data that contains such values grows process memory without bound.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "3.0202",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00454,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-401"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110685",
+      "description": "Cpanel::JSON::XS versions before 4.80 for Perl leak the decoded arguments of a tagged value when its THAW method dies in decode_tag.\n\nWith allow_tags, a tagged value's class name and argument array are decoded and passed to the class's THAW method. Both are released only after THAW returns, so a THAW that dies leaves the whole decoded argument structure allocated.\n\nEach rejected document leaks data of a size the sender chooses, so a process that catches the error and keeps running exhausts its memory.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00508,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-401"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110687",
+      "description": "Cpanel::JSON::XS versions from 4.43 before 4.80 for Perl misorder byte-string keys during canonical encoding in utf16_cmp.\n\ncanonical sorts keys by UTF-16 code units. When any key in a hash is UTF-8 flagged, every key is decoded as UTF-8 for the comparison, including byte-string keys that the encoder writes out as Latin-1 characters. A byte-string key whose bytes are valid UTF-8 is sorted out of order, and two keys that encode differently can compare equal and are left in hash order.\n\nThe same data can encode to different canonical documents across processes.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "4.43",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00422,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-176"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-110688",
+      "description": "Cpanel::JSON::XS versions from 4.51 before 4.80 for Perl allow quadratic CPU use by revalidating the remaining buffer per value in incr_parse.\n\nAt the first non-ASCII byte in a string, the decoder validates UTF-8 from there to the end of its input. incr_parse decodes each buffered value with a fresh decoder, so every value revalidates the rest of the buffer, and doubling the input quadruples the work.\n\nA peer that sends about a megabyte of ordinary non-ASCII JSON in one read ties up the process for seconds of CPU time.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "4.80",
+              "status": "affected",
+              "version": "4.51",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00485,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
@@ -72030,6 +72581,70 @@
         "cpe_count": 3,
         "reference_count": 6
       }
+    },
+    {
+      "cve_id": "CVE-2026-119418",
+      "description": "CakePHP through 5.4.3 contains an sql injection vulnerability that allows attackers to inject SQL by supplying unvalidated frame offsets and directions to WindowExpression::range() and frame(). Attackers can pass crafted values through applications forwarding user input into the OVER clause to execute SQL with the database connection's privileges.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "cakephp",
+          "product": "cakephp",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.4.3",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cakephp",
+        "vendor:cakephp"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-119419",
+      "description": "CakePHP through 5.4.3 contains an sql injection vulnerability that allows attackers to inject SQL by supplying unvalidated collation values to StringExpression and IdentifierExpression. Attackers controlling a collation name passed to the constructor or setCollation() can append SQL after the unquoted COLLATE clause, affecting every database driver within the connection's privileges.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "cakephp",
+          "product": "cakephp",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.4.3",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cakephp",
+        "vendor:cakephp"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-77337",
@@ -86259,6 +86874,1385 @@
       }
     },
     {
+      "cve_id": "CVE-2026-86409",
+      "description": "Setting `CURLOPT_AWS_SIGV4` to NULL but does not disable SigV4 authentication,\ncontrary to expectations and documentation. A subsequent transfer on the same\nhandle still sends an `Authorization: AWS4-HMAC-SHA256` header to whatever URL\nisset next, leaking state information.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.20.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.20.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.19.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.18.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.18.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.17.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.17.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.16.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.16.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.15.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.13.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.13.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.8.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.6.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.6.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.5.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.5.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.4.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.4.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.3.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.3.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.2.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.2.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.2.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.2.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.2",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.2",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.0.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.0.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.0.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.88.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.88.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.88.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.88.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.87.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.87.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.86.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.86.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.85.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.85.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.84.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.84.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.83.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.83.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.83.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.83.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.82.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.82.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.81.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.81.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.80.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.80.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.79.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.79.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.79.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.79.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.78.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.78.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.77.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.77.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.76.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.76.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.76.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.76.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.75.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.75.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01096,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-201"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86410",
+      "description": "A flaw in the curl command line tool's logic makes it only set SSH host\nverification options when interacting directly using SFTP or SCP, and not as a\nresult of following a redirect.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.20.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.20.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.19.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.18.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.18.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.17.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.17.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.16.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.16.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.15.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.13.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.13.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.8.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.6.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.6.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.5.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.5.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.4.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.4.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.3.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.3.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.2.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.2.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.2.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.2.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.2",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.2",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.0.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.0.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.0.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.88.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.88.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.88.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.88.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.87.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.87.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.86.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.86.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.85.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.85.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.84.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.84.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.83.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.83.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.83.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.83.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.82.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.82.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.81.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.81.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00766,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-297"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86411",
+      "description": "An `ftp://` transfer configured with `CURLUSESSL_NONE` can reuse a pooled FTP\ncontrol connection that a previous easy handle upgraded with `STARTTLS` and\nauthenticated using a client certificate. The second handle performs neither a\nnew TLS handshake nor a new FTP login, so the server continues to authorize it\nunder the first handle's certificate identity.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00433,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-488"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86412",
+      "description": "A remote HTTP server can set a cookie that curl accepts and writes to a\nNetscape cookie jar but cannot reload. On the next invocation using the same\npath for `--cookie` and `--cookie-jar`, curl fails before connecting, then the\ncleanup procedure replaces the jar with an empty file, deleting cookies for\nunrelated domains.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.20.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.20.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.19.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.18.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.18.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00828,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-754"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-87866",
+      "description": "When built with wolfSSL, curl can successfully validate a pinned public key\nhash against a key the TLS peer does not possess. During the TLS handshake,\nwolfSSL validates the connection, but curl's subsequent re-parsing of the same\ncertificate - tricked by a manipulated validity length field - extracts and\nmatches a different embedded key, incorrectly authorizing the pinned public\nkey.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.20.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.20.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.19.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.18.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.18.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.17.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.17.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.16.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.16.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.15.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.13.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.13.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.8.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.6.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.6.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.5.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.5.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.4.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.4.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.3.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.3.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.2.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.2.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.2.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.2.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.2",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.2",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.1.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.1.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.0.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.0.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.0.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.0.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.88.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.88.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.88.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.88.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.87.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.87.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.86.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.86.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.85.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.85.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.84.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.84.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.83.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.83.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.83.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.83.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.82.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.82.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.81.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.81.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.80.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.80.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.79.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.79.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.79.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.79.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.78.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.78.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.77.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.77.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.76.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.76.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.76.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.76.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.75.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.75.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.74.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.74.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.73.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.73.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.72.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.72.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.71.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.71.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.71.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.71.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.70.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.70.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.69.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.69.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.69.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.69.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.68.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.68.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.67.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.67.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.66.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.66.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.65.3",
+              "status": "affected",
+              "lessThanOrEqual": "7.65.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.65.2",
+              "status": "affected",
+              "lessThanOrEqual": "7.65.2",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.65.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.65.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.65.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.65.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.64.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.64.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.64.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.64.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.63.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.63.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.62.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.62.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.61.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.61.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.61.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.61.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.60.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.60.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.59.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.59.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.58.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.58.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.57.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.57.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.56.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.56.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.56.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.56.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.55.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.55.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.55.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.55.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.54.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.54.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.54.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.54.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.53.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.53.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.53.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.53.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.52.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.52.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.52.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.52.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.51.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.51.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.50.3",
+              "status": "affected",
+              "lessThanOrEqual": "7.50.3",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.50.2",
+              "status": "affected",
+              "lessThanOrEqual": "7.50.2",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.50.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.50.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.50.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.50.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.49.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.49.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.49.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.49.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.48.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.48.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.47.1",
+              "status": "affected",
+              "lessThanOrEqual": "7.47.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.47.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.47.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.46.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.46.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.45.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.45.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.44.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.44.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "7.43.0",
+              "status": "affected",
+              "lessThanOrEqual": "7.43.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0051,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-8286",
       "description": "A vulnerability exists where a new transfer that uses STARTTLS to upgrade the\nconnection might reuse an existing live connection even though the TLS\nconfiguration mismatches so it should not.",
       "cvss_score": 8.1,
@@ -89027,6 +91021,314 @@
           "CWE-305"
         ],
         "cpe_count": 1,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92386",
+      "description": "When writing a long cookie name and value to a Netscape cookie jar, a remote\nHTTP server can make `curl` write a record that exceeds its line-length\nparsing limit. Consequently, any subsequent `curl` invocation reading from\nthat same cookie jar using `--cookie` silently aborts parsing prematurely upon\nencountering the too long line, ignoring all subsequent valid cookies in the\nfile.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.20.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.20.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.19.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.18.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.18.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.17.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.17.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.16.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.16.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.15.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.13.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.13.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.9.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.9.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.8.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.8.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.7.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.7.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00828,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92387",
+      "description": "By permanently omitting the final control-response line, a malicious FTP,\nIMAP, POP3, or SMTP server can exploit libcurl and completely bypass its\nconfigured transfer timeout mechanism, indefinitely blocking all concurrent\ntransfers bound to the same multi-handle.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "curl",
+          "product": "curl",
+          "versions": [
+            {
+              "version": "8.22.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.22.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.21.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.21.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.20.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.20.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.19.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.19.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.18.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.18.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.17.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.17.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.16.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.16.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.15.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.15.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.14.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.14.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.13.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.13.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.12.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.12.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.11.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.11.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.1",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.1",
+              "versionType": "semver"
+            },
+            {
+              "version": "8.10.0",
+              "status": "affected",
+              "lessThanOrEqual": "8.10.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:curl",
+        "vendor:curl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01045,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-835"
+        ],
+        "cpe_count": 0,
         "reference_count": 4
       }
     },
@@ -104841,6 +107143,70 @@
       }
     },
     {
+      "cve_id": "CVE-2026-119680",
+      "description": "A stored cross-site scripting (XSS) vulnerability exists in the chart feature of SharePoint Manager Plus (SPMP) due to improper sanitization and HTML encoding of user-controlled data. An attacker can inject malicious HTML or JavaScript into attributes used to generate charts, including users' full names, site names, or group names. The injected content is stored and subsequently executed in the context of other users' browsers when the affected charts are rendered. This vulnerability was fixed in client application build 4508.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:L/VA:N/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "manageengine",
+          "product": "sharepoint manager plus",
+          "versions": [
+            {
+              "lessThan": "4508",
+              "status": "unaffected",
+              "version": "450",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sharepoint manager plus",
+        "vendor:manageengine"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-119682",
+      "description": "An improper access control vulnerability exists in the multi-factor authentication (MFA) functionality of ManageEngine SharePoint Manager Plus (SPMP). A low-privileged authenticated user can bypass authorization checks to read and modify MFA configuration settings, enable or disable MFA for the application, enumerate MFA-enrolled users, and delete MFA-enrolled accounts. Successful exploitation could allow an attacker to weaken authentication protections or cause a denial of service by configuring invalid MFA settings, potentially locking legitimate users out of the application. This vulnerability was fixed in build 4507.\u00a0The reproduction explicitly uses build 4506.",
+      "cvss_score": 7.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "manageengine",
+          "product": "sharepoint manager plus",
+          "versions": [
+            {
+              "lessThan": "4507",
+              "status": "affected",
+              "version": "450",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sharepoint manager plus",
+        "vendor:manageengine"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2024-11120",
       "description": "Certain EOL GeoVision devices have an OS Command Injection vulnerability. Unauthenticated remote attackers can exploit this vulnerability to inject and execute arbitrary system commands on the device. Moreover, this vulnerability has already been exploited by attackers, and we have received related reports.",
       "cvss_score": 9.8,
@@ -120044,6 +122410,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-84243",
+      "description": "The gettext family of functions in the GNU C Library version 2.0 and later accept LANGUAGE environment variable entries that contain '/' or that are equal to \"..\", unless the program is setuid or setgid (AT_SECURE).  An attacker who can set LANGUAGE in the environment of a program that uses gettext can make it load a message catalog (.mo file) from an arbitrary location in the file system.  A crafted .mo file can crash the program through out-of-range offsets, or supply translations whose format directives do not match the arguments passed by the program.  That causes undefined behaviour in the printf family of functions and may allow arbitrary code execution with the privileges of the program.  The safety of message catalogs relies on them being installed in trusted, read-only locations, and the directory traversal bypasses this.\n\nThe fix for CVE-2014-0475 rejects \"..\" path components in locale names passed to setlocale or taken from the LC_ALL, LC_* and LANG environment variables.  gettext reads LANGUAGE directly and appends each colon-separated entry to the message catalog directory, so that fix did not cover LANGUAGE.\n\nLANGUAGE is only used when the LC_MESSAGES locale is not \"C\", \"C.<encoding>\" or \"POSIX\", so the attacker must also be able to select another installed locale, for example through LANG or LC_ALL.  Exploitation also requires that the attacker can place the crafted file in a location readable by the target program, and that the environment crosses a trust boundary without the program running as AT_SECURE.  An example is an SSH server that accepts LANGUAGE and LANG from clients through the AcceptEnv directive and restricts an account to a forced command; the attacker may use this to escape the restriction.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "the gnu c library",
+          "product": "glibc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0",
+              "lessThan": "*",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:glibc",
+        "vendor:the gnu c library"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2024-30239",
       "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Zoho Campaigns.This issue affects Zoho Campaigns: from n/a through 2.0.6.",
       "cvss_score": 8.5,
@@ -122740,6 +125138,44 @@
       }
     },
     {
+      "cve_id": "CVE-2025-31704",
+      "description": "A vulnerability has been found in the Dahua Intelligent Connection Center. A remote attacker could send a specially crafted request to the affected system, allowing the attacker to execute arbitrary commands, resulting in remote code execution.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "dahua",
+          "product": "intelligent connection center",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "V1.000.0000000.1",
+              "lessThanOrEqual": "1.000.0000005.0",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "V5.000.0000000.6",
+              "lessThan": "V5.000.0000000.15",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intelligent connection center",
+        "vendor:dahua"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-29116",
       "description": "A vulnerability has been found in some Dahua products could\nallow an unauthenticated remote attacker to send a specially crafted packet,\ntriggering an exception that causes the system to reboot unexpectedly,\nresulting in a denial of service.",
       "cvss_score": 8.7,
@@ -124577,7 +127013,7 @@
           "CWE-789"
         ],
         "cpe_count": 0,
-        "reference_count": 11
+        "reference_count": 12
       }
     },
     {
@@ -125488,7 +127924,18 @@
         "vendor:zoho flow"
       ],
       "active_threat": false,
-      "probability_score": 0.00313
+      "probability_score": 0.00313,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2024-47657",
@@ -161452,6 +163899,11 @@
           "vendor": "red hat",
           "product": "red hat hardened images",
           "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift container platform 5",
+          "versions": null
         }
       ],
       "watchlist_hit": true,
@@ -161474,7 +163926,7 @@
           "CWE-193"
         ],
         "cpe_count": 6,
-        "reference_count": 85
+        "reference_count": 87
       }
     },
     {
@@ -162220,7 +164672,7 @@
         "cwe_ids": [
           "CWE-191"
         ],
-        "cpe_count": 6,
+        "cpe_count": 30,
         "reference_count": 46
       }
     },
@@ -172737,7 +175189,18 @@
         "vendor:themerex"
       ],
       "active_threat": false,
-      "probability_score": 0.00449
+      "probability_score": 0.00449,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-62120",
@@ -178252,7 +180715,18 @@
         "vendor:yamaha corporation"
       ],
       "active_threat": false,
-      "probability_score": 0.00194
+      "probability_score": 0.00194,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-103672",
@@ -179009,7 +181483,19 @@
         "vendor:nrwl"
       ],
       "active_threat": false,
-      "probability_score": 0.0014
+      "probability_score": 0.0014,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78",
+          "CWE-88"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
+      }
     },
     {
       "cve_id": "CVE-2026-48027",
@@ -179154,7 +181640,7 @@
           "CWE-639"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -183949,7 +186435,7 @@
           "CWE-918"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -184138,7 +186624,82 @@
         "vendor:sindresorhus"
       ],
       "active_threat": false,
-      "probability_score": 0.01446
+      "probability_score": 0.01446,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-119426",
+      "description": "phpMyAdmin through 5.2.3 contains a cross-site request forgery vulnerability that allows remote attackers to execute arbitrary SQL by bypassing CSRF token checks on non-AJAX POST requests. Attackers can lure authenticated victims into submitting cross-site POSTs carrying sql_query to /sql or /database/sql, running SQL with the victim's database privileges under http or config authentication.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "phpmyadmin",
+          "product": "phpmyadmin",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.2.3",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:phpmyadmin",
+        "vendor:phpmyadmin"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-119561",
+      "description": "phpMyAdmin through 5.2.3 contains an authentication bypass vulnerability in CustomServer::parseAndValidateAssertionResponse() that never verifies WebAuthn assertion signatures against stored public keys. Attackers holding a victim's MySQL credentials can POST a crafted webauthn_request_response with matching challenge, origin, and rpIdHash to bypass the second factor and gain database privileges.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "phpmyadmin",
+          "product": "phpmyadmin",
+          "versions": [
+            {
+              "version": "0",
+              "lessThanOrEqual": "5.2.3",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:phpmyadmin",
+        "vendor:phpmyadmin"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-12225",
@@ -199917,6 +202478,66 @@
       }
     },
     {
+      "cve_id": "CVE-2026-62864",
+      "description": "Ring is a Clojure web applications library inspired by Python's WSGI and Ruby's Rack. Prior to 1.15.5, `wrap-nested-params` in the `ring.middleware.nested-params` namespace uses a backtracking regular expression to match parameter names from URL query strings and HTTP request bodies. An attacker can craft a parameter name that drives quadratic O(n^2) matching work, causing regular-expression denial of service in applications using the middleware. `Ring-Defaults` users are also exposed because nested-params is enabled by default. Applications omitting the middleware do not expose this parsing path. This issue is fixed in version 1.15.5.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ring-clojure",
+          "product": "ring",
+          "versions": [
+            {
+              "version": "< 1.15.5",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ring",
+        "vendor:ring-clojure"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-62979",
+      "description": "jack lets users share media libraries through their Radarr/Sonarr stack, peer-to-peer. Prior to 0.1.0, `middleware/handle-error.ts` serializes raw `FetchError` objects into HTTP responses. `lib/servers/base.ts` attaches outbound request headers on upstream non-success responses and schema-validation failures; the public `extras` field in `lib/errors/FetchError.ts` remains enumerable and is emitted by JSON serialization. These headers include the internal Radarr/Sonarr `X-Api-Key` and custom connector headers such as `CF-Access-Client-Secret`. `lib/redact.ts` redacts logs and spans but not this response path. Any client with the shared peer API key, plus Cloudflare Access credentials if required by the deployment, can force an error without a race or user interaction. `GET /peer/items/:id` and `GET /servers/health` can expose the internal media-server key, while `GET /torznab/download/:id` can expose another peer's key and Cloudflare Access secrets. The /peer/search and /items routes catch these errors and are not affected. Disclosed internal keys grant full administrative control of the corresponding Radarr/Sonarr instance, crossing the intended boundary between friends' shared peer access and private backend credentials. This issue is fixed in version 0.1.0.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "roziscoding",
+          "product": "jack",
+          "versions": [
+            {
+              "version": "< 0.1.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jack",
+        "vendor:roziscoding"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-63087",
       "description": "Grafana OnCall through 1.16.11 contains an unauthenticated access vulnerability that allows remote attackers to obtain a valid PluginAuthToken by sending a POST request to the internal plugin install endpoint using hardcoded default stack_id and org_id values present in the public source tree. Attackers can leverage the acquired token to authenticate against all internal API endpoints, create arbitrary Admin users via the user-context header bootstrap path, revoke the legitimate plugin token, and redirect OnCall-to-Grafana API calls to an attacker-controlled host by overwriting the organization's grafana_url and api_token.",
       "cvss_score": 9.3,
@@ -202163,6 +204784,194 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-82104",
+      "description": "In Teltonika Networks RUTOS devices running versions from 7.22 through 7.24.2 and TSWOS devices running versions 1.9 through 1.10, a vulnerability exists whereby an unauthenticated user can directly call LUA functions, bypassing validations that might be called under normal API requests. Due to those requests not following proper flows, this could lead to OS command execution.\n\n\n\nThis issue affects RUT: from 7.22 through 7.24.2; RUTX: from 7.22 through 7.24.2; RUTM: from 7.22 through 7.24.2; RUTC: from 7.22 through 7.24.2; ATRM: from 7.22 through 7.24.2; TAP: from 7.22 through 7.24.2; CAP: from 7.22 through 7.24.2; OXA: from 7.22 through 7.24.2; DAP: from 7.22 through 7.24.2; TRB: from 7.22 through 7.24.2; OTD: from 7.22 through 7.24.2; EBG: from 7.22 through 7.24.2; SWM: from 1.9 through 1.10; TSW: from 1.9 through 1.10.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "teltonika networks",
+          "product": "rut",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "RUT"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "rutx",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "RUTX"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "rutm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "RUTM"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "rutc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "RUTC"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "atrm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "ATRM"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "tap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "TAP"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "cap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "CAP"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "oxa",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "OXA"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "dap",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "DAP"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "trb",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "TRB"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "otd",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "OTD"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "ebg",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.22",
+              "lessThanOrEqual": "7.24.2",
+              "versionType": "EBG"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "swm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.9",
+              "lessThanOrEqual": "1.10",
+              "versionType": "SWM"
+            }
+          ]
+        },
+        {
+          "vendor": "teltonika networks",
+          "product": "tsw",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.9",
+              "lessThanOrEqual": "1.10",
+              "versionType": "TSW"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rut",
+        "vendor:teltonika networks"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00416
     },
     {
       "cve_id": "CVE-2026-77167",

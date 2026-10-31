@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T00:41:33+00:00",
+  "generated_at": "2026-10-31T06:57:44+00:00",
   "vendor": "microsoft",
   "count": 6497,
   "items": [
@@ -638738,7 +638738,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00355
+      "probability_score": 0.00355,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-20803",
@@ -853907,65 +853918,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft office 2016",
-          "versions": [
-            {
-              "version": "16.0.0",
-              "lessThan": "16.0.5569.1002",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "microsoft office 2019",
-          "versions": [
-            {
-              "version": "19.0.0",
-              "lessThan": "https://aka.ms/OfficeSecurityReleases",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft office 365 for mac",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "microsoft office ltsc 2021",
-          "versions": [
-            {
-              "version": "16.0.1",
-              "lessThan": "https://aka.ms/OfficeSecurityReleases",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "microsoft office ltsc 2024",
-          "versions": [
-            {
-              "version": "16.0.0",
-              "lessThan": "https://aka.ms/OfficeSecurityReleases",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "microsoft office ltsc for mac 2021",
           "versions": [
             {
               "version": "-",
@@ -853981,12 +853934,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:microsoft 365 apps for enterprise",
-        "product:microsoft office 2016",
-        "product:microsoft office 2019",
         "product:microsoft office 365 for mac",
-        "product:microsoft office ltsc 2021",
-        "product:microsoft office ltsc 2024",
-        "product:microsoft office ltsc for mac 2021",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -883810,11 +883758,11 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1607",
+          "product": "microsoft office 365 for mac",
           "versions": [
             {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
+              "version": "1.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -883822,11 +883770,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1809",
+          "product": "microsoft office for android",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
+              "version": "16.0.1",
+              "lessThan": "16.0.20430.20000",
               "versionType": "custom",
               "status": "affected"
             }
@@ -883834,11 +883782,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 21h2",
+          "product": "microsoft office ltsc for mac 2021",
           "versions": [
             {
-              "version": "10.0.19044.0",
-              "lessThan": "10.0.19044.7725",
+              "version": "16.0.1",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -883846,203 +883794,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 22h2",
+          "product": "microsoft office ltsc for mac 2024",
           "versions": [
             {
-              "version": "10.0.19045.0",
-              "lessThan": "10.0.19045.7725",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 24h2",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 25h2",
-          "versions": [
-            {
-              "version": "10.0.26200.0",
-              "lessThan": "10.0.26200.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 26h1",
-          "versions": [
-            {
-              "version": "10.0.28000.0",
-              "lessThan": "10.0.28000.2954",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 (server core installation)",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2 (server core installation)",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2022",
-          "versions": [
-            {
-              "version": "10.0.20348.0",
-              "lessThan": "10.0.20348.5622",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
+              "version": "16.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -884055,25 +883811,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:windows 10 version 1607",
-        "product:windows 10 version 1809",
-        "product:windows 10 version 21h2",
-        "product:windows 10 version 22h2",
-        "product:windows 11 version 23h2",
-        "product:windows 11 version 24h2",
-        "product:windows 11 version 25h2",
-        "product:windows 11 version 26h1",
-        "product:windows server 2012",
-        "product:windows server 2012 (server core installation)",
-        "product:windows server 2012 r2",
-        "product:windows server 2012 r2 (server core installation)",
-        "product:windows server 2016",
-        "product:windows server 2016 (server core installation)",
-        "product:windows server 2019",
-        "product:windows server 2019 (server core installation)",
-        "product:windows server 2022",
-        "product:windows server 2025",
-        "product:windows server 2025 (server core installation)",
+        "product:microsoft office 365 for mac",
+        "product:microsoft office for android",
+        "product:microsoft office ltsc for mac 2021",
+        "product:microsoft office ltsc for mac 2024",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -884172,16 +883913,6 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2025 for x64-based systems (cu9)",
           "versions": [
             {
@@ -884217,7 +883948,6 @@
         "product:microsoft sql server 2019 for x64-based systems (cu32)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -909090,9 +908820,9 @@
     {
       "cve_id": "CVE-2026-69399",
       "description": "Azure Arc Elevation of Privilege Vulnerability",
-      "cvss_score": 10.0,
+      "cvss_score": 9.8,
       "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:U/RL:O/RC:C",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
       "affected": [
         {
           "vendor": "microsoft",
@@ -915435,7 +915165,7 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": ".net 10.0",
+          "product": ".net 10.0 runtime",
           "versions": [
             {
               "version": "10.0.0",
@@ -915447,7 +915177,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 11.0",
+          "product": ".net 11.0 runtime",
           "versions": [
             {
               "version": "11.0.0",
@@ -915459,7 +915189,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 8.0",
+          "product": ".net 8.0 runtime",
           "versions": [
             {
               "version": "8.0.0",
@@ -915471,7 +915201,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 9.0",
+          "product": ".net 9.0 runtime",
           "versions": [
             {
               "version": "9.0.0",
@@ -915512,10 +915242,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:.net 10.0",
-        "product:.net 11.0",
-        "product:.net 8.0",
-        "product:.net 9.0",
+        "product:.net 10.0 runtime",
+        "product:.net 11.0 runtime",
+        "product:.net 8.0 runtime",
+        "product:.net 9.0 runtime",
         "product:microsoft visual studio 2022 version 17.14",
         "product:microsoft visual studio 2026 version 18.9",
         "vendor:microsoft"
@@ -926346,11 +926076,11 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1607",
+          "product": "microsoft office 365 for mac",
           "versions": [
             {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
+              "version": "1.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -926358,11 +926088,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1809",
+          "product": "microsoft office for android",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
+              "version": "16.0.1",
+              "lessThan": "16.0.20430.20000",
               "versionType": "custom",
               "status": "affected"
             }
@@ -926370,11 +926100,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 21h2",
+          "product": "microsoft office ltsc for mac 2021",
           "versions": [
             {
-              "version": "10.0.19044.0",
-              "lessThan": "10.0.19044.7725",
+              "version": "16.0.1",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -926382,203 +926112,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 22h2",
+          "product": "microsoft office ltsc for mac 2024",
           "versions": [
             {
-              "version": "10.0.19045.0",
-              "lessThan": "10.0.19045.7725",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 24h2",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 25h2",
-          "versions": [
-            {
-              "version": "10.0.26200.0",
-              "lessThan": "10.0.26200.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 26h1",
-          "versions": [
-            {
-              "version": "10.0.28000.0",
-              "lessThan": "10.0.28000.2954",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 (server core installation)",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2 (server core installation)",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2022",
-          "versions": [
-            {
-              "version": "10.0.20348.0",
-              "lessThan": "10.0.20348.5622",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
+              "version": "16.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -926591,25 +926129,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:windows 10 version 1607",
-        "product:windows 10 version 1809",
-        "product:windows 10 version 21h2",
-        "product:windows 10 version 22h2",
-        "product:windows 11 version 23h2",
-        "product:windows 11 version 24h2",
-        "product:windows 11 version 25h2",
-        "product:windows 11 version 26h1",
-        "product:windows server 2012",
-        "product:windows server 2012 (server core installation)",
-        "product:windows server 2012 r2",
-        "product:windows server 2012 r2 (server core installation)",
-        "product:windows server 2016",
-        "product:windows server 2016 (server core installation)",
-        "product:windows server 2019",
-        "product:windows server 2019 (server core installation)",
-        "product:windows server 2022",
-        "product:windows server 2025",
-        "product:windows server 2025 (server core installation)",
+        "product:microsoft office 365 for mac",
+        "product:microsoft office for android",
+        "product:microsoft office ltsc for mac 2021",
+        "product:microsoft office ltsc for mac 2024",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -930198,7 +929721,7 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": ".net 10.0",
+          "product": ".net 10.0 runtime",
           "versions": [
             {
               "version": "10.0.0",
@@ -930210,7 +929733,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 11.0",
+          "product": ".net 11.0 runtime",
           "versions": [
             {
               "version": "11.0.0",
@@ -930222,7 +929745,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 8.0",
+          "product": ".net 8.0 runtime",
           "versions": [
             {
               "version": "8.0.0",
@@ -930234,7 +929757,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 9.0",
+          "product": ".net 9.0 runtime",
           "versions": [
             {
               "version": "9.0.0",
@@ -930359,10 +929882,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:.net 10.0",
-        "product:.net 11.0",
-        "product:.net 8.0",
-        "product:.net 9.0",
+        "product:.net 10.0 runtime",
+        "product:.net 11.0 runtime",
+        "product:.net 8.0 runtime",
+        "product:.net 9.0 runtime",
         "product:microsoft .net framework 3.5 and 4.6.2/4.7/4.7.1/4.7.2",
         "product:microsoft .net framework 3.5 and 4.7.2",
         "product:microsoft .net framework 3.5 and 4.8",
@@ -934526,7 +934049,9 @@
           "product": "microsoft office 365 for mac",
           "versions": [
             {
-              "version": "-",
+              "version": "1.0.0",
+              "lessThan": "16.113.26091433",
+              "versionType": "custom",
               "status": "affected"
             }
           ]
@@ -934560,7 +934085,9 @@
           "product": "microsoft office ltsc for mac 2021",
           "versions": [
             {
-              "version": "-",
+              "version": "16.0.1",
+              "lessThan": "16.113.26091433",
+              "versionType": "custom",
               "status": "affected"
             }
           ]
@@ -934570,7 +934097,9 @@
           "product": "microsoft office ltsc for mac 2024",
           "versions": [
             {
-              "version": "-",
+              "version": "16.0.0",
+              "lessThan": "16.113.26091433",
+              "versionType": "custom",
               "status": "affected"
             }
           ]
@@ -936946,11 +936475,11 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1607",
+          "product": "microsoft office 365 for mac",
           "versions": [
             {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
+              "version": "1.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -936958,11 +936487,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1809",
+          "product": "microsoft office for android",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
+              "version": "16.0.1",
+              "lessThan": "16.0.20430.20000",
               "versionType": "custom",
               "status": "affected"
             }
@@ -936970,11 +936499,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 21h2",
+          "product": "microsoft office ltsc for mac 2021",
           "versions": [
             {
-              "version": "10.0.19044.0",
-              "lessThan": "10.0.19044.7725",
+              "version": "16.0.1",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -936982,203 +936511,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 22h2",
+          "product": "microsoft office ltsc for mac 2024",
           "versions": [
             {
-              "version": "10.0.19045.0",
-              "lessThan": "10.0.19045.7725",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 24h2",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 25h2",
-          "versions": [
-            {
-              "version": "10.0.26200.0",
-              "lessThan": "10.0.26200.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 26h1",
-          "versions": [
-            {
-              "version": "10.0.28000.0",
-              "lessThan": "10.0.28000.2954",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 (server core installation)",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2 (server core installation)",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2022",
-          "versions": [
-            {
-              "version": "10.0.20348.0",
-              "lessThan": "10.0.20348.5622",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
+              "version": "16.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -937191,25 +936528,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:windows 10 version 1607",
-        "product:windows 10 version 1809",
-        "product:windows 10 version 21h2",
-        "product:windows 10 version 22h2",
-        "product:windows 11 version 23h2",
-        "product:windows 11 version 24h2",
-        "product:windows 11 version 25h2",
-        "product:windows 11 version 26h1",
-        "product:windows server 2012",
-        "product:windows server 2012 (server core installation)",
-        "product:windows server 2012 r2",
-        "product:windows server 2012 r2 (server core installation)",
-        "product:windows server 2016",
-        "product:windows server 2016 (server core installation)",
-        "product:windows server 2019",
-        "product:windows server 2019 (server core installation)",
-        "product:windows server 2022",
-        "product:windows server 2025",
-        "product:windows server 2025 (server core installation)",
+        "product:microsoft office 365 for mac",
+        "product:microsoft office for android",
+        "product:microsoft office ltsc for mac 2021",
+        "product:microsoft office ltsc for mac 2024",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -944226,11 +943548,11 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1607",
+          "product": "microsoft office 365 for mac",
           "versions": [
             {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
+              "version": "1.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -944238,11 +943560,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1809",
+          "product": "microsoft office ltsc for mac 2021",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
+              "version": "16.0.1",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -944250,215 +943572,11 @@
         },
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 21h2",
+          "product": "microsoft office ltsc for mac 2024",
           "versions": [
             {
-              "version": "10.0.19044.0",
-              "lessThan": "10.0.19044.7725",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 10 version 22h2",
-          "versions": [
-            {
-              "version": "10.0.19045.0",
-              "lessThan": "10.0.19045.7725",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 24h2",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 25h2",
-          "versions": [
-            {
-              "version": "10.0.26200.0",
-              "lessThan": "10.0.26200.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 26h1",
-          "versions": [
-            {
-              "version": "10.0.28000.0",
-              "lessThan": "10.0.28000.2954",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 (server core installation)",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2 (server core installation)",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2019 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2022",
-          "versions": [
-            {
-              "version": "10.0.20348.0",
-              "lessThan": "10.0.20348.5622",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
+              "version": "16.0.0",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -944471,25 +943589,9 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:windows 10 version 1607",
-        "product:windows 10 version 1809",
-        "product:windows 10 version 21h2",
-        "product:windows 10 version 22h2",
-        "product:windows 11 version 23h2",
-        "product:windows 11 version 24h2",
-        "product:windows 11 version 25h2",
-        "product:windows 11 version 26h1",
-        "product:windows server 2012",
-        "product:windows server 2012 (server core installation)",
-        "product:windows server 2012 r2",
-        "product:windows server 2012 r2 (server core installation)",
-        "product:windows server 2016",
-        "product:windows server 2016 (server core installation)",
-        "product:windows server 2019",
-        "product:windows server 2019 (server core installation)",
-        "product:windows server 2022",
-        "product:windows server 2025",
-        "product:windows server 2025 (server core installation)",
+        "product:microsoft office 365 for mac",
+        "product:microsoft office ltsc for mac 2021",
+        "product:microsoft office ltsc for mac 2024",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -962258,7 +961360,7 @@
           "versions": [
             {
               "version": "1.0.0",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -962294,7 +961396,7 @@
           "versions": [
             {
               "version": "16.0.1",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -962306,7 +961408,7 @@
           "versions": [
             {
               "version": "16.0.0",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -967522,7 +966624,7 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": ".net 10.0",
+          "product": ".net 10.0 runtime",
           "versions": [
             {
               "version": "10.0.0",
@@ -967534,7 +966636,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 11.0",
+          "product": ".net 11.0 runtime",
           "versions": [
             {
               "version": "11.0.0",
@@ -967546,7 +966648,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 9.0",
+          "product": ".net 9.0 runtime",
           "versions": [
             {
               "version": "9.0.0",
@@ -967587,9 +966689,9 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:.net 10.0",
-        "product:.net 11.0",
-        "product:.net 9.0",
+        "product:.net 10.0 runtime",
+        "product:.net 11.0 runtime",
+        "product:.net 9.0 runtime",
         "product:microsoft visual studio 2022 version 17.14",
         "product:microsoft visual studio 2026 version 18.9",
         "vendor:microsoft"
@@ -984992,7 +984094,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1001840,7 +1000942,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1002142,7 +1001244,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1004089,10 +1003191,10 @@
     },
     {
       "cve_id": "CVE-2026-70125",
-      "description": "Microsoft Office Outlook Remote Code Execution Vulnerability",
-      "cvss_score": 8.8,
+      "description": "Heap-based buffer overflow in Microsoft Office Outlook allows an unauthorized attacker to execute code locally.",
+      "cvss_score": 7.8,
       "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
       "affected": [
         {
           "vendor": "microsoft",
@@ -1014443,7 +1013545,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1035396,7 +1034498,7 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": ".net 10.0",
+          "product": ".net 10.0 runtime",
           "versions": [
             {
               "version": "10.0.0",
@@ -1035408,7 +1034510,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 11.0",
+          "product": ".net 11.0 runtime",
           "versions": [
             {
               "version": "11.0.0",
@@ -1035420,7 +1034522,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 8.0",
+          "product": ".net 8.0 runtime",
           "versions": [
             {
               "version": "8.0.0",
@@ -1035432,7 +1034534,7 @@
         },
         {
           "vendor": "microsoft",
-          "product": ".net 9.0",
+          "product": ".net 9.0 runtime",
           "versions": [
             {
               "version": "9.0.0",
@@ -1035473,10 +1034575,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:.net 10.0",
-        "product:.net 11.0",
-        "product:.net 8.0",
-        "product:.net 9.0",
+        "product:.net 10.0 runtime",
+        "product:.net 11.0 runtime",
+        "product:.net 8.0 runtime",
+        "product:.net 9.0 runtime",
         "product:microsoft visual studio 2022 version 17.14",
         "product:microsoft visual studio 2026 version 18.9",
         "vendor:microsoft"
@@ -1051857,11 +1050959,11 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "windows 10 version 1607",
+          "product": "microsoft office for android",
           "versions": [
             {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
+              "version": "16.0.1",
+              "lessThan": "16.0.20430.20000",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1051872,9 +1050974,7 @@
           "product": "windows 10 version 1809",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
+              "version": "-",
               "status": "affected"
             }
           ]
@@ -1051884,9 +1050984,7 @@
           "product": "windows 10 version 21h2",
           "versions": [
             {
-              "version": "10.0.19044.0",
-              "lessThan": "10.0.19044.7725",
-              "versionType": "custom",
+              "version": "-",
               "status": "affected"
             }
           ]
@@ -1051896,141 +1050994,7 @@
           "product": "windows 10 version 22h2",
           "versions": [
             {
-              "version": "10.0.19045.0",
-              "lessThan": "10.0.19045.7725",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 23h2",
-          "versions": [
-            {
-              "version": "10.0.22631.0",
-              "lessThan": "10.0.22631.7582",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 24h2",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 25h2",
-          "versions": [
-            {
-              "version": "10.0.26200.0",
-              "lessThan": "10.0.26200.9445",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows 11 version 26h1",
-          "versions": [
-            {
-              "version": "10.0.28000.0",
-              "lessThan": "10.0.28000.2954",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 (server core installation)",
-          "versions": [
-            {
-              "version": "6.2.9200.0",
-              "lessThan": "6.2.9200.26349",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2012 r2 (server core installation)",
-          "versions": [
-            {
-              "version": "6.3.9600.0",
-              "lessThan": "6.3.9600.23398",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2016 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.14393.0",
-              "lessThan": "10.0.14393.9512",
-              "versionType": "custom",
+              "version": "-",
               "status": "affected"
             }
           ]
@@ -1052040,9 +1051004,7 @@
           "product": "windows server 2019",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
+              "version": "-",
               "status": "affected"
             }
           ]
@@ -1052052,9 +1051014,7 @@
           "product": "windows server 2019 (server core installation)",
           "versions": [
             {
-              "version": "10.0.17763.0",
-              "lessThan": "10.0.17763.9245",
-              "versionType": "custom",
+              "version": "-",
               "status": "affected"
             }
           ]
@@ -1052064,33 +1051024,7 @@
           "product": "windows server 2022",
           "versions": [
             {
-              "version": "10.0.20348.0",
-              "lessThan": "10.0.20348.5622",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
-              "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "windows server 2025 (server core installation)",
-          "versions": [
-            {
-              "version": "10.0.26100.0",
-              "lessThan": "10.0.26100.33438",
-              "versionType": "custom",
+              "version": "-",
               "status": "affected"
             }
           ]
@@ -1052102,25 +1051036,13 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:windows 10 version 1607",
+        "product:microsoft office for android",
         "product:windows 10 version 1809",
         "product:windows 10 version 21h2",
         "product:windows 10 version 22h2",
-        "product:windows 11 version 23h2",
-        "product:windows 11 version 24h2",
-        "product:windows 11 version 25h2",
-        "product:windows 11 version 26h1",
-        "product:windows server 2012",
-        "product:windows server 2012 (server core installation)",
-        "product:windows server 2012 r2",
-        "product:windows server 2012 r2 (server core installation)",
-        "product:windows server 2016",
-        "product:windows server 2016 (server core installation)",
         "product:windows server 2019",
         "product:windows server 2019 (server core installation)",
         "product:windows server 2022",
-        "product:windows server 2025",
-        "product:windows server 2025 (server core installation)",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -1066512,7 +1065434,7 @@
           "versions": [
             {
               "version": "1.0.0",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1066548,7 +1065470,7 @@
           "versions": [
             {
               "version": "16.0.1",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1066560,7 +1065482,7 @@
           "versions": [
             {
               "version": "16.0.0",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26090911",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1069662,7 +1068584,7 @@
           "versions": [
             {
               "version": "1.0.0",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26083020",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1069698,7 +1068620,7 @@
           "versions": [
             {
               "version": "16.0.1",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26083020",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1069710,7 +1068632,19 @@
           "versions": [
             {
               "version": "16.0.0",
-              "lessThan": "16.113.26091433",
+              "lessThan": "16.112.26083020",
+              "versionType": "custom",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "microsoft",
+          "product": "office online server",
+          "versions": [
+            {
+              "version": "16.0.0.0",
+              "lessThan": "16.0.10417.20207",
               "versionType": "custom",
               "status": "affected"
             }
@@ -1069732,6 +1068666,7 @@
         "product:microsoft office ltsc 2024",
         "product:microsoft office ltsc for mac 2021",
         "product:microsoft office ltsc for mac 2024",
+        "product:office online server",
         "vendor:microsoft"
       ],
       "active_threat": false,
@@ -1075097,7 +1074032,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1075399,7 +1074334,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1075559,7 +1074494,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 13,
         "reference_count": 1
       }
     },
@@ -1075861,7 +1074796,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1075955,7 +1074890,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 1
       }
     },
@@ -1076257,7 +1075192,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1076771,7 +1075706,7 @@
         "cwe_ids": [
           "CWE-807"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1076872,14 +1075807,14 @@
       "active_threat": false,
       "probability_score": 0.00928,
       "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -1077181,7 +1076116,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1077910,7 +1076845,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1079094,7 +1078029,7 @@
           "CWE-190",
           "CWE-191"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1079698,7 +1078633,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1079948,7 +1078883,7 @@
         "cwe_ids": [
           "CWE-862"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1080685,7 +1079620,7 @@
         "cwe_ids": [
           "CWE-1390"
         ],
-        "cpe_count": 0,
+        "cpe_count": 11,
         "reference_count": 1
       }
     },
@@ -1080935,7 +1079870,7 @@
         "cwe_ids": [
           "CWE-822"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1082962,7 +1081897,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1083566,7 +1082501,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1083816,7 +1082751,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1084015,7 +1082950,7 @@
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 10,
         "reference_count": 1
       }
     },
@@ -1084291,7 +1083226,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 25,
         "reference_count": 1
       }
     },
@@ -1084593,7 +1083528,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1084895,7 +1083830,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1085067,7 +1084002,7 @@
         "cwe_ids": [
           "CWE-306"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1085369,7 +1084304,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1085671,7 +1084606,7 @@
         "cwe_ids": [
           "CWE-59"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1085870,7 +1084805,7 @@
         "cwe_ids": [
           "CWE-476"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 1
       }
     },
@@ -1086069,7 +1085004,7 @@
         "cwe_ids": [
           "CWE-362"
         ],
-        "cpe_count": 0,
+        "cpe_count": 10,
         "reference_count": 1
       }
     },
@@ -1086319,7 +1085254,7 @@
         "cwe_ids": [
           "CWE-908"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1086621,7 +1085556,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1086768,7 +1085703,7 @@
         "cwe_ids": [
           "CWE-1390"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 1
       }
     },
@@ -1086876,7 +1085811,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -1087049,7 +1085984,7 @@
           "CWE-122",
           "CWE-191"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1087157,7 +1086092,7 @@
         "cwe_ids": [
           "CWE-401"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -1087459,7 +1086394,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1087592,7 +1086527,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 11,
         "reference_count": 1
       }
     },
@@ -1087894,7 +1086829,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1088196,7 +1087131,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1088329,7 +1087264,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 11,
         "reference_count": 1
       }
     },
@@ -1088632,7 +1087567,7 @@
           "CWE-122",
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1088934,7 +1087869,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1089145,7 +1088080,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1089447,7 +1088382,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1089619,7 +1088554,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1089921,7 +1088856,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1090223,7 +1089158,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1091249,7 +1090184,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1091499,7 +1090434,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1091801,7 +1090736,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1092103,7 +1091038,7 @@
         "cwe_ids": [
           "CWE-59"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1092353,7 +1091288,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1092655,7 +1091590,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1092905,7 +1091840,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1093155,7 +1092090,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1093407,7 +1092342,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1093709,7 +1092644,7 @@
         "cwe_ids": [
           "CWE-306"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1093959,7 +1092894,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1094261,7 +1093196,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1094563,7 +1093498,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1094606,7 +1093541,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -1094714,7 +1093649,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -1095319,7 +1094254,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1095622,7 +1094557,7 @@
           "CWE-122",
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1095872,7 +1094807,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1096174,7 +1095109,7 @@
         "cwe_ids": [
           "CWE-126"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1096476,7 +1095411,7 @@
         "cwe_ids": [
           "CWE-1286"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1096726,7 +1095661,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1096859,7 +1095794,7 @@
         "cwe_ids": [
           "CWE-763"
         ],
-        "cpe_count": 0,
+        "cpe_count": 11,
         "reference_count": 1
       }
     },
@@ -1097162,7 +1096097,7 @@
           "CWE-362",
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1097373,7 +1096308,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1097584,7 +1096519,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1097795,7 +1096730,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1098166,7 +1097101,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1098416,7 +1097351,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1098719,7 +1097654,7 @@
           "CWE-122",
           "CWE-367"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1098801,7 +1097736,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 1
       }
     },
@@ -1099103,7 +1098038,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1099275,7 +1098210,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1099486,7 +1098421,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1099804,7 +1098739,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 12,
         "reference_count": 1
       }
     },
@@ -1100106,7 +1099041,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1100356,7 +1099291,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1100778,7 +1099713,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1100989,7 +1099924,7 @@
         "cwe_ids": [
           "CWE-843"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1101291,7 +1100226,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1101713,7 +1100648,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1104517,7 +1103452,7 @@
         "cwe_ids": [
           "CWE-36"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1104819,7 +1103754,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1110536,7 +1109471,7 @@
         "cwe_ids": [
           "CWE-290"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1110747,7 +1109682,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1111050,7 +1109985,7 @@
           "CWE-122",
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1111352,7 +1110287,7 @@
         "cwe_ids": [
           "CWE-822"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1111654,7 +1110589,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1111865,7 +1110800,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1111973,7 +1110908,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -1114068,7 +1113003,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1114779,7 +1113714,7 @@
         "cwe_ids": [
           "CWE-362"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1116712,7 +1115647,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1119244,7 +1118179,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1119455,7 +1118390,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1119550,7 +1118485,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 7,
         "reference_count": 1
       }
     },
@@ -1119852,7 +1118787,7 @@
         "cwe_ids": [
           "CWE-763"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1120154,7 +1119089,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1120456,7 +1119391,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1120758,7 +1119693,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1120930,7 +1119865,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1121232,7 +1120167,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1121443,7 +1120378,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1121745,7 +1120680,7 @@
         "cwe_ids": [
           "CWE-415"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1121956,7 +1120891,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1122258,7 +1121193,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1122560,7 +1121495,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1122862,7 +1121797,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1123164,7 +1122099,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1123336,7 +1122271,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 18,
         "reference_count": 1
       }
     },
@@ -1123547,7 +1122482,7 @@
         "cwe_ids": [
           "CWE-23"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1137387,7 +1136322,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1137586,7 +1136521,7 @@
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 10,
         "reference_count": 1
       }
     },
@@ -1137733,7 +1136668,7 @@
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 5,
         "reference_count": 1
       }
     },
@@ -1155385,7 +1154320,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1155687,7 +1154622,7 @@
         "cwe_ids": [
           "CWE-415"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1155989,7 +1154924,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1156265,7 +1155200,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 25,
         "reference_count": 1
       }
     },
@@ -1156567,7 +1155502,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1156942,7 +1155877,7 @@
         "cwe_ids": [
           "CWE-134"
         ],
-        "cpe_count": 0,
+        "cpe_count": 17,
         "reference_count": 1
       }
     },
@@ -1157244,7 +1156179,7 @@
         "cwe_ids": [
           "CWE-908"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1157455,7 +1156390,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1157757,7 +1156692,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1158007,7 +1156942,7 @@
         "cwe_ids": [
           "CWE-59"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1158050,7 +1156985,7 @@
         "cwe_ids": [
           "CWE-763"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -1158183,7 +1157118,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 11,
         "reference_count": 1
       }
     },
@@ -1158420,7 +1157355,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 22,
         "reference_count": 1
       }
     },
@@ -1158631,7 +1157566,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1158739,7 +1157674,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 9,
         "reference_count": 1
       }
     },
@@ -1159041,7 +1157976,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1159187,7 +1158122,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 12,
         "reference_count": 1
       }
     },
@@ -1159489,7 +1158424,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1159739,7 +1158674,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1159989,7 +1158924,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1160291,7 +1159226,7 @@
         "cwe_ids": [
           "CWE-641"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1160567,7 +1159502,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 25,
         "reference_count": 1
       }
     },
@@ -1160869,7 +1159804,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1161171,7 +1160106,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1161473,7 +1160408,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1161775,7 +1160710,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1162025,7 +1160960,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 24,
         "reference_count": 1
       }
     },
@@ -1162327,7 +1161262,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1162388,16 +1161323,6 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2025 for x64-based systems (cu9)",
           "versions": [
             {
@@ -1162431,7 +1161356,6 @@
         "product:microsoft sql server 2019 for x64-based systems (cu32)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -1162573,7 +1161497,7 @@
         "cwe_ids": [
           "CWE-367"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -1162827,7 +1161751,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -1162909,7 +1161833,7 @@
         "cwe_ids": [
           "CWE-306"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 1
       }
     },
@@ -1163334,7 +1162258,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00586
+      "probability_score": 0.00586,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-415"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-85891",
@@ -1163424,7 +1162359,7 @@
     },
     {
       "cve_id": "CVE-2026-85893",
-      "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
+      "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "cvss_score": 8.8,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:U/RL:O/RC:C",
@@ -1163495,7 +1162430,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00586
+      "probability_score": 0.00586,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-85898",
@@ -1163570,7 +1162516,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00641
+      "probability_score": 0.00641,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-85900",
@@ -1166871,16 +1165828,6 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2025 for x64-based systems (cu9)",
           "versions": [
             {
@@ -1166914,7 +1165861,6 @@
         "product:microsoft sql server 2019 for x64-based systems (cu32)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -1170292,7 +1169238,7 @@
           "CWE-122",
           "CWE-367"
         ],
-        "cpe_count": 0,
+        "cpe_count": 26,
         "reference_count": 1
       }
     },
@@ -1170796,7 +1169742,7 @@
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 1
       }
     },
@@ -1177089,7 +1176035,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00638
+      "probability_score": 0.00638,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-88079",
@@ -1177556,16 +1176513,6 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2025 for x64-based systems (cu9)",
           "versions": [
             {
@@ -1177601,7 +1176548,6 @@
         "product:microsoft sql server 2019 for x64-based systems (cu32)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -1177677,16 +1176623,6 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2025 for x64-based systems (cu9)",
           "versions": [
             {
@@ -1177720,7 +1176656,6 @@
         "product:microsoft sql server 2019 for x64-based systems (cu32)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -1177748,16 +1176683,6 @@
       "affected": [
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2022 (cu 26)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2022 (gdr)",
           "versions": [
             {
@@ -1177776,16 +1176701,6 @@
               "version": "16.0.4003.1",
               "lessThan": "16.0.4305.5",
               "versionType": "custom",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
               "status": "affected"
             }
           ]
@@ -1177821,10 +1176736,8 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:microsoft sql server 2022 (cu 26)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -1177900,16 +1176813,6 @@
         },
         {
           "vendor": "microsoft",
-          "product": "microsoft sql server 2025 (cu8)",
-          "versions": [
-            {
-              "version": "-",
-              "status": "affected"
-            }
-          ]
-        },
-        {
-          "vendor": "microsoft",
           "product": "microsoft sql server 2025 for x64-based systems (cu9)",
           "versions": [
             {
@@ -1177943,7 +1176846,6 @@
         "product:microsoft sql server 2019 for x64-based systems (cu32)",
         "product:microsoft sql server 2022 (gdr)",
         "product:microsoft sql server 2022 for x64-based systems (cu27)",
-        "product:microsoft sql server 2025 (cu8)",
         "product:microsoft sql server 2025 for x64-based systems (cu9)",
         "product:microsoft sql server 2025 for x64-based systems (gdr)",
         "vendor:microsoft"
@@ -1193751,7 +1192653,7 @@
         "cwe_ids": [
           "CWE-415"
         ],
-        "cpe_count": 0,
+        "cpe_count": 11,
         "reference_count": 1
       }
     },
@@ -1194610,7 +1193512,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 21,
         "reference_count": 1
       }
     },
@@ -1195490,7 +1194392,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00514
+      "probability_score": 0.00514,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-843"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-96188",
@@ -1195565,7 +1194478,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00585
+      "probability_score": 0.00585,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-96196",
@@ -1195597,7 +1194521,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00767
+      "probability_score": 0.00767,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-184"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-96198",
@@ -1195629,7 +1194564,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00586
+      "probability_score": 0.00586,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-96199",
@@ -1195661,7 +1194607,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00586
+      "probability_score": 0.00586,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-96202",
@@ -1195749,7 +1194706,18 @@
         "vendor:microsoft"
       ],
       "active_threat": false,
-      "probability_score": 0.00585
+      "probability_score": 0.00585,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-96207",

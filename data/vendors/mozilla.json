@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T00:41:33+00:00",
+  "generated_at": "2026-10-31T06:57:44+00:00",
   "vendor": "mozilla",
-  "count": 885,
+  "count": 886,
   "items": [
     {
       "cve_id": "CVE-2022-0511",
@@ -32290,6 +32290,61 @@
         ],
         "cpe_count": 1,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-113399",
+      "description": "Incorrect boundary conditions in the SVG component. This vulnerability was fixed in Firefox 158.0.1 and Thunderbird 158.0.1.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158.0.1",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        },
+        {
+          "vendor": "mozilla",
+          "product": "thunderbird",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "158.0.1",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00489,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
