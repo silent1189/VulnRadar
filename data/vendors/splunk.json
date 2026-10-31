@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-31T06:57:44+00:00",
+  "generated_at": "2026-10-31T13:34:52+00:00",
   "vendor": "splunk",
-  "count": 130,
+  "count": 132,
   "items": [
     {
       "cve_id": "CVE-2022-26889",
@@ -654,7 +654,7 @@
         "vendor:splunk"
       ],
       "active_threat": false,
-      "probability_score": 0.14062,
+      "probability_score": 0.18604,
       "nvd": {
         "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
@@ -4930,7 +4930,7 @@
         "cwe_ids": [
           "CWE-400"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -4985,7 +4985,7 @@
         "cwe_ids": [
           "CWE-400"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 1
       }
     },
@@ -5037,7 +5037,7 @@
         "vendor:splunk"
       ],
       "active_threat": false,
-      "probability_score": 0.00411,
+      "probability_score": 0.00391,
       "nvd": {
         "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
@@ -5046,7 +5046,7 @@
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -5107,7 +5107,7 @@
         "cwe_ids": [
           "CWE-94"
         ],
-        "cpe_count": 0,
+        "cpe_count": 4,
         "reference_count": 1
       }
     },
@@ -5156,7 +5156,7 @@
         "cwe_ids": [
           "CWE-321"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -7595,6 +7595,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-76408",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76408 are related to improper control of a resource through its lifetime and are grouped under the Common Weakness Enumeration (CWE) CWE-664.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk soar",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "8.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk soar",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0039,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-664"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-76526",
       "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76526 are related to improper neutralization and are grouped under the Common Weakness Enumeration (CWE) CWE-707.",
       "cvss_score": 8.8,
@@ -7675,6 +7718,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-703"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76529",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76529 are related to improper protection of alternate path and are grouped under the Common Weakness Enumeration (CWE) CWE-424.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk soar",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "8.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk soar",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0039,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-424"
         ],
         "cpe_count": 0,
         "reference_count": 1
