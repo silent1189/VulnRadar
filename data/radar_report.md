@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-02T07:53:04+00:00`
+Generated: `2026-11-02T18:26:54+00:00`
 
 ## Executive Summary
 
@@ -196,11 +196,11 @@ Top critical items:
 | [CVE-2025-20337](https://www.cve.org/CVERecord?id=CVE-2025-20337) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-08-18 | 0.745 | 10.0 | ✅ | A vulnerability in a specific API of Cisco ISE and Cisco ISE-PIC could allow an unauthenticated, remote attacker to execute arbitrary code on the underlying op… |
 | [CVE-2023-36884](https://www.cve.org/CVERecord?id=CVE-2023-36884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-08-29 | 0.994 | 7.5 | ✅ | Windows Search Remote Code Execution Vulnerability |
 | [CVE-2026-1603](https://www.cve.org/CVERecord?id=CVE-2026-1603) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-23 | 0.883 | 8.6 | ✅ | An authentication bypass in Ivanti Endpoint Manager before version 2024 SU5 allows a remote unauthenticated attacker to leak specific stored credential data. |
+| [CVE-2026-0257](https://www.cve.org/CVERecord?id=CVE-2026-0257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-01 | 0.956 | 7.8 | ✅ | Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security res… |
 | [CVE-2024-29059](https://www.cve.org/CVERecord?id=CVE-2024-29059) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-25 | 0.986 | 7.5 | ✅ | .NET Framework Information Disclosure Vulnerability |
 | [CVE-2026-34486](https://www.cve.org/CVERecord?id=CVE-2026-34486) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-07 | 0.985 | 7.5 | ✅ | Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the fix for CVE-2026-29146 allowing the bypass of the EncryptInterceptor.  This issu… |
 | [CVE-2026-21962](https://www.cve.org/CVERecord?id=CVE-2026-21962) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-27 | 0.732 | 10.0 | ✅ | Vulnerability in the Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: Weblogic Server Proxy Plug-in for… |
 | [CVE-2026-88772](https://www.cve.org/CVERecord?id=CVE-2026-88772) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.782 | 9.5 | ✅ | Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and … |
-| [CVE-2026-0257](https://www.cve.org/CVERecord?id=CVE-2026-0257) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-01 | 0.950 | 7.8 | ✅ | Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security res… |
 | [CVE-2024-3273](https://www.cve.org/CVERecord?id=CVE-2024-3273) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-02 | 1.000 | 7.3 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as critical, was found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to 20240403.… |
 | [CVE-2024-27199](https://www.cve.org/CVERecord?id=CVE-2024-27199) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-04 | 1.000 | 7.3 | ✅ | In JetBrains TeamCity before 2023.11.4 path traversal allowing to perform limited admin actions  was possible |
 | [CVE-2026-104935](https://www.cve.org/CVERecord?id=CVE-2026-104935) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-16 | 0.868 | 8.6 | ✅ | Authentication bypass by spoofing in ICS before version 25.1.3.0 allows a remote unauthenticated attacker to execute arbitrary commands. This does not impact I… |
@@ -303,4 +303,4 @@ Top critical items:
 | Oct 31 | [CVE-2026-118696](https://www.cve.org/CVERecord?id=CVE-2026-118696) | 🆕 New |
 | Oct 31 | [CVE-2026-118697](https://www.cve.org/CVERecord?id=CVE-2026-118697) | 🆕 New |
 | Oct 31 | [CVE-2026-113399](https://www.cve.org/CVERecord?id=CVE-2026-113399) | 🆕 New |
-| ... | | _and 354 more_ |
+| ... | | _and 363 more_ |
