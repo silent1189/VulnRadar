@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T18:26:49+00:00",
+  "generated_at": "2026-11-03T01:41:33+00:00",
   "vendor": "zohocorp",
-  "count": 57,
+  "count": 59,
   "items": [
     {
       "cve_id": "CVE-2025-10020",
@@ -1263,6 +1263,51 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-18199",
+      "description": "Zohocorp ManageEngine Password Manager Pro versions before 13236 and PAM360 versions before 8601 are vulnerable to an authenticated Remote Code Execution vulnerability.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zohocorp",
+          "product": "manageengine password manager pro",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13236",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "zohocorp",
+          "product": "manageengine pam360",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "8601",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:manageengine pam360",
+        "product:manageengine password manager pro",
+        "vendor:zohocorp"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-18911",
@@ -2756,6 +2801,51 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-8923",
+      "description": "Zohocorp ManageEngine Eventlog Analyzer and ManageEngine Log360 versions\u00a0before 13062 are vulnerable to\u00a0Authenticated Remote Code Execution in Log Forward option.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "zohocorp",
+          "product": "manageengine eventlog analyzer",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13062",
+              "versionType": "13062"
+            }
+          ]
+        },
+        {
+          "vendor": "zohocorp",
+          "product": "manageengine log360",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13062",
+              "versionType": "13062"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:manageengine eventlog analyzer",
+        "product:manageengine log360",
+        "vendor:zohocorp"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }

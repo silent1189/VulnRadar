@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T18:26:49+00:00",
+  "generated_at": "2026-11-03T01:41:33+00:00",
   "vendor": "grafana",
-  "count": 51,
+  "count": 52,
   "items": [
     {
       "cve_id": "CVE-2022-23498",
@@ -3227,6 +3227,63 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-81938",
+      "description": "Grafana Mimir's Alertmanager rejects tenant-supplied receiver configurations that reference local files, but the check did not cover two HTTP client settings: http_headers.<name>.files and basic_auth.username_file. A tenant permitted to upload an Alertmanager configuration could point these fields at any file readable by the Alertmanager process. When a notification was sent, Alertmanager read the file and put its contents in a header of the outgoing request. By directing the receiver at a server they control, the tenant could read files from the Alertmanager host, such as credentials and configuration.\n\nExploitation requires permission to write the tenant's Alertmanager configuration. Grafana Enterprise Metrics (GEM), which is built on Mimir, is also affected. The issue is fixed in Mimir 3.1.7 and 3.2.2 and in GEM 2.17.20. GEM 2.11 through 2.16 will not receive a fix; users on those versions should upgrade to 2.17.20 or later.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "enterprise metrics (gem)",
+          "versions": [
+            {
+              "lessThanOrEqual": "2.16.2",
+              "status": "affected",
+              "version": "2.11.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "2.17.20",
+              "status": "affected",
+              "version": "2.17.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana mimir",
+          "versions": [
+            {
+              "lessThan": "3.1.7",
+              "status": "affected",
+              "version": "3.0.4",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "3.2.2",
+              "status": "affected",
+              "version": "3.2.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:enterprise metrics (gem)",
+        "product:grafana mimir",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-88967",

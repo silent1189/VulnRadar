@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T18:26:49+00:00",
+  "generated_at": "2026-11-03T01:41:33+00:00",
   "vendor": "_other",
-  "count": 3146,
+  "count": 3157,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -63805,21 +63805,13 @@
           "versions": [
             {
               "status": "affected",
-              "version": "0.2.2",
-              "versionType": "semver",
-              "lessThanOrEqual": "0.2.2"
+              "version": "0.2.2"
             },
             {
               "status": "affected",
               "version": "0.2.3-rc.0",
-              "versionType": "semver",
-              "lessThanOrEqual": "0.2.3-rc.0"
-            },
-            {
-              "status": "affected",
-              "version": "main",
-              "versionType": "semver",
-              "lessThanOrEqual": "main"
+              "lessThan": "*",
+              "versionType": "semver"
             }
           ]
         }
@@ -64146,15 +64138,11 @@
           "versions": [
             {
               "status": "affected",
-              "version": "0.2.2",
-              "versionType": "semver",
-              "lessThanOrEqual": "0.2.2"
+              "version": "0.2.2"
             },
             {
               "status": "affected",
-              "version": "0.2.3-rc.0",
-              "versionType": "semver",
-              "lessThanOrEqual": "0.2.3-rc.0"
+              "version": "0.2.3-rc.0"
             }
           ]
         }
@@ -64192,15 +64180,11 @@
           "versions": [
             {
               "status": "affected",
-              "version": "0.2.2",
-              "versionType": "semver",
-              "lessThanOrEqual": "0.2.2"
+              "version": "0.2.2"
             },
             {
               "status": "affected",
-              "version": "0.2.3-rc.0",
-              "versionType": "semver",
-              "lessThanOrEqual": "0.2.3-rc.0"
+              "version": "0.2.3-rc.0"
             }
           ]
         }
@@ -64238,9 +64222,7 @@
           "versions": [
             {
               "status": "affected",
-              "version": "0.2.2-rc.2",
-              "lessThan": "*",
-              "versionType": "semver"
+              "version": "0.2.2-rc.2"
             }
           ]
         }
@@ -82499,6 +82481,14 @@
               "status": "affected",
               "version": "3.0.0.6.102 series",
               "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.386 series"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.388 series"
             }
           ]
         }
@@ -82541,6 +82531,16 @@
               "status": "affected",
               "version": "3.0.0.6.102 series",
               "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.388 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.386 series",
+              "versionType": "custom"
             }
           ]
         }
@@ -82582,7 +82582,18 @@
           "versions": [
             {
               "status": "affected",
-              "version": "3.0.0.6_102 series"
+              "version": "3.0.0.6_102 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.388 series",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0.4.386 series",
+              "versionType": "custom"
             }
           ]
         }
@@ -111887,6 +111898,44 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-71450",
+      "description": "Authentication bypass using an alternate path or channel vulnerability in Johnson Controls EasyIO Neo EC and CW Edge Controller allows Authentication Bypass.\n\nThis issue affects EasyIO Neo EC and CW Edge Controller: from EC 3.3b62 through EC 3.3b63 and from CW 3.3b24 through CW 3.3b25.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:A/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "johnson controls",
+          "product": "easyio neo ec and cw edge controller",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "EC 3.3b62",
+              "lessThanOrEqual": "EC 3.3b63",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "CW 3.3b24",
+              "lessThanOrEqual": "CW 3.3b25",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:easyio neo ec and cw edge controller",
+        "vendor:johnson controls"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2024-32986",
@@ -169357,6 +169406,74 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103420",
+      "description": "Joomla Extension - php-web-design.com - CSRF for various actions in StageIt 1.0-5.7.5, 6.0-6.3.5",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "php-web-design.com",
+          "product": "stageit extension for joomla",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0-5.7.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0-6.3.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:stageit extension for joomla",
+        "vendor:php-web-design.com"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-105600",
+      "description": "Joomla Extension - php-web-design.com - RCE via setting strings in StageIt 1.0-5.7.5, 6.0-6.3.5",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "php-web-design.com",
+          "product": "stageit extension for joomla",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0-5.7.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0-6.3.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:stageit extension for joomla",
+        "vendor:php-web-design.com"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-103665",
       "description": "The installer for Yamaha LAN Monitor for Windows provided by Yamaha Corporation may insecurely load Dynamic Link Libraries (DLLs). When the installer is launched in a directory containing a specially crafted DLL file, the malicious DLL may be loaded, resulting in arbitrary code execution with administrative privileges.",
       "cvss_score": 7.8,
@@ -171486,6 +171603,77 @@
         ],
         "cpe_count": 0,
         "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-105606",
+      "description": "Joomla Extension - joomlaboat.com - Unauthenticated arbitrary file upload in Custom Tables < 3.7.8 - An unauthenticated attacker can upload a polyglot file with an attacker-controlled extension to the web-accessible tmp directory of any Joomla site that exposes a public Custom Tables submission form, and the stored path is disclosed in the response. By default the uploaded file is served as static content, so the primary impact is an unauthenticated arbitrary file write to a web-accessible directory, which allows hosting of attacker-controlled content (for example phishing or malware pages) under the victim's domain.",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "joomlaboat.com",
+          "product": "custom tables extension for joomla",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0-3.7.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:custom tables extension for joomla",
+        "vendor:joomlaboat.com"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-94130",
+      "description": "Joomla Extension - joomlaboat.com - Unauthenticated SQL injection in YouTube Gallery extension < 5.7.3 - An SQL injection vulnerability in video search functionality and sorting allowed attackers to inject SQL commands in read queries.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomlaboat.com",
+          "product": "youtube gallery extension for joomla",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-5.7.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtube gallery extension for joomla",
+        "vendor:joomlaboat.com"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00421,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 1,
+        "reference_count": 1
       }
     },
     {
@@ -175393,6 +175581,245 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-119737",
+      "description": "The pppoe_wrapper vendor daemon from the Amlogic Android SDK, as shipped on Nexbox A95X (Amlogic S905/S905X) TV boxes, contains a command injection vulnerability that allows local attackers to execute arbitrary commands as root by sending crafted messages to a world-writable AF_UNIX datagram socket at /dev/socket/pppoe_wrapper. Attackers can send a message beginning with 'pppd pty' followed by shell metacharacters and arbitrary commands, which are passed unfiltered to system(3) and executed by /system/bin/sh -c as root, resulting in full privilege escalation.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nexbox",
+          "product": "a95x",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "NEXBOX-A95X-201606011847",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "NEXBOX-A95X-AP6330",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "amlogic",
+          "product": "amlogic android sdk",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:amlogic android sdk",
+        "vendor:amlogic"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120057",
+      "description": "psqlODBC copies the reply to a large-object read (loread) into the application's buffer using the length sent by the server, without comparing it to the buffer size. A server not trusted under current SSL settings, or a man-in-the-middle, can return more bytes than the buffer holds and overwrite adjacent memory in the client process with server-chosen bytes. Fetching any large-object column is sufficient to trigger it. Versions before psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "18.00.0006",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120058",
+      "description": "psqlODBC sizes its row cache from the column count of a cursor's first result, but recomputes the column count from each later FETCH reply without checking that it matches. A server not trusted under current SSL settings can answer a later FETCH with more columns and make the driver write tuple records past the end of the heap allocation. A keyset reply with fewer columns than the key fields also underflows the unsigned field count. This is reachable with UseDeclareFetch enabled. Versions before psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "18.00.0006",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120061",
+      "description": "The psqlODBC parser for ODBC escape sequences in application SQL text writes the argument offsets of a {fn} escape into a fixed 16-entry stack array without a bound and does not initialize the array. An escape with too many arguments overflows the stack, and a reference to an unsupplied argument copies arbitrary bytes into the query. The copy of a {d}, {t}, {ts}, or {escape} body also writes one byte past a 128-byte stack buffer. An application that forwards untrusted SQL text to the driver exposes its process to memory corruption. Versions before psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "18.00.0006",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120062",
+      "description": "SQLSpecialColumns in psqlODBC splices the table and schema names it receives into its catalog query without escaping them, while the other catalog functions escape them. An application that passes an untrusted table or schema name to SQLSpecialColumns lets the caller execute arbitrary SQL with the privileges of the connection. Versions before psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "18.00.0006",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120064",
+      "description": "Several psqlODBC entry points use an application-supplied column number or row index as an array index without validating it. SQLBindCol with a column number above 32767 wraps the binding count negative and a later copy runs off the array. A negative SQL_DESC_COUNT on an application row descriptor unbinds columns at negative indexes. SQLColAttribute with a very large column number uses a negative index. SQLSetPos(SQL_ADD) does not check the row number against the rowset size. An application that forwards untrusted column or row numbers exposes its process to out-of-bounds reads and writes. Versions before psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "18.00.0006",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120065",
+      "description": "For an updatable cursor over a table without OIDs that has an auto-increment int4 column, psqlODBC uses that column to identify rows. It places the column's name, as reported by the server, between double quotes in its keyset queries and in the WHERE clause of its positioned SELECT, UPDATE, and DELETE statements, without doubling any double quote in the name. A column name that contains a double quote therefore changes the SQL that the driver runs with the application's privileges, including which rows a positioned UPDATE or DELETE affects. Any database user who can create a table that the application reads with an updatable cursor can choose such a name, and so can a server not trusted under current SSL settings. Versions before psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "18.00.0006",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-12225",
@@ -196706,47 +197133,6 @@
           "CWE-502"
         ],
         "cpe_count": 0,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-94130",
-      "description": "Joomla Extension - joomlaboat.com - Unauthenticated SQL injection in YouTube Gallery extension < 5.7.3 - An SQL injection vulnerability in video search functionality and sorting allowed attackers to inject SQL commands in read queries.",
-      "cvss_score": 9.3,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "joomlaboat.com",
-          "product": "youtube gallery extension for joomla",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "1.0.0-5.7.2"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:youtube gallery extension for joomla",
-        "vendor:joomlaboat.com"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00421,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 1,
         "reference_count": 1
       }
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T18:26:49+00:00",
+  "generated_at": "2026-11-03T01:41:33+00:00",
   "vendor": "jetbrains",
   "count": 112,
   "items": [
@@ -3136,7 +3136,7 @@
     },
     {
       "cve_id": "CVE-2026-118697",
-      "description": "In JetBrains Toolbox App before 3.9.1 and 3.8.2; IntelliJ IDEA before 2026.3 and 2026.2.4, the jetbrainsd daemon trusted compromised intermediate certificates",
+      "description": "In JetBrains Toolbox App before 3.9.1 and 3.8.2; IntelliJ IDEA, PyCharm, PhpStorm, RubyMine, WebStorm, GoLand and Rider before 2026.3 and 2026.2.4; CLion before 2026.3 and 2026.2.4.1; DataGrip before 2026.3 and 2026.2.6.1; RustRover before 2026.3 and 2026.2.5, the jetbrainsd daemon trusted compromised intermediate certificates",
       "cvss_score": 9.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -3147,15 +3147,15 @@
           "versions": [
             {
               "status": "affected",
-              "version": "3.9.0",
+              "version": "3.9",
               "lessThan": "3.9.1",
-              "versionType": "semver"
+              "versionType": "custom"
             },
             {
               "status": "affected",
               "version": "0",
               "lessThan": "3.8.2",
-              "versionType": "semver"
+              "versionType": "custom"
             }
           ]
         },
@@ -3170,6 +3170,114 @@
               "versionType": "semver"
             }
           ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "pycharm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "phpstorm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "rubymine",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "webstorm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "goland",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "rider",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "clion",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.4.1",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "datagrip",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.6.1",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "jetbrains",
+          "product": "rustrover",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.2.5",
+              "versionType": "semver"
+            }
+          ]
         }
       ],
       "watchlist_hit": true,
@@ -3178,8 +3286,17 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
+        "product:clion",
+        "product:datagrip",
+        "product:goland",
         "product:intellij idea",
+        "product:phpstorm",
+        "product:pycharm",
+        "product:rider",
+        "product:rubymine",
+        "product:rustrover",
         "product:toolbox app",
+        "product:webstorm",
         "vendor:jetbrains"
       ],
       "active_threat": false,
