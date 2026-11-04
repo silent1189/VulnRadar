@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T23:15:16+00:00",
+  "generated_at": "2026-11-04T06:34:43+00:00",
   "vendor": "elastic",
-  "count": 68,
+  "count": 71,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -1775,6 +1775,88 @@
       }
     },
     {
+      "cve_id": "CVE-2026-115290",
+      "description": "Uncontrolled Recursion (CWE-674) in Elasticsearch can lead to denial of service via Serialized Data with Nested Payloads (CAPEC-230). An unauthenticated attacker with network access to the remote cluster server interface of a node can send a specially crafted request that causes the node to terminate. No credentials are required. The attacker can repeat the request against each reachable node.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.10.0",
+              "lessThanOrEqual": "8.19.23"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.8"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-115294",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory (CWE-22) in the Kibana Fleet feature can lead to unauthorized resource deletion via Path Traversal (CAPEC-126). A low-privileged user with Fleet agent policies write access could cause a subsequent administrative action to act on unintended resources. This can result in the deletion of resources such as Kibana spaces and other organizational assets that the low-privileged user cannot delete directly. Exploitation requires an administrator to interact with the affected Fleet interface.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "kibana",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.3.0",
+              "lessThanOrEqual": "9.4.8"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kibana",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-115708",
       "description": "Improper Link Resolution Before File Access ('Link Following') (CWE-59) in Elastic Cloud Enterprise (ECE) can lead to authentication bypass and unauthorized changes to the configuration of other deployments on the same host via Symlink Attack (CAPEC-132).",
       "cvss_score": 7.2,
@@ -1914,6 +1996,50 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-115714",
+      "description": "Improper Certificate Validation (CWE-295) in the operating system certificate bundle shipped in the Docker images of APM Server; Auditbeat, Filebeat, Heartbeat, Metricbeat and Packetbeat; Elastic Agent, including Fleet Server and Cloudbeat; Logstash, for TLS connections that use the operating system certificate bundle; Elastic connectors; Universal Profiling (host agent, collector and symbolizer); and Elastic Maps Server. This certificate bundle, a dependency of these products (Dependency on Vulnerable Third-Party Component, CWE-1395), could allow an attacker to intercept or modify TLS-protected traffic via Signature Spoofing by Key Theft (CAPEC-474). The certificate bundle includes root certificate authorities that signed eight eMudhra intermediate certificate authorities whose private keys are compromised. Anyone with these keys can issue a certificate for any host name that these products accept as trusted. Exploitation requires an attacker in a network position between the product and the remote party, who presents a certificate issued with one of the compromised keys.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elastic docker images",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "8.0.0",
+              "lessThanOrEqual": "8.19.23"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.8"
+            },
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "9.5.0",
+              "lessThanOrEqual": "9.5.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elastic docker images",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-26938",

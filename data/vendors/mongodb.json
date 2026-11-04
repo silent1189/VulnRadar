@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T23:15:16+00:00",
+  "generated_at": "2026-11-04T06:34:43+00:00",
   "vendor": "mongodb",
-  "count": 117,
+  "count": 121,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -591,7 +591,7 @@
           "CWE-770"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -634,7 +634,7 @@
           "CWE-943"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -677,7 +677,7 @@
           "CWE-1025"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -853,6 +853,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-119179",
+      "description": "A flaw in the connection management layer of the MongoDB Node.js driver can leave a pooled network connection in the pool for reuse while data from an earlier operation is still outstanding on it. In applications that enable an optional client-side operation timeout, an unauthenticated party that can send ordinary requests to the application may cause database replies to be paired with the wrong requests. This may result in unintended disclosure of other users' records, incorrect operation results being returned, and failures of legitimate requests.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "node.js driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.11.0",
+              "lessThan": "6.22.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.8.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:node.js driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-11933",
       "description": "A use-after-free vulnerability exists in MongoDB Server's server-side JavaScript engine when converting BSON documents to JavaScript arrays. An authenticated user with read privileges who is able to run server-side JavaScript (for example, via $where or $function) can cause the server to access memory that has already been freed. This may result in disclosure of information from the mongod process memory or a denial of service through a server crash.",
       "cvss_score": 8.8,
@@ -931,6 +969,120 @@
         "cpe_count": 7,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-120678",
+      "description": "A memory management flaw in the MongoDB C Driver's handling of compressed responses may cause the client library to hold on to memory that is never released. An unauthenticated party that controls the database endpoint a client application connects to may cause repeated, unbounded memory growth in that application, which may result in the application becoming unavailable. No credentials, transport security settings, or user interaction are required.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "c driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.25.0",
+              "lessThanOrEqual": "1.30.14",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.5.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:c driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120955",
+      "description": "The GridFS file download API in the MongoDB C Driver does not check the result of an internal operation under certain error conditions during file retrieval. This can cause the process to terminate when stream operations continue. A user who can influence file download parameters can trigger this condition, which may result in service unavailability for applications using the affected API.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "c driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.25.0",
+              "lessThanOrEqual": "1.30.14",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.5.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:c driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120956",
+      "description": "The MongoDB C Driver does not validate the type or format of a namespace field returned by the server in a query response. A MongoDB endpoint that a client application connects to, without needing any credentials, can return a malformed value in that field. This causes the client application process to terminate, and can also cause the driver to read memory outside an allocated buffer and to send a small amount of the application's own uninitialized heap memory back to the endpoint in a follow-up command. The impact is limited to the process that embeds the driver.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "c driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.25.0",
+              "lessThanOrEqual": "1.30.14",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.5.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:c driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13055",

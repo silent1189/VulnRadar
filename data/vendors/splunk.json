@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T23:15:16+00:00",
+  "generated_at": "2026-11-04T06:34:43+00:00",
   "vendor": "splunk",
-  "count": 132,
+  "count": 134,
   "items": [
     {
       "cve_id": "CVE-2022-26889",
@@ -7595,6 +7595,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-76407",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76407 are related to improper access control and are grouped under the Common Weakness Enumeration (CWE) CWE-284.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk soar",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "8.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk soar",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00429,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-76408",
       "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76408 are related to improper control of a resource through its lifetime and are grouped under the Common Weakness Enumeration (CWE) CWE-664.",
       "cvss_score": 9.8,
@@ -7718,6 +7761,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-703"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76528",
+      "description": "As part of Cisco's ongoing commitment to proactive security and product quality, Cisco has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities. The vulnerabilities tracked by CVE-2026-76528 are related to protection mechanism failure and are grouped under the Common Weakness Enumeration (CWE) CWE-693.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "splunk",
+          "product": "splunk soar",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "custom",
+              "lessThan": "8.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:splunk soar",
+        "vendor:splunk"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00362,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
         ],
         "cpe_count": 0,
         "reference_count": 1

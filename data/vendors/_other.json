@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T23:15:16+00:00",
+  "generated_at": "2026-11-04T06:34:43+00:00",
   "vendor": "_other",
-  "count": 3157,
+  "count": 3174,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -3160,6 +3160,38 @@
         "cpe_count": 1,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-121731",
+      "description": "RosarioSIS before 12.9 contains a sql injection vulnerability that allows authenticated non-student users, including parents, to inject SQL via the unquoted period_id parameter in StudentSummary.php. Attackers can supply payloads without single quotes into IN() clauses to extract administrator password hashes and student records through time-based queries or modify data via stacked statements.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "francoisjacquet",
+          "product": "rosariosis",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "12.9",
+              "status": "affected",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:rosariosis",
+        "vendor:francoisjacquet"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2022-21142",
@@ -24022,7 +24054,7 @@
     },
     {
       "cve_id": "CVE-2026-46633",
-      "description": "Twig is a template language for PHP. Prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, allowing a crafted template name to terminate the string and inject arbitrary PHP expressions into the compiled cache file. This issue is fixed in version 3.26.0.",
+      "description": "Twig is a template language for PHP. Starting in 1.15.1 and prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, allowing a crafted template name to terminate the string and inject arbitrary PHP expressions into the compiled cache file. This issue is fixed in version 3.26.0.",
       "cvss_score": 8.7,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
@@ -24032,7 +24064,7 @@
           "product": "twig",
           "versions": [
             {
-              "version": "< 3.26.0",
+              "version": ">= 1.15.1, < 3.26.0",
               "status": "affected"
             }
           ]
@@ -45882,7 +45914,7 @@
           "CWE-824",
           "CWE-1325"
         ],
-        "cpe_count": 306,
+        "cpe_count": 316,
         "reference_count": 11
       }
     },
@@ -45957,7 +45989,7 @@
           "CWE-824",
           "CWE-1325"
         ],
-        "cpe_count": 306,
+        "cpe_count": 317,
         "reference_count": 19
       }
     },
@@ -63669,7 +63701,7 @@
           "CWE-256"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -63793,6 +63825,46 @@
       }
     },
     {
+      "cve_id": "CVE-2026-113877",
+      "description": "HTTP::Headers::ActionPack versions before 0.10 for Perl allow CPU exhaustion via Accept-Language ranges matched as regular expressions.\n\n_language_match interpolates each Accept-Language range into the pattern `/^$range\\-/i` without escaping it, so regular expression syntax in the header reaches the regex engine. A 12-byte range such as `(a?|b?){26}z` backtracks for seconds, and each increment of the quantifier doubles the time. An invalid range such as `(` fails to compile.\n\nA remote attacker can exhaust CPU, or make choose_language die, in any application that passes an untrusted Accept-Language header to it.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.10",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00708,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-624"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-114217",
       "description": "A flaw was found in konflux-ci. Continuous Integration (CI) automation scripts store sensitive GitHub access tokens in plaintext on the runner without cleaning them up after execution. A local attacker with access to the CI environment can read these stored credentials to gain unauthorized repository access, potentially allowing them to modify source code or release artifacts.",
       "cvss_score": 8.6,
@@ -63834,6 +63906,46 @@
         ],
         "cpe_count": 0,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-114629",
+      "description": "Web::Simple versions before 0.035 for Perl allocate a buffer sized by the Content-Length header for urlencoded body parameters.\n\nWeb::Dispatch::ParamParser::get_unpacked_body_from reads an application/x-www-form-urlencoded body using a single read call, with no cap and the return value ignored. Perl's read grows the buffer to the requested length before reading, so the declared Content-Length determines the allocation.\n\nAn attacker can trigger this through any route whose dispatch specification has a % body-parameter match, such as sub (POST + %name=), sending a Content-Length far larger than the body actually sent. No authentication is involved.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.035",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00495,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-789"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
@@ -64123,6 +64235,206 @@
         ],
         "cpe_count": 0,
         "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-115817",
+      "description": "Starman versions before 0.4019 for Perl allow a stalled request body to hold a worker indefinitely, as read_timeout covers only the headers.\n\nContent-Length and chunked request bodies are read with blocking reads and no deadline. A client that sends complete headers and then stalls or trickles the body keeps the worker waiting until it disconnects.\n\nA remote attacker can take every worker with a few such connections, five with the default worker count, so the server stops answering requests.\n\nVersion 0.4019 applies read_timeout to each wait for body data and adds a body_timeout limit, 300 seconds by default, on the total time to read a body.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.4019",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00514,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-115822",
+      "description": "Starman versions before 0.4019 for Perl allow CPU exhaustion via quadratic regex backtracking when parsing chunked request bodies.\n\nStarman decodes chunked request bodies before calling the application, matching each chunk-size line with `s/^(([0-9a-fA-F]+).*\\015\\012)//`. A line of hex digits followed by a bare LF and then CRLF never matches, because `.` does not match LF, and each failed attempt backtracks in time quadratic in the length of the hex run. Nothing limits the length of the line.\n\nA remote attacker can exhaust worker CPU by sending such requests to any route.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.4019",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00506,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1333"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-115823",
+      "description": "Starman versions before 0.4019 for Perl send response bodies for HEAD requests, desynchronizing responses on keep-alive connections.\n\nFor a HEAD request Starman omits chunked framing but still writes the body returned by the application, on both the array and streaming response paths. Responses with a 1xx, 204 or 304 status also carry the body.\n\nOn a keep-alive or pipelined connection the client reads those bytes as the start of the next response. A front-end proxy that reuses upstream connections may then pair responses with the wrong requests.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.4019",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.0035,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-444"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-115824",
+      "description": "Starman versions before 0.4019 for Perl allow memory exhaustion via unbounded buffering of chunked request bodies.\n\nThe chunked body decoder keeps each chunk in memory until the whole chunk and its CRLF have arrived, and sets no limit on the length of a chunk-size line. A client that declares a huge chunk size and streams data, or sends a chunk-size line that never ends, grows the buffer for as long as it keeps sending.\n\nA remote attacker can exhaust worker memory with a single connection.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "0.4019",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00608,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-115825",
+      "description": "HTTP::Server::PSGI versions before 1.0056 for Perl allow a single request to crash the server by declaring a large Content-Length.\n\nThe request body is read with sysread() calls sized by the remaining Content-Length. Perl grows the read buffer to the requested length before any data arrives, so the server tries to allocate as much memory as the client declares.\n\nA remote attacker can send one request with a large Content-Length and a few body bytes, and perl exits with an out-of-memory error before the application is called. HTTP::Server::PSGI runs as a single process, so the server stays down until restarted.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "1.0056",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00655,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-789"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
       }
     },
     {
@@ -111935,7 +112247,18 @@
         "vendor:johnson controls"
       ],
       "active_threat": false,
-      "probability_score": 0.00283
+      "probability_score": 0.00283,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-288"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2024-32986",
@@ -131559,6 +131882,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-103916",
+      "description": "Docker Sandboxes sbx cp does not safely confine host-side paths to a shared workspace. A malicious sandbox can create or replace a workspace symlink so that a later user-initiated copy reads a host file outside the workspace into the sandbox or writes sandbox-controlled data to a host path outside the workspace with the invoking user's permissions.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker sandboxes",
+          "versions": [
+            {
+              "version": "0.28.0",
+              "status": "affected",
+              "lessThan": "0.51.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker sandboxes",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-105445",
       "description": "An Incorrect Privilege Assignment vulnerability in Docker Hub's account-to-organization conversion feature allowed an authenticated attacker to reassign a personal access token (PAT) they controlled to another Docker Hub user without rotating or revoking the token secret. The unchanged PAT then authenticated to the registry as the recipient and could pull, push, or delete images, within its scopes, in repositories accessible to that user, including organization repositories.",
       "cvss_score": 9.4,
@@ -131643,6 +131998,70 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-112917",
+      "description": "In Docker Desktop for Windows with the WSL2 backend, an unprivileged Linux container can use 32-bit socketcall to bypass the default seccomp restriction on AF_VSOCK. This can expose host-facing services and Windows files accessible to the logged-in user. The issue affects x86-64 WSL2; LinuxKit-based backends are unaffected. The issue is fully fixed only with Docker Desktop 4.98.0 or later and WSL 3.0.3 or later. Docker Desktop 4.98.0 or later running on an older WSL remains affected.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker desktop",
+          "versions": [
+            {
+              "version": "4.98.0",
+              "lessThan": "*",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker desktop",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121614",
+      "description": "Docker Sandboxes versions 0.31.0 before 0.50.0 do not neutralize repository-controlled Git configuration when running certain host-side Git commands. An attacker who can modify a host repository's Git configuration, for example through a direct-mode sandbox with the repository mounted read-write, can configure core.fsmonitor or another Git setting that invokes an external program. Git can execute the program during a later clone-mode fetch or, starting in version 0.39.0, an sbx kit push initiated by the user. The program runs on the host with the invoking user's permissions, outside the sandbox's microVM isolation. The read-only host repository mount provided to a clone-mode sandbox does not itself allow that sandbox to modify the host repository's Git configuration. The issue is fixed in version 0.50.0.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker sandboxes",
+          "versions": [
+            {
+              "version": "0.31.0",
+              "status": "affected",
+              "lessThan": "0.50.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker sandboxes",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-17106",
@@ -132127,6 +132546,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-93325",
+      "description": "Buildx bake requires the user to grant entitlements with --allow or an interactive prompt before a build reaches outside the working directory. Under --progress=rawjson that consent step is skipped.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker buildx",
+          "versions": [
+            {
+              "version": "0.21.0",
+              "status": "affected",
+              "lessThan": "0.37.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker buildx",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2024-8956",
@@ -136150,6 +136601,62 @@
         "cpe_count": 0,
         "reference_count": 11
       }
+    },
+    {
+      "cve_id": "CVE-2026-119922",
+      "description": "Improper access control in the Babelfish for PostgreSQL extension versions 1.2-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 may allow remote authenticated users to elevate their privileges. To remediate this issue, we recommend you upgrade to Babelfish for PostgreSQL extension versions 4.10, 5.6, 6.1 or later.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "aws",
+          "product": "babelfish-for-postgresql",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.2",
+              "lessThanOrEqual": "1.5",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "2.1",
+              "lessThanOrEqual": "2.15",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "3.1",
+              "lessThanOrEqual": "3.12",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "4.0",
+              "lessThanOrEqual": "4.8",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "5.1",
+              "lessThanOrEqual": "5.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:babelfish-for-postgresql",
+        "vendor:aws"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-14904",
@@ -157775,6 +158282,82 @@
       }
     },
     {
+      "cve_id": "CVE-2026-111751",
+      "description": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. From 21.2.0 until 21.2.25 and 22.2.1, RouterLink directives rendered during Node.js server-side rendering retain computed UrlTree instances for the lifetime of each request. When queryParamsHandling is set to merge or preserve, either per link or through defaultQueryParamsHandling, every rendered link can retain a copy of attacker-controlled query parameters in its UrlTree. When upstream proxies or load balancers forward oversized query strings without rejecting them at the edge, multiple affected links and overlapping renders can amplify heap use until the Node.js old-space heap is exhausted and the SSR worker terminates. Numeric query-parameter names increase allocation pressure but are not required, memory is released after rendering completes, and pure client-side SPAs are not affected. This issue is fixed in versions 21.2.25 and 22.2.1.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "angular",
+          "product": "angular",
+          "versions": [
+            {
+              "version": ">= 21.2.0, < 21.2.25",
+              "status": "affected"
+            },
+            {
+              "version": ">= 22.0.0, < 22.2.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:angular",
+        "vendor:angular"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-111752",
+      "description": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to 20.3.33, 21.2.25, and 22.2.1, @angular/router in Node.js server-side rendering fails to require auxiliary outlet URL segments to match routes configured for their outlet names. Crafted requests containing multiple unconfigured empty-path outlet groups can repeatedly evaluate the route configuration, construct duplicate ActivatedRouteSnapshot trees, execute canMatch guards and resolvers, and copy route parameters and queryParams for each outlet. An unauthenticated remote attacker can exhaust the Node.js heap or CPU and terminate an SSR worker when SSR is enabled, a route level contains an empty-path route or named outlet, upstream infrastructure forwards the request target, and the worker has a constrained heap. The allocation is transient rather than a persistent leak, and client-side SPAs and build-time prerendering are not affected. This issue is fixed in versions 20.3.33, 21.2.25, and 22.2.1.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "angular",
+          "product": "angular",
+          "versions": [
+            {
+              "version": "<= 19.2.25",
+              "status": "affected"
+            },
+            {
+              "version": ">= 20.0.0, < 20.3.33",
+              "status": "affected"
+            },
+            {
+              "version": ">= 21.0.0, < 21.2.25",
+              "status": "affected"
+            },
+            {
+              "version": ">= 22.0.0, < 22.2.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:angular",
+        "vendor:angular"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-22610",
       "description": "Angular is a development platform for building mobile and desktop web applications using TypeScript/JavaScript and other languages. Prior to versions 19.2.18, 20.3.16, 21.0.7, and 21.1.0-rc.0, a cross-site scripting (XSS) vulnerability has been identified in the Angular Template Compiler. The vulnerability exists because Angular\u2019s internal sanitization schema fails to recognize the href and xlink:href attributes of SVG <script> elements as a Resource URL context. This issue has been patched in versions 19.2.18, 20.3.16, 21.0.7, and 21.1.0-rc.0.",
       "cvss_score": 8.5,
@@ -169448,7 +170031,18 @@
         "vendor:php-web-design.com"
       ],
       "active_threat": false,
-      "probability_score": 0.00204
+      "probability_score": 0.00204,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-105600",
@@ -169482,7 +170076,18 @@
         "vendor:php-web-design.com"
       ],
       "active_threat": false,
-      "probability_score": 0.00392
+      "probability_score": 0.00392,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-103665",
@@ -171644,7 +172249,18 @@
         "vendor:joomlaboat.com"
       ],
       "active_threat": false,
-      "probability_score": 0.00363
+      "probability_score": 0.00363,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-94130",
@@ -175638,7 +176254,162 @@
         "vendor:amlogic"
       ],
       "active_threat": false,
-      "probability_score": 0.00891
+      "probability_score": 0.00891,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-119742",
+      "description": "Nagios XI before 2026R2 contains an OS command injection vulnerability in the MIB upload feature where the install_mib() function in mibs.php sanitizes uploaded filenames with an incomplete character-substitution filter that omits semicolons, pipes, and non-space IFS whitespace characters before passing them to a grep command run via exec(). An authenticated administrator can upload a MIB file with a crafted filename using tab characters to bypass the deny-list and pipe to sh via a multipart POST request to mibs.php, resulting in arbitrary OS command execution as the web server user.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nagios enterprises, llc",
+          "product": "nagios xi",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom",
+              "lessThan": "2026R2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nagios xi",
+        "vendor:nagios enterprises, llc"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-48553",
+      "description": "Nagios Core before 4.5.13 and Nagios XI before 2026R1.5 are vulnerable to authenticated remote code execution via custom-variable macro injection through the Nagios Remote Data Processor (NRDP). When a custom variable defined on a host, service, or contact is referenced in a shell-executed command line, an authenticated attacker with NRDP access can inject OS commands through the macro value. Exploitation requires a non-default configuration in which a custom variable is defined and referenced in a shell-executed command.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nagios enterprises, llc.",
+          "product": "nagios core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "4.5.13"
+            }
+          ]
+        },
+        {
+          "vendor": "nagios enterprises, llc.",
+          "product": "nagios xi",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom",
+              "lessThan": "2026R1.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nagios core",
+        "product:nagios xi",
+        "vendor:nagios enterprises, llc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00966,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48554",
+      "description": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable to authenticated remote code execution via unfiltered NOTIFICATION-family macro substitution through the com_data parameter. When a notification command references $NOTIFICATIONCOMMENT$ or $NOTIFICATIONAUTHOR$ in a shell-reachable position, authenticated UI users can run arbitrary commands as the nagios user. Exploitation requires a non-default configuration in which a notification command references these macros in a shell-executed command line.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nagios enterprises, llc.",
+          "product": "nagios core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver",
+              "lessThan": "4.5.14"
+            }
+          ]
+        },
+        {
+          "vendor": "nagios enterprises, llc.",
+          "product": "nagios xi",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom",
+              "lessThan": "2026R1.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nagios core",
+        "product:nagios xi",
+        "vendor:nagios enterprises, llc."
+      ],
+      "active_threat": false,
+      "probability_score": 0.00966,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-120057",
@@ -175670,7 +176441,18 @@
         "vendor:postgresql"
       ],
       "active_threat": false,
-      "probability_score": 0.00244
+      "probability_score": 0.00244,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-120"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-120058",
@@ -175702,7 +176484,19 @@
         "vendor:postgresql"
       ],
       "active_threat": false,
-      "probability_score": 0.00255
+      "probability_score": 0.00255,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-191",
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-120061",
@@ -175734,7 +176528,20 @@
         "vendor:postgresql"
       ],
       "active_threat": false,
-      "probability_score": 0.00342
+      "probability_score": 0.00342,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121",
+          "CWE-193",
+          "CWE-457"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-120062",
@@ -175766,7 +176573,18 @@
         "vendor:postgresql"
       ],
       "active_threat": false,
-      "probability_score": 0.00357
+      "probability_score": 0.00357,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-120064",
@@ -175798,7 +176616,19 @@
         "vendor:postgresql"
       ],
       "active_threat": false,
-      "probability_score": 0.00342
+      "probability_score": 0.00342,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-129",
+          "CWE-190"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-120065",
@@ -175830,7 +176660,454 @@
         "vendor:postgresql"
       ],
       "active_threat": false,
-      "probability_score": 0.00294
+      "probability_score": 0.00294,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121565",
+      "description": "Tanium addressed an improper certificate validation vulnerability in multiple products. Products have been updated to distrust several intermediate CA certificates associated with compromised private keys.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "tanium",
+          "product": "tanos",
+          "versions": [
+            {
+              "version": "1.8.5",
+              "status": "affected",
+              "lessThan": "1.8.5.0326",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.8.6",
+              "status": "affected",
+              "lessThan": "1.8.6.0193",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.9.0",
+              "status": "affected",
+              "lessThan": "1.9.0.0089",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "asset",
+          "versions": [
+            {
+              "version": "1.33",
+              "status": "affected",
+              "lessThan": "1.33.334",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.36",
+              "status": "affected",
+              "lessThan": "1.36.182",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.39",
+              "status": "affected",
+              "lessThan": "1.39.164",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "comply",
+          "versions": [
+            {
+              "version": "2.32",
+              "status": "affected",
+              "lessThan": "2.32.275",
+              "versionType": "custom"
+            },
+            {
+              "version": "2.35",
+              "status": "affected",
+              "lessThan": "2.35.337",
+              "versionType": "custom"
+            },
+            {
+              "version": "2.37",
+              "status": "affected",
+              "lessThan": "2.37.347",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "connect",
+          "versions": [
+            {
+              "version": "5.29",
+              "status": "affected",
+              "lessThan": "5.29.272",
+              "versionType": "custom"
+            },
+            {
+              "version": "5.37",
+              "status": "affected",
+              "lessThan": "5.37.177",
+              "versionType": "custom"
+            },
+            {
+              "version": "5.47",
+              "status": "affected",
+              "lessThan": "5.47.135",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "integrity monitor",
+          "versions": [
+            {
+              "version": "3.6",
+              "status": "affected",
+              "lessThan": "3.6.608",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.7",
+              "status": "affected",
+              "lessThan": "3.7.383",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.8",
+              "status": "affected",
+              "lessThan": "3.8.362",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "health check",
+          "versions": [
+            {
+              "version": "1.13",
+              "status": "affected",
+              "lessThan": "1.13.653",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "endpoint configuration toolset solution",
+          "versions": [
+            {
+              "version": "1.51",
+              "status": "affected",
+              "lessThan": "1.51.61",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.59",
+              "status": "affected",
+              "lessThan": "1.59.51",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.71",
+              "status": "affected",
+              "lessThan": "1.71.26",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "patch",
+          "versions": [
+            {
+              "version": "3.24",
+              "status": "affected",
+              "lessThan": "3.24.328",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.28",
+              "status": "affected",
+              "lessThan": "3.28.346",
+              "versionType": "custom"
+            },
+            {
+              "version": "3.32",
+              "status": "affected",
+              "lessThan": "3.32.383",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "performance",
+          "versions": [
+            {
+              "version": "1.22",
+              "status": "affected",
+              "lessThan": "1.22.355",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.23",
+              "status": "affected",
+              "lessThan": "1.23.318",
+              "versionType": "custom"
+            },
+            {
+              "version": "1.25",
+              "status": "affected",
+              "lessThan": "1.25.196",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "reputation",
+          "versions": [
+            {
+              "version": "6.6",
+              "status": "affected",
+              "lessThan": "6.6.150",
+              "versionType": "custom"
+            },
+            {
+              "version": "6.7",
+              "status": "affected",
+              "lessThan": "6.7.143",
+              "versionType": "custom"
+            },
+            {
+              "version": "6.8",
+              "status": "affected",
+              "lessThan": "6.8.167",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "reveal",
+          "versions": [
+            {
+              "version": "2.4",
+              "status": "affected",
+              "lessThan": "2.4.109",
+              "versionType": "custom"
+            },
+            {
+              "version": "2.5",
+              "status": "affected",
+              "lessThan": "2.5.166",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "threat response",
+          "versions": [
+            {
+              "version": "4.9",
+              "status": "affected",
+              "lessThan": "4.9.480",
+              "versionType": "custom"
+            },
+            {
+              "version": "4.12",
+              "status": "affected",
+              "lessThan": "4.12.353",
+              "versionType": "custom"
+            },
+            {
+              "version": "4.17",
+              "status": "affected",
+              "lessThan": "4.17.333",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tanium",
+          "product": "provision host",
+          "versions": [
+            {
+              "version": "10.4.100",
+              "status": "affected",
+              "lessThan": "10.4.100",
+              "versionType": "semver"
+            },
+            {
+              "version": "10.8.115",
+              "status": "affected",
+              "lessThan": "10.8.115",
+              "versionType": "semver"
+            },
+            {
+              "version": "10.9.113",
+              "status": "affected",
+              "lessThan": "10.9.113",
+              "versionType": "semver"
+            },
+            {
+              "version": "10.10.189",
+              "status": "affected",
+              "lessThan": "10.10.189",
+              "versionType": "semver"
+            },
+            {
+              "version": "10.11.127",
+              "status": "affected",
+              "lessThan": "10.11.127",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:connect",
+        "vendor:tanium"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-9207",
+      "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "tanium",
+          "product": "connect",
+          "versions": [
+            {
+              "version": "5.26",
+              "status": "affected",
+              "lessThan": "5.26.191",
+              "versionType": "custom"
+            },
+            {
+              "version": "5.29",
+              "status": "affected",
+              "lessThan": "5.29.237",
+              "versionType": "custom"
+            },
+            {
+              "version": "5.37",
+              "status": "affected",
+              "lessThan": "5.37.140",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:connect",
+        "vendor:tanium"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00391,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-9208",
+      "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "tanium",
+          "product": "connect",
+          "versions": [
+            {
+              "version": "5.26",
+              "status": "affected",
+              "lessThan": "5.26.191",
+              "versionType": "custom"
+            },
+            {
+              "version": "5.29",
+              "status": "affected",
+              "lessThan": "5.29.237",
+              "versionType": "custom"
+            },
+            {
+              "version": "5.37",
+              "status": "affected",
+              "lessThan": "5.37.140",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:connect",
+        "vendor:tanium"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00421,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-12225",
@@ -188291,118 +189568,6 @@
       }
     },
     {
-      "cve_id": "CVE-2026-48553",
-      "description": "Nagios Core before 4.5.13 and Nagios XI before 2026R1.5 are vulnerable to authenticated remote code execution via custom-variable macro injection through the Nagios Remote Data Processor (NRDP). When a custom variable defined on a host, service, or contact is referenced in a shell-executed command line, an authenticated attacker with NRDP access can inject OS commands through the macro value. Exploitation requires a non-default configuration in which a custom variable is defined and referenced in a shell-executed command.",
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "nagios enterprises, llc.",
-          "product": "nagios core",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "versionType": "semver",
-              "lessThan": "4.5.13"
-            }
-          ]
-        },
-        {
-          "vendor": "nagios enterprises, llc.",
-          "product": "nagios xi",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "versionType": "custom",
-              "lessThan": "2026R1.5"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:nagios core",
-        "product:nagios xi",
-        "vendor:nagios enterprises, llc."
-      ],
-      "active_threat": false,
-      "probability_score": 0.00966,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-48554",
-      "description": "Nagios Core before 4.5.14 and Nagios XI before 2026R1.7 are vulnerable to authenticated remote code execution via unfiltered NOTIFICATION-family macro substitution through the com_data parameter. When a notification command references $NOTIFICATIONCOMMENT$ or $NOTIFICATIONAUTHOR$ in a shell-reachable position, authenticated UI users can run arbitrary commands as the nagios user. Exploitation requires a non-default configuration in which a notification command references these macros in a shell-executed command line.",
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "nagios enterprises, llc.",
-          "product": "nagios core",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "versionType": "semver",
-              "lessThan": "4.5.14"
-            }
-          ]
-        },
-        {
-          "vendor": "nagios enterprises, llc.",
-          "product": "nagios xi",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "versionType": "custom",
-              "lessThan": "2026R1.7"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:nagios core",
-        "product:nagios xi",
-        "vendor:nagios enterprises, llc."
-      ],
-      "active_threat": false,
-      "probability_score": 0.00966,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
       "cve_id": "CVE-2026-48558",
       "description": "SimpleHelp versions 5.5.15 and prior and 6.0 pre-release versions contain an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may also allow bypass of multi-factor authentication. No user interaction is required.",
       "cvss_score": 9.5,
@@ -197830,116 +198995,6 @@
         ],
         "cpe_count": 6,
         "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-9207",
-      "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "tanium",
-          "product": "connect",
-          "versions": [
-            {
-              "version": "5.26",
-              "status": "affected",
-              "lessThan": "5.26.191",
-              "versionType": "custom"
-            },
-            {
-              "version": "5.29",
-              "status": "affected",
-              "lessThan": "5.29.237",
-              "versionType": "custom"
-            },
-            {
-              "version": "5.37",
-              "status": "affected",
-              "lessThan": "5.37.140",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:connect",
-        "vendor:tanium"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00391,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 3,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-9208",
-      "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "tanium",
-          "product": "connect",
-          "versions": [
-            {
-              "version": "5.26",
-              "status": "affected",
-              "lessThan": "5.26.191",
-              "versionType": "custom"
-            },
-            {
-              "version": "5.29",
-              "status": "affected",
-              "lessThan": "5.29.237",
-              "versionType": "custom"
-            },
-            {
-              "version": "5.37",
-              "status": "affected",
-              "lessThan": "5.37.140",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:connect",
-        "vendor:tanium"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00421,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 3,
-        "reference_count": 1
       }
     },
     {
