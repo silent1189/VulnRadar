@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T02:14:44+00:00",
+  "generated_at": "2026-11-05T10:52:10+00:00",
   "vendor": "apache_software_foundation",
-  "count": 1352,
+  "count": 1366,
   "items": [
     {
       "cve_id": "CVE-2022-22719",
@@ -27407,7 +27407,18 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-100300",
@@ -27445,7 +27456,18 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-755"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-100302",
@@ -27483,7 +27505,18 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-101356",
@@ -29611,6 +29644,135 @@
       }
     },
     {
+      "cve_id": "CVE-2026-108823",
+      "description": "Exposure of Sensitive Information to an Unauthorized Actor during job manipulation in Apache Kylin. The impact is minor unless job services are exposed to public network, which is uncommon.\n\n\n\nThis issue affects Apache Kylin: from 4.0.0 through 5.0.4.\n\n\n\nUsers are recommended to upgrade to version 5.0.5, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache kylin",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "5.0.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache kylin",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00345,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-108833",
+      "description": "Default startup profile miss security settings\u00a0in Apache Kylin. Any deployment has security setting profile turned on does not impact.\n\n\n\nThis issue affects Apache Kylin: from 4.0.0 through 5.0.4.\n\n\n\nUsers are recommended to upgrade to version 5.0.5, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache kylin",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "5.0.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache kylin",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00311,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1188"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-108837",
+      "description": "Allocation of resources without limits or throttling vulnerability in Apache Kylin. Given an attacker has got project admin permission, an cache API maybe used to cause\u00a0computed-column resource exhaustion.\n\n\n\nThis issue affects Apache Kylin: from 4.0.0 through 5.0.4.\n\n\n\nUsers are recommended to upgrade to version 5.0.5, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache kylin",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThanOrEqual": "5.0.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache kylin",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00397,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-111089",
       "description": "Apache Wicket reads texts from the application's resource bundles \u2014 a localized label, a css class name \u2014 and writes some of them into the JavaScript and the markup it generates for a component. Those texts are placed inside single-quoted JavaScript string literals and inside quoted attribute values without being escaped for that context, so a text containing a quote ends the literal or the attribute, and what follows is parsed as script or as markup in the application's origin when the page loads.\n\nA resource bundle entry is authored for the application and does not say where the framework will write it. The same key is read by the framework into element text, where Wicket escapes it, and into the contexts below, where it did not. A text containing an apostrophe, which is ordinary in several languages, is enough to break the page; a text under the influence of another party is enough to run script.\n\nIn org.apache.wicket:wicket-core, org.apache.wicket.markup.html.form.upload.MultiFileUploadField writes the org.apache.wicket.mfu.delete message into a JavaScript string literal, and org.apache.wicket.markup.html.form.Form writes the hidden-fields css class into the class attribute of the container it renders for its hidden fields; on 8.0.0 through 8.19.0 and 9.0.0 through 9.24.0 Form#appendDefaultButtonField writes the same css class into a second container. In org.apache.wicket:wicket-extensions, UploadProgressBar writes its UploadProgressBar.starting text into a JavaScript string literal, FilterForm writes the hidden-fields css class into the class attribute of its hidden input markup, and on 9.0.0 through 9.24.0 and 10.0.0 through 10.11.0 TrapFocusBehavior writes its current css class into a JavaScript string literal.\n\nThe Content-Security-Policy that Apache Wicket 9.x and 10.x send by default does not prevent the JavaScript cases: the generated script is written into a script element carrying the per-response nonce, so the injected code is part of a script the policy admits. It does prevent an inline event handler injected through the attribute cases.\n\nThis issue affects Apache Wicket: from 8.0.0 through 8.19.0, from 9.0.0 through 9.24.0, from 10.0.0 through 10.11.0. Users of Apache Wicket 7.x or older, which are no longer supported, should upgrade to a supported version. Users are recommended to upgrade to version 8.20.0, 9.25.0 or 10.12.0, which fix the issue.",
       "cvss_score": 7.6,
@@ -30445,7 +30607,18 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-115721",
@@ -48069,6 +48242,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-59264",
+      "description": "The Windows installers of Apache OpenOffice 4.1.16 and earlier allow an already manipulated system to run external code with elevated access.\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-59265",
       "description": "A code execution issue in the Java integration in Apache OpenOffice v4.1.16 and earlier allows a crafted untrusted document to trigger executing arbitrary (even remote) code when opened by the user.\n\n\n\nThis issue is expected to be fixed in version 4.1.17, which is in the release candidate phase.\n\n\n\nUntil then, users can mitigate this issue by disabling Java runtime integration in the Preferences dialog. This prevents the attack. If this is not possible, or as an extra precaution, you can avoid opening\u00a0open untrusted files entirely.\u00a0Once 4.1.17 is released, upgrade to that version to fix the issue.",
       "cvss_score": 8.8,
@@ -48127,6 +48343,49 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-59268",
+      "description": "An out-of-bounds Write vulnerability in Apache OpenOffice versions through 4.1.16 could allow an attacker to craft a Microsoft Word document that would crash the program, or otherwise corrupt other memory areas.\n\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
@@ -50674,6 +50933,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-532"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-64945",
+      "description": "A vulnerability in Apache Answer.\n\n\n\nThis issue affects Apache Answer: through 2.0.2.\n\nThe question operation controller gates hide/show operations on the wrong permission check result (the unpin permission instead of the hide permission), so in custom role configurations that separate these permissions, a user granted only question.unpin can hide or restore questions without holding question.hide or question.show.\n\n\nUsers are recommended to upgrade to version 2.0.3, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache answer",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache answer",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00301,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -56248,6 +56550,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-76994",
+      "description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Answer.\n\n\n\nThis issue affects Apache Answer: through 2.0.2.\n\nUnauthenticated attackers could obtain metadata associated with hidden questions through public answer profiles.\n\n\nUsers are recommended to upgrade to version 2.0.3, which fixes the issue.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache answer",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache answer",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0036,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-77051",
       "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Syncope.\n\n\n\n\n\nAn administrator with adequate entitlements can achieve execution of arbitrary SQL via stacked queries, leveraging unsanitized entityKey and opEvent parameters.\n\nThis issue affects Apache Syncope: from 3.0.0-M0 through 3.0.16, from 4.0.0-M0 Through 4.0.7, from 4.1.0-M0 through 4.1.2.\n\n\nUsers are recommended to upgrade to version 4.0.8 / 4.1.3, which fix this issue.",
       "cvss_score": 9.8,
@@ -56723,14 +57068,14 @@
       "active_threat": false,
       "probability_score": 0.01076,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 8
       }
     },
@@ -57430,6 +57775,92 @@
       }
     },
     {
+      "cve_id": "CVE-2026-79624",
+      "description": "Insufficient session expiration vulnerability in Apache Answer.\n\n\n\nThis issue affects Apache Answer: through 2.0.2.\n\n\n\nInsufficient session invalidation allowed revoked users to continue accessing known private uploaded files with a stale visit token.\n\n\n\nUsers are recommended to upgrade to version 2.0.3, which fixes the issue.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache answer",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache answer",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00393,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-613"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-79633",
+      "description": "vulnerability in Apache Answer.\n\n\n\nThis issue affects Apache Answer: through 2.0.2.\n\n\n\nMissing authorization checks allowed authenticated users to perform actions on non-public content they were not permitted to access.\n\n\n\nUsers are recommended to upgrade to version 2.0.3, which fixes the issue.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache answer",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache answer",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00288,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-202"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-79677",
       "description": "Missing release of resource after effective lifetime, Comparison using wrong factors vulnerability in Apache Tomcat allows a denial of service as a result of lost time outs for asynchronous WebSocket writes.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.25, from 10.1.0-M1 through 10.1.59, from 9.0.0.M1 through 9.0.121.\n\n\n\nThe following versions were EOL at the time the CVE was created but are known to be affected: from 8.5.0 through 8.5.100, from 7.0.43 through 7.0.109.\u00a0Other unsupported versions may also be affected.\n\n\n\nUsers are recommended to upgrade to version 11.0.26, 10.1.60 or 9.0.122, which fix the issue.",
       "cvss_score": 7.5,
@@ -57599,14 +58030,14 @@
       "active_threat": false,
       "probability_score": 0.0102,
       "nvd": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-22"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 7
       }
     },
@@ -57791,15 +58222,15 @@
       "active_threat": false,
       "probability_score": 0.0102,
       "nvd": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-22"
         ],
-        "cpe_count": 0,
-        "reference_count": 6
+        "cpe_count": 2,
+        "reference_count": 7
       }
     },
     {
@@ -58018,7 +58449,7 @@
         "cwe_ids": [
           "CWE-178"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 5
       }
     },
@@ -58082,7 +58513,7 @@
         "cwe_ids": [
           "CWE-918"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 5
       }
     },
@@ -60778,7 +61209,7 @@
         "cwe_ids": [
           "CWE-611"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 5
       }
     },
@@ -60842,7 +61273,7 @@
         "cwe_ids": [
           "CWE-200"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 5
       }
     },
@@ -62562,7 +62993,7 @@
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 10
       }
     },
@@ -62767,6 +63198,221 @@
           "CWE-755"
         ],
         "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90624",
+      "description": "An unchecked memory access in the PDF import code of Apache OpenOffice versions through 4.1.16 on allows a crafted PDF to execute an out-of-bounds memory write. This could crash the program or cause memory corruption.\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90626",
+      "description": "An uncontrolled memory access in the PDF import code of Apache OpenOffice versions through 4.1.16 allows a crafted PDF to cause an out-of-bounds memory write, causing program crash or memory corruption.\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90628",
+      "description": "An uncontrolled memory access in the PDF export code of Apache OpenOffice versions through 4.1.16 allows a crafted CFF font to cause a stack overflow problem, causing program crash or memory corruption, or even running other code.\n\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90629",
+      "description": "An uncontrolled memory access in the WMF import code of Apache OpenOffice versions through 4.1.16 allows a crafted WMF file to cause an invalid memory access, causing program crash or memory corruption.\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90634",
+      "description": "An uncontrolled memory access in the PDF import code of Apache OpenOffice versions through 4.1.16 allows a crafted PDF to cause an out-of-bounds memory write, causing program crash or memory corruption.\nUsers are recommended to upgrade to version 4.1.17, which fixes this issue.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache openoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "4.1.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache openoffice",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 1,
         "reference_count": 2
       }
     },

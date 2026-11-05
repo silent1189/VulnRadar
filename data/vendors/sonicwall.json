@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T02:14:44+00:00",
+  "generated_at": "2026-11-05T10:52:10+00:00",
   "vendor": "sonicwall",
-  "count": 96,
+  "count": 97,
   "items": [
     {
       "cve_id": "CVE-2022-1701",
@@ -3596,6 +3596,47 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109593",
+      "description": "An unauthenticated attacker with network access to the SonicWall GMS 9.5.2 and earlier versions may be able to read internal GMS files, potentially exposing sensitive information.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sonicwall",
+          "product": "global management system (gms)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.5.2 and earlier versions"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:global management system (gms)",
+        "vendor:sonicwall"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00521,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-636"
         ],
         "cpe_count": 0,
         "reference_count": 1
