@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-05T10:52:15+00:00`
+Generated: `2026-11-05T18:45:30+00:00`
 
 ## Executive Summary
 
@@ -178,9 +178,9 @@ Top critical items:
 | [CVE-2022-41082](https://www.cve.org/CVERecord?id=CVE-2022-41082) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.0 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.810 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
 | [CVE-2026-50751](https://www.cve.org/CVERecord?id=CVE-2026-50751) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-11 | 0.853 | 9.3 | ✅ | A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to b… |
-| [CVE-2026-88771](https://www.cve.org/CVERecord?id=CVE-2026-88771) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.832 | 9.5 | ✅ | Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, be… |
 | [CVE-2023-27997](https://www.cve.org/CVERecord?id=CVE-2023-27997) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-04 | 0.857 | 9.2 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS version 7.2.4 and below, version 7.0.11 and below, version 6.4.12 and below, version 6.0.16 and… |
 | [CVE-2022-30190](https://www.cve.org/CVERecord?id=CVE-2022-30190) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-07-05 | 0.992 | 7.8 | ✅ | A remote code execution vulnerability exists when MSDT is called using the URL protocol from a calling application such as Word. An attacker who successfully e… |
+| [CVE-2026-88771](https://www.cve.org/CVERecord?id=CVE-2026-88771) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.819 | 9.5 | ✅ | Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, be… |
 | [CVE-2026-87902](https://www.cve.org/CVERecord?id=CVE-2026-87902) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-28 | 0.958 | 8.1 | ✅ | An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme direct… |
 | [CVE-2023-36025](https://www.cve.org/CVERecord?id=CVE-2023-36025) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-05 | 0.882 | 8.8 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
 | [CVE-2026-31431](https://www.cve.org/CVERecord?id=CVE-2026-31431) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-15 | 0.981 | 7.8 | ✅ | In the Linux kernel, the following vulnerability has been resolved:  crypto: algif_aead - Revert to operating out-of-place  This mostly reverts commit 72548b09… |
@@ -201,11 +201,11 @@ Top critical items:
 | [CVE-2024-29059](https://www.cve.org/CVERecord?id=CVE-2024-29059) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-25 | 0.986 | 7.5 | ✅ | .NET Framework Information Disclosure Vulnerability |
 | [CVE-2026-34486](https://www.cve.org/CVERecord?id=CVE-2026-34486) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-07 | 0.985 | 7.5 | ✅ | Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the fix for CVE-2026-29146 allowing the bypass of the EncryptInterceptor.  This issu… |
 | [CVE-2026-21962](https://www.cve.org/CVERecord?id=CVE-2026-21962) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-27 | 0.732 | 10.0 | ✅ | Vulnerability in the Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: Weblogic Server Proxy Plug-in for… |
-| [CVE-2026-88772](https://www.cve.org/CVERecord?id=CVE-2026-88772) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.782 | 9.5 | ✅ | Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and … |
 | [CVE-2024-3273](https://www.cve.org/CVERecord?id=CVE-2024-3273) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-05-02 | 1.000 | 7.3 | ✅ | ** UNSUPPORTED WHEN ASSIGNED ** A vulnerability, which was classified as critical, was found in D-Link DNS-320L, DNS-325, DNS-327L and DNS-340L up to 20240403.… |
 | [CVE-2024-27199](https://www.cve.org/CVERecord?id=CVE-2024-27199) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-04 | 1.000 | 7.3 | ✅ | In JetBrains TeamCity before 2023.11.4 path traversal allowing to perform limited admin actions  was possible |
 | [CVE-2024-20767](https://www.cve.org/CVERecord?id=CVE-2024-20767) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-01-06 | 0.985 | 7.4 | ✅ | ColdFusion versions 2023.6, 2021.12 and earlier are affected by an Improper Access Control vulnerability that could result in arbitrary file system read. An at… |
 | [CVE-2022-20699](https://www.cve.org/CVERecord?id=CVE-2022-20699) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-03-17 | 0.725 | 10.0 | ✅ | Multiple vulnerabilities in Cisco Small Business RV160, RV260, RV340, and RV345 Series Routers could allow an attacker to do any of the following: Execute arbi… |
+| [CVE-2026-88772](https://www.cve.org/CVERecord?id=CVE-2026-88772) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.766 | 9.5 | ✅ | Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and … |
 | [CVE-2022-26923](https://www.cve.org/CVERecord?id=CVE-2022-26923) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-08 | 0.835 | 8.8 | ✅ | Active Directory Domain Services Elevation of Privilege Vulnerability |
 | [CVE-2025-20333](https://www.cve.org/CVERecord?id=CVE-2025-20333) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-26 | 0.720 | 9.9 | ✅ | A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Softwa… |
 | [CVE-2025-61884](https://www.cve.org/CVERecord?id=CVE-2025-61884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-10 | 0.959 | 7.5 | ✅ | Vulnerability in the Oracle Configurator product of Oracle E-Business Suite (component: Runtime UI).  Supported versions that are affected are 12.2.3-12.2.14. … |
@@ -303,4 +303,4 @@ Top critical items:
 | Oct 31 | [CVE-2026-118696](https://www.cve.org/CVERecord?id=CVE-2026-118696) | 🆕 New |
 | Oct 31 | [CVE-2026-118697](https://www.cve.org/CVERecord?id=CVE-2026-118697) | 🆕 New |
 | Oct 31 | [CVE-2026-113399](https://www.cve.org/CVERecord?id=CVE-2026-113399) | 🆕 New |
-| ... | | _and 361 more_ |
+| ... | | _and 682 more_ |
