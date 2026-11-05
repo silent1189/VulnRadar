@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T21:17:58+00:00",
+  "generated_at": "2026-11-05T02:14:44+00:00",
   "vendor": "zohocorp",
-  "count": 66,
+  "count": 68,
   "items": [
     {
       "cve_id": "CVE-2025-10020",
@@ -2478,6 +2478,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-77690",
+      "description": "ZohoCorp ManageEngine Key Manager Plus versions before 7151 were vulnerable to a Command Injection vulnerability that allowed authenticated users with certificate deployment privileges to execute arbitrary commands through specially crafted input when configuring a deployment target.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "zohocorp",
+          "product": "manageengine key manager plus",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7151",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:manageengine key manager plus",
+        "vendor:zohocorp"
+      ],
+      "active_threat": false,
+      "probability_score": 0.15584
+    },
+    {
       "cve_id": "CVE-2026-77691",
       "description": "ZohoCorp ManageEngine Key Manager Plus versions before 7151 allow authenticated users to enter malicious input when configuring a Microsoft CA",
       "cvss_score": 8.1,
@@ -2572,6 +2604,38 @@
       ],
       "active_threat": false,
       "probability_score": 0.00398
+    },
+    {
+      "cve_id": "CVE-2026-77779",
+      "description": "ManageEngine Key Manager Plus versions before 7151 were vulnerable to an Improper Access Control vulnerability that allowed authenticated low-privilege users to export keys outside their authorized scope.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "zohocorp",
+          "product": "manageengine key manager plus",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "7151",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:manageengine key manager plus",
+        "vendor:zohocorp"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00523
     },
     {
       "cve_id": "CVE-2026-77799",

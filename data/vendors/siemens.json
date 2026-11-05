@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T21:17:58+00:00",
+  "generated_at": "2026-11-05T02:14:44+00:00",
   "vendor": "siemens",
   "count": 823,
   "items": [
@@ -119411,19 +119411,55 @@
     },
     {
       "cve_id": "CVE-2026-58115",
-      "description": "A vulnerability has been identified in SIMATIC IoT2050 Advanced (6ES7647-0BA00-1YA2) (All versions < V4.3.4.1 running Industrial OS with Node-RED installed). Affected devices do not enforce authentication on the Node-RED HTTP interface, allowing unauthenticated access to programming nodes that are capable of executing system commands on the server.\r\nThis could allow an unauthenticated remote attacker to create malicious flows through the HTTP interface in order to execute arbitrary code on the underlying server with maximum privileges.",
+      "description": "A vulnerability has been identified in SIMATIC IoT2050 Advanced (6ES7647-0BA00-1YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed), SIMATIC IoT2050 Basic (6ES7647-0BA00-0YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed), SIMATIC IoT2050 M.2 (6ES7647-0BB00-1YA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed), SIMATIC IoT2050 SM (6ES7647-0CA00-1AA2) (All versions < V4.3.4-1 running Industrial OS with Node-RED installed). Affected devices do not enforce authentication on the Node-RED HTTP interface, allowing unauthenticated access to programming nodes that are capable of executing system commands on the server.\r\nThis could allow an unauthenticated remote attacker to create malicious flows through the HTTP interface in order to execute arbitrary code on the underlying server with maximum privileges.",
       "cvss_score": 10.0,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
       "affected": [
         {
           "vendor": "siemens",
-          "product": "simatic iot2050 advanced",
+          "product": "simatic iot2050 advanced (6es7647-0ba00-1ya2)",
           "versions": [
             {
               "status": "affected",
               "version": "0",
-              "lessThan": "V4.3.4.1",
+              "lessThan": "V4.3.4-1",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "siemens",
+          "product": "simatic iot2050 basic (6es7647-0ba00-0ya2)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V4.3.4-1",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "siemens",
+          "product": "simatic iot2050 m.2 (6es7647-0bb00-1ya2)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V4.3.4-1",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "siemens",
+          "product": "simatic iot2050 sm (6es7647-0ca00-1aa2)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "V4.3.4-1",
               "versionType": "custom"
             }
           ]
@@ -119435,7 +119471,10 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:simatic iot2050 advanced",
+        "product:simatic iot2050 advanced (6es7647-0ba00-1ya2)",
+        "product:simatic iot2050 basic (6es7647-0ba00-0ya2)",
+        "product:simatic iot2050 m.2 (6es7647-0bb00-1ya2)",
+        "product:simatic iot2050 sm (6es7647-0ca00-1aa2)",
         "vendor:siemens"
       ],
       "active_threat": false,

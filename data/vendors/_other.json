@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T21:17:58+00:00",
+  "generated_at": "2026-11-05T02:14:44+00:00",
   "vendor": "_other",
-  "count": 3174,
+  "count": 3175,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -176057,6 +176057,50 @@
       }
     },
     {
+      "cve_id": "CVE-2026-118391",
+      "description": "Allocation of Resources Without Limits or Throttling vulnerability in elixir-ecto ecto allows an unauthenticated remote attacker to exhaust memory in the application and in the database server by sending requests with distinct JSON keys or list lengths where the application interpolates them into json_extract_path/2, field[^key] or splice/1. Ecto caches prepared queries per repository in an ETS table with no size limit and no eviction. Interpolated JSON path elements become part of the query expression instead of its parameters, and splice/1 expands into one placeholder per element, so every distinct key or list length creates a new cache entry. With ecto_sql each entry is also a new prepared statement on the database connection that runs it. None of this memory is released until the processes restart.\n\nThis issue affects ecto: from 3.4.0 before 3.14.3.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+      "affected": [
+        {
+          "vendor": "elixir-ecto",
+          "product": "ecto",
+          "versions": [
+            {
+              "lessThan": "3.14.3",
+              "status": "affected",
+              "version": "3.4.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "elixir-ecto",
+          "product": "ecto",
+          "versions": [
+            {
+              "lessThan": "eef014ad090d27d1a5b69c0e32a50eabd44ab3bb",
+              "status": "affected",
+              "version": "cb2f03964dac324a9771f84f5088e395326e6de8",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ecto",
+        "vendor:elixir-ecto"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-119025",
       "description": "open 7.2.0 before 11.0.0 contains an OS command injection vulnerability that allows attackers to execute PowerShell code by supplying crafted URLs on Windows and WSL. Attackers can embed $(...) subexpressions in URLs, such as OAuth authorization_endpoint values from malicious MCP servers, which execute when index.js passes them unescaped to powershell -EncodedCommand.",
       "cvss_score": 7.7,
@@ -176864,18 +176908,6 @@
           "vendor": "tanium",
           "product": "performance",
           "versions": [
-            {
-              "version": "1.22",
-              "status": "affected",
-              "lessThan": "1.22.355",
-              "versionType": "custom"
-            },
-            {
-              "version": "1.23",
-              "status": "affected",
-              "lessThan": "1.23.318",
-              "versionType": "custom"
-            },
             {
               "version": "1.25",
               "status": "affected",

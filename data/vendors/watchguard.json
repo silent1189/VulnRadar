@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T21:17:58+00:00",
+  "generated_at": "2026-11-05T02:14:44+00:00",
   "vendor": "watchguard",
-  "count": 90,
+  "count": 94,
   "items": [
     {
       "cve_id": "CVE-2024-1417",
@@ -1337,6 +1337,134 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-121637",
+      "description": "An improper integrity validation vulnerability in WatchGuard AuthPoint Gateway's LDAP authentication callback allows a network attacker who has obtained a valid header signature to forge the authentication result and transaction identifier in the request body, resulting in unauthorized session outcomes.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "authpoint authentication gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0",
+              "versionType": "semver",
+              "lessThan": "7.6.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:authpoint authentication gateway",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121638",
+      "description": "An Improper Certificate Validation vulnerability in WatchGuard AuthPoint Gateway allows an attacker with an on-path network position to intercept and modify communications between the AuthPoint Gateway and local authentication providers.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "authpoint authentication gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0",
+              "versionType": "semver",
+              "lessThan": "7.6.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:authpoint authentication gateway",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121639",
+      "description": "A Missing Authentication for Critical Function vulnerability in WatchGuard AuthPoint Gateway allows a remote unauthenticated attacker with network access to the AuthPoint Gateway host to disrupt authentication services and delete the local directory synchronization configuration.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "authpoint authentication gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0",
+              "versionType": "semver",
+              "lessThan": "7.6.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:authpoint authentication gateway",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121640",
+      "description": "An Authentication Bypass by Capture-replay vulnerability in WatchGuard AuthPoint Gateway allows an attacker who has observed a legitimate request between AuthPoint Gateway components to replay it and perform unauthorized administrative actions, including disrupting authentication services.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "watchguard",
+          "product": "authpoint authentication gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0",
+              "versionType": "semver",
+              "lessThan": "7.6.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:authpoint authentication gateway",
+        "vendor:watchguard"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13043",
