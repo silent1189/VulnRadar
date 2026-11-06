@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T00:11:15+00:00",
+  "generated_at": "2026-11-06T06:27:39+00:00",
   "vendor": "_other",
-  "count": 3175,
+  "count": 3181,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -81914,6 +81914,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-118869",
+      "description": "An OS command injection vulnerability exists in SHIRASAGI, which may allow an authenticated attacker to execute arbitrary OS commands on the system running the product.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "shirasagi project",
+          "product": "shirasagi",
+          "versions": [
+            {
+              "version": "v1.19.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "v1.21.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:shirasagi",
+        "vendor:shirasagi project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01059
+    },
+    {
       "cve_id": "CVE-2023-39780",
       "description": "On ASUS RT-AX55 3.0.0.4.386.51598 devices, authenticated attackers can perform OS command injection via the /start_apply.htm qos_bw_rulelist parameter. NOTE: for the similar \"token-generated module\" issue, see CVE-2023-41345; for the similar \"token-refresh module\" issue, see CVE-2023-41346; for the similar \"check token module\" issue, see CVE-2023-41347; and for the similar \"code-authentication module\" issue, see CVE-2023-41348.",
       "cvss_score": 8.8,
@@ -112992,7 +113024,7 @@
     },
     {
       "cve_id": "CVE-2026-39747",
-      "description": "Subscriber SQL Injection in Woffice <= 5.4.35 versions.",
+      "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WofficeIO Woffice woffice allows SQL Injection.This issue affects Woffice: from n/a before 5.4.43.",
       "cvss_score": 8.5,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:L",
@@ -113002,10 +113034,16 @@
           "product": "woffice",
           "versions": [
             {
-              "lessThanOrEqual": "5.4.35",
+              "version": "0",
+              "versionType": "custom",
               "status": "affected",
-              "version": "n/a",
-              "versionType": "custom"
+              "lessThan": "5.4.43",
+              "changes": [
+                {
+                  "at": "5.4.43",
+                  "status": "unaffected"
+                }
+              ]
             }
           ]
         }
@@ -133919,7 +133957,7 @@
     },
     {
       "cve_id": "CVE-2026-13584",
-      "description": "Improper Enforcement of Message Integrity During Transmission in a Communication Channel vulnerability in Mitsubishi Electric MELSEC MX Controller MX-R model, MELSEC MX Controller MX-F model, Master/local module, CC-Link IE TSN interface board, Motion module, MELSEC iQ-L Series Motion Module, Motion Control Board, Block-type remote module, Block-type remote module with safety functions, Analog-Digital converter module, Digital-Analog converter module, CC-Link IE TSN compatible coupler, FPGA module, Tension meter, AC Servo MELSERVO-J5, AC Servo MELSERVO-JET, Liner Track System MTR-S series Linear track control module, Inverter FR-A800/F800/E800 Series, Industrial Robot CR800-D series controller Network Base Card, CC-Link IE TSN expansion unit, CC-Link IE TSN-CC-Link IE Field Network bridge module, CC-Link IE TSN-AnyWireASLINK bridge module, Energy Measuring Unit CC-Link IE TSN Communication Unit, GOT3000 Series, CC-Link IE TSN Communication Unit, Motion Control Software, CC-Link IE TSN Communication Software for Windows, Analysis Support Software MELSOFT VIMA, Master/Local module Designated communication LSI DeviceKit, Remote Station Communication LSI with GbE-PHY, CC-Link IE TSN Master/Local module Designated communication LSI SDK, and Remote station software development kit allows an attacker with access to a CC-Link IE TSN network to tamper with communication data (control input/output values) by sending specially crafted packets under specific timing conditions. This could allow the attacker to cause a denial-of-service (DoS) condition in the affected product by interfering with its control function or causing it to operate incorrectly.",
+      "description": "Improper Enforcement of Message Integrity During Transmission in a Communication Channel vulnerability in Mitsubishi Electric MELSEC MX Controller MX-R model, MELSEC MX Controller MX-F model, Master/local module, CC-Link IE TSN interface board, Motion module, MELSEC iQ-L Series Motion Module, Motion Control Board, Block-type remote module, Block-type remote module with safety functions, Analog-Digital converter module, Digital-Analog converter module, CC-Link IE TSN compatible coupler, FPGA module, Tension meter, AC Servo MELSERVO-J5, AC Servo MELSERVO-JET, Liner Track System MTR-S series Linear track control module, Inverter FR-A800/F800/E800/D800 Series, Industrial Robot CR800-D series controller Network Base Card, CC-Link IE TSN expansion unit, CC-Link IE TSN-CC-Link IE Field Network bridge module, CC-Link IE TSN-AnyWireASLINK bridge module, Energy Measuring Unit CC-Link IE TSN Communication Unit, GOT3000 Series, CC-Link IE TSN Communication Unit, Motion Control Software, CC-Link IE TSN Communication Software for Windows, Analysis Support Software MELSOFT VIMA, Master/Local module Designated communication LSI DeviceKit, Remote Station Communication LSI with GbE-PHY, CC-Link IE TSN Master/Local module Designated communication LSI SDK, and Remote station software development kit allows an attacker with access to a CC-Link IE TSN network to tamper with communication data (control input/output values) by sending specially crafted packets under specific timing conditions. This could allow the attacker to cause a denial-of-service (DoS) condition in the affected product by interfering with its control function or causing it to operate incorrectly.",
       "cvss_score": 7.1,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N",
@@ -134636,6 +134674,16 @@
         },
         {
           "vendor": "mitsubishi electric corporation",
+          "product": "cc-link ie tsn compatible coupler nz2ct-gn",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "all versions"
+            }
+          ]
+        },
+        {
+          "vendor": "mitsubishi electric corporation",
           "product": "fpga module nz2gn2s-d41p01",
           "versions": [
             {
@@ -134837,6 +134885,16 @@
         {
           "vendor": "mitsubishi electric corporation",
           "product": "inverter fr-a800/f800/e800 series fr-e800-sce",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "all versions"
+            }
+          ]
+        },
+        {
+          "vendor": "mitsubishi electric corporation",
+          "product": "inverter fr-d800 series fr-d800-e",
           "versions": [
             {
               "status": "affected",
@@ -162596,6 +162654,100 @@
       }
     },
     {
+      "cve_id": "CVE-2026-111768",
+      "description": "The Model Context Protocol TypeScript SDK provides TypeScript client and server implementations of the Model Context Protocol. From 1.3.0 until 1.32.0 in @modelcontextprotocol/sdk and from 2.0.0 until 2.3.0 in @modelcontextprotocol/server, HTTP servers did not enforce a limit on the number of array elements and object keys validated in one request. The affected surface is validation of HTTP requests containing arrays or object keys. The trigger is an array-element or object-key validation workload large enough to exhaust memory while remaining within the request size limit. A single request within the default 4 MiB limit can terminate the process with JavaScript heap exhaustion. No credentials are required unless the application authenticates before SDK processing. Tools accepting arrays or records carry the greatest risk. stdio-only servers do not expose the HTTP request path. Upgrading alone does not enable the new validation bound. Operators must configure both a tool-input element bound and an appropriate request body size limit. This issue is fixed in @modelcontextprotocol/sdk 1.32.0 and @modelcontextprotocol/server 2.3.0.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "modelcontextprotocol",
+          "product": "typescript-sdk",
+          "versions": [
+            {
+              "version": ">= 1.3.0, < 1.32.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@modelcontextprotocol",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.3.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@modelcontextprotocol",
+          "product": "sdk",
+          "versions": [
+            {
+              "version": ">= 1.3.0, < 1.32.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "product:typescript-sdk",
+        "vendor:@modelcontextprotocol",
+        "vendor:modelcontextprotocol"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-111770",
+      "description": "The Model Context Protocol TypeScript SDK provides TypeScript client and server implementations of the Model Context Protocol. From 2.0.0 until 2.3.0 in @modelcontextprotocol/server, applications that shared one stateless HTTP transport or one McpServer or Server instance among multiple clients could deliver responses and notifications to the wrong client. The affected surface is an MCP server reached over HTTP by multiple clients. The trigger is reuse of one stateless transport or server instance. Messages were associated with a connection using only the JSON-RPC request identifier. SDK clients start request identifiers at zero, so collisions occur in normal operation. Cross-client delivery exposes one client's responses and notifications to another client. The issue requires an HTTP endpoint reachable by more than one client and an application that constructs the server or transport once at startup instead of once per request or session. stdio servers and factory-created per-call servers are not affected. Upgrading causes reused instances to fail and therefore requires an application code change. This issue is fixed in @modelcontextprotocol/server 2.3.0.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "modelcontextprotocol",
+          "product": "typescript-sdk",
+          "versions": [
+            {
+              "version": "< 1.32.0",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "@modelcontextprotocol",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.3.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "product:typescript-sdk",
+        "vendor:@modelcontextprotocol",
+        "vendor:modelcontextprotocol"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-25536",
       "description": "MCP TypeScript SDK is the official TypeScript SDK for Model Context Protocol servers and clients. From version 1.10.0 to 1.25.3, cross-client response data leak when a single McpServer/Server and transport instance is reused across multiple client connections, most commonly in stateless StreamableHTTPServerTransport deployments. This issue has been patched in version 1.26.0.",
       "cvss_score": 7.1,
@@ -169279,6 +169431,925 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102523",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.11.1 until 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ALTER TABLE ... CONVERT ... PARTITION does not apply filename encoding to user-specified partition names before using them in filesystem path construction. An authenticated database user can use a partition name requiring filename escaping to make the conversion operate on table files the user is not authorized to access, allowing unauthorized table reads or modifications. This issue is fixed in versions 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107814",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, MariaDB RPM packages created the dedicated mysql service account with the database data directory as its home directory. A database user with the FILE privilege could write startup dot-files such as .bash_profile into $HOME, and those files could execute when an administrator opened a login shell for the mysql account. Debian packages are not affected because they use /nonexistent as the account home. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00489,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-732"
+        ],
+        "cpe_count": 6,
+        "reference_count": 8
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107815",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the CONNECT engine's DOS table type used an incorrect boundary check that permitted a one-byte null write beyond a stack buffer at an attacker-controlled offset. An authenticated user able to use the CONNECT engine could cause a crash and potentially remote code execution. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01381,
+      "nvd": {
+        "cvss_v3_score": 8.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 6,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107818",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the mariadb.service unit used /run/mysqld/wsrep-new-cluster during the next service restart. A database user with FILE privilege and a secure-file-priv configuration permitting writes to /run/mysqld could create that file and inject attacker-controlled environment values into the restarted service. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00401,
+      "nvd": {
+        "cvss_v3_score": 8.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-15"
+        ],
+        "cpe_count": 6,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107821",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, MariaDB insufficiently validated counts, offsets, lengths, and field boundaries in FRM metadata while opening binary FRM files. An attacker able to place a crafted FRM file in the data directory could trigger out-of-bounds reads or writes, crash the server, or potentially execute code. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01202,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1285"
+        ],
+        "cpe_count": 6,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-107823",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the MariaDB view FRM parser did not safely encode embedded newline characters in a username. An account with CREATE USER and CREATE VIEW WITH GRANT OPTION could create a crafted username containing additional view metadata, causing the parser to interpret part of the username as security metadata and potentially escalating database privileges. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00786,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-116",
+          "CWE-144"
+        ],
+        "cpe_count": 6,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-32710",
+      "description": "MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Under certain conditions it might be possible to turn the crash into a remote code execution. These conditions require tight control over memory layout which is generally only attainable in a lab environment. This issue is fixed in MariaDB 11.4.10, MariaDB 11.8.6, and MariaDB 12.2.2.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 11.4.1, < 11.4.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.6",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.1.2, < 12.2.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00871,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 3,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-44168",
+      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.26, 10.11.1 to before 10.11.17, 11.4.1 to before 11.4.11, 11.8.1 to before 11.8.7, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the mariabackup SST method. This issue has been patched in versions 10.6.26, 10.11.17, 11.4.11, 11.8.7, and 12.3.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.26",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.17",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.11",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.7",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00588,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 13
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48163",
+      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the rsync SST method. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.27",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.18",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.12",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.8",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00914,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 13
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48165",
+      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, a high-privileged MariaDB user could've used wsrep_sst_receive_address or wsrep_sst_donor global system variables to execute shell commands as the uid of the mariadbd process on the galera joiner node. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.27",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.18",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.12",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.8",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01506,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 13
+      }
+    },
+    {
+      "cve_id": "CVE-2026-49261",
+      "description": "MariaDB server is a community developed fork of MySQL server. Versions 10.6.1 through 10.6.26, 10.11.1 through 10.11.17, 11.4.1 through 11.4.11, 11.8.1 through 11.8.7, and 12.3.1 with  `wsrep_notify_cmd` enabled would execute shell commands embedded in the name of the joiner node. This is fixed in 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2. As a workaround, anyone who cannot upgrade now should disable `wsrep_notify_cmd`.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.27",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.18",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.12",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.8",
+              "status": "affected"
+            },
+            {
+              "version": "= 12.3.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01582,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 5,
+        "reference_count": 15
+      }
+    },
+    {
+      "cve_id": "CVE-2026-85746",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ST_AsText can write beyond an allocated output buffer when converting deeply nested GeometryCollections because recursive WKT serialization does not account for bytes consumed or reserve sufficient space. A low-privileged remote attacker can submit a specially crafted GIS object to corrupt memory and potentially achieve code execution when combined with another vulnerability. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0097,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 6,
+        "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-85748",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 12.3.1 until 12.3.3 and 13.0.2, SYS_REFCURSOR handling is affected because cursor-array reallocation can leave stale references in routine contexts. A low-privileged attacker can open a large number of SYS_REFCURSORs and then fetch one to trigger a use-after-free that can enable remote code execution when combined with another vulnerability. This issue is fixed in versions 12.3.3 and 13.0.2.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01179,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 2,
+        "reference_count": 7
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86047",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, SHOW CREATE SERVER, SHOW CREATE USER, and mariadb-dump are affected because each does not consistently quote identifiers and values when serializing SQL. A low-privileged attacker can trigger the issue when an attacker-created object with crafted identifiers or values is included in SHOW output or a dump, then create an object with crafted identifiers or values so generated SQL contains injected statements and execute attacker-injected SQL when the poisoned output is applied. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00856,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 6,
+        "reference_count": 17
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92262",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the #mysql50# bypass prefix is affected because it allows the #mysql50# prefix to bypass normal table-name filesystem encoding. An attacker can trigger the issue with a table name using the #mysql50# prefix, then use a #mysql50# table name to access files under their legacy unencoded name and cause crashes, data corruption, data exfiltration, or remote code execution. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01451,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-706"
+        ],
+        "cpe_count": 6,
+        "reference_count": 10
+      }
+    },
+    {
+      "cve_id": "CVE-2026-97380",
+      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the GRANT PROXY statement treats an IDENTIFIED clause with an empty password as though authentication were not specified, causing it to check the wrong grantor privileges. A low-privileged attacker who can name another account can exploit this authorization error to set that account's password. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mariadb",
+          "product": "server",
+          "versions": [
+            {
+              "version": ">= 10.6.1, < 10.6.28",
+              "status": "affected"
+            },
+            {
+              "version": ">= 10.11.1, < 10.11.19",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.4.1, < 11.4.13",
+              "status": "affected"
+            },
+            {
+              "version": ">= 11.8.1, < 11.8.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 12.3.1, < 12.3.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 13.0.1, < 13.0.2",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:mariadb"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01303,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-620",
+          "CWE-863"
+        ],
+        "cpe_count": 6,
+        "reference_count": 9
+      }
+    },
+    {
       "cve_id": "CVE-2026-102878",
       "description": "mcp-chrome-bridge through 1.0.31 contains an origin validation error in the native-server HTTP API that allows attackers to bypass CORS restrictions. Attackers can craft malicious web pages that make cross-origin requests to the local server and invoke browser automation tools including script execution, page content reading, and screenshot capture.",
       "cvss_score": 8.6,
@@ -173239,879 +174310,6 @@
       }
     },
     {
-      "cve_id": "CVE-2026-107814",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, MariaDB RPM packages created the dedicated mysql service account with the database data directory as its home directory. A database user with the FILE privilege could write startup dot-files such as .bash_profile into $HOME, and those files could execute when an administrator opened a login shell for the mysql account. Debian packages are not affected because they use /nonexistent as the account home. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 8.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00489,
-      "nvd": {
-        "cvss_v3_score": 8.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-732"
-        ],
-        "cpe_count": 6,
-        "reference_count": 8
-      }
-    },
-    {
-      "cve_id": "CVE-2026-107815",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the CONNECT engine's DOS table type used an incorrect boundary check that permitted a one-byte null write beyond a stack buffer at an attacker-controlled offset. An authenticated user able to use the CONNECT engine could cause a crash and potentially remote code execution. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 8.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01381,
-      "nvd": {
-        "cvss_v3_score": 8.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 6,
-        "reference_count": 9
-      }
-    },
-    {
-      "cve_id": "CVE-2026-107818",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the mariadb.service unit used /run/mysqld/wsrep-new-cluster during the next service restart. A database user with FILE privilege and a secure-file-priv configuration permitting writes to /run/mysqld could create that file and inject attacker-controlled environment values into the restarted service. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 8.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00401,
-      "nvd": {
-        "cvss_v3_score": 8.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-15"
-        ],
-        "cpe_count": 6,
-        "reference_count": 9
-      }
-    },
-    {
-      "cve_id": "CVE-2026-107821",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, MariaDB insufficiently validated counts, offsets, lengths, and field boundaries in FRM metadata while opening binary FRM files. An attacker able to place a crafted FRM file in the data directory could trigger out-of-bounds reads or writes, crash the server, or potentially execute code. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01202,
-      "nvd": {
-        "cvss_v3_score": 8.0,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-1285"
-        ],
-        "cpe_count": 6,
-        "reference_count": 9
-      }
-    },
-    {
-      "cve_id": "CVE-2026-107823",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the MariaDB view FRM parser did not safely encode embedded newline characters in a username. An account with CREATE USER and CREATE VIEW WITH GRANT OPTION could create a crafted username containing additional view metadata, causing the parser to interpret part of the username as security metadata and potentially escalating database privileges. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 7.2,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00786,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-116",
-          "CWE-144"
-        ],
-        "cpe_count": 6,
-        "reference_count": 9
-      }
-    },
-    {
-      "cve_id": "CVE-2026-32710",
-      "description": "MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Under certain conditions it might be possible to turn the crash into a remote code execution. These conditions require tight control over memory layout which is generally only attainable in a lab environment. This issue is fixed in MariaDB 11.4.10, MariaDB 11.8.6, and MariaDB 12.2.2.",
-      "cvss_score": 8.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 11.4.1, < 11.4.10",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.6",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.1.2, < 12.2.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00871,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-122"
-        ],
-        "cpe_count": 3,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-44168",
-      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.26, 10.11.1 to before 10.11.17, 11.4.1 to before 11.4.11, 11.8.1 to before 11.8.7, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the mariabackup SST method. This issue has been patched in versions 10.6.26, 10.11.17, 11.4.11, 11.8.7, and 12.3.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.26",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.17",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.11",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.7",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00588,
-      "nvd": {
-        "cvss_v3_score": 8.0,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 13
-      }
-    },
-    {
-      "cve_id": "CVE-2026-48163",
-      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, during the SST the donor node is interpolating parameters that the joiner sent into the command line. Not all parameters were properly validated which could allow a malicious joiner to execute arbitrary shell commands on the donor side via the rsync SST method. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.27",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.18",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.12",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.8",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00914,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 13
-      }
-    },
-    {
-      "cve_id": "CVE-2026-48165",
-      "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, a high-privileged MariaDB user could've used wsrep_sst_receive_address or wsrep_sst_donor global system variables to execute shell commands as the uid of the mariadbd process on the galera joiner node. This issue has been patched in versions 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2.",
-      "cvss_score": 8.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.27",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.18",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.12",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.8",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01506,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 13
-      }
-    },
-    {
-      "cve_id": "CVE-2026-49261",
-      "description": "MariaDB server is a community developed fork of MySQL server. Versions 10.6.1 through 10.6.26, 10.11.1 through 10.11.17, 11.4.1 through 11.4.11, 11.8.1 through 11.8.7, and 12.3.1 with  `wsrep_notify_cmd` enabled would execute shell commands embedded in the name of the joiner node. This is fixed in 10.6.27, 10.11.18, 11.4.12, 11.8.8, and 12.3.2. As a workaround, anyone who cannot upgrade now should disable `wsrep_notify_cmd`.",
-      "cvss_score": 10.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.27",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.18",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.12",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.8",
-              "status": "affected"
-            },
-            {
-              "version": "= 12.3.1",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01582,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78"
-        ],
-        "cpe_count": 5,
-        "reference_count": 15
-      }
-    },
-    {
-      "cve_id": "CVE-2026-85746",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, ST_AsText can write beyond an allocated output buffer when converting deeply nested GeometryCollections because recursive WKT serialization does not account for bytes consumed or reserve sufficient space. A low-privileged remote attacker can submit a specially crafted GIS object to corrupt memory and potentially achieve code execution when combined with another vulnerability. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0097,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-787"
-        ],
-        "cpe_count": 6,
-        "reference_count": 9
-      }
-    },
-    {
-      "cve_id": "CVE-2026-85748",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 12.3.1 until 12.3.3 and 13.0.2, SYS_REFCURSOR handling is affected because cursor-array reallocation can leave stale references in routine contexts. A low-privileged attacker can open a large number of SYS_REFCURSORs and then fetch one to trigger a use-after-free that can enable remote code execution when combined with another vulnerability. This issue is fixed in versions 12.3.3 and 13.0.2.",
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01179,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-416"
-        ],
-        "cpe_count": 2,
-        "reference_count": 7
-      }
-    },
-    {
-      "cve_id": "CVE-2026-86047",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, SHOW CREATE SERVER, SHOW CREATE USER, and mariadb-dump are affected because each does not consistently quote identifiers and values when serializing SQL. A low-privileged attacker can trigger the issue when an attacker-created object with crafted identifiers or values is included in SHOW output or a dump, then create an object with crafted identifiers or values so generated SQL contains injected statements and execute attacker-injected SQL when the poisoned output is applied. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00856,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-89"
-        ],
-        "cpe_count": 6,
-        "reference_count": 17
-      }
-    },
-    {
-      "cve_id": "CVE-2026-92262",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the #mysql50# bypass prefix is affected because it allows the #mysql50# prefix to bypass normal table-name filesystem encoding. An attacker can trigger the issue with a table name using the #mysql50# prefix, then use a #mysql50# table name to access files under their legacy unencoded name and cause crashes, data corruption, data exfiltration, or remote code execution. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01451,
-      "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-706"
-        ],
-        "cpe_count": 6,
-        "reference_count": 10
-      }
-    },
-    {
-      "cve_id": "CVE-2026-97380",
-      "description": "MariaDB server is a community developed fork of MySQL server. From 10.6.1 until 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2, the GRANT PROXY statement treats an IDENTIFIED clause with an empty password as though authentication were not specified, causing it to check the wrong grantor privileges. A low-privileged attacker who can name another account can exploit this authorization error to set that account's password. This issue is fixed in versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, 12.3.3, and 13.0.2.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "mariadb",
-          "product": "server",
-          "versions": [
-            {
-              "version": ">= 10.6.1, < 10.6.28",
-              "status": "affected"
-            },
-            {
-              "version": ">= 10.11.1, < 10.11.19",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.4.1, < 11.4.13",
-              "status": "affected"
-            },
-            {
-              "version": ">= 11.8.1, < 11.8.9",
-              "status": "affected"
-            },
-            {
-              "version": ">= 12.3.1, < 12.3.3",
-              "status": "affected"
-            },
-            {
-              "version": ">= 13.0.1, < 13.0.2",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:server",
-        "vendor:mariadb"
-      ],
-      "active_threat": false,
-      "probability_score": 0.01303,
-      "nvd": {
-        "cvss_v3_score": 8.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-620",
-          "CWE-863"
-        ],
-        "cpe_count": 6,
-        "reference_count": 9
-      }
-    },
-    {
       "cve_id": "CVE-2026-108184",
       "description": "Improper certificate validation in certain Zoom Clients for Windows may allow an unauthenticated user to conduct an information disclosure via network access.",
       "cvss_score": 7.4,
@@ -177262,6 +177460,124 @@
         ],
         "cpe_count": 3,
         "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-123158",
+      "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "openbsd",
+          "product": "openssh",
+          "versions": [
+            {
+              "lessThan": "10.6p2",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openssh",
+        "vendor:openbsd"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-35385",
+      "description": "In OpenSSH before 10.3, a file downloaded by scp may be installed setuid or setgid, an outcome contrary to some users' expectations, if the download is performed as root with -O (legacy scp protocol) and without -p (preserve mode).",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "openbsd",
+          "product": "openssh",
+          "versions": [
+            {
+              "lessThan": "10.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openssh",
+        "vendor:openbsd"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00573,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-281"
+        ],
+        "cpe_count": 1,
+        "reference_count": 36
+      }
+    },
+    {
+      "cve_id": "CVE-2026-60002",
+      "description": "ssh in OpenSSH before 10.4 can have a use-after-free when a server changes its host key during a key re-exchange. (This outcome occurs only on the client side.)",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "openbsd",
+          "product": "openssh",
+          "versions": [
+            {
+              "lessThan": "10.4",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:openssh",
+        "vendor:openbsd"
+      ],
+      "active_threat": false,
+      "probability_score": 0.003,
+      "nvd": {
+        "cvss_v3_score": 9.4,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
       }
     },
     {
@@ -183218,21 +183534,19 @@
       }
     },
     {
-      "cve_id": "CVE-2026-35385",
-      "description": "In OpenSSH before 10.3, a file downloaded by scp may be installed setuid or setgid, an outcome contrary to some users' expectations, if the download is performed as root with -O (legacy scp protocol) and without -p (preserve mode).",
-      "cvss_score": 7.5,
+      "cve_id": "CVE-2026-34157",
+      "description": "Wails is a framework for building desktop applications using Go and web technologies. From 2.0.0 until 2.13.0, BindingsAllowedOrigins in v2/internal/frontend/originvalidator/originValidator.go passes wildcard patterns to wildcardPatternToRegex, which expands every asterisk to an unrestricted regular-expression match. When an application configures a trailing or partial-label wildcard immediately after an allowed domain, an attacker-controlled lookalike origin can match the allowed suffix and invoke bound Go methods through IPC. A complete-component subdomain wildcard is an unaffected configuration. The resulting confidentiality, integrity, and availability impact depends on the file, database, command, credential, or other operations exposed by the application's bound methods. This issue is fixed in version 2.13.0.",
+      "cvss_score": 7.6,
       "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:L/SI:L/SA:N",
       "affected": [
         {
-          "vendor": "openbsd",
-          "product": "openssh",
+          "vendor": "wailsapp",
+          "product": "wails",
           "versions": [
             {
-              "lessThan": "10.3",
-              "status": "affected",
-              "version": "0",
-              "versionType": "custom"
+              "version": ">= 2.0.0, < 2.13.0",
+              "status": "affected"
             }
           ]
         }
@@ -183243,65 +183557,11 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:openssh",
-        "vendor:openbsd"
+        "product:wails",
+        "vendor:wailsapp"
       ],
       "active_threat": false,
-      "probability_score": 0.00573,
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-281"
-        ],
-        "cpe_count": 1,
-        "reference_count": 36
-      }
-    },
-    {
-      "cve_id": "CVE-2026-60002",
-      "description": "ssh in OpenSSH before 10.4 can have a use-after-free when a server changes its host key during a key re-exchange. (This outcome occurs only on the client side.)",
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
-      "affected": [
-        {
-          "vendor": "openbsd",
-          "product": "openssh",
-          "versions": [
-            {
-              "lessThan": "10.4",
-              "status": "affected",
-              "version": "0",
-              "versionType": "custom"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:openssh",
-        "vendor:openbsd"
-      ],
-      "active_threat": false,
-      "probability_score": 0.003,
-      "nvd": {
-        "cvss_v3_score": 9.4,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-416"
-        ],
-        "cpe_count": 1,
-        "reference_count": 3
-      }
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-39492",

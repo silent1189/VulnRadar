@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T00:11:15+00:00",
+  "generated_at": "2026-11-06T06:27:39+00:00",
   "vendor": "red_hat",
-  "count": 348,
+  "count": 350,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -28958,11 +28958,6 @@
         {
           "vendor": "red hat",
           "product": "red hat build of apache camel 4 for quarkus 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of apache camel - hawtio 4",
           "versions": null
         },
         {
@@ -58257,11 +58252,6 @@
         {
           "vendor": "red hat",
           "product": "red hat enterprise linux 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat openshift container platform 4",
           "versions": null
         }
       ],
@@ -108702,10 +108692,46 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat enterprise linux 10.0 extended update support",
+          "versions": [
+            {
+              "version": "0:11.6.0-3.el10_0.2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat enterprise linux 9",
           "versions": [
             {
               "version": "0:3.0.26-20.el9_8.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9.4 update services for sap solutions",
+          "versions": [
+            {
+              "version": "0:3.0.26-20.el9_4.2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9.6 extended update support",
+          "versions": [
+            {
+              "version": "0:3.0.26-20.el9_6.2",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
@@ -111170,6 +111196,190 @@
         "cpe_count": 0,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-93998",
+      "description": "A flaw was found in the SAML adapter component of Keycloak, which is used to secure applications with SAML-based authentication. The adapter fails to verify that the issuer of a signed SAML assertion matches the expected identity provider configured for the application. If multiple identity providers share the same trusted signing key, an attacker who controls one of those providers can create a validly signed assertion to log into the application as any user, potentially gaining full administrative control.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat amq broker 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat fuse 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform expansion pack",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat satellite 6",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat single sign-on 7",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
+        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform expansion pack",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-96453",
+      "description": "A flaw was found in the Keycloak Admin CLI kcadm tool, which is used by administrators to manage Keycloak servers from the command line. When a custom truststore is provided to verify the server identity, the tool incorrectly accepts any self-signed certificate as long as the hostname matches. This allows a network attacker to impersonate the Keycloak server, steal administrative credentials, and perform unauthorized management actions.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat amq broker 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat fuse 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform expansion pack",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat satellite 6",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat single sign-on 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat single sign-on 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat single sign-on 7",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
+        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform expansion pack",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-9064",
