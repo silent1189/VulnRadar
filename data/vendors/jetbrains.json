@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T00:55:22+00:00",
+  "generated_at": "2026-11-07T07:05:29+00:00",
   "vendor": "jetbrains",
-  "count": 112,
+  "count": 147,
   "items": [
     {
       "cve_id": "CVE-2022-28650",
@@ -3312,6 +3312,1126 @@
         "cpe_count": 0,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-123276",
+      "description": "In JetBrains CLion before 2026.3, \n2026.2.4.1 code execution was possible in Safe Mode via a crafted GDB server debug profile",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "clion",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3, \n2026.2.4.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:clion",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123279",
+      "description": "In JetBrains Datalore before 2026.4 code execution was possible in a notebook's computation by view-only collaborators",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "datalore",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datalore",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123280",
+      "description": "In JetBrains Datalore before 2026.2.4 unauthenticated users could execute code via published interactive reports",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "datalore",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datalore",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123281",
+      "description": "In JetBrains Datalore before 2026.4 notebook code could execute commands in the sidecar container via the mount broker",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "datalore",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datalore",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123282",
+      "description": "In JetBrains Datalore before 2026.4 missing expiration validation of account tokens allowed a new authenticated session",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "datalore",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datalore",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123293",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.4 code execution was possible in untrusted projects  via the Terraform tool path setting",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3, \n2026.2.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123294",
+      "description": "In JetBrains Hub before 2026.2.52556 privilege escalation was possible by changing email authentication details during the verification flow",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "hub",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.52556",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hub",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123295",
+      "description": "In JetBrains Hub before 2026.2.52519 enforced two-factor authentication could be disabled via the profile update endpoint",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "hub",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.52519",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hub",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123296",
+      "description": "In JetBrains Hub before 2026.2.52519 privilege escalation via forged email verification was possible",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "hub",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.52519",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hub",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123301",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 dOM-based XSS in the OpenAPI preview error view was possible",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123302",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.4, \n2026.1.5.1, \n2025.3.6.2 code execution was possible in untrusted projects via script engine discovery",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3, \n2026.2.4, \n2026.1.5.1, \n2025.3.6.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123304",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution in untrusted projects via a configured ShellCheck path",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123305",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 path traversal was possible via unpacking Dev Container archives from a remote host",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123306",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 improper checks allowed server certificates to be added to the trust store during headless runs",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123315",
+      "description": "In JetBrains Junie CLI before 26.8.24 command execution was possible via the Allow Similar Commands option",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "junie cli",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "26.8.24",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:junie cli",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123317",
+      "description": "In JetBrains Ktor before 3.6.1 session forgery was possible via tampered encrypted session cookies",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "ktor",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "3.6.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ktor",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123321",
+      "description": "In JetBrains WebStorm before 2026.3, \n2026.2.3 code execution via Grunt and Gulp task loading was possible in untrusted projects",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "webstorm",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3, \n2026.2.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:webstorm",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123323",
+      "description": "In JetBrains YouTrack before 2025.3.170763, \n2026.1.14150, \n2026.2.19656 improper URL validation in the app widget host allowed apps to send REST requests without user confirmation",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "youtrack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2025.3.170763, \n2026.1.14150, \n2026.2.19656",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtrack",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123324",
+      "description": "In JetBrains YouTrack before 2026.2.19562 information disclosure via shared mailbox message history was possible",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "youtrack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.19562",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtrack",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123325",
+      "description": "In JetBrains YouTrack before 2025.3.170763, \n2026.1.14150, \n2026.2.19656 inclusion of untrusted remote code was possible via the plugin sandbox page",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "youtrack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2025.3.170763, \n2026.1.14150, \n2026.2.19656",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtrack",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123326",
+      "description": "In JetBrains YouTrack before 2026.2.19197 incorrect authorisation in the scripts debugger allowed workflow script disclosure and suspension",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "youtrack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.19197",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtrack",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123327",
+      "description": "In JetBrains YouTrack before 2026.2.19562 missing authorization in the saved query endpoint allowed disclosure of issue descriptions",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "youtrack",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2.19562",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:youtrack",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123831",
+      "description": "In JetBrains CLion before 2026.2, \n2026.1.4 code execution was possible in Safe Mode via Meson project settings",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "clion",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2, \n2026.1.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:clion",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123832",
+      "description": "In JetBrains CLion before 2026.2 code execution was possible in Safe Mode via JSON compilation database",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "clion",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:clion",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123834",
+      "description": "In JetBrains Datalore before 2026.4 improper scope validation in database tasks allowed using another workspace's service account",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "datalore",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datalore",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123836",
+      "description": "In JetBrains Datalore before 2026.4 workspace collaborators could obtain the owner's SSH private key via Git backup",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "datalore",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.4",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datalore",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123837",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.1 command injection was possible in untrusted projects via Tomcat run configurations on WSL",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3, \n2026.2.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123838",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution was possible in Safe Mode via UI Designer form file",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123841",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution was possible via symlinks in an imported settings archive",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123842",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 arbitrary file write was possible via symlinks when extracting plugin archives",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123848",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 host name verification was missing for server TLS certificates",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123849",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution was possible in untrusted projects via the Terraform File Watchers",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123852",
+      "description": "In JetBrains Junie GitHub Action before 1.8.0 code execution with workflow credentials was possible via fork updates",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "junie github action",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "1.8.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:junie github action",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123853",
+      "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.2 code execution was possible in Safe Mode via project-controlled JVM options of the build process",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "intellij idea",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2026.3, \n2026.2.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:intellij idea",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123855",
+      "description": "In JetBrains Toolbox App before 3.6.1 command injection was possible via enterprise configuration URLs",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "jetbrains",
+          "product": "toolbox app",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "3.6.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:toolbox app",
+        "vendor:jetbrains"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-25847",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T00:55:22+00:00",
+  "generated_at": "2026-11-07T07:05:29+00:00",
   "vendor": "grafana",
-  "count": 52,
+  "count": 53,
   "items": [
     {
       "cve_id": "CVE-2022-23498",
@@ -2843,6 +2843,51 @@
         "cpe_count": 13,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-33379",
+      "description": "A user with any role, including Viewer or a service account with no permissions, can create, externally publish, and delete dashboard snapshots (missing authorization). Only Grafana OSS and Grafana Enterprise 12.4 are affected; earlier versions and Grafana 13 are not.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThan": "12.4.4",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThan": "12.4.4",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-33382",

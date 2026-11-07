@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T00:55:22+00:00",
+  "generated_at": "2026-11-07T07:05:29+00:00",
   "vendor": "progress_software",
-  "count": 93,
+  "count": 95,
   "items": [
     {
       "cve_id": "CVE-2024-0219",
@@ -1551,6 +1551,70 @@
         "cpe_count": 3,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-104656",
+      "description": "Improper neutralization of input in the sessions grid in Progress Telerik Fiddler Everywhere 8.3.0 and earlier allows an attacker to execute backend IPC commands by convincing a user to open a specially crafted SAZ file.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "progress\u00ae telerik\u00ae fiddler\u00ae everywhere",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "8.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:progress\u00ae telerik\u00ae fiddler\u00ae everywhere",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104657",
+      "description": "Missing integrity verification in the Progress Software Fiddler Download and Setup Skill on Linux, macOS, and Windows which allows an attacker to compromise or influence a release component and execute attacker-controlled code when a user runs the skill. On macOS, the skill stages the package at a predictable path and installs it with administrator privileges, which may allow code execution with root privileges after user approval. A local process may also replace the staged macOS package while the skill waits for approval.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "fiddler download & setup skill",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "8.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:fiddler download & setup skill",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-106145",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T00:55:22+00:00",
+  "generated_at": "2026-11-07T07:05:29+00:00",
   "vendor": "red_hat",
-  "count": 350,
+  "count": 351,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -67281,7 +67281,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -67293,7 +67293,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -67305,7 +67305,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -68602,7 +68602,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -73472,6 +73472,11 @@
       "affected": [
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat fuse 7",
           "versions": null
         },
@@ -73483,11 +73488,6 @@
         {
           "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
           "versions": null
         },
         {
@@ -73508,7 +73508,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -74581,6 +74581,56 @@
         ],
         "cpe_count": 0,
         "reference_count": 9
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121621",
+      "description": "A command injection vulnerability was found in Argo CD Image Updater, where a proxy URL configured on an SSH Git repository is passed unsanitized into a shell-interpreted SSH command. An attacker able to set a malicious proxy value can inject shell metacharacters to execute arbitrary commands and access credentials in the context of the Image Updater process.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.4.1",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift gitops",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openshift gitops",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.01821,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
       }
     },
     {
@@ -78945,6 +78995,11 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 8.1.8.ga",
           "versions": [
             {
@@ -80445,6 +80500,7 @@
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7.4 els on rhel 7",
         "product:red hat jboss enterprise application platform 7.4.25",
+        "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform 8.1 for rhel 10",
         "product:red hat jboss enterprise application platform 8.1 for rhel 8",
         "product:red hat jboss enterprise application platform 8.1 for rhel 9",
@@ -83917,6 +83973,11 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat jboss enterprise application platform expansion pack",
           "versions": null
         }
@@ -83927,6 +83988,7 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
         "product:red hat jboss enterprise application platform 7.4 els on rhel 7",
         "product:red hat jboss enterprise application platform 7.4.25",
         "product:red hat jboss enterprise application platform 8.1 for rhel 10",
@@ -85762,7 +85824,7 @@
       "affected": [
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 7",
+          "product": "red hat jboss enterprise application platform 8.1",
           "versions": null
         },
         {
@@ -85772,7 +85834,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
+          "product": "red hat jboss enterprise application platform 7",
           "versions": null
         },
         {
@@ -85789,6 +85851,7 @@
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7",
         "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -90784,6 +90847,11 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of apache camel 4 for quarkus 3",
           "versions": null
         },
@@ -90814,11 +90882,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat jboss enterprise application platform expansion pack",
           "versions": null
         },
@@ -90834,7 +90897,6 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:red hat jboss enterprise application platform 8",
         "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
@@ -91160,6 +91222,98 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
@@ -91170,22 +91324,17 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of apache camel 4 for quarkus 3",
           "versions": null
         },
         {
           "vendor": "red hat",
           "product": "red hat build of debezium 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
@@ -91210,11 +91359,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat jboss enterprise application platform expansion pack",
           "versions": null
         },
@@ -91231,7 +91375,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -104657,12 +104801,12 @@
       "affected": [
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 7",
+          "product": "red hat jboss enterprise application platform 8.1",
           "versions": null
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
+          "product": "red hat jboss enterprise application platform 7",
           "versions": null
         }
       ],
@@ -104673,7 +104817,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -105837,6 +105981,11 @@
       "affected": [
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat fuse 7",
           "versions": null
         },
@@ -105862,11 +106011,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat jboss enterprise application platform expansion pack",
           "versions": null
         },
@@ -105883,7 +106027,7 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
       ],
@@ -108450,207 +108594,13 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat build of quarkus 3.27.6.redhat",
+          "product": "red hat build of apache camel 3.33.4.redhat",
           "versions": [
             {
               "version": "6.2.19.Final-redhat-00003",
               "lessThan": "*",
               "versionType": "rpm",
               "status": "unaffected"
-            }
-          ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of quarkus 3.33.4.redhat",
-          "versions": [
-            {
-              "version": "6.2.19.Final-redhat-00003",
-              "lessThan": "*",
-              "versionType": "rpm",
-              "status": "unaffected"
-            }
-          ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 10",
-          "versions": [
-            {
-              "version": "0:11.9.0-6.el10_2.1",
-              "lessThan": "*",
-              "versionType": "rpm",
-              "status": "unaffected"
-            }
-          ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 9",
-          "versions": [
-            {
-              "version": "0:3.0.26-20.el9_8.1",
-              "lessThan": "*",
-              "versionType": "rpm",
-              "status": "unaffected"
-            }
-          ]
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8.1",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of apache camel 4 for quarkus 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of apicurio registry 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of debezium 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat certificate system 10",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat certificate system 11",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 9",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat enterprise linux 9",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat fuse 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat fuse 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform expansion pack",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat satellite 6",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat single sign-on 7",
-          "versions": null
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
-        "product:red hat jboss enterprise application platform 8.1",
-        "product:red hat jboss enterprise application platform expansion pack",
-        "vendor:red hat"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00474,
-      "nvd": {
-        "cvss_v3_score": 7.4,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-346",
-          "CWE-942"
-        ],
-        "cpe_count": 0,
-        "reference_count": 14
-      }
-    },
-    {
-      "cve_id": "CVE-2026-89059",
-      "description": "A flaw was found in RESTEasy's IIOImageProvider, which decodes attacker-supplied image request bodies without enforcing any limit on the declared image dimensions or pixel count. A remote, unauthenticated attacker can send a small crafted image declaring enormous dimensions to trigger a very large memory allocation, exhausting the JVM heap and resulting in a denial of service.",
-      "cvss_score": 7.5,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-      "affected": [
-        {
-          "vendor": "red hat",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "6.2.19.Final",
-              "versionType": "maven"
-            },
-            {
-              "status": "affected",
-              "version": "7.0.0.Alpha1",
-              "lessThan": "7.0.5.Final",
-              "versionType": "maven"
             }
           ]
         },
@@ -108745,6 +108695,11 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of apache camel 4 for quarkus 3",
           "versions": null
         },
@@ -108825,7 +108780,255 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
+          "product": "red hat jboss enterprise application platform expansion pack",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat satellite 6",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat single sign-on 7",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat jboss enterprise application platform 7",
+        "product:red hat jboss enterprise application platform 8.1",
+        "product:red hat jboss enterprise application platform expansion pack",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00474,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346",
+          "CWE-942"
+        ],
+        "cpe_count": 0,
+        "reference_count": 14
+      }
+    },
+    {
+      "cve_id": "CVE-2026-89059",
+      "description": "A flaw was found in RESTEasy's IIOImageProvider, which decodes attacker-supplied image request bodies without enforcing any limit on the declared image dimensions or pixel count. A remote, unauthenticated attacker can send a small crafted image declaring enormous dimensions to trigger a very large memory allocation, exhausting the JVM heap and resulting in a denial of service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "6.2.19.Final",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0.Alpha1",
+              "lessThan": "7.0.5.Final",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of apache camel 3.33.4.redhat",
+          "versions": [
+            {
+              "version": "6.2.19.Final-redhat-00003",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of quarkus 3.27.6.redhat",
+          "versions": [
+            {
+              "version": "6.2.19.Final-redhat-00003",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of quarkus 3.33.4.redhat",
+          "versions": [
+            {
+              "version": "6.2.19.Final-redhat-00003",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10",
+          "versions": [
+            {
+              "version": "0:11.9.0-6.el10_2.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 10.0 extended update support",
+          "versions": [
+            {
+              "version": "0:11.6.0-3.el10_0.2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": [
+            {
+              "version": "0:3.0.26-20.el9_8.1",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9.4 update services for sap solutions",
+          "versions": [
+            {
+              "version": "0:3.0.26-20.el9_4.2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9.6 extended update support",
+          "versions": [
+            {
+              "version": "0:3.0.26-20.el9_6.2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of apache camel 4 for quarkus 3",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of apicurio registry 3",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of debezium 3",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat certificate system 10",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat certificate system 11",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat enterprise linux 9",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat fuse 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat fuse 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 7",
           "versions": null
         },
         {
@@ -108851,7 +109054,6 @@
       "priority_label": "",
       "matched_terms": [
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
         "product:red hat jboss enterprise application platform 8.1",
         "product:red hat jboss enterprise application platform expansion pack",
         "vendor:red hat"
@@ -109800,12 +110002,99 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
         {
           "vendor": "red hat",
           "product": "red hat build of quarkus 3.33.3.sp2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
           "versions": null
         },
         {
@@ -109835,11 +110124,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat data grid 8",
           "versions": null
         },
@@ -109851,11 +110135,6 @@
         {
           "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
           "versions": null
         },
         {
@@ -109872,7 +110151,7 @@
       "matched_terms": [
         "product:red hat build of apache camel for spring boot 4",
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -109915,12 +110194,99 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
         {
           "vendor": "red hat",
           "product": "red hat build of quarkus 3.33.3.sp2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
           "versions": null
         },
         {
@@ -109950,11 +110316,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat data grid 8",
           "versions": null
         },
@@ -109966,11 +110327,6 @@
         {
           "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
           "versions": null
         },
         {
@@ -109987,7 +110343,7 @@
       "matched_terms": [
         "product:red hat build of apache camel for spring boot 4",
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -110097,12 +110453,99 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
         {
           "vendor": "red hat",
           "product": "red hat build of quarkus 3.33.3.sp2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
           "versions": null
         },
         {
@@ -110132,11 +110575,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat data grid 8",
           "versions": null
         },
@@ -110148,11 +110586,6 @@
         {
           "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
           "versions": null
         },
         {
@@ -110169,7 +110602,7 @@
       "matched_terms": [
         "product:red hat build of apache camel for spring boot 4",
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -110346,6 +110779,88 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
@@ -110372,11 +110887,6 @@
         {
           "vendor": "red hat",
           "product": "red hat build of apicurio registry 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
@@ -110445,12 +110955,99 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
         {
           "vendor": "red hat",
           "product": "red hat build of quarkus 3.33.3.sp2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat jboss enterprise application platform 8.1",
           "versions": null
         },
         {
@@ -110480,11 +111077,6 @@
         },
         {
           "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
           "product": "red hat data grid 8",
           "versions": null
         },
@@ -110496,11 +111088,6 @@
         {
           "vendor": "red hat",
           "product": "red hat jboss enterprise application platform 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat jboss enterprise application platform 8",
           "versions": null
         },
         {
@@ -110517,7 +111104,7 @@
       "matched_terms": [
         "product:red hat build of apache camel for spring boot 4",
         "product:red hat jboss enterprise application platform 7",
-        "product:red hat jboss enterprise application platform 8",
+        "product:red hat jboss enterprise application platform 8.1",
         "vendor:red hat"
       ],
       "active_threat": false,
@@ -110560,6 +111147,88 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
@@ -110591,11 +111260,6 @@
         {
           "vendor": "red hat",
           "product": "red hat build of apicurio registry 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
@@ -110682,6 +111346,88 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
@@ -110713,11 +111459,6 @@
         {
           "vendor": "red hat",
           "product": "red hat build of apicurio registry 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
@@ -110804,6 +111545,88 @@
         },
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat build of quarkus 3.27.5.sp2",
           "versions": null
         },
@@ -110835,11 +111658,6 @@
         {
           "vendor": "red hat",
           "product": "red hat build of apicurio registry 3",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
@@ -111206,32 +112024,129 @@
       "affected": [
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat amq broker 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
@@ -111309,22 +112224,109 @@
       "affected": [
         {
           "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4.17-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-29",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4",
+          "versions": [
+            {
+              "version": "26.4-30",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.4.17",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6.8-2",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6",
+          "versions": [
+            {
+              "version": "26.6-24",
+              "lessThan": "*",
+              "versionType": "rpm",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat build of keycloak 26.6.8",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
           "product": "red hat amq broker 7",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
-          "versions": null
-        },
-        {
-          "vendor": "red hat",
-          "product": "red hat build of keycloak",
           "versions": null
         },
         {
