@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T20:54:45+00:00",
+  "generated_at": "2026-11-07T00:55:22+00:00",
   "vendor": "apple",
-  "count": 1382,
+  "count": 1384,
   "items": [
     {
       "cve_id": "CVE-2022-22578",
@@ -38708,7 +38708,7 @@
         "cwe_ids": [
           "CWE-287"
         ],
-        "cpe_count": 10,
+        "cpe_count": 12,
         "reference_count": 25
       }
     },
@@ -65089,8 +65089,121 @@
         "cwe_ids": [
           "CWE-119"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-112446",
+      "description": "This issue was addressed with additional entitlement checks. This issue is fixed in iOS 27.2 and iPadOS 27.2, macOS Golden Gate 27, macOS Golden Gate 27.2, macOS Sequoia 15.8, macOS Tahoe 26.7, tvOS 27.2, visionOS 27.2, watchOS 27.2. An app may be able to access sensitive user data.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "apple",
+          "product": "ios and ipados",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27.2",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "apple",
+          "product": "macos",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "15.8",
+              "versionType": "custom"
+            },
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "26.7",
+              "versionType": "custom"
+            },
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27",
+              "versionType": "custom"
+            },
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27.2",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "apple",
+          "product": "tvos",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27.2",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "apple",
+          "product": "visionos",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27.2",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "apple",
+          "product": "watchos",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27.2",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ios and ipados",
+        "product:macos",
+        "product:tvos",
+        "product:visionos",
+        "product:watchos",
+        "vendor:apple"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00571,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 8,
+        "reference_count": 8
       }
     },
     {
@@ -65176,7 +65289,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 6
       }
     },
@@ -65231,7 +65344,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -65286,7 +65399,7 @@
         "cwe_ids": [
           "CWE-22"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -65381,7 +65494,7 @@
         "cwe_ids": [
           "CWE-119"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 5
       }
     },
@@ -65455,7 +65568,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 7,
         "reference_count": 5
       }
     },
@@ -67094,7 +67207,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67149,7 +67262,7 @@
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67204,7 +67317,62 @@
         "cwe_ids": [
           "CWE-693"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-112502",
+      "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in macOS Golden Gate 27.2, macOS Sequoia 15.8.2, macOS Tahoe 26.7.2. An app may be able to cause a denial-of-service.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "apple",
+          "product": "macos",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "15.8.2",
+              "versionType": "custom"
+            },
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "26.7.2",
+              "versionType": "custom"
+            },
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "27.2",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:macos",
+        "vendor:apple"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00698,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67259,7 +67427,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67302,7 +67470,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -67357,7 +67525,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67455,7 +67623,7 @@
         "cwe_ids": [
           "CWE-59"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -67568,7 +67736,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 10,
         "reference_count": 8
       }
     },
@@ -67681,7 +67849,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 10,
         "reference_count": 8
       }
     },
@@ -67794,7 +67962,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 10,
         "reference_count": 8
       }
     },
@@ -67849,7 +68017,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67904,7 +68072,7 @@
         "cwe_ids": [
           "CWE-120"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -67959,7 +68127,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68014,7 +68182,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68069,7 +68237,7 @@
         "cwe_ids": [
           "CWE-120"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68124,7 +68292,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68179,7 +68347,7 @@
         "cwe_ids": [
           "CWE-693"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68234,7 +68402,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68289,7 +68457,7 @@
         "cwe_ids": [
           "CWE-119"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -68344,7 +68512,7 @@
         "cwe_ids": [
           "CWE-693"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -69136,7 +69304,7 @@
         "cwe_ids": [
           "CWE-22"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -69223,7 +69391,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 6
       }
     },
@@ -69330,7 +69498,7 @@
         "cwe_ids": [
           "CWE-284"
         ],
-        "cpe_count": 0,
+        "cpe_count": 8,
         "reference_count": 7
       }
     },
@@ -98157,7 +98325,7 @@
         "cwe_ids": [
           "CWE-119"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -98212,7 +98380,7 @@
         "cwe_ids": [
           "CWE-732"
         ],
-        "cpe_count": 0,
+        "cpe_count": 3,
         "reference_count": 3
       }
     },
@@ -98591,7 +98759,7 @@
         "cwe_ids": [
           "CWE-476"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 6
       }
     },
