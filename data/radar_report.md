@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-08T10:09:37+00:00`
+Generated: `2026-11-08T17:02:52+00:00`
 
 ## Executive Summary
 
@@ -23,8 +23,8 @@ Top critical items:
 | [CVE-2026-75650](https://www.cve.org/CVERecord?id=CVE-2026-75650) | 0.994 | 10.0 | 2026-09-11 | Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability th… |
 | [CVE-2022-0543](https://www.cve.org/CVERecord?id=CVE-2022-0543) | 0.994 | 10.0 | 2022-04-18 | It was discovered, that redis, a persistent key-value database, due to a packaging issue, is prone to a (Debian-specifi… |
 | [CVE-2023-22515](https://www.cve.org/CVERecord?id=CVE-2023-22515) | 0.992 | 10.0 | 2023-10-13 | Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploite… |
-| [CVE-2026-72898](https://www.cve.org/CVERecord?id=CVE-2026-72898) | 0.988 | 10.0 | 2026-08-14 | Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint … |
 | [CVE-2022-22947](https://www.cve.org/CVERecord?id=CVE-2022-22947) | 0.983 | 10.0 | 2022-06-06 | In spring cloud gateway versions prior to 3.1.1+ and 3.0.7+ , applications are vulnerable to a code injection attack wh… |
+| [CVE-2026-72898](https://www.cve.org/CVERecord?id=CVE-2026-72898) | 0.982 | 10.0 | 2026-08-14 | Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint … |
 | [CVE-2022-26134](https://www.cve.org/CVERecord?id=CVE-2022-26134) | 1.000 | 9.8 | 2022-06-06 | In affected versions of Confluence Server and Data Center, an OGNL injection vulnerability exists that would allow an u… |
 | [CVE-2023-1671](https://www.cve.org/CVERecord?id=CVE-2023-1671) | 1.000 | 9.8 | 2023-12-07 | A pre-auth command injection vulnerability in the warn-proceed handler of Sophos Web Appliance older than version 4.3.1… |
 | [CVE-2023-27350](https://www.cve.org/CVERecord?id=CVE-2023-27350) | 1.000 | 9.8 | 2023-05-12 | This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Bu… |
@@ -61,8 +61,8 @@ Top critical items:
 | [CVE-2026-75650](https://www.cve.org/CVERecord?id=CVE-2026-75650) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-11 | 0.994 | 10.0 | ✅ | Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execut… |
 | [CVE-2022-0543](https://www.cve.org/CVERecord?id=CVE-2022-0543) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-04-18 | 0.994 | 10.0 | ✅ | It was discovered, that redis, a persistent key-value database, due to a packaging issue, is prone to a (Debian-specific) Lua sandbox escape, which could resul… |
 | [CVE-2023-22515](https://www.cve.org/CVERecord?id=CVE-2023-22515) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-10-13 | 0.992 | 10.0 | ✅ | Atlassian has been made aware of an issue reported by a handful of customers where external attackers may have exploited a previously unknown vulnerability in … |
-| [CVE-2026-72898](https://www.cve.org/CVERecord?id=CVE-2026-72898) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-14 | 0.988 | 10.0 | ✅ | Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the con… |
 | [CVE-2022-22947](https://www.cve.org/CVERecord?id=CVE-2022-22947) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-06-06 | 0.983 | 10.0 | ✅ | In spring cloud gateway versions prior to 3.1.1+ and 3.0.7+ , applications are vulnerable to a code injection attack when the Gateway Actuator endpoint is enab… |
+| [CVE-2026-72898](https://www.cve.org/CVERecord?id=CVE-2026-72898) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-14 | 0.982 | 10.0 | ✅ | Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the con… |
 | [CVE-2022-26134](https://www.cve.org/CVERecord?id=CVE-2022-26134) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-06-06 | 1.000 | 9.8 | ✅ | In affected versions of Confluence Server and Data Center, an OGNL injection vulnerability exists that would allow an unauthenticated attacker to execute arbit… |
 | [CVE-2023-1671](https://www.cve.org/CVERecord?id=CVE-2023-1671) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-07 | 1.000 | 9.8 | ✅ | A pre-auth command injection vulnerability in the warn-proceed handler of Sophos Web Appliance older than version 4.3.10.4 allows execution of arbitrary code. |
 | [CVE-2023-27350](https://www.cve.org/CVERecord?id=CVE-2023-27350) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-05-12 | 1.000 | 9.8 | ✅ | This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not requir… |
