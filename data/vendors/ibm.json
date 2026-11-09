@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T21:05:32+00:00",
+  "generated_at": "2026-11-09T00:47:17+00:00",
   "vendor": "ibm",
-  "count": 1344,
+  "count": 1365,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -17257,6 +17257,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-101117",
+      "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.2.2 could allow a remote attacker to bypass security restrictions due to improper Content Security Policy configuration.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "websphere extreme scale",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.6.1.0",
+              "lessThanOrEqual": "8.6.2.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:websphere extreme scale",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-101288",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.3 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code.",
       "cvss_score": 8.8,
@@ -18253,6 +18285,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105467",
+      "description": "IBM QRadar 7.5.0 through 7.5.0 Update Pack 16 Interim Fix 02, and 7.6.0.0 through 7.6.0.5 is vulnerable to Reflected XSS. A victim must open a specifically crafted URL while authenticated to QRadar to trigger this.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "qradar",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.5.0",
+              "lessThanOrEqual": "7.5.0 Update Pack 16 Interim Fix 02",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.6.0.0",
+              "lessThanOrEqual": "7.6.0.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:qradar",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-107326",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
       "cvss_score": 8.8,
@@ -18423,6 +18493,66 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-107330",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to a Server-Side Request Forgery (SSRF) vulnerability.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-107331",
+      "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "datastage on cloud pak for data",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:datastage on cloud pak for data",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-107366",
@@ -21355,6 +21485,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-110273",
+      "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.9 IBM TRIRIGA could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "tririga application platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThanOrEqual": "5.0.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:tririga application platform",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-110309",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper control of code generation.",
       "cvss_score": 8.8,
@@ -21396,6 +21558,162 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-114464",
+      "description": "IBM Process Mining 2.0.0 through 2.2.1 could allow a remote attacker to obtain sensitive information due to improper access control.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "process mining",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThanOrEqual": "2.2.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:process mining",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116499",
+      "description": "IBM Qiskit SDK 1.4.2 through 2.6.2 could allow a local attacker to execute arbitrary code due to deserialization of untrusted data.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "qiskit sdk",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.4.2",
+              "lessThanOrEqual": "2.6.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:qiskit sdk",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116501",
+      "description": "IBM Qiskit SDK 2.4.0 through 2.6.1 could allow a local attacker to execute arbitrary code due to an out-of-bounds write caused by improper input validation when accessing a corrupted unitary matrix.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "qiskit sdk",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.4.0",
+              "lessThanOrEqual": "2.6.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:qiskit sdk",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-117545",
+      "description": "IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "webmethods integration server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:webmethods integration server",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-118904",
+      "description": "IBM webMethods Integration Server 12.1 could allow a remote authenticated attacker to bypass security restrictions due to improper authentication.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "webmethods integration server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:webmethods integration server",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-11375",
@@ -29588,6 +29906,38 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-15266",
+      "description": "IBM Concert 1.0 through 3.0.1.1 contains components that allow potentially unsafe command execution, which could be exploited to run arbitrary system commands on the host.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "concert",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0",
+              "lessThanOrEqual": "3.0.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:concert",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-15280",
@@ -48165,6 +48515,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-17466",
+      "description": "IBM Optim 1.0.0, 1.1.0, and 1.2.0 could allow a remote authenticated attacker to obtain sensitive information due to path traversal.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "optim",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0"
+            },
+            {
+              "status": "affected",
+              "version": "1.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:optim",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-17467",
       "description": "IBM Cloud Pak for Data System (Yosemite 1.0) 3.0.5.2 could allow a remote attacker to obtain sensitive information due to the use of weak or deprecated cryptographic protocols.",
       "cvss_score": 8.2,
@@ -49635,6 +50023,38 @@
         "cpe_count": 4,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-18093",
+      "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.2 could allow a remote attacker to obtain sensitive information due to broken access control.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "app connect enterprise",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "13.0.1.0",
+              "lessThanOrEqual": "13.0.8.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:app connect enterprise",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-18095",
@@ -52757,6 +53177,50 @@
       }
     },
     {
+      "cve_id": "CVE-2026-18893",
+      "description": "IBM CockroachDB PostgreSQL for IBM VPC 26.2.0 through 26.2.3, 25.4.0 through 25.4.12, and 25.2.0 through 25.2.20 is\u00a0vulnerable to privilege escalation via user-defined function.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "cockroachdb postgresql for ibm vpc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2.0",
+              "lessThanOrEqual": "26.2.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.4.0",
+              "lessThanOrEqual": "25.4.12",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "25.2.0",
+              "lessThanOrEqual": "25.2.20",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cockroachdb postgresql for ibm vpc",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-18899",
       "description": "IBM Langflow OSS 1.0.0 through 1.11.1 could allow a remote attacker to read arbitrary files due to path traversal.",
       "cvss_score": 7.5,
@@ -52968,6 +53432,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-19133",
+      "description": "IBM Storage TS4500 Library 1.1.1.6 through 1.12.0.3 could allow a remote authenticated attacker to perform unauthorized account takeover due to improper authorization.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "storage ts4500 library",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.1.1.6",
+              "lessThanOrEqual": "1.12.0.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:storage ts4500 library",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-19179",
@@ -56018,6 +56514,38 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-6715",
+      "description": "IBM Concert 1.0 through 3.0.1.1 allows an attacker can supply crafted input that is incorporated into an operating system command without adequate validation or sanitization. Successful exploitation allows remote attackers to execute arbitrary commands on the underlying operating system with the privileges of the affected service.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "concert",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0",
+              "lessThanOrEqual": "3.0.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:concert",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-6719",
@@ -64567,6 +65095,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-8639",
+      "description": "IBM Security Verify Directory 10.0.0 through 10.0.4 and IBM Verify Directory 11.0.0 is vulnerable to session fixation. An attacker can establish a session and, after the victim authenticates, hijack the authenticated session to gain unauthorized access to the directory management console.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security verify directory",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.0.0",
+              "lessThanOrEqual": "10.0.4",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "verify directory",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security verify directory",
+        "product:verify directory",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-8644",
       "description": "IBM WebSphere Application Server 9.0, and 8.5 is vulnerable to identity spoofing.",
       "cvss_score": 9.1,
@@ -65913,6 +66484,62 @@
       }
     },
     {
+      "cve_id": "CVE-2026-93879",
+      "description": "Hibernate Validator could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption resulting from improper escaping of user-controlled data in Expression Language (EL) expressions.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "hibernate validator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.4.1.Final",
+              "lessThanOrEqual": "6.2.5.Final",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0.Alpha1",
+              "lessThanOrEqual": "7.0.5.Final",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0.Alpha1",
+              "lessThanOrEqual": "8.0.5.Final",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.0.Beta2",
+              "lessThanOrEqual": "9.0.1.Final",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.1.0.Alpha1",
+              "lessThanOrEqual": "9.1.4.Final",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hibernate validator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-93886",
       "description": "IBM i 7.3, 7.4, 7.5, and 7.6\u00a0could allow a remote authenticated attacker to execute arbitrary script code due to improper validation of user-supplied input.",
       "cvss_score": 8.3,
@@ -66465,6 +67092,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-96146",
+      "description": "IBM SevOne Network Performance Management 7.0.0 through 8.2.2 could allow a remote attacker to cause a denial of service due to uncontrolled resource consumption.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "sevone network performance management",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThanOrEqual": "8.2.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sevone network performance management",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-96261",
       "description": "IBM Power Systems Firmware FW1060.00 through FW1060.81 is affected by a vulnerability in host firmware configuration parsing. An attacker with authenticated service-level access to the service processor can write specially crafted configuration data, causing the host firmware boot stack to crash with possible memory corruption during system initialisation, resulting in an integrity and availability impact to the managed system.",
       "cvss_score": 7.3,
@@ -66905,6 +67564,38 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-97677",
+      "description": "IBM Langflow OSS 1.0.0 through 1.12.2 An authenticated flow author could write attacker-controlled file content into any directory writable by the service account, bypassing the platform's local file access isolation safeguard. Via a crafted on-disk index, the attacker could also read the contents of arbitrary files accessible to the service process \u2014 including configuration files, secrets, or database files stored under the application's data directory.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "langflow oss",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.12.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:langflow oss",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-97678",
@@ -68017,6 +68708,38 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-9764",
+      "description": "IBM Bob 1.0.4 through 2.0.1 could allow a remote attacker to inject arbitrary code on the system, due to the improper control of user input code.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "bob shell",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.4",
+              "lessThanOrEqual": "2.0.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bob shell",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }
