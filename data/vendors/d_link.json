@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T18:43:10+00:00",
+  "generated_at": "2026-11-10T02:01:59+00:00",
   "vendor": "d_link",
-  "count": 500,
+  "count": 504,
   "items": [
     {
       "cve_id": "CVE-2022-26670",
@@ -18669,6 +18669,174 @@
         "cwe_ids": [
           "CWE-119",
           "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-124560",
+      "description": "A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid results in heap-based buffer overflow. The attack can be initiated remotely. The exploit has been made public and could be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dir-878",
+          "versions": [
+            {
+              "version": "1.20B05",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dir-878",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00721,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 10.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-124561",
+      "description": "A vulnerability was determined in D-Link DIR-878 1.20B05. This impacts the function SetVLANSettings of the file prog.cgi of the component HNAP Handler. Executing a manipulation of the argument VID can lead to stack-based buffer overflow. The attack can be launched remotely. The exploit has been publicly disclosed and may be utilized. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dir-878",
+          "versions": [
+            {
+              "version": "1.20B05",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dir-878",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00538,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 7.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-124562",
+      "description": "A vulnerability was identified in D-Link DIR-878 1.20B05. Affected is the function SetWanSettings of the component HNAP Handler. The manipulation of the argument ConfigDNS/Primary/ConfigDNS/Secondary leads to buffer overflow. The attack may be initiated remotely. The exploit is publicly available and might be used. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dir-878",
+          "versions": [
+            {
+              "version": "1.20B05",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dir-878",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00538,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 7.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-124563",
+      "description": "A security flaw has been discovered in D-Link DIR-878 1.20B05. Affected by this vulnerability is the function SetWanSettings of the component HNAP Handler. The manipulation of the argument Primary/Secondary results in buffer overflow. The attack may be launched remotely. The exploit has been released to the public and may be used for attacks. This vulnerability only affects products that are no longer supported by the maintainer.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "d-link",
+          "product": "dir-878",
+          "versions": [
+            {
+              "version": "1.20B05",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dir-878",
+        "vendor:d-link"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00538,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 7.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119",
+          "CWE-120"
         ],
         "cpe_count": 0,
         "reference_count": 6

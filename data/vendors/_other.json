@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T18:43:10+00:00",
+  "generated_at": "2026-11-10T02:01:59+00:00",
   "vendor": "_other",
-  "count": 3230,
+  "count": 3233,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -87734,6 +87734,94 @@
       }
     },
     {
+      "cve_id": "CVE-2026-125388",
+      "description": "Intermesh Group-Office before 6.8.181, 25.0.116, and 26.0.58 contains a missing authorization vulnerability that allows authenticated users to download form reports via api/download.php without permission checks. Attackers can request the business/forms/report blob with a form ID to export every submission as an XLSX file, disclosing submissions they are not permitted to see.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "intermesh",
+          "product": "group-office",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "6.8.181",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "25.0.0",
+              "lessThan": "25.0.116",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "26.0.0",
+              "lessThan": "26.0.58",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:group-office",
+        "vendor:intermesh"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-125390",
+      "description": "Group-Office before 6.8.181, 25.0.116, and 26.0.58 contains an arbitrary local file read vulnerability in FolderController::actionProcessUploadQueue that allows authenticated users to read server files by supplying absolute paths in the blobs parameter. Attackers can have files hard-linked or copied into their own folder and downloaded, exposing other users' stored files and config.php database credentials.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "intermesh",
+          "product": "group-office",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "6.8.181",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "25.0.0",
+              "lessThan": "25.0.116",
+              "status": "affected",
+              "versionType": "semver"
+            },
+            {
+              "version": "26.0.0",
+              "lessThan": "26.0.58",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:group-office",
+        "vendor:intermesh"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-25134",
       "description": "Group-Office is an enterprise customer relationship management and groupware tool. Prior to 6.8.150, 25.0.82, and 26.0.5, the MaintenanceController exposes an action zipLanguage which takes a lang parameter and passes it directly to a system zip command via exec(). This can be combined with uploading a crafted zip file to achieve remote code execution. This vulnerability is fixed in 6.8.150, 25.0.82, and 26.0.5.",
       "cvss_score": 9.4,
@@ -88449,6 +88537,36 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-123817",
+      "description": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python. Prior to 3.14.4, the WebSocket reader retains one bytes object for each transport read while reassembling an incomplete frame. A malicious peer can split a frame into many tiny reads so per-object overhead substantially exceeds the payload bytes allowed by max_msg_size. The condition affects a server receiving frames from a malicious client and a client receiving frames from a malicious server, and can cause excessive memory consumption or denial of service. This issue is fixed in version 3.14.4.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "aio-libs",
+          "product": "aiohttp",
+          "versions": [
+            {
+              "version": "< 3.14.4",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:aiohttp",
+        "vendor:aio-libs"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-69244",
@@ -172169,7 +172287,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -178193,7 +178311,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -180165,9 +180283,9 @@
       ],
       "watchlist_hit": true,
       "in_watchlist": true,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": true,
-      "priority_label": "CRITICAL (CISA KEV + Watchlist)",
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
       "matched_terms": [
         "product:openssh",
         "vendor:openbsd"
