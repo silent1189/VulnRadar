@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T23:11:36+00:00",
+  "generated_at": "2026-11-11T05:54:51+00:00",
   "vendor": "mongodb",
-  "count": 121,
+  "count": 139,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -810,6 +810,74 @@
       }
     },
     {
+      "cve_id": "CVE-2026-118383",
+      "description": "A use-after-free in the replication component of MongoDB Server can occur when a newly elected replica set primary completes catch-up. The condition can be caused by requests that do not require authentication, and may result in the server terminating unexpectedly or, under certain conditions, arbitrary code execution in the context of the server process. Replica set members are affected, including the shard and config server replica set members of sharded clusters; standalone mongod instances are not.",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThan": "6.0.30",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.35",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.4.0",
+              "lessThan": "4.4.32",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-118510",
       "description": "A type-handling flaw in the relationship query building of this MongoDB integration library can cause a check for the absence of a related record to be compiled with an identifier of the wrong data type. In an application that relies on such a check to decide which documents a request may see or act on, a user with basic privileges may be served, may change, or may remove documents that the check was intended to withhold. The failure is silent and produces no error.",
       "cvss_score": 7.7,
@@ -1029,6 +1097,796 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-120803",
+      "description": "A use-after-free issue exists in MongoDB\u2019s SBE (Slot-Based Execution) implementation of a window function accumulator used by certain $setWindowFields aggregation pipelines. Under specific conditions, the accumulator can retain a dangling pointer to memory that has since been freed. When this stale pointer is later dereferenced during serialization of the carried-forward value, it can result in a heap out-of-bounds read that may expose adjacent heap contents and crash the mongod server. An authenticated user with readWrite privileges on a database can trigger this issue by crafting a specific aggregation pipeline.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120804",
+      "description": "A flaw exists in the server-side SSPI Kerberos authentication handler on Windows Enterprise builds of MongoDB. When processing certain authentication requests, the server fails to properly release an underlying system resource due to an internal tracking error. An unauthenticated user can trigger this by repeatedly sending authentication requests using the Kerberos mechanism, eventually exhausting available resources and causing all subsequent Kerberos authentication attempts to fail. Server restart is required to recover.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120806",
+      "description": "A flaw in MongoDB Server's user management commands may lead to incomplete cleanup of role authorization data when roles are dropped from a database. Due to incorrect internal query predicates, the drop operation removes role definitions but fails to remove stale references in user and role documents. If a role with the same name is subsequently recreated with different privileges, previously associated users may silently inherit the new role's privileges without an explicit grant or corresponding audit event. Exploitation requires authenticated access with database administrative privileges on the target database.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120807",
+      "description": "A flaw in MongoDB\u2019s X.509 cluster-membership authentication guard could allow a holder of a cluster-member certificate to gain elevated internal privileges when a specific deployment configuration is in use. An internal check, which prevents a certificate recognized as a cluster member from also being treated as a regular user, does not correctly distinguish between certain error conditions encountered during user lookup. Under certain timing conditions, this can cause the check to be bypassed, granting the connection full internal system privileges. Triggering this issue requires possession of a valid cluster-member TLS certificate, non-default X.509 cluster authentication configuration, and specific conditions during the user cache lookup process.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120808",
+      "description": "An issue exists in MongoDB's macOS TLS client implementation where certificate chain-of-trust validation is bypassed for outbound connections to IPv6-addressed peers. When a MongoDB process using the Apple SecureTransport TLS backend connects to an IPv6 target, the trust evaluation result from SecTrustEvaluate is silently discarded, regardless of whether the peer's certificate is trusted. An on-path party could exploit this by presenting a self-signed certificate containing the target's IPv6 address in the Subject Alternative Name to intercept and modify encrypted inter-node or external service traffic. This issue only affects MongoDB processes running on macOS with the Apple SecureTransport TLS provider.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120810",
+      "description": "An issue in MongoDB server\u2019s aggregation framework allows an authenticated user with read privileges to cause a denial of service by sending specially crafted aggregate commands using an internal expression. Despite its internal naming, this expression is registered as accessible to any authenticated client. By supplying crafted input parameters across multiple concurrent connections, each evaluation triggers unbounded memory allocations with no per-expression memory limits enforced. This can exhaust available server memory and cause the mongod process to be terminated by the operating system\u2019s out-of-memory killer.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120813",
+      "description": "An issue in MongoDB Server's client-side field-level encryption (CSFLE) schema processing component allows encryption metadata to be silently dropped during schema parsing under certain conditions. A party who can deliver a specially crafted schema to a user's CSFLE client may cause sensitive data intended for encryption to be stored in plaintext, bypassing confidentiality protections. Exploitation requires the ability to deliver the malicious schema to the user's client, such as through a man-in-the-middle position or an untrusted server.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120814",
+      "description": "An improper privilege management issue in the sharding subsystem of MongoDB Server may allow a user holding certain shard-level administrative privileges to cause persisted internal coordination state to be reprocessed with elevated internal authority. Because that state is trusted rather than re-validated, operations may be carried out beyond the user's authorized scope, including changes to cluster-wide security configuration. Successful triggering this issue requires an authenticated session directly against a cluster member and can result in unauthorized access to and modification of data across the cluster.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120815",
+      "description": "An incorrect authorization check in the MongoDB Server authorization subsystem may allow an unauthenticated party with local host access to obtain administrative privileges on a database server that has authorization enabled. This may result in unintended access to stored data and credentials, unintended modification of data, and loss of availability of the server.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120817",
+      "description": "A race condition in the schema validation component of MongoDB Server can occur when concurrent writes are checked against a collection validator that uses geospatial query operators. The condition can be caused by an authenticated user with write privileges, and may result in the server terminating unexpectedly.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120818",
+      "description": "A use-after-free weakness in MongoDB Server's server-side JavaScript support for aggregation may allow a stale reference to previously freed process memory to be read and returned. An authenticated user with minimal or no assigned roles can trigger this condition over the normal network protocol by submitting a single crafted aggregation request, with no additional privileges or non-default configuration. Successful triggering this issue may result in adjacent process memory contents being returned, including data that undermines memory-layout randomization, and may in some cases affect server availability.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120821",
+      "description": "A use-after-free in the aggregation framework of MongoDB Server can occur when certain expressions are evaluated in an aggregation sub-pipeline. The condition can be caused by an authenticated user with read privileges, and may result in the server terminating unexpectedly.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120822",
+      "description": "MongoDB Server may omit an authorization check on the resource that a replication-related administrative command actually targets, because that check is conditioned on a value taken from the client's own request. A user holding backup and restore privileges may therefore read and relocate collections outside the set that user is permitted to access. This may result in unintended access to data and unintended changes to the collection catalog.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120824",
+      "description": "A use-after-free in the time-series collection component of MongoDB Server can occur when the server validates a time-series bucket document during a write. The condition can be caused by an authenticated user with privileges to write bucket documents directly, and may result in the server terminating unexpectedly or, under certain conditions, arbitrary code execution in the context of the server process.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120825",
+      "description": "An authorization weakness in the aggregation framework of MongoDB Server may allow an authenticated user holding only basic database privileges to read the contents of collections in a database for which they have not been granted read access. The privilege evaluation performed while a view definition is validated does not cover a nested portion of the supplied pipeline, so the resulting view returns data the user is otherwise refused. This may result in unintended access to data, including stored authentication material.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120826",
+      "description": "An authorization flaw in the aggregation and view-definition handling of sharded deployments may allow a user holding only basic read-write privileges on a single database to define a view whose underlying processing is not fully subjected to privilege checking. Reading that view may result in unintended access to data belonging to other databases held on the same shard.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120828",
+      "description": "A replica-set database server node does not limit or reclaim internal wait records created while handling a client-supplied read option that names a point in time the node will never reach. A party with network access and no credentials can cause these records to accumulate without bound and persist after the requests end, which may make the server run out of memory and become unavailable.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "mongodb server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.3.0",
+              "lessThan": "8.3.16",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "8.0.0",
+              "lessThan": "8.0.37",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "7.0.0",
+              "lessThan": "7.0.48",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThan": "6.0.30",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0",
+              "lessThan": "5.0.35",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "4.4.0",
+              "lessThan": "4.4.32",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mongodb server",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-120955",

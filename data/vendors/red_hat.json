@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T23:11:36+00:00",
+  "generated_at": "2026-11-11T05:54:51+00:00",
   "vendor": "red_hat",
-  "count": 354,
+  "count": 355,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -20408,7 +20408,7 @@
         },
         {
           "vendor": "red hat",
-          "product": "compliance operator 1",
+          "product": "openshift compliance operator 1",
           "versions": [
             {
               "version": "1.8.0",
@@ -72484,7 +72484,7 @@
           "CWE-787"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -74591,6 +74591,46 @@
       }
     },
     {
+      "cve_id": "CVE-2026-120399",
+      "description": "A flaw was found in flightctl. A TLS handshake is performed synchronously in the HTTP server\u2019s connection-context callback without a deadline. A network-reachable unauthenticated client can stall the handshake and prevent the affected listener from accepting new connections.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat edge manager 1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat edge manager 1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat edge manager 1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat edge manager 1",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat edge manager 1",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-121621",
       "description": "A command injection vulnerability was found in Argo CD Image Updater, where a proxy URL configured on an SSH Git repository is passed unsanitized into a shell-interpreted SSH command. An attacker able to set a malicious proxy value can inject shell metacharacters to execute arbitrary commands and access credentials in the context of the Image Updater process.",
       "cvss_score": 8.8,
@@ -74800,7 +74840,18 @@
         "vendor:red hat"
       ],
       "active_threat": false,
-      "probability_score": 0.00246
+      "probability_score": 0.00246,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-267"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-13717",
@@ -91530,7 +91581,18 @@
         "vendor:red hat"
       ],
       "active_threat": false,
-      "probability_score": 0.0013
+      "probability_score": 0.0013,
+      "nvd": {
+        "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-306"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2026-1584",
@@ -95448,7 +95510,7 @@
           "CWE-295"
         ],
         "cpe_count": 0,
-        "reference_count": 35
+        "reference_count": 36
       }
     },
     {
@@ -96742,7 +96804,7 @@
           "CWE-295"
         ],
         "cpe_count": 0,
-        "reference_count": 35
+        "reference_count": 36
       }
     },
     {
@@ -97040,7 +97102,7 @@
           "CWE-862"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 4
       }
     },
     {
@@ -108154,7 +108216,7 @@
           "CWE-362"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -108336,7 +108398,7 @@
           "CWE-131"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -108518,7 +108580,7 @@
           "CWE-787"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -108700,7 +108762,7 @@
           "CWE-416"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -108882,7 +108944,7 @@
           "CWE-367"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {

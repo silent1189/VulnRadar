@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T23:11:36+00:00",
+  "generated_at": "2026-11-11T05:54:51+00:00",
   "vendor": "sap_se",
-  "count": 254,
+  "count": 282,
   "items": [
     {
       "cve_id": "CVE-2022-22528",
@@ -11874,6 +11874,1115 @@
       }
     },
     {
+      "cve_id": "CVE-2026-109793",
+      "description": "SAP NetWeaver Application Server ABAP and SAP Web Dispatcher do not sufficiently validate certain header values processed during inbound request handling. An unauthenticated attacker could send a specially crafted request to cause the affected process to become unavailable.This results in a high impact on availability. There is no impact on confidentiality and integrity.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver application server abap (internet communication manager) and sap web dispatcher",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "WEBDISP 9.16"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver application server abap (internet communication manager) and sap web dispatcher",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00359,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109794",
+      "description": "SAP NetWeaver Application Server ABAP, ABAP Platform, and SAP Web Dispatcher do not sufficiently handle resource consumption when processing certain requests. An unauthenticated attacker could send specially crafted requests to the affected component, causing excessive resource utilization and service disruption. This results in a high impact on availability. There is no impact on confidentiality and integrity.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver application server abap, abap platform and sap web dispatcher",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "WEBDISP 7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "XS_ADVANCED_RUNTIME 1.0"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.77"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver application server abap, abap platform and sap web dispatcher",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00359,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-835"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109795",
+      "description": "SAP NetWeaver does not perform necessary authorization checks and lacks sufficient input validation in certain remote-enabled functionality. An attacker with low privileges could send specially crafted input through a remote interface to inject and execute arbitrary code within the affected system. Successful exploitation could extend the attacker's reach beyond the vulnerable component, resulting in a high impact on confidentiality, integrity and availability.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "s4crm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "S4CRM 204"
+            },
+            {
+              "status": "affected",
+              "version": "205"
+            },
+            {
+              "status": "affected",
+              "version": "206"
+            },
+            {
+              "status": "affected",
+              "version": "S4CEXT 107"
+            },
+            {
+              "status": "affected",
+              "version": "108"
+            },
+            {
+              "status": "affected",
+              "version": "109"
+            },
+            {
+              "status": "affected",
+              "version": "BBPCRM 713"
+            },
+            {
+              "status": "affected",
+              "version": "714"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:s4crm",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00409,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109797",
+      "description": "In SAP/astonish, an authenticated user could potentially identify and operate on another team\ufffds sandbox containers because of improper tenant isolation in the legacy Incus sandbox-management API handlers. The affected handlers did not use the tenant-aware session lookup path, allowing cross-tenant container operations such as listing, exposing or proxying, and deleting containers.The issue affects only the legacy Incus backend. Kubernetes and OpenShell deployments are not affected because the relevant Incus-specific handlers are unavailable there.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap/astonish",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "<v3.6.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap/astonish",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00254,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1220"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109798",
+      "description": "SAP BusinessObjects Business Intelligence Platform (Web Intelligence) does not properly restrict external entity resolution when processing OLAP connection requests. An authenticated attacker could exploit this vulnerability to access restricted resources, enabling them to read sensitive files on the server and reach internal systems that are not otherwise exposed, impacting resources beyond the vulnerable component, resulting in a high impact on confidentiality and a low impact on both integrity and availability.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap businessobjects business intelligence platform (web intelligence)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "ENTERPRISE 430"
+            },
+            {
+              "status": "affected",
+              "version": "2025"
+            },
+            {
+              "status": "affected",
+              "version": "2027"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap businessobjects business intelligence platform (web intelligence)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00283,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-611"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109799",
+      "description": "The SAP Cloud SDK for Python contains an improper cryptographic signature verification vulnerability (CWE-347) in IASContextProvider, the runtime-context provider registered by default via bootstrap(app).IASContextProvider extracted the app_tid, sap_gtid and user_uuid claims from the IAS JWT in the Authorization header using an unverified decoder and wrote them into the request-scoped RuntimeContext without validating the token signature. A remote caller could submit a self-signed JWT naming a victim tenant/user; the forged identity then propagated to every consumer of the runtime context:OTel span attributes (sap.tenancy.tenant_id, user.id) via RuntimeContextSpanProcessorlog records via IdentityLogFilteraudit events (tenant_id, user_initiator_id) via AuditClienttenant routing via CBCClientThis completes an earlier remediation that fixed the same unverified pattern in StarletteIASTelemetryMiddleware but did not cover IASContextProvider.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap cloud sdk for python",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "< 0.63.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap cloud sdk for python",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00172,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109800",
+      "description": "SAP Web Dispatcher does not sufficiently validate certain inputs during processing, which could lead to memory corruption. An attacker authenticated as a non-administrative user could exploit this vulnerability by providing specially crafted input, causing the Web Dispatcher process to terminate without user interaction. As a result, the Web Dispatcher and all backend systems reachable through it become unavailable, leading to a high impact on availability. There is no impact on confidentiality or integrity of the application.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap web dispatcher",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "WEBDISP 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap web dispatcher",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00307,
+      "nvd": {
+        "cvss_v3_score": 7.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109803",
+      "description": "SAP NetWeaver Knowledge Management (XML Forms) does not sufficiently restrict the selection of XSL transformations processed by the affected functionality. Under certain conditions, an authenticated user with access to the affected functionality could cause an unauthorized XSL transformation to be processed, potentially leading to arbitrary code execution in the application context. Successful exploitation could impact the confidentiality, integrity, and availability of the application.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver knowledge management (xml forms)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KMC-CM 7.50"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver knowledge management (xml forms)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00409,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109804",
+      "description": "SAP Message Server does not properly handle certain malformed requests, which could be leveraged by an unauthenticated attacker to send specially crafted input. Successful exploitation could allow the attacker to retrieve sensitive information, resulting in a high impact on confidentiality. There is no impact on integrity and availability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver (sap message server)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver (sap message server)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00328,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-908"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109806",
+      "description": "SAP NetWeaver (Internet Graphics Service) does not sufficiently validate certain input values within incoming requests. An unauthenticated user could send a specially crafted request containing malformed image data, triggering an integer overflow that leads to repeated termination of the worker process. This results in a high impact on availability with no impact on integrity or confidentiality.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver (internet graphics service)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "BC-FES-IGS 7.20EXT"
+            },
+            {
+              "status": "affected",
+              "version": "7.20_EXT2"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.81"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver (internet graphics service)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00359,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-125"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-109807",
+      "description": "SAP NetWeaver (Internet Graphics Service) does not sufficiently validate certain input values within incoming requests. An unauthenticated user could send a specially crafted request causing the affected process to read beyond the declared values, resulting in repeated termination of the worker process. This results in a high impact on availability with no impact on integrity or confidentiality.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver (internet graphics service)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "BC-FES-IGS 7.20EXT"
+            },
+            {
+              "status": "affected",
+              "version": "7.20_EXT2"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.81"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver (internet graphics service)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00359,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120008",
+      "description": "SAP NetWeaver (Internet Graphics Service) does not sufficiently validate certain input values within incoming requests. An unauthenticated user could send a specially crafted request to trigger an out-of-bounds memory write in a worker process. Successful exploitation could result in memory corruption or repeated termination of the affected process, resulting in a high impact on availability and a low impact on integrity with no impact on confidentiality.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver (internet graphics service)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "BC-FES-IGS 7.20EXT"
+            },
+            {
+              "status": "affected",
+              "version": "7.20_EX2"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.81"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver (internet graphics service)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00254,
+      "nvd": {
+        "cvss_v3_score": 8.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120009",
+      "description": "SAP ABAP Developer Tools (AMDP Data Preview) does not perform sufficient validation and authorization checks within certain affected functionality. An attacker with high privileges could submit specially crafted input to inject and execute arbitrary code on the system. Successful exploitation could allow the attacker to fully compromise the system, resulting in a high impact on confidentiality, integrity and availability.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap abap developer tools (amdp data preview)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 740"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 750"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 751"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 752"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 753"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 754"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 755"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 756"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 757"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 758"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 816"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 920"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap abap developer tools (amdp data preview)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00476,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120010",
+      "description": "SAP NetWeaver Application Server (SAP Message Server) does not properly size memory allocations when handling certain HTTP requests. An unauthenticated attacker could send a specially crafted request to trigger a heap buffer overflow in affected functionality. Successful exploitation causes the component to abort and remain unavailable until it is restarted by the framework, resulting in a high impact on availability of the system. There is no impact on confidentiality and integrity of the application.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver application server (sap message server)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64NUC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EXT"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver application server (sap message server)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00396,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-131"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120012",
+      "description": "SAP Cloud SDK for AI (Node.js) could inadvertently include sensitive authentication credentials in error messages generated by certain internal operations under specific failure conditions. An attacker with low privileges and access to application logs or forwarded error output could obtain these credentials, but only after waiting for a suitable failure event triggered by a higher-privileged user and within the limited lifetime of the token, making exploitation complex. Successful exploitation could allow the attacker to reuse the disclosed credentials against the associated SAP service, resulting in a high impact on confidentiality, integrity and availability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap cloud sdk for ai(javascript)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "<= v2.17.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap cloud sdk for ai(javascript)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0028
+    },
+    {
+      "cve_id": "CVE-2026-120013",
+      "description": "The agent_memory module accepts a caller-supplied tenant parameter in create_client(tenant=...). Prior to version 0.50.0, the tenant parameter was not validated before being used to construct filesystem paths for secret resolution. A value containing path traversal sequences (for example, attacker-corp/../victim-corp) could cause the resolved path to escape the intended directory and access another tenant's secrets under:Plain Text/etc/secrets/appfnd/hana-agent-memory/<tenant>/Successful exploitation could allow unauthorized access to another tenant's mounted credentials, including OAuth client IDs and client secrets. This vulnerability could enable cross-tenant access to sensitive credentials.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap cloud sdk for python",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "< 0.50.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap cloud sdk for python",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00446
+    },
+    {
+      "cve_id": "CVE-2026-120014",
+      "description": "SAP HANA XSA Web Dispatcher does not perform sufficient request validation in certain administrative functionality. In the context of SAP HANA XSA Web Dispatcher, an unauthenticated attacker could trick a logged-on administrator into visiting a malicious link. Visiting the link could cause unintended actions in the administrator's session. Successful exploitation could lead to a temporary compromise of the SAP HANA XSA Web Dispatcher, resulting in a high impact on confidentiality, and partial impact on integrity, and availability.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap web dispatcher and internet communication manager",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "WEBDISP 7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "XS_ADVANCED_RUNTIME 1.00"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap web dispatcher and internet communication manager",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00116,
+      "nvd": {
+        "cvss_v3_score": 7.6,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120015",
+      "description": "SAP Host Agent does not sufficiently validate certain inputs. Under certain condition, an attacker with low privileges could abuse the affected functionality to influence an internal component into loading a malicious file under a privileged account. Successful exploitation could lead to persistent code execution, resulting in a high impact on confidentiality, integrity and availability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap host agent",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "SAPHOSTAGENT 7.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap host agent",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00369,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120017",
+      "description": "SAP NetWeaver AS ABAP and ABAP Platform does not perform sufficient verification of incoming authentication assertions under certain configurations. An unauthenticated attacker could submit specially crafted data to bypass authentication and impersonate arbitrary users, including privileged accounts. Successful exploitation could cause a full system compromise, with the impact potentially extending to connected components and systems beyond the affected system. This results in a high impact on confidentiality, integrity, and availability of the application.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver as abap and abap platform (saml2 service provider)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 702"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 731"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 740"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 750"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 751"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 752"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 753"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 754"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 755"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 756"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 757"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 758"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 816"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 920"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 921"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_BASIS 922"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver as abap and abap platform (saml2 service provider)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00259,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-347"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-23687",
       "description": "SAP NetWeaver Application Server ABAP and ABAP Platform allows an authenticated attacker with normal privileges to obtain a valid signed message and send modified signed XML documents to the verifier. This may result in acceptance of tampered identity information, unauthorized access to sensitive user data and potential disruption of normal system usage.",
       "cvss_score": 8.8,
@@ -14195,6 +15304,233 @@
       }
     },
     {
+      "cve_id": "CVE-2026-76964",
+      "description": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality. Successful exploitation could allow the attacker to execute arbitrary code and fully compromise the system, resulting in a high impact on confidentiality, integrity and availability of the system.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver as abap (internet communication manager)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver as abap (internet communication manager)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00431,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76965",
+      "description": "SAP NetWeaver Application Server ABAP and ABAP Platform does not perform necessary authorization checks for certain internal functionality. An attacker with low privileges could invoke affected functionality to execute arbitrary operating system commands on the underlying host. Successful exploitation could impact resources beyond the vulnerable component, resulting in a high impact on confidentiality, integrity and availability of the system.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver and abap platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64NUC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EXT"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver and abap platform",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00312,
+      "nvd": {
+        "cvss_v3_score": 9.9,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-749"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76966",
+      "description": "Due to improper RFC protocol validation in the SAP Kernel used by the Application Server ABAP of SAP NetWeaver and ABAP Platform, an unauthenticated attacker can send a crafted RFC request that exploits logical errors in memory management, leading to memory corruption. This could lead to a high impact on confidentiality and integrity with low impact on availability of the application.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver and abap platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64NUC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EXT"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "8.04"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver and abap platform",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00235,
+      "nvd": {
+        "cvss_v3_score": 8.9,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-294"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-76967",
       "description": "SAP NetWeaver Business Client does not perform sufficient validation when processing certain locally stored data during application startup. An attacker with low privileges on the local system could replace this data with specially crafted content. When the application is next launched, the crafted content is processed and could lead to arbitrary code execution in the context of the user. This results in a high impact on confidentiality, integrity and availability of the application.",
       "cvss_score": 7.8,
@@ -14287,6 +15623,277 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-522"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76970",
+      "description": "Due to a Memory Corruption vulnerability in Application Server ABAP for SAP NetWeaver and ABAP Platform, an unauthenticated attacker could send specially crafted requests to the application. If processed by the application, these requests could trigger a memory corruption condition in the parsing routine, which could cause the affected processes to crash and restart. By repeatedly sending such requests, the attacker could cause a sustained denial of service, leading to a high impact on availability. Confidentiality and integrity remain unaffected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver and abap platform",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64NUC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EXT"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EX2"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EX3"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "8.04"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.22"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver and abap platform",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00291,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-76973",
+      "description": "Due to a Memory Corruption vulnerability in Application Server ABAP of SAP NetWeaver and ABAP Platform, an unauthenticated attacker could send specially crafted network requests to the affected service. By triggering the vulnerability, the attacker could cause the server to crash and disrupt active connections, leading to a denial of service condition. Successful exploitation could result in a high impact to the availability while the confidentiality and integrity remains unaffected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver and abap platform (sap message server)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64NUC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EXT"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "8.04"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver and abap platform (sap message server)",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00291,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-190"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-89103",
+      "description": "SAP Gateway activates the default Access Control List with high privileges allowing categorization of external attacker as internal application server. As a result an unauthenticated attacker with network access to the SAP Gateway could exploit this weakness to potentially perform unauthorized actions within the application environment, resulting in a high impact on the confidentiality, integrity, and availability of the affected system.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "KRNL64NUC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.22EXT"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.53"
+            },
+            {
+              "status": "affected",
+              "version": "8.04"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.22"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap gateway",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00324,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -14524,6 +16131,108 @@
       }
     },
     {
+      "cve_id": "CVE-2026-89114",
+      "description": "SAP NetWeaver AS Java EDM Application does not perform an authentication check for certain web service requests. An unauthenticated attacker could send a specially crafted request to retrieve sensitive business information. This results in a high impact on confidentiality. There is no impact on integrity and availability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap netweaver as java edm application",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "CE-RA-EDM 7.50"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap netweaver as java edm application",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0031,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-89119",
+      "description": "SAP Web Dispatcher and SAP NetWeaver Application Server ABAP (Internet Communication Manager) do not perform sufficient request validation in certain administrative functionality. In the context of Application Server ABAP and SAP Web Dispatcher, an unauthenticated attacker could trick a logged-on administrator into visiting a malicious link. Visiting the link could cause unintended actions in the administrator's session. Successful exploitation could lead to a full compromise of the underlying operating system, resulting in a high impact on confidentiality, integrity, and availability.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap web dispatcher and internet communication manager",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "WEBDISP 7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "XS_ADVANCED_RUNTIME 1.00"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            },
+            {
+              "status": "affected",
+              "version": "9.21"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap web dispatcher and internet communication manager",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0015,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-89120",
       "description": "A regression caused by an API change in SAP ABAP Platform reintroduces a previously fixed authorization weakness. The session manager can be opened in single transaction mode, including from FLP. A low-privileged attacker could exploit this to bypass restrictions via specially crafted requests, resulting in high impact on integrity and low impact on confidentiality. There is no impact on availability.",
       "cvss_score": 7.1,
@@ -14563,6 +16272,91 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-1188"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-89126",
+      "description": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality. Successful exploitation could allow the attacker to execute arbitrary code and fully compromise the system, resulting in a high impact on confidentiality, integrity and availability of the system.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "sap_se",
+          "product": "sap web dispatcher",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "HDB 2.00"
+            },
+            {
+              "status": "affected",
+              "version": "KRNL64UC 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "WEBDISP 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "7.54"
+            },
+            {
+              "status": "affected",
+              "version": "7.77"
+            },
+            {
+              "status": "affected",
+              "version": "7.93"
+            },
+            {
+              "status": "affected",
+              "version": "9.16"
+            },
+            {
+              "status": "affected",
+              "version": "XS_ADVANCED_RUNTIME 1.00"
+            },
+            {
+              "status": "affected",
+              "version": "SAP_EXTENDED_APP_SERVICES 1"
+            },
+            {
+              "status": "affected",
+              "version": "KERNEL 7.53"
+            },
+            {
+              "status": "affected",
+              "version": "9.18"
+            },
+            {
+              "status": "affected",
+              "version": "9.20"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sap web dispatcher",
+        "vendor:sap_se"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00431,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
         ],
         "cpe_count": 0,
         "reference_count": 2
