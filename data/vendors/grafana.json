@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T21:17:11+00:00",
+  "generated_at": "2026-11-12T02:52:45+00:00",
   "vendor": "grafana",
-  "count": 53,
+  "count": 56,
   "items": [
     {
       "cve_id": "CVE-2022-23498",
@@ -1492,6 +1492,111 @@
       }
     },
     {
+      "cve_id": "CVE-2026-102589",
+      "description": "When independent Grafana instances share the same [rendering] renderer_token, an image renderer key issued by one instance is accepted by the others, so a user on one instance could act as the user with the same ID on another (origin validation error). This affects instances with the renderAuthJWT feature toggle enabled, the default from Grafana 13.0.0.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.3.11",
+              "status": "affected",
+              "version": "9.5.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.14",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.12",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.9",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.5",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.3.0",
+              "status": "affected",
+              "version": "13.3.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.3.11",
+              "status": "affected",
+              "version": "9.5.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.4.14",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.0.12",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.9",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.5",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.3.0",
+              "status": "affected",
+              "version": "13.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-103506",
       "description": "An authenticated user in Grafana can read SSO client secrets and modify instance-wide SSO settings without the required permissions (missing authorization). This affects Grafana OSS and Enterprise 13.2 installations with the experimental kubernetesSsoSettingsApi feature toggle enabled, which is disabled by default.",
       "cvss_score": 8.9,
@@ -1546,6 +1651,144 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-111000",
+      "description": "A user with the Editor role who can edit a folder can move it, through the folders resource API, under a folder they administer, and so gain Admin on the moved folder and its contents, including the right to change their permissions. The legacy folder move API refuses the same move (improper privilege management).",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.4.14",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "13.0.10",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "12.4.14",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "13.0.10",
+              "status": "affected",
+              "version": "13.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-111024",
+      "description": "A user with the Viewer or Editor role could bypass folder permissions on Git Sync managed resources through the repository files API: a Viewer could read files in folders they could not access, and an Editor could create, modify, move or delete provisioned dashboards and folders there (incorrect authorization).",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "13.0.12",
+              "status": "affected",
+              "version": "13.0.2",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.9",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.5",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.3.0",
+              "status": "affected",
+              "version": "13.3.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "13.0.12",
+              "status": "affected",
+              "version": "13.0.2",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.1.9",
+              "status": "affected",
+              "version": "13.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.2.5",
+              "status": "affected",
+              "version": "13.2.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "13.3.0",
+              "status": "affected",
+              "version": "13.3.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-14199",

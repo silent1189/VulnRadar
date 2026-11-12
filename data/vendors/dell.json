@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T21:17:11+00:00",
+  "generated_at": "2026-11-12T02:52:45+00:00",
   "vendor": "dell",
-  "count": 90,
+  "count": 91,
   "items": [
     {
       "cve_id": "CVE-2022-24415",
@@ -3843,6 +3843,38 @@
         "cpe_count": 2,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-111521",
+      "description": "Dell Display and Peripheral Manager (DDPM Windows), versions prior to 2.4.0.17, contain a Time-of-check Time-of-use (TOCTOU) Condition vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to Code execution.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "dell",
+          "product": "display and peripheral manager (ddpm windows)",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2.4.0.17",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:display and peripheral manager (ddpm windows)",
+        "vendor:dell"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-22769",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T21:17:11+00:00",
+  "generated_at": "2026-11-12T02:52:45+00:00",
   "vendor": "apache_software_foundation",
-  "count": 1407,
+  "count": 1409,
   "items": [
     {
       "cve_id": "CVE-2022-22719",
@@ -28958,6 +28958,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105153",
+      "description": "Improper Restriction of XML External Entity Reference in Apache Roller 4.0 through 6.1.6 allows an authenticated user with no weblog permissions to read files readable by the Roller process and cause the server to issue outbound HTTP requests to attacker-chosen destinations, by submitting a crafted Atom entry to the AtomPub endpoint. The entry body is parsed with a parser configuration that permits external parameter entities and external DTD subsets, and the parse happens before any per-weblog authorization check and before any check of whether the AtomPub feature is enabled, so the endpoint is reachable by any authenticated account on a default installation. Users are recommended to upgrade to Apache Roller 6.1.7 or later, which parses AtomPub entries with a hardened XML configuration and rejects AtomPub requests while the feature is disabled.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache roller",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0",
+              "lessThanOrEqual": "6.1.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache roller",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-105869",
       "description": "Apache Pulsar's MultiRolesTokenAuthorizationProvider authorizes a client with all roles listed in a claim of its JSON Web Token (JWT). The provider is intended for use with token authentication, which verifies the token before authorization. The provider did not verify the token itself: it parsed the token's claims with the signature removed and trusted that authentication had already checked it.\n\nWhen authentication and authorization are enabled with a non-empty anonymousUserRole setting, some HTTP requests whose credentials fail authentication are not rejected, but are handled as requests of the anonymous user role. For the broker's HTTP endpoints, such as the admin REST API, this fallback applies to requests that do not name an authentication method and requires strictAuthMethod to be false (the default) where that setting is available. For the WebSocket API, failed credentials can also fall back to the anonymous user role; this path does not enforce strictAuthMethod. The authentication data kept for such a request still contained the request's Authorization header. MultiRolesTokenAuthorizationProvider then read the bearer token from that header without verifying its signature and authorized the request with the roles in the token's role claim.\n\nAs a result, in deployments that use MultiRolesTokenAuthorizationProvider together with a non-empty anonymousUserRole and that permit this fallback, an unauthenticated client can send an HTTP request, for example to the admin REST API or the WebSocket API, with a forged or unsigned token that lists arbitrary roles, and be authorized with those roles. The impact can include super-user access when the token lists a role configured in superUserRoles, allowing the client to read and change tenants, namespaces, topics, permissions and broker configuration. No valid credentials are required.\n\nDeployments are not affected if they use the default authorization provider (PulsarAuthorizationProvider) or another authorization provider, or if anonymousUserRole is not set (the default). Requests that authenticate successfully with a valid token are not affected, because the token that MultiRolesTokenAuthorizationProvider reads is the token that authentication verified. Connections that use the Pulsar binary protocol are not affected by this issue, because the broker does not keep client authentication data for connections that it assigns to the anonymous user role.\n\nIn fixed versions, MultiRolesTokenAuthorizationProvider obtains roles only from tokens that the configured token authentication provider has verified, using its configured keys and validation settings. Broker HTTP requests that are assigned to the anonymous user role are authorized only as that role, and invalid tokens cannot supply additional roles to WebSocket requests. The broker fails to start if MultiRolesTokenAuthorizationProvider is configured with authorization enabled but without a token authentication provider.\n\nThis issue affects Apache Pulsar versions from 2.8.1 before 4.0.14 and from 4.1.0 before 4.2.5.\n\n- 4.0.x version users should upgrade to at least 4.0.14.\n- 4.1.x and 4.2.x version users should upgrade to at least 4.2.5.\n\nUsers operating versions prior to those listed above should upgrade to the aforementioned patched versions or newer versions.\n\nThe currently supported Apache Pulsar release lines are 4.0.x and 5.0.x. The supported versions schedule is available at https://pulsar.apache.org/contribute/release-policy/.\n\nUsers who cannot upgrade immediately can remove the anonymousUserRole setting from the broker and WebSocket service configurations, or restrict network access to the HTTP endpoints of these services to trusted clients.",
       "cvss_score": 9.2,
@@ -31726,6 +31758,38 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-118411",
+      "description": "Cross-Site Request Forgery (CSRF) in Apache Roller 5.0.1 through 6.1.6 allows an unauthenticated attacker to create an administrator account if a logged-in Roller administrator opens a link that the attacker controls. The request-token check applied only to POST requests, and administrative actions also accepted GET requests. Users are recommended to upgrade to Apache Roller 6.1.7 or later, which requires POST and a valid token for actions that change data.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache roller",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.1",
+              "lessThanOrEqual": "6.1.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache roller",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-118636",

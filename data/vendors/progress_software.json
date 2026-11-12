@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T21:17:11+00:00",
+  "generated_at": "2026-11-12T02:52:45+00:00",
   "vendor": "progress_software",
-  "count": 99,
+  "count": 109,
   "items": [
     {
       "cve_id": "CVE-2024-0219",
@@ -1640,6 +1640,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-106137",
+      "description": "In affected versions of Progress\u00ae Telerik\u00ae UI for ASP.NET MVC `2012.2.710` through `2026.3.811`, ClassFactory updates a shared class dictionary without exclusive write protection and emits non-collectible dynamic assemblies that remain loaded for the AppDomain's lifetime. The dictionary lookup and insertion are not atomic, and case variations in aggregate descriptors can produce distinct retained types even though member resolution is case-insensitive. An unauthenticated remote attacker can exploit this if the application exposes an aggregation endpoint that is reachable without authentication, by submitting concurrent or repeated crafted requests. These requests may corrupt dictionary state or increase CPU and memory use, potentially degrading availability. The issue is fixed in version `2026.3.1015`.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for asp.net mvc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2012.2.710",
+              "lessThan": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for asp.net mvc",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-106145",
       "description": "In Progress\u00ae Telerik\u00ae Report Server prior to version 12.2.26.1007, incorrect privilege assignment in the service-agent SignalR hub allows an authenticated user, including a low-privilege or guest account with a valid bearer token, to register as a trusted service agent. On the next server settings-synchronization event, the rogue agent receives storage settings and encryption private keys. This privilege escalation enables disclosure of protected secrets, including stored data-source credentials and connection strings, and allows agent impersonation and interference with task dispatch.",
       "cvss_score": 7.1,
@@ -1683,6 +1715,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-106152",
+      "description": "In Progress\u00ae Telerik\u00ae Report Server prior to version 12.3.26.1110, an external control of a system configuration setting vulnerability allows an unauthenticated remote attacker to influence the server address used by Report Server when generating links and notifications. With user interaction, this can lead to disclosure of sensitive information and account takeover.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik report server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "12.3.26.1110",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik report server",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-106155",
       "description": "In Progress\u00ae Telerik\u00ae Report Server prior to version 12.2.26.1007, a stored cross-site scripting vulnerability in the shared reporting engine allows an authenticated report author to embed javascript: or vbscript: URLs in report navigation actions or HTML text box links. When another user views the malicious report and the embedded navigation is triggered, attacker-controlled script can execute in the web report viewer's origin. In a multi-user Report Server deployment, this can enable privilege escalation by performing actions in a higher-privilege user's authenticated session, including an administrator's session.",
       "cvss_score": 8.9,
@@ -1724,6 +1788,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-106156",
+      "description": "In Progress\u00ae Telerik\u00ae UI for ASP.NET Core versions `2015.1.318` through `2026.3.811`, repeated server-side aggregation requests, with or without grouping, cause dynamic assemblies and load contexts to be retained, resulting in accumulating process memory consumption. An unauthenticated remote attacker can exploit this if the application exposes an aggregation endpoint that is reachable without authentication. Repeated requests can cause memory growth that may exhaust available resources and affect application availability. Disabling grouping in the client-side interface does not prevent direct requests containing these descriptors. The issue is fixed in version `2026.3.1015`.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for asp.net core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2015.1.318",
+              "lessThan": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for asp.net core",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-106164",
@@ -2253,6 +2349,250 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-124687",
+      "description": "In Progress\u00ae Kendo\u00ae UI for jQuery versions from 2022.2.621 prior to\u00a02026.4.1111\u00a0the DropDownButton and SplitButton allow markup injection through the `id` and `target` attributes. An attacker who can influence these item values can break out of the attributes and inject markup, including event handlers. The issue is fixed in\u00a02026.4.1111.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2022.2.621",
+              "lessThan": "2026.4.1111",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124688",
+      "description": "In Progress\u00ae Kendo\u00ae UI for jQuery prior to\u00a02026.4.1111 the TabStrip, PanelBar, and Menu widgets support mapping a dataSource field to `spriteCssClass`. If an attacker can control the mapped data, they can break out of the attribute and inject markup, including event-handler attributes. The resulting JavaScript executes in the application's origin when a victim loads a page that renders the affected widget, allowing access to data and actions available in the victim's authenticated session.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2012.1.322",
+              "lessThan": "2026.4.1111",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124689",
+      "description": "In Progress Kendo UI for jQuery versions 2026.3.1014 up to, but not including, 2026.4.1110, ActionSheet does not encode title, subtitle, and header button label values before rendering them. An attacker who can influence these values can inject markup that executes as JavaScript when a user opens the ActionSheet. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The report identifies version 2026.3.1014; the first affected release has not been established.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1014",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2026.4.1110"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124690",
+      "description": "In Progress Kendo UI for jQuery, sanitizeSvgContent() parses custom icon markup into a live DOM before filtering it. An attacker who can influence custom icon content can cause JavaScript to execute during icon creation, before an unsafe element is removed. The issue was reported in version 2026.3.1015; the first affected release has not been established. The issue is fixed in version 2026.4.1110.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1015",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2026.4.1110"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124692",
+      "description": "In Progress Kendo UI for jQuery versions 2026.3.1015 up to, but not including, 2026.4.1110, the Grid and TreeList column-reorder drag clue reparses header text as HTML. An attacker who can influence a column field or title used by an affected application can cause JavaScript to execute when a user drags a column header while column reordering is enabled. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected release has not been established.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1015",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2026.4.1110"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124693",
+      "description": "In Progress Kendo UI for jQuery versions 2026.3.1015 up to, but not including, 2026.4.1110, PivotGrid and PivotConfigurator axis field names are passed to a chip template without appropriate encoding. An attacker who can influence an axis field name can cause JavaScript to execute when a user views the rendered chip. The field name can be interpreted as HTML in both attribute and element contexts. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected release has not been established.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1015",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2026.4.1110"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124694",
+      "description": "In Progress Kendo UI for jQuery versions 2026.3.1015 up to, but not including, 2026.4.1110, PropertyGrid does not encode bound property values and items[].description in its default configuration. An attacker who can influence either value can cause JavaScript to execute when a user views the grid. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected release has not been established.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1015",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            },
+            {
+              "status": "unaffected",
+              "version": "2026.4.1110"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13181",
