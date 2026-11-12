@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T02:52:45+00:00",
+  "generated_at": "2026-11-12T10:57:01+00:00",
   "vendor": "_other",
-  "count": 3233,
+  "count": 3241,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -2005,6 +2005,92 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121862",
+      "description": "The Knowledge Building WordPress plugin before 0.7.3 does not sanitise and escape comments submitted through its reply feature, and publishes them without moderation, allowing unauthenticated users to perform Stored Cross-Site Scripting attacks against any visitor of the affected posts, including administrators.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "unknown",
+          "product": "knowledge building",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "0",
+              "lessThan": "0.7.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:knowledge building",
+        "vendor:unknown"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121863",
+      "description": "The Knowledge Building WordPress plugin before 0.7.3 does not escape several user-supplied values before echoing them back in the response of an AJAX action available to unauthenticated users, and serves that response as HTML, leading to a Reflected Cross-Site Scripting.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "unknown",
+          "product": "knowledge building",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "0",
+              "lessThan": "0.7.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:knowledge building",
+        "vendor:unknown"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
         ],
         "cpe_count": 0,
         "reference_count": 1
@@ -18114,7 +18200,18 @@
         "vendor:git"
       ],
       "active_threat": false,
-      "probability_score": 0.00399
+      "probability_score": 0.00399,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-122"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2022-23614",
@@ -38770,7 +38867,18 @@
         "vendor:mailcow"
       ],
       "active_threat": false,
-      "probability_score": 0.00824
+      "probability_score": 0.00824,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1336"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
     },
     {
       "cve_id": "CVE-2026-40871",
@@ -60490,6 +60598,166 @@
       }
     },
     {
+      "cve_id": "CVE-2026-121006",
+      "description": "HTTP::Body versions before 1.24_02 for Perl parse the trailer in quadratic time.\n\nEverything after the last chunk in the same call to add() is parsed with HTTP::Headers, which takes time quadratic in the number of fields of one name.  For example, it takes several seconds to parse 16 KiB of \"a:\" lines.\n\nA remote attackercan exhause the CPU with a single request.\n\nHTTP::Body version 1.25 limits the size and number of lines in the trailer.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "1.24_02",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00417,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121007",
+      "description": "SQL::Abstract versions from 1.90_01 before 2.000001_04 for Perl allow SQL injection via the where values of a nested statement in an identifier position.\n\nA nested statement such as { -select => ... } in a position where plain scalars are identifiers treats its own plain scalars as identifiers too. These positions are the select list, ORDER BY, GROUP BY, RETURNING, and with the ExtraClauses plugin FROM (-as) and JOIN (to). The values of the statement's where, having and set clauses, and the rows of a -values, go into the SQL text instead of the bind list, unescaped unless quote_char is set. Subselects in a WHERE condition are not affected.\n\nAn application that passes untrusted input as a where value of such a nested statement, expecting it to be bound, allows SQL injection.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.000001_04",
+              "status": "affected",
+              "version": "1.90_01",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00193,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121009",
+      "description": "SQL::Abstract versions from 1.90_01 before 2.000001_04 for Perl skip the injection_guard check for function names given with -func.\n\ninjection_guard is documented to apply to every function name, but only the { -name => ... } shorthand goes through it. The explicit { -func => [ $name, ... ] } form puts $name into the SQL unchecked.\n\nAn application that relies on injection_guard to reject an untrusted function name passed with -func allows SQL injection.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.000001_04",
+              "status": "affected",
+              "version": "1.90_01",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00193,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-121265",
+      "description": "SQL::Abstract versions before 2.000003 for Perl allow SQL injection via an arrayref column value in insert and update.\n\nWith the array_datatypes option off, which is the default, insert(), update() and values() treat an arrayref column value as literal SQL. Its first element goes into the SQL text unescaped and the rest become bind values. A JSON array, or a repeated form field decoded as an arrayref, is such a value.\n\nAn application that passes request data as column values to insert or update with the default options allows SQL injection.\n\nReleases before 2.000003 also treat an arrayref in generate() as literal SQL, including through AUTOLOAD when allow_autoload is on, whatever array_datatypes is set to.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThan": "2.000003",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00572,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-123655",
       "description": "A flaw was found in Moodle. Insufficient access control checks on H5P content files allow unauthenticated remote attackers to view restricted materials, including content stored in the system context and files belonging to hidden or unavailable course modules. This issue results in unauthorized information disclosure of protected content.",
       "cvss_score": 7.5,
@@ -60548,6 +60816,46 @@
       }
     },
     {
+      "cve_id": "CVE-2026-123776",
+      "description": "RRD::CGI::Image versions through 0.01 for Perl pass CGI query parameters containting \"tz\" to tzset(), , so a FIFO or device path blocks the CGI process.\n\nThe normalize_params method sends any query key matching /tz/i to tz(), which sets $ENV{TZ} to that value, with no validation. It then calls tzset(). glibc treats a TZ value starting with / or : as a file path and opens it, so a value naming a FIFO or a blocking device stalls the process inside tzset().",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "",
+          "product": "",
+          "versions": [
+            {
+              "lessThanOrEqual": "0.01",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [],
+      "active_threat": false,
+      "probability_score": 0.00633,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
       "cve_id": "CVE-2026-125637",
       "description": "A flaw was found in the Konflux UI proxy. Hostname values defined in the KonfluxUI custom resource are inserted directly into proxy configuration files without adequate validation or sanitization. An authenticated user with permissions to modify the custom resource can inject malicious configuration directives to bypass authentication and authorization controls, potentially exposing internal backend services. In addition, providing malformed input can cause the configuration generator to fail, resulting in a denial of service (DoS) by preventing the proxy from starting.",
       "cvss_score": 7.2,
@@ -60574,7 +60882,18 @@
       "priority_label": "",
       "matched_terms": [],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-13048",
@@ -60707,7 +61026,7 @@
           "CWE-190"
         ],
         "cpe_count": 1,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -61820,7 +62139,7 @@
           "CWE-190"
         ],
         "cpe_count": 1,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -61940,7 +62259,7 @@
           "CWE-409"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -63464,7 +63783,7 @@
           "CWE-680"
         ],
         "cpe_count": 1,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -68882,7 +69201,7 @@
         "cwe_ids": [
           "CWE-772"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -68925,7 +69244,7 @@
         "cwe_ids": [
           "CWE-918"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -68968,7 +69287,7 @@
         "cwe_ids": [
           "CWE-312"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 1
       }
     },
@@ -82710,7 +83029,7 @@
           "CWE-862"
         ],
         "cpe_count": 0,
-        "reference_count": 3
+        "reference_count": 4
       }
     },
     {
@@ -83148,7 +83467,19 @@
         "vendor:intermesh"
       ],
       "active_threat": false,
-      "probability_score": 0.00273
+      "probability_score": 0.00273,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-80"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2026-63011",
@@ -83186,7 +83517,20 @@
         "vendor:intermesh"
       ],
       "active_threat": false,
-      "probability_score": 0.00348
+      "probability_score": 0.00348,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94",
+          "CWE-95",
+          "CWE-184"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2023-47510",
@@ -129077,7 +129421,18 @@
         "vendor:docker"
       ],
       "active_threat": false,
-      "probability_score": 0.00307
+      "probability_score": 0.00307,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-693"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-115539",
@@ -129145,7 +129500,18 @@
         "vendor:docker"
       ],
       "active_threat": false,
-      "probability_score": 0.00213
+      "probability_score": 0.00213,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-121614",
@@ -150278,7 +150644,7 @@
           "CWE-193"
         ],
         "cpe_count": 6,
-        "reference_count": 87
+        "reference_count": 88
       }
     },
     {
@@ -151037,7 +151403,7 @@
           "CWE-191"
         ],
         "cpe_count": 30,
-        "reference_count": 46
+        "reference_count": 47
       }
     },
     {
@@ -152537,6 +152903,104 @@
         ],
         "cpe_count": 0,
         "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-106554",
+      "description": "One CBOR-parsing issue in jackson-dataformats-binary's CBOR module: an unbounded run of CBOR tags drives quadratic-time TagList growth (CPU/GC-exhaustion DoS, PoC-proven).\n\n\n\nPoC executed against com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.18.2; present in current 2.x and 3.x (tools.jackson.dataformat.cbor) HEAD. Distinct from the Avro and Smile/Protobuf advisories for this repo.\n\n\n\nQuadratic CPU/GC DoS from an unbounded chain of CBOR tags (PoC-proven). File: cbor/src/main/java/.../cbor/CBORParser.java (tag handling -> TagList).\n\n\n\nCBOR permits a data item to be preceded by any number of semantic tags. The CBOR parser accumulates them in a TagList whose backing array grows by a fixed increment (+8), not by doubling, and re-scans/copies on each growth. An attacker sends a value preceded by a long run of tag bytes; the fixed-increment growth makes accumulating N tags O(N^2) in time (plus GC pressure), with no cap on the number of stacked tags.\n\n\n\nPoC (executed, JDK 17): feeding a CBOR stream consisting of a long run of tag bytes (e.g. tag 0xC0+) before a trivial value forces quadratic CPU/GC; parse time grows super-linearly with the tag count, pinning a request thread with no configurable limit.\n\n\n\nImpact. Algorithmic-complexity denial of service (CWE-407): a modest input of stacked tags consumes quadratic CPU/GC, pinning a request thread; concurrent requests exhaust the pool.\n\n\n\nFix. Grow TagList by doubling and/or cap the number of stacked tags (StreamReadConstraints-style).",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-dataformat-cbor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.15.0",
+              "lessThan": "2.18.12",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.18.12",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.19.0",
+              "lessThan": "2.21.8",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.21.8",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "2.22.0",
+              "lessThan": "2.22.4",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.22.4",
+              "versionType": "maven"
+            }
+          ]
+        },
+        {
+          "vendor": "fasterxml",
+          "product": "jackson-dataformat-cbor",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0",
+              "lessThan": "3.1.8",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.1.8",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThan": "3.2.4",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "3.2.4",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jackson-dataformat-cbor",
+        "vendor:fasterxml"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0038,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
@@ -166224,7 +166688,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.0017
+      "probability_score": 0.0017,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-427"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126609",
@@ -166256,7 +166731,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00172
+      "probability_score": 0.00172,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126610",
@@ -166288,7 +166774,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00167
+      "probability_score": 0.00167,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126611",
@@ -166320,7 +166817,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00083
+      "probability_score": 0.00083,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126612",
@@ -166352,7 +166860,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00156
+      "probability_score": 0.00156,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-59"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-126613",
@@ -166384,7 +166903,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00472
+      "probability_score": 0.00472,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126617",
@@ -166416,7 +166946,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00411
+      "probability_score": 0.00411,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126621",
@@ -166448,7 +166989,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00172
+      "probability_score": 0.00172,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-126622",
@@ -166478,7 +167030,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00126
+      "probability_score": 0.00126,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-126623",
@@ -166510,7 +167073,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00589
+      "probability_score": 0.00589,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-126624",
@@ -166540,7 +167114,18 @@
         "vendor:progressive robot ltd"
       ],
       "active_threat": false,
-      "probability_score": 0.00126
+      "probability_score": 0.00126,
+      "nvd": {
+        "cvss_v3_score": 7.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-283"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-102334",
@@ -171857,7 +172442,18 @@
         "vendor:zoom communications"
       ],
       "active_threat": false,
-      "probability_score": 0.00407
+      "probability_score": 0.00407,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-108187",
@@ -171889,7 +172485,18 @@
         "vendor:zoom communications"
       ],
       "active_threat": false,
-      "probability_score": 0.00191
+      "probability_score": 0.00191,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-30903",
@@ -173713,7 +174320,7 @@
           "CWE-78"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -173764,7 +174371,7 @@
           "CWE-288"
         ],
         "cpe_count": 0,
-        "reference_count": 2
+        "reference_count": 3
       }
     },
     {
@@ -173814,8 +174421,8 @@
         "cwe_ids": [
           "CWE-669"
         ],
-        "cpe_count": 0,
-        "reference_count": 2
+        "cpe_count": 1,
+        "reference_count": 4
       }
     },
     {
@@ -176257,7 +176864,19 @@
         "vendor:pgedge"
       ],
       "active_threat": false,
-      "probability_score": 0.00446
+      "probability_score": 0.00446,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-405",
+          "CWE-770"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
     },
     {
       "cve_id": "CVE-2026-125843",
@@ -176289,7 +176908,18 @@
         "vendor:webriti"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-352"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-126187",
@@ -176331,7 +176961,18 @@
         "vendor:react"
       ],
       "active_threat": false,
-      "probability_score": 0.01763
+      "probability_score": 0.01763,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 15
+      }
     },
     {
       "cve_id": "CVE-2026-126801",
@@ -176363,7 +177004,18 @@
         "vendor:rabithua"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-126803",
@@ -176395,7 +177047,18 @@
         "vendor:rabithua"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-269"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-12225",
@@ -178370,7 +179033,18 @@
         "vendor:beckhoff automation"
       ],
       "active_threat": false,
-      "probability_score": 0.00144
+      "probability_score": 0.00144,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-782"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-18768",
@@ -178459,7 +179133,18 @@
         "vendor:beckhoff automation"
       ],
       "active_threat": false,
-      "probability_score": 0.00144
+      "probability_score": 0.00144,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-782"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-18769",
@@ -178548,7 +179233,18 @@
         "vendor:beckhoff automation"
       ],
       "active_threat": false,
-      "probability_score": 0.00144
+      "probability_score": 0.00144,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-782"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-19624",
@@ -192747,7 +193443,18 @@
         "vendor:winshining"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-476"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-66098",
@@ -193148,7 +193855,18 @@
         "vendor:vlang"
       ],
       "active_threat": false,
-      "probability_score": 0.00229
+      "probability_score": 0.00229,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-68955",
