@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T00:09:50+00:00",
+  "generated_at": "2026-11-13T06:34:18+00:00",
   "vendor": "_other",
-  "count": 3241,
+  "count": 3249,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -72013,6 +72013,63 @@
       }
     },
     {
+      "cve_id": "CVE-2026-107484",
+      "description": "An input and authorization validation vulnerability in Gaia Portal backend handlers could allow an authenticated, non-administrative user to perform privileged operations that should be restricted to administrators.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "checkpoint",
+          "product": "quantum security gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "R82.10 with Jumbo Hotfix Take 50 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R82 with Jumbo Hotfix Take 130 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R81.20 with Jumbo Hotfix Take 173 or below"
+            }
+          ]
+        },
+        {
+          "vendor": "checkpoint",
+          "product": "quantum security management",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "R82.10 with Jumbo Hotfix Take 50 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R82 with Jumbo Hotfix Take 130 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R81.20 with Jumbo Hotfix Take 173 or below"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quantum security gateway",
+        "product:quantum security management",
+        "vendor:checkpoint"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-10847",
       "description": "A local privilege escalation vulnerability exists in Check Point Identity Agent Full for Windows OS. An authenticated local user may be able to execute arbitrary code with SYSTEM privileges due to improper handling of executable resolution during the log collection process. Successful exploitation could allow an attacker to gain elevated privileges on the affected Windows endpoint.",
       "cvss_score": 7.8,
@@ -72052,6 +72109,71 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-123039",
+      "description": "The Gaia OS DynamicCLI daemon runs as root and listens on a world-writable local socket (/tmp/dynamic_socket) without authenticating connecting processes. An authenticated local user can send a command to the socket and have it executed as root.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "checkpoint",
+          "product": "quantum security gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "R82.10 with Jumbo Hotfix Take 50 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R82.20 with Jumbo Hotfix Take 10 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R82 with Jumbo Hotfix Take 130 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R81.20 with Jumbo Hotfix Take 173 or below"
+            }
+          ]
+        },
+        {
+          "vendor": "checkpoint",
+          "product": "quantum security management",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "R82.10 with Jumbo Hotfix Take 50 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R82.20 with Jumbo Hotfix Take 10 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R82 with Jumbo Hotfix Take 130 or below"
+            },
+            {
+              "status": "affected",
+              "version": "R81.20 with Jumbo Hotfix Take 173 or below"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:quantum security gateway",
+        "product:quantum security management",
+        "vendor:checkpoint"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -129557,6 +129679,44 @@
       }
     },
     {
+      "cve_id": "CVE-2026-126329",
+      "description": "Docker Sandboxes reuses existing state and configuration directories without verifying their ownership. If sbx or sandboxd is run as root with HOME or, on Linux, XDG_STATE_HOME pointing to an attacker-controlled location, a local unprivileged user can substitute control-plane sockets and configuration trusted by the root process, potentially executing commands as root. Exploitation requires a privileged invocation with an attacker-influenced environment. The issue affects Linux and macOS and is fixed in version 0.53.0.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "docker",
+          "product": "docker sandboxes",
+          "versions": [
+            {
+              "version": "0.7.0",
+              "status": "affected",
+              "lessThan": "0.53.0",
+              "versionType": "semver"
+            },
+            {
+              "version": "0.53.0",
+              "status": "unaffected",
+              "lessThan": "*",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:docker sandboxes",
+        "vendor:docker"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-17106",
       "description": "The tar extraction routines in moby/go-archive (Unpack, UnpackLayer, Untar/UntarUncompressed, and the ApplyLayer helpers) do not confine filesystem operations to the destination directory. The extractor decides where each archive entry lands using lexical string checks and then performs the filesystem operation on a path that is resolved by the OS, so links introduced by the archive can be followed out of the destination directory. An attacker who controls the contents of an archive can create or overwrite files at arbitrary paths writable by the extracting process.",
       "cvss_score": 7.1,
@@ -176219,6 +176379,769 @@
       }
     },
     {
+      "cve_id": "CVE-2026-120868",
+      "description": "Memory overflow in Packet Processing can lead to unpredictable or erroneous behavior or Denial of Service in NetScaler ADC and NetScaler Gateway.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.57",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.39",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.58 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-37.293 FIPs and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.57",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.39",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120869",
+      "description": "An unauthenticated attacker can bypass authentication controls to access restricted resources on the Citrix NetScaler Console appliance",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "console",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-74.34",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:console",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-88771",
+      "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to\u00a0an unauthenticated attacker to execute arbitrary commands.",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": true,
+      "probability_score": 0.81894,
+      "kev": {
+        "cveID": "CVE-2026-88771",
+        "vendorProject": "Citrix",
+        "product": "NetScaler",
+        "vulnerabilityName": "Citrix NetScaler Improper Input Validation Vulnerability",
+        "dateAdded": "2026-09-27",
+        "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-09-30",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 7,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88772",
+      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23\u00a0leading to Remote Code Execution or Denial of Service",
+      "cvss_score": 9.5,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": true,
+      "probability_score": 0.76566,
+      "kev": {
+        "cveID": "CVE-2026-88772",
+        "vendorProject": "Citrix",
+        "product": "NetScaler",
+        "vulnerabilityName": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+        "dateAdded": "2026-09-27",
+        "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-09-30",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 7,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88773",
+      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-37.279 and NDcPP",
+              "versionType": "Patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "Patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": 0.03081,
+      "nvd": {
+        "cvss_v3_score": 10.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-444"
+        ],
+        "cpe_count": 7,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88774",
+      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to a feature policy bypass due to improper HTTP URL based expression usage.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00395,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
+        "cpe_count": 7,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88775",
+      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading\u00a0Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00719,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-120"
+        ],
+        "cpe_count": 7,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88776",
+      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23\u00a0\u00a0leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00834,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 7,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88777",
+      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23\u00a0\u00a0leading to unpredictable or erroneous behavior or Denial of Service",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00719,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 7,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-88778",
+      "description": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:L/SI:L/SA:L",
+      "affected": [
+        {
+          "vendor": "citrix netscaler",
+          "product": "adc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37 FIPS",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1.37.279 FIPS and NDcPP",
+              "versionType": "Patch"
+            }
+          ]
+        },
+        {
+          "vendor": "citrix netscaler",
+          "product": "gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "14.1-73.37",
+              "versionType": "Patch"
+            },
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "13.1-64.23",
+              "versionType": "Patch"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:adc",
+        "product:gateway",
+        "vendor:citrix netscaler"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00694,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-342"
+        ],
+        "cpe_count": 7,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-121565",
       "description": "Tanium addressed an improper certificate validation vulnerability in multiple products. Products have been updated to distrust several intermediate CA certificates associated with compromised private keys.",
       "cvss_score": 7.4,
@@ -176877,6 +177800,66 @@
         "cpe_count": 0,
         "reference_count": 4
       }
+    },
+    {
+      "cve_id": "CVE-2026-126196",
+      "description": "pgEdge Postgres MCP Server enables SQL queries against PostgreSQL databases through Model Context Protocol compatible clients. Prior to 1.1.0, query_database on a read_only connection could send unrecognized statements through pgx Exec without bind parameters, selecting PostgreSQL's simple query protocol and allowing multiple semicolon-separated statements in one request. A caller could combine transaction or session state changes with database writes, and pooled session state could leave later calls writable, when the connecting role held write privileges. The flaw affected deployments relying on read_only as a safety boundary, could compromise integrity and availability, and did not add confidentiality impact beyond the reads already permitted by the connection. This issue is fixed in 1.1.0.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "pgedge",
+          "product": "pgedge-postgres-mcp",
+          "versions": [
+            {
+              "version": "< 1.1.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:pgedge-postgres-mcp",
+        "vendor:pgedge"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-126197",
+      "description": "pgEdge Postgres MCP Server enables SQL queries against PostgreSQL databases through Model Context Protocol compatible clients. Prior to 1.1.0, custom pl-do tools interpolated JSON arguments into a PostgreSQL DO block delimited by fixed dollar-quote tags. An argument containing $mcp_custom_tool$ could terminate the block and inject arbitrary SQL statements, while $mcp_args$ could inject procedural code into a plpgsql block. Because the statement used the simple query protocol, injected text could include additional statements and transaction control, bypassing read_only and accessing data or modifying resources available to the connecting role. The issue requires at least one pl-do custom tool; sql and pl-func tools pass arguments as bind parameters and are not affected by this injection mechanism. This issue is fixed in 1.1.0.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "pgedge",
+          "product": "pgedge-postgres-mcp",
+          "versions": [
+            {
+              "version": "< 1.1.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:pgedge-postgres-mcp",
+        "vendor:pgedge"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-125843",
@@ -189523,6 +190506,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-47832",
+      "description": "The vulnerability lies in the way application credentials are handled within the BOSH deployment.\nbosh-openstack-cpi-release: all versions from v55 to v55.0.4 (inclusive)",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "cloudfoundry foundation",
+          "product": "bosh-openstack-cpi-release",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "v55",
+              "lessThanOrEqual": "v55.0.4",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bosh-openstack-cpi-release",
+        "vendor:cloudfoundry foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00226
+    },
+    {
       "cve_id": "CVE-2026-47846",
       "description": "Bitnami Cassandra container images are affected by a retained default superuser vulnerability. When a custom administrator account is configured via the CASSANDRA_USER environment variable, the container initialization script creates the new superuser account but fails to drop the built-in cassandra account in certain scenarios. This leaves the default cassandra:cassandra superuser active as an unintended access path.\n\nAffected versions \u2014 Container image: 4.0.x prior to 4.0.20-photon-5-r7; 4.1.x prior to 4.1.11-photon-5-r7; 5.0.x prior to 5.0.8-photon-5-r4 / 5.0.8-debian-12-r3.",
       "cvss_score": 9.8,
@@ -196364,668 +197379,6 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88771",
-      "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to\u00a0an unauthenticated attacker to execute arbitrary commands.",
-      "cvss_score": 9.5,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": true,
-      "is_critical": true,
-      "priority_label": "CRITICAL (Active Exploit in Stack)",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": true,
-      "probability_score": 0.81894,
-      "kev": {
-        "cveID": "CVE-2026-88771",
-        "vendorProject": "Citrix",
-        "product": "NetScaler",
-        "vulnerabilityName": "Citrix NetScaler Improper Input Validation Vulnerability",
-        "dateAdded": "2026-09-27",
-        "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
-        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "dueDate": "2026-09-30",
-        "knownRansomwareCampaignUse": "Unknown"
-      },
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 7,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88772",
-      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23\u00a0leading to Remote Code Execution or Denial of Service",
-      "cvss_score": 9.5,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": true,
-      "is_critical": true,
-      "priority_label": "CRITICAL (Active Exploit in Stack)",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": true,
-      "probability_score": 0.76566,
-      "kev": {
-        "cveID": "CVE-2026-88772",
-        "vendorProject": "Citrix",
-        "product": "NetScaler",
-        "vulnerabilityName": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-        "dateAdded": "2026-09-27",
-        "shortDescription": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of service",
-        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-        "dueDate": "2026-09-30",
-        "knownRansomwareCampaignUse": "Unknown"
-      },
-      "nvd": {
-        "cvss_v3_score": 8.1,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-119"
-        ],
-        "cpe_count": 7,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88773",
-      "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
-      "cvss_score": 9.3,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-37.279 and NDcPP",
-              "versionType": "Patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "Patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": true,
-      "is_critical": true,
-      "priority_label": "CRITICAL (Active Exploit in Stack)",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": false,
-      "probability_score": 0.03081,
-      "nvd": {
-        "cvss_v3_score": 10.0,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-444"
-        ],
-        "cpe_count": 7,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88774",
-      "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to a feature policy bypass due to improper HTTP URL based expression usage.",
-      "cvss_score": 7.0,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:H/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00395,
-      "nvd": {
-        "cvss_v3_score": 7.2,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-20"
-        ],
-        "cpe_count": 7,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88775",
-      "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading\u00a0Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00719,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-120"
-        ],
-        "cpe_count": 7,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88776",
-      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23\u00a0\u00a0leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00834,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-119"
-        ],
-        "cpe_count": 7,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88777",
-      "description": "Memory overflow vulnerability vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23\u00a0\u00a0leading to unpredictable or erroneous behavior or Denial of Service",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00719,
-      "nvd": {
-        "cvss_v3_score": 9.8,
-        "cvss_v3_severity": "CRITICAL",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-119"
-        ],
-        "cpe_count": 7,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-88778",
-      "description": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:L/SI:L/SA:L",
-      "affected": [
-        {
-          "vendor": "citrix netscaler",
-          "product": "adc",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37 FIPS",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1.37.279 FIPS and NDcPP",
-              "versionType": "Patch"
-            }
-          ]
-        },
-        {
-          "vendor": "citrix netscaler",
-          "product": "gateway",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "14.1-73.37",
-              "versionType": "Patch"
-            },
-            {
-              "status": "affected",
-              "version": "0",
-              "lessThan": "13.1-64.23",
-              "versionType": "Patch"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:adc",
-        "product:gateway",
-        "vendor:citrix netscaler"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00694,
-      "nvd": {
-        "cvss_v3_score": 7.5,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-342"
-        ],
-        "cpe_count": 7,
-        "reference_count": 1
       }
     },
     {

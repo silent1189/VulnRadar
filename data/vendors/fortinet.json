@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T00:09:50+00:00",
+  "generated_at": "2026-11-13T06:34:18+00:00",
   "vendor": "fortinet",
   "count": 336,
   "items": [
@@ -21698,7 +21698,7 @@
     },
     {
       "cve_id": "CVE-2026-126229",
-      "description": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
+      "description": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 8.0.1, FortiAnalyzer Cloud 7.6.0 through 7.6.7, FortiAnalyzer Cloud 7.4.1 through 7.4.11, FortiAnalyzer Cloud 7.2.1 through 7.2.12, FortiAnalyzer Cloud 7.0 all versions, FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 through 7.2.12, FortiManager 7.0 all versions, FortiManager Cloud 8.0.1, FortiManager Cloud 7.6.0 through 7.6.7, FortiManager Cloud 7.4.1 through 7.4.11, FortiManager Cloud 7.2.1 through 7.2.12, FortiManager Cloud 7.0 all versions may allow an authenticated administrator to access to other VDOMs via specially crafted HTTP requests.",
       "cvss_score": 9.1,
       "cvss_severity": "CRITICAL",
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C",
@@ -21728,7 +21728,7 @@
             {
               "versionType": "semver",
               "version": "7.2.0",
-              "lessThanOrEqual": "7.2.13",
+              "lessThanOrEqual": "7.2.12",
               "status": "affected"
             },
             {
@@ -21764,7 +21764,7 @@
             {
               "versionType": "semver",
               "version": "7.2.0",
-              "lessThanOrEqual": "7.2.13",
+              "lessThanOrEqual": "7.2.12",
               "status": "affected"
             },
             {
@@ -21798,7 +21798,7 @@
             {
               "versionType": "semver",
               "version": "7.2.1",
-              "lessThanOrEqual": "7.2.13",
+              "lessThanOrEqual": "7.2.12",
               "status": "affected"
             },
             {
@@ -21832,7 +21832,7 @@
             {
               "versionType": "semver",
               "version": "7.2.1",
-              "lessThanOrEqual": "7.2.13",
+              "lessThanOrEqual": "7.2.12",
               "status": "affected"
             },
             {
@@ -23872,7 +23872,7 @@
     },
     {
       "cve_id": "CVE-2026-126256",
-      "description": "A out-of-bounds read vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4 all versions, FortiOS 7.2 all versions, FortiOS 7.0 all versions may allow a remote privileged attacker to execute arbitrary code or command via crafted paquets.",
+      "description": "A out-of-bounds read vulnerability in Fortinet FortiOS 8.0.0 through 8.0.1, FortiOS 7.6.0 through 7.6.7, FortiOS 7.4.0 through 7.4.12, FortiOS 7.2.0 through 7.2.13 may allow a remote privileged attacker to execute arbitrary code or command via crafted paquets.",
       "cvss_score": 7.4,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H/E:P/RL:O/RC:C",
@@ -23896,19 +23896,13 @@
             {
               "versionType": "semver",
               "version": "7.4.0",
-              "lessThanOrEqual": "7.4.13",
+              "lessThanOrEqual": "7.4.12",
               "status": "affected"
             },
             {
               "versionType": "semver",
               "version": "7.2.0",
-              "lessThanOrEqual": "7.2.14",
-              "status": "affected"
-            },
-            {
-              "versionType": "semver",
-              "version": "7.0.0",
-              "lessThanOrEqual": "7.0.19",
+              "lessThanOrEqual": "7.2.13",
               "status": "affected"
             }
           ]
@@ -25442,9 +25436,9 @@
       ],
       "watchlist_hit": true,
       "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
       "matched_terms": [
         "product:fortisandbox",
         "vendor:fortinet"

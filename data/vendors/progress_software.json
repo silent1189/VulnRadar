@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T00:09:50+00:00",
+  "generated_at": "2026-11-13T06:34:18+00:00",
   "vendor": "progress_software",
-  "count": 109,
+  "count": 124,
   "items": [
     {
       "cve_id": "CVE-2024-0219",
@@ -1684,6 +1684,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-106140",
+      "description": "In Progress\u00ae Telerik\u00ae Reporting prior to version 20.3.26.1110, a deserialization of untrusted data vulnerability in the .NET Framework report designers allows a local attacker with low privileges to execute arbitrary code in the context of the designer process when the user performs certain editing operations.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik reporting",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "20.3.26.1110",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik reporting",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00234
+    },
+    {
       "cve_id": "CVE-2026-106145",
       "description": "In Progress\u00ae Telerik\u00ae Report Server prior to version 12.2.26.1007, incorrect privilege assignment in the service-agent SignalR hub allows an authenticated user, including a low-privilege or guest account with a valid bearer token, to register as a trusted service agent. On the next server settings-synchronization event, the rogue agent receives storage settings and encryption private keys. This privilege escalation enables disclosure of protected secrets, including stored data-source credentials and connection strings, and allows agent impersonation and interference with task dispatch.",
       "cvss_score": 7.1,
@@ -1727,6 +1759,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-106146",
+      "description": "In Progress\u00ae Telerik\u00ae UI for ASP.NET MVC versions `2012.2.710` through `2026.3.1015`, server-side filter processing does not properly validate descriptor types, null values, or stack state in FilterNodeVisitor and does not catch FilterParserException within the affected assembly. An unauthenticated remote attacker can exploit this if the application exposes an endpoint reachable without authentication that accepts crafted filter parameters. Affected requests can trigger uncaught cast, null-reference, or empty-stack exceptions and return HTTP 500. The report does not demonstrate worker-process termination or disruption of unrelated requests. The issue is fixed in version `2026.4.1111`.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for asp.net mvc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2012.2.710",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for asp.net mvc",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-106152",
       "description": "In Progress\u00ae Telerik\u00ae Report Server prior to version 12.3.26.1110, an external control of a system configuration setting vulnerability allows an unauthenticated remote attacker to influence the server address used by Report Server when generating links and notifications. With user interaction, this can lead to disclosure of sensitive information and account takeover.",
       "cvss_score": 8.8,
@@ -1768,6 +1832,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-106154",
+      "description": "In Progress\u00ae Telerik\u00ae UI for ASP.NET Core versions `2015.1.318` through `2026.3.1015`, the server-side FilterParser processes nested expressions in untrusted filter parameters through recursive parsing without a recursion-depth limit, while FilterLexer does not enforce an input-length limit. An unauthenticated remote attacker can exploit this if the application exposes an endpoint using DataSourceRequest model binding that is reachable without authentication. Deeply nested filters can trigger parsing errors during model binding or cause `StackOverflowException`. This issue is fixed in version `2026.4.1111`.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for asp.net core",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2015.1.318",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for asp.net core",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-106155",
@@ -2565,6 +2661,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-124691",
+      "description": "In Progress Kendo UI for jQuery Gantt, the task editor's Parent dropdown renders task titles as HTML. An attacker who can influence a task title shown in the dropdown can cause attacker-controlled markup to execute as JavaScript when a user opens or interacts with the task editor. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected version is 2020.3.915; the latest vulnerable version is 2026.3.1015. The issue is fixed in version 2026.4.1111.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2020.3.915",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-124692",
       "description": "In Progress Kendo UI for jQuery versions 2026.3.1015 up to, but not including, 2026.4.1110, the Grid and TreeList column-reorder drag clue reparses header text as HTML. An attacker who can influence a column field or title used by an affected application can cause JavaScript to execute when a user drags a column header while column reordering is enabled. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected release has not been established.",
       "cvss_score": 7.1,
@@ -2704,6 +2832,358 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-124695",
+      "description": "In Progress Kendo UI for jQuery Form, the items[].hint option is documented as a string but is rendered as HTML. An attacker who can influence a Form item's hint can cause attacker-controlled markup to execute as JavaScript when a user views the rendered form. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected version is 2020.2.513; the latest vulnerable version is 2026.3.1015. The issue is fixed in version 2026.4.1111.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2020.2.513",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124696",
+      "description": "In Progress Kendo UI for jQuery, Spreadsheet sheet names are inserted into the SheetsBar menu button's data-sheet-name attribute without encoding. An attacker who can influence a sheet name can inject an event-handler attribute and execute JavaScript when a user hovers over the menu button. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. The first affected version is 2024.4.1112; the latest vulnerable version is 2026.3.1015. The issue is fixed in version 2026.4.1111.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2024.4.1112",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124697",
+      "description": "In Progress Kendo UI for jQuery, Chart shared-tooltip rendering treats bound category and series-name values as raw HTML. An attacker who can influence values consumed by an affected Chart can inject markup that executes as JavaScript when a user displays the shared tooltip. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. Version 2016.2.607 or earlier may be affected, but earlier releases have not been verified. The latest vulnerable version is 2026.3.1015; the issue is fixed in version 2026.4.1111.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2016.2.607",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124698",
+      "description": "In Progress Kendo UI for jQuery, the Chart default tooltip renders point values as raw HTML. An attacker who can influence a string point value can inject markup that executes as JavaScript when a user hovers over the point. Successful exploitation may compromise the confidentiality and integrity of data available in the user's browser context. Version 2016.2.607 or earlier may be affected, but earlier releases have not been verified. The latest vulnerable version is 2026.3.1015; the issue is fixed in version 2026.4.1111.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "kendo ui for jquery",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2016.2.607",
+              "lessThanOrEqual": "2026.3.1015",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:kendo ui for jquery",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124699",
+      "description": "In Telerik UI for WinForms, versions prior to 2026.4.1111, an improper control of code generation vulnerability exists that allows an attacker to supply a crafted expression and execute unauthorized code in the context of the affected application.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for winforms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1007",
+              "lessThan": "2026.4.1111",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for winforms",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00194
+    },
+    {
+      "cve_id": "CVE-2026-124700",
+      "description": "In Telerik UI for WinForms, versions prior to 2026.4.1111, an untrusted URL redirection vulnerability exists that allows an attacker to launch arbitrary operating system protocol handlers with attacker-controlled arguments via crafted documents and hyperlinks with a non-allowlisted URI scheme that the user opens.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for winforms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1007",
+              "lessThan": "2026.4.1111",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for winforms",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124701",
+      "description": "In Telerik UI for WinForms, versions prior to 2026.4.1111, a deserialization of untrusted data vulnerability exists that allows an attacker to perform unauthorized actions in the context of the affected application.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for winforms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1007",
+              "lessThan": "2026.4.1111",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for winforms",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124702",
+      "description": "In Telerik UI for WPF, versions prior to 2026.4.1110, an untrusted URL redirection vulnerability exists that allows an attacker to launch arbitrary operating system protocol handlers with attacker-controlled arguments via crafted documents and hyperlinks with a non-allowlisted URI scheme that the user opens.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for wpf",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1007",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for wpf",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124703",
+      "description": "In Telerik UI for WPF, versions prior to 2026.4.1110, an improper control of code generation vulnerability exists that allows an attacker to execute unauthorized code in the context of the affected application.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for wpf",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1007",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for wpf",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124704",
+      "description": "In Telerik UI for WPF, versions prior to 2026.4.1110, a deserialization of untrusted data vulnerability exists that allows an attacker to perform unauthorized actions in the context of the affected application.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for wpf",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2026.3.1007",
+              "lessThan": "2026.4.1110",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for wpf",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-124705",
+      "description": "In Progress\u00ae Telerik\u00ae UI for .NET MAUI prior to version 16.0.0, an untrusted URL redirection vulnerability in the RadRichTextEditor hyperlink handling and the RadPdfViewer link annotation handling allows an unauthenticated attacker to launch arbitrary operating system protocol handlers with attacker-controlled arguments via a crafted document or PDF link with a non-allowlisted URI scheme that the user opens.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "progress software",
+          "product": "telerik ui for .net maui",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.2.0",
+              "lessThan": "16.0.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:telerik ui for .net maui",
+        "vendor:progress software"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13181",

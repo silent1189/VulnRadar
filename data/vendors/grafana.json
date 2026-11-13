@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T00:09:50+00:00",
+  "generated_at": "2026-11-13T06:34:18+00:00",
   "vendor": "grafana",
-  "count": 56,
+  "count": 57,
   "items": [
     {
       "cve_id": "CVE-2022-23498",
@@ -1664,6 +1664,100 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-106475",
+      "description": "The Elasticsearch data source resource proxy forwards the request method and path to Elasticsearch using the data source's own credentials, without restricting them to the operations the plugin needs. A user who can query the data source can alter index mappings or reach other indices on the cluster. [Improper authorization / path validation]",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "grafana",
+          "product": "elasticsearch datasource",
+          "versions": [
+            {
+              "lessThan": "12.9.6",
+              "status": "affected",
+              "version": "12.4.2",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana oss",
+          "versions": [
+            {
+              "lessThanOrEqual": "11.6.16",
+              "status": "affected",
+              "version": "10.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.2.10",
+              "status": "affected",
+              "version": "12.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.3.11",
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.4.15",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "grafana",
+          "product": "grafana enterprise",
+          "versions": [
+            {
+              "lessThanOrEqual": "11.6.16",
+              "status": "affected",
+              "version": "10.1.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.2.10",
+              "status": "affected",
+              "version": "12.0.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThanOrEqual": "12.3.11",
+              "status": "affected",
+              "version": "12.3.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "12.4.15",
+              "status": "affected",
+              "version": "12.4.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch datasource",
+        "product:grafana enterprise",
+        "product:grafana oss",
+        "vendor:grafana"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-111000",

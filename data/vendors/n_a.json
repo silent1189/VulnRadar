@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T00:09:50+00:00",
+  "generated_at": "2026-11-13T06:34:18+00:00",
   "vendor": "n_a",
-  "count": 672,
+  "count": 710,
   "items": [
     {
       "cve_id": "CVE-2022-0185",
@@ -26853,6 +26853,1822 @@
       }
     },
     {
+      "cve_id": "CVE-2026-116304",
+      "description": "Use after free in PostgreSQL coordination of anonymous RECORD type identifiers among parallel workers allows a database user to execute arbitrary code as the operating system user running the database, via causing one process to free a shared tuple descriptor while another process retains and later uses its address.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116306",
+      "description": "Type confusion in PostgreSQL composite-value field assignment allows an object creator to execute arbitrary code as the operating system user running the database, via changing a composite type between deforming and reforming a value.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116307",
+      "description": "Use after free in PostgreSQL plperl allows an object creator to execute arbitrary code as the operating system user running the database, via re-entering plperl and freeing a prepared query while an outer invocation is executing it.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116309",
+      "description": "Type confusion in PostgreSQL plperl may allow an object creator to execute arbitrary code, via blessing a non-hash reference into PostgreSQL::InServer::ARRAY.  We have not confirmed or ruled out a way to control the pointer sufficiently to achieve security impact, but we are proceeding as though that is possible.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116313",
+      "description": "Untrusted search path in PostgreSQL vacuumdb allows a database owner to execute arbitrary SQL as the database user running vacuumdb, via shadowing operators used in the --missing-stats-only catalog query.  The pg_upgrade documentation recommends an affected vacuumdb invocation.  Within major version 18, minor versions before PostgreSQL 18.7 are affected.  Versions before PostgreSQL 18 are unaffected.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116314",
+      "description": "Improper input validation in PostgreSQL pg_restore allows a non-plain archive provider to execute arbitrary code as the operating system user running pg_restore, via a crafted archive.  Note a contrast: crafted archive data may legitimately cause arbitrary SQL to execute at the restore destination, but it does not legitimately confer arbitrary code execution in the pg_restore OS process.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116315",
+      "description": "Heap-based buffer overflow in PostgreSQL tsvector_delete() allows a database user to execute arbitrary code as the operating system user running the database, via a tsvector whose lexeme data uses a nonstandard but valid ordering that requires additional alignment padding in the result.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116316",
+      "description": "Improper protection of alternate path in PostgreSQL security-restricted operations allows an object creator to execute arbitrary SQL as the operation's caller, via a domain, enum, or range type created in pg_temp.  The victim session must later run a query containing an unqualified type name, e.g. \"SELECT '1'::bigint\"; autovacuum and other common security-restricted operation users do not do so, so they are unaffected.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116317",
+      "description": "Heap-based buffer overflow in PostgreSQL ts_rank_cd() may allow a database user to execute arbitrary code as the operating system user running the database, via an invalid tsvector containing duplicate positions.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116318",
+      "description": "SQL injection in PostgreSQL pg_dump allows an object creator to execute arbitrary SQL as the user restoring the dump, via an inherited column having a child-local not-null constraint whose name requires quoting.  Within major version 18, minor versions before PostgreSQL 18.7 are affected.  Versions before PostgreSQL 18 are unaffected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116319",
+      "description": "Use after free in PostgreSQL plperl allows an object creator to execute arbitrary code as the operating system user running the database, via reentrant return_next() calls.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116320",
+      "description": "Use after free in PostgreSQL plperl allows an object creator to execute arbitrary code as the operating system user running the database, via dropping the final reference to a Perl array or hash while PostgreSQL is converting that object.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116323",
+      "description": "Use after free in PostgreSQL pltcl allows an object creator to execute arbitrary code as the operating system user running the database, via a domain CHECK that re-enters the Tcl interpreter and frees or changes a string still used by the outer result conversion.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116325",
+      "description": "SQL injection in PostgreSQL reindexdb allows an object creator to execute arbitrary SQL as the database user running reindexdb, via a crafted index name embedded in the parallel catalog query for --jobs with --index.  Within major versions 17-18, minor versions before PostgreSQL 18.7 and 17.12 are affected.  Versions before PostgreSQL 17 are unaffected.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116326",
+      "description": "Uncaught exceptions in PostgreSQL plperl allow an object creator to cause use of a stale sigjmp_buf, via a tied Perl object, or a Perl object whose overloaded conversion throws while plperl is handling another error.  We have not ruled out arbitrary code execution on some platform.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116328",
+      "description": "Integer wraparound in PostgreSQL generation memory contexts allows a database user to execute arbitrary code as the operating system user running the database, via freeing an allocation larger than 1 GB and causing its block to be reused for smaller chunks whose back-pointer offset cannot represent that position.  Within major versions 16-18, minor versions before PostgreSQL 18.7, 17.12, and 16.16 are affected.  Versions before PostgreSQL 16 are unaffected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116329",
+      "description": "Type confusion in PostgreSQL statistics import allows a table maintainer to execute arbitrary code as the operating system user running the database, via nested SET DATA TYPE during conversion of values to import.  Within major version 18, minor versions before PostgreSQL 18.7 are affected.  Versions before PostgreSQL 18 are unaffected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116330",
+      "description": "Untrusted data inclusion in PostgreSQL pg_dump tar-format restore.sql allows a compromised origin server to execute arbitrary code as the client operating system account running psql, via the predictable restriction key in restore.sql.  This is a gap in the fix for CVE-2025-8714.  restore.sql is undocumented.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116331",
+      "description": "Type confusion in PostgreSQL min/max aggregate optimization allows an object creator to execute arbitrary code as the operating system user running the database, via a user-defined aggregate whose SORTOP option causes the planner to treat the aggregate's input and result as the same type when they differ.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116332",
+      "description": "Use after free in PostgreSQL portal setup allows an object creator to execute arbitrary code as the operating system user running the database, via running user-defined code during planning or executor startup that closes the portal currently being prepared.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116335",
+      "description": "Type confusion in PostgreSQL operator commutator and negator links allows an object creator to execute arbitrary code as the operating system user running the database, via linking operators having different result types or creating inconsistent reciprocal links.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116336",
+      "description": "Operation on a dropped index in PostgreSQL REINDEX CONCURRENTLY allows an object creator to execute arbitrary code as the operating system user running the database, via an index expression that issues DROP INDEX.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120139",
+      "description": "Integer wraparound in PostgreSQL in-memory tuple-size calculations allows a database user to execute arbitrary code as the operating system user running the database, via oversized tuple data.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120141",
+      "description": "Type confusion in PostgreSQL materialized set-returning functions allows a database user to execute arbitrary code as the operating system user running the database, via returning rows having different dynamic RECORD return types.  json_populate_recordset() is one affected function.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120142",
+      "description": "Type confusion in PostgreSQL anonymous RECORD types allows an object creator to execute arbitrary code as the operating system user running the database, via row types having dropped attributes in the same positions but with different widths or alignments.  Within major versions 17-18, minor versions before PostgreSQL 18.7 and 17.12 are affected.  Versions before PostgreSQL 17 are unaffected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120143",
+      "description": "Use after free in PostgreSQL trigger functions allows an object creator to execute arbitrary code as the operating system user running the database, via a cursor over a transition table.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120144",
+      "description": "Type confusion from incomplete PostgreSQL type-cache invalidation allows an object creator to execute arbitrary code as the operating system user running the database, via a composite type change while its cache entry is being populated.  Within major version 18, minor versions before PostgreSQL 18.7 are affected.  Versions before PostgreSQL 18 are unaffected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120145",
+      "description": "Missing authorization in PostgreSQL logical replication allows a compromised publisher to execute arbitrary code as the operating system user running the superuser-owned subscription, via naming a system catalog as a replication target.  Only subscriptions owned by a superuser are vulnerable.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120147",
+      "description": "Use after free in the PostgreSQL dblink extension allows an object creator to execute arbitrary code as the operating system user running the database, via type conversion code that re-enters dblink and closes a connection whose results an outer dblink call is reading.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120148",
+      "description": "Type confusion in PostgreSQL extended statistics allows an object creator to execute arbitrary code as the operating system user running the database, via a statistics expression of an anonymous RECORD type whose backend-local type identifier denotes a different row type in another session.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120149",
+      "description": "Heap-based buffer overflow in PostgreSQL foreign batch inserts allows a foreign server to execute arbitrary code, via reporting that it inserted more rows than the server supplied.  postgres_fdw can legitimately encounter this when a rule on the remote table expands an INSERT into additional rows.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120150",
+      "description": "Use after free in PostgreSQL expanded-record domain checks allows an object creator to execute arbitrary code as the operating system user running the database, via repeated checks of a domain over a composite type that cause reuse of a dangling memory-context pointer.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120151",
+      "description": "Type confusion in PostgreSQL plpgsql record-field assignment allows an object creator to execute arbitrary code as the operating system user running the database, via a reentrant domain CHECK that changes a RECORD variable's row type while a value is being cast.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120153",
+      "description": "SQL injection in PostgreSQL extension-script substitutions allows an attacker with database-level CREATE privilege to execute arbitrary code as the bootstrap superuser, via a schema or owner name containing newlines or other special substrings.  This is similar to CVE-2023-39417, but it requires a non-bundled extension with a vulnerable script pattern.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-14661",
+      "description": "External control of file name in PostgreSQL dblink and CREATE/ALTER SUBSCRIPTION allows a user to achieve persistent denial of service, via appending invalid data to a chosen file.  Specifically, the \"sslkeylogfile\" connection parameter appends data, in NSS keylog format, to a file of the user's choosing.  This \"sslkeylogfile\" mechanism cannot add arbitrary bytes.  Within major version 18, minor versions before PostgreSQL 18.7 are affected.  Versions before PostgreSQL 18 are also affected if libpq version 18 or later is installed and in use by the server.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-14662",
       "description": "Integer wraparound in PostgreSQL tsvector and tsquery data type functions allows an unprivileged database user to cause the server to undersize an allocation and write out-of-bounds, via crafted large inputs.  This may execute arbitrary code as the operating system user running the database.  These types are typically sourced from application logic, not taken from the application's user.  Hence, application users attacking the database, through the application as a conduit, are unlikely.  CVE-2026-6473 had fixed similar problems.  Versions before PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24 are affected.",
       "cvss_score": 8.8,
@@ -27808,6 +29624,62 @@
         "cpe_count": 5,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-18447",
+      "description": "Type confusion in PostgreSQL SQL-language functions allows an object creator to execute arbitrary code as the operating system user running the database, via an output parameter of type \"any\".  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-19385",
@@ -28985,6 +30857,62 @@
       }
     },
     {
+      "cve_id": "CVE-2026-6460",
+      "description": "Type confusion in PostgreSQL allows an object creator to execute arbitrary code as the operating system user running the database, via ALTER ... SET DATA TYPE primarily.  Other DDL attack routes exist, such as \"ALTER TABLE ... ADD COLUMN; ROLLBACK; ALTER TABLE ... ADD COLUMN\".  The system had inadequate tracking of typed values, and values were not self-identifying.  Stale values could appear in data dictionary entries, PL/pgSQL variables, and many other parts of the system.  PostgreSQL Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-6464",
       "description": "Untrusted data inclusion in PostgreSQL psql COPY may allow a server administrator to elicit execution of data lines as psql commands, via error injection.  If the \"COPY FROM STDIN\" or \"\\copy FROM STDIN\" command fails before the server indicates that it awaits input rows, psql processes the in-line data rows as psql commands.  \"COPY FROM\" with a filename is unaffected.  The server administrator has no inherent control over the data rows, so a complete attack requires the attacker to separately acquire control of both the server and the data rows.  Alternatively, an attacker controlling data rows alone might complete an attack through a coincidental error that they don't control.  Versions before PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24 are affected.",
       "cvss_score": 8.1,
@@ -29050,6 +30978,62 @@
         "cpe_count": 5,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-6467",
+      "description": "Uncontrolled search path element in PostgreSQL CREATE EXTENSION allows an attacker with database-level CREATE privilege to execute arbitrary code as the bootstrap superuser, via ALTER SCHEMA ... RENAME or CREATE EXTENSION ... SCHEMA \"$user\".  ALTER EXTENSION was also affected.  A trusted-extension script located the wrong object and executed arbitrary SQL of the attacker's choice.  Versions before PostgreSQL 18.7, 17.12, 16.16, 15.20, and 14.25 are affected.",
+      "cvss_score": 7.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "n/a",
+          "product": "postgresql",
+          "versions": [
+            {
+              "lessThan": "18.7",
+              "status": "affected",
+              "version": "18",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "17.12",
+              "status": "affected",
+              "version": "17",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "16.16",
+              "status": "affected",
+              "version": "16",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "15.20",
+              "status": "affected",
+              "version": "15",
+              "versionType": "rpm"
+            },
+            {
+              "lessThan": "14.25",
+              "status": "affected",
+              "version": "0",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:postgresql",
+        "vendor:n/a"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-6471",
