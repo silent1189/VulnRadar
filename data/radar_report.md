@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-14T10:09:19+00:00`
+Generated: `2026-11-14T16:38:04+00:00`
 
 ## Executive Summary
 
@@ -177,8 +177,8 @@ Top critical items:
 | [CVE-2024-21762](https://www.cve.org/CVERecord?id=CVE-2024-21762) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-16 | 0.846 | 9.6 | ✅ | A out-of-bounds write vulnerability in Fortinet FortiOS 7.4.0 through 7.4.2, FortiOS 7.2.0 through 7.2.6, FortiOS 7.0.0 through 7.0.13, FortiOS 6.4.0 through 6… |
 | [CVE-2024-21412](https://www.cve.org/CVERecord?id=CVE-2024-21412) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-05 | 0.994 | 8.1 | ✅ | Internet Shortcut Files Security Feature Bypass Vulnerability |
 | [CVE-2022-41082](https://www.cve.org/CVERecord?id=CVE-2022-41082) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.0 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
-| [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.810 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
 | [CVE-2023-27997](https://www.cve.org/CVERecord?id=CVE-2023-27997) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-04 | 0.868 | 9.2 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS version 7.2.4 and below, version 7.0.11 and below, version 6.4.12 and below, version 6.0.16 and… |
+| [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.805 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
 | [CVE-2026-50751](https://www.cve.org/CVERecord?id=CVE-2026-50751) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-11 | 0.853 | 9.3 | ✅ | A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to b… |
 | [CVE-2026-88771](https://www.cve.org/CVERecord?id=CVE-2026-88771) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.819 | 9.5 | ✅ | Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, be… |
 | [CVE-2026-87902](https://www.cve.org/CVERecord?id=CVE-2026-87902) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-28 | 0.958 | 8.1 | ✅ | An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme direct… |
