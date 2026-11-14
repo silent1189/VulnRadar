@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T21:58:58+00:00",
+  "generated_at": "2026-11-14T02:15:10+00:00",
   "vendor": "mongodb",
-  "count": 142,
+  "count": 143,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -2185,6 +2185,107 @@
       }
     },
     {
+      "cve_id": "CVE-2026-126818",
+      "description": "A Ruby object-document mapper does not apply its automatic field-level encryption configuration to certain fields when the data model uses class inheritance. Values the application designated for encryption are written to the database in readable form without any error or warning. A database account holding only read access to the application's collections, and no access to the encryption key store, may obtain those values.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "ruby driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.2",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.4",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.5",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.6",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.8",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.10",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.11",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.12",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.1.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.1.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ruby driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-126823",
       "description": "A local user with an ordinary account on the same host can place a file in a shared temporary location that the JDBC driver's native library loading routine will accept and load without verifying its origin. Loading the driver class in a Java application may then run code of that user's choosing inside the application process, which may result in disclosure or alteration of data held by that process or in the process becoming unavailable.",
       "cvss_score": 7.3,
@@ -2214,7 +2315,18 @@
         "vendor:mongodb"
       ],
       "active_threat": false,
-      "probability_score": 0.00091
+      "probability_score": 0.00091,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-377"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-126837",
@@ -2246,7 +2358,18 @@
         "vendor:mongodb"
       ],
       "active_threat": false,
-      "probability_score": 0.00205
+      "probability_score": 0.00205,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-180"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-126982",
@@ -2278,7 +2401,18 @@
         "vendor:mongodb"
       ],
       "active_threat": false,
-      "probability_score": 0.00299
+      "probability_score": 0.00299,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-13055",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T21:58:58+00:00",
+  "generated_at": "2026-11-14T02:15:10+00:00",
   "vendor": "ibm",
-  "count": 1365,
+  "count": 1371,
   "items": [
     {
       "cve_id": "CVE-2022-22308",
@@ -18737,6 +18737,81 @@
       }
     },
     {
+      "cve_id": "CVE-2026-109158",
+      "description": "IBM App Connect Operator and IBM App Connect Enterprise Certified Containers Operands may allow the AI Agent to log sensitive information about the deployed environment within error messages.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "app connect operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.21.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.28",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "13.0.0",
+              "lessThanOrEqual": "13.6.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "app connect enterprise certified containers operands",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0.11.1-r1",
+              "lessThanOrEqual": "12.0.12.5-r1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "13.0.1.0-r1",
+              "lessThanOrEqual": "13.0.6.2-r1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.12-r1",
+              "lessThanOrEqual": "12.0.12-r28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "13.0.7.0-r1",
+              "lessThanOrEqual": "13.0.9.0-r1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:app connect enterprise certified containers operands",
+        "product:app connect operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-10025",
       "description": "IBM QRadar 7.6.0.0 through 7.6.0.1, and 7.5.0 through 7.5.0 UP 15 Interim Fix 005 has an XML External Entity (XXE) injection vulnerability. The vulnerability resides in the parseXmlPayload() function within the event processing pipeline ( q1labs_core.jar ). When at least one log source type is configured to use XML-format property autodetection, the system processes XML-formatted syslog events sent to port 514 (UDP/TCP) without authentication.",
       "cvss_score": 8.2,
@@ -21304,14 +21379,14 @@
       "active_threat": false,
       "probability_score": 0.00374,
       "nvd": {
-        "cvss_v3_score": 7.5,
+        "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 1
       }
     },
@@ -21574,6 +21649,70 @@
       }
     },
     {
+      "cve_id": "CVE-2026-110278",
+      "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.1.0 could allow an attacker to replay identity propagation claims signatures or expose sensitive user identity information to third-party MCP servers due to static signature payloads and missing per-gateway configuration checks during tool invocation.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "contextforge mcp gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:contextforge mcp gateway",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-110279",
+      "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.1.0 is vulnerable to improper credential handling because the X-Upstream-Authorization request header can override the gateway-managed upstream credential for OAuth (authorization_code and client_credentials), bearer and basic authenticated gateways, which could allow an authenticated user to cause upstream requests to be made with a different credential and bypass per-user permission and audit attribution.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "contextforge mcp gateway",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThanOrEqual": "1.1.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:contextforge mcp gateway",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-110309",
       "description": "IBM Langflow OSS 1.0.0 through 1.12.4 could allow a remote authenticated attacker to execute arbitrary commands due to improper control of code generation.",
       "cvss_score": 8.8,
@@ -21658,6 +21797,81 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-115788",
+      "description": "IBM App Connect Operator and IBM App Connect Enterprise Certified Containers Operands is vulnerable to Log Forging on a request to create a resource.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "app connect operator",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.21.0",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.28",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "13.0.0",
+              "lessThanOrEqual": "13.6.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "ibm",
+          "product": "app connect enterprise certified containers operands",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.0.11.1-r1",
+              "lessThanOrEqual": "12.0.12.5-r1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "13.0.1.0-r1",
+              "lessThanOrEqual": "13.0.6.2-r1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.12-r1",
+              "lessThanOrEqual": "12.0.12-r28",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "13.0.7.0-r1",
+              "lessThanOrEqual": "13.0.9.0-r1",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:app connect enterprise certified containers operands",
+        "product:app connect operator",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-116499",
@@ -21967,7 +22181,7 @@
         "cwe_ids": [
           "CWE-190"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 1
       }
     },
@@ -22550,14 +22764,14 @@
       "active_threat": false,
       "probability_score": 0.003,
       "nvd": {
-        "cvss_v3_score": 8.5,
+        "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-20"
         ],
-        "cpe_count": 0,
+        "cpe_count": 6,
         "reference_count": 1
       }
     },
@@ -23607,6 +23821,44 @@
         "cpe_count": 2,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-123628",
+      "description": "IBM webMethods Integration Server 10.15 and 11.1 could allow a remote attacker to obtain sensitive information due to an exposure of sensitive server-side environment variables and Java runtime details.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "webmethods integration server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "10.15",
+              "lessThanOrEqual": "10.15_Core_Fix2",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "11.1",
+              "lessThanOrEqual": "11.1_Core_Fix11",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:webmethods integration server",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-12004",
@@ -40505,14 +40757,14 @@
       "active_threat": false,
       "probability_score": 0.00438,
       "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-639"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -40554,14 +40806,14 @@
       "active_threat": false,
       "probability_score": 0.00821,
       "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-915"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -40822,14 +41074,14 @@
       "active_threat": false,
       "probability_score": 0.0042,
       "nvd": {
-        "cvss_v3_score": 7.6,
+        "cvss_v3_score": 8.1,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-639"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -40872,7 +41124,7 @@
         "cwe_ids": [
           "CWE-918"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -40908,14 +41160,14 @@
       "active_threat": false,
       "probability_score": 0.00632,
       "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-89"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -41000,14 +41252,14 @@
       "active_threat": false,
       "probability_score": 0.00524,
       "nvd": {
-        "cvss_v3_score": 9.9,
-        "cvss_v3_severity": "CRITICAL",
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-89"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 1
       }
     },
@@ -66044,6 +66296,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-91869",
+      "description": "IBM Security QRadar EDR 3.12 through 3.12.26 could allow a remote authenticated attacker to bypass security restrictions due to improper rate limiting on TOTP verification.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "ibm",
+          "product": "security qradar edr",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.12.0",
+              "lessThanOrEqual": "3.12.26",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:security qradar edr",
+        "vendor:ibm"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-92559",
