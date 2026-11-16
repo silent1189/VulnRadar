@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-16T09:29:09+00:00`
+Generated: `2026-11-16T20:22:35+00:00`
 
 ## Executive Summary
 
@@ -171,12 +171,13 @@ Top critical items:
 | [CVE-2026-71362](https://www.cve.org/CVERecord?id=CVE-2026-71362) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-27 | 0.917 | 9.1 | ✅ | Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability… |
 | [CVE-2024-21893](https://www.cve.org/CVERecord?id=CVE-2024-21893) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-02 | 1.000 | 8.2 | ✅ | A server-side request forgery vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) and Ivanti Neurons … |
 | [CVE-2023-46805](https://www.cve.org/CVERecord?id=CVE-2023-46805) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-01-22 | 1.000 | 8.2 | ✅ | An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted reso… |
-| [CVE-2022-33891](https://www.cve.org/CVERecord?id=CVE-2022-33891) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-03-28 | 0.932 | 8.8 | ✅ | The Apache Spark UI offers the possibility to enable ACLs via the configuration option spark.acls.enable. With an authentication filter, this checks whether a … |
+| [CVE-2022-33891](https://www.cve.org/CVERecord?id=CVE-2022-33891) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-03-28 | 0.929 | 8.8 | ✅ | The Apache Spark UI offers the possibility to enable ACLs via the configuration option spark.acls.enable. With an authentication filter, this checks whether a … |
 | [CVE-2025-54253](https://www.cve.org/CVERecord?id=CVE-2025-54253) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-05 | 0.808 | 10.0 | ✅ | Adobe Experience Manager versions 6.5.23 and earlier are affected by a Misconfiguration vulnerability that could result in arbitrary code execution. An attacke… |
 | [CVE-2026-24858](https://www.cve.org/CVERecord?id=CVE-2026-24858) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-01-30 | 0.866 | 9.4 | ✅ | An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.5, FortiAnalyzer … |
 | [CVE-2024-21762](https://www.cve.org/CVERecord?id=CVE-2024-21762) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-16 | 0.846 | 9.6 | ✅ | A out-of-bounds write vulnerability in Fortinet FortiOS 7.4.0 through 7.4.2, FortiOS 7.2.0 through 7.2.6, FortiOS 7.0.0 through 7.0.13, FortiOS 6.4.0 through 6… |
 | [CVE-2024-21412](https://www.cve.org/CVERecord?id=CVE-2024-21412) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-03-05 | 0.994 | 8.1 | ✅ | Internet Shortcut Files Security Feature Bypass Vulnerability |
 | [CVE-2022-41082](https://www.cve.org/CVERecord?id=CVE-2022-41082) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-10-21 | 1.000 | 8.0 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
+| [CVE-2026-50522](https://www.cve.org/CVERecord?id=CVE-2026-50522) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-25 | 0.819 | 9.8 | ✅ | Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network. |
 | [CVE-2023-27997](https://www.cve.org/CVERecord?id=CVE-2023-27997) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-07-04 | 0.868 | 9.2 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS version 7.2.4 and below, version 7.0.11 and below, version 6.4.12 and below, version 6.0.16 and… |
 | [CVE-2024-43468](https://www.cve.org/CVERecord?id=CVE-2024-43468) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-03-05 | 0.805 | 9.8 | ✅ | Microsoft Configuration Manager Remote Code Execution Vulnerability |
 | [CVE-2023-36025](https://www.cve.org/CVERecord?id=CVE-2023-36025) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-12-05 | 0.904 | 8.8 | ✅ | Windows SmartScreen Security Feature Bypass Vulnerability |
@@ -247,7 +248,6 @@ Top critical items:
 | [CVE-2023-44221](https://www.cve.org/CVERecord?id=CVE-2023-44221) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-05-22 | 0.762 | 7.2 | ✅ | Improper neutralization of special elements in the SMA100 SSL-VPN management interface allows a remote authenticated attacker with administrative privilege to … |
 | [CVE-2023-21529](https://www.cve.org/CVERecord?id=CVE-2023-21529) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-27 | 0.593 | 8.8 | ✅ | Microsoft Exchange Server Remote Code Execution Vulnerability |
 | [CVE-2022-34713](https://www.cve.org/CVERecord?id=CVE-2022-34713) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-08-30 | 0.678 | 7.8 | ✅ | Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability |
-| [CVE-2024-43572](https://www.cve.org/CVERecord?id=CVE-2024-43572) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-29 | 0.667 | 7.8 | ✅ | Microsoft Management Console Remote Code Execution Vulnerability |
 
 ## Recent Changes (Last 7 Days)
 
@@ -303,4 +303,4 @@ Top critical items:
 | Nov 15 | [CVE-2026-124854](https://www.cve.org/CVERecord?id=CVE-2026-124854) | 🆕 New |
 | Nov 15 | [CVE-2026-124951](https://www.cve.org/CVERecord?id=CVE-2026-124951) | 🆕 New |
 | Nov 14 | [CVE-2026-107414](https://www.cve.org/CVERecord?id=CVE-2026-107414) | 🆕 New |
-| ... | | _and 1527 more_ |
+| ... | | _and 1525 more_ |
