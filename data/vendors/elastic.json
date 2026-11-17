@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T20:22:31+00:00",
+  "generated_at": "2026-11-17T03:45:53+00:00",
   "vendor": "elastic",
-  "count": 71,
+  "count": 70,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -3063,49 +3063,6 @@
           "CWE-200"
         ],
         "cpe_count": 2,
-        "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-72672",
-      "description": "The Elastic Security capability that suggests existing field values while a user authors endpoint policy artifacts queries Elastic Defend event data with Kibana's internal Elasticsearch account instead of the account of the requesting user. Only Kibana feature privileges are verified, and the caller's Elasticsearch index privileges are not. An authenticated user who holds Elastic Security feature privileges but no read access to the Elastic Defend event indices can therefore retrieve field values from that data, including process command line arguments, which commonly contain tokens, credentials, connection strings, and other sensitive operational detail from protected hosts.",
-      "cvss_score": 7.7,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
-      "affected": [
-        {
-          "vendor": "elastic",
-          "product": "kibana",
-          "versions": [
-            {
-              "status": "affected",
-              "versionType": "semver",
-              "version": "9.1.0",
-              "lessThanOrEqual": "9.4.4"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:kibana",
-        "vendor:elastic"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00375,
-      "nvd": {
-        "cvss_v3_score": 7.7,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 1,
         "reference_count": 1
       }
     },

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T20:22:31+00:00",
+  "generated_at": "2026-11-17T03:45:53+00:00",
   "vendor": "_other",
-  "count": 3293,
+  "count": 3305,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -18214,6 +18214,60 @@
       }
     },
     {
+      "cve_id": "CVE-2026-111760",
+      "description": "Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. Prior to 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, 2.55.1, and 2.56.1, an attacker-controlled repository hosted by the attacker rather than on a normal forge site can exploit git clone --recurse-submodules by causing Git to overwrite a submodule gitfile with a symbolic link. The symbolic link can point to a directory containing attacker-controlled Git configuration or hooks, allowing those hooks or configuration to execute code on the cloning user's system. The issue requires the recursive-submodule option, and users should avoid cloning repositories from untrusted sources. This issue is fixed in versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, 2.55.1, and 2.56.1.",
+      "cvss_score": 8.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "git",
+          "product": "git",
+          "versions": [
+            {
+              "version": "< 2.50.2",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.51.0, < 2.51.3",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.52.0, < 2.52.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.53.0, < 2.53.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.54.0, < 2.54.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.55.0, < 2.55.1",
+              "status": "affected"
+            },
+            {
+              "version": ">= 2.56.0, < 2.56.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:git",
+        "vendor:git"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2022-23614",
       "description": "Twig is an open source template language for PHP. When in a sandbox mode, the `arrow` parameter of the `sort` filter must be a closure to avoid attackers being able to run arbitrary PHP functions. In affected versions this constraint was not properly enforced and could lead to code injection of arbitrary PHP code. Patched versions now disallow calling non Closure in the `sort` filter as is the case for some other filters. Users are advised to upgrade.",
       "cvss_score": 8.8,
@@ -25894,6 +25948,310 @@
       }
     },
     {
+      "cve_id": "CVE-2026-100101",
+      "description": "On Linux and other Unix-like systems, LibreOffice can send the current document as an email attachment with File > Send > Email Document, which starts the mail client through a script bundled with LibreOffice. The script let the shell interpret the name of the document's file, so a file with a crafted name could run commands when it was sent by email. In fixed versions the script passes the file name and the other details to the mail client as plain arguments.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101352",
+      "description": "A document can carry its own user interface customizations, such as keyboard shortcuts, menus and toolbars, which take effect while the document is open. A command bound in these customizations could run a macro or a script even when the macro security settings did not allow the macros of the document, so a user who pressed a shortcut or chose a menu item in a crafted document could run code without any warning. In fixed versions the customizations of a document are treated like its other macro content, and the macro and script commands in them are only kept when the macros of the document are allowed.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101892",
+      "description": "LibreOffice documents in ODF format can contain form controls, such as buttons and text fields, and each control names the component that implements it. The component a control named was created even when it was not a form control, and the settings stored with the control were applied to it, so a crafted document could change the configuration of LibreOffice in a way that led to code being run. In fixed versions a control whose component is not a form control is ignored.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-101930",
+      "description": "LibreOffice Writer can open HTML documents, and an HTML document can bind macros to events of the document as a whole, such as the document being opened or closed. Macros bound to these events were not taken into account by the macro security check, so they could run when the document was opened, whatever the macro security level. In fixed versions these macros follow the macro security settings like any other macro in the document.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104007",
+      "description": "LibreOffice can connect to databases through JDBC drivers written in Java. A spreadsheet can use a database as the source of a pivot table, and the database document that describes the connection names the driver to use. The location the driver was loaded from was taken from the database document itself, so a crafted document could make LibreOffice load and run Java code that the document supplied when it was opened. This is a different route to the problem fixed for CVE-2026-63277. In fixed versions the driver location is taken only from the driver configuration of the user, and a pivot table whose source is a database document named by a URL connects only once the user allows links to be updated.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104692",
+      "description": "LibreOffice bundles the HSQLDB database engine, which can be used through the generic JDBC database driver as well as through the support for embedded databases. HSQLDB lets SQL statements call Java methods, limited to the classes that are permitted. When HSQLDB was used through the generic JDBC driver this limit did not apply, so SQL in a crafted document could call any Java method and run code. In fixed versions SQL can call only the built-in functions of HSQLDB, whichever way the database is reached.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-104920",
+      "description": "LibreOffice Calc can link a cell range to an external data source, and the link is saved in the document. A Java database driver for such a link is loaded from a class path. Opening a crafted document could still load a Java database driver from a location outside the local machine and run its code, by a route that the fix for CVE-2026-63277 did not cover. In fixed versions an entry in a Java class path has to be a file URL that names a file on the local machine.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-108169",
+      "description": "LibreOffice can open a web query file (.iqy), which names a web page to import into a spreadsheet, when the file is given on its command line, for example when a file manager or another program opens the file with LibreOffice. The address in such a file was used without the checks that apply to an address given on the command line directly, so a crafted file could make LibreOffice do something other than open a web page, up to running code. In fixed versions only an http or https address is taken from a web query file.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-63277",
       "description": "LibreOffice Calc can link a cell range to an external data source, and the link is saved in the document. A document could name a Java database driver for such a link to be loaded from a remote location, so opening the document could run Java code from that location. In fixed versions an entry in a Java class path has to be a file URL.",
       "cvss_score": 8.5,
@@ -25935,6 +26293,44 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-84443",
+      "description": "LibreOffice Base documents can bind macros to document events, such as opening or closing the document. The macro security setting decides whether macros that come with a document may run. Macros bound to the events of a Base document were run without the macro security setting being applied, so opening or converting a crafted database document could run a macro and, through it, any command. In fixed versions macros bound to the events of a Base document follow the macro security setting, as macros in other documents do.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "the document foundation",
+          "product": "libreoffice",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "26.2",
+              "lessThan": "< 26.2.7",
+              "versionType": "26.2 series"
+            },
+            {
+              "status": "affected",
+              "version": "26.8",
+              "lessThan": "< 26.8.2",
+              "versionType": "26.8 series"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:libreoffice",
+        "vendor:the document foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2022-26324",
@@ -181606,6 +182002,38 @@
       }
     },
     {
+      "cve_id": "CVE-2026-130082",
+      "description": "django-tenants 3.4.8 before 4.0.1 contains an SQL injection vulnerability in its PostgreSQL backend that allows attackers to inject SQL through unescaped tenant schema names. Attackers who can choose or influence a schema name can supply quote characters that are interpolated into SET search_path and CREATE, DROP or ALTER SCHEMA statements, letting them read other tenants' data or run SQL as the application's database user.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "django-tenants",
+          "product": "django-tenants",
+          "versions": [
+            {
+              "version": "3.4.8",
+              "lessThan": "4.0.1",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:django-tenants",
+        "vendor:django-tenants"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-13133",
       "description": "A vulnerability has been identified in LineInst.exe (LINE for Windows) prior to version 26.4.0, where Msftedit.dll is loaded via a relative path without a secure DLL search path, allowing a malicious DLL placed in the installer's directory to be loaded ahead of the legitimate System32 copy.",
       "cvss_score": 8.4,
@@ -197886,6 +198314,36 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-69154",
+      "description": "The Coder VS Code extension opens Coder workspaces in VS Code with a single click. From 0.1.20 until 1.14.6, a malicious repository can provide .vscode/settings.json values for security-sensitive Coder settings because the extension permits workspace and folder scope to override those settings. Values such as coder.headerCommand and coder.tlsCertRefreshCommand are later executed as shell commands, while other affected settings can redirect the Coder CLI binary or download source, inject CLI or SSH flags, replace TLS material, disable TLS verification, or change identity and credential-storage behavior. A victim with the extension installed must open the malicious workspace or repository; when the extension activates, attacker-controlled commands can run with the victim user's privileges. The issue also affects untrusted workspaces because the extension declares untrusted-workspace support without preventing consumption of the workspace-controlled settings. This issue is fixed in version 1.14.6.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "coder",
+          "product": "vscode-coder",
+          "versions": [
+            {
+              "version": ">= 0.1.20, < 1.14.6",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:vscode-coder",
+        "vendor:coder"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-6213",
