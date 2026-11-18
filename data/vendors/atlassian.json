@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T21:50:40+00:00",
+  "generated_at": "2026-11-18T03:40:47+00:00",
   "vendor": "atlassian",
-  "count": 56,
+  "count": 73,
   "items": [
     {
       "cve_id": "CVE-2022-0540",
@@ -7495,6 +7495,985 @@
         "cpe_count": 21,
         "reference_count": 10
       }
+    },
+    {
+      "cve_id": "CVE-2026-21590",
+      "description": "This High severity Information Path Traversal (Arbitrary Read/Write) vulnerability was introduced in versions 9.12.0, 10.3.0, and 11.3.0 of Jira Software Data Center. \r\n\t\r\n\tThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 8.7, allows a remote unauthenticated attacker to read files from the Jira web application root. \r\n\t\r\n\tAtlassian recommends that Jira Software Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n\t\t\r\n\t\tJira Software Data Center 9.12: Upgrade to a release greater than or equal to 9.12.40\r\n\t\t\r\n\t\tJira Software Data Center 10.3: Upgrade to a release greater than or equal to 10.3.26\r\n\t\t\r\n\t\tJira Software Data Center 11.3: Upgrade to a release greater than or equal to 11.3.12\r\n\t\t\r\n\t\t\r\n\t\r\n\tSee the release notes (https://confluence.atlassian.com/jirasoftware/jira-software-data-center-release-notes.html). You can download the latest version of Jira Software Data Center from the download center (https://www.atlassian.com/software/jira/download-archives). \r\n\t\r\n\tThis vulnerability was reported via our Bug Bounty program.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira software data center",
+          "versions": [
+            {
+              "version": "11.3.0 to 11.3.11",
+              "status": "affected"
+            },
+            {
+              "version": "10.3.0 to 10.3.25",
+              "status": "affected"
+            },
+            {
+              "version": "9.12.16 to 9.12.39",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.12 to 11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.26 to 10.3.27",
+              "status": "unaffected"
+            },
+            {
+              "version": "9.12.40 to 9.12.42",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira software data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21591",
+      "description": "This High severity PrivEsc (Privilege Escalation) vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Center.\r\n\r\nThis PrivEsc (Privilege Escalation) vulnerability, with a CVSS Score of 7.4, allows an authenticated attacker to perform actions as a higher-privileged user.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Bamboo Data Center 10.2: Upgrade to a release greater than or equal to 10.2.26\r\n\r\n Bamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\n\r\n Bamboo Data Center 13.0: Upgrade to a release greater than or equal to 13.0.1\r\n\r\nSee the release notes ([https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html]). You can download the latest version of Bamboo Data Center from the download center ([https://www.atlassian.com/software/bamboo/download-archives]).\r\n\r\nThis vulnerability was reported via our Penetration Testing program.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:P",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.24",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.26",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21592",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21592 was introduced in version 4.9.0.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 7.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:P allows an unauthenticated attacker to disclose protected application configuration files, which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Crucible Server customers upgrade to the latest version. If you are unable to do so, upgrade your instance to the specified supported fixed version:\r\n Crucible Server 4.9: Upgrade to a release greater than or equal to 4.9.16\r\n\r\nSee the Crucible Server release notes ([https://confluence.atlassian.com/crucible/crucible-releases-298977378.html]). You can download the latest version of Crucible from the Crucible Download Archives ([https://www.atlassian.com/software/crucible/download-archives]).\r\n\r\nThe following description summarizes the vulnerability reported via our Penetration Testing program:\r\n\r\nCrucible do not account for path parameters when validating protected paths requested through the static-resource route. A crafted path segment passes validation, after which Jetty removes the path parameter during dispatch and resolves the request to a protected resource. This can expose files under WEB-INF and permit direct invocation of admin-area JSPs outside the normal interceptor and administrative password checks. An ordinary authenticated user can exploit the issue, and unauthenticated exploitation is possible when anonymous access is enabled.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "crucible data center",
+          "versions": [
+            {
+              "version": "4.9.0 to 4.9.15",
+              "status": "affected"
+            },
+            {
+              "version": "4.9.16",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "fisheye data center",
+          "versions": [
+            {
+              "version": "4.9.0 to 4.9.15",
+              "status": "affected"
+            },
+            {
+              "version": "4.9.16",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:crucible data center",
+        "product:fisheye data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21593",
+      "description": "This High severity OS Command Injection vulnerability known as CVE-2026-21593 was introduced in version 4.9.0.\r\n\r\nThis OS Command Injection vulnerability, with a CVSS Score of 7.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N allows an authenticated attacker to execute arbitrary commands.\r\n\r\nAtlassian recommends that Fisheye and Crucible Data Center and Server customers upgrade to the latest version. If you are unable to do so, upgrade your instance to the specified supported fixed version:\r\n\r\nFisheye and Crucible 4.9: Upgrade to a release greater than or equal to 4.9.16\r\n\r\nSee the Fisheye release notes (https://confluence.atlassian.com/fisheye/fisheye-release-notes-965552419.html) and Crucible release notes (https://confluence.atlassian.com/crucible/crucible-releases-298977378.html). You can download the latest version of Fisheye and Crucible from the Crucible Download Archives (https://www.atlassian.com/software/crucible/download-archives).",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "crucible data center",
+          "versions": [
+            {
+              "version": "4.9.0 to 4.9.15",
+              "status": "affected"
+            },
+            {
+              "version": "4.9.16",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "crucible server",
+          "versions": [
+            {
+              "version": "4.9.0 to 4.9.15",
+              "status": "affected"
+            },
+            {
+              "version": "4.9.16",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "fisheye data center",
+          "versions": [
+            {
+              "version": "4.9.0 to 4.9.15",
+              "status": "affected"
+            },
+            {
+              "version": "4.9.16",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "fisheye server",
+          "versions": [
+            {
+              "version": "4.9.0 to 4.9.15",
+              "status": "affected"
+            },
+            {
+              "version": "4.9.16",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:crucible data center",
+        "product:crucible server",
+        "product:fisheye data center",
+        "product:fisheye server",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21594",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21594 was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 8.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N allows an unauthenticated attacker to disclose protected files from the Bamboo web application root, which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to the latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n\r\nBamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\nBamboo Data Center 10.2: Upgrade to a release greater than or equal to 10.2.26\r\n\r\nSee the release notes (https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html). You can download the latest version of Bamboo Data Center from the download center (https://www.atlassian.com/software/bamboo/download-archives).",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.24",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.26",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21595",
+      "description": "This High severity Improper Authorization vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Center.\r\n\r\nThis Improper Authorization vulnerability, with a CVSS Score of 7.6, allows an unauthenticated attacker to gain unintended access and can lead to the exposure of resources or functionality, possibly providing attackers with sensitive information or even execute arbitrary code.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Bamboo Data Center 10.2: Upgrade to a release greater than or equal to 10.2.26\r\n\r\n Bamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\n\r\n Bamboo Data Center 13.0: Upgrade to a release greater than or equal to 13.0.1\r\n\r\nSee the release notes ([https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html]). You can download the latest version of Bamboo Data Center from the download center ([https://www.atlassian.com/software/bamboo/download-archives]).\r\n\r\nThis vulnerability was reported via our Penetration Testing program.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.24",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.26",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21596",
+      "description": "This High severity SSTI (Server-side Template Injection) vulnerability known as CVE-2026-21596 was introduced in version 12.0.0, 12.1.0.\r\n\r\nThis SSTI (Server-side Template Injection) vulnerability, with a CVSS Score of 7.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N allows an authenticated attacker to execute arbitrary commands, which has high impact to confidentiality, high impact to integrity, high impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to the latest version. If you are unable to do so, upgrade your instance to the specified supported fixed version:\r\n Bamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\n\r\nSee the release notes ([https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html]). You can download the latest version of Bamboo Data Center from the download center ([https://www.atlassian.com/software/bamboo/download-archives]).",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21598",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21598 was introduced in versions 10.2.0, 11.0.0, 12.0.0 and 12.1.0.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 8.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N allows an unauthenticated attacker to potentially disclose sensitive information from the deployed Bamboo web application root, which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to the latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Bamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\n Bamboo Data Center 10.2: Upgrade to a release greater than or equal to 10.2.26\r\n\r\nSee the release notes ([https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html]). You can download the latest version of Bamboo Data Center from the download center ([https://www.atlassian.com/software/bamboo/download-archives]).",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.24",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.26",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21599",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21599 was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 7.5 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N allows an authenticated attacker to expose assets in your environment susceptible to exploitation.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to the latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n\r\nBamboo Data Center 13.0: Upgrade to a release greater than or equal to 13.0.1\r\nBamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\nBamboo Data Center 10.2: Upgrade to a release greater than or equal to 10.2.26\r\n\r\nSee the release notes (https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html). You can\r\ndownload the latest version of Bamboo Data Center from the download center\r\n(https://www.atlassian.com/software/bamboo/download-archives).",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.24",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.26",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21600",
+      "description": "This High severity Security Misconfiguration vulnerability was introduced in versions 10.2.0, 11.0.0, 12.0.0, and 12.1.0 of Bamboo Data Center.\r\n\r\nThis Security Misconfiguration vulnerability, with a CVSS Score of 8.9, allows an authenticated attacker to to get into the system utilizing loopholes exposed from security best-practices being overlooked.\r\n\r\nAtlassian recommends that Bamboo Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Bamboo Data Center 10.2: Upgrade to a release greater than or equal to 10.2.26\r\n\r\n Bamboo Data Center 12.1: Upgrade to a release greater than or equal to 12.1.13\r\n\r\n Bamboo Data Center 13.0: Upgrade to a release greater than or equal to 13.0.1\r\n\r\nSee the release notes ([https://confluence.atlassian.com/bambooreleases/bamboo-release-notes-1189793869.html]). You can download the latest version of Bamboo Data Center from the download center ([https://www.atlassian.com/software/bamboo/download-archives]).\r\n\r\nThis vulnerability was reported via our Atlassian (Internal) program.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "bamboo data center",
+          "versions": [
+            {
+              "version": "12.1.0 to 12.1.12",
+              "status": "affected"
+            },
+            {
+              "version": "12.0.0 to 12.0.2",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.8",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.24",
+              "status": "affected"
+            },
+            {
+              "version": "13.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "12.1.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.26",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:bamboo data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21601",
+      "description": "This High severity BASM (Broken Authentication & Session Management) vulnerability was introduced in versions 10.0.0 and 11.0.0 of Jira Service Management Data Center. \n\t\n\tThis BASM (Broken Authentication & Session Management) vulnerability, with a CVSS Score of 8.7, allows an unauthenticated attacker to perform actions as another user. \n\t\n\tAtlassian recommends that Jira Service Management Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\n\t\t\n\t\t* Jira Service Management Data Center 10.3: Upgrade to a release greater than or equal to 10.3.27\n\t\t\n\t\t* Jira Service Management Data Center 11.3: Upgrade to a release greater than or equal to 11.3.13\n\t\t\n\t\t\n\t\n\tSee the release notes (https://confluence.atlassian.com/servicemanagement/jira-service-management-release-notes-780083086.html). You can download the latest version of Jira Service Management Data Center from the download center (https://www.atlassian.com/software/jira/service-management/download-archives). \n\t\n\tThis vulnerability was discovered by Nagli and reported via our Bug Bounty program",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira service management data center",
+          "versions": [
+            {
+              "version": "11.2.0 to 11.2.1",
+              "status": "affected"
+            },
+            {
+              "version": "11.1.0 to 11.1.1",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.7.1 to 10.7.4",
+              "status": "affected"
+            },
+            {
+              "version": "10.6.0 to 10.6.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.5.0 to 10.5.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.4.0 to 10.4.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.1",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira service management data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21602",
+      "description": "This High severity Stored XSS vulnerability was introduced in version 10.3.26 of Jira Core Data Center and Jira Software Data Center. \n\t\n\tThis Stored XSS vulnerability, with a CVSS Score of 7.4, allows an authenticated attacker to execute arbitrary HTML or JavaScript code on a victims browser. \n\t\n\tAtlassian recommends that Jira Core Data Center and Jira Software Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\n\t\t\n\t\t* Jira Core Data Center and Jira Software Data Center 10.3: Upgrade to a release greater than or equal to 10.3.27\n\t\t\n\t\t* Jira Core Data Center and Jira Software Data Center 11.3: Upgrade to a release greater than or equal to 11.3.13\n\t\t\n\t\t\n\t\n\tSee the release notes (https://www.atlassian.com/software/jira/download-archives). You can download the latest version of Jira Core Data Center and Jira Software Data Center from the download center (https://www.atlassian.com/software/jira/download-archives). \n\t\n\tThis vulnerability was reported via our Penetration Testing program.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira core data center",
+          "versions": [
+            {
+              "version": "10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "jira software data center",
+          "versions": [
+            {
+              "version": "10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira core data center",
+        "product:jira software data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21603",
+      "description": "This High severity Stored XSS vulnerability was introduced in version 10.3.26 of Jira Core Data Center and Jira Software Data Center. \n\t\n\tThis Stored XSS vulnerability, with a CVSS Score of 8.4, allows an authenticated attacker to execute arbitrary HTML or JavaScript code on a victims browser. \n\t\n\tAtlassian recommends that Jira Core Data Center and Jira Software Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\n\t\t\n\t\t* Jira Core Data Center and Jira Software Data Center 10.3: Upgrade to a release greater than or equal to 10.3.27\n\t\t\n\t\t* Jira Core Data Center and Jira Software Data Center 11.3: Upgrade to a release greater than or equal to 11.3.13\n\t\t\n\t\t\n\t\n\tSee the release notes (https://www.atlassian.com/software/jira/download-archives). You can download the latest version of Jira Core Data Center and Jira Software Data Center from the download center (https://www.atlassian.com/software/jira/download-archives). \n\t\n\tThis vulnerability was reported via our Penetration Testing program.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira core data center",
+          "versions": [
+            {
+              "version": "10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "jira software data center",
+          "versions": [
+            {
+              "version": "10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira core data center",
+        "product:jira software data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21605",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21605 was introduced in versions 2.0.0, 3.0.0, 4.0.0, 5.0.0,\u00a06.0.1, 6.1.0, 6.2.0, 6.3.1, 6.4.0, 6.5.0, 6.6.0 ,6.7.0, 6.8.0, 6.9.0, 6.10.0, 6.11.0, 6.12.0, 6.13.0, 6.14.0, 6.15.1, 7.0.1, 7.1.0, 7.2.0, 7.3.1, 7.4.0, 7.5.0, 7.6.0, 7.7.2, 7.8.0, 7.9.0, 7.11.0, 7.12.0, 7.13.0, 7.14.0, 7.15.0, 7.16.0, 7.17.0, 7.18.0, 7.19.0, 7.20.0, 8.0.0, 8.1.0, 8.2.0, 8.3.0, 8.4.0, 8.5.0, 8.6.0, 8.7.1, 8.8.0, 8.9.0, 9.0.1, 9.1.0, 9.2.0, 9.3.1, 9.4.0, 9.5.1, 10.0.2, 10.1.0, 10.2.0, and 11.0.0 of Confluence Data Center.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 8.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N allows an unauthenticated attacker to expose assets in your environment susceptible to exploitation, which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Confluence Data Center and Server customers upgrade to the latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n Confluence Data Center 11.0: Upgrade to a release greater than or equal to 11.0.1\r\n Confluence Data Center 10.2: Upgrade to a release greater than or equal to 10.2.20\r\n Confluence Data Center 9.2: Upgrade to a release greater than or equal to 9.2.27\r\n\r\nSee the release notes ([https://confluence.atlassian.com/doc/confluence-release-notes-327.html]). You can download the\r\nlatest version of Confluence Data Center and Server from the download center\r\n([https://www.atlassian.com/software/confluence/download-archives]).\r\n\r\nThe following description summarizes the vulnerability reported internally:\r\n\r\nConfluence CssServlet forwards a request-controlled path to ServletRequest.getRequestDispatcher. The dispatcher URL-decodes and normalizes the path, allowing an unauthenticated attacker to use an encoded traversal sequence to access protected web application resources such as /WEB-INF/web.xml. The demonstrated impact is disclosure of protected files that may contain configuration or secrets; no integrity or availability impact was demonstrated.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "confluence data center",
+          "versions": [
+            {
+              "version": "11.0.0",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.19",
+              "status": "affected"
+            },
+            {
+              "version": "10.1.0 to 10.1.2",
+              "status": "affected"
+            },
+            {
+              "version": "10.0.2 to 10.0.3",
+              "status": "affected"
+            },
+            {
+              "version": "9.5.1 to 9.5.4",
+              "status": "affected"
+            },
+            {
+              "version": "9.4.0 to 9.4.1",
+              "status": "affected"
+            },
+            {
+              "version": "9.3.1 to 9.3.2",
+              "status": "affected"
+            },
+            {
+              "version": "9.2.0 to 9.2.26",
+              "status": "affected"
+            },
+            {
+              "version": "8.5.18 to 8.5.31",
+              "status": "affected"
+            },
+            {
+              "version": "7.19.30",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.1",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.2.20",
+              "status": "unaffected"
+            },
+            {
+              "version": "9.2.27 to 9.2.28",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:confluence data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21606",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21606 was introduced in versions 10.3.26 and 11.3.12.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 8.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N allows an unauthenticated attacker to disclose protected resources outside declared resource directories, which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Jira Software Data Center customers upgrade to the latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n\r\nJira Software Data Center 11.3: Upgrade to a release greater than or equal to 11.3.13\r\nJira Software Data Center 10.3: Upgrade to a release greater than or equal to 10.3.27\r\n\r\nSee the release notes (https://confluence.atlassian.com/jirasoftware/jira-software-data-center-release-notes.html). You can download the latest version of Jira Software Data Center from the Jira Data Center Download Archives (https://www.atlassian.com/software/jira/download-archives).",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira software data center",
+          "versions": [
+            {
+              "version": "11.3.12",
+              "status": "affected"
+            },
+            {
+              "version": "10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira software data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21607",
+      "description": "This High severity Path Traversal (Arbitrary Read/Write) vulnerability known as CVE-2026-21607 was introduced in versions 10.3.26 and 11.3.12.\r\n\r\nThis Path Traversal (Arbitrary Read/Write) vulnerability, with a CVSS Score of 8.7 and a CVSS Vector of CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N allows an unauthenticated attacker to disclose protected web application files outside the intended resource location, which has high impact to confidentiality, no impact to integrity, no impact to availability, and requires no user interaction.\r\n\r\nAtlassian recommends that Jira Software Data Center customers upgrade to the latest version. If you are unable to do so, upgrade your instance to one of the specified supported fixed versions:\r\n\r\nJira Software Data Center 11.3: Upgrade to a release greater than or equal to 11.3.13\r\nJira Software Data Center 10.3: Upgrade to a release greater than or equal to 10.3.27\r\n\r\nSee the release notes (https://confluence.atlassian.com/jirasoftware/jira-software-data-center-release-notes.html). You can download the latest version of Jira Software Data Center from the Jira Data Center Download Archives (https://www.atlassian.com/software/jira/download-archives).",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira software data center",
+          "versions": [
+            {
+              "version": "11.3.12",
+              "status": "affected"
+            },
+            {
+              "version": "10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira software data center",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-21609",
+      "description": "This High severity Improper Authorization vulnerability was introduced in versions 5.12.0, 10.3.0, and 11.3.0 of Jira Service Management Data Center.  \t \tThis Improper Authorization vulnerability, with a CVSS Score of 7.1, allows an authenticated attacker to gain unintended access and can lead to the exposure of resources or functionality, possibly providing attackers with sensitive information or even execute arbitrary code.  \t \tAtlassian recommends that Jira Service Management Data Center customers upgrade to latest version, if you are unable to do so, upgrade your instance to one of the specified supported fixed versions: \t\t \t\t Jira Service Management Data Center 10.3: Upgrade to a release greater than or equal to 10.3.27 \t\t \t\t Jira Service Management Data Center 11.3: Upgrade to a release greater than or equal to 11.3.13 \t\t \t\t \t \tSee the release notes (https://confluence.atlassian.com/servicemanagement/jira-service-management-release-notes-780083086.html). You can download the latest version of Jira Service Management Data Center from the download center (https://www.atlassian.com/software/jira/service-management/download-archives).  \t \tThis vulnerability was reported via our Bug Bounty program.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "atlassian",
+          "product": "jira service management data center",
+          "versions": [
+            {
+              "version": "11.3.0 to 11.3.12",
+              "status": "affected"
+            },
+            {
+              "version": "11.2.0 to 11.2.1",
+              "status": "affected"
+            },
+            {
+              "version": "11.1.0 to 11.1.1",
+              "status": "affected"
+            },
+            {
+              "version": "11.0.0 to 11.0.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.7.1 to 10.7.4",
+              "status": "affected"
+            },
+            {
+              "version": "10.6.0 to 10.6.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.5.0 to 10.5.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.4.0 to 10.4.1",
+              "status": "affected"
+            },
+            {
+              "version": "10.3.0 to 10.3.26",
+              "status": "affected"
+            },
+            {
+              "version": "10.2.0 to 10.2.1",
+              "status": "affected"
+            },
+            {
+              "version": "5.17.5",
+              "status": "affected"
+            },
+            {
+              "version": "5.12.16 to 5.12.42",
+              "status": "affected"
+            },
+            {
+              "version": "11.3.13",
+              "status": "unaffected"
+            },
+            {
+              "version": "10.3.27",
+              "status": "unaffected"
+            }
+          ]
+        },
+        {
+          "vendor": "atlassian",
+          "product": "jira service management server",
+          "versions": [
+            {
+              "version": "5.12.16 to 5.12.42",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:jira service management data center",
+        "product:jira service management server",
+        "vendor:atlassian"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00485
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T21:50:40+00:00",
+  "generated_at": "2026-11-18T03:40:47+00:00",
   "vendor": "gitlab",
-  "count": 205,
+  "count": 209,
   "items": [
     {
       "cve_id": "CVE-2022-0154",
@@ -7505,6 +7505,94 @@
       }
     },
     {
+      "cve_id": "CVE-2026-105739",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the browser of users viewing a wiki page due to improper sanitization of user input.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "17.2",
+              "status": "affected",
+              "lessThan": "19.3.9",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.8",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.5",
+              "status": "affected",
+              "lessThan": "19.5.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00284
+    },
+    {
+      "cve_id": "CVE-2026-108153",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to execute arbitrary JavaScript in the browser of users viewing Error Tracking pages due to improper sanitization of user input.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "16.1",
+              "status": "affected",
+              "lessThan": "19.3.9",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.8",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.5",
+              "status": "affected",
+              "lessThan": "19.5.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00284
+    },
+    {
       "cve_id": "CVE-2026-10053",
       "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.8 before 19.0.6, 19.1 before 19.1.4, and 19.2 before 19.2.2 that under certain conditions could have allowed an authenticated user to achieve remote code execution due to a path traversal vulnerability in the package registry.",
       "cvss_score": 8.5,
@@ -8542,6 +8630,50 @@
         "cpe_count": 2,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-18241",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to access protected CI/CD variables and resources due to a race condition in pipeline job authorization.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "9.3",
+              "status": "affected",
+              "lessThan": "19.3.9",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.8",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.5",
+              "status": "affected",
+              "lessThan": "19.5.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00259
     },
     {
       "cve_id": "CVE-2026-18252",
@@ -10932,6 +11064,50 @@
         "cpe_count": 3,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-97187",
+      "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.6 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticated user to read Kubernetes Secrets from other namespaces in clusters connected through the GitLab agent for Kubernetes due to incorrect authorization in workspaces.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:L/A:N",
+      "affected": [
+        {
+          "vendor": "gitlab",
+          "product": "gitlab",
+          "versions": [
+            {
+              "version": "17.6",
+              "status": "affected",
+              "lessThan": "19.3.9",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.4",
+              "status": "affected",
+              "lessThan": "19.4.8",
+              "versionType": "semver"
+            },
+            {
+              "version": "19.5",
+              "status": "affected",
+              "lessThan": "19.5.6",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:gitlab",
+        "vendor:gitlab"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0027
     },
     {
       "cve_id": "CVE-2026-97229",
