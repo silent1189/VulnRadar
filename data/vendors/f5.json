@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T21:25:58+00:00",
+  "generated_at": "2026-11-19T03:10:41+00:00",
   "vendor": "f5",
-  "count": 215,
+  "count": 233,
   "items": [
     {
       "cve_id": "CVE-2022-1388",
@@ -11390,6 +11390,257 @@
       }
     },
     {
+      "cve_id": "CVE-2026-113425",
+      "description": "When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process.\u00a0Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nA remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.3.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.8.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.9",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "1.30.7",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "0.5.33",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-116953",
+      "description": "Description:\n\nWhen an iRule that processes client traffic using the GENERICMESSAGE::route command is configured on a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\u00a0\n\n\n\n\n\nImpact:\n\n\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may allow the attacker to perform RCE. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next for kubernetes",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-ip next for kubernetes",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-118899",
+      "description": "When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections.\u00a0Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.\n\nImpact:\u00a0This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.9",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "1.30.7",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.2.1.1",
+              "status": "affected",
+              "version": "37.2.0.1",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.8.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-11311",
       "description": "When NGINX Plus is configured as the data plane for NGINX Gateway Fabric, an injection vulnerability exists in the NGINX configuration generator component of NGINX Gateway Fabric. User-supplied string values from the NginxProxy\u00a0Custom Resource Definition serverTokens\u00a0field and the AuthenticationFilter\u00a0Custom Resource Definition extraAuthArgs\u00a0field are rendered directly into NGINX configuration templates without sanitization or escaping. An authenticated attacker with permission to create or modify these Custom Resource Definitions may craft values that inject arbitrary NGINX configuration directives. This is a control plane issue; there is no data plane exposure from the vulnerability trigger itself. \n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
       "cvss_score": 8.1,
@@ -11432,6 +11683,1275 @@
         "cpe_count": 1,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-120285",
+      "description": "Description\nWhen an HTTP profile and an iRule containing the PSC::ip_address command are configured on a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\n\nImpact\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may allow the attacker to perform RCE. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next for kubernetes",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next cnf",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-ip next cnf",
+        "product:big-ip next for kubernetes",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120292",
+      "description": "Description:\n\n\nWhen an HTTP profile and an iRule using the \n\nMR::message \n\nroute\u00a0command are configured on a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE)\n\n\nImpact:\n\n\n\n\n\n\n\n\n\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may allow the attacker to perform RCE. There is no control plane exposure; this is a data plane issue only.\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next for kubernetes",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-ip next for kubernetes",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120718",
+      "description": "Description: \nBIG-IP iControl REST tokens may not expire as expected in all scenarios. \u00a0 \n\nImpact:\u00a0\nAn attacker who has obtained a token may be able to extend its expiry lifetime unless the token owner deletes it.\u00a0There is no data plane exposure; this is a control plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "lessThan": "21.1.0.2",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.5.1.10",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.1.3.6",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-iq",
+          "versions": [
+            {
+              "lessThan": "8.4.2.3",
+              "status": "affected",
+              "version": "8.4.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-iq",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-120722",
+      "description": "Description:\n\nWhen an iRule that processes client traffic using the DNS::scrape command is configured on a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\u00a0\n\n\n\n\n\nImpact:\n\n\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system. In addition, the attacker may be able to perform RCE. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next for kubernetes",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next cnf",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-ip next cnf",
+        "product:big-ip next for kubernetes",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121805",
+      "description": "Description:\n\nWhen an iRule that processes client traffic using the PEM::subscriber command is configured on a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\u00a0\n\n\n\n\n\nImpact:\n\n\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may perform RCE. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next for kubernetes",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-ip next cnf",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.4.2-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.4.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.3.4-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.3.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BNK-2.2.5-EHF1",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "2.2.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-ip next cnf",
+        "product:big-ip next for kubernetes",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121810",
+      "description": "Description:\nThis issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker\u2019s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.3.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.8.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.9",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "1.30.7",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "1.25.09",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-121812",
+      "description": "Description:\n\n\nWhen BIG-IP APM is provisioned, and a virtual server is configured with an APM access profile and a per-request policy, and the tmm.access.policytrace database key is enabled, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate. The key is disabled by default.\n\n\n\n\n\n\n\n\n\n\n\n\nImpact:\n\n\n\nTraffic is disrupted\nwhile the TMM process restarts. This vulnerability allows a remote unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system . There\nis no control plane exposure; this is a data plane issue only.\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "lessThan": "21.1.0.3",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.5.1.10",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.1.3.6",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123007",
+      "description": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.3.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.8.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.9",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "1.30.7",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "1.9.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123633",
+      "description": "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections.\u00a0Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.31.0",
+              "lessThan": "1.31.9",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "1.30.0",
+              "lessThan": "1.30.7",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "1.19.7",
+              "lessThan": "*",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "37.1.0.1",
+              "lessThan": "37.2.0.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "37.0.0.1",
+              "lessThan": "37.0.7.1",
+              "versionType": "custom"
+            },
+            {
+              "status": "affected",
+              "version": "R33",
+              "lessThan": "*",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123634",
+      "description": "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nImpact: \nAn attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "nginx plus",
+          "versions": [
+            {
+              "lessThan": "37.3.0.1",
+              "status": "affected",
+              "version": "37.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "37.0.8.1",
+              "status": "affected",
+              "version": "37.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "R33",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "nginx open source",
+          "versions": [
+            {
+              "lessThan": "1.31.9",
+              "status": "affected",
+              "version": "1.31.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "1.30.7",
+              "status": "affected",
+              "version": "1.30.0",
+              "versionType": "semver"
+            },
+            {
+              "lessThan": "*",
+              "status": "affected",
+              "version": "0.6.18",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:nginx open source",
+        "product:nginx plus",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123637",
+      "description": "When BIG-IP APM is provisioned and a per-request policy that includes the Client Information agent and Endpoint Security agents is applied to a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\n\nImpact:\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may allow the attacker to perform RCE. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-125272",
+      "description": "Description:\n\n\n\n\n\n\nWhen BIG-IP APM is licensed and provisioned, and a virtual server with the APM access profile is configured with a per-request policy containing a form-based Logon Page, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate.\n\n\n\n\n\n\n\n\n\nImpact:\n\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-125274",
+      "description": "An authenticated iControl SOAP user with at least\u00a0Guest access can\u00a0inject an unauthorized management request.\n\n\n\n\n\nImpact:\n\nThis vulnerability may allow an authenticated attacker with network access and at least Guest role privileges to the iControl SOAP utility to execute arbitrary system commands, create or delete files, or disable services. There is no data plane exposure; this is a control plane issue only.\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "lessThan": "21.1.0.3",
+              "status": "affected",
+              "version": "21.0.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.5.1.10",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.1.3.6",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "f5",
+          "product": "big-iq",
+          "versions": [
+            {
+              "lessThan": "8.4.2.3",
+              "status": "affected",
+              "version": "8.4.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "product:big-iq",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-126336",
+      "description": "Description:\n\n\nWhen BIG-IP APM is provisioned and a virtual server is configured with an APM Access profile and a SAML Service Provider (SP) agent with encrypted assertions enabled, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate.\n\n\n\n\n\n\nImpact:\n\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "lessThan": "21.1.0.3",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.5.1.10",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "lessThan": "17.1.3.6",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-126822",
+      "description": "Description:\n\n\n\n\n\nWhen BIG-IP APM is provisioned, an Access Profile is configured as a SAML SP (Service Provider) and is applied to a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate.\n\nImpact:\n\n\n\n\n\nTraffic\nis disrupted while the TMM process restarts. This vulnerability allows a remote unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system.\n\n\n\n\n\n\n\n\n\nThere\nis no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected": [
+        {
+          "vendor": "f5",
+          "product": "big-ip",
+          "versions": [
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-21.1.0.4.0.19.3-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "21.1.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.5.1.11.0.61.12-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.5.1.10.0.80.35-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.5.0",
+              "versionType": "custom"
+            },
+            {
+              "changes": [
+                {
+                  "at": "BIGIP-17.1.3.7.0.21.4-ENG",
+                  "status": "unaffected"
+                },
+                {
+                  "at": "BIGIP-17.1.3.6.0.14.20-ENG",
+                  "status": "unaffected"
+                }
+              ],
+              "lessThan": "*",
+              "status": "affected",
+              "version": "17.1.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:big-ip",
+        "vendor:f5"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-15176",
