@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-20T11:19:18+00:00`
+Generated: `2026-11-20T19:59:55+00:00`
 
 ## Executive Summary
 
@@ -38,11 +38,11 @@ Top critical items:
 
 ## Summary
 
-- Total items: **40594**
-- Watchlist hits: **40273**
-- CISA KEVs: **866**
-- Exploit Intel (PoC): **1083**
-- Exploit Intel + Watchlist (CRITICAL): **762**
+- Total items: **40595**
+- Watchlist hits: **40274**
+- CISA KEVs: **870**
+- Exploit Intel (PoC): **1084**
+- Exploit Intel + Watchlist (CRITICAL): **763**
 
 ## Top Findings (max 200)
 
@@ -122,16 +122,15 @@ Top critical items:
 | [CVE-2024-53704](https://www.cve.org/CVERecord?id=CVE-2024-53704) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-03-11 | 0.953 | 9.8 | ✅ | An Improper Authentication vulnerability in the SSLVPN authentication mechanism allows a remote attacker to bypass authentication. |
 | [CVE-2024-4879](https://www.cve.org/CVERecord?id=CVE-2024-4879) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 1.000 | 9.3 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in Vancouver and Washington DC Now Platform releases. This vulnerability could e… |
 | [CVE-2025-5777](https://www.cve.org/CVERecord?id=CVE-2025-5777) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-07-11 | 0.999 | 9.3 | ✅ | Insufficient input validation leading to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA … |
-| [CVE-2026-63077](https://www.cve.org/CVERecord?id=CVE-2026-63077) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-08 | 0.949 | 9.8 | ✅ | In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol |
 | [CVE-2024-0012](https://www.cve.org/CVERecord?id=CVE-2024-0012) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-12-09 | 0.998 | 9.3 | ✅ | An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain … |
 | [CVE-2024-47575](https://www.cve.org/CVERecord?id=CVE-2024-47575) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-11-13 | 0.948 | 9.8 | ✅ | A missing authentication for critical function in FortiManager 7.6.0, FortiManager 7.4.0 through 7.4.4, FortiManager 7.2.0 through 7.2.7, FortiManager 7.0.0 th… |
-| [CVE-2026-21589](https://www.cve.org/CVERecord?id=CVE-2026-21589) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-18 | 0.997 | 9.3 | ✅ | This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. C… |
 | [CVE-2024-21413](https://www.cve.org/CVERecord?id=CVE-2024-21413) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-02-27 | 0.947 | 9.8 | ✅ | Microsoft Outlook Remote Code Execution Vulnerability |
 | [CVE-2024-8963](https://www.cve.org/CVERecord?id=CVE-2024-8963) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-10-10 | 0.986 | 9.4 | ✅ | Path Traversal in the Ivanti CSA before 4.6 Patch 519 allows a remote unauthenticated attacker to access restricted functionality. |
 | [CVE-2022-42475](https://www.cve.org/CVERecord?id=CVE-2022-42475) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-01-03 | 0.995 | 9.3 | ✅ | A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6… |
 | [CVE-2026-109618](https://www.cve.org/CVERecord?id=CVE-2026-109618) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-29 | 1.000 | 9.2 | ✅ | PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for thi… |
 | [CVE-2026-109619](https://www.cve.org/CVERecord?id=CVE-2026-109619) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-29 | 1.000 | 9.2 | ✅ | PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated aft… |
 | [CVE-2025-11953](https://www.cve.org/CVERecord?id=CVE-2025-11953) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-02-26 | 0.940 | 9.8 | ✅ | The Metro Development Server, which is opened by the React Native Community CLI, binds to external interfaces by default. The server exposes an endpoint that i… |
+| [CVE-2026-63077](https://www.cve.org/CVERecord?id=CVE-2026-63077) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-08-08 | 0.939 | 9.8 | ✅ | In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol |
 | [CVE-2024-5217](https://www.cve.org/CVERecord?id=CVE-2024-5217) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-08-19 | 0.996 | 9.2 | ✅ | ServiceNow has addressed an input validation vulnerability that was identified in the Washington DC, Vancouver, and earlier Now Platform releases. This vulnera… |
 | [CVE-2023-48788](https://www.cve.org/CVERecord?id=CVE-2023-48788) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-04-15 | 0.984 | 9.3 | ✅ | A improper neutralization of special elements used in an sql command ('sql injection') in Fortinet FortiClientEMS version 7.2.0 through 7.2.2, FortiClientEMS 7… |
 | [CVE-2026-20182](https://www.cve.org/CVERecord?id=CVE-2026-20182) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-05-17 | 0.911 | 10.0 | ✅ | May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in Februar… |
@@ -167,6 +166,7 @@ Top critical items:
 | [CVE-2026-35616](https://www.cve.org/CVERecord?id=CVE-2026-35616) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-09 | 0.940 | 9.1 | ✅ | A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or co… |
 | [CVE-2026-3055](https://www.cve.org/CVERecord?id=CVE-2026-3055) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-04-02 | 0.917 | 9.3 | ✅ | Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread |
 | [CVE-2026-39808](https://www.cve.org/CVERecord?id=CVE-2026-39808) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-07-19 | 0.932 | 9.1 | ✅ | A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may all… |
+| [CVE-2026-21589](https://www.cve.org/CVERecord?id=CVE-2026-21589) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-10-18 | 0.910 | 9.3 | ✅ | This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. C… |
 | [CVE-2023-26360](https://www.cve.org/CVERecord?id=CVE-2023-26360) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2023-04-05 | 0.973 | 8.6 | ✅ | Adobe ColdFusion versions 2018 Update 15 (and earlier) and 2021 Update 5 (and earlier) are affected by an Improper Access Control vulnerability that could resu… |
 | [CVE-2026-71362](https://www.cve.org/CVERecord?id=CVE-2026-71362) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-27 | 0.917 | 9.1 | ✅ | Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability… |
 | [CVE-2024-21893](https://www.cve.org/CVERecord?id=CVE-2024-21893) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2024-02-02 | 1.000 | 8.2 | ✅ | A server-side request forgery vulnerability in the SAML component of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x) and Ivanti Neurons … |
@@ -210,8 +210,8 @@ Top critical items:
 | [CVE-2025-33073](https://www.cve.org/CVERecord?id=CVE-2025-33073) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-10 | 0.839 | 8.8 | ✅ | Improper access control in Windows SMB allows an authorized attacker to elevate privileges over a network. |
 | [CVE-2026-88772](https://www.cve.org/CVERecord?id=CVE-2026-88772) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-09-30 | 0.766 | 9.5 | ✅ | Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.  This issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and … |
 | [CVE-2022-26923](https://www.cve.org/CVERecord?id=CVE-2022-26923) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-09-08 | 0.835 | 8.8 | ✅ | Active Directory Domain Services Elevation of Privilege Vulnerability |
+| [CVE-2025-61884](https://www.cve.org/CVERecord?id=CVE-2025-61884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-10 | 0.964 | 7.5 | ✅ | Vulnerability in the Oracle Configurator product of Oracle E-Business Suite (component: Runtime UI).  Supported versions that are affected are 12.2.3-12.2.14. … |
 | [CVE-2025-20333](https://www.cve.org/CVERecord?id=CVE-2025-20333) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-09-26 | 0.720 | 9.9 | ✅ | A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Softwa… |
-| [CVE-2025-61884](https://www.cve.org/CVERecord?id=CVE-2025-61884) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2025-11-10 | 0.959 | 7.5 | ✅ | Vulnerability in the Oracle Configurator product of Oracle E-Business Suite (component: Runtime UI).  Supported versions that are affected are 12.2.3-12.2.14. … |
 | [CVE-2022-0847](https://www.cve.org/CVERecord?id=CVE-2022-0847) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2022-05-16 | 0.928 | 7.8 | ✅ | A flaw was found in the way the "flags" member of the new pipe buffer structure was lacking proper initialization in copy_page_to_iter_pipe and push_pipe funct… |
 | [CVE-2026-97229](https://www.cve.org/CVERecord?id=CVE-2026-97229) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-11-01 | 0.693 | 10.0 | ✅ | GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain c… |
 | [CVE-2026-34909](https://www.cve.org/CVERecord?id=CVE-2026-34909) | CRITICAL (Active Exploit in Stack) | CRITICAL | ✅ | ✅ | 2026-06-26 | 0.692 | 10.0 | ✅ | A malicious actor with access to the network could exploit a Path Traversal vulnerability found in UniFi OS devices to access files on the underlying system th… |
@@ -303,4 +303,4 @@ Top critical items:
 | Nov 20 | [CVE-2026-132913](https://www.cve.org/CVERecord?id=CVE-2026-132913) | 🆕 New |
 | Nov 20 | [CVE-2026-132914](https://www.cve.org/CVERecord?id=CVE-2026-132914) | 🆕 New |
 | Nov 20 | [CVE-2026-132915](https://www.cve.org/CVERecord?id=CVE-2026-132915) | 🆕 New |
-| ... | | _and 899 more_ |
+| ... | | _and 959 more_ |

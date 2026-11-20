@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T11:19:14+00:00",
+  "generated_at": "2026-11-20T19:59:51+00:00",
   "vendor": "cisco",
   "count": 600,
   "items": [
@@ -26608,7 +26608,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.01489,
+      "probability_score": 0.01524,
       "nvd": {
         "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
@@ -31733,7 +31733,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.01148,
+      "probability_score": 0.01156,
       "nvd": {
         "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
@@ -31823,7 +31823,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.0092,
+      "probability_score": 0.00942,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -221276,7 +221276,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.00641,
+      "probability_score": 0.00646,
       "nvd": {
         "cvss_v3_score": 7.4,
         "cvss_v3_severity": "HIGH",
@@ -240778,7 +240778,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.00177,
+      "probability_score": 0.00198,
       "nvd": {
         "cvss_v3_score": 7.4,
         "cvss_v3_severity": "HIGH",
@@ -246175,7 +246175,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.00368,
+      "probability_score": 0.00406,
       "nvd": {
         "cvss_v3_score": 8.6,
         "cvss_v3_severity": "HIGH",
@@ -253287,7 +253287,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.00368,
+      "probability_score": 0.00406,
       "nvd": {
         "cvss_v3_score": 8.6,
         "cvss_v3_severity": "HIGH",
@@ -253364,7 +253364,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.00368,
+      "probability_score": 0.00402,
       "nvd": {
         "cvss_v3_score": 8.6,
         "cvss_v3_severity": "HIGH",
@@ -266113,7 +266113,7 @@
         "vendor:cisco"
       ],
       "active_threat": false,
-      "probability_score": 0.00297,
+      "probability_score": 0.00325,
       "nvd": {
         "cvss_v3_score": 7.7,
         "cvss_v3_severity": "HIGH",
@@ -360819,14 +360819,25 @@
       "watchlist_hit": true,
       "in_watchlist": true,
       "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "is_critical": true,
+      "priority_label": "CRITICAL (CISA KEV + Watchlist)",
       "matched_terms": [
         "product:cisco telepresence video communication server (vcs) expressway",
         "vendor:cisco"
       ],
-      "active_threat": false,
+      "active_threat": true,
       "probability_score": 0.00417,
+      "kev": {
+        "cveID": "CVE-2026-76466",
+        "vendorProject": "Cisco",
+        "product": "Expressway Series",
+        "vulnerabilityName": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+        "dateAdded": "2026-11-20",
+        "shortDescription": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-11-23",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",

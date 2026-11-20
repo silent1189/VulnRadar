@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T11:19:14+00:00",
+  "generated_at": "2026-11-20T19:59:51+00:00",
   "vendor": "apache_software_foundation",
   "count": 1507,
   "items": [
@@ -215,7 +215,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00692,
+      "probability_score": 0.00705,
       "nvd": {
         "cvss_v3_score": 7.0,
         "cvss_v3_severity": "HIGH",
@@ -2853,7 +2853,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.02076,
+      "probability_score": 0.0209,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -2894,7 +2894,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.25536,
+      "probability_score": 0.25983,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -6265,7 +6265,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.02886,
+      "probability_score": 0.02925,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -6617,7 +6617,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.01863,
+      "probability_score": 0.0188,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -12369,7 +12369,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.01747,
+      "probability_score": 0.02513,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -17872,7 +17872,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": true,
-      "probability_score": 0.99411,
+      "probability_score": 0.99427,
       "kev": {
         "cveID": "CVE-2024-38856",
         "vendorProject": "Apache",
@@ -19624,7 +19624,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00569,
+      "probability_score": 0.00618,
       "nvd": {
         "cvss_v3_score": 7.1,
         "cvss_v3_severity": "HIGH",
@@ -20188,7 +20188,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00918,
+      "probability_score": 0.00911,
       "nvd": {
         "cvss_v3_score": 9.1,
         "cvss_v3_severity": "CRITICAL",
@@ -20992,7 +20992,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.01232,
+      "probability_score": 0.01158,
       "nvd": {
         "cvss_v3_score": 8.4,
         "cvss_v3_severity": "HIGH",
@@ -24163,7 +24163,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00774,
+      "probability_score": 0.00832,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -30484,7 +30484,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00233,
+      "probability_score": 0.00648,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -33968,7 +33968,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00238,
+      "probability_score": 0.00493,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -34897,7 +34897,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00244,
+      "probability_score": 0.00483,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -34976,14 +34976,25 @@
       "watchlist_hit": true,
       "in_watchlist": true,
       "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "is_critical": true,
+      "priority_label": "CRITICAL (CISA KEV + Watchlist)",
       "matched_terms": [
         "product:apache roller",
         "vendor:apache software foundation"
       ],
-      "active_threat": false,
+      "active_threat": true,
       "probability_score": 0.01191,
+      "kev": {
+        "cveID": "CVE-2026-129448",
+        "vendorProject": "Apache",
+        "product": "Roller",
+        "vulnerabilityName": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+        "dateAdded": "2026-11-20",
+        "shortDescription": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "dueDate": "2026-11-23",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -35026,7 +35037,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00131,
+      "probability_score": 0.0024,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -35069,7 +35080,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00215,
+      "probability_score": 0.00456,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -35418,7 +35429,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.49727,
+      "probability_score": 0.4471,
       "nvd": {
         "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
@@ -35462,7 +35473,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00514,
+      "probability_score": 0.00526,
       "nvd": {
         "cvss_v3_score": 6.5,
         "cvss_v3_severity": "MEDIUM",
@@ -35505,7 +35516,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00409,
+      "probability_score": 0.00419,
       "nvd": {
         "cvss_v3_score": 6.5,
         "cvss_v3_severity": "MEDIUM",
@@ -37480,9 +37491,9 @@
       ],
       "watchlist_hit": true,
       "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
       "matched_terms": [
         "product:apache skywalking",
         "vendor:apache software foundation"
@@ -41509,7 +41520,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00584,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -41607,7 +41618,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00451,
+      "probability_score": 0.00622,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -43501,7 +43512,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00607,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -45667,7 +45678,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.004,
+      "probability_score": 0.00251,
       "nvd": {
         "cvss_v3_score": 9.1,
         "cvss_v3_severity": "CRITICAL",
@@ -45710,7 +45721,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00417,
+      "probability_score": 0.00274,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -46025,7 +46036,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00645,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -46435,7 +46446,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00645,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -49306,7 +49317,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00607,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -49410,7 +49421,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00645,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -49453,7 +49464,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.00979,
+      "probability_score": 0.00551,
       "nvd": {
         "cvss_v3_score": 9.8,
         "cvss_v3_severity": "CRITICAL",
@@ -52199,7 +52210,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.0103,
+      "probability_score": 0.00607,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -52242,7 +52253,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": false,
-      "probability_score": 0.01078,
+      "probability_score": 0.00635,
       "nvd": {
         "cvss_v3_score": 9.1,
         "cvss_v3_severity": "CRITICAL",
@@ -69583,7 +69594,7 @@
         "vendor:apache software foundation"
       ],
       "active_threat": true,
-      "probability_score": 0.01773,
+      "probability_score": 0.01833,
       "kev": {
         "cveID": "CVE-2026-90436",
         "vendorProject": "Apache",
