@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T21:22:57+00:00",
+  "generated_at": "2026-11-20T03:01:45+00:00",
   "vendor": "red_hat",
-  "count": 358,
+  "count": 359,
   "items": [
     {
       "cve_id": "CVE-2022-1415",
@@ -76290,6 +76290,49 @@
       ],
       "active_threat": false,
       "probability_score": 0.00273
+    },
+    {
+      "cve_id": "CVE-2026-133189",
+      "description": "A command injection vulnerability was found in OpenStack Cinder's SSH-based storage-driver support. Incomplete validation of shell metacharacters allows an authenticated user who owns a volume on an affected backend to supply crafted connection information and inject additional commands into the storage array's management interface. Commands execute with the privileges of Cinder's configured backend account. This can disclose storage configuration information and, where that account has administrative permissions, could allow changes that affect the integrity or availability of other tenants' storage.",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 13 (queens)",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 16.2",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 17.1",
+          "versions": null
+        },
+        {
+          "vendor": "red hat",
+          "product": "red hat openstack platform 18.0",
+          "versions": null
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:red hat openstack platform 13 (queens)",
+        "product:red hat openstack platform 16.2",
+        "product:red hat openstack platform 17.1",
+        "product:red hat openstack platform 18.0",
+        "vendor:red hat"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13717",

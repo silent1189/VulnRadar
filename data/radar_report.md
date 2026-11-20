@@ -1,6 +1,6 @@
 # VulnRadar Report
 
-Generated: `2026-11-19T21:23:00+00:00`
+Generated: `2026-11-20T03:01:49+00:00`
 
 ## Executive Summary
 
@@ -38,8 +38,8 @@ Top critical items:
 
 ## Summary
 
-- Total items: **40339**
-- Watchlist hits: **40018**
+- Total items: **40534**
+- Watchlist hits: **40213**
 - CISA KEVs: **866**
 - Exploit Intel (PoC): **1083**
 - Exploit Intel + Watchlist (CRITICAL): **762**
