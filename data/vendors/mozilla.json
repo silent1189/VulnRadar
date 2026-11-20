@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T03:01:45+00:00",
+  "generated_at": "2026-11-20T11:19:14+00:00",
   "vendor": "mozilla",
-  "count": 1093,
+  "count": 1095,
   "items": [
     {
       "cve_id": "CVE-2022-0511",
@@ -45644,7 +45644,9 @@
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
-        "cwe_ids": null,
+        "cwe_ids": [
+          "CWE-843"
+        ],
         "cpe_count": 0,
         "reference_count": 5
       }
@@ -47695,6 +47697,92 @@
         ],
         "cpe_count": 5,
         "reference_count": 30
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130020",
+      "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component on Android. This vulnerability was fixed in Firefox 160.0.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "160.0.1",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00303,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-119"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130021",
+      "description": "Use-after-free in the Audio/Video: Playback component. This vulnerability was fixed in Firefox 160.0.1.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "mozilla",
+          "product": "firefox",
+          "versions": [
+            {
+              "status": "unaffected",
+              "version": "160.0.1",
+              "lessThanOrEqual": "*",
+              "versionType": "rpm"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:firefox",
+        "vendor:mozilla"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00139,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {

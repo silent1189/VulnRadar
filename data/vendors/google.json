@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T03:01:45+00:00",
+  "generated_at": "2026-11-20T11:19:14+00:00",
   "vendor": "google",
-  "count": 4138,
+  "count": 4179,
   "items": [
     {
       "cve_id": "CVE-2022-0096",
@@ -114103,6 +114103,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-130906",
+      "description": "Incorrect authorization in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00266,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-130907",
       "description": "Use after free in Autofill in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
       "cvss_score": 8.3,
@@ -114141,7 +114184,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -114184,7 +114227,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114226,6 +114269,92 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-693"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130912",
+      "description": "Improper state validation in Network in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially bypass web origin policy via crafted network traffic. (Chromium security severity: Low)",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00313,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-754"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130913",
+      "description": "Incorrect reference resolution in Mobile in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00309,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-706"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -114270,7 +114399,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114313,7 +114442,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114356,7 +114485,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114399,7 +114528,7 @@
         "cwe_ids": [
           "CWE-367"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114442,7 +114571,222 @@
         "cwe_ids": [
           "CWE-787"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130924",
+      "description": "Incorrect authorization in WebAppInstalls in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
         "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130926",
+      "description": "Confused deputy in Sync in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00384,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130927",
+      "description": "Incorrect authorization in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted Chrome extension. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00266,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130928",
+      "description": "Code injection in Mobile in Google Chrome on on Android prior to 158.0.8127.36 allowed a local attacker leveraging social engineering to bypass web origin policy via a co-installed app. (Chromium security severity: Medium)",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00122,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130929",
+      "description": "Use after free in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00427,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114485,7 +114829,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114528,7 +114872,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -114571,7 +114915,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114614,7 +114958,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -114656,6 +115000,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-416"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130946",
+      "description": "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -114700,7 +115087,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114743,7 +115130,7 @@
         "cwe_ids": [
           "CWE-843"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114786,7 +115173,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114829,7 +115216,7 @@
         "cwe_ids": [
           "CWE-20"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -114872,6 +115259,49 @@
         "cwe_ids": [
           "CWE-754"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130959",
+      "description": "Missing authorization in FileSystem in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00225,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -114910,6 +115340,178 @@
       "nvd": {
         "cvss_v3_score": 8.3,
         "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130962",
+      "description": "Incomplete cleanup in Navigation in Google Chrome on on iOS prior to 158.0.8127.36 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00309,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-459"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130963",
+      "description": "Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Critical)",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00428,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130964",
+      "description": "Confused deputy in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00246,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130968",
+      "description": "Use after free in Views in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00337,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
@@ -114958,7 +115560,7 @@
         "cwe_ids": [
           "CWE-863"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -115001,7 +115603,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115044,7 +115646,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115087,7 +115689,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115130,7 +115732,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115173,7 +115775,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115216,7 +115818,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115253,6 +115855,92 @@
       "probability_score": 0.00348,
       "nvd": {
         "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130983",
+      "description": "Incorrect authorization in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00266,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130984",
+      "description": "Incorrect authorization in Canvas in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 8.1,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
@@ -115302,6 +115990,49 @@
         "cwe_ids": [
           "CWE-367"
         ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130990",
+      "description": "Missing authorization in PersistentCache in Google Chrome prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted PDF file. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00208,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -115345,7 +116076,7 @@
         "cwe_ids": [
           "CWE-863"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115388,7 +116119,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115430,6 +116161,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-130998",
+      "description": "Improper input validation in Parser in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00242,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -115474,7 +116248,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -115517,7 +116291,7 @@
         "cwe_ids": [
           "CWE-20"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115559,6 +116333,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-122"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131003",
+      "description": "Confused deputy in TabModel in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via UI Interaction. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00266,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -115603,7 +116420,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115646,6 +116463,49 @@
         "cwe_ids": [
           "CWE-416"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131006",
+      "description": "Race condition in CredentialProvider in Google Chrome on on Windows prior to 158.0.8127.36 allowed a local attacker to potentially execute arbitrary code outside the sandbox via a local program. (Chromium security severity: Medium)",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00079,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -115681,6 +116541,49 @@
       ],
       "active_threat": false,
       "probability_score": 0.00396,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131010",
+      "description": "Use after free in Extensions in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00302,
       "nvd": {
         "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
@@ -115732,7 +116635,179 @@
         "cwe_ids": [
           "CWE-122"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131014",
+      "description": "Confused deputy in Grid in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via crafted network traffic. (Chromium security severity: Medium)",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0022,
+      "nvd": {
+        "cvss_v3_score": 7.4,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
+        ],
         "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131015",
+      "description": "Missing authorization in Mobile in Google Chrome on on iOS prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy into a privileged page via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131018",
+      "description": "Confused deputy in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131020",
+      "description": "Use after free in WebView in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Medium)",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00399,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -115775,7 +116850,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -115817,6 +116892,92 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131023",
+      "description": "Race condition in Core in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00247,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-367"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131024",
+      "description": "Incorrect authorization in iOSWeb in Google Chrome on on iOS prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -115861,6 +117022,49 @@
         "cwe_ids": [
           "CWE-125"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131029",
+      "description": "Improper input validation in Extensions in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy into a privileged page via a crafted Chrome extension. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00286,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -115903,6 +117107,92 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131037",
+      "description": "!MISSING CAUSE! in Chromoting in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Low)",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00352,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-307"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131038",
+      "description": "Missing authorization in Editing in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -115947,6 +117237,49 @@
         "cwe_ids": [
           "CWE-416"
         ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131041",
+      "description": "Improper input validation in Editing in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to potentially bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00309,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -115990,7 +117323,50 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131043",
+      "description": "Use after free in HID in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity: Medium)",
+      "cvss_score": 9.6,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00368,
+      "nvd": {
+        "cvss_v3_score": 9.6,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116027,6 +117403,92 @@
       "probability_score": 0.00368,
       "nvd": {
         "cvss_v3_score": 8.3,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131045",
+      "description": "Incorrect authorization in PerformanceAPIs in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131049",
+      "description": "Use after free in SignIn in Google Chrome on on Windows prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via UI Interaction. (Chromium security severity: Low)",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00329,
+      "nvd": {
+        "cvss_v3_score": 8.8,
         "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
@@ -116076,7 +117538,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -116119,7 +117581,7 @@
         "cwe_ids": [
           "CWE-863"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116161,6 +117623,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-787"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131055",
+      "description": "Improper output encoding in Editing in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: Low)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00264,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-116"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -116205,7 +117710,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116248,7 +117753,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -116291,7 +117796,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116334,7 +117839,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116377,7 +117882,7 @@
         "cwe_ids": [
           "CWE-122"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116420,7 +117925,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -116462,6 +117967,92 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131068",
+      "description": "Use after free in DOM in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security severity: High)",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00302,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131071",
+      "description": "Confused deputy in Mobile in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-441"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -116506,6 +118097,49 @@
         "cwe_ids": [
           "CWE-416"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131075",
+      "description": "Improper input validation in DevTools in Google Chrome prior to 158.0.8127.36 allowed a remote attacker leveraging social engineering to potentially bypass web origin policy into a privileged page via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00284,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-20"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -116549,7 +118183,7 @@
         "cwe_ids": [
           "CWE-787"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116592,7 +118226,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116635,7 +118269,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116678,7 +118312,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116721,7 +118355,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116764,7 +118398,7 @@
         "cwe_ids": [
           "CWE-843"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -116806,6 +118440,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-20"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131089",
+      "description": "Buffer overflow in CrashReporting in Google Chrome on on Windows prior to 158.0.8127.36 allowed a local attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a local program. (Chromium security severity: High)",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00107,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-121"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -116850,6 +118527,49 @@
         "cwe_ids": [
           "CWE-416"
         ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131091",
+      "description": "Missing authorization in Autofill in Google Chrome on on Android prior to 158.0.8127.36 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00225,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
         "cpe_count": 0,
         "reference_count": 2
       }
@@ -116893,7 +118613,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 2,
         "reference_count": 2
       }
     },
@@ -116935,6 +118655,49 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-416"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131097",
+      "description": "Missing authorization in V8 in Google Chrome prior to 158.0.8127.36 allowed a remote attacker to bypass web origin policy via a crafted HTML page. (Chromium security severity: Medium)",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "google",
+          "product": "chrome",
+          "versions": [
+            {
+              "version": "158.0.8127.36",
+              "status": "affected",
+              "lessThan": "158.0.8127.36",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:chrome",
+        "vendor:google"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
         ],
         "cpe_count": 0,
         "reference_count": 2
@@ -116979,7 +118742,7 @@
         "cwe_ids": [
           "CWE-416"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -117022,7 +118785,7 @@
         "cwe_ids": [
           "CWE-125"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
@@ -117065,7 +118828,7 @@
         "cwe_ids": [
           "CWE-121"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 2
       }
     },
