@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T19:59:51+00:00",
+  "generated_at": "2026-11-21T01:23:30+00:00",
   "vendor": "tp_link_systems_inc",
   "count": 136,
   "items": [
@@ -8044,7 +8044,7 @@
     },
     {
       "cve_id": "CVE-2026-15315",
-      "description": "Tapo C120 v1 and C200 v5\ncontain an improper authentication vulnerability within the login\nauthentication verification module. An attacker on the local network can\nexploit weaknesses in challenge parameter validation to bypass normal\nauthentication controls and obtain administrative session tokens. \n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow an attacker to subsequently execute privileged\nmanagement actions, enable unauthorized administrative access and temporary\ndisruption of device services, resulting in a denial-of-service (DoS)\ncondition.",
+      "description": "Tapo C120 and C200 contain an improper authentication vulnerability within the login\nauthentication verification module. An attacker on the local network can\nexploit weaknesses in challenge parameter validation to bypass normal\nauthentication controls and obtain administrative session tokens. \n\n\n\n\n\n\n\n\n\nSuccessful\nexploitation may allow an attacker to subsequently execute privileged\nmanagement actions, enable unauthorized administrative access and temporary\ndisruption of device services, resulting in a denial-of-service (DoS)\ncondition.",
       "cvss_score": 8.7,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
@@ -8062,13 +8062,25 @@
           ]
         },
         {
-          "vendor": "tp-link systems inc",
+          "vendor": "tp-link systems inc.",
           "product": "tapo c120 v1",
           "versions": [
             {
               "status": "affected",
               "version": "0",
               "lessThan": "1.9.3 Build 260521",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "tp-link systems inc.",
+          "product": "tapo c200 v3",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "1.9.2 Build 261009",
               "versionType": "custom"
             }
           ]
@@ -8081,8 +8093,8 @@
       "priority_label": "",
       "matched_terms": [
         "product:tapo c120 v1",
+        "product:tapo c200 v3",
         "product:tapo c200 v5",
-        "vendor:tp-link systems inc",
         "vendor:tp-link systems inc."
       ],
       "active_threat": false,

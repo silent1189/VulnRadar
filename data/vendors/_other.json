@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T19:59:51+00:00",
+  "generated_at": "2026-11-21T01:23:30+00:00",
   "vendor": "_other",
-  "count": 3348,
+  "count": 3351,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -180062,6 +180062,580 @@
       }
     },
     {
+      "cve_id": "CVE-2026-115407",
+      "description": "In `github.com/eclipse-keypont/crypto11/v2` versions `<= 2.0.0-rc8` (and the deprecated v1 module paths `github.com/eclipse-keypont/crypto11 <= 1.6.8`, `github.com/ThalesGroup/crypto11 <= 1.7.0-rc1` and `github.com/ThalesIgnite/crypto11 <= 1.2.5`), the `cipher.AEAD` returned by `SecretKey.NewGCM()` passes whatever nonce it is given straight to `CK_GCM_PARAMS` without checking its length against `NonceSize()`, and accepts an empty nonce. On a token that accepts a zero-length GCM IV \u2014 SoftHSM2 does \u2014 every `Seal` with an empty nonce encrypts under the same IV, reusing the keystream and exposing the GHASH authentication key, which allows forgeries. Separately, `Config.UseGCMIVFromHSM` sends a NULL IV with length zero to the token unless `GCMIVFromHSMControl.SupplyIvForHSMGCMEncrypt` is also set, so the token has nowhere to write the IV it generates: a `Seal` with a non-empty nonce panics after the plaintext has already been encrypted, and a `Seal` with an empty nonce returns ciphertext under an empty IV without error. On the v1 line HSM-IV mode additionally never copies the token-generated IV back to the caller, so the caller keeps its own nonce while the data was encrypted under another one.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "2.0.0-rc8",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "2.0.0-rc9"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "1.6.8",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "1.7.0-rc1",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "1.2.5",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-18660",
+      "description": "In Eclipse Jetty, across various versions of `jetty-server`, and `jetty-proxy`, the host whitelist/blacklist is case-sensitive, and would allow hosts through that only differ by case.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.11",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.38",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThanOrEqual": "11.0.32",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0",
+              "lessThanOrEqual": "10.0.32",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThanOrEqual": "9.4.64",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00315,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-178",
+          "CWE-918"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-18661",
+      "description": "In Eclipse Jetty, across various versions of `jetty-annotations`, and `jetty-eeN-annotations`, the Jakarta Spec authoritative url-pattern rules for mixed `@ServletSecurity` annotation, and `web.xml` defined `security-constraint` on the same `url-pattern` were not being applied if the `web.xml` had more than 1 `url-pattern` for a servlet, and had a `security-constraint` applying to only some of those `url-pattern` definitions.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.11",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.11",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.38",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.11",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.38",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.11",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.38",
+              "versionType": "semver"
+            }
+          ]
+        },
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThanOrEqual": "11.0.32",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0",
+              "lessThanOrEqual": "10.0.32",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.64",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00424,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-19863",
+      "description": "An unauthenticated client may access certain protected resources when using EthereumAuthenticator if the request path contains the configured login path.\n\n\n\nThis is caused by the authenticator using an unanchored substring match when identifying the login page. If the login path appears later within a protected request path, the request may be treated as the login page and its authentication or role requirement replaced with ALLOWED.\n\n\n\nExploitation requires the protected resource path to contain the configured login path as a later segment. Explicitly FORBIDDEN routes are not affected.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.12",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00503,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-288",
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2026-82955",
+      "description": "In the current development version of Eclipse aeriOS, which has not yet had an official release, the KrakenD instance included in the API Gateway component had the disable_jwk_security parameter hard-coded to true, with no option to override it through the Helm chart configuration. This setting disables TLS certificate verification when KrakenD retrieves the JSON Web Key Set (JWKS) used to validate bearer tokens, potentially allowing an attacker with the ability to intercept this communication to provide a malicious JWKS and compromise token validation.\n\n\n\n\nThe issue has been addressed by making the parameter configurable through the boolean Helm value krakend.config.disableJwkSecurity and setting its default value to false, ensuring that TLS certificate verification is enabled by default.",
+      "cvss_score": 9.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "eclipse aerios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "371ea2101e42aa6503161ce08bbe986e319a9c2f",
+              "lessThan": "e680c69c34b82db4944517198330cc447a1e8f98",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:eclipse aerios",
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0018,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295",
+          "CWE-347"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-84173",
+      "description": "In Eclipse Ankaios versions v0.5.1 through v1.0.1, the agent-side Control Interface authorizer incorrectly evaluates multi-segment allow rules whose first path segment is a wildcard. An authenticated workload with access restricted by such a rule can submit a CompleteStateRequest or UpdateStateRequest with an empty field mask. The request may then be incorrectly authorized as matching the scoped rule, allowing the workload to read the complete cluster state or replace state outside its authorized subtree. This may result in unauthorized disclosure or modification of other workloads and cluster configuration. Only a rule consisting solely of * is intended to authorize an empty mask.\n\n\n\n\nMitigation: Until an update containing the fix is installed, avoid multi-segment Control Interface allow-rule filter masks that begin with a wildcard, such as *.workloads.some_workload. Replace them with explicit paths such as desiredState.workloads.some_workload, where applicable. A filter mask consisting solely of * has different, intentionally unrestricted semantics and should only be used when full-state access is intended.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "eclipse ankaios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0.5.1",
+              "lessThanOrEqual": "1.0.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:eclipse ankaios",
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00163,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-84736",
+      "description": "In the current development version of Eclipse aeriOS, for which no official release has yet been published, the Federator component disables TLS certificate validation for outbound HTTPS connections by default. When the TLS_CERTIFICATE_VALIDATION environment variable is unset or set to false, the component configures its HTTP transport to skip TLS certificate verification.\n\n\n\n\nAs a result, an attacker able to intercept network communications between the Federator and external services could impersonate those services and intercept sensitive information transmitted over HTTPS, including OAuth client credentials and bearer tokens.\n\n\n\n\nThe issue has been addressed by enabling TLS certificate validation by default. The TLS_CERTIFICATE_VALIDATION environment variable is now set to true in the default configuration provided by the Helm chart and Docker Compose deployment.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "eclipse aerios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "d730017a4a0e2a31feba6258bd780efbce7e0d5d",
+              "lessThan": "9c63b60becc9873b0195ff9cd6582b69cb12d4f2",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:eclipse aerios",
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00271,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-295"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-85199",
+      "description": "Eclipse aeriOS Self-orchestrator versions prior to 1.2.1 contain a path traversal vulnerability in the REST API. User-controlled identifiers used to create, update, or delete Self-orchestrator resources were incorporated into filesystem paths without adequate validation or sanitization. An unauthenticated remote attacker able to access the Self-orchestrator API could therefore supply specially crafted identifiers containing path traversal sequences to write or delete JSON files outside the intended application directories, subject to the filesystem permissions of the Self-orchestrator process.\n\n\n\n\nThe impact is increased by the absence of authentication on the affected API and by the container running with elevated privileges in the affected deployment configuration.\n\n\n\n\nThe issue has been addressed in version 1.2.1 by introducing validation and sanitization of user-controlled identifiers before they are used to construct filesystem paths, preventing path separator characters from being used to escape the intended directories.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "eclipse aerios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "63993c83fb71bb2c4981731b4980ff93c72a6750",
+              "lessThan": "c42da0014069528d149ff9f8b038ac93c38a766c",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:eclipse aerios",
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0091,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22",
+          "CWE-23",
+          "CWE-206"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86464",
+      "description": "In the current development version of Eclipse aeriOS, for which no official release has yet been published, the Identity Manager (IdM) deployment included insecure default configurations and credentials for security-sensitive services.\n\n\n\n\nThe Helm chart exposed the Keycloak service and its PostgreSQL backing database through Kubernetes NodePort services by default, while the Docker Compose deployment similarly exposed PostgreSQL on all network interfaces. The deployment included fixed default credentials for the Keycloak administrator and PostgreSQL database user, and the previous Helm chart configuration did not provide adequate secret management for these credentials. In addition, predefined application users with known credentials were provided for development and testing without sufficiently warning operators against their use in production environments.\n\n\n\n\nAn attacker able to reach the exposed services could use the published default credentials to obtain administrative access to the Identity Manager or direct access to its database. This could allow unauthorized access to or modification of identity-management data, including users, roles, client credentials, sessions, and cryptographic material, and could enable the creation of privileged identities or tokens accepted by other aeriOS components.\n\n\n\n\nThe issue has been addressed by generating a random Keycloak administrator password by default, managing Keycloak and PostgreSQL credentials through Kubernetes Secrets, and restricting PostgreSQL to an internal service in both the Helm chart and Docker Compose deployment. OpenLDAP is also restricted to an internal service. The predefined users intended for development and testing are retained, but the documentation now explicitly warns that their default credentials must not be used in production and that these users should be removed or their credentials changed after installation.",
+      "cvss_score": 9.9,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "eclipse aerios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "459fa98e95b1865d01b8d14d6cce5908ba2b18ba",
+              "lessThan": "c6efc450baf912385681198b2477c1ba4e93f91a",
+              "versionType": "git"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:eclipse aerios",
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00546,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-200",
+          "CWE-306",
+          "CWE-798",
+          "CWE-1188",
+          "CWE-1392"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-86836",
+      "description": "In Eclipse Ankaios versions 0.1.0 through 1.0.2, the agent creates workload files and Control Interface named pipes (FIFOs) under a predictable path derived from the agent name and a hash of the workload's runtime configuration. If a directory or FIFO already exists at that path when the agent (re)starts, the agent reuses it based only on an existence and/or file-type check, without validating its owner or permissions. A local, unprivileged user with write access to the same base directory (by default under `$TMPDIR/ankaios`, e.g. shared `/tmp`) can pre-create this path hierarchy, including the two Control Interface FIFOs, before the agent starts. The agent then treats the attacker-owned FIFOs as the legitimate Control Interface for the targeted workload. The attacker can complete the Control Interface handshake and issue requests using that workload's configured `controlInterfaceAccess` permissions, allowing impersonation of the workload and, depending on its configured permissions, unauthorized reading and/or modification of the cluster's desired state.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:H",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "eclipse ankaios",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0.1.0",
+              "lessThanOrEqual": "1.0.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:eclipse ankaios",
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00112,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-276",
+          "CWE-367",
+          "CWE-379"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
+    },
+    {
       "cve_id": "CVE-2026-115729",
       "description": "@pdfme/common from 5.5.10 before 6.2.6 contains a server-side request forgery vulnerability that allows attackers to bypass the isUrlSafeToFetch denylist in getB64BasePdf. Attackers can supply basePdf URLs using IPv4-mapped IPv6, [::], NAT64 or localhost alias hostnames to read loopback, internal or cloud metadata responses through generated documents.",
       "cvss_score": 8.9,
@@ -182464,6 +183038,50 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-125080",
+      "description": "Improper neutralization of special elements in data query logic (Cypher injection) in the orderBy placeholder handling for custom queries in Neo4j Spring Data Neo4j versions 6.1.0 through 8.0.8 and 8.1.0 through 8.1.2 allows a remote attacker to read database contents via blind reads, write read content into new nodes, or, if APOC and APOC file export are enabled, to write query results to a file in the database's accessible file system via crafted sort order parameters. Exploitation requires an application that passes unvalidated user input as the orderBy value to a custom Cypher query using the placeholder directive.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "neo4j",
+          "product": "spring data neo4j",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThan": "8.0.9",
+              "versionType": "maven"
+            },
+            {
+              "status": "affected",
+              "version": "8.1.0",
+              "lessThan": "8.1.3",
+              "versionType": "maven"
+            },
+            {
+              "status": "unaffected",
+              "version": "8.2.0",
+              "lessThan": "*",
+              "versionType": "maven"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data neo4j",
+        "vendor:neo4j"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00681
     },
     {
       "cve_id": "CVE-2026-125327",
@@ -184931,509 +185549,6 @@
         ],
         "cpe_count": 1,
         "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-18660",
-      "description": "In Eclipse Jetty, across various versions of `jetty-server`, and `jetty-proxy`, the host whitelist/blacklist is case-sensitive, and would allow hosts through that only differ by case.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "12.1.0",
-              "lessThanOrEqual": "12.1.11",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "12.0.0",
-              "lessThanOrEqual": "12.0.38",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "11.0.0",
-              "lessThanOrEqual": "11.0.32",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "10.0.0",
-              "lessThanOrEqual": "10.0.32",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "9.0.0",
-              "lessThanOrEqual": "9.4.64",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00315,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-178",
-          "CWE-918"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-18661",
-      "description": "In Eclipse Jetty, across various versions of `jetty-annotations`, and `jetty-eeN-annotations`, the Jakarta Spec authoritative url-pattern rules for mixed `@ServletSecurity` annotation, and `web.xml` defined `security-constraint` on the same `url-pattern` were not being applied if the `web.xml` had more than 1 `url-pattern` for a servlet, and had a `security-constraint` applying to only some of those `url-pattern` definitions.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "12.1.0",
-              "lessThanOrEqual": "12.1.11",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "12.1.0",
-              "lessThanOrEqual": "12.1.11",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "12.0.0",
-              "lessThanOrEqual": "12.0.38",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "12.1.0",
-              "lessThanOrEqual": "12.1.11",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "12.0.0",
-              "lessThanOrEqual": "12.0.38",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "12.1.0",
-              "lessThanOrEqual": "12.1.11",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "12.0.0",
-              "lessThanOrEqual": "12.0.38",
-              "versionType": "semver"
-            }
-          ]
-        },
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "11.0.0",
-              "lessThanOrEqual": "11.0.32",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "10.0.0",
-              "lessThanOrEqual": "10.0.32",
-              "versionType": "semver"
-            },
-            {
-              "status": "affected",
-              "version": "9.4.0",
-              "lessThanOrEqual": "9.4.64",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00424,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-19863",
-      "description": "An unauthenticated client may access certain protected resources when using EthereumAuthenticator if the request path contains the configured login path.\n\n\n\nThis is caused by the authenticator using an unanchored substring match when identifying the login page. If the login path appears later within a protected request path, the request may be treated as the login page and its authentication or role requirement replaced with ALLOWED.\n\n\n\nExploitation requires the protected resource path to contain the configured login path as a later segment. Explicitly FORBIDDEN routes are not affected.",
-      "cvss_score": 9.3,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "12.1.0",
-              "lessThanOrEqual": "12.1.12",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00503,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-288",
-          "CWE-863"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
-      }
-    },
-    {
-      "cve_id": "CVE-2026-82955",
-      "description": "In the current development version of Eclipse aeriOS, which has not yet had an official release, the KrakenD instance included in the API Gateway component had the disable_jwk_security parameter hard-coded to true, with no option to override it through the Helm chart configuration. This setting disables TLS certificate verification when KrakenD retrieves the JSON Web Key Set (JWKS) used to validate bearer tokens, potentially allowing an attacker with the ability to intercept this communication to provide a malicious JWKS and compromise token validation.\n\n\n\n\nThe issue has been addressed by making the parameter configurable through the boolean Helm value krakend.config.disableJwkSecurity and setting its default value to false, ensuring that TLS certificate verification is enabled by default.",
-      "cvss_score": 9.0,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "eclipse aerios",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "371ea2101e42aa6503161ce08bbe986e319a9c2f",
-              "lessThan": "e680c69c34b82db4944517198330cc447a1e8f98",
-              "versionType": "git"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:eclipse aerios",
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0018,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-295",
-          "CWE-347"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-84173",
-      "description": "In Eclipse Ankaios versions v0.5.1 through v1.0.1, the agent-side Control Interface authorizer incorrectly evaluates multi-segment allow rules whose first path segment is a wildcard. An authenticated workload with access restricted by such a rule can submit a CompleteStateRequest or UpdateStateRequest with an empty field mask. The request may then be incorrectly authorized as matching the scoped rule, allowing the workload to read the complete cluster state or replace state outside its authorized subtree. This may result in unauthorized disclosure or modification of other workloads and cluster configuration. Only a rule consisting solely of * is intended to authorize an empty mask.\n\n\n\n\nMitigation: Until an update containing the fix is installed, avoid multi-segment Control Interface allow-rule filter masks that begin with a wildcard, such as *.workloads.some_workload. Replace them with explicit paths such as desiredState.workloads.some_workload, where applicable. A filter mask consisting solely of * has different, intentionally unrestricted semantics and should only be used when full-state access is intended.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "eclipse ankaios",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0.5.1",
-              "lessThanOrEqual": "1.0.1",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:eclipse ankaios",
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00163,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-863"
-        ],
-        "cpe_count": 0,
-        "reference_count": 5
-      }
-    },
-    {
-      "cve_id": "CVE-2026-84736",
-      "description": "In the current development version of Eclipse aeriOS, for which no official release has yet been published, the Federator component disables TLS certificate validation for outbound HTTPS connections by default. When the TLS_CERTIFICATE_VALIDATION environment variable is unset or set to false, the component configures its HTTP transport to skip TLS certificate verification.\n\n\n\n\nAs a result, an attacker able to intercept network communications between the Federator and external services could impersonate those services and intercept sensitive information transmitted over HTTPS, including OAuth client credentials and bearer tokens.\n\n\n\n\nThe issue has been addressed by enabling TLS certificate validation by default. The TLS_CERTIFICATE_VALIDATION environment variable is now set to true in the default configuration provided by the Helm chart and Docker Compose deployment.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "eclipse aerios",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "d730017a4a0e2a31feba6258bd780efbce7e0d5d",
-              "lessThan": "9c63b60becc9873b0195ff9cd6582b69cb12d4f2",
-              "versionType": "git"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:eclipse aerios",
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00271,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-295"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-85199",
-      "description": "Eclipse aeriOS Self-orchestrator versions prior to 1.2.1 contain a path traversal vulnerability in the REST API. User-controlled identifiers used to create, update, or delete Self-orchestrator resources were incorporated into filesystem paths without adequate validation or sanitization. An unauthenticated remote attacker able to access the Self-orchestrator API could therefore supply specially crafted identifiers containing path traversal sequences to write or delete JSON files outside the intended application directories, subject to the filesystem permissions of the Self-orchestrator process.\n\n\n\n\nThe impact is increased by the absence of authentication on the affected API and by the container running with elevated privileges in the affected deployment configuration.\n\n\n\n\nThe issue has been addressed in version 1.2.1 by introducing validation and sanitization of user-controlled identifiers before they are used to construct filesystem paths, preventing path separator characters from being used to escape the intended directories.",
-      "cvss_score": 8.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "eclipse aerios",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "63993c83fb71bb2c4981731b4980ff93c72a6750",
-              "lessThan": "c42da0014069528d149ff9f8b038ac93c38a766c",
-              "versionType": "git"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:eclipse aerios",
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.0091,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-22",
-          "CWE-23",
-          "CWE-206"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-86464",
-      "description": "In the current development version of Eclipse aeriOS, for which no official release has yet been published, the Identity Manager (IdM) deployment included insecure default configurations and credentials for security-sensitive services.\n\n\n\n\nThe Helm chart exposed the Keycloak service and its PostgreSQL backing database through Kubernetes NodePort services by default, while the Docker Compose deployment similarly exposed PostgreSQL on all network interfaces. The deployment included fixed default credentials for the Keycloak administrator and PostgreSQL database user, and the previous Helm chart configuration did not provide adequate secret management for these credentials. In addition, predefined application users with known credentials were provided for development and testing without sufficiently warning operators against their use in production environments.\n\n\n\n\nAn attacker able to reach the exposed services could use the published default credentials to obtain administrative access to the Identity Manager or direct access to its database. This could allow unauthorized access to or modification of identity-management data, including users, roles, client credentials, sessions, and cryptographic material, and could enable the creation of privileged identities or tokens accepted by other aeriOS components.\n\n\n\n\nThe issue has been addressed by generating a random Keycloak administrator password by default, managing Keycloak and PostgreSQL credentials through Kubernetes Secrets, and restricting PostgreSQL to an internal service in both the Helm chart and Docker Compose deployment. OpenLDAP is also restricted to an internal service. The predefined users intended for development and testing are retained, but the documentation now explicitly warns that their default credentials must not be used in production and that these users should be removed or their credentials changed after installation.",
-      "cvss_score": 9.9,
-      "cvss_severity": "CRITICAL",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:N",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "eclipse aerios",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "459fa98e95b1865d01b8d14d6cce5908ba2b18ba",
-              "lessThan": "c6efc450baf912385681198b2477c1ba4e93f91a",
-              "versionType": "git"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:eclipse aerios",
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00546,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-200",
-          "CWE-306",
-          "CWE-798",
-          "CWE-1188",
-          "CWE-1392"
-        ],
-        "cpe_count": 0,
-        "reference_count": 6
-      }
-    },
-    {
-      "cve_id": "CVE-2026-86836",
-      "description": "In Eclipse Ankaios versions 0.1.0 through 1.0.2, the agent creates workload files and Control Interface named pipes (FIFOs) under a predictable path derived from the agent name and a hash of the workload's runtime configuration. If a directory or FIFO already exists at that path when the agent (re)starts, the agent reuses it based only on an existence and/or file-type check, without validating its owner or permissions. A local, unprivileged user with write access to the same base directory (by default under `$TMPDIR/ankaios`, e.g. shared `/tmp`) can pre-create this path hierarchy, including the two Control Interface FIFOs, before the agent starts. The agent then treats the attacker-owned FIFOs as the legitimate Control Interface for the targeted workload. The attacker can complete the Control Interface handshake and issue requests using that workload's configured `controlInterfaceAccess` permissions, allowing impersonation of the workload and, depending on its configured permissions, unauthorized reading and/or modification of the cluster's desired state.",
-      "cvss_score": 8.4,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:H",
-      "affected": [
-        {
-          "vendor": "eclipse foundation",
-          "product": "eclipse ankaios",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "0.1.0",
-              "lessThanOrEqual": "1.0.2",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:eclipse ankaios",
-        "vendor:eclipse foundation"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00112,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-276",
-          "CWE-367",
-          "CWE-379"
-        ],
-        "cpe_count": 0,
-        "reference_count": 3
       }
     },
     {
@@ -202835,6 +202950,36 @@
         "cpe_count": 0,
         "reference_count": 7
       }
+    },
+    {
+      "cve_id": "CVE-2026-79751",
+      "description": "SportEase is a web application for managing school sports events, class rosters, and competition teams. Prior to 1.3, an authenticated account with is_profile_complete=false can submit an attacker-selected class_id for any class in the currently active event to PUT /api/user/profile during first profile completion. AuthHandler.UpdateProfile accepts the class without validating the user's legitimate membership and automatically derives and assigns the corresponding {class_name}_rep role while isFirstCompletion is true. The attacker can become representative of one selected class, view roster information including email addresses, and add or remove competition-team assignments. Downstream handlers correctly reject access to other classes, so the impact is bounded to the selected class, but the representative privilege cannot be revoked through the exposed API and requires direct database intervention or another out-of-band remediation method. This issue is fixed in version 1.3.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L",
+      "affected": [
+        {
+          "vendor": "snct-sportease",
+          "product": "web",
+          "versions": [
+            {
+              "version": "< 1.3",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:web",
+        "vendor:snct-sportease"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-7635",

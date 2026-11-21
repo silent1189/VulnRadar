@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T19:59:51+00:00",
+  "generated_at": "2026-11-21T01:23:30+00:00",
   "vendor": "nodejs",
   "count": 55,
   "items": [
@@ -5523,30 +5523,30 @@
     },
     {
       "cve_id": "CVE-2026-123866",
-      "description": "A use-after-free in Node.js HTTP/2 stream teardown can leak response memory, including the contents of other connections' response buffers, to a peer. When a stream is torn down while a write is still backpressured, for example by a peer RST_STREAM or by the server's own per-stream timeout destroying the stream, the stream's response buffer is freed but a reference to it is still used, so freed or unrelated heap memory is written to the socket instead of the intended response. On Node.js 26.x and 24.x the teardown can be driven purely by a remote peer once the window-size change from 26.9.0 and 24.22.0 is present, and on all supported lines the same defect is reachable through an application-initiated teardown such as a per-stream idle timeout. This vulnerability affects Node.js 26.x, 24.x, and 22.x.",
+      "description": "A use-after-free in Node.js HTTP/2 stream teardown can leak response memory, including the contents of other connections' response buffers, to a peer. When a stream is torn down while a write is still backpressured, for example by a peer `RST_STREAM` or by the server's own per-stream timeout destroying the stream, the stream's response buffer is freed but a reference to it is still used, so freed or unrelated heap memory is written to the socket instead of the intended response. On Node.js 26.x and 24.x the teardown can be driven purely by a remote peer once the window-size change from 26.9.0 and 24.22.0 is present, and on all supported lines the same defect is reachable through an application-initiated teardown such as a per-stream idle timeout. This vulnerability affects Node.js 26.x, 24.x, and 22.x.",
       "cvss_score": 7.5,
       "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
       "affected": [
         {
           "vendor": "nodejs",
           "product": "node",
           "versions": [
             {
-              "version": "0.0.0",
               "status": "affected",
+              "version": "0.0.0",
               "lessThan": "22.23.5",
               "versionType": "semver"
             },
             {
-              "version": "23.0.0",
               "status": "affected",
+              "version": "23.0.0",
               "lessThan": "24.22.3",
               "versionType": "semver"
             },
             {
-              "version": "25.0.0",
               "status": "affected",
+              "version": "25.0.0",
               "lessThan": "26.13.1",
               "versionType": "semver"
             }
