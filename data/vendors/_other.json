@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T00:12:18+00:00",
+  "generated_at": "2026-11-23T08:56:37+00:00",
   "vendor": "_other",
-  "count": 3360,
+  "count": 3364,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -42279,7 +42279,7 @@
           "CWE-502"
         ],
         "cpe_count": 0,
-        "reference_count": 1
+        "reference_count": 4
       }
     },
     {
@@ -42341,7 +42341,7 @@
           "CWE-662"
         ],
         "cpe_count": 0,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -42638,7 +42638,7 @@
           "CWE-670"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 7
       }
     },
     {
@@ -42748,7 +42748,7 @@
           "CWE-416"
         ],
         "cpe_count": 0,
-        "reference_count": 1
+        "reference_count": 4
       }
     },
     {
@@ -158481,6 +158481,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-134817",
+      "description": "mcp-server-kubernetes before 4.2.0 contains an argument injection vulnerability that allows remote MCP clients to inject kubectl flags by supplying dash-prefixed values as positional operands in tools such as exec_in_pod, kubectl_patch, and kubectl_logs. Attackers connected over SSE or Streamable HTTP transport can supply values like --filename to make kubectl read files from the server host, bypassing file-read restrictions.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "flux159",
+          "product": "mcp-server-kubernetes",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "4.2.0",
+              "versionType": "semver",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mcp-server-kubernetes",
+        "vendor:flux159"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-88"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-39884",
       "description": "mcp-server-kubernetes is a Model Context Protocol server for Kubernetes cluster management. Versions 3.4.0 and prior contain an argument injection vulnerability in the port_forward tool in src/tools/port_forward.ts, where a kubectl command is constructed via string concatenation with user-controlled input and then naively split on spaces before being passed to spawn(). Unlike all other tools in the codebase which correctly use array-based argument passing with execFileSync(), port_forward treats every space in user-controlled fields (namespace, resourceType, resourceName, localPort, targetPort) as an argument boundary, allowing an attacker to inject arbitrary kubectl flags. This enables exposure of internal Kubernetes services to the network by injecting --address=0.0.0.0, cross-namespace targeting by injecting additional -n flags, and indirect exploitation via prompt injection against AI agents connected to the MCP server. This issue has been fixed in version 3.5.0.",
       "cvss_score": 8.3,
@@ -158649,6 +158692,55 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-98"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-131775",
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in nK Ghost Kit ghostkit allows Stored XSS.This issue affects Ghost Kit: from n/a through 3.8.1.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "nk",
+          "product": "ghost kit",
+          "versions": [
+            {
+              "version": "0",
+              "versionType": "custom",
+              "status": "affected",
+              "lessThanOrEqual": "3.8.1",
+              "changes": [
+                {
+                  "at": "3.8.2",
+                  "status": "unaffected"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ghost kit",
+        "vendor:nk"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
         ],
         "cpe_count": 0,
         "reference_count": 1
@@ -178139,7 +178231,18 @@
         "vendor:unbouncewordpress"
       ],
       "active_threat": false,
-      "probability_score": 0.00531
+      "probability_score": 0.00531,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 7
+      }
     },
     {
       "cve_id": "CVE-2026-108184",
@@ -184370,6 +184473,55 @@
       }
     },
     {
+      "cve_id": "CVE-2026-129083",
+      "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WPKoi WordPress Themes WPKoi Templates for Elementor wpkoi-templates-for-elementor allows Stored XSS.This issue affects WPKoi Templates for Elementor: from n/a through 3.7.5.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+      "affected": [
+        {
+          "vendor": "wpkoi wordpress themes",
+          "product": "wpkoi templates for elementor",
+          "versions": [
+            {
+              "version": "0",
+              "versionType": "custom",
+              "status": "affected",
+              "lessThanOrEqual": "3.7.5",
+              "changes": [
+                {
+                  "at": "3.7.6",
+                  "status": "unaffected"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:wpkoi templates for elementor",
+        "vendor:wpkoi wordpress themes"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-129171",
       "description": "NginxPulse 1.5.0 before 1.6.26 contains an unauthenticated sql injection vulnerability that allows remote attackers to append SQL via the id and locationType parameters of /api/stats/:type. Attackers can close the quoted table-name identifier and use error-based output to read database contents, and read or write server files via PostgreSQL superuser functions.",
       "cvss_score": 9.3,
@@ -184937,6 +185089,91 @@
         ],
         "cpe_count": 0,
         "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-134794",
+      "description": "HedgeDoc before 1.12.1 contains a prototype pollution vulnerability in the POST /history/:noteId endpoint that allows authenticated users to modify Object.prototype by supplying __proto__ as the noteId. Attackers can send a pinned value to /history/__proto__, which historyPost() in lib/history.js assigns onto the prototype, crashing the Node.js process and causing denial of service for all users.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "hedgedoc",
+          "product": "hedgedoc",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "1.12.1",
+              "versionType": "semver",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hedgedoc",
+        "vendor:hedgedoc"
+      ],
+      "active_threat": false,
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-1321"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
+      "cve_id": "CVE-2026-58486",
+      "description": "HedgeDoc is an open source, real-time, collaborative, markdown notes application. Prior to version 1.11.0, HedgeDoc was vulnerable to a YAML alias bomb due to unsafe processing of the note frontmatter. HedgeDoc parsed frontmatter with js-yaml.load (js-yaml v3) via @hedgedoc/meta-marked, which resolved YAML anchor aliases. A compact malicious payload could therefore expand into a huge object structure, consuming excessive CPU. This expansion ran on every request to the publish view (/s/<shortid>) and, when placed under the opengraph key, the editor view (/<noteId>). A ten-level alias bomb could block the single Node.js event loop for roughly 235 seconds per request, causing concurrent requests to hang or drop and rendering the instance unavailable (DoS). Because the note was stored in the database, the impact survived process restarts until the note was removed. toobusy-js did not reliably mitigate the worst cases, as the event loop was saturated before the middleware could respond. This issue was fixed in version 1.11.0.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
+      "affected": [
+        {
+          "vendor": "hedgedoc",
+          "product": "hedgedoc",
+          "versions": [
+            {
+              "version": "< 1.11.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:hedgedoc",
+        "vendor:hedgedoc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00397,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-400",
+          "CWE-409"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
       }
     },
     {
@@ -199192,48 +199429,6 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-22"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-58486",
-      "description": "HedgeDoc is an open source, real-time, collaborative, markdown notes application. Prior to version 1.11.0, HedgeDoc was vulnerable to a YAML alias bomb due to unsafe processing of the note frontmatter. HedgeDoc parsed frontmatter with js-yaml.load (js-yaml v3) via @hedgedoc/meta-marked, which resolved YAML anchor aliases. A compact malicious payload could therefore expand into a huge object structure, consuming excessive CPU. This expansion ran on every request to the publish view (/s/<shortid>) and, when placed under the opengraph key, the editor view (/<noteId>). A ten-level alias bomb could block the single Node.js event loop for roughly 235 seconds per request, causing concurrent requests to hang or drop and rendering the instance unavailable (DoS). Because the note was stored in the database, the impact survived process restarts until the note was removed. toobusy-js did not reliably mitigate the worst cases, as the event loop was saturated before the middleware could respond. This issue was fixed in version 1.11.0.",
-      "cvss_score": 8.3,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H",
-      "affected": [
-        {
-          "vendor": "hedgedoc",
-          "product": "hedgedoc",
-          "versions": [
-            {
-              "version": "< 1.11.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:hedgedoc",
-        "vendor:hedgedoc"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00397,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-400",
-          "CWE-409"
         ],
         "cpe_count": 0,
         "reference_count": 2
