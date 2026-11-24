@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T21:13:30+00:00",
+  "generated_at": "2026-11-24T05:56:47+00:00",
   "vendor": "spring",
-  "count": 90,
+  "count": 92,
   "items": [
     {
       "cve_id": "CVE-2024-22233",
@@ -622,6 +622,44 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-123886",
+      "description": "Spring Data Elasticsearch replaces positional placeholders in string-based @Query methods with the method arguments before it evaluates SpEL expressions in the resulting query string.\n\n\n\nAs a result, an argument that contains a SpEL expression is evaluated as part of the query, even if the declared query does not use SpEL.\n\n\n\n An application is affected if it passes untrusted input as an argument to a repository query method that declares a @Query with positional placeholders.\n\n\n\nIn that case, a remote attacker can execute arbitrary code in the application, and repeated requests can exhaust memory through the unbounded expression cache.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring data elasticsearch",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.1.0",
+              "lessThan": "6.1.3",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0",
+              "lessThan": "6.0.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring data elasticsearch",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-22731",
@@ -5305,6 +5343,56 @@
         "cpe_count": 5,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-59442",
+      "description": "TypesenseFilterExpressionConverter does not correctly translate grouped (parenthesized) filter expressions into the Typesense filter syntax.\n\n\n\nAs a result, the filter sent to Typesense can have a different meaning than the one the application defined, and some conditions may not be applied as intended.\n\n\n\n An application is affected if it uses the Typesense vector store with filter expressions that contain groups and relies on them to restrict results, for example to enforce tenant isolation or access control.\n\n\n\nIn that case, a remote user may be able to retrieve documents they should not have access to, and the same filter used for a delete operation may remove documents outside the intended scope.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "spring",
+          "product": "spring ai",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.0.3",
+              "versionType": "OSS"
+            },
+            {
+              "status": "affected",
+              "version": "1.1.0",
+              "lessThan": "1.1.10",
+              "versionType": "enterprise"
+            },
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.0.11",
+              "versionType": "enterprise support only"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.0.2.1",
+              "versionType": "enterprise"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:spring ai",
+        "vendor:spring"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }

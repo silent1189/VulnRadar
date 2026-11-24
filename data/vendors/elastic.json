@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T21:13:30+00:00",
+  "generated_at": "2026-11-24T05:56:47+00:00",
   "vendor": "elastic",
-  "count": 70,
+  "count": 71,
   "items": [
     {
       "cve_id": "CVE-2022-23712",
@@ -3450,6 +3450,56 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-82303",
+      "description": "A buffer over-read vulnerability in Elasticsearch transport decompression can expose data from other requests. The LZ4 decoder can read beyond the declared compressed block into a shared network buffer. A remote attacker who can reach an affected transport interface can send a specially crafted compressed request and obtain data from outside their own request. Exploitation of the exposed remote-cluster transport interface does not require authentication.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "elastic",
+          "product": "elasticsearch",
+          "versions": [
+            {
+              "version": "7.14.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "7.17.29"
+            },
+            {
+              "version": "8.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "8.19.23"
+            },
+            {
+              "version": "9.0.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "9.4.8"
+            },
+            {
+              "version": "9.5.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "9.5.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:elasticsearch",
+        "vendor:elastic"
+      ],
+      "active_threat": false,
+      "probability_score": null
     }
   ]
 }

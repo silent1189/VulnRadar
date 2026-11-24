@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-23T21:13:30+00:00",
+  "generated_at": "2026-11-24T05:56:47+00:00",
   "vendor": "_other",
-  "count": 3366,
+  "count": 3370,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -75558,6 +75558,36 @@
         "cpe_count": 269,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-132856",
+      "description": "A vulnerability was discovered in the ZoneAlarm client for Windows that allows a low-privileged local user to run code with SYSTEM privileges. An attacker must first be able to run code on the target system as a local user.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "checkpoint",
+          "product": "zonealarm",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "Versions lower than 4.4.217.20710"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:zonealarm",
+        "vendor:checkpoint"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -167978,7 +168008,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -181324,6 +181354,132 @@
       }
     },
     {
+      "cve_id": "CVE-2026-115903",
+      "description": "An authenticated attacker must reach the Edge file APIs through the Leader or directly on an Edge node. On affected managed Edge deployments with RBAC, Read Only access permits these calls. Disclosure is limited to files readable by the Edge process under its operating-system permissions and capabilities.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "cribl",
+          "product": "cribl edge",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThanOrEqual": "4.20.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cribl edge",
+        "vendor:cribl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00373
+    },
+    {
+      "cve_id": "CVE-2026-45391",
+      "description": "A command injection vulnerability in Cribl Edge for Linux versions 3.2.0 through 4.17.0 allows a local unprivileged user to execute arbitrary commands in the context of the Cribl Edge service account.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "cribl",
+          "product": "cribl edge",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0",
+              "lessThan": "4.17.1",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "4.17.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cribl edge",
+        "vendor:cribl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00889,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78",
+          "CWE-20"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-45393",
+      "description": "A vulnerability chain in Cribl Edge for Windows before 4.17.1 allows a local authenticated user to escalate privileges to NT AUTHORITY\\SYSTEM. Incorrect default permissions on the Windows installer's authentication directory (CWE-276) expose a cryptographic secret used for JWT signing and password-hash derivation, enabling forgery of administrative API tokens. The forged token can then be used to invoke a pipeline function that reaches an OS command sink (CWE-78) running in the SYSTEM context.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "cribl",
+          "product": "cribl edge",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "4.17.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:cribl edge",
+        "vendor:cribl"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00221,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78",
+          "CWE-276",
+          "CWE-20"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
+    },
+    {
       "cve_id": "CVE-2026-115904",
       "description": "Topluyo is a social networking platform. A vulnerability exists in Topluyo Desktop for Linux prior to version 2026.9.2410 where user-controlled URLs are unsafely processed, leading to OS Command Injection via the `openExternalLinks()` routine in `utils.js`. An attacker who controls a target URL can execute arbitrary operating system commands with the privileges of the user running the application upon opening the link. Version 2026.9.2410 patches the issue.",
       "cvss_score": 9.6,
@@ -183837,6 +183993,117 @@
       }
     },
     {
+      "cve_id": "CVE-2026-130165",
+      "description": "React is a JavaScript library for building user interfaces. In versions prior to 19.0.9, 19.1.10, 19.2.9 and 19.3.1, react-server-dom-webpack, react-server-dom-parcel, and react-server-dom-turbopack are vulnerable to denial of service. Specially crafted HTTP requests sent to server function endpoints can cause out-of-memory exceptions or excessive CPU usage. This issue is fixed in versions 19.0.9, 19.1.10, 19.2.9 and 19.3.1.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "react",
+          "product": "react",
+          "versions": [
+            {
+              "version": ">= 19.0.0, < 19.0.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.1.0, < 19.1.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.2.0, < 19.2.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.3.0, < 19.3.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "react",
+          "product": "react-server-dom-parcel",
+          "versions": [
+            {
+              "version": ">= 19.0.0, < 19.0.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.1.0, < 19.1.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.2.0, < 19.2.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.3.0, < 19.3.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "react",
+          "product": "react-server-dom-turbopack",
+          "versions": [
+            {
+              "version": ">= 19.0.0, < 19.0.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.1.0, < 19.1.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.2.0, < 19.2.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.3.0, < 19.3.1",
+              "status": "affected"
+            }
+          ]
+        },
+        {
+          "vendor": "react",
+          "product": "react-server-dom-webpack",
+          "versions": [
+            {
+              "version": ">= 19.0.0, < 19.0.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.1.0, < 19.1.10",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.2.0, < 19.2.9",
+              "status": "affected"
+            },
+            {
+              "version": ">= 19.3.0, < 19.3.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:react",
+        "product:react-server-dom-parcel",
+        "product:react-server-dom-turbopack",
+        "product:react-server-dom-webpack",
+        "vendor:react"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-126801",
       "description": "Rote 1.2.0 through 2.6.0 contains an authorization bypass in the OAuth bind/merge endpoint that allows authenticated users to merge any OAuth-bound account into their own. Attackers can submit a public existingUserId and GitHub or Apple user ID to take over notes, attachments, and API keys and delete the victim account.",
       "cvss_score": 8.7,
@@ -185277,6 +185544,38 @@
         "cpe_count": 0,
         "reference_count": 2
       }
+    },
+    {
+      "cve_id": "CVE-2026-135164",
+      "description": "Formance Ledger 2.2.0-beta.3 before 2.4.18 contains an SQL injection vulnerability that allows remote API callers to execute SQL by supplying unvalidated account expand values. Attackers can inject comment-separated SQL through the expand query parameter or base64 pagination cursor to run queries with the ledger database role's privileges.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "formancehq",
+          "product": "ledger",
+          "versions": [
+            {
+              "version": "2.2.0-beta.3",
+              "lessThan": "2.4.18",
+              "versionType": "semver",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ledger",
+        "vendor:formancehq"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13133",
@@ -195751,100 +196050,6 @@
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-1321"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-45391",
-      "description": "A command injection vulnerability in Cribl Edge for Linux versions 3.2.0 through 4.17.0 allows a local unprivileged user to execute arbitrary commands in the context of the Cribl Edge service account.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "cribl",
-          "product": "cribl edge",
-          "versions": [
-            {
-              "status": "affected",
-              "version": "3.2.0",
-              "lessThan": "4.17.1",
-              "versionType": "semver"
-            },
-            {
-              "status": "unaffected",
-              "version": "4.17.1",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:cribl edge",
-        "vendor:cribl"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00889,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78",
-          "CWE-20"
-        ],
-        "cpe_count": 0,
-        "reference_count": 2
-      }
-    },
-    {
-      "cve_id": "CVE-2026-45393",
-      "description": "A vulnerability chain in Cribl Edge for Windows before 4.17.1 allows a local authenticated user to escalate privileges to NT AUTHORITY\\SYSTEM. Incorrect default permissions on the Windows installer's authentication directory (CWE-276) expose a cryptographic secret used for JWT signing and password-hash derivation, enabling forgery of administrative API tokens. The forged token can then be used to invoke a pipeline function that reaches an OS command sink (CWE-78) running in the SYSTEM context.",
-      "cvss_score": 7.8,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-      "affected": [
-        {
-          "vendor": "cribl",
-          "product": "cribl edge",
-          "versions": [
-            {
-              "version": "0",
-              "status": "affected",
-              "lessThan": "4.17.1",
-              "versionType": "semver"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:cribl edge",
-        "vendor:cribl"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00221,
-      "nvd": {
-        "cvss_v3_score": 7.8,
-        "cvss_v3_severity": "HIGH",
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-78",
-          "CWE-276",
-          "CWE-20"
         ],
         "cpe_count": 0,
         "reference_count": 2
