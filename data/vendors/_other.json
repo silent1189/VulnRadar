@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T02:17:42+00:00",
+  "generated_at": "2026-11-25T12:37:00+00:00",
   "vendor": "_other",
-  "count": 3351,
+  "count": 3354,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -1998,6 +1998,49 @@
       ],
       "active_threat": false,
       "probability_score": 0.00351,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-114434",
+      "description": "The Video Conferencing with Zoom WordPress plugin before 4.7.0 does not check that the requester is authorized to join a meeting before issuing a Zoom Meeting SDK signature for it, allowing unauthenticated users to obtain a valid signed join credential for an arbitrary meeting.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "unknown",
+          "product": "video conferencing with zoom",
+          "versions": [
+            {
+              "status": "affected",
+              "versionType": "semver",
+              "version": "4.6.8",
+              "lessThan": "4.7.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:video conferencing with zoom",
+        "vendor:unknown"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00258,
       "nvd": {
         "cvss_v3_score": 7.5,
         "cvss_v3_severity": "HIGH",
@@ -40549,8 +40592,8 @@
           "CWE-824",
           "CWE-1325"
         ],
-        "cpe_count": 317,
-        "reference_count": 12
+        "cpe_count": 323,
+        "reference_count": 13
       }
     },
     {
@@ -40624,8 +40667,8 @@
           "CWE-824",
           "CWE-1325"
         ],
-        "cpe_count": 317,
-        "reference_count": 19
+        "cpe_count": 323,
+        "reference_count": 20
       }
     },
     {
@@ -71093,6 +71136,92 @@
       }
     },
     {
+      "cve_id": "CVE-2026-126761",
+      "description": "Authorization bypass through user-controlled key in the RDM folder duplication endpoint in Devolutions Server 2026.3.14.0 and earlier allows an authenticated low-privileged attacker to overwrite and move arbitrary vault entries and read their history via a client-supplied entry identifier.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "devolutions",
+          "product": "server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.3.15",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:devolutions"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00191,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-639"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-133231",
+      "description": "Stored cross-site scripting in the documentation editor in Devolutions Server 2026.3.14.0 and earlier allows an authenticated user with documentation write access to execute script in another user's session via an unencoded image caption parameter.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "devolutions",
+          "product": "server",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThan": "2026.3.15",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:devolutions"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00216,
+      "nvd": {
+        "cvss_v3_score": 8.7,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
       "cve_id": "CVE-2026-13327",
       "description": "Improper certificate validation on LDAPS connections to Active Directory in\u00a0Devolutions Server 2026.2.16 and earlier allows a network-positioned attacker to intercept privileged directory service credentials via a spoofed domain controller certificate.",
       "cvss_score": 8.3,
@@ -73995,7 +74124,19 @@
         "vendor:checkpoint"
       ],
       "active_threat": false,
-      "probability_score": 0.00118
+      "probability_score": 0.00118,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-59",
+          "CWE-347"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-16232",
@@ -81789,7 +81930,18 @@
         "vendor:asus"
       ],
       "active_threat": false,
-      "probability_score": 0.00241
+      "probability_score": 0.00241,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-787"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-93489",
@@ -86123,14 +86275,14 @@
       "active_threat": false,
       "probability_score": 0.00713,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 6
       }
     },
@@ -86164,15 +86316,15 @@
       "active_threat": false,
       "probability_score": 0.00592,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-770",
           "CWE-835"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 6
       }
     },
@@ -86206,15 +86358,15 @@
       "active_threat": false,
       "probability_score": 0.00713,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-400",
           "CWE-407"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 6
       }
     },
@@ -86248,15 +86400,15 @@
       "active_threat": false,
       "probability_score": 0.00508,
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-400",
           "CWE-770"
         ],
-        "cpe_count": 0,
+        "cpe_count": 1,
         "reference_count": 8
       }
     },
@@ -149150,7 +149302,19 @@
         "vendor:unblu inc."
       ],
       "active_threat": false,
-      "probability_score": 0.00606
+      "probability_score": 0.00606,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79",
+          "CWE-434"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-8152",
@@ -166511,15 +166675,15 @@
         "knownRansomwareCampaignUse": "Unknown"
       },
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 8.7,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-918"
         ],
-        "cpe_count": 0,
-        "reference_count": 1
+        "cpe_count": 1,
+        "reference_count": 2
       }
     },
     {
@@ -179081,7 +179245,7 @@
           "CWE-140"
         ],
         "cpe_count": 1,
-        "reference_count": 5
+        "reference_count": 6
       }
     },
     {
@@ -179868,7 +180032,18 @@
         "vendor:cribl"
       ],
       "active_threat": false,
-      "probability_score": 0.00373
+      "probability_score": 0.00373,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-863"
+        ],
+        "cpe_count": 0,
+        "reference_count": 2
+      }
     },
     {
       "cve_id": "CVE-2026-45391",
@@ -182586,7 +182761,18 @@
         "vendor:react"
       ],
       "active_threat": false,
-      "probability_score": 0.00633
+      "probability_score": 0.00633,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-407"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-126801",
@@ -183940,15 +184126,15 @@
         "knownRansomwareCampaignUse": "Unknown"
       },
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-502"
         ],
-        "cpe_count": 0,
-        "reference_count": 2
+        "cpe_count": 2,
+        "reference_count": 3
       }
     },
     {
@@ -183991,15 +184177,15 @@
         "knownRansomwareCampaignUse": "Unknown"
       },
       "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
+        "cvss_v3_score": 8.7,
+        "cvss_v3_severity": "HIGH",
         "cvss_v2_score": null,
         "cvss_v2_severity": null,
         "cwe_ids": [
           "CWE-642"
         ],
-        "cpe_count": 0,
-        "reference_count": 11
+        "cpe_count": 1,
+        "reference_count": 12
       }
     },
     {
@@ -184049,8 +184235,8 @@
         "cwe_ids": [
           "CWE-24"
         ],
-        "cpe_count": 0,
-        "reference_count": 5
+        "cpe_count": 1,
+        "reference_count": 6
       }
     },
     {
@@ -184168,7 +184354,18 @@
         "vendor:formancehq"
       ],
       "active_threat": false,
-      "probability_score": 0.005
+      "probability_score": 0.005,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-136410",
@@ -184225,7 +184422,18 @@
         "vendor:thymeleaf"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 9.0,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-917"
+        ],
+        "cpe_count": 0,
+        "reference_count": 3
+      }
     },
     {
       "cve_id": "CVE-2026-40477",
@@ -184383,7 +184591,18 @@
         "vendor:openresty"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 8.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-416"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
     },
     {
       "cve_id": "CVE-2026-136426",
@@ -184413,7 +184632,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-94"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136427",
@@ -184443,7 +184673,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-78"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136428",
@@ -184473,7 +184714,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136429",
@@ -184503,7 +184755,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-749"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136430",
@@ -184533,7 +184796,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136431",
@@ -184563,7 +184837,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136432",
@@ -184593,7 +184878,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-136433",
@@ -184623,7 +184919,18 @@
         "vendor:pytorch foundation"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-502"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-13133",
@@ -199664,7 +199971,7 @@
           "CWE-116"
         ],
         "cpe_count": 0,
-        "reference_count": 4
+        "reference_count": 5
       }
     },
     {
@@ -202503,7 +202810,18 @@
         "vendor:txone networks"
       ],
       "active_threat": false,
-      "probability_score": null
+      "probability_score": null,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-862"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
     },
     {
       "cve_id": "CVE-2026-77974",
