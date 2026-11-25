@@ -1,0 +1,2509 @@
+{
+  "generated_at": "2026-11-25T02:17:42+00:00",
+  "vendor": "joomla_project",
+  "count": 61,
+  "items": [
+    {
+      "cve_id": "CVE-2022-23793",
+      "description": "An issue was discovered in Joomla! 3.0.0 through 3.10.6 & 4.0.0 through 4.1.0. Extracting an specifilcy crafted tar package could write files outside of the intended path.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0-3.10.6 & 4.0.0-4.1.0"
+            }
+          ]
+        },
+        {
+          "vendor": "joomla! project",
+          "product": "joomla/archive",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-1.1.11 & 2.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "product:joomla/archive",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.02078,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": 5.0,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 2,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23795",
+      "description": "An issue was discovered in Joomla! 2.5.0 through 3.10.6 & 4.0.0 through 4.1.0. A user row was not bound to a specific authentication mechanism which could under very special circumstances allow an account takeover.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.5.0-3.10.6 & 4.0.0-4.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01138,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 6.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23797",
+      "description": "An issue was discovered in Joomla! 3.0.0 through 3.10.6 & 4.0.0 through 4.1.0. Inadequate filtering on the selected Ids on an request could resulted into an possible SQL injection.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0-3.10.6 & 4.0.0-4.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01097,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 7.5,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2022-23799",
+      "description": "An issue was discovered in Joomla! 4.0.0 through 4.1.0. Under specific circumstances, JInput pollutes method-specific input bags with $_REQUEST data.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-4.1.0"
+            }
+          ]
+        },
+        {
+          "vendor": "joomla! project",
+          "product": "joomla/input",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.0.0-2.0.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "product:joomla/input",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.01215,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": 6.8,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-23752",
+      "description": "An issue was discovered in Joomla! 4.0.0 through 4.2.7. An improper access check allows unauthorized access to webservice endpoints.",
+      "cvss_score": 5.3,
+      "cvss_severity": "MEDIUM",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-4.2.7"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": true,
+      "is_critical": true,
+      "priority_label": "CRITICAL (Active Exploit in Stack)",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": true,
+      "probability_score": 0.99809,
+      "kev": {
+        "cveID": "CVE-2023-23752",
+        "vendorProject": "Joomla!",
+        "product": "Joomla!",
+        "vulnerabilityName": "Joomla! Improper Access Control Vulnerability",
+        "dateAdded": "2024-01-08",
+        "shortDescription": "Joomla! contains an improper access control vulnerability that allows unauthorized access to webservice endpoints.",
+        "requiredAction": "Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.",
+        "dueDate": "2024-01-29",
+        "knownRansomwareCampaignUse": "Unknown"
+      },
+      "nvd": {
+        "cvss_v3_score": 5.3,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 1,
+        "reference_count": 3
+      }
+    },
+    {
+      "cve_id": "CVE-2023-23755",
+      "description": "An issue was discovered in Joomla! 4.2.0 through 4.3.1. The lack of rate limiting allowed brute force attacks against MFA methods.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.2.0-4.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0056,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-307"
+        ],
+        "cpe_count": 1,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2023-40626",
+      "description": "The language file parsing process could be manipulated to expose environment variables. Environment variables might contain sensible information.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-4.4.0"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00811,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": null,
+        "cpe_count": 3,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2024-27185",
+      "description": "The pagination class includes arbitrary parameters in links, leading to cache poisoning attack vectors.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0-3.10.16"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0-4.4.6"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0-5.1.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00441,
+      "nvd": {
+        "cvss_v3_score": 9.1,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-444"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-27187",
+      "description": "Improper Access Controls allows backend users to overwrite their username when disallowed.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-4.4.6"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0-5.1.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00354,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-40748",
+      "description": "Lack of output escaping in the id attribute of menu lists.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.0.0-3.10.19"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0-4.4.9"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0-5.2.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00425,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2024-40749",
+      "description": "Improper Access Controls allows access to protected views.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.9.0-3.10.19"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0-4.4.9"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0-5.2.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00388,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 3,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-22213",
+      "description": "Inadequate checks in the Media Manager allowed users with \"edit\" privileges to change file extension to arbitrary extension, including .php and other potentially executable extensions.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:H/VA:L/SC:L/SI:H/SA:L/AU:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-4.4.11"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0-5.2.4"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00491,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 0,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25226",
+      "description": "Improper handling of identifiers lead to a SQL injection vulnerability in the quoteNameStr method of the database package. Please note: the affected method is a protected method. It has no usages in the original packages in neither the 2.x nor 3.x branch and therefore the vulnerability in question can not be exploited when using the original database class. However, classes extending the affected class might be affected, if the vulnerable method is used.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! framework",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-2.1.1"
+            },
+            {
+              "status": "affected",
+              "version": "3.0.0-3.3.1"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! framework",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00489,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-89"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2025-25227",
+      "description": "Insufficient state checks lead to a vector that allows to bypass 2FA checks.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-4.4.12"
+            },
+            {
+              "status": "affected",
+              "version": "5.0.0-5.2.5"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.0041,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-120674",
+      "description": "Joomla! Core - [20261104] - Core - XSS in com_finder search view in Joomla 2.5.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of the search filter values leads to a reflected XSS vulnerability in the smart search view.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.5.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123210",
+      "description": "Joomla! Core - [20261107] - Core - Insufficient file extension checks in com_media rename and copy actions in Joomla 4.0.0-5.4.10, 6.0.0-6.2.0 - The rename and copy actions of the local media adapter only validate the final file extension, allowing files with a blocked extension in their name.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-123214",
+      "description": "Joomla! Core - [20261111] - Core - Missing authentication in web installer in Joomla 4.0.0-5.4.10, 6.0.0-6.2.0 - The web installer remains usable on an installed site as long as the installation folder exists, allowing unauthenticated users to rewrite the configuration.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-126045",
+      "description": "Joomla! Core - [20261112] - Core - Local file inclusion through language parameter in Joomla 1.6.0-5.4.10, 6.0.0-6.2.0 - The language request parameter is not validated before it is used to build the path of included language files.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127297",
+      "description": "Joomla! Core - [20261117] - Core - Race condition in formatted text logger in Joomla 3.6.0-5.4.10, 6.0.0-6.2.0 - A race condition in the formatted text logger can recreate a log file without its protective header.",
+      "cvss_score": 9.2,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127298",
+      "description": "Joomla! Core - [20261118] - Core - XSS in com_contact name in Joomla 1.6.0-5.4.10, 6.0.0-6.2.0 - Decoding of HTML entities when saving contacts and inadequate escaping of the contact name lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127299",
+      "description": "Joomla! Core - [20261119] - Core - XSS in com_newsfeeds name in Joomla 1.6.0-5.4.10, 6.0.0-6.2.0 - Decoding of HTML entities when saving newsfeeds and inadequate escaping of the feed name lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127300",
+      "description": "Joomla! Core - [20261120] - Core - XSS in com_guidedtours tour and step titles in Joomla 4.3.0-5.4.10, 6.0.0-6.2.0 - Decoding of HTML entities when saving guided tours and inadequate escaping of the titles lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.3.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127301",
+      "description": "Joomla! Core - [20261121] - Core - XSS in com_contenthistory version preview in Joomla 3.2.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of field labels in the version preview and comparison leads to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127302",
+      "description": "Joomla! Core - [20261122] - Core - XSS in com_associations association view in Joomla 3.7.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of the item type request parameter leads to a reflected XSS vulnerability in the association edit view.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.7.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127303",
+      "description": "Joomla! Core - [20261123] - Core - XSS in com_associations modal in Joomla 3.7.0-5.4.10 - Inadequate escaping of the forced item type request parameter leads to a reflected XSS vulnerability in the associations modal.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.7.0-5.4.10"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-127304",
+      "description": "Joomla! Core - [20261124] - Core - XSS in form field showon attribute in Joomla 3.9.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of the showon attribute in form fields leads to a stored XSS vulnerability through custom fields.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.9.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129362",
+      "description": "Joomla! Core - [20261125] - Core - XSS in note custom field in Joomla 6.0.0-6.2.0 - Inadequate filtering and escaping of the heading, class and close parameters of the note custom field lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129363",
+      "description": "Joomla! Core - [20261126] - Core - XSS in administrator menu module in Joomla 3.8.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of menu item links in the administrator menu module leads to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.8.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129364",
+      "description": "Joomla! Core - [20261127] - Core - XSS in com_modules module positions in Joomla 2.5.0-5.4.10, 6.0.0-6.2.0 - Inadequate filtering of the module position in the batch process and inadequate escaping in the module list lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.5.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129365",
+      "description": "Joomla! Core - [20261128] - Core - XSS in com_installer language installation view in Joomla 2.5.7-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of the language update feed metadata leads to an XSS vulnerability in the language installation view.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.5.7-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129366",
+      "description": "Joomla! Core - [20261129] - Core - XSS in module titles in Joomla 1.6.0-5.4.10, 6.0.0-6.2.0 - Decoding of HTML entities when saving modules and inadequate escaping of the module title in module chromes lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129367",
+      "description": "Joomla! Core - [20261130] - Core - XSS in com_scheduler task title in Joomla 4.1.0-5.4.10, 6.0.0-6.2.0 - Decoding of HTML entities when saving scheduled tasks leads to a stored XSS vulnerability in the task title.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.1.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129368",
+      "description": "Joomla! Core - [20261131] - Core - XSS in com_banners banner name in Joomla 1.6.0-5.4.10, 6.0.0-6.2.0 - Decoding of HTML entities when saving banners and the raw output of the name in custom banner code lead to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129371",
+      "description": "Joomla! Core - [20261134] - Core - Improper root user check in Joomla 1.6.0-5.4.10, 6.0.0-6.2.0 - A loose comparison of the configured emergency root user against the username allowed accounts with a numeric username to gain super user privileges.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.6.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129377",
+      "description": "Joomla! Core - [20261140] - Core - XSS in joomla-dialog header in Joomla 5.0.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of the dialog header text leads to an XSS vulnerability in the extension changelog dialog.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "5.0.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129378",
+      "description": "Joomla! Core - [20261141] - Core - XSS in com_installer changelog in Joomla 4.0.0-5.4.10, 6.0.0-6.2.0 - Inadequate filtering of remote extension changelog contents leads to an XSS vulnerability in the changelog view.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129380",
+      "description": "Joomla! Core - [20261143] - Core - Information disclosure in GET request task plugin in Joomla 4.1.0-5.4.10, 6.0.0-6.2.0 - The GET request task plugin stored fetched responses in a publicly accessible folder, exposing the response contents.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.1.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129381",
+      "description": "Joomla! Core - [20261144] - Core - CSRF token leak in install from web in Joomla 4.0.0-5.4.10, 6.0.0-6.2.0 - The install from web feature submitted the CSRF token of the administrator to third-party sites.",
+      "cvss_score": 7.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:A/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129389",
+      "description": "Joomla! Core - [20261152] - Core - XSS in module title attributes in Joomla 3.8.3-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of the module title in HTML attributes of the wrapper module and several administrator modules leads to a stored XSS vulnerability.",
+      "cvss_score": 8.4,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.8.3-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129393",
+      "description": "Joomla! Core - [20261156] - Core - RCE through media custom field parameters in Joomla 4.0.0-5.4.10, 6.0.0-6.2.0 - Inadequate escaping of media field parameters in the generated form XML allowed manipulating the form definition, leading to a remote code execution vulnerability.",
+      "cvss_score": 9.4,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-129394",
+      "description": "Joomla! Core - [20261157] - Core - Path traversal in com_scheduler task log file name in Joomla 4.1.0-5.4.10, 6.0.0-6.2.0 - Inadequate validation of the log file name of scheduled tasks allowed writing log entries to files outside the log folder.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.1.0-5.4.10"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-23898",
+      "description": "Lack of input validation leads to an arbitrary file deletion vulnerability in the autoupdate server mechanism.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.3"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.0.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00473,
+      "nvd": {
+        "cvss_v3_score": 7.2,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-73"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-23899",
+      "description": "An improper access check allows unauthorized access to webservice endpoints.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.3"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.0.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00418,
+      "nvd": {
+        "cvss_v3_score": 8.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-35223",
+      "description": "An improper access check allows unauthorized access to com_config webservice endpoints.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.12794,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-40383",
+      "description": "An improper validation of user-supplied input leads to a local file inclusion vulnerability.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.2.1-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.12517,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48896",
+      "description": "Insufficient state checks lead to a vector that allows to bypass 2FA checks.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00367,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48897",
+      "description": "Insufficient state checks lead to a vector that allows to bypass 2FA checks.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00211,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48898",
+      "description": "An improper access check allows privilege escalation through the com_users batch task.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48901",
+      "description": "The InputFilter::getInstance() method omitted a security sensitive parameter from the instance cache key.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00245,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-524"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48902",
+      "description": "The password and username reset features created plain http links for https connections if the \"Force SSL\" flag wasn't explicitly set.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.9.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00252,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-319"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-48904",
+      "description": "An improper access check allows privelege escalation through the com_users group editing webservice endpoint.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.5"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.04576,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 1
+      }
+    },
+    {
+      "cve_id": "CVE-2026-71574",
+      "description": "Joomla! Core - [20260803] - Inconsistent ACL checks for mutating webservice endpoints in Joomla 4.0.0-5.4.7, 6.0.0-6.1.2 - An improper access check allows unauthorized users to perform mutation actions in webservice endpoints, where the same mutation was restricted in the backend UI.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.6"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00343,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-73337",
+      "description": "Joomla! Core - [20260807] - MFA Authentication Bypass in Joomla 4.0.0-5.4.7 and 6.0.0-6.1.2 - Insufficient state checks lead to a vector that allows to bypass 2FA checks.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.6"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.2"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00464,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-73373",
+      "description": "Joomla! Core - [20260810] - Unrestricted uploads of SHTML files in Joomla 1.0.0-5.4.7, 6.0.0-6.1.2 - The default list of dangerous files did not include SHTML files. On servers that executed these files, that could lead to code execution.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-5.4.6"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.2"
+            }
+          ]
+        },
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! framework filesystem package",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-3.3.0"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0-4.2.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "product:joomla! framework filesystem package",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00545,
+      "nvd": {
+        "cvss_v3_score": 9.8,
+        "cvss_v3_severity": "CRITICAL",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-434"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90913",
+      "description": "Joomla! Core - [20260903] - Core - Improper ACL checks for access level webservice endpoints in Joomla 4.0.0-5.4.8, 6.0.0-6.1.3 - An improper access check allows unauthorized users to perform mutation actions in access level endpoints.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00214,
+      "nvd": {
+        "cvss_v3_score": 5.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-90915",
+      "description": "Joomla! Core - [20260905] - Core - Arbitrary directory deletion via cache purge action in Joomla 4.0.0-5.4.8, 6.0.0-6.1.3 -An improper validation of the cache group name allowed path traverals in the file storage of the caching layer, resulting in arbitrary directory deletions.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00345,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-22"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92222",
+      "description": "Joomla! Core - [20260909] - Core - SSRF vectors in various core extensions in Joomla 4.0.0-5.4.8, 6.0.0-6.1.3 - URLs used for serverside requests were improperly validated, leading to SSRF vectors.",
+      "cvss_score": 8.9,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00242,
+      "nvd": {
+        "cvss_v3_score": 8.0,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-918"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92226",
+      "description": "Joomla! Core - [20260913] - Core - Improper ACL checks for varous webservice edit tasks in Joomla 4.0.0-5.4.8, 6.0.0-6.1.3 - An improper access check allows unauthorized users to perform edit actions on otherwise uneditable items.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00226,
+      "nvd": {
+        "cvss_v3_score": 6.0,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-284"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92227",
+      "description": "Joomla! Core - [20260914] - Core - MFA Authentication Bypass through rememberme cookies in Joomla 4.0.0-5.4.8, 6.0.0-6.1.3 - The premature issuance of an rememberme cookie leads to a MFA bypass vulnerability.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00267,
+      "nvd": {
+        "cvss_v3_score": 7.5,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-287"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92231",
+      "description": "Joomla! Core - [20260915] - Core - XSS filter bypass in InputFilter via HTML5 entity decode mismatch in Joomla 1.5.0-5.4.8, 6.0.0-6.1.3 - The checkAttribute method normalized an attribute value before testing it against the \"javascript:\" scheme regex, however without decoding HTML5 entities beforehand, causing an XSS vector.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.5.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        },
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! framework filter package",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-3.0.6"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0-4.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "product:joomla! framework filter package",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00268,
+      "nvd": {
+        "cvss_v3_score": 6.7,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    },
+    {
+      "cve_id": "CVE-2026-92232",
+      "description": "Joomla! Core - [20260916] - Core - XSS filter bypass in InputFilter via whitespace characters in HTML data URIs in Joomla 1.5.0-5.4.8, 6.0.0-6.1.3 - The cleanAttribute method removes HTML data URIs, however injected whitespaces characters could circumvent that cleanup, causing an XSS vector.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N/E:P",
+      "affected": [
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! cms",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.5.0-5.4.8"
+            },
+            {
+              "status": "affected",
+              "version": "6.0.0-6.1.3"
+            }
+          ]
+        },
+        {
+          "vendor": "joomla! project",
+          "product": "joomla! framework filter package",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0-3.0.6"
+            },
+            {
+              "status": "affected",
+              "version": "4.0.0-4.1.0"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:joomla! cms",
+        "product:joomla! framework filter package",
+        "vendor:joomla! project"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00242,
+      "nvd": {
+        "cvss_v3_score": 6.5,
+        "cvss_v3_severity": "MEDIUM",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-79"
+        ],
+        "cpe_count": 2,
+        "reference_count": 2
+      }
+    }
+  ]
+}
