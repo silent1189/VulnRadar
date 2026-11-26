@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T22:26:39+00:00",
+  "generated_at": "2026-11-26T04:58:35+00:00",
   "vendor": "_other",
-  "count": 3364,
+  "count": 3380,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -71974,6 +71974,49 @@
       }
     },
     {
+      "cve_id": "CVE-2026-136629",
+      "description": "Nektos act 0.2.92 before 0.2.95 contains an argument injection vulnerability in readProjectArgsFile and projectFlag that allows malicious repositories to bypass the untrusted project .actrc flag allowlist. Attackers can commit a crafted .actrc smuggling disallowed flags like -P self-hosted or --privileged to run workflow steps on the developer's host.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "nektos",
+          "product": "act",
+          "versions": [
+            {
+              "version": "0.2.92",
+              "lessThan": "0.2.95",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:act",
+        "vendor:nektos"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00289,
+      "nvd": {
+        "cvss_v3_score": 7.8,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-88"
+        ],
+        "cpe_count": 0,
+        "reference_count": 5
+      }
+    },
+    {
       "cve_id": "CVE-2026-34041",
       "description": "act is a project which allows for local running of github actions. Prior to version 0.2.86, act unconditionally processes the deprecated ::set-env:: and ::add-path:: workflow commands, which was disabled due to environment injection risks. When a workflow step echoes untrusted data to stdout, an attacker can inject these commands to set arbitrary environment variables or modify the PATH for all subsequent steps in the job. This issue has been patched in version 0.2.86.",
       "cvss_score": 7.7,
@@ -73156,7 +73199,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -73205,7 +73248,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -73256,7 +73299,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -173326,7 +173369,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -173377,7 +173420,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -173428,7 +173471,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -173479,7 +173522,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -173530,7 +173573,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -180303,6 +180346,61 @@
       }
     },
     {
+      "cve_id": "CVE-2026-95533",
+      "description": "In Eclipse Jetty, the JSON parsing utilities provided by artifact `jetty-util-ajax` are vulnerable to `StackOverflowError` for inputs that have a large recursive structure.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "eclipse foundation",
+          "product": "",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.4.0",
+              "lessThanOrEqual": "9.4.65",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "10.0.0",
+              "lessThanOrEqual": "10.0.33",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "11.0.0",
+              "lessThanOrEqual": "11.0.33",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.0.0",
+              "lessThanOrEqual": "12.0.39",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "12.1.0",
+              "lessThanOrEqual": "12.1.13",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "vendor:eclipse foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-115729",
       "description": "@pdfme/common from 5.5.10 before 6.2.6 contains a server-side request forgery vulnerability that allows attackers to bypass the isUrlSafeToFetch denylist in getB64BasePdf. Attackers can supply basePdf URLs using IPv4-mapped IPv6, [::], NAT64 or localhost alias hostnames to read loopback, internal or cloud metadata responses through generated documents.",
       "cvss_score": 8.9,
@@ -182138,6 +182236,326 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-136500",
+      "description": "To escape a bound parameter, or a name passed to a catalog function, psqlODBC has to know where each multibyte character of the client encoding ends. It treated a client encoding named by an alias the server accepts, such as WIN950, Windows950 or big-5 for BIG5, as single-byte, and it accepted too narrow a range of lead bytes for JOHAB, EUC_TW, EUC_CN and EUC_KR. A quote byte that the server reads as part of such a character was then not doubled, or a quote the server reads on its own was taken for part of a character, and the literal ended early.\n\nAn end user who controls one bound character parameter, or a name the application passes to a catalog function such as SQLTables(), can run SQL with the rights of the application's database role. This requires a connection that is not in UTF-8: the ANSI driver, or the ANSI entry points, with one of these client encodings. For bound parameters the driver must also be substituting parameters itself, as it does with UseServerSidePrepare=0 or a cursor type other than forward-only.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136501",
+      "description": "To build positioned updates and to describe columns, psqlODBC matches the names in a statement against the catalog. Where it matched differently from the server, it used another table or column:\n\n- Table and schema names were compared case-insensitively in its column-information cache, so users could be taken for another user's \"Users\", and the driver then evaluated that table's column default to answer @@IDENTITY.\n- In FROM ONLY t, ONLY was taken for the table name.\n- Column names were compared case-insensitively, so with Parse=1 the type of another column could decide the size of the application's buffer, which a fetch then overflowed.\n- In a database whose encoding is single-byte, such as LATIN1 or SQL_ASCII, the server folds the accented letters of an unquoted name by its own locale, while the driver folded only A-Z, so \u00c9TAT could be taken for another user's \"\u00c9tat\" instead of \u00e9tat.\n- On systems other than Windows, in a Turkish or Azeri locale, an unquoted I was not folded to i, and keywords and ODBC function names did not match.\n- Without a schema name, SQLSpecialColumns() could report the key columns of another user's same-named temporary table, and SQLPrimaryKeys() could take another user's index named <table>_pkey for the primary key of a table without one.\n- After search_path changed other than through a plain SET statement, positioned writes went to the same-named table in the previously current schema.\n- SQLBulkOperations() trusted the ctid stored inside a variable-length bookmark handed back by the application, and ignored the WHERE clause that restricted the cursor, so a forged bookmark read, updated or deleted any row of the cursor's table.\n\nA database user who can create a table in a schema on another user's search_path can redirect that user's positioned updates, inserts and deletes to a table of their choosing, where they run with the victim's rights, or run an expression of their choosing under the victim's role.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136502",
+      "description": "psqlODBC scans statement text itself to substitute parameters, translate ODBC escapes, join batched statements and rewrite queries for updatable cursors. Where it read the text differently from the server, text the driver took for data ran as SQL, or a positioned write went to another table:\n\n- An escape string constant written e'\u2026' in lower case was not recognised as one, and '\u2026' after a keyword ending in E, as in LIKE'\u2026', was taken for one.\n- A } inside a quoted literal ended an ODBC {d \u2026}, {t \u2026}, {ts \u2026} or {escape \u2026} sequence.\n- Dollar-quote tags containing _ were not recognised, and an identifier starting with _ followed by $, such as _$$, was taken for the start of a dollar quote, so a parameter marker inside a literal was substituted.\n- A trailing -- comment in one statement of a batched parameter array swallowed the next statement.\n- Comments, literals longer than 255 bytes and escape strings were misread when the driver located the FROM and WHERE clauses of a query for an updatable cursor, and the text copied into the cursor's own queries could include SQL from inside a literal.\n- A table name containing $ was cut at the $, and a quoted table name starting with , or ; ended the table list, so positioned updates, inserts and deletes went to another table.\n- An integer parameter with an embedded NUL byte cut the query short.\n- /*/ was taken for a comment that opens and closes, while the server reads it as one that only opens.\n- ConnSettings was split at every semicolon, including one inside a quoted literal, so an application that puts an end user's value into a SET command there ran the rest of the value as SQL at connect time.\n\nAn end user who controls text the application puts into a statement, or a parameter value, can run SQL with the rights of the application's database role. A database user who can create a table with a crafted name can redirect another user's positioned writes to a table of their choosing.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136503",
+      "description": "psqlODBC frees memory that is still in use, frees it twice, or writes outside an application buffer in these cases:\n\n- The clean-up the driver runs at commit and rollback sends queries of its own, and the reply to one of them can start the clean-up again while it is running. The nested run frees the rollback log, or the list of cursors and prepared statements to close, and the outer run uses and frees it again.\n- The callback through which libpq delivers notices could run that clean-up, and close the connection, while libpq was still using the connection.\n- Freeing a statement whose result holds several cursors (FetchRefcursors=1, or UseDeclareFetch=1) used the freed first result while the later cursors were closed.\n- With UseDeclareFetch=1, after a rollback closed an updatable cursor, rows added or deleted through it were counted but not stored, so freeing the statement freed uninitialised pointers, and adding a row wrote past the keyset.\n- After a multi-row fetch failed on a row other than the first of its rowset, SQLGetData() wrote at an offset past the buffer the application passed.\n- SQLProcedureColumns() freed the result of its catalog query twice when the query failed.\n- In a process named sqlservr (SQL Server linked servers), a server version below 8.4 made the statement parser free a buffer twice.\n- A failed SQLPutData in the middle of a SQLSetPos() or SQLBulkOperations() data-at-execution sequence left the whole operation pending, with the internal statement still allocated and autocommit silently off, so later statements were rolled back at disconnect. The next positioned update ran the stale callback against a statement that was never executed and dereferenced NULL.\n\nMost of these can be triggered by a hostile or compromised server, or anyone on the network path of a connection that does not use sslmode=verify-full (the default is disable). A database user who can make a statement fail, or who controls the contents of a row the application reads, can trigger the UseDeclareFetch=1 and SQLGetData() cases against an honest server. The demonstrated results are crashes and heap corruption; code execution has not been demonstrated.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136505",
+      "description": "psqlODBC uses sizes and counts without checking their range, or keeps them in types too small for them:\n\n- A row array size of 0, set with SQLSetStmtAttr() or on the ARD, makes SQLSetPos() with SQL_REFRESH write past the bound arrays.\n- SQL_DESC_COUNT above 32767 on an APD or IPD writes before the start of a heap buffer.\n- A numeric parameter with a negative scale overflows a stack buffer.\n- SQLGetData() of a text value of 2 GiB or more into a wide-character buffer computes a wrapped size and overflows the heap.\n- The 16-bit reference count and size of the statement parser's column-information cache wrap, which frees a cache entry still in use or overflows the cache, and a statement with more than 32768 columns overflows the parser's field array.\n- An updatable cursor that records more than 65535 changes in one transaction wraps the 16-bit capacity of its rollback log, which overflows it and frees it twice.\n- A statement with 32769 or more parameter markers overflows a 16-bit parameter count.\n- A wide-character string of more than 2 GiB wraps the size of its UTF-8 conversion, which is then written below the start of a heap buffer.\n- SQLGetDiagField() and SQLGetDiagFieldW() always stored the five-character SQLSTATE plus its terminator and checked BufferLength only afterwards, overrunning a buffer shorter than six bytes.\n- The ANSI SQLSetDescField(SQL_DESC_NAME) on an IPD ignored BufferLength and copied the name with strdup(), reading a name passed as pointer plus length past its end.\n- SQLFetchScroll(SQL_FETCH_BOOKMARK) did not check the bookmark it was given, so whoever chooses the bookmark value read out of bounds and crashed the process.\n- Four places in the parameter conversion read one byte past the end of a bound character parameter, and one of them rewrote it.\n- Binding a date, time or timestamp C value to an SQL_INTEGER or SQL_SMALLINT parameter dereferenced NULL instead of returning the conversion error.\n\nDepending on the case, the values come from the application, from the data or statement text an end user supplies, or from a database user who controls the size of a table or value. The demonstrated results are crashes and heap corruption; code execution has not been demonstrated.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136506",
+      "description": "psqlODBC builds queries of its own from names, and put these names into them without escaping or qualification:\n\n- the database name in SQLForeignKeys();\n- the current schema name in catalog functions;\n- the table name in the currtid2() call that re-reads rows of updatable cursors;\n- column names in the inserts and updates of SQLSetPos() and SQLBulkOperations();\n- cursor names set with SQLSetCursorName() or returned as refcursors (FetchRefcursors=1);\n- parameter names (SQL_DESC_NAME) in procedure calls;\n- the = operator in an OID comparison in SQLColumns(), which the server resolves through search_path.\n\nThe column names of the fourth item are a variant of CVE-2026-120065 (GHSA-9cg8-r57h-h6jj). The fix for that advisory, in 18.00.0006, doubles \" in the stored row-identifier name, which the keyset queries and the WHERE clause of the positioned statements use. The column names that SQLSetPos() and SQLBulkOperations() put into the SET list of their UPDATE and into the column list of their SQL_ADD INSERT come from the catalog and were not covered by it, so a driver patched to 18.00.0006 is still affected by this one.\n\nA database user who can create a database, schema, table, column or operator with a crafted name, or an end user who supplies a cursor or parameter name to the application, can run SQL with the rights of the application's database role.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136507",
+      "description": "psqlODBC parsed and built connection strings in ways that let a value end early:\n\n- In a braced value, such as PWD={\u2026}, a trailing byte 0x7d of a GBK, Big5 or SJIS character was taken for the closing brace.\n- A braced value that ended right after an escaped }} was not reported as unterminated, and its contents were parsed as further keywords.\n- SQLConnectW(), SQLDriverConnectW() and SQLBrowseConnectW() cut a connection string whose UTF-8 form is longer than 32767 bytes, which changes how the rest of it is parsed.\n- On Windows with MSDTC, the password and user name were put into the XA open string without escaping, and the XA library copied each item of that string into a 64-byte stack buffer.\n- Percent-encoding a long password wrote one byte past a 4096-byte stack buffer.\n\nAn end user who supplies a password, or another value the application puts into the connection string, can set other connection keywords, for example to connect the application to a server of their choosing. The MSDTC case can also overflow a stack buffer in the process that loads the XA library.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 8.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136509",
+      "description": "psqlODBC did not check that a server reply matches the query it sent: that a FETCH returns no more rows than it asked for, that each row has the described number of columns, that one query produces one result, and that a COPY, a transaction or the connection ends where the protocol says. By sending replies that do not match, a hostile or compromised server, or anyone on the network path of a connection that does not use sslmode=verify-full (the default is disable) can corrupt memory in the application:\n\n- A FETCH reply with more rows than requested overflows the row cache.\n- Extra results in reply to a FETCH, or to the queries of a keyset-driven cursor, are freed while still in use.\n- A key query of a keyset-driven cursor answered with extra columns, or a re-read row with fewer columns, overflows the row cache.\n- Replies without columns or rows, or with NULL values, to the driver's internal queries at connect time and in catalog functions are dereferenced.\n- A malformed relacl value in SQLTablePrivileges() makes the driver write past a buffer.\n- On Windows with MSDTC, a long transaction name returned by the server overflows a buffer during recovery.\n- Values in replies to the driver's internal queries are used without checking their range: an empty column name, a parameter count, a large-object size, a function's or trigger's argument count, and a result of exactly 32767 columns. They are dereferenced, read past, returned to the application or sent back to the server as stack memory, or make the driver loop forever.\n- A reply that ends a COPY, the connection or the transaction at an unexpected point leaves freed results, keysets or table information in use: a CopyOutResponse followed by a lost connection, a ROLLBACK command tag under UseDeclareFetch=1, or a lost connection while a cursor with positioned updates is closed. Eight extra bytes in a reply also make the driver wait forever for a COPY to end.\n- On Windows, a start-up reply without client_encoding crashes the driver, and with MSDTC a failed connection makes the XA library use a connection it has already freed.\n- An error message ending in the first byte of a multibyte character leaves the SQLSTATE returned by SQLGetDiagRecW() unterminated.\n- When a string value did not fit the application's buffer, eight Unicode entry points filled the buffer and wrote no null terminator, so a caller that reads to the terminator, as ODBC allows, read past the end of its own buffer.\n\nThis continues the fixes for CVE-2026-120058 and CVE-2026-120060, which covered other replies. The demonstrated results are crashes and heap corruption; code execution has not been demonstrated.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136512",
+      "description": "With SQL_C_DEFAULT, the C type of a bound column or parameter follows its SQL type. An application sizes its buffer from the type it was told when it described the statement. When the column had another type at fetch time, because the server reported another type, the table was altered, or an output parameter's result column had another type, psqlODBC wrote the larger type into the smaller buffer: 12 bytes past a 4-byte buffer for a uuid, and more in multi-row fetches, where the driver also steps through the array by the larger size.\n\nOther conversions wrote past the application's buffer as well:\n\n- With Int8As set to a smaller type, an int8 column fetched as SQL_C_DEFAULT was still written as 8 bytes.\n- An int2vector column fetched as SQL_C_DEFAULT returned unterminated binary data instead of text.\n- An output parameter that the application discards by binding a NULL buffer overflowed a stack buffer in the driver.\n- SQLGetData() with BufferLength 0 on a column the driver reads as a large object wrote a NUL byte past the buffer.\n- Adding a row with SQLBulkOperations(SQL_ADD) on a static updatable cursor before the first fetch, then changing that row, rolling back and fetching it, made the keyset index arithmetic free a pointer that was never allocated and corrupt the heap.\n\nThis can be triggered by a hostile or compromised server, or anyone on the network path of a connection that does not use sslmode=verify-full (the default is disable), and by the owner of a table the application reads.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-136515",
+      "description": "psqlODBC rewrites statement text for keyset-driven cursors and ODBC escapes using positions it found in the text. These positions could lie outside the text or describe another statement:\n\n- After SQLExecDirect() failed on a statement handle, the FROM and WHERE positions of the failed statement were applied to the next, shorter statement on that handle.\n- The parser could record a FROM position with no text after it, and the rewrite then copied a negative length.\n- An {fn \u2026} escape whose arguments contain FOR UPDATE, ; or INTO \u2026 FROM made the driver remove a cursor prefix from the wrong buffer.\n- {fn CONVERT(?, \u2026)} with an output parameter produced a negative argument length.\n- An unclosed {fn \u2026} escape made the driver read past the statement, and a few thousand nested ones exhausted the stack.\n- Translating @@identity in long statement text read an uninitialised pointer, and {? = call \u2026} with nothing bound for the return value dereferenced NULL.\n\nWhoever supplies the text of a statement that an application opens on a keyset-driven or dynamic cursor with a concurrency other than read-only, or calls with an output parameter, can corrupt the application's heap and end it. That includes the users of query tools, report builders and other applications that run SQL their users type. Code execution has not been demonstrated.\n\nVersions up to and including psqlODBC 18.00.0006 are affected.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "postgresql",
+          "product": "psqlodbc",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "0",
+              "lessThanOrEqual": "18.00.0006",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:psqlodbc",
+        "vendor:postgresql"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-120627",
@@ -184548,6 +184966,36 @@
       }
     },
     {
+      "cve_id": "CVE-2026-131827",
+      "description": "RustDesk Client for Windows reg_recovery Missing Authorization Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of RustDesk Client for Windows. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the main IPC endpoint exposed by the RustDesk service. The issue results from the lack of authorization prior to allowing access to functionality. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-34805.",
+      "cvss_score": 7.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "rustdesk",
+          "product": "client for windows",
+          "versions": [
+            {
+              "version": "1.5.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:client for windows",
+        "vendor:rustdesk"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-131914",
       "description": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
       "cvss_score": 9.3,
@@ -185466,6 +185914,122 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-136628",
+      "description": "Wails before 2.17.1 on Linux contains an origin validation error in the sendMessageToBackend WebKitGTK handler that allows child-frame scripts to invoke the privileged IPC channel. Attackers controlling content loaded in an iframe can post messages that pass the top-level URI origin check and call bound Go methods and Wails runtime operations.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "wailsapp",
+          "product": "wails",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "2.17.1",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:wails",
+        "vendor:wailsapp"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00259,
+      "nvd": {
+        "cvss_v3_score": 7.1,
+        "cvss_v3_severity": "HIGH",
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-346"
+        ],
+        "cpe_count": 0,
+        "reference_count": 6
+      }
+    },
+    {
+      "cve_id": "CVE-2026-34157",
+      "description": "Wails is a framework for building desktop applications using Go and web technologies. From 2.0.0 until 2.13.0, BindingsAllowedOrigins in v2/internal/frontend/originvalidator/originValidator.go passes wildcard patterns to wildcardPatternToRegex, which expands every asterisk to an unrestricted regular-expression match. When an application configures a trailing or partial-label wildcard immediately after an allowed domain, an attacker-controlled lookalike origin can match the allowed suffix and invoke bound Go methods through IPC. A complete-component subdomain wildcard is an unaffected configuration. The resulting confidentiality, integrity, and availability impact depends on the file, database, command, credential, or other operations exposed by the application's bound methods. This issue is fixed in version 2.13.0.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:L/SI:L/SA:N",
+      "affected": [
+        {
+          "vendor": "wailsapp",
+          "product": "wails",
+          "versions": [
+            {
+              "version": ">= 2.0.0, < 2.13.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:wails",
+        "vendor:wailsapp"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00528,
+      "nvd": {
+        "cvss_v3_score": null,
+        "cvss_v3_severity": null,
+        "cvss_v2_score": null,
+        "cvss_v2_severity": null,
+        "cwe_ids": [
+          "CWE-625"
+        ],
+        "cpe_count": 0,
+        "reference_count": 4
+      }
+    },
+    {
+      "cve_id": "CVE-2026-136923",
+      "description": "asar-py before 0.1.4 contains a path traversal vulnerability in AsarArchive.extract() and extract_archive() that allows attackers to write files outside the destination directory via crafted archive headers. Attackers can supply a .asar archive with '..' path components or malicious symlink targets to write files such as usercustomize.py, leading to code execution.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "black-06",
+          "product": "asar-py",
+          "versions": [
+            {
+              "version": "0",
+              "lessThan": "0.1.4",
+              "status": "affected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:asar-py",
+        "vendor:black-06"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13133",
@@ -189176,7 +189740,7 @@
     },
     {
       "cve_id": "CVE-2026-29004",
-      "description": "BusyBox before commit 42202bf contains a heap buffer overflow vulnerability in the DHCPv6 client (udhcpc6) DNS_SERVERS option handler in networking/udhcp/d6_dhcpc.c that allows network-adjacent attackers to trigger memory corruption by sending a crafted DHCPv6 response with a malformed D6_OPT_DNS_SERVERS option. Attackers can exploit incorrect heap buffer allocation calculations in the option_to_env() function to cause denial of service or achieve arbitrary code execution on embedded systems without heap hardening.",
+      "description": "BusyBox versions 1.27.0 before 1.38.0, fixed in commit 42202bf, contain a heap buffer overflow vulnerability in the DHCPv6 client (udhcpc6) DNS_SERVERS option handler in networking/udhcp/d6_dhcpc.c that allows network-adjacent attackers to trigger memory corruption by sending a crafted DHCPv6 response with a malformed D6_OPT_DNS_SERVERS option. Attackers can exploit incorrect heap buffer allocation calculations in the option_to_env() function to cause denial of service or achieve arbitrary code execution on embedded systems without heap hardening.",
       "cvss_score": 7.2,
       "cvss_severity": "HIGH",
       "cvss_vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
@@ -189187,9 +189751,15 @@
           "versions": [
             {
               "status": "affected",
-              "version": "0",
+              "version": "64d58aa8061c7c848cf0fd37de3ccbb8582d0fc5",
               "versionType": "git",
               "lessThan": "42202bfb1e6ac51fa995beda8be4d7b654aeee2a"
+            },
+            {
+              "status": "affected",
+              "version": "1.27.0",
+              "versionType": "semver",
+              "lessThan": "1.38.0"
             }
           ]
         }
@@ -190694,47 +191264,6 @@
         ],
         "cpe_count": 3,
         "reference_count": 1
-      }
-    },
-    {
-      "cve_id": "CVE-2026-34157",
-      "description": "Wails is a framework for building desktop applications using Go and web technologies. From 2.0.0 until 2.13.0, BindingsAllowedOrigins in v2/internal/frontend/originvalidator/originValidator.go passes wildcard patterns to wildcardPatternToRegex, which expands every asterisk to an unrestricted regular-expression match. When an application configures a trailing or partial-label wildcard immediately after an allowed domain, an attacker-controlled lookalike origin can match the allowed suffix and invoke bound Go methods through IPC. A complete-component subdomain wildcard is an unaffected configuration. The resulting confidentiality, integrity, and availability impact depends on the file, database, command, credential, or other operations exposed by the application's bound methods. This issue is fixed in version 2.13.0.",
-      "cvss_score": 7.6,
-      "cvss_severity": "HIGH",
-      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:L/SC:L/SI:L/SA:N",
-      "affected": [
-        {
-          "vendor": "wailsapp",
-          "product": "wails",
-          "versions": [
-            {
-              "version": ">= 2.0.0, < 2.13.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ],
-      "watchlist_hit": true,
-      "in_watchlist": true,
-      "in_patchthis": false,
-      "is_critical": false,
-      "priority_label": "",
-      "matched_terms": [
-        "product:wails",
-        "vendor:wailsapp"
-      ],
-      "active_threat": false,
-      "probability_score": 0.00528,
-      "nvd": {
-        "cvss_v3_score": null,
-        "cvss_v3_severity": null,
-        "cvss_v2_score": null,
-        "cvss_v2_severity": null,
-        "cwe_ids": [
-          "CWE-625"
-        ],
-        "cpe_count": 0,
-        "reference_count": 4
       }
     },
     {
@@ -200108,6 +200637,38 @@
         "cpe_count": 0,
         "reference_count": 3
       }
+    },
+    {
+      "cve_id": "CVE-2026-62154",
+      "description": "During IMPORT FOREIGN SCHEMA, mysql_fdw copies column metadata returned by the remote MySQL server into the CREATE FOREIGN TABLE statements it runs locally without quoting it. The COLUMN_DEFAULT value is placed directly in the DEFAULT clause, and the name of the generated ENUM type is inserted unquoted. A malicious or compromised MySQL server, or an attacker who can tamper with the connection, can return crafted information_schema metadata and run arbitrary SQL in the local PostgreSQL session of the user who runs IMPORT FOREIGN SCHEMA. The issue is fixed in mysql_fdw 2.10.0. From mysql_fdw 2.10.0, mysql_fdw quotes these values before building the statements.",
+      "cvss_score": 7.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "enterprisedb",
+          "product": "mysql foreign data wrapper (mysql_fdw)",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "lessThan": "2.10.0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:mysql foreign data wrapper (mysql_fdw)",
+        "vendor:enterprisedb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-62182",

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T22:26:39+00:00",
+  "generated_at": "2026-11-26T04:58:35+00:00",
   "vendor": "apache_software_foundation",
-  "count": 1531,
+  "count": 1532,
   "items": [
     {
       "cve_id": "CVE-2022-22719",
@@ -63305,6 +63305,38 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-78114",
+      "description": "Session Fixation in the login flow of Apache JSPWiki versions 2.10 through 3.0.0 on all platforms. The session identifier was not replaced when a user authenticated, so an attacker who could set a known session identifier in the browser of a victim could use the same identifier after the victim logged in.\n\n\n\nUsers are recommended to upgrade to version 3.0.1 (3.x) or 2.12.6 (2.x), which fix this issue.",
+      "cvss_score": 10.0,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+      "affected": [
+        {
+          "vendor": "apache software foundation",
+          "product": "apache jspwiki",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "2.10.0",
+              "lessThanOrEqual": "3.0.0",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:apache jspwiki",
+        "vendor:apache software foundation"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-78162",

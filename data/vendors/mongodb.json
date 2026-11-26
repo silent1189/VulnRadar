@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-25T22:26:39+00:00",
+  "generated_at": "2026-11-26T04:58:35+00:00",
   "vendor": "mongodb",
-  "count": 145,
+  "count": 159,
   "items": [
     {
       "cve_id": "CVE-2025-11575",
@@ -426,7 +426,13 @@
               "version": "1.0.0",
               "lessThan": "1.2.0",
               "versionType": "semver"
-            },
+            }
+          ]
+        },
+        {
+          "vendor": "mongodb",
+          "product": "go driver",
+          "versions": [
             {
               "status": "affected",
               "version": "2.0.0",
@@ -473,9 +479,15 @@
             {
               "status": "affected",
               "version": "1.1.0",
-              "lessThan": "1.*",
+              "lessThan": "*",
               "versionType": "semver"
-            },
+            }
+          ]
+        },
+        {
+          "vendor": "mongodb",
+          "product": "go driver",
+          "versions": [
             {
               "status": "affected",
               "version": "2.0.0",
@@ -2510,6 +2522,478 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-135133",
+      "description": "An invalid memory release in the MongoDB PHP Driver extension occurs when certain string-typed options or type-mapping settings are given non-string values. A party who can run PHP code in a process that loads the extension may corrupt process memory. This can lead to reading or changing process memory, running commands as the PHP process user, or crashing the process.",
+      "cvss_score": 8.5,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.0.0",
+              "lessThan": "1.21.15",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.1.15",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.2.0",
+              "lessThan": "2.5.9",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135134",
+      "description": "A NULL pointer dereference and invalid memory release in the server discovery component of the MongoDB C Driver may allow an unauthenticated party that controls a server endpoint, or that can alter unencrypted network traffic, to cause a client application to terminate by sending a crafted discovery response.",
+      "cvss_score": 8.2,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "c driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.25.0",
+              "lessThan": "1.30.17",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.5.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:c driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135135",
+      "description": "Mongoid builds an incomplete automatic encryption schema for certain embedded document associations. As a result, values that the application declared as encrypted may be written to the database in cleartext, with no error or warning returned to the application. A party holding only basic read privileges on the affected collection, and no access to the encryption keys, may then obtain those values in readable form.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "ruby driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.0.0",
+              "lessThan": "9.1.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ruby driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135141",
+      "description": "A logic flaw in the query-building layer of the Mongoid object-document mapper causes a model-level default restriction that is meant to return no records to be silently discarded when it is combined into a query. A user with basic application privileges who sends an ordinary request may read, change, or remove records that the restriction was intended to withhold.",
+      "cvss_score": 8.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "ruby driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "9.1.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ruby driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135142",
+      "description": "An incorrect authorization weakness in the embedded relation handling of the Laravel MongoDB library may allow a user with basic application privileges to alter records belonging to other users. After an embedded relation is pre-loaded, a routine write on that record is issued without the constraint that limits it to the record the user is permitted to change. This may result in unintended modification or loss of stored data for other users of the same application.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.0.0",
+              "lessThan": "5.12.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135144",
+      "description": "A query builder component in a MongoDB integration library for a PHP web framework does not run the query-modification callbacks that an application registers with the framework before sending read, update, and delete operations to the database. As a result, a filter that an application relies on to limit which records a request may touch can be omitted silently. A user with basic application privileges may be able to read or change records that the application intended to keep out of reach.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.8.0",
+              "lessThan": "5.12.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135145",
+      "description": "A polymorphic relationship query helper in the MongoDB Eloquent integration for Laravel resolves a record's type identifier inconsistently between the code that stores a relationship link and the code that searches for one. An application that relies on a relationship-absence query to restrict which records a request may see or change can therefore have that restriction silently fail, allowing a user with basic application privileges to read and to modify or remove records the restriction was meant to cover.",
+      "cvss_score": 7.6,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.1.0",
+              "lessThan": "5.12.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135146",
+      "description": "An improper certificate revocation check in the MongoDB Python Driver's optional TLS revocation-checking support allows an unauthenticated party that operates the network endpoint a client connects to, and that holds a revoked but still-dated certificate trusted by that client, to have the connection accepted. This may result in unintended disclosure of application credentials and other session data, and in the client treating responses from that endpoint as genuine.",
+      "cvss_score": 9.1,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "python driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.11.0",
+              "lessThan": "4.20.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:python driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135147",
+      "description": "A data-query neutralization weakness in the query builder of the MongoDB integration for a PHP web framework allows values supplied to certain bulk counter-update helpers to be interpreted by the database as query expressions rather than stored as plain text. An application that passes externally supplied data into these helpers may write unintended values into stored documents and may result in unintended disclosure of other data held on the same document. No credentials are required of the party supplying the value.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.8.0",
+              "lessThan": "5.12.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135224",
+      "description": "The MongoDB C Driver does not confirm that the party signing a supplied certificate revocation status response is authorized to answer for the certificate being checked. An unauthenticated party that operates the TLS endpoint a client connects to can therefore have a withdrawn certificate accepted. This may result in unintended disclosure of the application's database traffic and in the loss of the revocation decision.",
+      "cvss_score": 9.3,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "c driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.18.0",
+              "lessThan": "1.30.17",
+              "versionType": "semver"
+            },
+            {
+              "status": "affected",
+              "version": "2.0.0",
+              "lessThan": "2.5.10",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:c driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135226",
+      "description": "A type-confusion weakness in the Extended JSON parsing component of BSON for Ruby allows a party who can supply parser input to influence how a serialized document is framed. Content placed in one value may be read back as additional or replacement document fields. An unauthenticated party supplying input to an application that parses untrusted Extended JSON and stores the result may cause unintended modification of stored data.",
+      "cvss_score": 8.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "ruby driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "4.8.0",
+              "lessThan": "5.2.1",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ruby driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135227",
+      "description": "An improper restriction of dynamically determined object attributes in the object-document mapping library's association handling allows structured input supplied in place of a simple identifier value to be turned into an object that is treated as an already-stored record of a caller-chosen model class. In applications that pass unfiltered request data into the affected association handling, an unauthenticated party may cause unintended modification or removal of stored records, and may render an individual record unreadable through that association.",
+      "cvss_score": 8.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "ruby driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "9.1.0",
+              "lessThan": "9.1.3",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:ruby driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135228",
+      "description": "A vulnerability in the MongoDB integration package for the Laravel framework allows an unauthorized user to bypass mass assignment attribute protections. When an application uses attribute deny-lists to guard sensitive model fields, specially crafted request payloads containing database operator keys can circumvent these protections. An unauthorized user with network access to an affected application endpoint can modify guarded attributes, potentially leading to privilege escalation within the application",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "php driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "3.6.5",
+              "lessThan": "5.12.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:php driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-135898",
+      "description": "An out-of-bounds read in the native C BSON decoding extension of the MongoDB Python Driver may allow an unauthenticated party who can supply crafted BSON data to the decoder to cause the application process to terminate. In some configurations, nearby process memory may be included in error messages, which may result in limited unintended disclosure of data.",
+      "cvss_score": 8.8,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "mongodb",
+          "product": "python driver",
+          "versions": [
+            {
+              "status": "affected",
+              "version": "1.9.0",
+              "lessThan": "4.20.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:python driver",
+        "vendor:mongodb"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13055",
