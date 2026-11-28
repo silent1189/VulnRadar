@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T18:10:28+00:00",
+  "generated_at": "2026-11-28T01:28:32+00:00",
   "vendor": "_other",
-  "count": 3396,
+  "count": 3401,
   "items": [
     {
       "cve_id": "CVE-2022-0070",
@@ -66268,9 +66268,9 @@
           "product": "minidvblinux",
           "versions": [
             {
+              "version": "0",
               "lessThanOrEqual": "5.4",
               "status": "affected",
-              "version": "Unknown",
               "versionType": "custom"
             }
           ]
@@ -66308,11 +66308,13 @@
       "affected": [
         {
           "vendor": "minidvblinux",
-          "product": "minidvblinux(tm) distribution (mld)",
+          "product": "minidvblinux",
           "versions": [
             {
               "status": "affected",
-              "version": "<=5.4"
+              "version": "0",
+              "versionType": "custom",
+              "lessThanOrEqual": "5.4"
             }
           ]
         }
@@ -66323,7 +66325,7 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:minidvblinux(tm) distribution (mld)",
+        "product:minidvblinux",
         "vendor:minidvblinux"
       ],
       "active_threat": false,
@@ -66349,11 +66351,13 @@
       "affected": [
         {
           "vendor": "minidvblinux",
-          "product": "minidvblinux change root password poc",
+          "product": "minidvblinux",
           "versions": [
             {
+              "version": "0",
+              "lessThanOrEqual": "5.4",
               "status": "affected",
-              "version": "<=5.4"
+              "versionType": "custom"
             }
           ]
         }
@@ -66364,7 +66368,7 @@
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [
-        "product:minidvblinux change root password poc",
+        "product:minidvblinux",
         "vendor:minidvblinux"
       ],
       "active_threat": false,
@@ -66393,8 +66397,10 @@
           "product": "minidvblinux",
           "versions": [
             {
+              "version": "0",
+              "lessThanOrEqual": "5.4",
               "status": "affected",
-              "version": "<=5.4"
+              "versionType": "custom"
             }
           ]
         }
@@ -66434,8 +66440,10 @@
           "product": "minidvblinux",
           "versions": [
             {
+              "version": "0",
+              "lessThanOrEqual": "5.4",
               "status": "affected",
-              "version": "<=5.4"
+              "versionType": "custom"
             }
           ]
         }
@@ -133965,6 +133973,70 @@
       }
     },
     {
+      "cve_id": "CVE-2026-137938",
+      "description": "Sparkle before 2.9.6 contains a time-of-check time-of-use race condition in the installer's SPUInstallationData handling in AppInstaller.m, which validates the symlink-resolved download URL but performs the privileged move on the unresolved URL and checks the file type only afterwards. A local user can swap an intermediate directory of the download path for a symlink between the check and the move, causing a root installer to rename a file out of a protected location and leading to privilege escalation when the installer runs in the system domain.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "sparkle-project",
+          "product": "sparkle",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2.9.6"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sparkle",
+        "vendor:sparkle-project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
+      "cve_id": "CVE-2026-137939",
+      "description": "Sparkle 2.2.0 before 2.9.6 contains a link following vulnerability in -submitInstallerAtPath: in SUInstallerLauncher.m that builds a root updater's launcher cache path inside the console user's home directory and then deletes and creates items there without rejecting symbolic links. A local console user can pre-create that path as a symlink while a CLI tool or daemon updates a bundle as root, making root delete old files in a directory of the attacker's choosing and create a directory there that is chowned to the attacker, leading to privilege escalation.",
+      "cvss_score": 7.3,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "sparkle-project",
+          "product": "sparkle",
+          "versions": [
+            {
+              "version": "2.2.0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "2.9.6"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:sparkle",
+        "vendor:sparkle-project"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2025-0994",
       "description": "Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer\u2019s Microsoft Internet Information Services (IIS) web server.",
       "cvss_score": 8.6,
@@ -168764,6 +168836,43 @@
       "probability_score": 0.00857
     },
     {
+      "cve_id": "CVE-2026-137962",
+      "description": "Budibase server before 3.48.0 contains an authorization bypass vulnerability in the public API view row search endpoint that skips per-view permission checks due to a tableId/viewId parameter mismatch. Authenticated users with READ_ONLY role and an API key can query restricted views to read data limited to higher-privileged roles.",
+      "cvss_score": 7.1,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "budibase",
+          "product": "server",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.48.0"
+            },
+            {
+              "version": "3.48.0",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:server",
+        "vendor:budibase"
+      ],
+      "active_threat": false,
+      "probability_score": null
+    },
+    {
       "cve_id": "CVE-2026-72849",
       "description": "Budibase before 3.40.0 contains a cross-site request forgery vulnerability in the chat-link handoff endpoint that allows attackers to bind an external chat identity to a victim's account. Attackers can craft a phishing page that auto-submits a POST request with a leaked confirmation token to bind their chat identity to a victim user's account, enabling impersonation within agent operations and inheritance of victim permissions.",
       "cvss_score": 8.7,
@@ -185811,7 +185920,7 @@
       ],
       "watchlist_hit": false,
       "in_watchlist": false,
-      "in_patchthis": false,
+      "in_patchthis": true,
       "is_critical": false,
       "priority_label": "",
       "matched_terms": [],
@@ -186910,6 +187019,174 @@
         "cpe_count": 0,
         "reference_count": 5
       }
+    },
+    {
+      "cve_id": "CVE-2026-137738",
+      "description": "In RealVNC Server before 7.19.1, UDP-based connections could potentially be exploited without authentication to execute code remotely or cause the software to crash. This could allow an attacker to remotely execute code as root on certain platforms or perform a denial of service attack. This issue affects RealVNC Viewer: from 8.4.0 through 8.6.1; RealVNC Classic Viewer: from 6.4.0 through 7.18.2; RealVNC Server: from 6.4.0 through 7.19.0; RealVNC Connect App: through 8.6.1; RealVNC iOS Viewer: from 3.7.0 through 4.9.5; RealVNC Android Viewer: from 3.5.0 through 4.9.5; RealVNC iOS Server: through 2.8.1; RealVNC Android Server: through 2.8.3; On-Demand Assist: through 3.4.1.",
+      "cvss_score": 9.8,
+      "cvss_severity": "CRITICAL",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "realvnc",
+          "product": "realvnc viewer",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.6.1",
+              "status": "affected",
+              "version": "8.4.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc classic viewer",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.18.2",
+              "status": "affected",
+              "version": "6.4.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc server",
+          "versions": [
+            {
+              "lessThanOrEqual": "7.19.0",
+              "status": "affected",
+              "version": "6.4.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc connect app",
+          "versions": [
+            {
+              "lessThanOrEqual": "8.6.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc ios viewer",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.9.5",
+              "status": "affected",
+              "version": "3.7.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc android viewer",
+          "versions": [
+            {
+              "lessThanOrEqual": "4.9.5",
+              "status": "affected",
+              "version": "3.5.0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc ios server",
+          "versions": [
+            {
+              "lessThanOrEqual": "2.8.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "realvnc android server",
+          "versions": [
+            {
+              "lessThanOrEqual": "2.8.3",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        },
+        {
+          "vendor": "realvnc",
+          "product": "on-demand assist",
+          "versions": [
+            {
+              "lessThanOrEqual": "3.4.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "custom"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:realvnc android server",
+        "product:realvnc android viewer",
+        "product:realvnc ios server",
+        "product:realvnc ios viewer",
+        "vendor:realvnc"
+      ],
+      "active_threat": false,
+      "probability_score": 0.00671
+    },
+    {
+      "cve_id": "CVE-2026-137969",
+      "description": "ToolJet before 3.21.96-LTS contains a server-side request forgery protection bypass because getSSRFProtectionOptions passes its safe resolver as dnsLookup instead of lookup. Attackers controlling datasource hostnames can use DNS rebinding in REST API, GraphQL, OpenAPI, or OAuth requests to reach blocked private addresses.",
+      "cvss_score": 7.0,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+      "affected": [
+        {
+          "vendor": "tooljet-plugins",
+          "product": "common",
+          "versions": [
+            {
+              "version": "0",
+              "status": "affected",
+              "versionType": "semver",
+              "lessThan": "3.21.96-LTS"
+            },
+            {
+              "version": "3.21.96-LTS",
+              "status": "unaffected",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:common",
+        "vendor:tooljet-plugins"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-13133",

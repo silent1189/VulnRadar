@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T18:10:28+00:00",
+  "generated_at": "2026-11-28T01:28:32+00:00",
   "vendor": "adobe",
-  "count": 1678,
+  "count": 1679,
   "items": [
     {
       "cve_id": "CVE-2022-23186",
@@ -60442,6 +60442,43 @@
         "cpe_count": 0,
         "reference_count": 1
       }
+    },
+    {
+      "cve_id": "CVE-2026-132876",
+      "description": "Dreamweaver Desktop is affected by a Dependency on Vulnerable Third-Party Component vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation depends on conditions beyond the attacker's control and requires user interaction in that a victim must open a malicious file. Scope is changed.",
+      "cvss_score": 7.7,
+      "cvss_severity": "HIGH",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected": [
+        {
+          "vendor": "adobe",
+          "product": "dreamweaver desktop",
+          "versions": [
+            {
+              "lessThanOrEqual": "21.8.1",
+              "status": "affected",
+              "version": "0",
+              "versionType": "semver"
+            },
+            {
+              "status": "unaffected",
+              "version": "21.8.2",
+              "versionType": "semver"
+            }
+          ]
+        }
+      ],
+      "watchlist_hit": true,
+      "in_watchlist": true,
+      "in_patchthis": false,
+      "is_critical": false,
+      "priority_label": "",
+      "matched_terms": [
+        "product:dreamweaver desktop",
+        "vendor:adobe"
+      ],
+      "active_threat": false,
+      "probability_score": null
     },
     {
       "cve_id": "CVE-2026-132877",
